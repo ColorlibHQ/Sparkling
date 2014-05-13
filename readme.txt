@@ -2,7 +2,7 @@
 
 Theme Name: Sparkling
 Theme URI: http://colorlib.com/wp/sparkling/
-Version: 1.3.0
+Version: 1.3.1
 Tested up to: WP 3.9
 
 Author: Aigars Silkalns
@@ -61,6 +61,11 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
+
+= 1.3.1 - 18.05.2014 =
+
+* Fixed next/previos button placement on mobile devices.
+* Improved full-width page layout.
 
 = 1.3.0 - 12.05.2014 =
 
