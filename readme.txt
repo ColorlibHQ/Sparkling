@@ -67,6 +67,7 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 * Fixed next/previos button placement on mobile devices.
 * Improved full-width page layout.
 * Added Dutch translation thanks to Niels Hoogenhout (http://nielshoogenhout.nl/)
+* Updated Options Framework to 1.8.0
 
 = 1.3.0 - 12.05.2014 =
 
