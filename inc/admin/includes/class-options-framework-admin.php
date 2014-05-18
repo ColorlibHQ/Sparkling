@@ -110,33 +110,8 @@ class Options_Framework_Admin {
 	function add_custom_options_page() {
 
 		$menu = $this->menu_settings();
+		$this->options_screen = add_theme_page( $menu['page_title'], $menu['menu_title'], $menu['capability'], $menu['menu_slug'], array( $this, 'options_page' ) );
 
-        switch( $menu['mode'] ) {
-
-            case 'menu':
-            	// http://codex.wordpress.org/Function_Reference/add_menu_page
-                $this->options_screen = add_menu_page(
-                	$menu['page_title'],
-                	$menu['menu_title'],
-                	$menu['capability'],
-                	$menu['menu_slug'],
-                	array( $this, 'options_page' ),
-                	$menu['icon_url'],
-                	$menu['position']
-                );
-                break;
-
-            default:
-            	// http://codex.wordpress.org/Function_Reference/add_submenu_page
-                $this->options_screen = add_submenu_page(
-                	$menu['parent_slug'],
-                	$menu['page_title'],
-                	$menu['menu_title'],
-                	$menu['capability'],
-                	$menu['menu_slug'],
-                	array( $this, 'options_page' ) );
-                break;
-        }
 	}
 
 	/**
