@@ -5,10 +5,7 @@ jQuery(document).ready(function(){
 	jQuery( '.comment-reply-link' ).addClass( 'btn btn-sm btn-default' );
 
 	// here for the submit button of the comment reply form
-	jQuery( '#submit, button[type=submit], button' ).addClass( 'btn btn-default' );
-
-	// Add fixed size to tag cloud
-	jQuery('.tagcloud a').css('font-size' , '12px');
+	jQuery( '#submit, button[type=submit], button, html input[type=button], input[type=reset], input[type=submit]' ).addClass( 'btn btn-default' );
 
 	// Now we'll add some classes for the WordPress default widgets - let's go
 	jQuery( '.widget_rss ul' ).addClass( 'media-list' );
