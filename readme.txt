@@ -62,6 +62,11 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
 
+= 1.4.1 - 19.05.2014 =
+
+* Added Russian translation thanks to Evgeny Able
+* Improved Child Theme support
+
 = 1.4.0 - 18.05.2014 =
 
 * Fixed next/previos button placement on mobile devices.

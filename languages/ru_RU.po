@@ -1,0 +1,830 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sparkling Theme\n"
+"POT-Creation-Date: 2014-05-19 16:09+0200\n"
+"PO-Revision-Date: 2014-05-19 16:09+0200\n"
+"Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
+"Language-Team: colorlib <info@colorlib.com>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ой! К сожалению нет такой страницы."
+
+#: ../404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Ничего не найдено. Попробуйте перейти по другой ссылке или воспользуйтесь "
+"поиском?"
+
+#: ../404.php:31
+msgid "Most Used Categories"
+msgstr "Самые популярные категории"
+
+#: ../404.php:52
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Поищите в архивах %1$s"
+
+#: ../archive.php:27
+#, php-format
+msgid "Author: %s"
+msgstr "Автор: %s"
+
+#: ../archive.php:30
+#, php-format
+msgid "Day: %s"
+msgstr "День: %s"
+
+#: ../archive.php:33
+#, php-format
+msgid "Month: %s"
+msgstr "Месяц: %s"
+
+#: ../archive.php:36
+#, php-format
+msgid "Year: %s"
+msgstr "Год: %s"
+
+#: ../archive.php:39
+msgid "Asides"
+msgstr "Боковые панели"
+
+#: ../archive.php:42
+msgid "Galleries"
+msgstr "Галереи"
+
+#: ../archive.php:45
+msgid "Images"
+msgstr "Фото"
+
+#: ../archive.php:48
+msgid "Videos"
+msgstr "Видео"
+
+#: ../archive.php:51
+msgid "Quotes"
+msgstr "Цитаты"
+
+#: ../archive.php:54
+msgid "Links"
+msgstr "Ссылки"
+
+#: ../archive.php:57
+msgid "Statuses"
+msgstr "Статусы"
+
+#: ../archive.php:60
+msgid "Audios"
+msgstr "Аудио"
+
+#: ../archive.php:63
+msgid "Chats"
+msgstr "Чаты"
+
+#: ../archive.php:66 ../sidebar.php:19
+msgid "Archives"
+msgstr "Архивы"
+
+#: ../comments.php:30
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../comments.php:37 ../comments.php:55
+msgid "Comment navigation"
+msgstr "Навигация по комментариям"
+
+#: ../comments.php:38 ../comments.php:56
+msgid "&larr; Older Comments"
+msgstr "&larr; Предыдущие комментарии"
+
+#: ../comments.php:39 ../comments.php:57
+msgid "Newer Comments &rarr;"
+msgstr "Новые комментарии &rarr;"
+
+#: ../comments.php:67
+msgid "Comments are closed."
+msgstr "Комментарии закрыты"
+
+#: ../content-none.php:13
+msgid "Nothing Found"
+msgstr "Ничего не найдено"
+
+#: ../content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Готовы опубликовать свою первую запись? <a href=\"%1$s\">Начнем</a>."
+
+#: ../content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Ни один результат не соответствует Вашему запросу. Пожалуйста, повторите "
+"поиск, используя другие ключевые слова."
+
+#: ../content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Похоже, мы не можем найти запрашиваемую Вами информацию. Попробуйте найти "
+"через \"Поиск\"."
+
+#: ../content-page.php:19 ../content-single.php:35 ../content.php:43
+#: ../front-page.php:21 ../image.php:79
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: ../content-page.php:24 ../content-single.php:26 ../content.php:23
+#: ../front-page.php:26
+msgid "Edit"
+msgstr "Правка"
+
+#: ../content-single.php:19
+msgid ", "
+msgstr ","
+
+#: ../content-single.php:23
+#, php-format
+msgid " %1$s"
+msgstr " %1$s"
+
+#: ../content.php:20
+msgid "Leave a comment"
+msgstr "Оставить комментарий"
+
+#: ../content.php:20
+msgid "1 Comment"
+msgstr "1 комментарий"
+
+#: ../content.php:20
+msgid "% Comments"
+msgstr "% комментарии"
+
+#: ../content.php:32 ../content.php:39
+msgid "Read More"
+msgstr "Подробнее"
+
+#: ../functions.php:57
+msgid "Primary Menu"
+msgstr "Основное меню"
+
+#: ../functions.php:58 ../inc/extras.php:188
+msgid "Footer Links"
+msgstr "Ссылки нижнего колонтитула"
+
+#: ../functions.php:86
+msgid "Sidebar"
+msgstr "Боковая панель"
+
+#: ../functions.php:96
+msgid "Homepage Widget 1"
+msgstr "1ый виджет на Главной странице"
+
+#: ../functions.php:97 ../functions.php:107 ../functions.php:117
+msgid "Displays on the Home Page"
+msgstr "Отображается на Главной странице"
+
+#: ../functions.php:106
+msgid "Homepage Widget 2"
+msgstr "2ой виджет на Главной странице"
+
+#: ../functions.php:116
+msgid "Homepage Widget 3"
+msgstr "3ий виджет на Главной странице"
+
+#: ../functions.php:126
+msgid "Footer Widget 1"
+msgstr "1ый виджет нижнего колонтитула"
+
+#: ../functions.php:127 ../functions.php:137 ../functions.php:147
+msgid "Used for footer widget area"
+msgstr "Использовано для области виджета футера"
+
+#: ../functions.php:136
+msgid "Footer Widget 2"
+msgstr "2ой виджет нижнего колонтитула"
+
+#: ../functions.php:146
+msgid "Footer Widget 3"
+msgstr "3ий виджет нижнего колонтитула"
+
+#: ../image.php:22
+msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Предыдущий"
+
+#: ../image.php:23
+msgid "Next <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Следующий <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:90
+#: ../inc/admin/includes/class-options-framework-admin.php:91
+msgid "Theme Options"
+msgstr "Опции темы"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:186
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr "Нажмите OK чтобы сбросить. Все настройки темы будут утрачены!"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:217
+msgid "Default options restored."
+msgstr "Воостановлены настройки по умолчанию."
+
+#: ../inc/admin/includes/class-options-framework-admin.php:271
+msgid "Options saved."
+msgstr "Опции сохранены."
+
+#: ../inc/admin/includes/class-options-media-uploader.php:63
+msgid "No file chosen"
+msgstr "Файл не выбран"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:66
+#: ../inc/admin/includes/class-options-media-uploader.php:119
+msgid "Upload"
+msgstr "Загрузить"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:68
+#: ../inc/admin/includes/class-options-media-uploader.php:120
+msgid "Remove"
+msgstr "Удалить"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:71
+msgid "Upgrade your version of WordPress for full media support."
+msgstr "Обновите версию WordPress для полной поддержки Медиа."
+
+#: ../inc/admin/includes/class-options-media-uploader.php:95
+msgid "View File"
+msgstr "Просмотреть файл"
+
+#: ../inc/admin/includes/class-options-sanitization.php:241
+msgid "No Repeat"
+msgstr "Не повтороять"
+
+#: ../inc/admin/includes/class-options-sanitization.php:242
+msgid "Repeat Horizontally"
+msgstr "Повторить горизотальо"
+
+#: ../inc/admin/includes/class-options-sanitization.php:243
+msgid "Repeat Vertically"
+msgstr "Повторить вертикально"
+
+#: ../inc/admin/includes/class-options-sanitization.php:244
+msgid "Repeat All"
+msgstr "Заполнить"
+
+#: ../inc/admin/includes/class-options-sanitization.php:257
+msgid "Top Left"
+msgstr "Вверху Слева"
+
+#: ../inc/admin/includes/class-options-sanitization.php:258
+msgid "Top Center"
+msgstr "Вверху По центру"
+
+#: ../inc/admin/includes/class-options-sanitization.php:259
+msgid "Top Right"
+msgstr "Вверху Справа"
+
+#: ../inc/admin/includes/class-options-sanitization.php:260
+msgid "Middle Left"
+msgstr "По середине Слева"
+
+#: ../inc/admin/includes/class-options-sanitization.php:261
+msgid "Middle Center"
+msgstr "По середине По центру"
+
+#: ../inc/admin/includes/class-options-sanitization.php:262
+msgid "Middle Right"
+msgstr "По середине Справа"
+
+#: ../inc/admin/includes/class-options-sanitization.php:263
+msgid "Bottom Left"
+msgstr "Снизу Слева"
+
+#: ../inc/admin/includes/class-options-sanitization.php:264
+msgid "Bottom Center"
+msgstr "Снизу По центру"
+
+#: ../inc/admin/includes/class-options-sanitization.php:265
+msgid "Bottom Right"
+msgstr "Снизу Справа"
+
+#: ../inc/admin/includes/class-options-sanitization.php:278
+msgid "Scroll Normally"
+msgstr "Обычная прокрутка"
+
+#: ../inc/admin/includes/class-options-sanitization.php:279
+msgid "Fixed in Place"
+msgstr "Зафиксировано на месте"
+
+#: ../inc/admin/includes/class-options-sanitization.php:353
+msgid "Normal"
+msgstr "Обычный"
+
+#: ../inc/admin/includes/class-options-sanitization.php:354
+msgid "Italic"
+msgstr "Курсив"
+
+#: ../inc/admin/includes/class-options-sanitization.php:355
+msgid "Bold"
+msgstr "Полужирный"
+
+#: ../inc/admin/includes/class-options-sanitization.php:356
+msgid "Bold Italic"
+msgstr "Полужирный курсив"
+
+#: ../inc/extras.php:63
+#, php-format
+msgid "Page %s"
+msgstr "Страница %s"
+
+#: ../inc/extras.php:111
+#, fuzzy
+msgid "Search..."
+msgstr "Результаты поиска по: %s"
+
+#: ../inc/extras.php:132
+msgid ""
+"<p>This post is password protected. To view it please enter your password "
+"below:</p>"
+msgstr ""
+"<p>Эта запись защищена паролем. Чтобы просмотреть эту запись, пожалуйста, "
+"введите пароль:</p>"
+
+#: ../inc/extras.php:133
+msgid "Password:"
+msgstr "Пароль:"
+
+#: ../inc/extras.php:136
+msgid "Submit"
+msgstr "Отрпавить"
+
+#: ../inc/extras.php:160
+msgid "Follow us on "
+msgstr "Присоединяйтесь к нам"
+
+#: ../inc/extras.php:260
+#, php-format
+msgid "Theme by %1$s Powered by %2$s"
+msgstr "Тема от %1$s. Работает на %2$s"
+
+#: ../inc/extras.php:362
+msgid "Support and Documentation"
+msgstr "Поддержка и Документация"
+
+#: ../inc/extras.php:368
+msgid "Sparkling Documentation"
+msgstr "Документация Sparkling"
+
+#: ../inc/extras.php:369
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr ""
+"Чтобы связаться с нами по вопросам <b>технической поддержки</b> и <b>отчетов "
+"об ошибках</b>, используйте"
+
+#: ../inc/extras.php:369
+msgid "Colorlib support forum"
+msgstr "Форум поддержки Colorlib"
+
+#: ../inc/extras.php:370
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr ""
+"Если вам понравилась эта тема, я был бы благодрен за любой из следующих "
+"вариантов:"
+
+#: ../inc/extras.php:372
+msgid "Rate this Theme"
+msgstr "Оценить эту тему"
+
+#: ../inc/extras.php:373
+msgid "Like on Facebook"
+msgstr "Поставить лайк на Facebook"
+
+#: ../inc/extras.php:374
+msgid "Follow on Twitter"
+msgstr "Читать Twitter"
+
+#: ../inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "Навигация по записям"
+
+#: ../inc/template-tags.php:27
+msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Показать еще"
+
+#: ../inc/template-tags.php:31
+msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Новые записи <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "Навигация записей"
+
+#: ../inc/widgets/widget-categories.php:11
+#: ../inc/widgets/widget-categories.php:12
+msgid "Sparkling Categories"
+msgstr "(Sparkling) Категории"
+
+#: ../inc/widgets/widget-categories.php:17
+#: ../inc/widgets/widget-categories.php:76
+msgid "Categories"
+msgstr "Категории"
+
+#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
+msgid "Title "
+msgstr "Название"
+
+#: ../inc/widgets/widget-categories.php:91
+msgid "Limit Categories "
+msgstr "Лимит категорий"
+
+#: ../inc/widgets/widget-categories.php:104
+msgid "Enable Posts Count"
+msgstr "Включить счётчик записей"
+
+#: ../inc/widgets/widget-popular-posts.php:11
+#: ../inc/widgets/widget-popular-posts.php:12
+msgid "Sparkling Popular Posts Widget"
+msgstr "(Sparkling) Популярные записи"
+
+#: ../inc/widgets/widget-popular-posts.php:17
+#: ../inc/widgets/widget-popular-posts.php:94
+msgid "Popular Posts"
+msgstr "Популярные записи"
+
+#: ../inc/widgets/widget-popular-posts.php:99
+msgid "Title"
+msgstr "Название"
+
+#: ../inc/widgets/widget-popular-posts.php:107
+msgid "Limit Posts Number"
+msgstr "Ограничить количество записей"
+
+#: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
+msgid "Sparkling Social Widget"
+msgstr "(Sparkling) Соц. сети"
+
+#: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
+msgid "Follow us"
+msgstr "Присоединяйтесь к нам"
+
+#: ../options.php:29
+msgid "Right Sidebar"
+msgstr "Справа"
+
+#: ../options.php:29
+msgid "Left Sidebar"
+msgstr "Слева"
+
+#: ../options.php:33
+msgid "One"
+msgstr "Один"
+
+#: ../options.php:34
+msgid "Two"
+msgstr "Два"
+
+#: ../options.php:35
+msgid "Three"
+msgstr "Три"
+
+#: ../options.php:36
+msgid "Four"
+msgstr "Четыре"
+
+#: ../options.php:37
+msgid "Five"
+msgstr "Пять"
+
+#: ../options.php:42
+msgid "French Toast"
+msgstr "Французский тост"
+
+#: ../options.php:43
+msgid "Pancake"
+msgstr "Блин"
+
+#: ../options.php:44
+msgid "Omelette"
+msgstr "Омлет"
+
+#: ../options.php:45
+msgid "Crepe"
+msgstr "Креп"
+
+#: ../options.php:46
+msgid "Waffle"
+msgstr "Вафли"
+
+#: ../options.php:115
+msgid "Main"
+msgstr "Главная"
+
+#: ../options.php:118
+msgid "Do You want to display image slider on the Home Page?"
+msgstr "Хотите ли Вы, чтобы на главной страницу отображался слайдер?"
+
+#: ../options.php:119
+msgid "Check if you want to enable slider"
+msgstr "Включить слайдер"
+
+#: ../options.php:124
+msgid "Slider Category"
+msgstr "Категория для слайдера"
+
+#: ../options.php:125
+msgid "Select a category for the featured post slider"
+msgstr "Выберите самую интересную категорию записей для слайдера"
+
+#: ../options.php:131
+msgid "Number of slide items"
+msgstr "Количество слайдов"
+
+#: ../options.php:132
+msgid "Enter the number of slide items"
+msgstr "Введите количество слайдов"
+
+#: ../options.php:138
+msgid "Website Layout Options"
+msgstr "Варианты разметки сайта"
+
+#: ../options.php:139
+msgid "Choose between Left and Right sidebar options to be used as default"
+msgstr "Выберите, где по умолчанию будет боковая панель: Слева или Справа?"
+
+#: ../options.php:146
+msgid "Element color"
+msgstr "Цвет элемента"
+
+#: ../options.php:147 ../options.php:153 ../options.php:186 ../options.php:192
+#: ../options.php:198 ../options.php:203 ../options.php:225 ../options.php:231
+#: ../options.php:240 ../options.php:302 ../options.php:308
+msgid "Default used if no color is selected"
+msgstr "Если не выберите свой цвет, будет использовано стандартное значение"
+
+#: ../options.php:152
+msgid "Element color on hover"
+msgstr "Цвет элемента при наведении"
+
+#: ../options.php:158
+msgid "Custom Favicon"
+msgstr "Своя Favicon"
+
+#: ../options.php:159
+msgid ""
+"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
+msgstr ""
+"Загрузите PNG/GIF изображение размером 32px х 32px, которая будет символом "
+"Вашего сайта"
+
+#: ../options.php:164
+msgid "Action Button"
+msgstr "Call for Action"
+
+#: ../options.php:167
+msgid "Call For Action Text"
+msgstr "Текст Call for Action"
+
+#: ../options.php:168
+msgid "Enter the text for call for action section"
+msgstr "Введите текст для секции Call for Action"
+
+#: ../options.php:173
+msgid "Call For Action Button Title"
+msgstr "Текст кнопки Call for Action"
+
+#: ../options.php:174
+msgid "Enter the title for Call For Action button"
+msgstr "Введите текст кнопки Call for Action"
+
+#: ../options.php:179
+msgid "CFA button link"
+msgstr "Ссылка кнопки Call for Action"
+
+#: ../options.php:180
+msgid "Enter the link for Call For Action button"
+msgstr "Введите адрес ссылки кнопки Call for Action"
+
+#: ../options.php:185
+msgid "Call For Action Text Color"
+msgstr "Цвет текста Call for Action"
+
+#: ../options.php:191
+msgid "Call For Action Background Color"
+msgstr "Цвет фона Call for Action"
+
+#: ../options.php:197
+msgid "Call For Action Button Border Color"
+msgstr "Цвет границы кнопки Call for Action"
+
+#: ../options.php:202
+msgid "Call For Action Button Text Color"
+msgstr "Цвет текста кнопки Call for Action"
+
+#: ../options.php:208
+msgid "Typography"
+msgstr "Типографика"
+
+#: ../options.php:211
+msgid "Main Body Text"
+msgstr "Основной шрифт"
+
+#: ../options.php:212
+msgid "Used in P tags"
+msgstr "Используемый в тегах <p> (абзац)"
+
+#: ../options.php:218
+msgid "Heading Color"
+msgstr "Цвет заголовков"
+
+#: ../options.php:219
+msgid "Color for all headings (h1-h6)"
+msgstr "Цвет для всех заголовков (h1-h6)"
+
+#: ../options.php:224
+msgid "Link Color"
+msgstr "Цвет ссылок"
+
+#: ../options.php:230
+msgid "Link:hover Color"
+msgstr "Цвет ссылки при наведении"
+
+#: ../options.php:236
+msgid "Header"
+msgstr "Верхний колонтитул"
+
+#: ../options.php:239
+msgid "Top nav background color"
+msgstr "Цвет фона верхнего меню"
+
+#: ../options.php:245
+msgid "Top nav item color"
+msgstr "Цвет текста элемента списка верхнего меню"
+
+#: ../options.php:246
+msgid "Link color"
+msgstr "Цвет ссылки"
+
+#: ../options.php:251
+msgid "Top nav item hover color"
+msgstr "Цвет текста элемента списка верхнего меню при наведении"
+
+#: ../options.php:252
+msgid "Link:hover color"
+msgstr "Цвет ссылки при наведении"
+
+#: ../options.php:257
+msgid "Top nav dropdown background color"
+msgstr "Цвет фона выпадающего меню второго уровня"
+
+#: ../options.php:258
+msgid "Background of dropdown item hover color"
+msgstr "Цвет фона элемента при наведении в выпадающем меню второго уровня"
+
+#: ../options.php:263
+msgid "Top nav dropdown item color"
+msgstr "Цвет элемента в выпадающем меню второго уровня"
+
+#: ../options.php:264
+msgid "Dropdown item color"
+msgstr "Цвет элемента"
+
+#: ../options.php:269
+msgid "Footer"
+msgstr "Нижний колонтитул"
+
+#: ../options.php:272
+msgid "Footer widget area background color"
+msgstr "Цвет фона области виджетов нижнего колонтитула"
+
+#: ../options.php:277
+msgid "Footer background color"
+msgstr "Цвет фона нижнего колонтитула"
+
+#: ../options.php:282
+msgid "Footer text color"
+msgstr "Цвет текста нижнего колонтитула"
+
+#: ../options.php:287
+msgid "Footer link color"
+msgstr "Цвет ссылок нижнего колонтитула"
+
+#: ../options.php:292
+msgid "Footer information"
+msgstr "Информация в нижнем колонтитуле"
+
+#: ../options.php:293
+msgid "Copyright text in footer"
+msgstr "Текст об авторских правах в нижнем колонтитуле"
+
+#: ../options.php:298
+msgid "Social"
+msgstr "Соц. сети"
+
+#: ../options.php:301
+msgid "Social icon color"
+msgstr "Цвет иконки соц. сетей"
+
+#: ../options.php:307
+msgid "Footer social icon color"
+msgstr "Цвет иконки соц. сетей в нижнем колонтитуле"
+
+#: ../options.php:313
+msgid "Add full URL for your social network profiles"
+msgstr "Добавьте полные URL профилей Вашего бренда в соц.сетях "
+
+#: ../options.php:314
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../options.php:321
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../options.php:327
+msgid "Google+"
+msgstr "Google+"
+
+#: ../options.php:333
+msgid "Youtube"
+msgstr "Youtube"
+
+#: ../options.php:339
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: ../options.php:345
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: ../options.php:351
+msgid "RSS Feed"
+msgstr "RSS"
+
+#: ../options.php:357
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: ../options.php:363
+msgid "Flickr"
+msgstr "Flickr"
+
+#: ../options.php:369
+msgid "Instagram"
+msgstr "Instagram"
+
+#: ../options.php:375
+msgid "Dribbble"
+msgstr "Dribble"
+
+#: ../options.php:381
+msgid "Skype"
+msgstr "Skype"
+
+#: ../options.php:387
+msgid "Foursquare"
+msgstr ""
+
+#: ../options.php:392
+msgid "Other"
+msgstr "Другие"
+
+#: ../options.php:395
+msgid "Custom CSS"
+msgstr "Пользовательский CSS"
+
+#: ../options.php:396
+msgid "Additional CSS"
+msgstr "Дополнительный CSS"
+
+#: ../search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Результаты поиска по: %s"
+
+#: ../sidebar.php:26
+msgid "Meta"
+msgstr "Мета"
+
+#~ msgid "Default used if no color is selected."
+#~ msgstr "Если не выберите свой цвет, будет использовано стандартное значение"
