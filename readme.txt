@@ -66,6 +66,7 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 * Added Russian translation thanks to Evgeny Able
 * Improved Child Theme support
+* Updated Dutch translation
 
 = 1.4.0 - 18.05.2014 =
 

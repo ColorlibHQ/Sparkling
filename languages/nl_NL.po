@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2014-05-19 16:23+0200\n"
-"PO-Revision-Date: 2014-05-19 16:23+0200\n"
+"POT-Creation-Date: 2014-05-12 13:15+0200\n"
+"PO-Revision-Date: 2014-05-19 20:03+0100\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: en_US\n"
@@ -196,19 +196,19 @@ msgstr "Sidebar"
 
 #: ../functions.php:96
 msgid "Homepage Widget 1"
-msgstr "Frontpage Widget 1"
+msgstr "Voorpagina Widget 1"
 
 #: ../functions.php:97 ../functions.php:107 ../functions.php:117
 msgid "Displays on the Home Page"
-msgstr "Weergeven op de Frontpage"
+msgstr "Weergeven op de Voorpagina"
 
 #: ../functions.php:106
 msgid "Homepage Widget 2"
-msgstr "Frontpage Widget 2"
+msgstr "Voorpagina Widget 2"
 
 #: ../functions.php:116
 msgid "Homepage Widget 3"
-msgstr "Frontpage Widget 3"
+msgstr "Voorpagina Widget 3"
 
 #: ../functions.php:126
 msgid "Footer Widget 1"
@@ -234,21 +234,22 @@ msgstr "<i class=\"fa fa-chevron-left\"></i> Vorige"
 msgid "Next <i class=\"fa fa-chevron-right\"></i>"
 msgstr "Volgende <i class=\"fa fa-chevron-right\"></i>"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:90
-#: ../inc/admin/includes/class-options-framework-admin.php:91
+#: ../inc/admin/includes/class-options-framework-admin.php:85
+#: ../inc/admin/includes/class-options-framework-admin.php:86
+#: ../inc/admin/includes/class-options-framework-admin.php:307
 msgid "Theme Options"
 msgstr "Thema opties"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:186
+#: ../inc/admin/includes/class-options-framework-admin.php:174
 msgid "Click OK to reset. Any theme settings will be lost!"
 msgstr ""
 "Klik op OK om te resetten. Alle thema instellingen zullen verloren gaan!"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:217
+#: ../inc/admin/includes/class-options-framework-admin.php:205
 msgid "Default options restored."
 msgstr "Standaard instellingen hersteld."
 
-#: ../inc/admin/includes/class-options-framework-admin.php:271
+#: ../inc/admin/includes/class-options-framework-admin.php:259
 msgid "Options saved."
 msgstr "Instellingen opgeslagen."
 
@@ -382,7 +383,7 @@ msgstr "Volg ons op"
 #: ../inc/extras.php:261
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
-msgstr "Thema door %1$s Mogelijk gemaakt door %2$s"
+msgstr "Thema van %1$s, draait op %2$s"
 
 #: ../inc/extras.php:363
 msgid "Support and Documentation"
@@ -538,7 +539,7 @@ msgstr "Algemeen"
 
 #: ../options.php:118
 msgid "Do You want to display image slider on the Home Page?"
-msgstr "Wil je de afbeeldings slider op de Frontpage weergeven?"
+msgstr "Wil je de afbeeldings slider op de Voorpagina weergeven?"
 
 #: ../options.php:119
 msgid "Check if you want to enable slider"
@@ -802,7 +803,7 @@ msgstr "Foursquare"
 
 #: ../options.php:392
 msgid "Other"
-msgstr "Andere"
+msgstr "Overige"
 
 #: ../options.php:395
 msgid "Custom CSS"
