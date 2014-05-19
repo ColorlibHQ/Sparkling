@@ -2,25 +2,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-12 13:15+0200\n"
-"PO-Revision-Date: Sun May 18 2014 19:13:48 GMT+0200 (Środkowoeuropejski czas "
-"letni)\n"
-"Last-Translator: Jerry1333 <poczta@jerry1333.net>\n"
+"POT-Creation-Date: 2014-05-19 16:23+0200\n"
+"PO-Revision-Date: 2014-05-19 16:23+0200\n"
+"Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
-"Language: Polish\n"
-"Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Loco-Source-Locale: en_GB\n"
-"X-Generator: Loco - https://localise.biz/\n"
+"X-Generator: Poedit 1.6.5\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
+"X-Loco-Parser: loco_parse_po\n"
+"X-Loco-Target-Locale: pl_PL\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
-"X-Loco-Parser: loco_parse_po\n"
-"X-Loco-Target-Locale: pl_PL"
 
 #: ../404.php:15
 msgid "Oops! That page can&rsquo;t be found."
@@ -31,30 +31,35 @@ msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr ""
-"Nic nie znaleziono w tej lokalizacji. Spróbuj jednego z poniższych linków albo "
-"użyj wyszukiwarki."
+"Nic nie znaleziono w tej lokalizacji. Spróbuj jednego z poniższych linków "
+"albo użyj wyszukiwarki."
 
 #: ../404.php:31
 msgid "Most Used Categories"
 msgstr "Najczęściej używane kategorie."
 
 #: ../404.php:52
+#, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Spróbuj wyszukać w miesięcznych archiwach. %1$s"
 
 #: ../archive.php:27
+#, php-format
 msgid "Author: %s"
 msgstr "Autor: %s"
 
 #: ../archive.php:30
+#, php-format
 msgid "Day: %s"
 msgstr "Dzień: %s"
 
 #: ../archive.php:33
+#, php-format
 msgid "Month: %s"
 msgstr "Miesiąc: %s"
 
 #: ../archive.php:36
+#, php-format
 msgid "Year: %s"
 msgstr "Rok: %s"
 
@@ -99,6 +104,7 @@ msgid "Archives"
 msgstr "Archiwa"
 
 #: ../comments.php:30
+#, php-format
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
@@ -126,8 +132,12 @@ msgid "Nothing Found"
 msgstr "Nic nie znaleziono"
 
 #: ../content-none.php:19
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Gotowy aby opublikować swój pierwszy post? <a href=\"%1$s\">Zacznij tutaj</a>."
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Gotowy aby opublikować swój pierwszy post? <a href=\"%1$s\">Zacznij tutaj</"
+"a>."
 
 #: ../content-none.php:23
 msgid ""
@@ -139,8 +149,8 @@ msgstr ""
 
 #: ../content-none.php:28
 msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching "
-"can help."
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
 msgstr ""
 "Wygląda na to że nie możemy znaleźć tego czego szukasz. Może wyszukiwarka "
 "pomoże?"
@@ -160,6 +170,7 @@ msgid ", "
 msgstr ","
 
 #: ../content-single.php:23
+#, php-format
 msgid " %1$s"
 msgstr " %1$s"
 
@@ -231,21 +242,20 @@ msgstr "<i class=\"fa fa-chevron-left\"></i> Poprzednie"
 msgid "Next <i class=\"fa fa-chevron-right\"></i>"
 msgstr "Następne <i class=\"fa fa-chevron-right\"></i>"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:85
-#: ../inc/admin/includes/class-options-framework-admin.php:86
-#: ../inc/admin/includes/class-options-framework-admin.php:307
+#: ../inc/admin/includes/class-options-framework-admin.php:90
+#: ../inc/admin/includes/class-options-framework-admin.php:91
 msgid "Theme Options"
 msgstr "Opcje tematu"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:174
+#: ../inc/admin/includes/class-options-framework-admin.php:186
 msgid "Click OK to reset. Any theme settings will be lost!"
 msgstr "Naciśnij OK aby zresetować. Wszystkie ustawienia zostaną utracone!"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:205
+#: ../inc/admin/includes/class-options-framework-admin.php:217
 msgid "Default options restored."
 msgstr "Przywrócono domyślne opcje."
 
-#: ../inc/admin/includes/class-options-framework-admin.php:259
+#: ../inc/admin/includes/class-options-framework-admin.php:271
 msgid "Options saved."
 msgstr "Opcje zapisane."
 
@@ -265,7 +275,8 @@ msgstr "Usuń"
 
 #: ../inc/admin/includes/class-options-media-uploader.php:71
 msgid "Upgrade your version of WordPress for full media support."
-msgstr "Zaktualizuj swoją instalację WordPress-a aby uzyskać pełną obsługę mediów."
+msgstr ""
+"Zaktualizuj swoją instalację WordPress-a aby uzyskać pełną obsługę mediów."
 
 #: ../inc/admin/includes/class-options-media-uploader.php:95
 msgid "View File"
@@ -348,6 +359,7 @@ msgid "Bold Italic"
 msgstr "Pogrubiona Kursywa"
 
 #: ../inc/extras.php:63
+#, php-format
 msgid "Page %s"
 msgstr "Strona %s"
 
@@ -357,9 +369,10 @@ msgstr "Szukaj..."
 
 #: ../inc/extras.php:132
 msgid ""
-"<p>This post is password protected. To view it please enter your password below:"
-"</p>"
-msgstr "<p>Ten post jest chroniony hasłem. Aby go zobaczyć wpisz hasło poniżej:</p>"
+"<p>This post is password protected. To view it please enter your password "
+"below:</p>"
+msgstr ""
+"<p>Ten post jest chroniony hasłem. Aby go zobaczyć wpisz hasło poniżej:</p>"
 
 #: ../inc/extras.php:133
 msgid "Password:"
@@ -374,6 +387,7 @@ msgid "Follow us on "
 msgstr "Śledź nas na"
 
 #: ../inc/extras.php:261
+#, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Temat stworzony przez %1$s Napędzany przez %2$s"
 
@@ -387,8 +401,8 @@ msgstr "Dokumentacja"
 
 #: ../inc/extras.php:370
 msgid ""
-"The best way to contact us with <b>support questions</b> and <b>bug reports</b> "
-"is via"
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
 msgstr "Najlepsza metoda aby się z nami skontaktować jest przez"
 
 #: ../inc/extras.php:370
@@ -578,10 +592,11 @@ msgid "Custom Favicon"
 msgstr "Własna favikona"
 
 #: ../options.php:159
-msgid "Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
+msgid ""
+"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
 msgstr ""
-"Wybierz plik o wymiarach 32 px x 32 px w formacie PNG/GIF który zostanie użyty "
-"jako favikona"
+"Wybierz plik o wymiarach 32 px x 32 px w formacie PNG/GIF który zostanie "
+"użyty jako favikona"
 
 #: ../options.php:164
 msgid "Action Button"
@@ -804,6 +819,7 @@ msgid "Additional CSS"
 msgstr "Dodatkowy CSS"
 
 #: ../search.php:16
+#, php-format
 msgid "Search Results for: %s"
 msgstr "Wyniki wyszukiwania dla: %s"
 

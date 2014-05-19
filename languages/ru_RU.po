@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2014-05-19 16:09+0200\n"
-"PO-Revision-Date: 2014-05-19 16:09+0200\n"
+"POT-Creation-Date: 2014-05-19 16:25+0200\n"
+"PO-Revision-Date: 2014-05-19 16:25+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: ru\n"
@@ -381,20 +381,20 @@ msgstr "Отрпавить"
 msgid "Follow us on "
 msgstr "Присоединяйтесь к нам"
 
-#: ../inc/extras.php:260
+#: ../inc/extras.php:261
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Тема от %1$s. Работает на %2$s"
 
-#: ../inc/extras.php:362
+#: ../inc/extras.php:363
 msgid "Support and Documentation"
 msgstr "Поддержка и Документация"
 
-#: ../inc/extras.php:368
+#: ../inc/extras.php:369
 msgid "Sparkling Documentation"
 msgstr "Документация Sparkling"
 
-#: ../inc/extras.php:369
+#: ../inc/extras.php:370
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -402,25 +402,25 @@ msgstr ""
 "Чтобы связаться с нами по вопросам <b>технической поддержки</b> и <b>отчетов "
 "об ошибках</b>, используйте"
 
-#: ../inc/extras.php:369
+#: ../inc/extras.php:370
 msgid "Colorlib support forum"
 msgstr "Форум поддержки Colorlib"
 
-#: ../inc/extras.php:370
+#: ../inc/extras.php:371
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr ""
 "Если вам понравилась эта тема, я был бы благодрен за любой из следующих "
 "вариантов:"
 
-#: ../inc/extras.php:372
+#: ../inc/extras.php:373
 msgid "Rate this Theme"
 msgstr "Оценить эту тему"
 
-#: ../inc/extras.php:373
+#: ../inc/extras.php:374
 msgid "Like on Facebook"
 msgstr "Поставить лайк на Facebook"
 
-#: ../inc/extras.php:374
+#: ../inc/extras.php:375
 msgid "Follow on Twitter"
 msgstr "Читать Twitter"
 

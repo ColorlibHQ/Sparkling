@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2014-05-12 13:15+0200\n"
-"PO-Revision-Date: 2014-05-14 19:43+0100\n"
+"POT-Creation-Date: 2014-05-19 16:23+0200\n"
+"PO-Revision-Date: 2014-05-19 16:23+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: en_US\n"
@@ -234,22 +234,21 @@ msgstr "<i class=\"fa fa-chevron-left\"></i> Vorige"
 msgid "Next <i class=\"fa fa-chevron-right\"></i>"
 msgstr "Volgende <i class=\"fa fa-chevron-right\"></i>"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:85
-#: ../inc/admin/includes/class-options-framework-admin.php:86
-#: ../inc/admin/includes/class-options-framework-admin.php:307
+#: ../inc/admin/includes/class-options-framework-admin.php:90
+#: ../inc/admin/includes/class-options-framework-admin.php:91
 msgid "Theme Options"
 msgstr "Thema opties"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:174
+#: ../inc/admin/includes/class-options-framework-admin.php:186
 msgid "Click OK to reset. Any theme settings will be lost!"
 msgstr ""
 "Klik op OK om te resetten. Alle thema instellingen zullen verloren gaan!"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:205
+#: ../inc/admin/includes/class-options-framework-admin.php:217
 msgid "Default options restored."
 msgstr "Standaard instellingen hersteld."
 
-#: ../inc/admin/includes/class-options-framework-admin.php:259
+#: ../inc/admin/includes/class-options-framework-admin.php:271
 msgid "Options saved."
 msgstr "Instellingen opgeslagen."
 
