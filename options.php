@@ -266,6 +266,18 @@ function optionsframework_options() {
 							'std' => '',
 							'type' => 'color');
 
+		$options[] = array( 'name' => __('Top nav dropdown item hover color', 'sparkling'),
+							'desc' => __('Dropdown item hover color', 'sparkling'),
+							'id' => 'nav_dropdown_item_hover',
+							'std' => '',
+							'type' => 'color');
+
+		$options[] = array( 'name' => __('Top nav dropdown item background hover color', 'sparkling'),
+							'desc' => __('Background of dropdown item hover color', 'sparkling'),
+							'id' => 'nav_dropdown_bg_hover',
+							'std' => '',
+							'type' => 'color');
+
 		$options[] = array( 'name' => __('Footer', 'sparkling'),
 							'type' => 'heading');
 

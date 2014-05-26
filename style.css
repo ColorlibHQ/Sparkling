@@ -780,6 +780,7 @@ object {
   color: #DADADA;
   font-size: 20px;
   margin: 13px 0;
+  font-family: 'Roboto Slab', serif;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
@@ -810,6 +811,9 @@ object {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
   color: #fff;
   background-color: #DA4453;
+}
+.dropdown-menu {
+  font-size: 13px;
 }
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
   color: #656D78;

@@ -69,6 +69,7 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 * Recreated default WordPress gallery support
 * Improved code consistency in extra.php file
 * Several other code improvement for main theme functions
+* Recreated logic behind color in Theme Options. Now these settings provides with more flexibility.
 
 = 1.4.2 - 24.05.2014 =
 

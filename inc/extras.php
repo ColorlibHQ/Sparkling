@@ -302,7 +302,7 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
         echo '.btn-default, .label-default, .flex-caption h2, .btn.btn-default.read-more {background-color: '.of_get_option('element_color').'; border-color: '.of_get_option('element_color').';} .site-main [class*="navigation"] a, .more-link { color: '.of_get_option('element_color').'}';
       }
       if ( of_get_option('element_color_hover')) {
-        echo '.btn-default:hover, .label-default[href]:hover, .tagcloud a:hover, .main-content [class*="navigation"] a:hover, .label-default[href]:focus, #infinite-handle span:hover, .btn.btn-default.read-more:hover, .btn-default:hover, .scroll-to-top:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .site-main [class*="navigation"] a:hover, .more-link:hover, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover,  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus  { background-color: '.of_get_option('element_color_hover').'; border-color: '.of_get_option('element_color_hover').'; } .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .entry-title a:hover {color: '.of_get_option('element_color_hover').'}';
+        echo '.btn-default:hover, .label-default[href]:hover, .tagcloud a:hover, .main-content [class*="navigation"] a:hover, .label-default[href]:focus, #infinite-handle span:hover, .btn.btn-default.read-more:hover, .btn-default:hover, .scroll-to-top:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .site-main [class*="navigation"] a:hover, .more-link:hover, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover, .cfa-button:hover { background-color: '.of_get_option('element_color_hover').'; border-color: '.of_get_option('element_color_hover').'; }';
       }
       if ( of_get_option('cfa_bg_color')) {
         echo '.cfa { background-color: '.of_get_option('cfa_bg_color').'; } .cfa-button:hover a {color: '.of_get_option('cfa_bg_color').';}';
@@ -310,11 +310,8 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
       if ( of_get_option('cfa_color')) {
         echo '.cfa-text { color: '.of_get_option('cfa_color').';}';
       }
-      if ( of_get_option('cfa_btn_color')) {
-        echo '.cfa-button {border-color: '.of_get_option('cfa_btn_color').';}';
-      }
-      if ( of_get_option('cfa_btn_txt_color')) {
-        echo '.cfa-button {color: '.of_get_option('cfa_btn_txt_color').';}';
+      if ( of_get_option('cfa_btn_color') || of_get_option('cfa_btn_txt_color') ) {
+        echo '.cfa-button {border-color: '.of_get_option('cfa_btn_color').'; color: '.of_get_option('cfa_btn_txt_color').';}';
       }
       if ( of_get_option('heading_color')) {
         echo 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .entry-title {color: '.of_get_option('heading_color').';}';
@@ -326,13 +323,16 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
         echo '.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { color: '.of_get_option('nav_link_color').';}';
       }
       if ( of_get_option('nav_item_hover_color')) {
-        echo '.navbar-default .navbar-nav > li > a:hover {color: '.of_get_option('nav_item_hover_color').';}';
+        echo '.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .entry-title a:hover {color: '.of_get_option('nav_item_hover_color').';}';
       }
       if ( of_get_option('nav_dropdown_bg')) {
-        echo '.dropdown-menu, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {background-color: '.of_get_option('nav_dropdown_bg').';}';
+        echo '.dropdown-menu {background-color: '.of_get_option('nav_dropdown_bg').';}';
       }
       if ( of_get_option('nav_dropdown_item')) {
         echo '.navbar-default .navbar-nav .open .dropdown-menu > li > a, .dropdown-menu > li > a { color: '.of_get_option('nav_dropdown_item').';}';
+      }
+      if ( of_get_option('nav_dropdown_bg_hover') || of_get_option('nav_dropdown_item_hover') ) {
+        echo '.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {background-color: '.of_get_option('nav_dropdown_bg_hover').'; color:'.of_get_option('nav_dropdown_item_hover').'}';
       }
       if ( of_get_option('footer_bg_color')) {
         echo '#colophon {background-color: '.of_get_option('footer_bg_color').';}';
