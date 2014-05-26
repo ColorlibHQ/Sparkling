@@ -4,7 +4,7 @@ Theme URI: http://colorlib.com/wp/themes/sparkling
 Author: Colorlib
 Author URI: http://colorlib.com/
 Description: Sparkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, design, art, personal and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready and is available in Spanish, French, Dutch, Polish, Russian and Italian. Sparkling is a free WordPress theme with premium functionality and design.
-Version: 1.4.2
+Version: 1.5.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sparkling
@@ -215,9 +215,11 @@ textarea {
   z-index: 100000; /* Above WP toolbar */
 }
 
-/* Clearing */
+/* Clearing floats */
 .clear:before,
 .clear:after,
+.gallery:before,
+.gallery:after,
 .entry-content:before,
 .entry-content:after,
 .comment-content:before,
@@ -234,6 +236,7 @@ textarea {
 
 .clear:after,
 .entry-content:after,
+.gallery:after,
 .comment-content:after,
 .site-header:after,
 .site-content:after,
@@ -984,108 +987,111 @@ p.logged-in-as {
 
 /* =Gallery
 -------------------------------------------------------------- */
-/* Normal */
+.gallery {
+  margin-bottom: 20px;
+}
+.gallery-item {
+  float: left;
+  margin: 0 4px 4px 0;
+  overflow: hidden;
+  position: relative;
+}
 .gallery-columns-1 .gallery-item {
-  max-width: 648px;
+  max-width: 100%;
 }
 .gallery-columns-2 .gallery-item {
-  max-width: 324px;
+  max-width: 48%;
+  max-width: -webkit-calc(50% - 4px);
+  max-width:         calc(50% - 4px);
 }
 .gallery-columns-3 .gallery-item {
-  max-width: 216px;
+  max-width: 32%;
+  max-width: -webkit-calc(33.3% - 4px);
+  max-width:         calc(33.3% - 4px);
 }
 .gallery-columns-4 .gallery-item {
-  max-width: 162px;
+  max-width: 23%;
+  max-width: -webkit-calc(25% - 4px);
+  max-width:         calc(25% - 4px);
 }
 .gallery-columns-5 .gallery-item {
-  max-width: 129px;
+  max-width: 19%;
+  max-width: -webkit-calc(20% - 4px);
+  max-width:         calc(20% - 4px);
 }
 .gallery-columns-6 .gallery-item {
-  max-width: 108px;
+  max-width: 15%;
+  max-width: -webkit-calc(16.7% - 4px);
+  max-width:         calc(16.7% - 4px);
 }
 .gallery-columns-7 .gallery-item {
-  max-width: 92px;
+  max-width: 13%;
+  max-width: -webkit-calc(14.28% - 4px);
+  max-width:         calc(14.28% - 4px);
 }
 .gallery-columns-8 .gallery-item {
-  max-width: 81px;
+  max-width: 11%;
+  max-width: -webkit-calc(12.5% - 4px);
+  max-width:         calc(12.5% - 4px);
 }
 .gallery-columns-9 .gallery-item {
-  max-width: 72px;
+  max-width: 9%;
+  max-width: -webkit-calc(11.1% - 4px);
+  max-width:         calc(11.1% - 4px);
 }
-.gallery {
-  margin: 0 auto 18px;
-  overflow: hidden;
+.gallery-columns-1 .gallery-item:nth-of-type(1n),
+.gallery-columns-2 .gallery-item:nth-of-type(2n),
+.gallery-columns-3 .gallery-item:nth-of-type(3n),
+.gallery-columns-4 .gallery-item:nth-of-type(4n),
+.gallery-columns-5 .gallery-item:nth-of-type(5n),
+.gallery-columns-6 .gallery-item:nth-of-type(6n),
+.gallery-columns-7 .gallery-item:nth-of-type(7n),
+.gallery-columns-8 .gallery-item:nth-of-type(8n),
+.gallery-columns-9 .gallery-item:nth-of-type(9n) {
+  margin-right: 0;
 }
-.gallery .gallery-item {
-  float: left;
-  margin-top: 0;
-  text-align: center;
+.gallery-columns-1.gallery-size-medium figure.gallery-item:nth-of-type(1n+1),
+.gallery-columns-1.gallery-size-thumbnail figure.gallery-item:nth-of-type(1n+1),
+.gallery-columns-2.gallery-size-thumbnail figure.gallery-item:nth-of-type(2n+1),
+.gallery-columns-3.gallery-size-thumbnail figure.gallery-item:nth-of-type(3n+1) {
+  clear: left;
 }
-.gallery img {
-  border: 1px solid #dddddd;
-}
-.gallery .gallery-caption {
+.gallery-caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+  color: #fff;
   font-size: 12px;
-  margin: 0 0 12px;
-}
-.gallery dl {
+  line-height: 1.5;
   margin: 0;
+  max-height: 50%;
+  opacity: 0;
+  padding: 6px 8px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  width: 100%;
 }
-.gallery br+br {
+.gallery-caption:before {
+  content: "";
+  height: 100%;
+  min-height: 49px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.gallery-item:hover .gallery-caption {
+  opacity: 1;
+}
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
   display: none;
 }
-.attachment-gallery img {
-  background: #ffffff;
-  border: 1px solid #DADADA;
-  display: block;
-  height: auto;
-  margin: 15px auto;
-  max-width: 96%;
-  padding: 5px;
-  width: auto;
-}
-.gallery-meta .iso,
-.gallery-meta .camera,
-.gallery-meta .shutter,
-.gallery-meta .aperture,
-.gallery-meta .full-size,
-.gallery-meta .focal-length {
-  display: block;
-}
 
-/* Full Width */
-.page-template-page-fullwidth-php .gallery-columns-1 .gallery-item {
-  max-width: 1008px;
-}
-.page-template-page-fullwidth-php .gallery-columns-2 .gallery-item {
-  max-width: 504px;
-}
-.page-template-page-fullwidth-php .gallery-columns-3 .gallery-item {
-  max-width: 336px;
-}
-.page-template-page-fullwidth-php .gallery-columns-4 .gallery-item {
-  max-width: 252px;
-}
-.page-template-page-fullwidth-php .gallery-columns-5 .gallery-item {
-  max-width: 201px;
-}
-.page-template-page-fullwidth-php .gallery-columns-6 .gallery-item {
-  max-width: 168px;
-}
-.page-template-page-fullwidth-php .gallery-columns-7 .gallery-item {
-  max-width: 144px;
-}
-.page-template-page-fullwidth-php .gallery-columns-8 .gallery-item {
-  max-width: 126px;
-}
-.page-template-page-fullwidth-php .gallery-columns-9 .gallery-item {
-  max-width: 112px;
-}
-@media screen and (max-width: 650px) {
-  .gallery .gallery-item {
-    max-width: 100%;
-  }
-}
 /* =Footer
 ----------------------------------------------- */
 
@@ -1264,9 +1270,14 @@ p.logged-in-as {
 .social-icons a.foursquare:hover {
   background-color: #2398C9 !important;
 }
-
+.social-icons a.soundcloud:hover {
+  background-color: #F50 !important;
+}
 .fa-googleplus:before {
   content: "\f0d5";
+}
+.fa-vimeo:before {
+  content: "\f194";
 }
 
 @media (max-width: 992px) {

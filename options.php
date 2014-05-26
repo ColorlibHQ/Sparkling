@@ -335,6 +335,12 @@ function optionsframework_options() {
         			'class' => 'mini',
         			'type' => 'text');
 
+		$options[] = array(	'id' => 'social_vimeo',
+							'desc' => __('Vimeo', 'sparkling'),
+        			'std' => '',
+        			'class' => 'mini',
+        			'type' => 'text');
+
 		$options[] = array(	'id' => 'social_linkedin',
 							'desc' => __('LinkedIn', 'sparkling'),
         			'std' => '',
@@ -385,6 +391,12 @@ function optionsframework_options() {
 
     $options[] = array(	'id' => 'social_foursquare',
 							'desc' => __('Foursquare', 'sparkling'),
+        			'std' => '',
+        			'class' => 'mini',
+        			'type' => 'text');
+
+		$options[] = array(	'id' => 'social_soundcloud',
+							'desc' => __('SoundCloud', 'sparkling'),
         			'std' => '',
         			'class' => 'mini',
         			'type' => 'text');

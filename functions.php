@@ -73,6 +73,7 @@ function sparkling_setup() {
     'search-form',
     'comment-form',
     'gallery',
+    'caption',
   ) );
 }
 endif; // sparkling_setup

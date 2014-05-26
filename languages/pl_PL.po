@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-19 16:23+0200\n"
-"PO-Revision-Date: 2014-05-19 16:23+0200\n"
+"POT-Creation-Date: 2014-05-26 14:50+0200\n"
+"PO-Revision-Date: 2014-05-26 14:51+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: pl\n"
@@ -155,12 +155,12 @@ msgstr ""
 "Wygląda na to że nie możemy znaleźć tego czego szukasz. Może wyszukiwarka "
 "pomoże?"
 
-#: ../content-page.php:19 ../content-single.php:35 ../content.php:43
+#: ../content-page.php:21 ../content-single.php:35 ../content.php:43
 #: ../front-page.php:21 ../image.php:79
 msgid "Pages:"
 msgstr "Strony:"
 
-#: ../content-page.php:24 ../content-single.php:26 ../content.php:23
+#: ../content-page.php:26 ../content-single.php:26 ../content.php:23
 #: ../front-page.php:26
 msgid "Edit"
 msgstr "Edytuj"
@@ -194,43 +194,43 @@ msgstr "Czytaj więcej"
 msgid "Primary Menu"
 msgstr "Główne menu"
 
-#: ../functions.php:58 ../inc/extras.php:188
+#: ../functions.php:58 ../inc/extras.php:208
 msgid "Footer Links"
 msgstr "Linki stopki"
 
-#: ../functions.php:86
+#: ../functions.php:87
 msgid "Sidebar"
 msgstr "Pasek boczny"
 
-#: ../functions.php:96
+#: ../functions.php:97
 msgid "Homepage Widget 1"
 msgstr "Widgety strony głównej 1"
 
-#: ../functions.php:97 ../functions.php:107 ../functions.php:117
+#: ../functions.php:98 ../functions.php:108 ../functions.php:118
 msgid "Displays on the Home Page"
 msgstr "Wyświetl na stronie głównej"
 
-#: ../functions.php:106
+#: ../functions.php:107
 msgid "Homepage Widget 2"
 msgstr "Widgety strony głównej 2"
 
-#: ../functions.php:116
+#: ../functions.php:117
 msgid "Homepage Widget 3"
 msgstr "Widgety strony głównej 3"
 
-#: ../functions.php:126
+#: ../functions.php:127
 msgid "Footer Widget 1"
 msgstr "Widgety stopki 1"
 
-#: ../functions.php:127 ../functions.php:137 ../functions.php:147
+#: ../functions.php:128 ../functions.php:138 ../functions.php:148
 msgid "Used for footer widget area"
 msgstr "Używane w widgetach stopki"
 
-#: ../functions.php:136
+#: ../functions.php:137
 msgid "Footer Widget 2"
 msgstr "Widgety stopki 2"
 
-#: ../functions.php:146
+#: ../functions.php:147
 msgid "Footer Widget 3"
 msgstr "Widgety stopki 3"
 
@@ -382,46 +382,46 @@ msgstr "Hasło:"
 msgid "Submit"
 msgstr "Wyślij"
 
-#: ../inc/extras.php:160
+#: ../inc/extras.php:179
 msgid "Follow us on "
 msgstr "Śledź nas na"
 
-#: ../inc/extras.php:261
+#: ../inc/extras.php:283
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Temat stworzony przez %1$s Napędzany przez %2$s"
 
-#: ../inc/extras.php:363
+#: ../inc/extras.php:387
 msgid "Support and Documentation"
 msgstr "Wsparcie i dokumentacja"
 
-#: ../inc/extras.php:369
+#: ../inc/extras.php:393
 msgid "Sparkling Documentation"
 msgstr "Dokumentacja"
 
-#: ../inc/extras.php:370
+#: ../inc/extras.php:394
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
 msgstr "Najlepsza metoda aby się z nami skontaktować jest przez"
 
-#: ../inc/extras.php:370
+#: ../inc/extras.php:394
 msgid "Colorlib support forum"
 msgstr "Colorlib forum wsparcia"
 
-#: ../inc/extras.php:371
+#: ../inc/extras.php:395
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "Jeśli lubisz ten temat, będę wdzięczny za"
 
-#: ../inc/extras.php:373
+#: ../inc/extras.php:397
 msgid "Rate this Theme"
 msgstr "Oceń ten temat"
 
-#: ../inc/extras.php:374
+#: ../inc/extras.php:398
 msgid "Like on Facebook"
 msgstr "Polub nas na Facebook-u"
 
-#: ../inc/extras.php:375
+#: ../inc/extras.php:399
 msgid "Follow on Twitter"
 msgstr "Śledź nas na Twitterze"
 
@@ -771,50 +771,58 @@ msgid "Youtube"
 msgstr "Youtube"
 
 #: ../options.php:339
+msgid "Vimeo"
+msgstr ""
+
+#: ../options.php:345
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
-#: ../options.php:345
+#: ../options.php:351
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: ../options.php:351
+#: ../options.php:357
 msgid "RSS Feed"
 msgstr "Kanał RSS"
 
-#: ../options.php:357
+#: ../options.php:363
 msgid "Tumblr"
 msgstr "Tumblr"
 
-#: ../options.php:363
+#: ../options.php:369
 msgid "Flickr"
 msgstr "Flickr"
 
-#: ../options.php:369
+#: ../options.php:375
 msgid "Instagram"
 msgstr "Instagram"
 
-#: ../options.php:375
+#: ../options.php:381
 msgid "Dribbble"
 msgstr "Dribbble"
 
-#: ../options.php:381
+#: ../options.php:387
 msgid "Skype"
 msgstr "Skype"
 
-#: ../options.php:387
+#: ../options.php:393
 msgid "Foursquare"
 msgstr "Foursquare"
 
-#: ../options.php:392
+#: ../options.php:399
+msgid "SoundCloud"
+msgstr ""
+
+#: ../options.php:404
 msgid "Other"
 msgstr "Inne"
 
-#: ../options.php:395
+#: ../options.php:407
 msgid "Custom CSS"
 msgstr "Własny CSS"
 
-#: ../options.php:396
+#: ../options.php:408
 msgid "Additional CSS"
 msgstr "Dodatkowy CSS"
 
