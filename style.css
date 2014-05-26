@@ -901,6 +901,10 @@ p.logged-in-as {
   margin-left: 0px !important;
   padding-left: 0;
 }
+.comment-list,
+.comment-list .children {
+    list-style: none;
+}
 .comment .comment-body {
   background-color: #ffffff;
   margin: 0;
