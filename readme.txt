@@ -63,6 +63,7 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 /*========= Changelog =========*/
 
 = 1.5.0 - 26.05.2014 =
+
 * Improved Child Theme support
 * Recreated Social Icons
 * Added SoundCloud and Vimeo icons
@@ -70,6 +71,7 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 * Improved code consistency in extra.php file
 * Several other code improvement for main theme functions
 * Recreated logic behind color in Theme Options. Now these settings provides with more flexibility.
+* Added German translations thanks to Bernd Schray
 
 = 1.4.2 - 24.05.2014 =
 
