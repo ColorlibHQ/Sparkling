@@ -381,6 +381,11 @@ hr.section-divider {
 .page-template-page-fullwidth-php .col-md-8 {
   width: 100%;
 }
+@media(max-width:767px){
+    .post-inner-content {
+        padding: 20px 25px;
+    }
+}
 /* =Singe Post/Page Pagination
 ----------------------------------------------- */
 .page-links span {
