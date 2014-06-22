@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling\n"
 "POT-Creation-Date: 2014-05-30 21:45+0200\n"
-"PO-Revision-Date: 2014-06-17 13:06+0100\n"
+"PO-Revision-Date: 2014-06-17 13:07+0100\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -27,7 +27,7 @@ msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr ""
-"Scheinbar wurde die gewünschte Seite nicht gefunden. Möchtest Du einen der "
+"Scheinbar wurde die gewünschte Seite nicht gefunden. Möchten Sie einen der "
 "folgenden Links benutzen oder eine neue Suche starten?"
 
 #: 404.php:31
@@ -37,7 +37,7 @@ msgstr "Meist genutzte Kategorien"
 #: 404.php:52
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
-msgstr "Schaue in den Monatsarchiven. %1$s"
+msgstr "Schauen Sie in den Monatsarchiven. %1$s"
 
 #: archive.php:27
 #, php-format
@@ -148,15 +148,16 @@ msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"Leider war die Suche nicht erfolgreich. Versuche es mit anderen Suchwörtern."
+"Leider war die Suche nicht erfolgreich. Versuchen Sie es mit anderen "
+"Suchwörtern."
 
 #: content-none.php:28
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
-"Scheinbar konnten wir das Gewünschte nicht finden. Vielleicht hilft Dir die "
-"Suche."
+"Scheinbar konnten wir das Gewünschte nicht finden. Vielleicht hilft Ihnen "
+"die Suche."
 
 #: content-page.php:21 content-single.php:35 content.php:43 front-page.php:21
 #: image.php:79
@@ -260,7 +261,7 @@ msgstr "Standardeinstellungen wieder herstellen"
 #: inc/admin/includes/class-options-framework-admin.php:186
 msgid "Click OK to reset. Any theme settings will be lost!"
 msgstr ""
-"Klicke OK um alles rückgängig zu machen. Theme Änderungen werden nicht "
+"Klicken Sie OK um alles rückgängig zu machen. Theme Änderungen werden nicht "
 "gespeichert!"
 
 #: inc/admin/includes/class-options-framework-admin.php:217
@@ -287,7 +288,8 @@ msgstr "Entfernen"
 
 #: inc/admin/includes/class-options-media-uploader.php:71
 msgid "Upgrade your version of WordPress for full media support."
-msgstr "Lade die neueste WordPress Version für vollständigen Mediensupport."
+msgstr ""
+"Laden Sie die neueste WordPress Version für vollständigen Mediensupport."
 
 #: inc/admin/includes/class-options-media-uploader.php:95
 msgid "View File"
@@ -383,8 +385,8 @@ msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
 msgstr ""
-"<p>Dieser Artikel ist mit einem Passwort geschützt. Gib Dein Passwort ein, "
-"um den Artikel zu lesen:</p>"
+"<p>Dieser Artikel ist mit einem Passwort geschützt. Geben Sie Ihr Passwort "
+"ein, um den Artikel zu lesen:</p>"
 
 #: inc/extras.php:133
 msgid "Password:"
@@ -396,7 +398,7 @@ msgstr "Absenden"
 
 #: inc/extras.php:179
 msgid "Follow us on "
-msgstr "Folge uns auf"
+msgstr "Folgen Sie uns auf"
 
 #: inc/extras.php:283
 #, php-format
@@ -425,7 +427,7 @@ msgstr "Colorlib Support Forum"
 
 #: inc/extras.php:395
 msgid "If you like this theme, I'd appreciate any of the following:"
-msgstr "Wenn Dir dieses Theme gefällt, dann freue ich mich über:"
+msgstr "Wenn Ihnen dieses Theme gefällt, dann freue ich mich über:"
 
 #: inc/extras.php:397
 msgid "Rate this Theme"
@@ -565,7 +567,7 @@ msgstr "Haupt"
 
 #: options.php:118
 msgid "Do You want to display image slider on the Home Page?"
-msgstr "Möchtest Du den Image Slider auf der Startseite anzeigen?"
+msgstr "Möchten Sie den Image Slider auf der Startseite anzeigen?"
 
 #: options.php:119
 msgid "Check if you want to enable slider"
@@ -577,7 +579,7 @@ msgstr "Slider Kategorie"
 
 #: options.php:125
 msgid "Select a category for the featured post slider"
-msgstr "Wähle eine Anzeigekategorie für die Beiträge im Slider"
+msgstr "Wählen Sie eine Anzeigekategorie für die Beiträge im Slider"
 
 #: options.php:131
 msgid "Number of slide items"
@@ -585,7 +587,7 @@ msgstr "Anzahl Slider Bilder"
 
 #: options.php:132
 msgid "Enter the number of slide items"
-msgstr "Gib die Anzahl der Bilder im Slider an"
+msgstr "Geben Sie die Anzahl der Bilder im Slider an"
 
 #: options.php:138
 msgid "Website Layout Options"
@@ -593,7 +595,7 @@ msgstr "Website Layout Einstellungen"
 
 #: options.php:139
 msgid "Choose between Left and Right sidebar options to be used as default"
-msgstr "Wähle ob die linke oder rechte Seitenleiste voreingestellt ist"
+msgstr "Wähle Sie ob die linke oder rechte Seitenleiste voreingestellt ist"
 
 #: options.php:146
 msgid "Element color"
@@ -628,7 +630,7 @@ msgstr "Aktionsbutton Text"
 
 #: options.php:168
 msgid "Enter the text for call for action section"
-msgstr "Gib den Text für den Aktionsbutton-Abschnitt ein"
+msgstr "Geben Sie den Text für den Aktionsbutton-Abschnitt ein"
 
 #: options.php:173
 msgid "Call For Action Button Title"
@@ -636,7 +638,7 @@ msgstr "Aktionsbutton Titel"
 
 #: options.php:174
 msgid "Enter the title for Call For Action button"
-msgstr "Gib den Titel für den Aktionsbutton ein"
+msgstr "Geben Sie den Titel für den Aktionsbutton ein"
 
 #: options.php:179
 msgid "CFA button link"
@@ -644,7 +646,7 @@ msgstr "Aktionsbutton Link"
 
 #: options.php:180
 msgid "Enter the link for Call For Action button"
-msgstr "Gib den Link für den Aktionsbutton ein"
+msgstr "Geben Sie den Link für den Aktionsbutton ein"
 
 #: options.php:185
 msgid "Call For Action Text Color"
@@ -720,7 +722,7 @@ msgstr "Top nav Dropdown Hintergrund Farbe"
 
 #: options.php:258 options.php:276
 msgid "Background of dropdown item hover color"
-msgstr "Hintergrund Dropdown Element hover Farbe"
+msgstr "Hintergrund Dropdown Element - Hover Farbe"
 
 #: options.php:263
 msgid "Top nav dropdown item color"
@@ -736,7 +738,7 @@ msgstr "Top nav dropdown Eintrag - Hover Farbe"
 
 #: options.php:270
 msgid "Dropdown item hover color"
-msgstr "Dropdown Eintrag - Hover Farbe"
+msgstr "dropdown Eintrag - Hover Farbe"
 
 #: options.php:275
 msgid "Top nav dropdown item background hover color"
@@ -784,7 +786,7 @@ msgstr "Footer Social Icon Farbe"
 
 #: options.php:325
 msgid "Add full URL for your social network profiles"
-msgstr "Füge die vollständigen URL's Deiner Social Network Profile hinzu"
+msgstr "Fügen Sie die vollständigen URL's Ihrer Social Network Profile hinzu"
 
 #: options.php:326
 msgid "Facebook"
