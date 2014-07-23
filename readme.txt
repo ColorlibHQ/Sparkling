@@ -2,7 +2,7 @@
 
 Theme Name: Sparkling
 Theme URI: http://colorlib.com/wp/sparkling/
-Version: 1.5.2
+Version: 1.6.0
 Tested up to: WP 3.9
 
 Author: Aigars Silkalns
@@ -28,7 +28,8 @@ Sparkling theme uses:
 
 /*========= Description =========*/
 
-Sparkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, design, art, personal and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready and is available in Spanish. Sparkling is a free WordPress theme with premium functionality and design.
+Sparkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, design, portfolio, art, personal and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready and is available in Spanish, French, Dutch, Polish, Russian, German Brazilian Portuguese and Italian. Sparkling is a free WordPress theme with premium functionality and design. Now theme is optimized to work with bbPress, Contact Form 7, Jetpack and other popular free and premium plugins.
+
 
 For questions, comments or bug reports, visit Colorlib support forum (http://colorlib.com/wp/forums).
 
@@ -62,9 +63,15 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
 
-= 1.5.2 - 16.07.2014 =
+= 1.6.0 - 16.07.2014 =
 
 * Added Portuguese translation thanks to Lucas Mandelli
+* Updated Bootstrap to 3.2
+* Added more flexibility to slider functions via functions.min.js file.
+* Fixed problems with IE 10 & 11
+* Updated modernizer
+* Added bbPress support
+* Improved theme responsiveness
 
 = 1.5.1 - 26.06.2014 =
 

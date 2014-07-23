@@ -215,11 +215,16 @@ function sparkling_scripts() {
 
   // Add slider JS only if is front page ans slider is enabled
 	if( ( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1 ) {
-		wp_enqueue_script( 'flexslider', get_template_directory_uri() . '/inc/js/flexslider.min.js', array('jquery'), '20140222', true );
+		wp_enqueue_script( 'flexslider-js', get_template_directory_uri() . '/inc/js/flexslider.min.js', array('jquery'), '20140222', true );
 	}
 
+  // Flexslider customization
+  if( ( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1 ) {
+    wp_enqueue_script( 'flexslider-customization', get_template_directory_uri() . '/inc/js/flexslider-custom.js', array('jquery', 'flexslider-js'), '20140716', true );
+  }
+
   // Main theme related functions
-	wp_enqueue_script( 'sparkling-bootstrapwp', get_template_directory_uri() . '/inc/js/functions.min.js', array('jquery') );
+	wp_enqueue_script( 'sparkling-functions', get_template_directory_uri() . '/inc/js/functions.min.js', array('jquery') );
 
 	// This one is for accessibility
   wp_enqueue_script( 'sparkling-skip-link-focus-fix', get_template_directory_uri() . '/inc/js/skip-link-focus-fix.js', array(), '20140222', true );

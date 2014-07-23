@@ -3,8 +3,8 @@ Theme Name: Sparkling
 Theme URI: http://colorlib.com/wp/themes/sparkling
 Author: Colorlib
 Author URI: http://colorlib.com/
-Description: Sparkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, design, art, personal and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready and is available in Spanish, French, Dutch, Polish, Russian, German Brazilian Portuguese and Italian. Sparkling is a free WordPress theme with premium functionality and design.
-Version: 1.5.2
+Description: Sparkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, portfolio, design, art, photography, personal and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready and is available in Spanish, French, Dutch, Polish, Russian, German Brazilian Portuguese and Italian. Sparkling is a free WordPress theme with premium functionality and design. Now theme is optimized to work with bbPress, Contact Form 7, Jetpack and other popular free and premium plugins.
+Version: 1.6.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sparkling
@@ -14,7 +14,7 @@ Tags: green, light, white, gray, black, one-column, two-columns, right-sidebar, 
 
 This theme, like WordPress, is licensed under the GPL.
 
-sparkling is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
+sparkling is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
 
 */
 
@@ -669,6 +669,26 @@ object {
 }
 .input-group-btn:last-child>.btn {
   margin-left: 0;
+}
+button {
+  background-color: #DA4453;
+  border: none;
+  text-transform: uppercase;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 12px;
+  -webkit-transition: background-color 0.3s linear;
+     -moz-transition: background-color 0.3s linear;
+       -o-transition: background-color 0.3s linear;
+          transition: background-color 0.3s linear;
+}
+button:hover {
+  background-color: #363636;
+}
+#subscription-toggle {
+    float: right;
 }
 /* =Infinite Scroll
 ----------------------------------------------- */
@@ -1351,7 +1371,6 @@ table#wp-calendar {
 .no-js #submit,
 .no-js .tagcloud,
 .no-js .comment-reply-link,
-.no-js button,
 .no-js .widget_rss ul,
 button[type=submit],
 .no-js .postform,

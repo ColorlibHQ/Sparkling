@@ -40,3 +40,16 @@ jQuery(document).ready(function(){
 	});
 
 });
+
+// Slider functions
+// Can also be used with $(document).ready()
+jQuery(document).ready(function ($) {
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+      animation: "fade",
+      slideshowSpeed: 7000,
+      smoothHeight: true,
+      touch: true
+    });
+  });
+});
