@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2014-05-26 14:50+0200\n"
-"PO-Revision-Date: 2014-05-26 14:50+0200\n"
+"POT-Creation-Date: 2014-07-23 20:32+0200\n"
+"PO-Revision-Date: 2014-07-23 20:32+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.5\n"
+"X-Generator: Poedit 1.6.7\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
@@ -578,7 +578,7 @@ msgstr "Colore elemento"
 
 #: ../options.php:147 ../options.php:153 ../options.php:186 ../options.php:192
 #: ../options.php:198 ../options.php:203 ../options.php:225 ../options.php:231
-#: ../options.php:240 ../options.php:302 ../options.php:308
+#: ../options.php:240 ../options.php:314 ../options.php:320
 msgid "Default used if no color is selected"
 msgstr "Valore predefinito usato se nessun colore è selezionato"
 
@@ -695,7 +695,7 @@ msgstr "Colore del link:hover"
 msgid "Top nav dropdown background color"
 msgstr "Colore di sfondo del menu a tendina"
 
-#: ../options.php:258
+#: ../options.php:258 ../options.php:276
 msgid "Background of dropdown item hover color"
 msgstr "Sfondo della voce in hover del menu a tendina"
 
@@ -708,118 +708,133 @@ msgid "Dropdown item color"
 msgstr "Colore voce del menu a tendina"
 
 #: ../options.php:269
+#, fuzzy
+msgid "Top nav dropdown item hover color"
+msgstr "Colore voce del menu a tendina della navigazione principale"
+
+#: ../options.php:270
+#, fuzzy
+msgid "Dropdown item hover color"
+msgstr "Sfondo della voce in hover del menu a tendina"
+
+#: ../options.php:275
+#, fuzzy
+msgid "Top nav dropdown item background hover color"
+msgstr "Colore voce del menu a tendina della navigazione principale"
+
+#: ../options.php:281
 msgid "Footer"
 msgstr "Piè di pagina"
 
-#: ../options.php:272
+#: ../options.php:284
 msgid "Footer widget area background color"
 msgstr "Colore di sfondo del widget a piè di pagina"
 
-#: ../options.php:277
+#: ../options.php:289
 msgid "Footer background color"
 msgstr "Colore di sfondo del piè di pagina"
 
-#: ../options.php:282
+#: ../options.php:294
 msgid "Footer text color"
 msgstr "Colore del testo nel piè di pagina"
 
-#: ../options.php:287
+#: ../options.php:299
 msgid "Footer link color"
 msgstr "Colore dei link del piè di pagina"
 
-#: ../options.php:292
+#: ../options.php:304
 msgid "Footer information"
 msgstr "Informazioni piè di pagina"
 
-#: ../options.php:293
+#: ../options.php:305
 msgid "Copyright text in footer"
 msgstr "Testo dei copyright nel piè di pagina"
 
-#: ../options.php:298
+#: ../options.php:310
 msgid "Social"
 msgstr "Social"
 
-#: ../options.php:301
+#: ../options.php:313
 msgid "Social icon color"
 msgstr "Colore icone social"
 
-#: ../options.php:307
+#: ../options.php:319
 msgid "Footer social icon color"
 msgstr "Colore icone social nel piè di pagina"
 
-#: ../options.php:313
+#: ../options.php:325
 msgid "Add full URL for your social network profiles"
 msgstr "Aggiungi l'URL completo per i tuoi profili sui social network"
 
-#: ../options.php:314
+#: ../options.php:326
 msgid "Facebook"
 msgstr "Facebook"
 
-#: ../options.php:321
+#: ../options.php:333
 msgid "Twitter"
 msgstr "Twitter"
 
-#: ../options.php:327
+#: ../options.php:339
 msgid "Google+"
 msgstr "Google+"
 
-#: ../options.php:333
+#: ../options.php:345
 msgid "Youtube"
 msgstr "Youtube"
 
-#: ../options.php:339
+#: ../options.php:351
 msgid "Vimeo"
 msgstr ""
 
-#: ../options.php:345
+#: ../options.php:357
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
-#: ../options.php:351
+#: ../options.php:363
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: ../options.php:357
+#: ../options.php:369
 msgid "RSS Feed"
 msgstr "RSS Feed"
 
-#: ../options.php:363
+#: ../options.php:375
 msgid "Tumblr"
 msgstr "Tumblr"
 
-#: ../options.php:369
+#: ../options.php:381
 msgid "Flickr"
 msgstr "Flickr"
 
-#: ../options.php:375
+#: ../options.php:387
 msgid "Instagram"
 msgstr "Instagram"
 
-#: ../options.php:381
+#: ../options.php:393
 msgid "Dribbble"
 msgstr "Dribbble"
 
-#: ../options.php:387
+#: ../options.php:399
 msgid "Skype"
 msgstr "Skype"
 
-#: ../options.php:393
+#: ../options.php:405
 msgid "Foursquare"
 msgstr ""
 
-#: ../options.php:399
+#: ../options.php:411
 msgid "SoundCloud"
 msgstr ""
 
-#: ../options.php:404
+#: ../options.php:416
 msgid "Other"
 msgstr "Altro"
 
-#: ../options.php:407
+#: ../options.php:419
 msgid "Custom CSS"
 msgstr "CSS personalizzato"
 
-#: ../options.php:408
+#: ../options.php:420
 msgid "Additional CSS"
 msgstr "CSS aggiuntivo"
 

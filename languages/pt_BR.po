@@ -1,18 +1,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2014-05-26 14:56+0200\n"
-"PO-Revision-Date: 2014-07-17 20:58-0300\n"
+"POT-Creation-Date: 2014-07-23 20:32+0200\n"
+"PO-Revision-Date: 2014-07-23 20:32+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.6\n"
+"X-Generator: Poedit 1.6.7\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
-"Language: pt_BR\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
@@ -574,7 +574,7 @@ msgstr "Cor do elemento"
 
 #: ../options.php:147 ../options.php:153 ../options.php:186 ../options.php:192
 #: ../options.php:198 ../options.php:203 ../options.php:225 ../options.php:231
-#: ../options.php:240 ../options.php:302 ../options.php:308
+#: ../options.php:240 ../options.php:314 ../options.php:320
 msgid "Default used if no color is selected"
 msgstr "Padrão usado se nenhuma cor for selecionada"
 
@@ -598,52 +598,52 @@ msgstr "Botão de ação"
 #: ../options.php:167
 #, fuzzy
 msgid "Call For Action Text"
-msgstr "Call For Action Text"
+msgstr "Texto da Chamada de Ação"
 
 #: ../options.php:168
 #, fuzzy
 msgid "Enter the text for call for action section"
-msgstr "Enter the text for call for action section"
+msgstr "Introduza o texto para a seção da Chamada de Ação"
 
 #: ../options.php:173
 #, fuzzy
 msgid "Call For Action Button Title"
-msgstr "Call For Action Button Title"
+msgstr "Título do botão da Chamada de Ação"
 
 #: ../options.php:174
 #, fuzzy
 msgid "Enter the title for Call For Action button"
-msgstr "Enter the title for Call For Action button"
+msgstr "Introduza o título para o botão da Chamada de Ação"
 
 #: ../options.php:179
 #, fuzzy
 msgid "CFA button link"
-msgstr "Link CFA"
+msgstr "Link do Botão do CFA"
 
 #: ../options.php:180
 #, fuzzy
 msgid "Enter the link for Call For Action button"
-msgstr "Enter the link for Call For Action button"
+msgstr "Introduza o link para o botão da Chamada de Ação"
 
 #: ../options.php:185
 #, fuzzy
 msgid "Call For Action Text Color"
-msgstr "Call For Action Text Color"
+msgstr "Cor do texto da Chamada de Ação"
 
 #: ../options.php:191
 #, fuzzy
 msgid "Call For Action Background Color"
-msgstr "Call For Action Background Color"
+msgstr "Cor do plano de fundo da Chamada de Ação"
 
 #: ../options.php:197
 #, fuzzy
 msgid "Call For Action Button Border Color"
-msgstr "Call For Action Button Border Color"
+msgstr "Cor da borda do botão da Chamada de Ação"
 
 #: ../options.php:202
 #, fuzzy
 msgid "Call For Action Button Text Color"
-msgstr "Call For Action Button Text Color"
+msgstr "Cor do texto do botão da Chamada de Ação"
 
 #: ../options.php:208
 msgid "Typography"
@@ -652,12 +652,12 @@ msgstr "Tipografia"
 #: ../options.php:211
 #, fuzzy
 msgid "Main Body Text"
-msgstr "Texto do Conteúdo Principal"
+msgstr "Corpo do texto da Página Principal"
 
 #: ../options.php:212
 #, fuzzy
 msgid "Used in P tags"
-msgstr "Used in P tags"
+msgstr "Usado em tags P (Parágrafo)"
 
 #: ../options.php:218
 msgid "Heading Color"
@@ -703,7 +703,7 @@ msgstr "Cor do link:hover"
 msgid "Top nav dropdown background color"
 msgstr "Cor do background do dropdown do menu do topo"
 
-#: ../options.php:258
+#: ../options.php:258 ../options.php:276
 msgid "Background of dropdown item hover color"
 msgstr "Cor do background do dropdown do item:hover"
 
@@ -716,118 +716,133 @@ msgid "Dropdown item color"
 msgstr "Cor do item do dropdown"
 
 #: ../options.php:269
+#, fuzzy
+msgid "Top nav dropdown item hover color"
+msgstr "Cor do Item do Dropdown (Submenu em lista suspensa) do Menu do topo"
+
+#: ../options.php:270
+#, fuzzy
+msgid "Dropdown item hover color"
+msgstr "Cor do plano de fundo do ítem do Dropdown (Submenu em lista suspensa)"
+
+#: ../options.php:275
+#, fuzzy
+msgid "Top nav dropdown item background hover color"
+msgstr "Cor do Item do Dropdown (Submenu em lista suspensa) do Menu do topo"
+
+#: ../options.php:281
 msgid "Footer"
 msgstr "Rodapé"
 
-#: ../options.php:272
+#: ../options.php:284
 msgid "Footer widget area background color"
 msgstr "Cor do background do widget do rodapé"
 
-#: ../options.php:277
+#: ../options.php:289
 msgid "Footer background color"
 msgstr "Cor do background do rodapé"
 
-#: ../options.php:282
+#: ../options.php:294
 msgid "Footer text color"
 msgstr "Cor do texto do rodapé"
 
-#: ../options.php:287
+#: ../options.php:299
 msgid "Footer link color"
 msgstr "Cor do link do rodapé"
 
-#: ../options.php:292
+#: ../options.php:304
 msgid "Footer information"
 msgstr "Informações rodapé"
 
-#: ../options.php:293
+#: ../options.php:305
 msgid "Copyright text in footer"
 msgstr "Texto de Copyright no rodapé"
 
-#: ../options.php:298
+#: ../options.php:310
 msgid "Social"
 msgstr "Social"
 
-#: ../options.php:301
+#: ../options.php:313
 msgid "Social icon color"
 msgstr "Cor do ícone social"
 
-#: ../options.php:307
+#: ../options.php:319
 msgid "Footer social icon color"
 msgstr "Cor do ícone social no rodapé"
 
-#: ../options.php:313
+#: ../options.php:325
 msgid "Add full URL for your social network profiles"
 msgstr "Adicione a URL completa das suas redes sociais"
 
-#: ../options.php:314
+#: ../options.php:326
 msgid "Facebook"
 msgstr "Facebook"
 
-#: ../options.php:321
+#: ../options.php:333
 msgid "Twitter"
 msgstr "Twitter"
 
-#: ../options.php:327
+#: ../options.php:339
 msgid "Google+"
 msgstr "Google+"
 
-#: ../options.php:333
+#: ../options.php:345
 msgid "Youtube"
 msgstr "Youtube"
 
-#: ../options.php:339
+#: ../options.php:351
 msgid "Vimeo"
 msgstr "Vimeo"
 
-#: ../options.php:345
+#: ../options.php:357
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
-#: ../options.php:351
+#: ../options.php:363
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: ../options.php:357
+#: ../options.php:369
 msgid "RSS Feed"
 msgstr "RSS Feed"
 
-#: ../options.php:363
+#: ../options.php:375
 msgid "Tumblr"
 msgstr "Tumblr"
 
-#: ../options.php:369
+#: ../options.php:381
 msgid "Flickr"
 msgstr "Flickr"
 
-#: ../options.php:375
+#: ../options.php:387
 msgid "Instagram"
 msgstr "Instagram"
 
-#: ../options.php:381
+#: ../options.php:393
 msgid "Dribbble"
 msgstr "Dribbble"
 
-#: ../options.php:387
+#: ../options.php:399
 msgid "Skype"
 msgstr "Skype"
 
-#: ../options.php:393
+#: ../options.php:405
 msgid "Foursquare"
 msgstr "Foursquare"
 
-#: ../options.php:399
+#: ../options.php:411
 msgid "SoundCloud"
 msgstr "SoundCloud"
 
-#: ../options.php:404
+#: ../options.php:416
 msgid "Other"
 msgstr "Outro"
 
-#: ../options.php:407
+#: ../options.php:419
 msgid "Custom CSS"
 msgstr "CSS Personalizado"
 
-#: ../options.php:408
+#: ../options.php:420
 msgid "Additional CSS"
 msgstr "CSS Adicional"
 
