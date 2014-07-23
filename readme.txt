@@ -2,7 +2,7 @@
 
 Theme Name: Sparkling
 Theme URI: http://colorlib.com/wp/sparkling/
-Version: 1.5.1
+Version: 1.5.2
 Tested up to: WP 3.9
 
 Author: Aigars Silkalns
@@ -61,6 +61,10 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
+
+= 1.5.2 - 16.07.2014 =
+
+* Added Portuguese translation thanks to Lucas Mandelli
 
 = 1.5.1 - 26.06.2014 =
 
