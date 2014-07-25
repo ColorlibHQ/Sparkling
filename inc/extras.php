@@ -442,6 +442,15 @@ function sparkling_caption($output, $attr, $content) {
 }
 add_filter('img_caption_shortcode', 'sparkling_caption', 10, 3);
 
+/**
+ * Skype URI support for social media icons
+ */
+function sparkling_allow_skype_protocol( $protocols ){
+    $protocols[] = 'skype';
+    return $protocols;
+}
+add_filter( 'kses_allowed_protocols' , 'sparkling_allow_skype_protocol' );
+
 /*
  * This one shows/hides the an option when a checkbox is clicked.
  */
