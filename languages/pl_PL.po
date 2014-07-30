@@ -2,30 +2,514 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-23 20:34+0200\n"
-"PO-Revision-Date: 2014-07-23 20:35+0200\n"
-"Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
-"Language-Team: colorlib <info@colorlib.com>\n"
-"Language: pl\n"
+"POT-Creation-Date: Sun, 18 May 2014 18:24:25 +0100\n"
+"PO-Revision-Date: Wed, 30 Jul 2014 12:42:25 +0100\n"
+"Last-Translator: jerry1333\n"
+"Language-Team: jerry1333\n"
+"Language: Polish\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Loco https://localise.biz\n"
 "X-Loco-Source-Locale: en_GB\n"
-"X-Generator: Poedit 1.6.7\n"
-"X-Poedit-Basepath: .\n"
-"X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
-"X-Loco-Parser: loco_parse_po\n"
 "X-Loco-Target-Locale: pl_PL\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPath-1: ..\n"
+"X-Loco-Project-Id: 1864\n"
+"X-Loco-Api-Version: 1.0.8"
 
-#: ../404.php:15
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "Ups! Strona nie może być znaleziona."
+#: ../content.php:20 loco:5378ecdfff90b259b5784360
+msgid "1 Comment"
+msgstr "1 komentarz"
 
-#: ../404.php:19
+#: ../archive.php:66 ../sidebar.php:19 loco:5378ecdeff90b259b5784350
+msgid "Archives"
+msgstr "Archiwa"
+
+#: ../archive.php:39 loco:5378ecddff90b259b5784347
+msgid "Asides"
+msgstr "Obok"
+
+#: ../archive.php:60 loco:5378ecdeff90b259b578434e
+msgid "Audios"
+msgstr "Dzwięki"
+
+#: ../inc/admin/includes/class-options-sanitization.php:355
+#: loco:5378ece0ff90b259b578438a
+msgid "Bold"
+msgstr "Pogrubiona"
+
+#: ../inc/widgets/widget-categories.php:17
+#: ../inc/widgets/widget-categories.php:76 loco:5378ece1ff90b259b57843a0
+msgid "Categories"
+msgstr "Kategorie"
+
+#: ../archive.php:63 loco:5378ecdeff90b259b578434f
+msgid "Chats"
+msgstr "Czaty"
+
+#: ../options.php:45 loco:5378ece2ff90b259b57843b4
+msgid "Crepe"
+msgstr "Krepa"
+
+#: ../options.php:393 loco:5378ece4ff90b259b57843f5
+msgid "Dribbble"
+msgstr "Dribbble"
+
+#: ../content-page.php:26 ../content-single.php:26 ../content.php:23
+#: ../front-page.php:26 loco:5378ecdeff90b259b578435c
+msgid "Edit"
+msgstr "Edytuj"
+
+#: ../options.php:326 loco:5378ece4ff90b259b57843eb
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../options.php:37 loco:5378ece2ff90b259b57843b0
+msgid "Five"
+msgstr "Pięć"
+
+#: ../options.php:381 loco:5378ece4ff90b259b57843f3
+msgid "Flickr"
+msgstr "Flickr"
+
+#: ../options.php:281 loco:5378ece3ff90b259b57843e0
+msgid "Footer"
+msgstr "Stopka"
+
+#: ../options.php:36 loco:5378ece2ff90b259b57843af
+msgid "Four"
+msgstr "Cztery"
+
+#: ../options.php:405 loco:5378ece4ff90b259b57843f7
+msgid "Foursquare"
+msgstr "Foursquare"
+
+#: ../archive.php:42 loco:5378ecddff90b259b5784348
+msgid "Galleries"
+msgstr "Galerie"
+
+#: ../options.php:236 loco:5378ece3ff90b259b57843d6
+msgid "Header"
+msgstr "Nagłówek"
+
+#: ../archive.php:45 loco:5378ecddff90b259b5784349
+msgid "Images"
+msgstr "Obrazki"
+
+#: ../options.php:387 loco:5378ece4ff90b259b57843f4
+msgid "Instagram"
+msgstr "Instagram"
+
+#: ../inc/admin/includes/class-options-sanitization.php:354
+#: loco:5378ece0ff90b259b5784389
+msgid "Italic"
+msgstr "Kursywa"
+
+#: ../options.php:357 loco:5378ece4ff90b259b57843ef
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: ../archive.php:54 loco:5378ecddff90b259b578434c
+msgid "Links"
+msgstr "Linki"
+
+#: ../options.php:115 loco:5378ece2ff90b259b57843b6
+msgid "Main"
+msgstr "Główne"
+
+#: ../sidebar.php:26 loco:5378ece4ff90b259b57843fc
+msgid "Meta"
+msgstr "Meta"
+
+#: ../inc/admin/includes/class-options-sanitization.php:353
+#: loco:5378ece0ff90b259b5784388
+msgid "Normal"
+msgstr "normalna"
+
+#: ../options.php:44 loco:5378ece2ff90b259b57843b3
+msgid "Omelette"
+msgstr "Omlet"
+
+#: ../options.php:33 loco:5378ece2ff90b259b57843ac
+msgid "One"
+msgstr "Jeden"
+
+#: ../options.php:416 loco:5378ece4ff90b259b57843f8
+msgid "Other"
+msgstr "Inne"
+
+#: ../options.php:43 loco:5378ece2ff90b259b57843b2
+msgid "Pancake"
+msgstr "naleśnik"
+
+#: ../options.php:363 loco:5378ece4ff90b259b57843f0
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: ../archive.php:51 loco:5378ecddff90b259b578434b
+msgid "Quotes"
+msgstr "Cytaty"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:68
+#: ../inc/admin/includes/class-options-media-uploader.php:120
+#: loco:5378ece0ff90b259b5784376
+msgid "Remove"
+msgstr "Usuń"
+
+#: ../inc/extras.php:111 loco:5378ece1ff90b259b578438d
+msgid "Search..."
+msgstr "Szukaj..."
+
+#: ../functions.php:87 loco:5378ecdfff90b259b5784365
+msgid "Sidebar"
+msgstr "Pasek boczny"
+
+#: ../options.php:399 loco:5378ece4ff90b259b57843f6
+msgid "Skype"
+msgstr "Skype"
+
+#: ../options.php:310 loco:5378ece4ff90b259b57843e7
+msgid "Social"
+msgstr "Społecznościowe"
+
+#: ../options.php:411 loco:53d8d8329f50bb2b1ce88cde
+msgid "SoundCloud"
+msgstr "SoundCloud"
+
+#: ../archive.php:57 loco:5378ecdeff90b259b578434d
+msgid "Statuses"
+msgstr "Statusy"
+
+#: ../inc/extras.php:136 loco:5378ece1ff90b259b5784390
+msgid "Submit"
+msgstr "Wyślij"
+
+#: ../options.php:35 loco:5378ece2ff90b259b57843ae
+msgid "Three"
+msgstr "Trzy"
+
+#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
+#: loco:5378ece1ff90b259b57843a1
+msgid "Title "
+msgstr "Tytuł"
+
+#: ../inc/widgets/widget-popular-posts.php:99 loco:5378ece1ff90b259b57843a6
+msgid "Title"
+msgstr "Tytuł"
+
+#: ../options.php:375 loco:5378ece4ff90b259b57843f2
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: ../options.php:333 loco:5378ece4ff90b259b57843ec
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../options.php:34 loco:5378ece2ff90b259b57843ad
+msgid "Two"
+msgstr "Dwa"
+
+#: ../options.php:208 loco:5378ece3ff90b259b57843cf
+msgid "Typography"
+msgstr "Typografia"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:66
+#: ../inc/admin/includes/class-options-media-uploader.php:119
+#: loco:5378ece0ff90b259b5784375
+msgid "Upload"
+msgstr "Załaduj"
+
+#: ../archive.php:48 loco:5378ecddff90b259b578434a
+msgid "Videos"
+msgstr "Wideo"
+
+#: ../options.php:351 loco:53d8d8329f50bb2b1ce88cdd
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: ../options.php:46 loco:5378ece2ff90b259b57843b5
+msgid "Waffle"
+msgstr "Wafel"
+
+#: ../options.php:345 loco:5378ece4ff90b259b57843ee
+msgid "Youtube"
+msgstr "Youtube"
+
+#: ../options.php:164 loco:5378ece2ff90b259b57843c4
+msgid "Action Button"
+msgstr "Przycisk akcji"
+
+#: ../options.php:325 loco:5378ece4ff90b259b57843ea
+msgid "Add full URL for your social network profiles"
+msgstr "Dodaj pełny adres URL do twoich profili społecznościowych"
+
+#: ../options.php:420 loco:5378ece4ff90b259b57843fa
+msgid "Additional CSS"
+msgstr "Dodatkowy CSS"
+
+#: ../archive.php:27 loco:5378ecddff90b259b5784343
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+#: ../options.php:258 ../options.php:276 loco:5378ece3ff90b259b57843dd
+msgid "Background of dropdown item hover color"
+msgstr "Kolor tła elementu rozwijanej górnej nawigacji"
+
+#: ../inc/admin/includes/class-options-sanitization.php:356
+#: loco:5378ece0ff90b259b578438b
+msgid "Bold Italic"
+msgstr "Pogrubiona Kursywa"
+
+#: ../inc/admin/includes/class-options-sanitization.php:264
+#: loco:5378ece0ff90b259b5784384
+msgid "Bottom Center"
+msgstr "Dół Środek"
+
+#: ../inc/admin/includes/class-options-sanitization.php:263
+#: loco:5378ece0ff90b259b5784383
+msgid "Bottom Left"
+msgstr "Dół Lewo"
+
+#: ../inc/admin/includes/class-options-sanitization.php:265
+#: loco:5378ece0ff90b259b5784385
+msgid "Bottom Right"
+msgstr "Dół Prawo"
+
+#: ../content-single.php:19 loco:5378ecdfff90b259b578435d
+msgid ", "
+msgstr ","
+
+#: ../options.php:191 loco:5378ece3ff90b259b57843cc
+msgid "Call For Action Background Color"
+msgstr "CFA kolor tła"
+
+#: ../options.php:197 loco:5378ece3ff90b259b57843cd
+msgid "Call For Action Button Border Color"
+msgstr "CFA kolor obramowania"
+
+#: ../options.php:202 loco:5378ece3ff90b259b57843ce
+msgid "Call For Action Button Text Color"
+msgstr "CFA kolor tekstu"
+
+#: ../options.php:173 loco:5378ece3ff90b259b57843c7
+msgid "Call For Action Button Title"
+msgstr "Zawołanie dla tytułu przycisku akcji"
+
+#: ../options.php:167 loco:5378ece2ff90b259b57843c5
+msgid "Call For Action Text"
+msgstr "Zawołanie dla przycisku akcji"
+
+#: ../options.php:185 loco:5378ece3ff90b259b57843cb
+msgid "Call For Action Text Color"
+msgstr "CFA kolor tekstu"
+
+#: ../options.php:179 loco:5378ece3ff90b259b57843c9
+msgid "CFA button link"
+msgstr "CFA link przycisku"
+
+#: ../options.php:119 loco:5378ece2ff90b259b57843b8
+msgid "Check if you want to enable slider"
+msgstr "Zaznacz jeśli chcesz włączyć slider"
+
+#: ../options.php:139 loco:5378ece2ff90b259b57843be
+msgid "Choose between Left and Right sidebar options to be used as default"
+msgstr "Wybierz który pasek boczny ma być używany domyślnie (prawy czy lewy)"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:186
+#: loco:5378ece0ff90b259b5784371
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr "Naciśnij OK aby zresetować. Wszystkie ustawienia zostaną utracone!"
+
+#: ../options.php:219 loco:5378ece3ff90b259b57843d3
+msgid "Color for all headings (h1-h6)"
+msgstr "Kolor dla wszystkich nagłówków (h1-h6)"
+
+#: ../inc/extras.php:394 loco:5378ece1ff90b259b5784396
+msgid "Colorlib support forum"
+msgstr "Colorlib forum wsparcia"
+
+#: ../comments.php:37 ../comments.php:55 loco:5378ecdeff90b259b5784353
+msgid "Comment navigation"
+msgstr "Nawigacja komentarzy"
+
+#: ../content.php:20 loco:5378ecdfff90b259b5784361
+msgid "% Comments"
+msgstr "% komentarzy"
+
+#: ../comments.php:67 loco:5378ecdeff90b259b5784356
+msgid "Comments are closed."
+msgstr "Komentarze są zamknięte."
+
+#: ../comments.php:30 loco:5378ecdeff90b259b5784351
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Jedna myśl na temat &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s myśli na temat &ldquo;%2$s&rdquo;"
+msgstr[2] ""
+
+#: ../options.php:305 loco:5378ece4ff90b259b57843e6
+msgid "Copyright text in footer"
+msgstr "Tekst informacji o prawach autorskich"
+
+#: ../options.php:419 loco:5378ece4ff90b259b57843f9
+msgid "Custom CSS"
+msgstr "Własny CSS"
+
+#: ../options.php:158 loco:5378ece2ff90b259b57843c2
+msgid "Custom Favicon"
+msgstr "Własna favikona"
+
+#: ../archive.php:30 loco:5378ecddff90b259b5784344
+msgid "Day: %s"
+msgstr "Dzień: %s"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:217
+#: loco:5378ece0ff90b259b5784372
+msgid "Default options restored."
+msgstr "Przywrócono domyślne opcje."
+
+#: ../options.php:147 ../options.php:153 ../options.php:186 ../options.php:192
+#: ../options.php:198 ../options.php:203 ../options.php:225 ../options.php:231
+#: ../options.php:240 ../options.php:314 ../options.php:320
+#: loco:5378ece2ff90b259b57843c0
+msgid "Default used if no color is selected"
+msgstr "Domyślny kolor jeśli nie wybrano"
+
+#: ../functions.php:98 ../functions.php:108 ../functions.php:118
+#: loco:5378ecdfff90b259b5784367
+msgid "Displays on the Home Page"
+msgstr "Wyświetl na stronie głównej"
+
+#: ../options.php:118 loco:5378ece2ff90b259b57843b7
+msgid "Do You want to display image slider on the Home Page?"
+msgstr "Czy chcesz wyświetlać slider obrazków na stronie głównej?"
+
+#: ../options.php:264 loco:5378ece3ff90b259b57843df
+msgid "Dropdown item color"
+msgstr "Kolor elementu rozwijanego"
+
+#: ../options.php:270 loco:53d8d8329f50bb2b1ce88cdb
+msgid "Dropdown item hover color"
+msgstr "Kolor po najechaniu rozwijalnej pozycji"
+
+#: ../options.php:146 loco:5378ece2ff90b259b57843bf
+msgid "Element color"
+msgstr "Kolor elementów"
+
+#: ../options.php:152 loco:5378ece2ff90b259b57843c1
+msgid "Element color on hover"
+msgstr "Kolor elementu najechanego myszką"
+
+#: ../inc/widgets/widget-categories.php:104 loco:5378ece1ff90b259b57843a3
+msgid "Enable Posts Count"
+msgstr "Włącz licznik postów"
+
+#: ../options.php:180 loco:5378ece3ff90b259b57843ca
+msgid "Enter the link for Call For Action button"
+msgstr "Wpisz link dla przycisku CFA"
+
+#: ../options.php:132 loco:5378ece2ff90b259b57843bc
+msgid "Enter the number of slide items"
+msgstr "Wpisz liczbę elementów slidera"
+
+#: ../options.php:168 loco:5378ece2ff90b259b57843c6
+msgid "Enter the text for call for action section"
+msgstr "Wpisz tekst dla zawołania przycisku akcji"
+
+#: ../options.php:174 loco:5378ece3ff90b259b57843c8
+msgid "Enter the title for Call For Action button"
+msgstr "Wpisz tytuł dla zawołania przycisku akcji"
+
+#: ../inc/admin/includes/class-options-sanitization.php:279
+#: loco:5378ece0ff90b259b5784387
+msgid "Fixed in Place"
+msgstr "Ustalony na miejscu"
+
+#: ../inc/extras.php:399 loco:5378ece1ff90b259b578439a
+msgid "Follow on Twitter"
+msgstr "Śledź nas na Twitterze"
+
+#: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
+#: loco:5378ece1ff90b259b57843a9
+msgid "Follow us"
+msgstr "Śledź nas"
+
+#: ../inc/extras.php:179 loco:5378ece1ff90b259b5784391
+msgid "Follow us on "
+msgstr "Śledź nas na"
+
+#: ../options.php:289 loco:5378ece3ff90b259b57843e2
+msgid "Footer background color"
+msgstr "Kolor tła stopki"
+
+#: ../options.php:304 loco:5378ece4ff90b259b57843e5
+msgid "Footer information"
+msgstr "Informacje w stopce"
+
+#: ../options.php:299 loco:5378ece4ff90b259b57843e4
+msgid "Footer link color"
+msgstr "Kolor odnośnika stopki"
+
+#: ../functions.php:58 ../inc/extras.php:208 loco:5378ecdfff90b259b5784364
+msgid "Footer Links"
+msgstr "Linki stopki"
+
+#: ../options.php:319 loco:5378ece4ff90b259b57843e9
+msgid "Footer social icon color"
+msgstr "Kolor ikon społecznościowych w stopce"
+
+#: ../options.php:294 loco:5378ece3ff90b259b57843e3
+msgid "Footer text color"
+msgstr "Kolor tekstu stopki"
+
+#: ../functions.php:127 loco:5378ecdfff90b259b578436a
+msgid "Footer Widget 1"
+msgstr "Widgety stopki 1"
+
+#: ../functions.php:137 loco:5378ecdfff90b259b578436c
+msgid "Footer Widget 2"
+msgstr "Widgety stopki 2"
+
+#: ../functions.php:147 loco:5378ecdfff90b259b578436d
+msgid "Footer Widget 3"
+msgstr "Widgety stopki 3"
+
+#: ../options.php:284 loco:5378ece3ff90b259b57843e1
+msgid "Footer widget area background color"
+msgstr "Kolor tła widgetów stopki"
+
+#: ../options.php:42 loco:5378ece2ff90b259b57843b1
+msgid "French Toast"
+msgstr "Francuzki toast"
+
+#: ../options.php:339 loco:5378ece4ff90b259b57843ed
+msgid "Google+"
+msgstr "Google+"
+
+#: ../options.php:218 loco:5378ece3ff90b259b57843d2
+msgid "Heading Color"
+msgstr "Kolor nagłówka"
+
+#: ../functions.php:97 loco:5378ecdfff90b259b5784366
+msgid "Homepage Widget 1"
+msgstr "Widgety strony głównej 1"
+
+#: ../functions.php:107 loco:5378ecdfff90b259b5784368
+msgid "Homepage Widget 2"
+msgstr "Widgety strony głównej 2"
+
+#: ../functions.php:117 loco:5378ecdfff90b259b5784369
+msgid "Homepage Widget 3"
+msgstr "Widgety strony głównej 3"
+
+#: ../inc/extras.php:395 loco:5378ece1ff90b259b5784397
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr "Jeśli lubisz ten temat, będę wdzięczny za"
+
+#: ../404.php:19 loco:5378ecddff90b259b5784340
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
@@ -33,112 +517,215 @@ msgstr ""
 "Nic nie znaleziono w tej lokalizacji. Spróbuj jednego z poniższych linków "
 "albo użyj wyszukiwarki."
 
-#: ../404.php:31
-msgid "Most Used Categories"
-msgstr "Najczęściej używane kategorie."
+#: ../content-none.php:28 loco:5378ecdeff90b259b578435a
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching "
+"can help."
+msgstr ""
+"Wygląda na to że nie możemy znaleźć tego czego szukasz. Może "
+"wyszukiwarka pomoże?"
 
-#: ../404.php:52
-#, php-format
-msgid "Try looking in the monthly archives. %1$s"
-msgstr "Spróbuj wyszukać w miesięcznych archiwach. %1$s"
+#: ../content.php:20 loco:5378ecdfff90b259b578435f
+msgid "Leave a comment"
+msgstr "Zostaw komentarz"
 
-#: ../archive.php:27
-#, php-format
-msgid "Author: %s"
-msgstr "Autor: %s"
+#: ../options.php:29 loco:5378ece2ff90b259b57843ab
+msgid "Left Sidebar"
+msgstr "Lewy pasek boczny"
 
-#: ../archive.php:30
-#, php-format
-msgid "Day: %s"
-msgstr "Dzień: %s"
+#: ../inc/extras.php:398 loco:5378ece1ff90b259b5784399
+msgid "Like on Facebook"
+msgstr "Polub nas na Facebook-u"
 
-#: ../archive.php:33
-#, php-format
+#: ../inc/widgets/widget-categories.php:91 loco:5378ece1ff90b259b57843a2
+msgid "Limit Categories "
+msgstr "Limit kategorii"
+
+#: ../inc/widgets/widget-popular-posts.php:107 loco:5378ece1ff90b259b57843a7
+msgid "Limit Posts Number"
+msgstr "Limit postów"
+
+#: ../options.php:224 loco:5378ece3ff90b259b57843d4
+msgid "Link Color"
+msgstr "Kolor odnośnika"
+
+#: ../options.php:246 loco:5378ece3ff90b259b57843d9
+msgid "Link color"
+msgstr "Kolor odnośnika"
+
+#: ../options.php:230 loco:5378ece3ff90b259b57843d5
+msgid "Link:hover Color"
+msgstr "Kolor odnośnika najechanego myszką"
+
+#: ../options.php:252 loco:5378ece3ff90b259b57843db
+msgid "Link:hover color"
+msgstr "Kolor odnośnika najechanego myszą"
+
+#: ../options.php:211 loco:5378ece3ff90b259b57843d0
+msgid "Main Body Text"
+msgstr "Tekst główny"
+
+#: ../inc/admin/includes/class-options-sanitization.php:261
+#: loco:5378ece0ff90b259b5784381
+msgid "Middle Center"
+msgstr "Środek Środek"
+
+#: ../inc/admin/includes/class-options-sanitization.php:260
+#: loco:5378ece0ff90b259b5784380
+msgid "Middle Left"
+msgstr "Środek Lewo"
+
+#: ../inc/admin/includes/class-options-sanitization.php:262
+#: loco:5378ece0ff90b259b5784382
+msgid "Middle Right"
+msgstr "Środek Prawo"
+
+#: ../archive.php:33 loco:5378ecddff90b259b5784345
 msgid "Month: %s"
 msgstr "Miesiąc: %s"
 
-#: ../archive.php:36
-#, php-format
-msgid "Year: %s"
-msgstr "Rok: %s"
+#: ../404.php:31 loco:5378ecddff90b259b5784341
+msgid "Most Used Categories"
+msgstr "Najczęściej używane kategorie."
 
-#: ../archive.php:39
-msgid "Asides"
-msgstr "Obok"
-
-#: ../archive.php:42
-msgid "Galleries"
-msgstr "Galerie"
-
-#: ../archive.php:45
-msgid "Images"
-msgstr "Obrazki"
-
-#: ../archive.php:48
-msgid "Videos"
-msgstr "Wideo"
-
-#: ../archive.php:51
-msgid "Quotes"
-msgstr "Cytaty"
-
-#: ../archive.php:54
-msgid "Links"
-msgstr "Linki"
-
-#: ../archive.php:57
-msgid "Statuses"
-msgstr "Statusy"
-
-#: ../archive.php:60
-msgid "Audios"
-msgstr "Dzwięki"
-
-#: ../archive.php:63
-msgid "Chats"
-msgstr "Czaty"
-
-#: ../archive.php:66 ../sidebar.php:19
-msgid "Archives"
-msgstr "Archiwa"
-
-#: ../comments.php:30
-#, php-format
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Jedna myśl na temat &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s myśli na temat &ldquo;%2$s&rdquo;"
-
-#: ../comments.php:37 ../comments.php:55
-msgid "Comment navigation"
-msgstr "Nawigacja komentarzy"
-
-#: ../comments.php:38 ../comments.php:56
-msgid "&larr; Older Comments"
-msgstr "&larr; Starsze komentarze"
-
-#: ../comments.php:39 ../comments.php:57
+#: ../comments.php:39 ../comments.php:57 loco:5378ecdeff90b259b5784355
 msgid "Newer Comments &rarr;"
 msgstr "Nowsze komentarze &rarr;"
 
-#: ../comments.php:67
-msgid "Comments are closed."
-msgstr "Komentarze są zamknięte."
+#: ../inc/template-tags.php:31 loco:5378ece1ff90b259b578439d
+msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Nowsze posty <i class=\"fa fa-chevron-right\"></i>"
 
-#: ../content-none.php:13
+#: ../image.php:23 loco:5378ecdfff90b259b578436f
+msgid "Next <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Następne <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:63
+#: loco:5378ece0ff90b259b5784374
+msgid "No file chosen"
+msgstr "Nie wybrano pliku"
+
+#: ../inc/admin/includes/class-options-sanitization.php:241
+#: loco:5378ece0ff90b259b5784379
+msgid "No Repeat"
+msgstr "Nie powtarzaj"
+
+#: ../content-none.php:13 loco:5378ecdeff90b259b5784357
 msgid "Nothing Found"
 msgstr "Nic nie znaleziono"
 
-#: ../content-none.php:19
-#, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-"Gotowy aby opublikować swój pierwszy post? <a href=\"%1$s\">Zacznij tutaj</"
-"a>."
+#: ../options.php:131 loco:5378ece2ff90b259b57843bb
+msgid "Number of slide items"
+msgstr "Liczba elementów slidera"
 
-#: ../content-none.php:23
+#: ../comments.php:38 ../comments.php:56 loco:5378ecdeff90b259b5784354
+msgid "&larr; Older Comments"
+msgstr "&larr; Starsze komentarze"
+
+#: ../inc/template-tags.php:27 loco:5378ece1ff90b259b578439c
+msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Starsze posty"
+
+#: ../404.php:15 loco:5378ecddff90b259b578433f
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ups! Strona nie może być znaleziona."
+
+#: ../inc/admin/includes/class-options-framework-admin.php:271
+#: loco:5378ece0ff90b259b5784373
+msgid "Options saved."
+msgstr "Opcje zapisane."
+
+#: ../inc/extras.php:63 loco:5378ece0ff90b259b578438c
+msgid "Page %s"
+msgstr "Strona %s"
+
+#: ../content-page.php:21 ../content-single.php:35 ../content.php:43
+#: ../front-page.php:21 ../image.php:79 loco:5378ecdeff90b259b578435b
+msgid "Pages:"
+msgstr "Strony:"
+
+#: ../inc/extras.php:133 loco:5378ece1ff90b259b578438f
+msgid "Password:"
+msgstr "Hasło:"
+
+#: ../inc/widgets/widget-popular-posts.php:17
+#: ../inc/widgets/widget-popular-posts.php:94 loco:5378ece1ff90b259b57843a5
+msgid "Popular Posts"
+msgstr "Popularne posty"
+
+#: ../inc/template-tags.php:56 loco:5378ece1ff90b259b578439e
+msgid "Post navigation"
+msgstr "Nawigacja postu"
+
+#: ../inc/template-tags.php:23 loco:5378ece1ff90b259b578439b
+msgid "Posts navigation"
+msgstr "Nawigacja postów"
+
+#: ../image.php:22 loco:5378ecdfff90b259b578436e
+msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Poprzednie"
+
+#: ../functions.php:57 loco:5378ecdfff90b259b5784363
+msgid "Primary Menu"
+msgstr "Główne menu"
+
+#: ../inc/extras.php:397 loco:5378ece1ff90b259b5784398
+msgid "Rate this Theme"
+msgstr "Oceń ten temat"
+
+#: ../content.php:32 ../content.php:39 loco:5378ecdfff90b259b5784362
+msgid "Read More"
+msgstr "Czytaj więcej"
+
+#: ../content-none.php:19 loco:5378ecdeff90b259b5784358
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Gotowy aby opublikować swój pierwszy post? <a href=\"%1$s\">Zacznij tutaj</a>."
+
+#: ../inc/admin/includes/class-options-sanitization.php:244
+#: loco:5378ece0ff90b259b578437c
+msgid "Repeat All"
+msgstr "Powtarzaj w obu kierunkach"
+
+#: ../inc/admin/includes/class-options-sanitization.php:242
+#: loco:5378ece0ff90b259b578437a
+msgid "Repeat Horizontally"
+msgstr "Powtarzaj poziomo"
+
+#: ../inc/admin/includes/class-options-sanitization.php:243
+#: loco:5378ece0ff90b259b578437b
+msgid "Repeat Vertically"
+msgstr "Powtarzaj pionowo"
+
+#: ../options.php:29 loco:5378ece2ff90b259b57843aa
+msgid "Right Sidebar"
+msgstr "Prawy pasek boczny"
+
+#: ../options.php:369 loco:5378ece4ff90b259b57843f1
+msgid "RSS Feed"
+msgstr "Kanał RSS"
+
+#: ../inc/admin/includes/class-options-sanitization.php:278
+#: loco:5378ece0ff90b259b5784386
+msgid "Scroll Normally"
+msgstr "Przewijaj normalnie"
+
+#: ../search.php:16 loco:5378ece4ff90b259b57843fb
+msgid "Search Results for: %s"
+msgstr "Wyniki wyszukiwania dla: %s"
+
+#: ../options.php:125 loco:5378ece2ff90b259b57843ba
+msgid "Select a category for the featured post slider"
+msgstr "Wybierz kategorię dla wyróżnionego postu slidera"
+
+#: ../options.php:124 loco:5378ece2ff90b259b57843b9
+msgid "Slider Category"
+msgstr "Kategoria slidera"
+
+#: ../options.php:313 loco:5378ece4ff90b259b57843e8
+msgid "Social icon color"
+msgstr "Kolor ikon społecznościowych"
+
+#: ../content-none.php:23 loco:5378ecdeff90b259b5784359
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
@@ -146,705 +733,135 @@ msgstr ""
 "Przepraszamy, nic nie znaleziono co pasuje do szukanego tekstu. Proszę "
 "spróbować wyszukać coś innego."
 
-#: ../content-none.php:28
+#: ../inc/widgets/widget-categories.php:11
+#: ../inc/widgets/widget-categories.php:12 loco:5378ece1ff90b259b578439f
+msgid "Sparkling Categories"
+msgstr "Sparkling Kategorie"
+
+#: ../inc/extras.php:393 loco:5378ece1ff90b259b5784394
+msgid "Sparkling Documentation"
+msgstr "Dokumentacja"
+
+#: ../inc/widgets/widget-popular-posts.php:11
+#: ../inc/widgets/widget-popular-posts.php:12 loco:5378ece1ff90b259b57843a4
+msgid "Sparkling Popular Posts Widget"
+msgstr "Sparkling Popularne widgety postów"
+
+#: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
+#: loco:5378ece1ff90b259b57843a8
+msgid "Sparkling Social Widget"
+msgstr "Sparkling Widgety społecznościowe"
+
+#: ../inc/extras.php:387 loco:5378ece1ff90b259b5784393
+msgid "Support and Documentation"
+msgstr "Wsparcie i dokumentacja"
+
+#: ../inc/extras.php:394 loco:5378ece1ff90b259b5784395
 msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-"Wygląda na to że nie możemy znaleźć tego czego szukasz. Może wyszukiwarka "
-"pomoże?"
+"The best way to contact us with <b>support questions</b> and <b>bug "
+"reports</b> is via"
+msgstr "Najlepsza metoda aby się z nami skontaktować jest przez"
 
-#: ../content-page.php:21 ../content-single.php:35 ../content.php:43
-#: ../front-page.php:21 ../image.php:79
-msgid "Pages:"
-msgstr "Strony:"
-
-#: ../content-page.php:26 ../content-single.php:26 ../content.php:23
-#: ../front-page.php:26
-msgid "Edit"
-msgstr "Edytuj"
-
-#: ../content-single.php:19
-msgid ", "
-msgstr ","
-
-#: ../content-single.php:23
-#, php-format
-msgid " %1$s"
-msgstr " %1$s"
-
-#: ../content.php:20
-msgid "Leave a comment"
-msgstr "Zostaw komentarz"
-
-#: ../content.php:20
-msgid "1 Comment"
-msgstr "1 komentarz"
-
-#: ../content.php:20
-msgid "% Comments"
-msgstr "% komentarzy"
-
-#: ../content.php:32 ../content.php:39
-msgid "Read More"
-msgstr "Czytaj więcej"
-
-#: ../functions.php:57
-msgid "Primary Menu"
-msgstr "Główne menu"
-
-#: ../functions.php:58 ../inc/extras.php:208
-msgid "Footer Links"
-msgstr "Linki stopki"
-
-#: ../functions.php:87
-msgid "Sidebar"
-msgstr "Pasek boczny"
-
-#: ../functions.php:97
-msgid "Homepage Widget 1"
-msgstr "Widgety strony głównej 1"
-
-#: ../functions.php:98 ../functions.php:108 ../functions.php:118
-msgid "Displays on the Home Page"
-msgstr "Wyświetl na stronie głównej"
-
-#: ../functions.php:107
-msgid "Homepage Widget 2"
-msgstr "Widgety strony głównej 2"
-
-#: ../functions.php:117
-msgid "Homepage Widget 3"
-msgstr "Widgety strony głównej 3"
-
-#: ../functions.php:127
-msgid "Footer Widget 1"
-msgstr "Widgety stopki 1"
-
-#: ../functions.php:128 ../functions.php:138 ../functions.php:148
-msgid "Used for footer widget area"
-msgstr "Używane w widgetach stopki"
-
-#: ../functions.php:137
-msgid "Footer Widget 2"
-msgstr "Widgety stopki 2"
-
-#: ../functions.php:147
-msgid "Footer Widget 3"
-msgstr "Widgety stopki 3"
-
-#: ../image.php:22
-msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
-msgstr "<i class=\"fa fa-chevron-left\"></i> Poprzednie"
-
-#: ../image.php:23
-msgid "Next <i class=\"fa fa-chevron-right\"></i>"
-msgstr "Następne <i class=\"fa fa-chevron-right\"></i>"
+#: ../inc/extras.php:283 loco:5378ece1ff90b259b5784392
+msgid "Theme by %1$s Powered by %2$s"
+msgstr "Temat stworzony przez %1$s Napędzany przez %2$s"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:90
 #: ../inc/admin/includes/class-options-framework-admin.php:91
+#: loco:5378ece0ff90b259b5784370
 msgid "Theme Options"
 msgstr "Opcje tematu"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:186
-msgid "Click OK to reset. Any theme settings will be lost!"
-msgstr "Naciśnij OK aby zresetować. Wszystkie ustawienia zostaną utracone!"
-
-#: ../inc/admin/includes/class-options-framework-admin.php:217
-msgid "Default options restored."
-msgstr "Przywrócono domyślne opcje."
-
-#: ../inc/admin/includes/class-options-framework-admin.php:271
-msgid "Options saved."
-msgstr "Opcje zapisane."
-
-#: ../inc/admin/includes/class-options-media-uploader.php:63
-msgid "No file chosen"
-msgstr "Nie wybrano pliku"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:66
-#: ../inc/admin/includes/class-options-media-uploader.php:119
-msgid "Upload"
-msgstr "Załaduj"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:68
-#: ../inc/admin/includes/class-options-media-uploader.php:120
-msgid "Remove"
-msgstr "Usuń"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:71
-msgid "Upgrade your version of WordPress for full media support."
-msgstr ""
-"Zaktualizuj swoją instalację WordPress-a aby uzyskać pełną obsługę mediów."
-
-#: ../inc/admin/includes/class-options-media-uploader.php:95
-msgid "View File"
-msgstr "Pokaż plik"
-
-#: ../inc/admin/includes/class-options-sanitization.php:241
-msgid "No Repeat"
-msgstr "Nie powtarzaj"
-
-#: ../inc/admin/includes/class-options-sanitization.php:242
-msgid "Repeat Horizontally"
-msgstr "Powtarzaj poziomo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:243
-msgid "Repeat Vertically"
-msgstr "Powtarzaj pionowo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:244
-msgid "Repeat All"
-msgstr "Powtarzaj w obu kierunkach"
-
-#: ../inc/admin/includes/class-options-sanitization.php:257
-msgid "Top Left"
-msgstr "Góra Lewo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:258
-msgid "Top Center"
-msgstr "Góra Środek"
-
-#: ../inc/admin/includes/class-options-sanitization.php:259
-msgid "Top Right"
-msgstr "Góra Prawo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:260
-msgid "Middle Left"
-msgstr "Środek Lewo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:261
-msgid "Middle Center"
-msgstr "Środek Środek"
-
-#: ../inc/admin/includes/class-options-sanitization.php:262
-msgid "Middle Right"
-msgstr "Środek Prawo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:263
-msgid "Bottom Left"
-msgstr "Dół Lewo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:264
-msgid "Bottom Center"
-msgstr "Dół Środek"
-
-#: ../inc/admin/includes/class-options-sanitization.php:265
-msgid "Bottom Right"
-msgstr "Dół Prawo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:278
-msgid "Scroll Normally"
-msgstr "Przewijaj normalnie"
-
-#: ../inc/admin/includes/class-options-sanitization.php:279
-msgid "Fixed in Place"
-msgstr "Ustalony na miejscu"
-
-#: ../inc/admin/includes/class-options-sanitization.php:353
-msgid "Normal"
-msgstr "normalna"
-
-#: ../inc/admin/includes/class-options-sanitization.php:354
-msgid "Italic"
-msgstr "Kursywa"
-
-#: ../inc/admin/includes/class-options-sanitization.php:355
-msgid "Bold"
-msgstr "Pogrubiona"
-
-#: ../inc/admin/includes/class-options-sanitization.php:356
-msgid "Bold Italic"
-msgstr "Pogrubiona Kursywa"
-
-#: ../inc/extras.php:63
-#, php-format
-msgid "Page %s"
-msgstr "Strona %s"
-
-#: ../inc/extras.php:111
-msgid "Search..."
-msgstr "Szukaj..."
-
-#: ../inc/extras.php:132
+#: ../inc/extras.php:132 loco:5378ece1ff90b259b578438e
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
 msgstr ""
-"<p>Ten post jest chroniony hasłem. Aby go zobaczyć wpisz hasło poniżej:</p>"
+"<p>Ten post jest chroniony hasłem. Aby go zobaczyć wpisz hasło poniżej:"
+"</p>"
 
-#: ../inc/extras.php:133
-msgid "Password:"
-msgstr "Hasło:"
+#: ../inc/admin/includes/class-options-sanitization.php:258
+#: loco:5378ece0ff90b259b578437e
+msgid "Top Center"
+msgstr "Góra Środek"
 
-#: ../inc/extras.php:136
-msgid "Submit"
-msgstr "Wyślij"
+#: ../inc/admin/includes/class-options-sanitization.php:257
+#: loco:5378ece0ff90b259b578437d
+msgid "Top Left"
+msgstr "Góra Lewo"
 
-#: ../inc/extras.php:179
-msgid "Follow us on "
-msgstr "Śledź nas na"
+#: ../options.php:239 loco:5378ece3ff90b259b57843d7
+msgid "Top nav background color"
+msgstr "Kolor tła górnej nawigacji"
 
-#: ../inc/extras.php:283
-#, php-format
-msgid "Theme by %1$s Powered by %2$s"
-msgstr "Temat stworzony przez %1$s Napędzany przez %2$s"
+#: ../options.php:257 loco:5378ece3ff90b259b57843dc
+msgid "Top nav dropdown background color"
+msgstr "Kolor tła rozwijanej górnej nawigacji"
 
-#: ../inc/extras.php:387
-msgid "Support and Documentation"
-msgstr "Wsparcie i dokumentacja"
+#: ../options.php:275 loco:53d8d8329f50bb2b1ce88cdc
+msgid "Top nav dropdown item background hover color"
+msgstr "Górna nawigacja - kolor tła po najechaniu rozwijalnej pozycji"
 
-#: ../inc/extras.php:393
-msgid "Sparkling Documentation"
-msgstr "Dokumentacja"
+#: ../options.php:263 loco:5378ece3ff90b259b57843de
+msgid "Top nav dropdown item color"
+msgstr "Kolor elementu rozwijanej górnej nawigacji"
 
-#: ../inc/extras.php:394
-msgid ""
-"The best way to contact us with <b>support questions</b> and <b>bug reports</"
-"b> is via"
-msgstr "Najlepsza metoda aby się z nami skontaktować jest przez"
+#: ../options.php:269 loco:53d8d8329f50bb2b1ce88cda
+msgid "Top nav dropdown item hover color"
+msgstr "Górna nawigacja - kolor po najechaniu rozwijalnej pozycji"
 
-#: ../inc/extras.php:394
-msgid "Colorlib support forum"
-msgstr "Colorlib forum wsparcia"
+#: ../options.php:245 loco:5378ece3ff90b259b57843d8
+msgid "Top nav item color"
+msgstr "Kolor elementu górnej nawigacji"
 
-#: ../inc/extras.php:395
-msgid "If you like this theme, I'd appreciate any of the following:"
-msgstr "Jeśli lubisz ten temat, będę wdzięczny za"
+#: ../options.php:251 loco:5378ece3ff90b259b57843da
+msgid "Top nav item hover color"
+msgstr "Kolor elementu górnej nawigacji po najechaniu myszą"
 
-#: ../inc/extras.php:397
-msgid "Rate this Theme"
-msgstr "Oceń ten temat"
+#: ../inc/admin/includes/class-options-sanitization.php:259
+#: loco:5378ece0ff90b259b578437f
+msgid "Top Right"
+msgstr "Góra Prawo"
 
-#: ../inc/extras.php:398
-msgid "Like on Facebook"
-msgstr "Polub nas na Facebook-u"
+#: ../404.php:52 loco:5378ecddff90b259b5784342
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Spróbuj wyszukać w miesięcznych archiwach. %1$s"
 
-#: ../inc/extras.php:399
-msgid "Follow on Twitter"
-msgstr "Śledź nas na Twitterze"
+#: ../inc/admin/includes/class-options-media-uploader.php:71
+#: loco:5378ece0ff90b259b5784377
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+"Zaktualizuj swoją instalację WordPress-a aby uzyskać pełną obsługę "
+"mediów."
 
-#: ../inc/template-tags.php:23
-msgid "Posts navigation"
-msgstr "Nawigacja postów"
-
-#: ../inc/template-tags.php:27
-msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
-msgstr "<i class=\"fa fa-chevron-left\"></i> Starsze posty"
-
-#: ../inc/template-tags.php:31
-msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
-msgstr "Nowsze posty <i class=\"fa fa-chevron-right\"></i>"
-
-#: ../inc/template-tags.php:56
-msgid "Post navigation"
-msgstr "Nawigacja postu"
-
-#: ../inc/widgets/widget-categories.php:11
-#: ../inc/widgets/widget-categories.php:12
-msgid "Sparkling Categories"
-msgstr "Sparkling Kategorie"
-
-#: ../inc/widgets/widget-categories.php:17
-#: ../inc/widgets/widget-categories.php:76
-msgid "Categories"
-msgstr "Kategorie"
-
-#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
-msgid "Title "
-msgstr "Tytuł"
-
-#: ../inc/widgets/widget-categories.php:91
-msgid "Limit Categories "
-msgstr "Limit kategorii"
-
-#: ../inc/widgets/widget-categories.php:104
-msgid "Enable Posts Count"
-msgstr "Włącz licznik postów"
-
-#: ../inc/widgets/widget-popular-posts.php:11
-#: ../inc/widgets/widget-popular-posts.php:12
-msgid "Sparkling Popular Posts Widget"
-msgstr "Sparkling Popularne widgety postów"
-
-#: ../inc/widgets/widget-popular-posts.php:17
-#: ../inc/widgets/widget-popular-posts.php:94
-msgid "Popular Posts"
-msgstr "Popularne posty"
-
-#: ../inc/widgets/widget-popular-posts.php:99
-msgid "Title"
-msgstr "Tytuł"
-
-#: ../inc/widgets/widget-popular-posts.php:107
-msgid "Limit Posts Number"
-msgstr "Limit postów"
-
-#: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
-msgid "Sparkling Social Widget"
-msgstr "Sparkling Widgety społecznościowe"
-
-#: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
-msgid "Follow us"
-msgstr "Śledź nas"
-
-#: ../options.php:29
-msgid "Right Sidebar"
-msgstr "Prawy pasek boczny"
-
-#: ../options.php:29
-msgid "Left Sidebar"
-msgstr "Lewy pasek boczny"
-
-#: ../options.php:33
-msgid "One"
-msgstr "Jeden"
-
-#: ../options.php:34
-msgid "Two"
-msgstr "Dwa"
-
-#: ../options.php:35
-msgid "Three"
-msgstr "Trzy"
-
-#: ../options.php:36
-msgid "Four"
-msgstr "Cztery"
-
-#: ../options.php:37
-msgid "Five"
-msgstr "Pięć"
-
-#: ../options.php:42
-msgid "French Toast"
-msgstr "Francuzki toast"
-
-#: ../options.php:43
-msgid "Pancake"
-msgstr "naleśnik"
-
-#: ../options.php:44
-msgid "Omelette"
-msgstr "Omlet"
-
-#: ../options.php:45
-msgid "Crepe"
-msgstr "Krepa"
-
-#: ../options.php:46
-msgid "Waffle"
-msgstr "Wafel"
-
-#: ../options.php:115
-msgid "Main"
-msgstr "Główne"
-
-#: ../options.php:118
-msgid "Do You want to display image slider on the Home Page?"
-msgstr "Czy chcesz wyświetlać slider obrazków na stronie głównej?"
-
-#: ../options.php:119
-msgid "Check if you want to enable slider"
-msgstr "Zaznacz jeśli chcesz włączyć slider"
-
-#: ../options.php:124
-msgid "Slider Category"
-msgstr "Kategoria slidera"
-
-#: ../options.php:125
-msgid "Select a category for the featured post slider"
-msgstr "Wybierz kategorię dla wyróżnionego postu slidera"
-
-#: ../options.php:131
-msgid "Number of slide items"
-msgstr "Liczba elementów slidera"
-
-#: ../options.php:132
-msgid "Enter the number of slide items"
-msgstr "Wpisz liczbę elementów slidera"
-
-#: ../options.php:138
-msgid "Website Layout Options"
-msgstr "Opcje układu strony"
-
-#: ../options.php:139
-msgid "Choose between Left and Right sidebar options to be used as default"
-msgstr "Wybierz który pasek boczny ma być używany domyślnie (prawy czy lewy)"
-
-#: ../options.php:146
-msgid "Element color"
-msgstr "Kolor elementów"
-
-#: ../options.php:147 ../options.php:153 ../options.php:186 ../options.php:192
-#: ../options.php:198 ../options.php:203 ../options.php:225 ../options.php:231
-#: ../options.php:240 ../options.php:314 ../options.php:320
-msgid "Default used if no color is selected"
-msgstr "Domyślny kolor jeśli nie wybrano"
-
-#: ../options.php:152
-msgid "Element color on hover"
-msgstr "Kolor elementu najechanego myszką"
-
-#: ../options.php:158
-msgid "Custom Favicon"
-msgstr "Własna favikona"
-
-#: ../options.php:159
-msgid ""
-"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
+#: ../options.php:159 loco:5378ece2ff90b259b57843c3
+msgid "Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
 msgstr ""
 "Wybierz plik o wymiarach 32 px x 32 px w formacie PNG/GIF który zostanie "
 "użyty jako favikona"
 
-#: ../options.php:164
-msgid "Action Button"
-msgstr "Przycisk akcji"
+#: ../functions.php:128 ../functions.php:138 ../functions.php:148
+#: loco:5378ecdfff90b259b578436b
+msgid "Used for footer widget area"
+msgstr "Używane w widgetach stopki"
 
-#: ../options.php:167
-msgid "Call For Action Text"
-msgstr "Zawołanie dla przycisku akcji"
-
-#: ../options.php:168
-msgid "Enter the text for call for action section"
-msgstr "Wpisz tekst dla zawołania przycisku akcji"
-
-#: ../options.php:173
-msgid "Call For Action Button Title"
-msgstr "Zawołanie dla tytułu przycisku akcji"
-
-#: ../options.php:174
-msgid "Enter the title for Call For Action button"
-msgstr "Wpisz tytuł dla zawołania przycisku akcji"
-
-#: ../options.php:179
-msgid "CFA button link"
-msgstr "CFA link przycisku"
-
-#: ../options.php:180
-msgid "Enter the link for Call For Action button"
-msgstr "Wpisz link dla przycisku CFA"
-
-#: ../options.php:185
-msgid "Call For Action Text Color"
-msgstr "CFA kolor tekstu"
-
-#: ../options.php:191
-msgid "Call For Action Background Color"
-msgstr "CFA kolor tła"
-
-#: ../options.php:197
-msgid "Call For Action Button Border Color"
-msgstr "CFA kolor obramowania"
-
-#: ../options.php:202
-msgid "Call For Action Button Text Color"
-msgstr "CFA kolor tekstu"
-
-#: ../options.php:208
-msgid "Typography"
-msgstr "Typografia"
-
-#: ../options.php:211
-msgid "Main Body Text"
-msgstr "Tekst główny"
-
-#: ../options.php:212
+#: ../options.php:212 loco:5378ece3ff90b259b57843d1
 msgid "Used in P tags"
 msgstr "Używany w tagach P"
 
-#: ../options.php:218
-msgid "Heading Color"
-msgstr "Kolor nagłówka"
+#: ../inc/admin/includes/class-options-media-uploader.php:95
+#: loco:5378ece0ff90b259b5784378
+msgid "View File"
+msgstr "Pokaż plik"
 
-#: ../options.php:219
-msgid "Color for all headings (h1-h6)"
-msgstr "Kolor dla wszystkich nagłówków (h1-h6)"
+#: ../options.php:138 loco:5378ece2ff90b259b57843bd
+msgid "Website Layout Options"
+msgstr "Opcje układu strony"
 
-#: ../options.php:224
-msgid "Link Color"
-msgstr "Kolor odnośnika"
+#: ../content-single.php:23 loco:5378ecdfff90b259b578435e
+msgid " %1$s"
+msgstr " %1$s"
 
-#: ../options.php:230
-msgid "Link:hover Color"
-msgstr "Kolor odnośnika najechanego myszką"
-
-#: ../options.php:236
-msgid "Header"
-msgstr "Nagłówek"
-
-#: ../options.php:239
-msgid "Top nav background color"
-msgstr "Kolor tła górnej nawigacji"
-
-#: ../options.php:245
-msgid "Top nav item color"
-msgstr "Kolor elementu górnej nawigacji"
-
-#: ../options.php:246
-msgid "Link color"
-msgstr "Kolor odnośnika"
-
-#: ../options.php:251
-msgid "Top nav item hover color"
-msgstr "Kolor elementu górnej nawigacji po najechaniu myszą"
-
-#: ../options.php:252
-msgid "Link:hover color"
-msgstr "Kolor odnośnika najechanego myszką"
-
-#: ../options.php:257
-msgid "Top nav dropdown background color"
-msgstr "Kolor tła rozwijanej górnej nawigacji"
-
-#: ../options.php:258 ../options.php:276
-msgid "Background of dropdown item hover color"
-msgstr "Kolor tła elementu rozwijanej górnej nawigacji"
-
-#: ../options.php:263
-msgid "Top nav dropdown item color"
-msgstr "Kolor elementu rozwijanej górnej nawigacji"
-
-#: ../options.php:264
-msgid "Dropdown item color"
-msgstr "Kolor elementu rozwijanego"
-
-#: ../options.php:269
-#, fuzzy
-msgid "Top nav dropdown item hover color"
-msgstr "Kolor elementu rozwijanej górnej nawigacji"
-
-#: ../options.php:270
-#, fuzzy
-msgid "Dropdown item hover color"
-msgstr "Kolor tła elementu rozwijanej górnej nawigacji"
-
-#: ../options.php:275
-#, fuzzy
-msgid "Top nav dropdown item background hover color"
-msgstr "Kolor elementu rozwijanej górnej nawigacji"
-
-#: ../options.php:281
-msgid "Footer"
-msgstr "Stopka"
-
-#: ../options.php:284
-msgid "Footer widget area background color"
-msgstr "Kolor tła widgetów stopki"
-
-#: ../options.php:289
-msgid "Footer background color"
-msgstr "Kolor tła stopki"
-
-#: ../options.php:294
-msgid "Footer text color"
-msgstr "Kolor tekstu stopki"
-
-#: ../options.php:299
-msgid "Footer link color"
-msgstr "Kolor odnośnika stopki"
-
-#: ../options.php:304
-msgid "Footer information"
-msgstr "Informacje w stopce"
-
-#: ../options.php:305
-msgid "Copyright text in footer"
-msgstr "Tekst informacji o prawach autorskich"
-
-#: ../options.php:310
-msgid "Social"
-msgstr "Społecznościowe"
-
-#: ../options.php:313
-msgid "Social icon color"
-msgstr "Kolor ikon społecznościowych"
-
-#: ../options.php:319
-msgid "Footer social icon color"
-msgstr "Kolor ikon społecznościowych w stopce"
-
-#: ../options.php:325
-msgid "Add full URL for your social network profiles"
-msgstr "Dodaj pełny adres URL do twoich profili społecznościowych"
-
-#: ../options.php:326
-msgid "Facebook"
-msgstr "Facebook"
-
-#: ../options.php:333
-msgid "Twitter"
-msgstr "Twitter"
-
-#: ../options.php:339
-msgid "Google+"
-msgstr "Google+"
-
-#: ../options.php:345
-msgid "Youtube"
-msgstr "Youtube"
-
-#: ../options.php:351
-msgid "Vimeo"
-msgstr ""
-
-#: ../options.php:357
-msgid "LinkedIn"
-msgstr "LinkedIn"
-
-#: ../options.php:363
-msgid "Pinterest"
-msgstr "Pinterest"
-
-#: ../options.php:369
-msgid "RSS Feed"
-msgstr "Kanał RSS"
-
-#: ../options.php:375
-msgid "Tumblr"
-msgstr "Tumblr"
-
-#: ../options.php:381
-msgid "Flickr"
-msgstr "Flickr"
-
-#: ../options.php:387
-msgid "Instagram"
-msgstr "Instagram"
-
-#: ../options.php:393
-msgid "Dribbble"
-msgstr "Dribbble"
-
-#: ../options.php:399
-msgid "Skype"
-msgstr "Skype"
-
-#: ../options.php:405
-msgid "Foursquare"
-msgstr "Foursquare"
-
-#: ../options.php:411
-msgid "SoundCloud"
-msgstr ""
-
-#: ../options.php:416
-msgid "Other"
-msgstr "Inne"
-
-#: ../options.php:419
-msgid "Custom CSS"
-msgstr "Własny CSS"
-
-#: ../options.php:420
-msgid "Additional CSS"
-msgstr "Dodatkowy CSS"
-
-#: ../search.php:16
-#, php-format
-msgid "Search Results for: %s"
-msgstr "Wyniki wyszukiwania dla: %s"
-
-#: ../sidebar.php:26
-msgid "Meta"
-msgstr "Meta"
+#: ../archive.php:36 loco:5378ecddff90b259b5784346
+msgid "Year: %s"
+msgstr "Rok: %s"
