@@ -66,6 +66,7 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 = 1.6.1 - 16.07.2014 =
 
 * Added Skype URI support for icons
+* Added Persian language thanks to Robert Nicjoo
 
 = 1.6.0 - 16.07.2014 =
 
