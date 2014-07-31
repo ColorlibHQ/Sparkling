@@ -28,7 +28,8 @@ Sparkling theme uses:
 
 /*========= Description =========*/
 
-Sparkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, design, portfolio, art, personal and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready and is available in Spanish, French, Dutch, Polish, Russian, German Brazilian Portuguese and Italian. Sparkling is a free WordPress theme with premium functionality and design. Now theme is optimized to work with bbPress, Contact Form 7, Jetpack and other popular free and premium plugins.
+Sparkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, portfolio, design, art, photography, personal and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready and is available in Spanish, French, Dutch, Polish, Russian, German, Brazilian Portuguese, Portuguese (Portugal), Persian (Iranian language) and Italian. Sparkling is a free WordPress theme with premium functionality and design. Now theme is optimized to work with bbPress, Contact Form 7, Jetpack and other popular free and premium plugins.
+
 
 
 For questions, comments or bug reports, visit Colorlib support forum (http://colorlib.com/wp/forums).
@@ -63,10 +64,11 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
 
-= 1.6.1 - 16.07.2014 =
+= 1.6.1 - 31.07.2014 =
 
 * Added Skype URI support for icons
 * Added Persian language thanks to Robert Nicjoo
+* Added Portuguese (Portugal) translation thanks to Vasco Cruz
 
 = 1.6.0 - 16.07.2014 =
 
