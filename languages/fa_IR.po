@@ -1,10 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2014-07-23 20:33+0200\n"
-"PO-Revision-Date: 2014-07-30 23:16+0200\n"
+"POT-Creation-Date: 2014-08-08 14:37+0200\n"
+"PO-Revision-Date: 2014-08-08 14:37+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: RobertCreed <info@robertcreed.me>\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,7 +13,6 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
-"Language: fa\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
@@ -28,6 +28,11 @@ msgstr ""
 "بنظر می رسد چیزی در این محل پیدا نشد. شاید امتحان یکی از لینک های زیر یا "
 "جستجو؟"
 
+#: ../404.php:25
+#, fuzzy
+msgid "Recent Posts"
+msgstr "ناوبری مطالب"
+
 #: ../404.php:31
 msgid "Most Used Categories"
 msgstr "بیشترین دسته بندی های استفاده شده"
@@ -36,6 +41,15 @@ msgstr "بیشترین دسته بندی های استفاده شده"
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "نگاهی به بایگانی ماهیانه. %1$s"
+
+#: ../404.php:53 ../archive.php:66 ../sidebar.php:19
+msgid "Archives"
+msgstr "بایگانی ها"
+
+#: ../404.php:58
+#, fuzzy
+msgid "Tags"
+msgstr "مورد استفاده در تگ P"
 
 #: ../archive.php:27
 #, php-format
@@ -92,10 +106,6 @@ msgstr "صدا ها"
 #: ../archive.php:63
 msgid "Chats"
 msgstr "گفتگو ها"
-
-#: ../archive.php:66 ../sidebar.php:19
-msgid "Archives"
-msgstr "بایگانی ها"
 
 #: ../comments.php:30
 #, php-format
@@ -162,9 +172,9 @@ msgid ", "
 msgstr ""
 
 #: ../content-single.php:23
-#, php-format
+#, fuzzy, php-format
 msgid " %1$s"
-msgstr ""
+msgstr "نگاهی به بایگانی ماهیانه. %1$s"
 
 #: ../content.php:20
 msgid "Leave a comment"
@@ -760,12 +770,14 @@ msgid "Add full URL for your social network profiles"
 msgstr "اضافه کردن URL کامل برای پروفایل های شبکه های اجتماعی خود"
 
 #: ../options.php:326
+#, fuzzy
 msgid "Facebook"
-msgstr ""
+msgstr "پسند به ما در فیسبوک"
 
 #: ../options.php:333
+#, fuzzy
 msgid "Twitter"
-msgstr ""
+msgstr "دنبال کردن ما در توییتر"
 
 #: ../options.php:339
 msgid "Google+"

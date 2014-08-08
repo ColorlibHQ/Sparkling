@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2014-07-23 20:32+0200\n"
-"PO-Revision-Date: 2014-07-23 20:32+0200\n"
+"POT-Creation-Date: 2014-08-08 14:37+0200\n"
+"PO-Revision-Date: 2014-08-08 14:37+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: pt_BR\n"
@@ -27,6 +27,11 @@ msgid ""
 msgstr ""
 "Nada foi encontrado. Tente utilizar os links abaixo ou fazer uma busca."
 
+#: ../404.php:25
+#, fuzzy
+msgid "Recent Posts"
+msgstr "Exibir lista de Postagens Populares, Postagens Recentes & Comentários"
+
 #: ../404.php:31
 msgid "Most Used Categories"
 msgstr "Categorias Mais Usadas"
@@ -35,6 +40,15 @@ msgstr "Categorias Mais Usadas"
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Tente olhar nos arquivos mensais. %1$s"
+
+#: ../404.php:53 ../archive.php:66 ../sidebar.php:19
+msgid "Archives"
+msgstr "Arquivos"
+
+#: ../404.php:58
+#, fuzzy
+msgid "Tags"
+msgstr "Usado em tags P (Parágrafo)"
 
 #: ../archive.php:27
 #, php-format
@@ -91,10 +105,6 @@ msgstr "Áudios"
 #: ../archive.php:63
 msgid "Chats"
 msgstr "Chats"
-
-#: ../archive.php:66 ../sidebar.php:19
-msgid "Archives"
-msgstr "Arquivos"
 
 #: ../comments.php:30
 #, php-format
@@ -723,12 +733,12 @@ msgstr "Cor do Item do Dropdown (Submenu em lista suspensa) do Menu do topo"
 #: ../options.php:270
 #, fuzzy
 msgid "Dropdown item hover color"
-msgstr "Cor do plano de fundo do ítem do Dropdown (Submenu em lista suspensa)"
+msgstr "Cor do background do dropdown do item:hover"
 
 #: ../options.php:275
 #, fuzzy
 msgid "Top nav dropdown item background hover color"
-msgstr "Cor do Item do Dropdown (Submenu em lista suspensa) do Menu do topo"
+msgstr "Cor do item do dropdown do menu do topo"
 
 #: ../options.php:281
 msgid "Footer"

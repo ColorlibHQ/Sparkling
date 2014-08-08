@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2014-07-23 20:32+0200\n"
-"PO-Revision-Date: 2014-07-23 20:32+0200\n"
+"POT-Creation-Date: 2014-08-08 14:38+0200\n"
+"PO-Revision-Date: 2014-08-08 14:38+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: ru\n"
@@ -29,6 +29,11 @@ msgstr ""
 "Ничего не найдено. Попробуйте перейти по другой ссылке или воспользуйтесь "
 "поиском?"
 
+#: ../404.php:25
+#, fuzzy
+msgid "Recent Posts"
+msgstr "Навигация по записям"
+
 #: ../404.php:31
 msgid "Most Used Categories"
 msgstr "Самые популярные категории"
@@ -37,6 +42,15 @@ msgstr "Самые популярные категории"
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Поищите в архивах %1$s"
+
+#: ../404.php:53 ../archive.php:66 ../sidebar.php:19
+msgid "Archives"
+msgstr "Архивы"
+
+#: ../404.php:58
+#, fuzzy
+msgid "Tags"
+msgstr "Используемый в тегах <p> (абзац)"
 
 #: ../archive.php:27
 #, php-format
@@ -93,10 +107,6 @@ msgstr "Аудио"
 #: ../archive.php:63
 msgid "Chats"
 msgstr "Чаты"
-
-#: ../archive.php:66 ../sidebar.php:19
-msgid "Archives"
-msgstr "Архивы"
 
 #: ../comments.php:30
 #, php-format

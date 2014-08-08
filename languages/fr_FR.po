@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2014-07-23 20:31+0200\n"
-"PO-Revision-Date: 2014-07-23 20:32+0200\n"
+"POT-Creation-Date: 2014-08-08 14:37+0200\n"
+"PO-Revision-Date: 2014-08-08 14:37+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: fr_FR\n"
@@ -28,6 +28,12 @@ msgstr ""
 "Il semble que rien n&rsquo;ait été trouvé ici. Essayez peut-être un des "
 "liens ci-dessous ou une recherche ?"
 
+#: ../404.php:25
+#, fuzzy
+msgid "Recent Posts"
+msgstr ""
+"Affiche les listes d'articles populaires, r&eacute;cents & commentaires"
+
 #: ../404.php:31
 msgid "Most Used Categories"
 msgstr "Catégories les plus utilisées"
@@ -36,6 +42,15 @@ msgstr "Catégories les plus utilisées"
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Essayer de regarder dans les archives mensuelles. %1$s"
+
+#: ../404.php:53 ../archive.php:66 ../sidebar.php:19
+msgid "Archives"
+msgstr "Archives"
+
+#: ../404.php:58
+#, fuzzy
+msgid "Tags"
+msgstr "Utilisé dans les balises P"
 
 #: ../archive.php:27
 #, php-format
@@ -92,10 +107,6 @@ msgstr "Audio"
 #: ../archive.php:63
 msgid "Chats"
 msgstr "Discussions"
-
-#: ../archive.php:66 ../sidebar.php:19
-msgid "Archives"
-msgstr "Archives"
 
 #: ../comments.php:30
 #, php-format
@@ -708,8 +719,7 @@ msgstr "Couleur des éléments de menu déroulant"
 #: ../options.php:269
 #, fuzzy
 msgid "Top nav dropdown item hover color"
-msgstr ""
-"Couleur d'un sous-&eacute;l&eacute;ment de la barre de navigation haute"
+msgstr "Couleur du texte de l'élément principal du menu déroulant"
 
 #: ../options.php:270
 #, fuzzy

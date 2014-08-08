@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2014-07-23 20:33+0200\n"
-"PO-Revision-Date: 2014-07-23 20:33+0200\n"
+"POT-Creation-Date: 2014-08-08 14:38+0200\n"
+"PO-Revision-Date: 2014-08-08 14:38+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "MIME-Version: 1.0\n"
@@ -25,6 +25,10 @@ msgid ""
 "below or a search?"
 msgstr ""
 
+#: ../404.php:25
+msgid "Recent Posts"
+msgstr ""
+
 #: ../404.php:31
 msgid "Most Used Categories"
 msgstr ""
@@ -32,6 +36,14 @@ msgstr ""
 #: ../404.php:52
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: ../404.php:53 ../archive.php:66 ../sidebar.php:19
+msgid "Archives"
+msgstr ""
+
+#: ../404.php:58
+msgid "Tags"
 msgstr ""
 
 #: ../archive.php:27
@@ -88,10 +100,6 @@ msgstr ""
 
 #: ../archive.php:63
 msgid "Chats"
-msgstr ""
-
-#: ../archive.php:66 ../sidebar.php:19
-msgid "Archives"
 msgstr ""
 
 #: ../comments.php:30

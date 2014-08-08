@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling\n"
-"POT-Creation-Date: 2014-07-23 20:31+0200\n"
-"PO-Revision-Date: 2014-07-23 20:31+0200\n"
+"POT-Creation-Date: 2014-08-08 14:37+0200\n"
+"PO-Revision-Date: 2014-08-08 14:37+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -30,6 +30,13 @@ msgstr ""
 "Scheinbar wurde die gewünschte Seite nicht gefunden. Möchten Sie einen der "
 "folgenden Links benutzen oder eine neue Suche starten?"
 
+#: 404.php:25
+#, fuzzy
+msgid "Recent Posts"
+msgstr ""
+"Zeigt eine gekennzeichnite Liste mit beliebten Beitr&auml;gen, neuesten "
+"Beitr&auml;gen und Kommentaren an"
+
 #: 404.php:31
 msgid "Most Used Categories"
 msgstr "Meist genutzte Kategorien"
@@ -38,6 +45,15 @@ msgstr "Meist genutzte Kategorien"
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Schauen Sie in den Monatsarchiven. %1$s"
+
+#: 404.php:53 archive.php:66 sidebar.php:19
+msgid "Archives"
+msgstr "Archive"
+
+#: 404.php:58
+#, fuzzy
+msgid "Tags"
+msgstr "Benutzt in P tags"
 
 #: archive.php:27
 #, php-format
@@ -104,10 +120,6 @@ msgstr "Audio"
 #: archive.php:63
 msgid "Chats"
 msgstr "Chats"
-
-#: archive.php:66 sidebar.php:19
-msgid "Archives"
-msgstr "Archive"
 
 #: comments.php:30
 #, php-format
