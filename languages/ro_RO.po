@@ -1,0 +1,839 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sparkling Theme\n"
+"POT-Creation-Date: 2014-07-23 20:33+0200\n"
+"PO-Revision-Date: 2014-08-22 15:16+0200\n"
+"Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
+"Language-Team: colorlib <info@colorlib.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.8\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
+"Language: ro_RO\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Pagină inexistentă."
+
+#: ../404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Nu a fost găsit nimic în locația speficată. Poate încerci una din legăturile "
+"de mai jos?"
+
+#: ../404.php:31
+msgid "Most Used Categories"
+msgstr "Cele mai accesate categorii"
+
+#: ../404.php:52
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Încearcă să cauți în arhivele lunare. %1$s"
+
+#: ../archive.php:27
+#, php-format
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+#: ../archive.php:30
+#, php-format
+msgid "Day: %s"
+msgstr "Zi: %s"
+
+#: ../archive.php:33
+#, php-format
+msgid "Month: %s"
+msgstr "Lună: %s"
+
+#: ../archive.php:36
+#, php-format
+msgid "Year: %s"
+msgstr "An: %s"
+
+#: ../archive.php:39
+msgid "Asides"
+msgstr "Alături"
+
+#: ../archive.php:42
+msgid "Galleries"
+msgstr "Galerii"
+
+#: ../archive.php:45
+msgid "Images"
+msgstr "Imagini"
+
+#: ../archive.php:48
+msgid "Videos"
+msgstr "Videoclipuri"
+
+#: ../archive.php:51
+msgid "Quotes"
+msgstr "Citate"
+
+#: ../archive.php:54
+msgid "Links"
+msgstr "Legături"
+
+#: ../archive.php:57
+msgid "Statuses"
+msgstr "Stări"
+
+#: ../archive.php:60
+msgid "Audios"
+msgstr "Înregistrări audio"
+
+#: ../archive.php:63
+msgid "Chats"
+msgstr "Discuții"
+
+#: ../archive.php:66 ../sidebar.php:19
+msgid "Archives"
+msgstr "Arhive"
+
+#: ../comments.php:30
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "O părere despre &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s păreri despre &ldquo;%2$s&rdquo;"
+
+#: ../comments.php:37 ../comments.php:55
+msgid "Comment navigation"
+msgstr "Navigare comentarii"
+
+#: ../comments.php:38 ../comments.php:56
+msgid "&larr; Older Comments"
+msgstr "&larr; Comentarii mai vechi"
+
+#: ../comments.php:39 ../comments.php:57
+msgid "Newer Comments &rarr;"
+msgstr "Comentarii noi &rarr;"
+
+#: ../comments.php:67
+msgid "Comments are closed."
+msgstr "Nu se adaugă comentarii."
+
+#: ../content-none.php:13
+msgid "Nothing Found"
+msgstr "Nu s-a găsit nimic."
+
+#: ../content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Ești gata ăs publici primul articol? <a href=\"%1$s\">Începe aici</a>."
+
+#: ../content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Ne pare rău, dar nu am găsit nimic potrivit cu ce ai căutat. Încearcă să "
+"schi,bi cuvintele cheie și caută din nou."
+
+#: ../content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Nu am găsit ceea ce cauți. Încearcă facilitatatea de căutare."
+
+#: ../content-page.php:21 ../content-single.php:35 ../content.php:43
+#: ../front-page.php:21 ../image.php:79
+msgid "Pages:"
+msgstr "Pagini:"
+
+#: ../content-page.php:26 ../content-single.php:26 ../content.php:23
+#: ../front-page.php:26
+msgid "Edit"
+msgstr "Editare"
+
+#: ../content-single.php:19
+msgid ", "
+msgstr ","
+
+#: ../content-single.php:23
+#, php-format
+msgid " %1$s"
+msgstr " %1$s"
+
+#: ../content.php:20
+msgid "Leave a comment"
+msgstr "Lasă un comentariu"
+
+#: ../content.php:20
+msgid "1 Comment"
+msgstr "1 comentariu"
+
+#: ../content.php:20
+msgid "% Comments"
+msgstr "% Comentarii"
+
+#: ../content.php:32 ../content.php:39
+msgid "Read More"
+msgstr "Citește mai mult"
+
+#: ../functions.php:57
+msgid "Primary Menu"
+msgstr "Meniu Principal"
+
+#: ../functions.php:58 ../inc/extras.php:208
+msgid "Footer Links"
+msgstr "Legături în subsol"
+
+#: ../functions.php:87
+msgid "Sidebar"
+msgstr "Bara laterală"
+
+#: ../functions.php:97
+msgid "Homepage Widget 1"
+msgstr "Prima Pagină Componenta 1"
+
+#: ../functions.php:98 ../functions.php:108 ../functions.php:118
+msgid "Displays on the Home Page"
+msgstr "Afișare pe Prima Pagină"
+
+#: ../functions.php:107
+msgid "Homepage Widget 2"
+msgstr "Prima Pagină Componenta 2"
+
+#: ../functions.php:117
+msgid "Homepage Widget 3"
+msgstr "Prima Pagină Componenta 3"
+
+#: ../functions.php:127
+msgid "Footer Widget 1"
+msgstr "Subsol Componenta 1"
+
+#: ../functions.php:128 ../functions.php:138 ../functions.php:148
+msgid "Used for footer widget area"
+msgstr "Folosit pentru zona componente subsol"
+
+#: ../functions.php:137
+msgid "Footer Widget 2"
+msgstr "Subsol Componenta 2"
+
+#: ../functions.php:147
+msgid "Footer Widget 3"
+msgstr "Subsol Componenta 3"
+
+#: ../image.php:22
+msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Anterior"
+
+#: ../image.php:23
+msgid "Next <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Următor <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:90
+#: ../inc/admin/includes/class-options-framework-admin.php:91
+msgid "Theme Options"
+msgstr "Opțiuni temă"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:186
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr "Apasă OK pentru resetare. Setările temei vor fi pierdute!"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:217
+msgid "Default options restored."
+msgstr "Am restaurat opțiunile implicite"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:271
+msgid "Options saved."
+msgstr "Opțiuni salvate."
+
+#: ../inc/admin/includes/class-options-media-uploader.php:63
+msgid "No file chosen"
+msgstr "Nici un fisier selectat"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:66
+#: ../inc/admin/includes/class-options-media-uploader.php:119
+msgid "Upload"
+msgstr "Încarcă"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:68
+#: ../inc/admin/includes/class-options-media-uploader.php:120
+msgid "Remove"
+msgstr "Șterge"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:71
+msgid "Upgrade your version of WordPress for full media support."
+msgstr "Actualizează versiunea Wordpress pentru suport media îmbunătățit."
+
+#: ../inc/admin/includes/class-options-media-uploader.php:95
+msgid "View File"
+msgstr "Vezi fișier"
+
+#: ../inc/admin/includes/class-options-sanitization.php:241
+msgid "No Repeat"
+msgstr "Fără repetare"
+
+#: ../inc/admin/includes/class-options-sanitization.php:242
+msgid "Repeat Horizontally"
+msgstr "Repetă pe orizontală"
+
+#: ../inc/admin/includes/class-options-sanitization.php:243
+msgid "Repeat Vertically"
+msgstr "Repetă pe verticală"
+
+#: ../inc/admin/includes/class-options-sanitization.php:244
+msgid "Repeat All"
+msgstr "Repetă peste tot"
+
+#: ../inc/admin/includes/class-options-sanitization.php:257
+msgid "Top Left"
+msgstr "Stânga Sus"
+
+#: ../inc/admin/includes/class-options-sanitization.php:258
+msgid "Top Center"
+msgstr "Centrat Sus"
+
+#: ../inc/admin/includes/class-options-sanitization.php:259
+msgid "Top Right"
+msgstr "Dreapta Sus"
+
+#: ../inc/admin/includes/class-options-sanitization.php:260
+msgid "Middle Left"
+msgstr "Stânga Mijloc"
+
+#: ../inc/admin/includes/class-options-sanitization.php:261
+msgid "Middle Center"
+msgstr "Centru Mijloc"
+
+#: ../inc/admin/includes/class-options-sanitization.php:262
+msgid "Middle Right"
+msgstr "Dreapta mijloc"
+
+#: ../inc/admin/includes/class-options-sanitization.php:263
+msgid "Bottom Left"
+msgstr "Stânga Jos"
+
+#: ../inc/admin/includes/class-options-sanitization.php:264
+msgid "Bottom Center"
+msgstr "Centru Jos"
+
+#: ../inc/admin/includes/class-options-sanitization.php:265
+msgid "Bottom Right"
+msgstr "Drapta Jos"
+
+#: ../inc/admin/includes/class-options-sanitization.php:278
+msgid "Scroll Normally"
+msgstr "Glisare Normală"
+
+#: ../inc/admin/includes/class-options-sanitization.php:279
+msgid "Fixed in Place"
+msgstr "Loc Fix"
+
+#: ../inc/admin/includes/class-options-sanitization.php:353
+msgid "Normal"
+msgstr "Normal"
+
+#: ../inc/admin/includes/class-options-sanitization.php:354
+msgid "Italic"
+msgstr "Cursiv"
+
+#: ../inc/admin/includes/class-options-sanitization.php:355
+msgid "Bold"
+msgstr "Îngroșat"
+
+#: ../inc/admin/includes/class-options-sanitization.php:356
+msgid "Bold Italic"
+msgstr "Cursin Îngroșat"
+
+#: ../inc/extras.php:63
+#, php-format
+msgid "Page %s"
+msgstr "Pagina %s"
+
+#: ../inc/extras.php:111
+msgid "Search..."
+msgstr "Caută..."
+
+#: ../inc/extras.php:132
+msgid ""
+"<p>This post is password protected. To view it please enter your password "
+"below:</p>"
+msgstr ""
+"<p>Acest articol este privat. Pentru a-l vedea introdu parila mai jos:</p>"
+
+#: ../inc/extras.php:133
+msgid "Password:"
+msgstr "Parola:"
+
+#: ../inc/extras.php:136
+msgid "Submit"
+msgstr "Trimite"
+
+#: ../inc/extras.php:179
+msgid "Follow us on "
+msgstr "Urmărește-ne pe"
+
+#: ../inc/extras.php:283
+#, php-format
+msgid "Theme by %1$s Powered by %2$s"
+msgstr "Temă de %1$s Susținut de %2$s"
+
+#: ../inc/extras.php:387
+msgid "Support and Documentation"
+msgstr "Suport și Documentație"
+
+#: ../inc/extras.php:393
+msgid "Sparkling Documentation"
+msgstr "Documentație penrtu Sparkling"
+
+#: ../inc/extras.php:394
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr ""
+"Cea mai bună metode de contact pentru <b>întrebări</b> și <b>reportare "
+"probleme</b> este via"
+
+#: ../inc/extras.php:394
+msgid "Colorlib support forum"
+msgstr "Forum-ul Colorlib"
+
+#: ../inc/extras.php:395
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr "Dacă îți place această temă, aș aprecia unul din următoarele lucruri:"
+
+#: ../inc/extras.php:397
+msgid "Rate this Theme"
+msgstr "Dă notă temei"
+
+#: ../inc/extras.php:398
+msgid "Like on Facebook"
+msgstr "\"Like\" pe Facebook"
+
+#: ../inc/extras.php:399
+msgid "Follow on Twitter"
+msgstr "Urmărește-ne pe Twitter"
+
+#: ../inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "Navigare articole"
+
+#: ../inc/template-tags.php:27
+msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Articole mai vechi"
+
+#: ../inc/template-tags.php:31
+msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Articole mai noi <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "Navigare articole"
+
+#: ../inc/widgets/widget-categories.php:11
+#: ../inc/widgets/widget-categories.php:12
+msgid "Sparkling Categories"
+msgstr "Categorii \"Sparkling\""
+
+#: ../inc/widgets/widget-categories.php:17
+#: ../inc/widgets/widget-categories.php:76
+msgid "Categories"
+msgstr "Categorii"
+
+#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
+msgid "Title "
+msgstr "Titlu"
+
+#: ../inc/widgets/widget-categories.php:91
+msgid "Limit Categories "
+msgstr "Limitare Categorii"
+
+#: ../inc/widgets/widget-categories.php:104
+msgid "Enable Posts Count"
+msgstr "Aprobă Numărarea Articolelor"
+
+#: ../inc/widgets/widget-popular-posts.php:11
+#: ../inc/widgets/widget-popular-posts.php:12
+msgid "Sparkling Popular Posts Widget"
+msgstr "Componentă Sparkling \"Cele Mai Citite Articole\""
+
+#: ../inc/widgets/widget-popular-posts.php:17
+#: ../inc/widgets/widget-popular-posts.php:94
+msgid "Popular Posts"
+msgstr "Cele Mai Citite Articole"
+
+#: ../inc/widgets/widget-popular-posts.php:99
+msgid "Title"
+msgstr "Titlu"
+
+#: ../inc/widgets/widget-popular-posts.php:107
+msgid "Limit Posts Number"
+msgstr "Limitează Număr Articole"
+
+#: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
+msgid "Sparkling Social Widget"
+msgstr "Componentă Sparkling \"Socializare\""
+
+#: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
+msgid "Follow us"
+msgstr "Urmărește-ne"
+
+#: ../options.php:29
+msgid "Right Sidebar"
+msgstr "Bara Laterală Dreapta"
+
+#: ../options.php:29
+msgid "Left Sidebar"
+msgstr "Bara Laterală Stânga"
+
+#: ../options.php:33
+msgid "One"
+msgstr "Unu"
+
+#: ../options.php:34
+msgid "Two"
+msgstr "Doi"
+
+#: ../options.php:35
+msgid "Three"
+msgstr "Trei"
+
+#: ../options.php:36
+msgid "Four"
+msgstr "Patru"
+
+#: ../options.php:37
+msgid "Five"
+msgstr "Cinci"
+
+#: ../options.php:42
+msgid "French Toast"
+msgstr "Pâine Prăjită"
+
+#: ../options.php:43
+msgid "Pancake"
+msgstr "Clătită"
+
+#: ../options.php:44
+msgid "Omelette"
+msgstr "Omletă"
+
+#: ../options.php:45
+msgid "Crepe"
+msgstr "Clătite"
+
+#: ../options.php:46
+msgid "Waffle"
+msgstr "Vafă"
+
+#: ../options.php:115
+msgid "Main"
+msgstr "Principal"
+
+#: ../options.php:118
+msgid "Do You want to display image slider on the Home Page?"
+msgstr "Vrei să afișezi pe Prima Pagină imagini dinamice?"
+
+#: ../options.php:119
+msgid "Check if you want to enable slider"
+msgstr "Bifează dacă vrei conținut dinamic"
+
+#: ../options.php:124
+msgid "Slider Category"
+msgstr "Categorie Conținut Dinamic"
+
+#: ../options.php:125
+msgid "Select a category for the featured post slider"
+msgstr "Alege o categorie pentru afișarea dinamică a articolelor recomandate"
+
+#: ../options.php:131
+msgid "Number of slide items"
+msgstr "Număr element conținut dinamic"
+
+#: ../options.php:132
+msgid "Enter the number of slide items"
+msgstr "Introdu numărul de elemente dinamice"
+
+#: ../options.php:138
+msgid "Website Layout Options"
+msgstr "Opțiuni Structură Site"
+
+#: ../options.php:139
+msgid "Choose between Left and Right sidebar options to be used as default"
+msgstr "Alege bara din Stânga sau din Dreapta ca implicită"
+
+#: ../options.php:146
+msgid "Element color"
+msgstr "Culoare element"
+
+#: ../options.php:147 ../options.php:153 ../options.php:186 ../options.php:192
+#: ../options.php:198 ../options.php:203 ../options.php:225 ../options.php:231
+#: ../options.php:240 ../options.php:314 ../options.php:320
+msgid "Default used if no color is selected"
+msgstr "Folosit implicit dacă nici o culoare nu e selectată"
+
+#: ../options.php:152
+msgid "Element color on hover"
+msgstr "Culoare element (mouse deasupra)"
+
+#: ../options.php:158
+msgid "Custom Favicon"
+msgstr "Pictograma mea"
+
+#: ../options.php:159
+msgid ""
+"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
+msgstr ""
+"Încarcă o imagine de 32x32 pixeli, format PNG/GIF care să reprezinte "
+"pictograma site-ului"
+
+#: ../options.php:164
+msgid "Action Button"
+msgstr "Acțiunea Mea"
+
+#: ../options.php:167
+msgid "Call For Action Text"
+msgstr "Text \"Acțiunea mea\""
+
+#: ../options.php:168
+msgid "Enter the text for call for action section"
+msgstr "Introdu textul pentru secțiunea \"Acțiunea mea\""
+
+#: ../options.php:173
+msgid "Call For Action Button Title"
+msgstr "Titlu buton \"Acțiunea mea\""
+
+#: ../options.php:174
+msgid "Enter the title for Call For Action button"
+msgstr "Scrie titlul butonului \"Acțiunea mea\""
+
+#: ../options.php:179
+msgid "CFA button link"
+msgstr "AM - legătură buton"
+
+#: ../options.php:180
+msgid "Enter the link for Call For Action button"
+msgstr "Introdu o legătură pentru butonul \"Acțiunea mea\""
+
+#: ../options.php:185
+msgid "Call For Action Text Color"
+msgstr "Culoare text \"Acțiunea mea\""
+
+#: ../options.php:191
+msgid "Call For Action Background Color"
+msgstr "Culoare fundal \"Acțiunea mea\""
+
+#: ../options.php:197
+msgid "Call For Action Button Border Color"
+msgstr "Culoare margine \"Acțiunea mea\""
+
+#: ../options.php:202
+msgid "Call For Action Button Text Color"
+msgstr "Culoare text buton \"Acțiunea mea\""
+
+#: ../options.php:208
+msgid "Typography"
+msgstr "Scriere"
+
+#: ../options.php:211
+msgid "Main Body Text"
+msgstr "Text conținut principal"
+
+#: ../options.php:212
+msgid "Used in P tags"
+msgstr "Folosit in paragrafe P"
+
+#: ../options.php:218
+msgid "Heading Color"
+msgstr "Culoare antet"
+
+#: ../options.php:219
+msgid "Color for all headings (h1-h6)"
+msgstr "Culoare pentru cap paragraf (h1-h6)"
+
+#: ../options.php:224
+msgid "Link Color"
+msgstr "Culoare legătură"
+
+#: ../options.php:230
+msgid "Link:hover Color"
+msgstr "Culoare legătură (mouse deasupra)"
+
+#: ../options.php:236
+msgid "Header"
+msgstr "Antet"
+
+#: ../options.php:239
+msgid "Top nav background color"
+msgstr "Culoare meniu sus"
+
+#: ../options.php:245
+msgid "Top nav item color"
+msgstr "Culoare element meniu sus"
+
+#: ../options.php:246
+msgid "Link color"
+msgstr "Culoare legătură"
+
+#: ../options.php:251
+msgid "Top nav item hover color"
+msgstr "Culoare element meniu sus"
+
+#: ../options.php:252
+msgid "Link:hover color"
+msgstr "Culoare legătură (mouse deasupra)"
+
+#: ../options.php:257
+msgid "Top nav dropdown background color"
+msgstr "Culoare fundal submeniu sus"
+
+#: ../options.php:258 ../options.php:276
+msgid "Background of dropdown item hover color"
+msgstr "Culoare fundal element submeniu sus"
+
+#: ../options.php:263
+msgid "Top nav dropdown item color"
+msgstr "Culoare element submeniu sus"
+
+#: ../options.php:264
+msgid "Dropdown item color"
+msgstr "Culoare element submeniu"
+
+#: ../options.php:269
+msgid "Top nav dropdown item hover color"
+msgstr "Culoare element submeniu sus (mouse deasupra)"
+
+#: ../options.php:270
+msgid "Dropdown item hover color"
+msgstr "Culoare element submeniu (mouse deasupra) "
+
+#: ../options.php:275
+msgid "Top nav dropdown item background hover color"
+msgstr "Culoare fundal element submeniu sus (mouse deasupra)"
+
+#: ../options.php:281
+msgid "Footer"
+msgstr "Subsol"
+
+#: ../options.php:284
+msgid "Footer widget area background color"
+msgstr "Culoare fundal zonă componente în subsol"
+
+#: ../options.php:289
+msgid "Footer background color"
+msgstr "Culoare fundal subsol"
+
+#: ../options.php:294
+msgid "Footer text color"
+msgstr "Culoare text în subsol"
+
+#: ../options.php:299
+msgid "Footer link color"
+msgstr "Culoare \"legături\" în subsol"
+
+#: ../options.php:304
+msgid "Footer information"
+msgstr "Informații subsol"
+
+#: ../options.php:305
+msgid "Copyright text in footer"
+msgstr "Text \"drepturi de autor\" în subsol"
+
+#: ../options.php:310
+msgid "Social"
+msgstr "Rețele Socializare"
+
+#: ../options.php:313
+msgid "Social icon color"
+msgstr "Culoare pictogramă rețea socializare"
+
+#: ../options.php:319
+msgid "Footer social icon color"
+msgstr "Culoare pictogramă rețea socializare (subsol)"
+
+#: ../options.php:325
+msgid "Add full URL for your social network profiles"
+msgstr "Adaugă Legătură completă către profilele tale pe rețelele sociale"
+
+#: ../options.php:326
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../options.php:333
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../options.php:339
+msgid "Google+"
+msgstr "Google+"
+
+#: ../options.php:345
+msgid "Youtube"
+msgstr "Youtube"
+
+#: ../options.php:351
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: ../options.php:357
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: ../options.php:363
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: ../options.php:369
+msgid "RSS Feed"
+msgstr "Flux RSS"
+
+#: ../options.php:375
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: ../options.php:381
+msgid "Flickr"
+msgstr "Flickr"
+
+#: ../options.php:387
+msgid "Instagram"
+msgstr "Instagram"
+
+#: ../options.php:393
+msgid "Dribbble"
+msgstr "Dribbble"
+
+#: ../options.php:399
+msgid "Skype"
+msgstr "Skype"
+
+#: ../options.php:405
+msgid "Foursquare"
+msgstr "Foursquare"
+
+#: ../options.php:411
+msgid "SoundCloud"
+msgstr "SoundCloud"
+
+#: ../options.php:416
+msgid "Other"
+msgstr "Altele"
+
+#: ../options.php:419
+msgid "Custom CSS"
+msgstr "CSS specific"
+
+#: ../options.php:420
+msgid "Additional CSS"
+msgstr "CSS Adițional"
+
+#: ../search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Rezultate găsite pentru: %s"
+
+#: ../sidebar.php:26
+msgid "Meta"
+msgstr "Meta"
