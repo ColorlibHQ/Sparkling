@@ -1,18 +1,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2014-07-23 20:33+0200\n"
-"PO-Revision-Date: 2014-08-22 15:16+0200\n"
+"POT-Creation-Date: 2014-10-03 11:44+0200\n"
+"PO-Revision-Date: 2014-10-03 11:44+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
+"Language: ro_RO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.8\n"
+"X-Generator: Poedit 1.6.9\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
-"Language: ro_RO\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
@@ -28,6 +28,10 @@ msgstr ""
 "Nu a fost găsit nimic în locația speficată. Poate încerci una din legăturile "
 "de mai jos?"
 
+#: ../404.php:25
+msgid "Recent Posts"
+msgstr ""
+
 #: ../404.php:31
 msgid "Most Used Categories"
 msgstr "Cele mai accesate categorii"
@@ -36,6 +40,14 @@ msgstr "Cele mai accesate categorii"
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Încearcă să cauți în arhivele lunare. %1$s"
+
+#: ../404.php:53 ../archive.php:66 ../sidebar.php:19
+msgid "Archives"
+msgstr "Arhive"
+
+#: ../404.php:58
+msgid "Tags"
+msgstr ""
 
 #: ../archive.php:27
 #, php-format
@@ -92,10 +104,6 @@ msgstr "Înregistrări audio"
 #: ../archive.php:63
 msgid "Chats"
 msgstr "Discuții"
-
-#: ../archive.php:66 ../sidebar.php:19
-msgid "Archives"
-msgstr "Arhive"
 
 #: ../comments.php:30
 #, php-format
@@ -184,7 +192,7 @@ msgstr "Citește mai mult"
 msgid "Primary Menu"
 msgstr "Meniu Principal"
 
-#: ../functions.php:58 ../inc/extras.php:208
+#: ../functions.php:58 ../inc/extras.php:215
 msgid "Footer Links"
 msgstr "Legături în subsol"
 
@@ -375,20 +383,20 @@ msgstr "Trimite"
 msgid "Follow us on "
 msgstr "Urmărește-ne pe"
 
-#: ../inc/extras.php:283
+#: ../inc/extras.php:292
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Temă de %1$s Susținut de %2$s"
 
-#: ../inc/extras.php:387
+#: ../inc/extras.php:396
 msgid "Support and Documentation"
 msgstr "Suport și Documentație"
 
-#: ../inc/extras.php:393
+#: ../inc/extras.php:402
 msgid "Sparkling Documentation"
 msgstr "Documentație penrtu Sparkling"
 
-#: ../inc/extras.php:394
+#: ../inc/extras.php:403
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -396,23 +404,23 @@ msgstr ""
 "Cea mai bună metode de contact pentru <b>întrebări</b> și <b>reportare "
 "probleme</b> este via"
 
-#: ../inc/extras.php:394
+#: ../inc/extras.php:403
 msgid "Colorlib support forum"
 msgstr "Forum-ul Colorlib"
 
-#: ../inc/extras.php:395
+#: ../inc/extras.php:404
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "Dacă îți place această temă, aș aprecia unul din următoarele lucruri:"
 
-#: ../inc/extras.php:397
+#: ../inc/extras.php:406
 msgid "Rate this Theme"
 msgstr "Dă notă temei"
 
-#: ../inc/extras.php:398
+#: ../inc/extras.php:407
 msgid "Like on Facebook"
 msgstr "\"Like\" pe Facebook"
 
-#: ../inc/extras.php:399
+#: ../inc/extras.php:408
 msgid "Follow on Twitter"
 msgstr "Urmărește-ne pe Twitter"
 

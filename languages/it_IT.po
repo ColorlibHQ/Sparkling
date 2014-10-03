@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2014-08-08 14:37+0200\n"
-"PO-Revision-Date: 2014-08-08 14:37+0200\n"
+"POT-Creation-Date: 2014-10-03 11:44+0200\n"
+"PO-Revision-Date: 2014-10-03 11:44+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.7\n"
+"X-Generator: Poedit 1.6.9\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
@@ -197,7 +197,7 @@ msgstr "Approfondisci"
 msgid "Primary Menu"
 msgstr "Menu principale"
 
-#: ../functions.php:58 ../inc/extras.php:208
+#: ../functions.php:58 ../inc/extras.php:215
 msgid "Footer Links"
 msgstr "Link nel footer"
 
@@ -391,20 +391,20 @@ msgstr "Invia"
 msgid "Follow us on "
 msgstr "Seguici su"
 
-#: ../inc/extras.php:283
+#: ../inc/extras.php:292
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Tema per %1$s Disegnato da %2$s"
 
-#: ../inc/extras.php:387
+#: ../inc/extras.php:396
 msgid "Support and Documentation"
 msgstr "Supporto e Documentazione"
 
-#: ../inc/extras.php:393
+#: ../inc/extras.php:402
 msgid "Sparkling Documentation"
 msgstr "Documentazione Sparkling"
 
-#: ../inc/extras.php:394
+#: ../inc/extras.php:403
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -412,23 +412,23 @@ msgstr ""
 "Il modo migliore per contattarci per <b>domande di supporto</b> e "
 "<b>segnalazioni</b> è via"
 
-#: ../inc/extras.php:394
+#: ../inc/extras.php:403
 msgid "Colorlib support forum"
 msgstr "Forum di supporto Colorlib"
 
-#: ../inc/extras.php:395
+#: ../inc/extras.php:404
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "Se ti piace questo tema, apprezzerei una delle seguenti:"
 
-#: ../inc/extras.php:397
+#: ../inc/extras.php:406
 msgid "Rate this Theme"
 msgstr "Vota questo tema"
 
-#: ../inc/extras.php:398
+#: ../inc/extras.php:407
 msgid "Like on Facebook"
 msgstr "Mi Piace su Facebook"
 
-#: ../inc/extras.php:399
+#: ../inc/extras.php:408
 msgid "Follow on Twitter"
 msgstr "Seguici su Twitter"
 

@@ -184,7 +184,10 @@ function sparkling_social(){
 }
 endif;
 
-// header menu (should you choose to use one)
+if ( ! function_exists( 'sparkling_header_menu' ) ) :
+/**
+ * Header menu (should you choose to use one)
+ */
 function sparkling_header_menu() {
         // display the WordPress Custom Menu if available
         wp_nav_menu(array(
@@ -198,8 +201,12 @@ function sparkling_header_menu() {
                     'walker'            => new wp_bootstrap_navwalker()
         ));
 } /* end header menu */
+endif;
 
-// footer menu (should you choose to use one)
+if ( ! function_exists( 'sparkling_footer_links' ) ) :
+/**
+ * Footer menu (should you choose to use one)
+ */
 function sparkling_footer_links() {
         // display the WordPress Custom Menu if available
         wp_nav_menu(array(
@@ -216,6 +223,8 @@ function sparkling_footer_links() {
                 'fallback_cb' => 'sparkling_footer_links_fallback'  // fallback function
         ));
 } /* end sparkling footer link */
+endif;
+
 
 if ( ! function_exists( 'sparkling_call_for_action' ) ) :
 /**
