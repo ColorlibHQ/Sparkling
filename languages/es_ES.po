@@ -136,7 +136,7 @@ msgstr "Los Comentarios están cerrados."
 
 #: ../content-none.php:13
 msgid "Nothing Found"
-msgstr "Se ha encontrando ningún resultado"
+msgstr "No se han encontrado resultados"
 
 #: ../content-none.php:19
 #, php-format
@@ -152,7 +152,7 @@ msgid ""
 "different keywords."
 msgstr ""
 "Perdón pero nada corresponde con las condiciones de búsqueda. Intenta de "
-"nuevo usando otras palabras claves."
+"nuevo usando otras palabras clave."
 
 #: ../content-none.php:28
 #, fuzzy
