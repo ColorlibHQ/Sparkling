@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
 "POT-Creation-Date: 2014-10-03 11:43+0200\n"
-"PO-Revision-Date: 2014-10-03 11:43+0200\n"
+"PO-Revision-Date: 2014-10-12 15:54-0300\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: es_ES\n"
@@ -25,7 +25,7 @@ msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr ""
-"Parece que nada ha sido encontrado en esta locación. Tal vez prueba uno de "
+"Parece que nada ha sido encontrado en esta ubicación. Podria probrar uno de "
 "los links por abajo o la búsqueda?"
 
 #: ../404.php:25
@@ -378,9 +378,8 @@ msgid "Page %s"
 msgstr "Página %s"
 
 #: ../inc/extras.php:111
-#, fuzzy
 msgid "Search..."
-msgstr "Cerca"
+msgstr "Buscar..."
 
 #: ../inc/extras.php:132
 msgid ""
@@ -543,11 +542,11 @@ msgstr "Cinco"
 
 #: ../options.php:42
 msgid "French Toast"
-msgstr "French Toast"
+msgstr "Tostado francés"
 
 #: ../options.php:43
 msgid "Pancake"
-msgstr "Pancake"
+msgstr "Panqueque"
 
 #: ../options.php:44
 msgid "Omelette"
@@ -869,7 +868,7 @@ msgstr "CSS Adicional"
 #: ../search.php:16
 #, php-format
 msgid "Search Results for: %s"
-msgstr "Resultados de la búsqueda para %s"
+msgstr "Resultados de búsqueda para %s"
 
 #: ../sidebar.php:26
 msgid "Meta"
