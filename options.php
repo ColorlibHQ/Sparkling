@@ -323,8 +323,14 @@ function optionsframework_options() {
 							'type' => 'color');
 
 		$options[] = array(	'name' => __('Add full URL for your social network profiles', 'sparkling'),
-        			'desc' => __('Facebook', 'sparkling'),
-        			'id' => 'social_facebook',
+        			'desc' => __('GitHub', 'sparkling'),
+        			'id' => 'social_github',
+        			'std' => '',
+        			'class' => 'mini',
+        			'type' => 'text');
+
+		$options[] = array(	'id' => 'social_facebook',
+							'desc' => __('Facebook', 'sparkling'),
         			'std' => '',
         			'class' => 'mini',
         			'type' => 'text');

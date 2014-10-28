@@ -154,7 +154,8 @@ if ( ! function_exists( 'sparkling_social' ) ) :
  */
 function sparkling_social(){
     $services = array (
-      'facebook'    => 'Facebok',
+      'github'      => 'GitHub',
+      'facebook'    => 'Facebook',
       'twitter'     => 'Twitter',
       'googleplus'  => 'Google+',
       'youtube'     => 'Youtube',

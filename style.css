@@ -1261,6 +1261,9 @@ p.logged-in-as {
   color: #fff;
 }
 
+.social-icons a.github:hover {
+  background-color: #4183C4 !important;
+}
 .social-icons a.facebook:hover {
   background-color: #4265b9 !important;
 }
