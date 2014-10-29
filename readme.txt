@@ -3,7 +3,7 @@
 Theme Name: Sparkling
 Theme URI: http://colorlib.com/wp/sparkling/
 Version: 1.6.3
-Tested up to: WP 3.9
+Tested up to: WP 4.0
 
 Author: Aigars Silkalns
 Author URI: http://colorlib.com/wp/
@@ -64,9 +64,10 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
 
-= 1.6.3 - 03.10.2014 =
+= 1.6.3 - 29.10.2014 =
 
 * Improved Child Theme support
+* Addded GitHub Icon
 
 = 1.6.2 - 23.08.2014 =
 

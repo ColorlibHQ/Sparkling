@@ -168,7 +168,8 @@ function sparkling_social(){
       'dribbble'    => 'Dribbble',
       'skype'       => 'Skype',
       'foursquare'  => 'Foursquare',
-      'soundcloud'  => 'SoundCloud'
+      'soundcloud'  => 'SoundCloud',
+      'github'      => 'GitHub'
       );
 
     echo '<div class="social-icons">';

@@ -1306,6 +1306,9 @@ p.logged-in-as {
 .social-icons a.soundcloud:hover {
   background-color: #F50 !important;
 }
+.social-icons a.github:hover {
+  background-color: #4183C4 !important;
+}
 .fa-googleplus:before {
   content: "\f0d5";
 }
