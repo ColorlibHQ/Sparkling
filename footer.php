@@ -10,7 +10,7 @@
 			</div><!-- close .*-inner (main-content or sidebar, depending if sidebar is used) -->
 		</div><!-- close .row -->
 	</div><!-- close .container -->
-</div><!-- close .main-content -->
+</div><!-- close .site-content -->
 
 	<div id="footer-area">
 		<div class="container footer-inner">

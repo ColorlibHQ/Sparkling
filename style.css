@@ -378,9 +378,6 @@ hr.section-divider {
   font-size: 10px;
   text-transform: uppercase;
 }
-.page-template-page-fullwidth-php .col-md-8 {
-  width: 100%;
-}
 @media(max-width:767px){
     .post-inner-content {
         padding: 20px 25px;
