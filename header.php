@@ -79,11 +79,11 @@
 
 	<div id="content" class="site-content">
 
-			<div class="top-section">
-				<?php sparkling_featured_slider(); ?>
-				<?php sparkling_call_for_action(); ?>
-			</div>
+		<div class="top-section">
+			<?php sparkling_featured_slider(); ?>
+			<?php sparkling_call_for_action(); ?>
+		</div>
 
 		<div class="container main-content-area">
 			<div class="row">
-				<div id="content" class="main-content-inner col-sm-12 col-md-8 <?php echo of_get_option( 'site_layout' ); ?>">
+				<div class="main-content-inner <?php echo sparkling_main_content_bootstrap_classes(); ?> <?php echo of_get_option( 'site_layout' ); ?>">
