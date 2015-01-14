@@ -35,6 +35,7 @@ function sparkling_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'sparkling_body_classes' );
 
+
 /**
  * Filters wp_title to print a neat <title> tag based on what is being viewed.
  *
@@ -42,30 +43,37 @@ add_filter( 'body_class', 'sparkling_body_classes' );
  * @param string $sep Optional separator.
  * @return string The filtered title.
  */
-function sparkling_wp_title( $title, $sep ) {
-  global $page, $paged;
-
-  if ( is_feed() ) {
+if ( ! function_exists( '_wp_render_title_tag' ) ) :
+  function sparkling_wp_title( $title, $sep ) {
+    if ( is_feed() ) {
+      return $title;
+    }
+    global $page, $paged;
+    // Add the blog name
+    $title .= get_bloginfo( 'name', 'display' );
+    // Add the blog description for the home/front page.
+    $site_description = get_bloginfo( 'description', 'display' );
+    if ( $site_description && ( is_home() || is_front_page() ) ) {
+      $title .= " $sep $site_description";
+    }
+    // Add a page number if necessary:
+    if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
+      $title .= " $sep " . sprintf( __( 'Page %s', 'sparkling' ), max( $paged, $page ) );
+    }
     return $title;
   }
+  add_filter( 'wp_title', 'sparkling_wp_title', 10, 2 );
+endif;
 
-  // Add the blog name
-  $title .= get_bloginfo( 'name' );
-
-  // Add the blog description for the home/front page.
-  $site_description = get_bloginfo( 'description', 'display' );
-  if ( $site_description && ( is_home() || is_front_page() ) ) {
-    $title .= " $sep $site_description";
+/**
+ * Title shiv for blogs older than WordPress 4.1
+ */
+if ( ! function_exists( '_wp_render_title_tag' ) ) :
+  function sparkling_render_title() {
+    echo '<title>' . wp_title( '|', false, 'right' ) . "</title>\n";
   }
-
-  // Add a page number if necessary:
-  if ( $paged >= 2 || $page >= 2 ) {
-    $title .= " $sep " . sprintf( __( 'Page %s', 'sparkling' ), max( $paged, $page ) );
-  }
-
-  return $title;
-}
-add_filter( 'wp_title', 'sparkling_wp_title', 10, 2 );
+  add_action( 'wp_head', 'sparkling_render_title' );
+endif;
 
 
 // Mark Posts/Pages as Untiled when no title is used
