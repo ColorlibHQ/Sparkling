@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-01-11 21:50+0200\n"
-"PO-Revision-Date: 2015-01-11 21:50+0200\n"
+"POT-Creation-Date: 2015-01-14 13:12+0200\n"
+"PO-Revision-Date: 2015-01-14 13:12+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: ru\n"
@@ -158,12 +158,11 @@ msgstr ""
 "через \"Поиск\"."
 
 #: ../content-page.php:21 ../content-single.php:35 ../content.php:43
-#: ../front-page.php:20 ../image.php:79
+#: ../image.php:79
 msgid "Pages:"
 msgstr "Страницы:"
 
-#: ../content-page.php:26 ../content-single.php:26 ../content.php:23
-#: ../front-page.php:25
+#: ../content-page.php:32 ../content-single.php:26 ../content.php:23
 msgid "Edit"
 msgstr "Правка"
 

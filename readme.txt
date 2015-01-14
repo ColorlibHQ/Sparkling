@@ -2,17 +2,17 @@
 
 Theme Name: Sparkling
 Theme URI: http://colorlib.com/wp/sparkling/
-Version: 1.7.1
-Tested up to: WP 4.0
+Version: 1.7.5
+Tested up to: WP 4.1
 
 Author: Aigars Silkalns
 Author URI: http://colorlib.com/wp/
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl.html
 -------------------------------------------------------
-Sparkling theme, Copyright 2014 colorlib.com
+Sparkling theme, Copyright 2015 colorlib.com
 Sparkling WordPress theme is distributed under the terms of the GNU GPL
-Sparkling is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+Sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 -------------------------------------------------------
 
 /*========= Credits =========*/
@@ -63,6 +63,13 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
+
+= 1.7.5 - 14.01.2015 =
+
+* Removed front-page.php template. Instead you can use full-width or regular page template on frontpage
+* Small code cleanup
+* Updated Bootstrap classes for full-width template
+* Updated Russian translation
 
 = 1.7.1 - 15.11.2014 =
 

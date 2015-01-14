@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2014-10-03 11:44+0200\n"
-"PO-Revision-Date: 2014-10-03 11:44+0200\n"
+"POT-Creation-Date: 2015-01-14 13:11+0200\n"
+"PO-Revision-Date: 2015-01-14 13:12+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.7.3\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
@@ -158,12 +158,11 @@ msgstr ""
 "zoekfunctie eens."
 
 #: ../content-page.php:21 ../content-single.php:35 ../content.php:43
-#: ../front-page.php:21 ../image.php:79
+#: ../image.php:79
 msgid "Pages:"
 msgstr "Pagina&rsquo;s"
 
-#: ../content-page.php:26 ../content-single.php:26 ../content.php:23
-#: ../front-page.php:26
+#: ../content-page.php:32 ../content-single.php:26 ../content.php:23
 msgid "Edit"
 msgstr "Wijzigen"
 
@@ -192,47 +191,47 @@ msgstr "% Reacties"
 msgid "Read More"
 msgstr "Lees meer"
 
-#: ../functions.php:57
+#: ../functions.php:69
 msgid "Primary Menu"
 msgstr "Hoofdmenu"
 
-#: ../functions.php:58 ../inc/extras.php:215
+#: ../functions.php:70 ../inc/extras.php:216
 msgid "Footer Links"
 msgstr "Footer Links"
 
-#: ../functions.php:87
+#: ../functions.php:99
 msgid "Sidebar"
 msgstr "Sidebar"
 
-#: ../functions.php:97
+#: ../functions.php:109
 msgid "Homepage Widget 1"
 msgstr "Voorpagina Widget 1"
 
-#: ../functions.php:98 ../functions.php:108 ../functions.php:118
+#: ../functions.php:110 ../functions.php:120 ../functions.php:130
 msgid "Displays on the Home Page"
 msgstr "Weergeven op de Voorpagina"
 
-#: ../functions.php:107
+#: ../functions.php:119
 msgid "Homepage Widget 2"
 msgstr "Voorpagina Widget 2"
 
-#: ../functions.php:117
+#: ../functions.php:129
 msgid "Homepage Widget 3"
 msgstr "Voorpagina Widget 3"
 
-#: ../functions.php:127
+#: ../functions.php:139
 msgid "Footer Widget 1"
 msgstr "Footer Widget 1"
 
-#: ../functions.php:128 ../functions.php:138 ../functions.php:148
+#: ../functions.php:140 ../functions.php:150 ../functions.php:160
 msgid "Used for footer widget area"
 msgstr "Gebruikt voor footer widget area"
 
-#: ../functions.php:137
+#: ../functions.php:149
 msgid "Footer Widget 2"
 msgstr "Footer Widget 2"
 
-#: ../functions.php:147
+#: ../functions.php:159
 msgid "Footer Widget 3"
 msgstr "Footer Widget 3"
 
@@ -385,24 +384,24 @@ msgstr "Wachtwoord:"
 msgid "Submit"
 msgstr "Toevoegen"
 
-#: ../inc/extras.php:179
+#: ../inc/extras.php:180
 msgid "Follow us on "
 msgstr "Volg ons op"
 
-#: ../inc/extras.php:292
+#: ../inc/extras.php:293
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Thema van %1$s, draait op %2$s"
 
-#: ../inc/extras.php:396
+#: ../inc/extras.php:397
 msgid "Support and Documentation"
 msgstr "Support en Documentatie"
 
-#: ../inc/extras.php:402
+#: ../inc/extras.php:403
 msgid "Sparkling Documentation"
 msgstr "Sparkling Documentatie"
 
-#: ../inc/extras.php:403
+#: ../inc/extras.php:404
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -410,23 +409,23 @@ msgstr ""
 "De beste manier om ons te contacteren voor <b>support vragen</b> en <b>bug "
 "meldingen</b> is via"
 
-#: ../inc/extras.php:403
+#: ../inc/extras.php:404
 msgid "Colorlib support forum"
 msgstr "Colorlib support forum"
 
-#: ../inc/extras.php:404
+#: ../inc/extras.php:405
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "Als je dit thema leuk vind dan waardeer het volgende:"
 
-#: ../inc/extras.php:406
+#: ../inc/extras.php:407
 msgid "Rate this Theme"
 msgstr "Waardeer dit Thema"
 
-#: ../inc/extras.php:407
+#: ../inc/extras.php:408
 msgid "Like on Facebook"
 msgstr "Like ons op Facebook"
 
-#: ../inc/extras.php:408
+#: ../inc/extras.php:409
 msgid "Follow on Twitter"
 msgstr "Volg ons op Twitter"
 
@@ -717,7 +716,7 @@ msgstr "Dropdown tekst kleur"
 #: ../options.php:269
 #, fuzzy
 msgid "Top nav dropdown item hover color"
-msgstr "Top navigatie dropdown tekst kleur"
+msgstr "Top naviatie tekst hover kleur"
 
 #: ../options.php:270
 #, fuzzy
@@ -727,7 +726,7 @@ msgstr "Top navigatie dropdown tekst hover kleur"
 #: ../options.php:275
 #, fuzzy
 msgid "Top nav dropdown item background hover color"
-msgstr "Top navigatie dropdown tekst kleur"
+msgstr "Top navigatie dropdown tekst hover kleur"
 
 #: ../options.php:281
 msgid "Footer"
@@ -833,15 +832,19 @@ msgstr "Foursquare"
 msgid "SoundCloud"
 msgstr ""
 
-#: ../options.php:416
+#: ../options.php:417
+msgid "GitHub"
+msgstr ""
+
+#: ../options.php:422
 msgid "Other"
 msgstr "Overige"
 
-#: ../options.php:419
+#: ../options.php:425
 msgid "Custom CSS"
 msgstr "Aangepaste CSS"
 
-#: ../options.php:420
+#: ../options.php:426
 msgid "Additional CSS"
 msgstr "Extra CSS"
 

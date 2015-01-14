@@ -22,6 +22,12 @@
 				'after'  => '</div>',
 			) );
 		?>
+    <?php
+      // Checks if this is homepage to enable homepage widgets
+      if ( is_front_page() ) :
+        get_sidebar( 'home' );
+      endif;
+    ?>
 	</div><!-- .entry-content -->
 	<?php edit_post_link( __( 'Edit', 'sparkling' ), '<footer class="entry-footer"><i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span></footer>' ); ?>
 </article><!-- #post-## -->

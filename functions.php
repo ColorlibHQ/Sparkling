@@ -16,7 +16,7 @@ if ( ! isset( $content_width ) ) {
  * Set the content width for full width pages with no sidebar.
  */
 function sparkling_content_width() {
-  if ( is_page_template( 'page-fullwidth.php' ) || is_page_template( 'front-page.php' ) ) {
+  if ( is_page_template( 'page-fullwidth.php' ) ) {
     global $content_width;
     $content_width = 1008; /* pixels */
   }

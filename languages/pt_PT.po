@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2014-10-03 11:44+0200\n"
-"PO-Revision-Date: 2014-10-03 11:44+0200\n"
+"POT-Creation-Date: 2015-01-14 13:12+0200\n"
+"PO-Revision-Date: 2015-01-14 13:12+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.7.3\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
@@ -159,12 +159,11 @@ msgstr ""
 "ajudar."
 
 #: ../content-page.php:21 ../content-single.php:35 ../content.php:43
-#: ../front-page.php:21 ../image.php:79
+#: ../image.php:79
 msgid "Pages:"
 msgstr "Páginas:"
 
-#: ../content-page.php:26 ../content-single.php:26 ../content.php:23
-#: ../front-page.php:26
+#: ../content-page.php:32 ../content-single.php:26 ../content.php:23
 msgid "Edit"
 msgstr "Editar"
 
@@ -193,47 +192,47 @@ msgstr "% Comentários"
 msgid "Read More"
 msgstr "Leia Mais"
 
-#: ../functions.php:57
+#: ../functions.php:69
 msgid "Primary Menu"
 msgstr "Menu principal"
 
-#: ../functions.php:58 ../inc/extras.php:215
+#: ../functions.php:70 ../inc/extras.php:216
 msgid "Footer Links"
 msgstr "Links rodapé"
 
-#: ../functions.php:87
+#: ../functions.php:99
 msgid "Sidebar"
 msgstr "Sidebar"
 
-#: ../functions.php:97
+#: ../functions.php:109
 msgid "Homepage Widget 1"
 msgstr "Homepage Widget 1"
 
-#: ../functions.php:98 ../functions.php:108 ../functions.php:118
+#: ../functions.php:110 ../functions.php:120 ../functions.php:130
 msgid "Displays on the Home Page"
 msgstr "Mostrar na Página Inicial"
 
-#: ../functions.php:107
+#: ../functions.php:119
 msgid "Homepage Widget 2"
 msgstr "Homepage Widget 2"
 
-#: ../functions.php:117
+#: ../functions.php:129
 msgid "Homepage Widget 3"
 msgstr "Homepage Widget 3"
 
-#: ../functions.php:127
+#: ../functions.php:139
 msgid "Footer Widget 1"
 msgstr "Footer Widget 1"
 
-#: ../functions.php:128 ../functions.php:138 ../functions.php:148
+#: ../functions.php:140 ../functions.php:150 ../functions.php:160
 msgid "Used for footer widget area"
 msgstr "Usado para área de widget de rodapé"
 
-#: ../functions.php:137
+#: ../functions.php:149
 msgid "Footer Widget 2"
 msgstr "Footer Widget 2"
 
-#: ../functions.php:147
+#: ../functions.php:159
 msgid "Footer Widget 3"
 msgstr "Footer Widget 3"
 
@@ -386,24 +385,24 @@ msgstr "Password:"
 msgid "Submit"
 msgstr "Enviar"
 
-#: ../inc/extras.php:179
+#: ../inc/extras.php:180
 msgid "Follow us on "
 msgstr "Segue-nos "
 
-#: ../inc/extras.php:292
+#: ../inc/extras.php:293
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Theme by %1$s Powered by %2$s"
 
-#: ../inc/extras.php:396
+#: ../inc/extras.php:397
 msgid "Support and Documentation"
 msgstr "Suporte e Documentação"
 
-#: ../inc/extras.php:402
+#: ../inc/extras.php:403
 msgid "Sparkling Documentation"
 msgstr "Documentação Sparkling"
 
-#: ../inc/extras.php:403
+#: ../inc/extras.php:404
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -411,23 +410,23 @@ msgstr ""
 "A melhor maneira de nos contactar com <b>questões de suporte</b> e "
 "<b>relatórios de bugs</b> é através"
 
-#: ../inc/extras.php:403
+#: ../inc/extras.php:404
 msgid "Colorlib support forum"
 msgstr "Fórum de suporte do Colorlib"
 
-#: ../inc/extras.php:404
+#: ../inc/extras.php:405
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "Se gosta deste tema, agradeço qualquer uma das seguintes opções:"
 
-#: ../inc/extras.php:406
+#: ../inc/extras.php:407
 msgid "Rate this Theme"
 msgstr "Avalie este Tema"
 
-#: ../inc/extras.php:407
+#: ../inc/extras.php:408
 msgid "Like on Facebook"
 msgstr "Gosto no Facebook"
 
-#: ../inc/extras.php:408
+#: ../inc/extras.php:409
 msgid "Follow on Twitter"
 msgstr "Siga no Twitter"
 
@@ -830,15 +829,19 @@ msgstr "Foursquare"
 msgid "SoundCloud"
 msgstr "SoundCloud"
 
-#: ../options.php:416
+#: ../options.php:417
+msgid "GitHub"
+msgstr ""
+
+#: ../options.php:422
 msgid "Other"
 msgstr "Outro"
 
-#: ../options.php:419
+#: ../options.php:425
 msgid "Custom CSS"
 msgstr "CSS Personalizado"
 
-#: ../options.php:420
+#: ../options.php:426
 msgid "Additional CSS"
 msgstr "CSS Adicional"
 
