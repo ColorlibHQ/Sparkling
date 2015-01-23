@@ -64,9 +64,10 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
 
-= 1.7.6 - 14.01.2015 =
+= 1.7.6 - 23.01.2015 =
 
 * Theme now uses "title-tag" that was introduced with WordPress 4.1
+* Updated Bootstrap to 3.3.2
 
 = 1.7.5 - 14.01.2015 =
 
