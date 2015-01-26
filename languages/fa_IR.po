@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-01-14 13:11+0200\n"
-"PO-Revision-Date: 2015-01-14 13:11+0200\n"
+"POT-Creation-Date: 2015-01-26 12:42+0200\n"
+"PO-Revision-Date: 2015-01-26 12:42+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: RobertCreed <info@robertcreed.me>\n"
 "Language: fa\n"
@@ -173,8 +173,7 @@ msgstr ""
 #: ../content-single.php:23
 #, fuzzy, php-format
 msgid " %1$s"
-msgstr ""
-"آماده اید برای ارسال اولین مطلب؟ <a href=\"%1$s\">از اینجا شروع کنید</a>."
+msgstr "‏%1$s در %2$s"
 
 #: ../content.php:20
 msgid "Leave a comment"
@@ -196,43 +195,43 @@ msgstr "بیشتر بخوانید"
 msgid "Primary Menu"
 msgstr "قهرست اولیه"
 
-#: ../functions.php:70 ../inc/extras.php:216
+#: ../functions.php:70 ../inc/extras.php:226
 msgid "Footer Links"
 msgstr "لینک پانویس"
 
-#: ../functions.php:99
+#: ../functions.php:108
 msgid "Sidebar"
 msgstr "نوار کناری"
 
-#: ../functions.php:109
+#: ../functions.php:118
 msgid "Homepage Widget 1"
 msgstr "ویدجت خانه 1"
 
-#: ../functions.php:110 ../functions.php:120 ../functions.php:130
+#: ../functions.php:119 ../functions.php:129 ../functions.php:139
 msgid "Displays on the Home Page"
 msgstr "نمایش در صفحه اصلی"
 
-#: ../functions.php:119
+#: ../functions.php:128
 msgid "Homepage Widget 2"
 msgstr "ویدجت خانه 2"
 
-#: ../functions.php:129
+#: ../functions.php:138
 msgid "Homepage Widget 3"
 msgstr "ویدجت خانه 3"
 
-#: ../functions.php:139
+#: ../functions.php:148
 msgid "Footer Widget 1"
 msgstr "ویدجت پانویس 1"
 
-#: ../functions.php:140 ../functions.php:150 ../functions.php:160
+#: ../functions.php:149 ../functions.php:159 ../functions.php:169
 msgid "Used for footer widget area"
 msgstr "استفاده در محل ویدجت پانویس"
 
-#: ../functions.php:149
+#: ../functions.php:158
 msgid "Footer Widget 2"
 msgstr "ویدجت پانویس 2"
 
-#: ../functions.php:159
+#: ../functions.php:168
 msgid "Footer Widget 3"
 msgstr "ویدجت پانویس 3"
 
@@ -360,16 +359,16 @@ msgstr "ضخیم"
 msgid "Bold Italic"
 msgstr "ضخیم و اریب"
 
-#: ../inc/extras.php:63
+#: ../inc/extras.php:61
 #, php-format
 msgid "Page %s"
 msgstr "صفحات %s"
 
-#: ../inc/extras.php:111
+#: ../inc/extras.php:121
 msgid "Search..."
 msgstr "جستجو..."
 
-#: ../inc/extras.php:132
+#: ../inc/extras.php:142
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
@@ -377,54 +376,54 @@ msgstr ""
 "<p>این مطلب با رمز عبور محافظت می شود. برای نمایش رمز را در پایین وارد کنید: "
 "</p>"
 
-#: ../inc/extras.php:133
+#: ../inc/extras.php:143
 msgid "Password:"
 msgstr "رمز عبور:"
 
-#: ../inc/extras.php:136
+#: ../inc/extras.php:146
 msgid "Submit"
 msgstr "تایید"
 
-#: ../inc/extras.php:180
+#: ../inc/extras.php:190
 msgid "Follow us on "
 msgstr "ما را دنبال کنید در"
 
-#: ../inc/extras.php:293
+#: ../inc/extras.php:301
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "پوسته توسط %1$s قدرت گرفته از %2$s"
 
-#: ../inc/extras.php:397
+#: ../inc/extras.php:405
 msgid "Support and Documentation"
 msgstr "پشتیبانی و مستندات"
 
-#: ../inc/extras.php:403
+#: ../inc/extras.php:411
 msgid "Sparkling Documentation"
 msgstr "مستندات Sparkling"
 
-#: ../inc/extras.php:404
+#: ../inc/extras.php:412
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
 msgstr "بهترین راه تماس با ما <b>پشتیبانی پرسش</b> و <b>گزارش باگ </b> است"
 
-#: ../inc/extras.php:404
+#: ../inc/extras.php:412
 msgid "Colorlib support forum"
 msgstr "انجمن پشتیبانی Colorlib"
 
-#: ../inc/extras.php:405
+#: ../inc/extras.php:413
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "اگر این قالب را می پسندید، من قدردانی میکنم از هر نوع دنبال کردنی:"
 
-#: ../inc/extras.php:407
+#: ../inc/extras.php:415
 msgid "Rate this Theme"
 msgstr "رای به این قالب"
 
-#: ../inc/extras.php:408
+#: ../inc/extras.php:416
 msgid "Like on Facebook"
 msgstr "پسند به ما در فیسبوک"
 
-#: ../inc/extras.php:409
+#: ../inc/extras.php:417
 msgid "Follow on Twitter"
 msgstr "دنبال کردن ما در توییتر"
 
@@ -772,12 +771,12 @@ msgstr "اضافه کردن URL کامل برای پروفایل های شبکه
 #: ../options.php:326
 #, fuzzy
 msgid "Facebook"
-msgstr "پسند به ما در فیسبوک"
+msgstr "فیسبوک"
 
 #: ../options.php:333
 #, fuzzy
 msgid "Twitter"
-msgstr "دنبال کردن ما در توییتر"
+msgstr "توییتر"
 
 #: ../options.php:339
 msgid "Google+"

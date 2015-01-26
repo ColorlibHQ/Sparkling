@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-01-14 13:11+0200\n"
-"PO-Revision-Date: 2015-01-14 13:11+0200\n"
+"POT-Creation-Date: 2015-01-26 12:42+0200\n"
+"PO-Revision-Date: 2015-01-26 12:42+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: es_ES\n"
@@ -201,44 +201,44 @@ msgstr "Leer Más"
 msgid "Primary Menu"
 msgstr "Menú Principal"
 
-#: ../functions.php:70 ../inc/extras.php:216
+#: ../functions.php:70 ../inc/extras.php:226
 msgid "Footer Links"
 msgstr "Enlaces Pie de Página"
 
-#: ../functions.php:99
+#: ../functions.php:108
 msgid "Sidebar"
 msgstr "Barra Lateral"
 
-#: ../functions.php:109
+#: ../functions.php:118
 msgid "Homepage Widget 1"
 msgstr "Página de Inicio Widget 1"
 
-#: ../functions.php:110 ../functions.php:120 ../functions.php:130
+#: ../functions.php:119 ../functions.php:129 ../functions.php:139
 msgid "Displays on the Home Page"
 msgstr "Se muestra en la Página de Inicio"
 
-#: ../functions.php:119
+#: ../functions.php:128
 msgid "Homepage Widget 2"
 msgstr "Página Principal Widget 2"
 
-#: ../functions.php:129
+#: ../functions.php:138
 msgid "Homepage Widget 3"
 msgstr "Página Principal Widget 3"
 
-#: ../functions.php:139
+#: ../functions.php:148
 msgid "Footer Widget 1"
 msgstr "Pie de Página Widget 1"
 
-#: ../functions.php:140 ../functions.php:150 ../functions.php:160
+#: ../functions.php:149 ../functions.php:159 ../functions.php:169
 #, fuzzy
 msgid "Used for footer widget area"
 msgstr "Usato per l'area widget nel footer"
 
-#: ../functions.php:149
+#: ../functions.php:158
 msgid "Footer Widget 2"
 msgstr "Pie de Página Widget 2"
 
-#: ../functions.php:159
+#: ../functions.php:168
 msgid "Footer Widget 3"
 msgstr "Pie de Página Widget 3"
 
@@ -371,16 +371,16 @@ msgstr "Negrita"
 msgid "Bold Italic"
 msgstr "Negrita Cursiva"
 
-#: ../inc/extras.php:63
+#: ../inc/extras.php:61
 #, php-format
 msgid "Page %s"
 msgstr "Página %s"
 
-#: ../inc/extras.php:111
+#: ../inc/extras.php:121
 msgid "Search..."
 msgstr "Buscar..."
 
-#: ../inc/extras.php:132
+#: ../inc/extras.php:142
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
@@ -388,32 +388,32 @@ msgstr ""
 "<p> Esta publicación es protegida por una clave. Para mostrarla escribe tu "
 "clave abajo:</p>"
 
-#: ../inc/extras.php:133
+#: ../inc/extras.php:143
 msgid "Password:"
 msgstr "Contraseña:"
 
-#: ../inc/extras.php:136
+#: ../inc/extras.php:146
 msgid "Submit"
 msgstr "Enviar"
 
-#: ../inc/extras.php:180
+#: ../inc/extras.php:190
 msgid "Follow us on "
 msgstr "Síguenos en"
 
-#: ../inc/extras.php:293
+#: ../inc/extras.php:301
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Theme por %1$s Desarrollado por %2$s"
 
-#: ../inc/extras.php:397
+#: ../inc/extras.php:405
 msgid "Support and Documentation"
 msgstr "Soporte y Documentación"
 
-#: ../inc/extras.php:403
+#: ../inc/extras.php:411
 msgid "Sparkling Documentation"
 msgstr "Documentación de Sparkling"
 
-#: ../inc/extras.php:404
+#: ../inc/extras.php:412
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -421,24 +421,24 @@ msgstr ""
 "La mejor forma de contactar con nosotros <b>Preguntas de Soporte</b> y "
 "<b>reportar bug</b> es vía"
 
-#: ../inc/extras.php:404
+#: ../inc/extras.php:412
 msgid "Colorlib support forum"
 msgstr "Foro de soporte Colorlib"
 
-#: ../inc/extras.php:405
+#: ../inc/extras.php:413
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr ""
 "Si te gusta este tema, agradecería cualquiera de los siguientes acciones:"
 
-#: ../inc/extras.php:407
+#: ../inc/extras.php:415
 msgid "Rate this Theme"
 msgstr "Vota este Theme"
 
-#: ../inc/extras.php:408
+#: ../inc/extras.php:416
 msgid "Like on Facebook"
 msgstr "Me Gusta en Facebook"
 
-#: ../inc/extras.php:409
+#: ../inc/extras.php:417
 msgid "Follow on Twitter"
 msgstr "Síguenos en Twitter"
 
@@ -736,17 +736,17 @@ msgstr "Color del ítem del menú desplegable"
 #: ../options.php:269
 #, fuzzy
 msgid "Top nav dropdown item hover color"
-msgstr "Color del ítem hover del Top nav"
+msgstr "Colore hover singola voce della navigazione principale"
 
 #: ../options.php:270
 #, fuzzy
 msgid "Dropdown item hover color"
-msgstr "Color del fondo del ítem hover del menú desplegable"
+msgstr "Sfondo della voce in hover del menu a tendina"
 
 #: ../options.php:275
 #, fuzzy
 msgid "Top nav dropdown item background hover color"
-msgstr "Color del fondo del ítem hover del menú desplegable"
+msgstr "Colore hover singola voce della navigazione principale"
 
 #: ../options.php:281
 msgid "Footer"

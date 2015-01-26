@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-01-14 13:12+0200\n"
-"PO-Revision-Date: 2015-01-14 13:12+0200\n"
+"POT-Creation-Date: 2015-01-26 12:43+0200\n"
+"PO-Revision-Date: 2015-01-26 12:43+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: ru\n"
@@ -195,43 +195,43 @@ msgstr "Подробнее"
 msgid "Primary Menu"
 msgstr "Основное меню"
 
-#: ../functions.php:70 ../inc/extras.php:216
+#: ../functions.php:70 ../inc/extras.php:226
 msgid "Footer Links"
 msgstr "Ссылки нижнего колонтитула"
 
-#: ../functions.php:99
+#: ../functions.php:108
 msgid "Sidebar"
 msgstr "Боковая панель"
 
-#: ../functions.php:109
+#: ../functions.php:118
 msgid "Homepage Widget 1"
 msgstr "1ый виджет на Главной странице"
 
-#: ../functions.php:110 ../functions.php:120 ../functions.php:130
+#: ../functions.php:119 ../functions.php:129 ../functions.php:139
 msgid "Displays on the Home Page"
 msgstr "Отображается на Главной странице"
 
-#: ../functions.php:119
+#: ../functions.php:128
 msgid "Homepage Widget 2"
 msgstr "2ой виджет на Главной странице"
 
-#: ../functions.php:129
+#: ../functions.php:138
 msgid "Homepage Widget 3"
 msgstr "3ий виджет на Главной странице"
 
-#: ../functions.php:139
+#: ../functions.php:148
 msgid "Footer Widget 1"
 msgstr "1ый виджет нижнего колонтитула"
 
-#: ../functions.php:140 ../functions.php:150 ../functions.php:160
+#: ../functions.php:149 ../functions.php:159 ../functions.php:169
 msgid "Used for footer widget area"
 msgstr "Использовано для области виджета футера"
 
-#: ../functions.php:149
+#: ../functions.php:158
 msgid "Footer Widget 2"
 msgstr "2ой виджет нижнего колонтитула"
 
-#: ../functions.php:159
+#: ../functions.php:168
 msgid "Footer Widget 3"
 msgstr "3ий виджет нижнего колонтитула"
 
@@ -358,17 +358,17 @@ msgstr "Полужирный"
 msgid "Bold Italic"
 msgstr "Полужирный курсив"
 
-#: ../inc/extras.php:63
+#: ../inc/extras.php:61
 #, php-format
 msgid "Page %s"
 msgstr "Страница %s"
 
-#: ../inc/extras.php:111
+#: ../inc/extras.php:121
 #, fuzzy
 msgid "Search..."
 msgstr "Результаты поиска по: %s"
 
-#: ../inc/extras.php:132
+#: ../inc/extras.php:142
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
@@ -376,32 +376,32 @@ msgstr ""
 "<p>Эта запись защищена паролем. Чтобы просмотреть эту запись, пожалуйста, "
 "введите пароль:</p>"
 
-#: ../inc/extras.php:133
+#: ../inc/extras.php:143
 msgid "Password:"
 msgstr "Пароль:"
 
-#: ../inc/extras.php:136
+#: ../inc/extras.php:146
 msgid "Submit"
 msgstr "Отрпавить"
 
-#: ../inc/extras.php:180
+#: ../inc/extras.php:190
 msgid "Follow us on "
 msgstr "Присоединяйтесь к нам"
 
-#: ../inc/extras.php:293
+#: ../inc/extras.php:301
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Тема от %1$s. Работает на %2$s"
 
-#: ../inc/extras.php:397
+#: ../inc/extras.php:405
 msgid "Support and Documentation"
 msgstr "Поддержка и Документация"
 
-#: ../inc/extras.php:403
+#: ../inc/extras.php:411
 msgid "Sparkling Documentation"
 msgstr "Документация Sparkling"
 
-#: ../inc/extras.php:404
+#: ../inc/extras.php:412
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -409,25 +409,25 @@ msgstr ""
 "Чтобы связаться с нами по вопросам <b>технической поддержки</b> и <b>отчетов "
 "об ошибках</b>, используйте"
 
-#: ../inc/extras.php:404
+#: ../inc/extras.php:412
 msgid "Colorlib support forum"
 msgstr "Форум поддержки Colorlib"
 
-#: ../inc/extras.php:405
+#: ../inc/extras.php:413
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr ""
 "Если вам понравилась эта тема, я был бы благодрен за любой из следующих "
 "вариантов:"
 
-#: ../inc/extras.php:407
+#: ../inc/extras.php:415
 msgid "Rate this Theme"
 msgstr "Оценить эту тему"
 
-#: ../inc/extras.php:408
+#: ../inc/extras.php:416
 msgid "Like on Facebook"
 msgstr "Поставить лайк на Facebook"
 
-#: ../inc/extras.php:409
+#: ../inc/extras.php:417
 msgid "Follow on Twitter"
 msgstr "Читать Twitter"
 

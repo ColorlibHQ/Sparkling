@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling\n"
-"POT-Creation-Date: 2015-01-14 13:11+0200\n"
-"PO-Revision-Date: 2015-01-14 13:11+0200\n"
+"POT-Creation-Date: 2015-01-26 12:42+0200\n"
+"PO-Revision-Date: 2015-01-26 12:42+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -208,43 +208,43 @@ msgstr "Weiterlesen"
 msgid "Primary Menu"
 msgstr "Hauptmenü"
 
-#: functions.php:70 inc/extras.php:216
+#: functions.php:70 inc/extras.php:226
 msgid "Footer Links"
 msgstr "Fußzeilenmenü"
 
-#: functions.php:99
+#: functions.php:108
 msgid "Sidebar"
 msgstr "Seitenleiste"
 
-#: functions.php:109
+#: functions.php:118
 msgid "Homepage Widget 1"
 msgstr "Homepage Widget 1"
 
-#: functions.php:110 functions.php:120 functions.php:130
+#: functions.php:119 functions.php:129 functions.php:139
 msgid "Displays on the Home Page"
 msgstr "Wird auf der Startseite angezeigt"
 
-#: functions.php:119
+#: functions.php:128
 msgid "Homepage Widget 2"
 msgstr "Homepage Widget 2"
 
-#: functions.php:129
+#: functions.php:138
 msgid "Homepage Widget 3"
 msgstr "Homepage Widget 3"
 
-#: functions.php:139
+#: functions.php:148
 msgid "Footer Widget 1"
 msgstr "Footer Widget 1"
 
-#: functions.php:140 functions.php:150 functions.php:160
+#: functions.php:149 functions.php:159 functions.php:169
 msgid "Used for footer widget area"
 msgstr "Platz für Footer Widgets"
 
-#: functions.php:149
+#: functions.php:158
 msgid "Footer Widget 2"
 msgstr "Footer Widget 2"
 
-#: functions.php:159
+#: functions.php:168
 msgid "Footer Widget 3"
 msgstr "Footer Widget 3"
 
@@ -382,16 +382,16 @@ msgstr "Fett"
 msgid "Bold Italic"
 msgstr "Fett Kursiv"
 
-#: inc/extras.php:63
+#: inc/extras.php:61
 #, php-format
 msgid "Page %s"
 msgstr "Seite %s"
 
-#: inc/extras.php:111
+#: inc/extras.php:121
 msgid "Search..."
 msgstr "Suche..."
 
-#: inc/extras.php:132
+#: inc/extras.php:142
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
@@ -399,32 +399,32 @@ msgstr ""
 "<p>Dieser Artikel ist mit einem Passwort geschützt. Geben Sie Ihr Passwort "
 "ein, um den Artikel zu lesen:</p>"
 
-#: inc/extras.php:133
+#: inc/extras.php:143
 msgid "Password:"
 msgstr "Passwort:"
 
-#: inc/extras.php:136
+#: inc/extras.php:146
 msgid "Submit"
 msgstr "Absenden"
 
-#: inc/extras.php:180
+#: inc/extras.php:190
 msgid "Follow us on "
 msgstr "Folgen Sie uns auf"
 
-#: inc/extras.php:293
+#: inc/extras.php:301
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Theme von %1$s Powered by %2$s"
 
-#: inc/extras.php:397
+#: inc/extras.php:405
 msgid "Support and Documentation"
 msgstr "Support und Dokumentation"
 
-#: inc/extras.php:403
+#: inc/extras.php:411
 msgid "Sparkling Documentation"
 msgstr "Sparkling Dokumentation"
 
-#: inc/extras.php:404
+#: inc/extras.php:412
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -432,23 +432,23 @@ msgstr ""
 "Der beste Weg uns zu <b>Support Anfragen</b> und <b>Fehler Reports</b> zu "
 "kontaktieren ist via"
 
-#: inc/extras.php:404
+#: inc/extras.php:412
 msgid "Colorlib support forum"
 msgstr "Colorlib Support Forum"
 
-#: inc/extras.php:405
+#: inc/extras.php:413
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "Wenn Ihnen dieses Theme gefällt, dann freue ich mich über:"
 
-#: inc/extras.php:407
+#: inc/extras.php:415
 msgid "Rate this Theme"
 msgstr "Dieses Theme bewerten"
 
-#: inc/extras.php:408
+#: inc/extras.php:416
 msgid "Like on Facebook"
 msgstr "Auf Facebook Liken"
 
-#: inc/extras.php:409
+#: inc/extras.php:417
 msgid "Follow on Twitter"
 msgstr "Auf Twitter folgen"
 
