@@ -2,7 +2,7 @@
 
 Theme Name: Sparkling
 Theme URI: http://colorlib.com/wp/sparkling/
-Version: 1.7.7
+Version: 1.7.8
 Tested up to: WP 4.1
 
 Author: Aigars Silkalns
@@ -63,6 +63,10 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
+
+= 1.7.8 - 11.02.2015 =
+
+* Improved favicon functionality. Now loaded in WordPress dashboard and frontend.
 
 = 1.7.7 - 23.01.2015 =
 

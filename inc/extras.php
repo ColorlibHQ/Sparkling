@@ -469,6 +469,17 @@ function sparkling_allow_skype_protocol( $protocols ){
 }
 add_filter( 'kses_allowed_protocols' , 'sparkling_allow_skype_protocol' );
 
+/**
+ * Add custom favicon displayed in WordPress dashboard and frontend
+ */
+function sparkling_add_favicon() {
+  if ( of_get_option( 'custom_favicon' ) ) {
+    echo '<link rel="shortcut icon" type="image/x-icon" href="' . of_get_option( 'custom_favicon' ) . '" />'. "\n";
+  }
+}
+add_action( 'wp_head', 'sparkling_add_favicon', 0 );
+add_action( 'admin_head', 'sparkling_add_favicon', 0 );
+
 /*
  * This one shows/hides the an option when a checkbox is clicked.
  */

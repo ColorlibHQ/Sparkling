@@ -24,14 +24,6 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<!-- favicon -->
-
-<?php if ( of_get_option( 'custom_favicon' ) ) { ?>
-<link rel="icon" href="<?php echo of_get_option( 'custom_favicon' ); ?>" />
-<?php } ?>
-
-<!--[if IE]><?php if ( of_get_option( 'custom_favicon' ) ) { ?><link rel="shortcut icon" href="<?php echo of_get_option( 'custom_favicon' ); ?>" /><?php } ?><![endif]-->
-
 <?php wp_head(); ?>
 
 </head>

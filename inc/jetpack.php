@@ -12,7 +12,7 @@
  */
 function sparkling_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
-		'type' 		=> 'click',
+		'type'      => 'click',
 		'container' => 'main',
 		'footer'    => 'page',
 	) );
