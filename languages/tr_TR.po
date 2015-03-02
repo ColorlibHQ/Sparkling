@@ -1,0 +1,856 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sparkling Theme\n"
+"POT-Creation-Date: 2015-03-02 22:50+0200\n"
+"PO-Revision-Date: 2015-03-02 22:50+0200\n"
+"Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
+"Language-Team: colorlib <info@colorlib.com>\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Hoop! Bu sayfa bulunamıyor."
+
+#: ../404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Görünen o'ki bu adreste bir şey bulunamadı. Belki aşağıdaki linklerden "
+"birini denemek yada arama yapmak isteyebilirsiniz?"
+
+#: ../404.php:25
+msgid "Recent Posts"
+msgstr "Son Mesajlar"
+
+#: ../404.php:31
+msgid "Most Used Categories"
+msgstr "En sık kullanılan kategoriler"
+
+#: ../404.php:52
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Aylık arşivlere bakmayı dene. %1$s"
+
+#: ../404.php:53 ../archive.php:66 ../sidebar.php:19
+msgid "Archives"
+msgstr "Arşivler"
+
+#: ../404.php:58
+msgid "Tags"
+msgstr "Etiketler"
+
+#: ../archive.php:27
+#, php-format
+msgid "Author: %s"
+msgstr "Yazar: %s"
+
+#: ../archive.php:30
+#, php-format
+msgid "Day: %s"
+msgstr "Gün:  %s"
+
+#: ../archive.php:33
+#, php-format
+msgid "Month: %s"
+msgstr "Ay: %s"
+
+#: ../archive.php:36
+#, php-format
+msgid "Year: %s"
+msgstr "Yıl: %s"
+
+#: ../archive.php:39
+msgid "Asides"
+msgstr "Yan yorumlar"
+
+#: ../archive.php:42
+msgid "Galleries"
+msgstr "Galeriler"
+
+#: ../archive.php:45
+msgid "Images"
+msgstr "Görüntüler"
+
+#: ../archive.php:48
+msgid "Videos"
+msgstr "Videolar"
+
+#: ../archive.php:51
+msgid "Quotes"
+msgstr "Alıntılar"
+
+#: ../archive.php:54
+msgid "Links"
+msgstr "Bağlantılar"
+
+#: ../archive.php:57
+msgid "Statuses"
+msgstr "Durumlar"
+
+#: ../archive.php:60
+msgid "Audios"
+msgstr "Sesler"
+
+#: ../archive.php:63
+msgid "Chats"
+msgstr "Sohbetler"
+
+#: ../comments.php:30
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "&ldquo;%2$s&rdquo; üzerine yorum"
+msgstr[1] "&ldquo;%2$s&rdquo; üzerine %1$s yorumlar"
+
+#: ../comments.php:37 ../comments.php:55
+msgid "Comment navigation"
+msgstr "Yorum navigasyonu"
+
+#: ../comments.php:38 ../comments.php:56
+msgid "&larr; Older Comments"
+msgstr "&larr; Daha Eski Yorumlar"
+
+#: ../comments.php:39 ../comments.php:57
+msgid "Newer Comments &rarr;"
+msgstr " Daha Yeni Yorumlar &rarr;"
+
+#: ../comments.php:67
+msgid "Comments are closed."
+msgstr "Yorumlar Kapalıdır."
+
+#: ../content-none.php:13
+msgid "Nothing Found"
+msgstr "Bir şey bulunamadı"
+
+#: ../content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"İlk mesajını yayınlamaya hazır mısın? <a href=\"%1$s\">Buradan başla</a>."
+
+#: ../content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Pardon, ama malesef arama terimlerinizle eşleşen bir şey bulunamadı. Lütfen "
+"farklı anahtar kelimelerle tekrar deneyin."
+
+#: ../content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Görünüyorki istediğinizi bulamadık. Muhtemelen arama yapmak yardımcı "
+"olabilir."
+
+#: ../content-page.php:21 ../content-single.php:35 ../content.php:43
+#: ../image.php:79
+msgid "Pages:"
+msgstr "Sayfalar:"
+
+#: ../content-page.php:32 ../content-single.php:26 ../content.php:23
+msgid "Edit"
+msgstr "Düzenle"
+
+#: ../content-single.php:19
+msgid ", "
+msgstr ","
+
+#: ../content-single.php:23
+#, php-format
+msgid " %1$s"
+msgstr " %1$s"
+
+#: ../content.php:20
+msgid "Leave a comment"
+msgstr "Yorum Bırak"
+
+#: ../content.php:20
+msgid "1 Comment"
+msgstr "1 Yorum"
+
+#: ../content.php:20
+msgid "% Comments"
+msgstr "% yorum"
+
+#: ../content.php:32 ../content.php:39
+msgid "Read More"
+msgstr "Fazlasını Oku"
+
+#: ../functions.php:69
+msgid "Primary Menu"
+msgstr "Birincil Menü"
+
+#: ../functions.php:70 ../inc/extras.php:226
+msgid "Footer Links"
+msgstr "Sayfa Altı Bağlantıları"
+
+#: ../functions.php:108
+msgid "Sidebar"
+msgstr "Kenar çubuğu"
+
+#: ../functions.php:118
+msgid "Homepage Widget 1"
+msgstr "Ana sayfa Widget 1"
+
+#: ../functions.php:119 ../functions.php:129 ../functions.php:139
+msgid "Displays on the Home Page"
+msgstr "Ana sayfada gösterilir"
+
+#: ../functions.php:128
+msgid "Homepage Widget 2"
+msgstr "Ana sayfa Widget 2"
+
+#: ../functions.php:138
+msgid "Homepage Widget 3"
+msgstr "Ana sayfa Widget 3"
+
+#: ../functions.php:148
+msgid "Footer Widget 1"
+msgstr "Sayfa Altı Widget 1"
+
+#: ../functions.php:149 ../functions.php:159 ../functions.php:169
+msgid "Used for footer widget area"
+msgstr "Sayfa altı widget alanı için kullanıldı"
+
+#: ../functions.php:158
+msgid "Footer Widget 2"
+msgstr "Sayfa Altı Widget 2"
+
+#: ../functions.php:168
+msgid "Footer Widget 3"
+msgstr "Sayfa Altı Widget 3"
+
+#: ../image.php:22
+msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Önceki"
+
+#: ../image.php:23
+msgid "Next <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Sonraki <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:90
+#: ../inc/admin/includes/class-options-framework-admin.php:91
+msgid "Theme Options"
+msgstr "Tema Ayarları"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:186
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+"Sıfırlamak (Reset) için tamama tıklayın. Bütün tema ayarları kaybolacak "
+"(sıfırlanacak)!"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:217
+msgid "Default options restored."
+msgstr "Öntanımlı ayarlara dönüldü."
+
+#: ../inc/admin/includes/class-options-framework-admin.php:271
+msgid "Options saved."
+msgstr "Ayarlar kaydedildi"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:63
+msgid "No file chosen"
+msgstr "Dosya seçilmedi"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:66
+#: ../inc/admin/includes/class-options-media-uploader.php:119
+msgid "Upload"
+msgstr "Yükle"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:68
+#: ../inc/admin/includes/class-options-media-uploader.php:120
+msgid "Remove"
+msgstr "Kaldır"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:71
+msgid "Upgrade your version of WordPress for full media support."
+msgstr "Tam medya desteği için WordPress sürümünüzü yükseltin."
+
+#: ../inc/admin/includes/class-options-media-uploader.php:95
+msgid "View File"
+msgstr "Dosyayı görüntüle"
+
+#: ../inc/admin/includes/class-options-sanitization.php:241
+msgid "No Repeat"
+msgstr "Tekrar yok"
+
+#: ../inc/admin/includes/class-options-sanitization.php:242
+msgid "Repeat Horizontally"
+msgstr "Yatay Tekrar"
+
+#: ../inc/admin/includes/class-options-sanitization.php:243
+msgid "Repeat Vertically"
+msgstr "Dikey Tekrar"
+
+#: ../inc/admin/includes/class-options-sanitization.php:244
+msgid "Repeat All"
+msgstr "Hepsini Tekrarla"
+
+#: ../inc/admin/includes/class-options-sanitization.php:257
+msgid "Top Left"
+msgstr "Sol Üst"
+
+#: ../inc/admin/includes/class-options-sanitization.php:258
+msgid "Top Center"
+msgstr "Merkez Üst"
+
+#: ../inc/admin/includes/class-options-sanitization.php:259
+msgid "Top Right"
+msgstr "Sağ üst"
+
+#: ../inc/admin/includes/class-options-sanitization.php:260
+msgid "Middle Left"
+msgstr "Orta Sol"
+
+#: ../inc/admin/includes/class-options-sanitization.php:261
+msgid "Middle Center"
+msgstr "Orta Merkez"
+
+#: ../inc/admin/includes/class-options-sanitization.php:262
+msgid "Middle Right"
+msgstr "Orta Sağ"
+
+#: ../inc/admin/includes/class-options-sanitization.php:263
+msgid "Bottom Left"
+msgstr "Alt Sol"
+
+#: ../inc/admin/includes/class-options-sanitization.php:264
+msgid "Bottom Center"
+msgstr "Alt Merkez"
+
+#: ../inc/admin/includes/class-options-sanitization.php:265
+msgid "Bottom Right"
+msgstr "Alt Sağ"
+
+#: ../inc/admin/includes/class-options-sanitization.php:278
+msgid "Scroll Normally"
+msgstr "Normal Kaydır"
+
+#: ../inc/admin/includes/class-options-sanitization.php:279
+msgid "Fixed in Place"
+msgstr "Yerinde Sabit"
+
+#: ../inc/admin/includes/class-options-sanitization.php:353
+msgid "Normal"
+msgstr "Normal"
+
+#: ../inc/admin/includes/class-options-sanitization.php:354
+msgid "Italic"
+msgstr "İtalik"
+
+#: ../inc/admin/includes/class-options-sanitization.php:355
+msgid "Bold"
+msgstr "Kalın"
+
+#: ../inc/admin/includes/class-options-sanitization.php:356
+msgid "Bold Italic"
+msgstr "Kalın İtalik"
+
+#: ../inc/extras.php:61
+#, php-format
+msgid "Page %s"
+msgstr "Sayfa  %s"
+
+#: ../inc/extras.php:121
+msgid "Search..."
+msgstr "Ara..."
+
+#: ../inc/extras.php:142
+msgid ""
+"<p>This post is password protected. To view it please enter your password "
+"below:</p>"
+msgstr ""
+"<p>Bu gönderi şifre korumalıdır. Görüntülemek için şifrenizi aşağıya girin:</"
+"p>"
+
+#: ../inc/extras.php:143
+msgid "Password:"
+msgstr "Şifre:"
+
+#: ../inc/extras.php:146
+msgid "Submit"
+msgstr "Teslim et"
+
+#: ../inc/extras.php:190
+msgid "Follow us on "
+msgstr "Bizi takip edin"
+
+#: ../inc/extras.php:301
+#, php-format
+msgid "Theme by %1$s Powered by %2$s"
+msgstr "Temayı yapan %1$s Çalışmasını sağlayan %2$s"
+
+#: ../inc/extras.php:405
+msgid "Support and Documentation"
+msgstr "Destek ve Dökümanlar"
+
+#: ../inc/extras.php:411
+msgid "Sparkling Documentation"
+msgstr "Sparkling Dökümanları"
+
+#: ../inc/extras.php:412
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr ""
+"Bizimle temas kurmanın en iyi yolu <b>destek soruları</b> ve <b>hata "
+"raporları</b> ile"
+
+#: ../inc/extras.php:412
+msgid "Colorlib support forum"
+msgstr "Colorlib destek forumu"
+
+#: ../inc/extras.php:413
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr ""
+"Eğer bu temayı sevdiysen, Takip edenlerden herhangi biri makbule geçer:"
+
+#: ../inc/extras.php:415
+msgid "Rate this Theme"
+msgstr "Temayı derecelendir"
+
+#: ../inc/extras.php:416
+msgid "Like on Facebook"
+msgstr "Facebookda beğen"
+
+#: ../inc/extras.php:417
+msgid "Follow on Twitter"
+msgstr " Twitterda takip et"
+
+#: ../inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "Gönderiler navigasyonu"
+
+#: ../inc/template-tags.php:27
+msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Daha eski gönderiler"
+
+#: ../inc/template-tags.php:31
+msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Daha yeni gönderiler <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "Gönderi navigasyonu"
+
+#: ../inc/widgets/widget-categories.php:11
+#: ../inc/widgets/widget-categories.php:12
+msgid "Sparkling Categories"
+msgstr "Sparkling Bölümleri"
+
+#: ../inc/widgets/widget-categories.php:17
+#: ../inc/widgets/widget-categories.php:76
+msgid "Categories"
+msgstr "Bölümler"
+
+#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
+msgid "Title "
+msgstr "Başlık"
+
+#: ../inc/widgets/widget-categories.php:91
+msgid "Limit Categories "
+msgstr "Bölümleri Sınırla"
+
+#: ../inc/widgets/widget-categories.php:104
+msgid "Enable Posts Count"
+msgstr "Gönderi Sayacını Aktifleştir"
+
+#: ../inc/widgets/widget-popular-posts.php:11
+#: ../inc/widgets/widget-popular-posts.php:12
+msgid "Sparkling Popular Posts Widget"
+msgstr "Sparkling Popüler Gönderiler Widget ı"
+
+#: ../inc/widgets/widget-popular-posts.php:17
+#: ../inc/widgets/widget-popular-posts.php:94
+msgid "Popular Posts"
+msgstr "Pöpüler Gönderiler"
+
+#: ../inc/widgets/widget-popular-posts.php:99
+msgid "Title"
+msgstr "Başlık"
+
+#: ../inc/widgets/widget-popular-posts.php:107
+msgid "Limit Posts Number"
+msgstr "Gönderi Sayısını Sınırla"
+
+#: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
+msgid "Sparkling Social Widget"
+msgstr "Sparkling Sosyal Widget ı"
+
+#: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
+msgid "Follow us"
+msgstr "Bizi takip et"
+
+#: ../options.php:29
+msgid "Right Sidebar"
+msgstr "Sağ Kenar Çubuğu"
+
+#: ../options.php:29
+msgid "Left Sidebar"
+msgstr "Sol Kenar Çubuğu"
+
+#: ../options.php:33
+msgid "One"
+msgstr "Bir"
+
+#: ../options.php:34
+msgid "Two"
+msgstr "İki"
+
+#: ../options.php:35
+msgid "Three"
+msgstr "Üç"
+
+#: ../options.php:36
+msgid "Four"
+msgstr "Dört"
+
+#: ../options.php:37
+msgid "Five"
+msgstr "Beş"
+
+#: ../options.php:42
+msgid "French Toast"
+msgstr "Fransız Tostu"
+
+#: ../options.php:43
+msgid "Pancake"
+msgstr "Pankek"
+
+#: ../options.php:44
+msgid "Omelette"
+msgstr "Omlet"
+
+#: ../options.php:45
+msgid "Crepe"
+msgstr "Krep"
+
+#: ../options.php:46
+msgid "Waffle"
+msgstr "Waffle"
+
+#: ../options.php:115
+msgid "Main"
+msgstr "Ana"
+
+#: ../options.php:118
+msgid "Do You want to display image slider on the Home Page?"
+msgstr "Ana Sayfada görüntü slaytçısının gözükmesini istiyorumusun?"
+
+#: ../options.php:119
+msgid "Check if you want to enable slider"
+msgstr "Slaytçıyı aktive etmek için işaretle"
+
+#: ../options.php:124
+msgid "Slider Category"
+msgstr "Slaytçı bölümü"
+
+#: ../options.php:125
+msgid "Select a category for the featured post slider"
+msgstr "En son gönderi slaytçısı için bölüm seç"
+
+#: ../options.php:131
+msgid "Number of slide items"
+msgstr "Slayt nesnelerinin sayısı"
+
+#: ../options.php:132
+msgid "Enter the number of slide items"
+msgstr "Slayt nesnelerinin sayısını gir"
+
+#: ../options.php:138
+msgid "Website Layout Options"
+msgstr "Website Düzen Ayarları"
+
+#: ../options.php:139
+msgid "Choose between Left and Right sidebar options to be used as default"
+msgstr "Sağ ve Sol kenar çubuğu arasından ön ayarlı olarak kullanılacağı seç"
+
+#: ../options.php:146
+msgid "Element color"
+msgstr "Element rengi"
+
+#: ../options.php:147 ../options.php:153 ../options.php:186 ../options.php:192
+#: ../options.php:198 ../options.php:203 ../options.php:225 ../options.php:231
+#: ../options.php:240 ../options.php:314 ../options.php:320
+msgid "Default used if no color is selected"
+msgstr "Ren seçilmediyse ön ayarlı renk kullanılır"
+
+#: ../options.php:152
+msgid "Element color on hover"
+msgstr "Vurgulanmmış alanda element rengi"
+
+#: ../options.php:158
+msgid "Custom Favicon"
+msgstr "Özel Favicon"
+
+#: ../options.php:159
+msgid ""
+"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
+msgstr ""
+"Websitenin faviconunu temsil edicek 32px x 32px PNG/GIF görselini yükle"
+
+#: ../options.php:164
+msgid "Action Button"
+msgstr "Eylem Butonu"
+
+#: ../options.php:167
+msgid "Call For Action Text"
+msgstr "Eylem yazısını cağır"
+
+#: ../options.php:168
+msgid "Enter the text for call for action section"
+msgstr "Eylem bölümümün çağırmak için gereken yazıyı gir"
+
+#: ../options.php:173
+msgid "Call For Action Button Title"
+msgstr "Eylem çağırma butonu başlığı"
+
+#: ../options.php:174
+msgid "Enter the title for Call For Action button"
+msgstr "Eylem için çağır butonunun başlığını gir"
+
+#: ../options.php:179
+msgid "CFA button link"
+msgstr "Eylem için çağır butonu bağlantısı"
+
+#: ../options.php:180
+msgid "Enter the link for Call For Action button"
+msgstr "Eylem için çağır butonu bağlantısını gir"
+
+#: ../options.php:185
+msgid "Call For Action Text Color"
+msgstr "Eylem için çağır yazı rengi"
+
+#: ../options.php:191
+msgid "Call For Action Background Color"
+msgstr "Eylem için çağır arkaplan rengi"
+
+#: ../options.php:197
+msgid "Call For Action Button Border Color"
+msgstr "Eylem için çağır butonu kenar rengi"
+
+#: ../options.php:202
+msgid "Call For Action Button Text Color"
+msgstr "Eylem için çağır butonu yazı rengi"
+
+#: ../options.php:208
+msgid "Typography"
+msgstr "Basımcılık"
+
+#: ../options.php:211
+msgid "Main Body Text"
+msgstr "Ana gövde metni"
+
+#: ../options.php:212
+msgid "Used in P tags"
+msgstr "P etiketlerinde kullanılır"
+
+#: ../options.php:218
+msgid "Heading Color"
+msgstr "Heading rengi"
+
+#: ../options.php:219
+msgid "Color for all headings (h1-h6)"
+msgstr "Bütün (h1-h6)headingler için renk"
+
+#: ../options.php:224
+msgid "Link Color"
+msgstr "Bağlantı rengi"
+
+#: ../options.php:230
+msgid "Link:hover Color"
+msgstr "Bağlantı:vurgulanmış rengi"
+
+#: ../options.php:236
+msgid "Header"
+msgstr "Header"
+
+#: ../options.php:239
+msgid "Top nav background color"
+msgstr "Üst navigason arkaplan rengi"
+
+#: ../options.php:245
+msgid "Top nav item color"
+msgstr "Üst navigasyon nesne rengi"
+
+#: ../options.php:246
+msgid "Link color"
+msgstr "Bağlantı rengi"
+
+#: ../options.php:251
+msgid "Top nav item hover color"
+msgstr "Üst navigasyon nesne vurgulanmış rengi"
+
+#: ../options.php:252
+msgid "Link:hover color"
+msgstr "Link:vurgulanmış rengi"
+
+#: ../options.php:257
+msgid "Top nav dropdown background color"
+msgstr "Üst navigasyon aşağı düşen arkaplan rengi"
+
+#: ../options.php:258 ../options.php:276
+msgid "Background of dropdown item hover color"
+msgstr "Aşağı düşen nesnenin vurgulanmış arkaplan rengi"
+
+#: ../options.php:263
+msgid "Top nav dropdown item color"
+msgstr "Üst navigasyon nesne rengi"
+
+#: ../options.php:264
+msgid "Dropdown item color"
+msgstr "Aşağı düşen nesne rengi"
+
+#: ../options.php:269
+msgid "Top nav dropdown item hover color"
+msgstr "Üst navigasyon aşağı düşen vurgulanmış nesne rengi"
+
+#: ../options.php:270
+msgid "Dropdown item hover color"
+msgstr "Aşağı düşen vurgulanmış nesne rengi"
+
+#: ../options.php:275
+msgid "Top nav dropdown item background hover color"
+msgstr "Üst navigasyon aşağı düşen vurgulanmış nesnenin arkaplan rengi"
+
+#: ../options.php:281
+msgid "Footer"
+msgstr "Site altı(ayakçı)"
+
+#: ../options.php:284
+msgid "Footer widget area background color"
+msgstr "Site altı widget alanı arkaplan rengi"
+
+#: ../options.php:289
+msgid "Footer background color"
+msgstr "Site altı arkaplan rengi"
+
+#: ../options.php:294
+msgid "Footer text color"
+msgstr "Site altı yazı rengi"
+
+#: ../options.php:299
+msgid "Footer link color"
+msgstr "Site altı bağlantı rengi"
+
+#: ../options.php:304
+msgid "Footer information"
+msgstr "Site altı bilgisi"
+
+#: ../options.php:305
+msgid "Copyright text in footer"
+msgstr "Site altındaki telif hakkı yazısı"
+
+#: ../options.php:310
+msgid "Social"
+msgstr "Sosyal"
+
+#: ../options.php:313
+msgid "Social icon color"
+msgstr "Sosyak ikon rengi"
+
+#: ../options.php:319
+msgid "Footer social icon color"
+msgstr "Site altı sosyal ikon rengi"
+
+#: ../options.php:325
+msgid "Add full URL for your social network profiles"
+msgstr "Sosyal ağ profillerinizin tam URL sini ekleyin"
+
+#: ../options.php:326
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../options.php:333
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../options.php:339
+msgid "Google+"
+msgstr "Google+"
+
+#: ../options.php:345
+msgid "Youtube"
+msgstr "Youtube"
+
+#: ../options.php:351
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: ../options.php:357
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: ../options.php:363
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: ../options.php:369
+msgid "RSS Feed"
+msgstr "RSS Besleme"
+
+#: ../options.php:375
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: ../options.php:381
+msgid "Flickr"
+msgstr "Flickr"
+
+#: ../options.php:387
+msgid "Instagram"
+msgstr "Instagram"
+
+#: ../options.php:393
+msgid "Dribbble"
+msgstr "Dribbble"
+
+#: ../options.php:399
+msgid "Skype"
+msgstr "Skype"
+
+#: ../options.php:405
+msgid "Foursquare"
+msgstr "Foursquare"
+
+#: ../options.php:411
+msgid "SoundCloud"
+msgstr "SoundCloud"
+
+#: ../options.php:417
+msgid "GitHub"
+msgstr "GitHub"
+
+#: ../options.php:422
+msgid "Other"
+msgstr "Diğer"
+
+#: ../options.php:425
+msgid "Custom CSS"
+msgstr "Özel CSS"
+
+#: ../options.php:426
+msgid "Additional CSS"
+msgstr "Fazladan CSS"
+
+#: ../search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ": %s için arama sonuçları"
+
+#: ../sidebar.php:26
+msgid "Meta"
+msgstr "Meta"
