@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-01-26 12:43+0200\n"
-"PO-Revision-Date: 2015-01-26 12:43+0200\n"
+"POT-Creation-Date: 2015-03-20 16:00+0200\n"
+"PO-Revision-Date: 2015-03-20 16:00+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.3\n"
+"X-Generator: Poedit 1.7.5\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
@@ -727,17 +727,17 @@ msgstr "Cor do item do dropdown"
 #: ../options.php:269
 #, fuzzy
 msgid "Top nav dropdown item hover color"
-msgstr "Cor do item:hover do menu do topo"
+msgstr "Cor do item do dropdown do menu do topo"
 
 #: ../options.php:270
 #, fuzzy
 msgid "Dropdown item hover color"
-msgstr "Cor do background do dropdown do item:hover"
+msgstr "Cor do plano de fundo do ítem do Dropdown (Submenu em lista suspensa)"
 
 #: ../options.php:275
 #, fuzzy
 msgid "Top nav dropdown item background hover color"
-msgstr "Cor do background do dropdown do item:hover"
+msgstr "Cor do plano de fundo do ítem do Dropdown (Submenu em lista suspensa)"
 
 #: ../options.php:281
 msgid "Footer"

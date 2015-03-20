@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-01-26 12:43+0200\n"
-"PO-Revision-Date: 2015-01-26 12:43+0200\n"
+"POT-Creation-Date: 2015-03-20 16:00+0200\n"
+"PO-Revision-Date: 2015-03-20 16:00+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.3\n"
+"X-Generator: Poedit 1.7.5\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
@@ -729,7 +729,7 @@ msgstr "Цвет фона элемента при наведении в выпа
 #: ../options.php:275
 #, fuzzy
 msgid "Top nav dropdown item background hover color"
-msgstr "Цвет фона элемента при наведении в выпадающем меню второго уровня"
+msgstr "Цвет текста элемента списка верхнего меню при наведении"
 
 #: ../options.php:281
 msgid "Footer"
