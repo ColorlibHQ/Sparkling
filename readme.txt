@@ -64,7 +64,7 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
 
-= 1.7.11 - 20.03.2015 =
+= 1.7.12 - 20.03.2015 =
 
 * Updated Bootstrap framework to 3.3.4
 
@@ -209,3 +209,4 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 = 1.0 - 01.04.2014 =
 Initial release
+
