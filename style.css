@@ -371,20 +371,7 @@ hr.section-divider {
   text-transform: uppercase;
   font-weight: 700;
 }
-.comment-reply-title {
-  font-size: 14px;
-}
-.comment-reply-link {
-  background: #C1C0C0;
-  border: #C1C0C0;
-  font-size: 10px;
-  text-transform: uppercase;
-}
-@media(max-width:767px){
-    .post-inner-content {
-        padding: 20px 25px;
-    }
-}
+
 /* =Singe Post/Page Pagination
 ----------------------------------------------- */
 .page-links span {
@@ -997,7 +984,23 @@ p.logged-in-as {
   overflow: hidden;
   margin-top: 30px;
 }
-
+.comment-reply-title {
+  font-size: 14px;
+}
+.comment-reply-link {
+  background: #C1C0C0;
+  border: #C1C0C0;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+@media(max-width:767px){
+  .post-inner-content {
+    padding: 20px 25px;
+  }
+  .comment-list .children {
+    padding-left: 10px;
+  }
+}
 /* =Attachment styling
 ----------------------------------------------- */
 #image-navigation .nav-previous a,

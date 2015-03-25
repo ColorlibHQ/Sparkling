@@ -64,9 +64,11 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
 
-= 1.7.11 - 20.03.2015 =
+
+= 1.7.12 - 23.03.2015 =
 
 * Updated Bootstrap framework to 3.3.4
+* Fixed comment layout on mobile when multiple levels  of comments are present
 
 = 1.7.11 - 20.03.2015 =
 
