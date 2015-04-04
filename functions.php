@@ -45,39 +45,39 @@ if ( ! function_exists( 'sparkling_setup' ) ) :
  */
 function sparkling_setup() {
 
-	/*
-	 * Make theme available for translation.
-	 * Translations can be filed in the /languages/ directory.
-	 */
-	load_theme_textdomain( 'sparkling', get_template_directory() . '/languages' );
+  /*
+   * Make theme available for translation.
+   * Translations can be filed in the /languages/ directory.
+   */
+  load_theme_textdomain( 'sparkling', get_template_directory() . '/languages' );
 
-	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
+  // Add default posts and comments RSS feed links to head.
+  add_theme_support( 'automatic-feed-links' );
 
-	/**
-	 * Enable support for Post Thumbnails on posts and pages.
-	 *
-	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
-	 */
-	add_theme_support( 'post-thumbnails' );
+  /**
+   * Enable support for Post Thumbnails on posts and pages.
+   *
+   * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
+   */
+  add_theme_support( 'post-thumbnails' );
 
   add_image_size( 'sparkling-featured', 750, 410, true );
-	add_image_size( 'tab-small', 60, 60 , true); // Small Thumbnail
+  add_image_size( 'tab-small', 60, 60 , true); // Small Thumbnail
 
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'sparkling' ),
-		'footer-links' => __( 'Footer Links', 'sparkling' ) // secondary nav in footer
-	) );
+  // This theme uses wp_nav_menu() in one location.
+  register_nav_menus( array(
+  	'primary' => __( 'Primary Menu', 'sparkling' ),
+  	'footer-links' => __( 'Footer Links', 'sparkling' ) // secondary nav in footer
+  ) );
 
-	// Enable support for Post Formats.
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
+  // Enable support for Post Formats.
+  add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
 
-	// Setup the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'sparkling_custom_background_args', array(
-		'default-color' => 'F2F2F2',
-		'default-image' => '',
-	) ) );
+  // Setup the WordPress core custom background feature.
+  add_theme_support( 'custom-background', apply_filters( 'sparkling_custom_background_args', array(
+  	'default-color' => 'F2F2F2',
+  	'default-image' => '',
+  ) ) );
 
   // Enable support for HTML5 markup.
   add_theme_support( 'html5', array(
@@ -264,9 +264,11 @@ add_action( 'wp_enqueue_scripts', 'sparkling_scripts' );
  * instead of template_directory
  */
 
-define('OPTIONS_FRAMEWORK_URL', get_template_directory() . '/inc/admin/');
-define('OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/admin/');
-require_once (OPTIONS_FRAMEWORK_URL . 'options-framework.php');
+define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/admin/' );
+require_once dirname( __FILE__ ) . '/inc/admin/options-framework.php';
+// Loads options.php from child or parent theme
+$optionsfile = locate_template( 'options.php' );
+load_template( $optionsfile );
 
 /**
  * Implement the Custom Header feature.
