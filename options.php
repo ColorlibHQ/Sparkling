@@ -24,53 +24,53 @@ function optionsframework_options() {
 
 	// Test data
 	$test_array = array(
-	'one' => __('One', 'options_framework_theme'),
-	'two' => __('Two', 'options_framework_theme'),
-	'three' => __('Three', 'options_framework_theme'),
-	'four' => __('Four', 'options_framework_theme'),
-	'five' => __('Five', 'options_framework_theme')
+		'one'   => __('One', 'options_framework_theme'),
+		'two'   => __('Two', 'options_framework_theme'),
+		'three' => __('Three', 'options_framework_theme'),
+		'four'  => __('Four', 'options_framework_theme'),
+		'five'  => __('Five', 'options_framework_theme')
 	);
 
 	// Multicheck Array
 	$multicheck_array = array(
-	'one' => __('French Toast', 'options_framework_theme'),
-	'two' => __('Pancake', 'options_framework_theme'),
-	'three' => __('Omelette', 'options_framework_theme'),
-	'four' => __('Crepe', 'options_framework_theme'),
-	'five' => __('Waffle', 'options_framework_theme')
+		'one'   => __('French Toast', 'options_framework_theme'),
+		'two'   => __('Pancake', 'options_framework_theme'),
+		'three' => __('Omelette', 'options_framework_theme'),
+		'four'  => __('Crepe', 'options_framework_theme'),
+		'five'  => __('Waffle', 'options_framework_theme')
 	);
 
 	// Multicheck Defaults
 	$multicheck_defaults = array(
-	'one' => '1',
-	'five' => '1'
+		'one'  => '1',
+		'five' => '1'
 	);
 
 	// Typography Defaults
 	$typography_defaults = array(
-	'size' => '14px',
-	'face' => 'Open Sans',
-	'style' => 'normal',
-	'color' => '#6B6B6B'
+		'size'  => '14px',
+		'face'  => 'Open Sans',
+		'style' => 'normal',
+		'color' => '#6B6B6B'
 	);
 
 	// Typography Options
 	$typography_options = array(
-	'sizes' => array( '6','10','12','14','15','16','18','20','24','28','32','36','42','48' ),
-	'faces' => array(
-	'arial'     => 'Arial',
-	'verdana'   => 'Verdana, Geneva',
-	'trebuchet' => 'Trebuchet',
-	'georgia'   => 'Georgia',
-	'times'     => 'Times New Roman',
-	'tahoma'    => 'Tahoma, Geneva',
-	'Open Sans' 	=> 'Open Sans',
-	'palatino'  => 'Palatino',
-	'helvetica' => 'Helvetica',
-	'Helvetica Neue' => 'Helvetica Neue'
+		'sizes' => array( '6','10','12','14','15','16','18','20','24','28','32','36','42','48' ),
+		'faces' => array(
+			'arial'          => 'Arial',
+			'verdana'        => 'Verdana, Geneva',
+			'trebuchet'      => 'Trebuchet',
+			'georgia'        => 'Georgia',
+			'times'          => 'Times New Roman',
+			'tahoma'         => 'Tahoma, Geneva',
+			'Open Sans'      => 'Open Sans',
+			'palatino'       => 'Palatino',
+			'helvetica'      => 'Helvetica',
+			'Helvetica Neue' => 'Helvetica Neue'
 	),
-	'styles' => array( 'normal' => 'Normal','bold' => 'Bold' ),
-	'color' => true
+		'styles' => array( 'normal' => 'Normal','bold' => 'Bold' ),
+		'color'  => true
 	);
 
 	// $radio = array('0' => __('No', 'sparkling'),'1' => __('Yes', 'sparkling'));
