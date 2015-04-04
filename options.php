@@ -466,7 +466,7 @@ function optionsframework_options() {
 		'type'  => 'text'
 	);
 
-  $options[] = array(
+	$options[] = array(
 		'id'    => 'social_flickr',
 		'desc'  => __('Flickr', 'sparkling'),
 		'std'   => '',
@@ -474,7 +474,7 @@ function optionsframework_options() {
 		'type'  => 'text'
 	);
 
-  $options[] = array(
+	$options[] = array(
 		'id'    => 'social_instagram',
 		'desc'  => __('Instagram', 'sparkling'),
 		'std'   => '',
@@ -482,7 +482,7 @@ function optionsframework_options() {
 		'type'  => 'text'
 	);
 
-  $options[] = array(
+	$options[] = array(
 		'id'    => 'social_dribbble',
 		'desc'  => __('Dribbble', 'sparkling'),
 		'std'   => '',
@@ -490,7 +490,7 @@ function optionsframework_options() {
 		'type'  => 'text'
 	);
 
-  $options[] = array(
+	$options[] = array(
 		'id'    => 'social_skype',
 		'desc'  => __('Skype', 'sparkling'),
 		'std'   => '',
@@ -498,7 +498,7 @@ function optionsframework_options() {
 		'type'  => 'text'
 	);
 
-  $options[] = array(
+	$options[] = array(
 		'id'    => 'social_foursquare',
 		'desc'  => __('Foursquare', 'sparkling'),
 		'std'   => '',
