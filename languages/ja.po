@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-03-20 15:59+0200\n"
-"PO-Revision-Date: 2015-03-20 15:59+0200\n"
+"POT-Creation-Date: 2015-04-04 15:02+0200\n"
+"PO-Revision-Date: 2015-04-04 15:02+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: heysister721 <tk197709141545@gmail.com>\n"
 "Language: ja\n"
@@ -244,119 +244,119 @@ msgstr "<i class=\"fa fa-chevron-left\"></i> 前"
 msgid "Next <i class=\"fa fa-chevron-right\"></i>"
 msgstr "次 <i class=\"fa fa-chevron-right\"></i>"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:90
 #: ../inc/admin/includes/class-options-framework-admin.php:91
+#: ../inc/admin/includes/class-options-framework-admin.php:92
 msgid "Theme Options"
 msgstr "テーマオプション"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:186
+#: ../inc/admin/includes/class-options-framework-admin.php:204
 msgid "Click OK to reset. Any theme settings will be lost!"
 msgstr "再起動して[OK]をクリックします。任意のテーマの設定は失われます！"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:217
+#: ../inc/admin/includes/class-options-framework-admin.php:235
 msgid "Default options restored."
 msgstr "デフォルトのオプションが復元されました。"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:271
+#: ../inc/admin/includes/class-options-framework-admin.php:289
 msgid "Options saved."
 msgstr "設定を保存"
 
-#: ../inc/admin/includes/class-options-media-uploader.php:63
+#: ../inc/admin/includes/class-options-media-uploader.php:62
 msgid "No file chosen"
 msgstr "ファイルが選択されていません"
 
-#: ../inc/admin/includes/class-options-media-uploader.php:66
-#: ../inc/admin/includes/class-options-media-uploader.php:119
+#: ../inc/admin/includes/class-options-media-uploader.php:65
+#: ../inc/admin/includes/class-options-media-uploader.php:118
 msgid "Upload"
 msgstr "アップロード"
 
-#: ../inc/admin/includes/class-options-media-uploader.php:68
-#: ../inc/admin/includes/class-options-media-uploader.php:120
+#: ../inc/admin/includes/class-options-media-uploader.php:67
+#: ../inc/admin/includes/class-options-media-uploader.php:119
 msgid "Remove"
 msgstr "削除する"
 
-#: ../inc/admin/includes/class-options-media-uploader.php:71
+#: ../inc/admin/includes/class-options-media-uploader.php:70
 msgid "Upgrade your version of WordPress for full media support."
 msgstr ""
 "フルメディアサポートのためのワードプレスのバージョンをアップグレードします。"
 
-#: ../inc/admin/includes/class-options-media-uploader.php:95
+#: ../inc/admin/includes/class-options-media-uploader.php:94
 msgid "View File"
 msgstr "ファイルの表示"
 
-#: ../inc/admin/includes/class-options-sanitization.php:241
+#: ../inc/admin/includes/class-options-sanitization.php:316
 msgid "No Repeat"
 msgstr "繰り返ししないでください"
 
-#: ../inc/admin/includes/class-options-sanitization.php:242
+#: ../inc/admin/includes/class-options-sanitization.php:317
 msgid "Repeat Horizontally"
 msgstr "水平繰り返し"
 
-#: ../inc/admin/includes/class-options-sanitization.php:243
+#: ../inc/admin/includes/class-options-sanitization.php:318
 msgid "Repeat Vertically"
 msgstr "縦に繰り返し"
 
-#: ../inc/admin/includes/class-options-sanitization.php:244
+#: ../inc/admin/includes/class-options-sanitization.php:319
 msgid "Repeat All"
 msgstr "すべてを繰り返します"
 
-#: ../inc/admin/includes/class-options-sanitization.php:257
+#: ../inc/admin/includes/class-options-sanitization.php:331
 msgid "Top Left"
 msgstr "上 左寄せ"
 
-#: ../inc/admin/includes/class-options-sanitization.php:258
+#: ../inc/admin/includes/class-options-sanitization.php:332
 msgid "Top Center"
 msgstr "上 中央寄せ"
 
-#: ../inc/admin/includes/class-options-sanitization.php:259
+#: ../inc/admin/includes/class-options-sanitization.php:333
 msgid "Top Right"
 msgstr "上 右寄せ"
 
-#: ../inc/admin/includes/class-options-sanitization.php:260
+#: ../inc/admin/includes/class-options-sanitization.php:334
 msgid "Middle Left"
 msgstr "中央 左寄せ"
 
-#: ../inc/admin/includes/class-options-sanitization.php:261
+#: ../inc/admin/includes/class-options-sanitization.php:335
 msgid "Middle Center"
 msgstr "中央 中央寄せ"
 
-#: ../inc/admin/includes/class-options-sanitization.php:262
+#: ../inc/admin/includes/class-options-sanitization.php:336
 msgid "Middle Right"
 msgstr "中央 右寄せ"
 
-#: ../inc/admin/includes/class-options-sanitization.php:263
+#: ../inc/admin/includes/class-options-sanitization.php:337
 msgid "Bottom Left"
 msgstr "下 左寄せ"
 
-#: ../inc/admin/includes/class-options-sanitization.php:264
+#: ../inc/admin/includes/class-options-sanitization.php:338
 msgid "Bottom Center"
 msgstr "下 中央寄せ"
 
-#: ../inc/admin/includes/class-options-sanitization.php:265
+#: ../inc/admin/includes/class-options-sanitization.php:339
 msgid "Bottom Right"
 msgstr "下 右寄せ"
 
-#: ../inc/admin/includes/class-options-sanitization.php:278
+#: ../inc/admin/includes/class-options-sanitization.php:351
 msgid "Scroll Normally"
 msgstr "通常スクロール"
 
-#: ../inc/admin/includes/class-options-sanitization.php:279
+#: ../inc/admin/includes/class-options-sanitization.php:352
 msgid "Fixed in Place"
 msgstr "所定の位置に固定"
 
-#: ../inc/admin/includes/class-options-sanitization.php:353
+#: ../inc/admin/includes/class-options-sanitization.php:424
 msgid "Normal"
 msgstr "通常"
 
-#: ../inc/admin/includes/class-options-sanitization.php:354
+#: ../inc/admin/includes/class-options-sanitization.php:425
 msgid "Italic"
 msgstr "斜体"
 
-#: ../inc/admin/includes/class-options-sanitization.php:355
+#: ../inc/admin/includes/class-options-sanitization.php:426
 msgid "Bold"
 msgstr "太字"
 
-#: ../inc/admin/includes/class-options-sanitization.php:356
+#: ../inc/admin/includes/class-options-sanitization.php:427
 msgid "Bold Italic"
 msgstr "太字+斜体"
 
@@ -495,356 +495,356 @@ msgstr "Sparkling SNS ウィジェット"
 msgid "Follow us"
 msgstr "フォローする"
 
-#: ../options.php:29
+#: ../options.php:23
 msgid "Right Sidebar"
 msgstr "右サイドバー"
 
-#: ../options.php:29
+#: ../options.php:23
 msgid "Left Sidebar"
 msgstr "左サイドバー"
 
-#: ../options.php:33
+#: ../options.php:27
 msgid "One"
 msgstr "1"
 
-#: ../options.php:34
+#: ../options.php:28
 msgid "Two"
 msgstr "2"
 
-#: ../options.php:35
+#: ../options.php:29
 msgid "Three"
 msgstr "3"
 
-#: ../options.php:36
+#: ../options.php:30
 msgid "Four"
 msgstr "4"
 
-#: ../options.php:37
+#: ../options.php:31
 msgid "Five"
 msgstr "5"
 
-#: ../options.php:42
+#: ../options.php:36
 msgid "French Toast"
 msgstr "フレンチトースト"
 
-#: ../options.php:43
+#: ../options.php:37
 msgid "Pancake"
 msgstr "パンケーキ"
 
-#: ../options.php:44
+#: ../options.php:38
 msgid "Omelette"
 msgstr "チョコレート"
 
-#: ../options.php:45
+#: ../options.php:39
 msgid "Crepe"
 msgstr "クレープ"
 
-#: ../options.php:46
+#: ../options.php:40
 msgid "Waffle"
 msgstr "ワッフル"
 
-#: ../options.php:115
+#: ../options.php:110
 msgid "Main"
 msgstr "メイン"
 
-#: ../options.php:118
+#: ../options.php:115
 msgid "Do You want to display image slider on the Home Page?"
 msgstr "あなたは、ホームページ上の画像スライダーを表示しますか？"
 
-#: ../options.php:119
+#: ../options.php:116
 msgid "Check if you want to enable slider"
 msgstr "あなたはスライダーを有効にするかどうかを確認してください"
 
-#: ../options.php:124
+#: ../options.php:123
 msgid "Slider Category"
 msgstr "スライダーに表示するカテゴリー"
 
-#: ../options.php:125
+#: ../options.php:124
 msgid "Select a category for the featured post slider"
 msgstr "スライダーで表示する特集記事のカテゴリを選択"
 
-#: ../options.php:131
+#: ../options.php:132
 msgid "Number of slide items"
 msgstr "スライドショーのアイテム数"
 
-#: ../options.php:132
+#: ../options.php:133
 msgid "Enter the number of slide items"
 msgstr "スライド項目の数を入力してください"
 
-#: ../options.php:138
+#: ../options.php:141
 msgid "Website Layout Options"
 msgstr "レイアウトオプション"
 
-#: ../options.php:139
+#: ../options.php:142
 msgid "Choose between Left and Right sidebar options to be used as default"
 msgstr "左と右サイドバーのオプションから選択デフォルトとして使用する"
 
-#: ../options.php:146
+#: ../options.php:151
 msgid "Element color"
 msgstr "要素色（通常）"
 
-#: ../options.php:147 ../options.php:153 ../options.php:186 ../options.php:192
-#: ../options.php:198 ../options.php:203 ../options.php:225 ../options.php:231
-#: ../options.php:240 ../options.php:314 ../options.php:320
+#: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
+#: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
+#: ../options.php:280 ../options.php:382 ../options.php:390
 msgid "Default used if no color is selected"
 msgstr "選択されていない場合、デフォルトを使用"
 
-#: ../options.php:152
+#: ../options.php:159
 msgid "Element color on hover"
 msgstr "要素色（マウスオーバー時）"
 
-#: ../options.php:158
+#: ../options.php:167
 msgid "Custom Favicon"
 msgstr "カスタムファビコン"
 
-#: ../options.php:159
+#: ../options.php:168
 msgid ""
 "Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
 msgstr ""
 "あなたのウェブサイトのファビコンを表します32  X 32 (px) PNG / GIF画像をアップ"
 "ロード"
 
-#: ../options.php:164
+#: ../options.php:175
 msgid "Action Button"
 msgstr "アクションボタン"
 
-#: ../options.php:167
+#: ../options.php:180
 msgid "Call For Action Text"
 msgstr "アクションボタンの呼び出しテキスト"
 
-#: ../options.php:168
+#: ../options.php:181
 msgid "Enter the text for call for action section"
 msgstr "アクションボタンの説明テキストを入力します"
 
-#: ../options.php:173
+#: ../options.php:188
 msgid "Call For Action Button Title"
 msgstr "アクションボタンのタイトル"
 
-#: ../options.php:174
+#: ../options.php:189
 msgid "Enter the title for Call For Action button"
 msgstr "アクションボタンのタイトルを入力します"
 
-#: ../options.php:179
+#: ../options.php:196
 msgid "CFA button link"
 msgstr "アクションボタンのリンク先URL"
 
-#: ../options.php:180
+#: ../options.php:197
 msgid "Enter the link for Call For Action button"
 msgstr "アクションボタンにのリンクURLを入力してください"
 
-#: ../options.php:185
+#: ../options.php:204
 msgid "Call For Action Text Color"
 msgstr "アクションボタンの文字色"
 
-#: ../options.php:191
+#: ../options.php:212
 msgid "Call For Action Background Color"
 msgstr "アクションボタンの背景色"
 
-#: ../options.php:197
+#: ../options.php:220
 msgid "Call For Action Button Border Color"
 msgstr "アクションボタンの境界線色"
 
-#: ../options.php:202
+#: ../options.php:228
 msgid "Call For Action Button Text Color"
 msgstr "アクションボタン実行時のテキスト色"
 
-#: ../options.php:208
+#: ../options.php:236
 msgid "Typography"
 msgstr "文字装飾"
 
-#: ../options.php:211
+#: ../options.php:241
 msgid "Main Body Text"
 msgstr "メインページの本文"
 
-#: ../options.php:212
+#: ../options.php:242
 msgid "Used in P tags"
 msgstr "P（段落）タグで使用"
 
-#: ../options.php:218
+#: ../options.php:250
 msgid "Heading Color"
 msgstr "見出し色"
 
-#: ../options.php:219
+#: ../options.php:251
 msgid "Color for all headings (h1-h6)"
 msgstr "すべてのタイトルの色 (h1-h6)"
 
-#: ../options.php:224
+#: ../options.php:258
 msgid "Link Color"
 msgstr "リンク色（通常）"
 
-#: ../options.php:230
+#: ../options.php:266
 msgid "Link:hover Color"
 msgstr "リンク色（マウスオーバー時）"
 
-#: ../options.php:236
+#: ../options.php:274
 msgid "Header"
 msgstr "ヘッダー"
 
-#: ../options.php:239
+#: ../options.php:279
 msgid "Top nav background color"
 msgstr "ヘッダーナビゲーションの背景色"
 
-#: ../options.php:245
+#: ../options.php:287
 msgid "Top nav item color"
 msgstr "ヘッダーナビゲーションのリンク色（通常）"
 
-#: ../options.php:246
+#: ../options.php:288
 msgid "Link color"
 msgstr "リンク色（通常）"
 
-#: ../options.php:251
+#: ../options.php:295
 msgid "Top nav item hover color"
 msgstr "ヘッダーナビゲーションのリンク色（選択・マウスオーバー時）"
 
-#: ../options.php:252
+#: ../options.php:296
 msgid "Link:hover color"
 msgstr "リンク色（マウスオーバー時）"
 
-#: ../options.php:257
+#: ../options.php:303
 msgid "Top nav dropdown background color"
 msgstr "ヘッダーナビゲーション：ドロップダウンメニューの背景色（通常）"
 
-#: ../options.php:258 ../options.php:276
+#: ../options.php:304 ../options.php:328
 msgid "Background of dropdown item hover color"
 msgstr "ドロップダウンメニューの背景色（マウスオーバー時）"
 
-#: ../options.php:263
+#: ../options.php:311
 msgid "Top nav dropdown item color"
 msgstr "ヘッダーナビゲーション：ドロップダウンメニューの選択・マウスオーバー色"
 
-#: ../options.php:264
+#: ../options.php:312
 msgid "Dropdown item color"
 msgstr "ドロップダウン選択色"
 
-#: ../options.php:269
+#: ../options.php:319
 msgid "Top nav dropdown item hover color"
 msgstr "ヘッダーナビゲーション：ドロップダウンメニューの選択色"
 
-#: ../options.php:270
+#: ../options.php:320
 msgid "Dropdown item hover color"
 msgstr "ドロップダウン項目の背景色：ホバー"
 
-#: ../options.php:275
+#: ../options.php:327
 msgid "Top nav dropdown item background hover color"
 msgstr "トップドロップダウンメニューの項目色"
 
-#: ../options.php:281
+#: ../options.php:335
 msgid "Footer"
 msgstr "フッター"
 
-#: ../options.php:284
+#: ../options.php:340
 msgid "Footer widget area background color"
 msgstr "フッターウィジェット背景色"
 
-#: ../options.php:289
+#: ../options.php:347
 msgid "Footer background color"
 msgstr "フッター背景色"
 
-#: ../options.php:294
+#: ../options.php:354
 msgid "Footer text color"
 msgstr "フッター文字色"
 
-#: ../options.php:299
+#: ../options.php:361
 msgid "Footer link color"
 msgstr "フッターリンク色"
 
-#: ../options.php:304
+#: ../options.php:368
 msgid "Footer information"
 msgstr "フッター情報"
 
-#: ../options.php:305
+#: ../options.php:369
 msgid "Copyright text in footer"
 msgstr "フッターに著作権表記のテキストを追加する"
 
-#: ../options.php:310
+#: ../options.php:376
 msgid "Social"
 msgstr "SNS設定"
 
-#: ../options.php:313
+#: ../options.php:381
 msgid "Social icon color"
 msgstr "ウィジェットSNSアイコン"
 
-#: ../options.php:319
+#: ../options.php:389
 msgid "Footer social icon color"
 msgstr "フッターSNSアイコン色"
 
-#: ../options.php:325
+#: ../options.php:397
 msgid "Add full URL for your social network profiles"
 msgstr "あなたのSNSの完全なURLを追加します。"
 
-#: ../options.php:326
+#: ../options.php:398
 msgid "Facebook"
 msgstr "Facebook"
 
-#: ../options.php:333
+#: ../options.php:407
 msgid "Twitter"
 msgstr "Twitter"
 
-#: ../options.php:339
+#: ../options.php:415
 msgid "Google+"
 msgstr "Google+"
 
-#: ../options.php:345
+#: ../options.php:423
 msgid "Youtube"
 msgstr "Youtube"
 
-#: ../options.php:351
+#: ../options.php:431
 msgid "Vimeo"
 msgstr "Vimeo"
 
-#: ../options.php:357
+#: ../options.php:439
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
-#: ../options.php:363
+#: ../options.php:447
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: ../options.php:369
+#: ../options.php:455
 msgid "RSS Feed"
 msgstr "RSS Feed"
 
-#: ../options.php:375
+#: ../options.php:463
 msgid "Tumblr"
 msgstr "Tumblr"
 
-#: ../options.php:381
+#: ../options.php:471
 msgid "Flickr"
 msgstr "Flickr"
 
-#: ../options.php:387
+#: ../options.php:479
 msgid "Instagram"
 msgstr "Instagram"
 
-#: ../options.php:393
+#: ../options.php:487
 msgid "Dribbble"
 msgstr "Dribbble"
 
-#: ../options.php:399
+#: ../options.php:495
 msgid "Skype"
 msgstr "Skype"
 
-#: ../options.php:405
+#: ../options.php:503
 msgid "Foursquare"
 msgstr "Foursquare"
 
-#: ../options.php:411
+#: ../options.php:511
 msgid "SoundCloud"
 msgstr "SoundCloud"
 
-#: ../options.php:417
+#: ../options.php:519
 msgid "GitHub"
 msgstr ""
 
-#: ../options.php:422
+#: ../options.php:526
 msgid "Other"
 msgstr "その他"
 
-#: ../options.php:425
+#: ../options.php:531
 msgid "Custom CSS"
 msgstr "カスタムCSS"
 
-#: ../options.php:426
+#: ../options.php:532
 msgid "Additional CSS"
 msgstr "オリジナルのCSSパラメータを追加します"
 
