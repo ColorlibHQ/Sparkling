@@ -1,11 +1,9 @@
 <?php
 /**
- * The template for displaying Comments.
+ * The template for displaying comments.
  *
  * The area of the page that contains both current comments
- * and the comment form. The actual display of comments is
- * handled by a callback to sparkling_comment() which is
- * located in the inc/template-tags.php file.
+ * and the comment form.
  *
  * @package sparkling
  */
