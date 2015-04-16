@@ -2,7 +2,7 @@
 
 Theme Name: Sparkling
 Theme URI: http://colorlib.com/wp/sparkling/
-Version: 1.8.0
+Version: 1.8.1
 Tested up to: WP 4.1
 
 Author: Aigars Silkalns
@@ -64,6 +64,10 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
 
+= 1.8.1 - 16.04.2015 =
+
+* Removed accidently added string from header.php
+
 = 1.8.0 - 04.04.2015 =
 
 * Updated Options Framework
@@ -79,8 +83,7 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 = 1.7.11 - 20.03.2015 =
 
-* Added Japanese translation 
-
+* Added Japanese translation
 
 = 1.7.10 - 16.03.2015 =
 
