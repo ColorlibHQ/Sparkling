@@ -104,78 +104,78 @@ add_action( 'after_setup_theme', 'sparkling_setup' );
  * Register widgetized area and update sidebar with default widgets.
  */
 function sparkling_widgets_init() {
-  	register_sidebar( array(
-  		'name'          => __( 'Sidebar', 'sparkling' ),
-  		'id'            => 'sidebar-1',
-  		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-  		'after_widget'  => '</aside>',
-  		'before_title'  => '<h3 class="widget-title">',
-  		'after_title'   => '</h3>',
-  	) );
+  register_sidebar( array(
+  	'name'          => __( 'Sidebar', 'sparkling' ),
+  	'id'            => 'sidebar-1',
+  	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+  	'after_widget'  => '</aside>',
+  	'before_title'  => '<h3 class="widget-title">',
+  	'after_title'   => '</h3>',
+  ) );
 
-    register_sidebar(array(
-    	'id' => 'home-widget-1',
-    	'name' => __( 'Homepage Widget 1', 'sparkling' ),
-    	'description' => __( 'Displays on the Home Page', 'sparkling' ),
-    	'before_widget' => '<div id="%1$s" class="widget %2$s">',
-    	'after_widget' => '</div>',
-    	'before_title' => '<h3 class="widgettitle">',
-    	'after_title' => '</h3>',
-    ));
+  register_sidebar(array(
+    'id'            => 'home-widget-1',
+    'name'          => __( 'Homepage Widget 1', 'sparkling' ),
+    'description'   => __( 'Displays on the Home Page', 'sparkling' ),
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h3 class="widgettitle">',
+    'after_title'   => '</h3>',
+  ));
 
-    register_sidebar(array(
-      'id' => 'home-widget-2',
-      'name' =>  __( 'Homepage Widget 2', 'sparkling' ),
-      'description' => __( 'Displays on the Home Page', 'sparkling' ),
-      'before_widget' => '<div id="%1$s" class="widget %2$s">',
-      'after_widget' => '</div>',
-      'before_title' => '<h3 class="widgettitle">',
-      'after_title' => '</h3>',
-    ));
+  register_sidebar(array(
+    'id'            => 'home-widget-2',
+    'name'          =>  __( 'Homepage Widget 2', 'sparkling' ),
+    'description'   => __( 'Displays on the Home Page', 'sparkling' ),
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h3 class="widgettitle">',
+    'after_title'   => '</h3>',
+  ));
 
-    register_sidebar(array(
-      'id' => 'home-widget-3',
-      'name' =>  __( 'Homepage Widget 3', 'sparkling' ),
-      'description' =>  __( 'Displays on the Home Page', 'sparkling' ),
-      'before_widget' => '<div id="%1$s" class="widget %2$s">',
-      'after_widget' => '</div>',
-      'before_title' => '<h3 class="widgettitle">',
-      'after_title' => '</h3>',
-    ));
+  register_sidebar(array(
+    'id'            => 'home-widget-3',
+    'name'          =>  __( 'Homepage Widget 3', 'sparkling' ),
+    'description'   =>  __( 'Displays on the Home Page', 'sparkling' ),
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h3 class="widgettitle">',
+    'after_title'   => '</h3>',
+  ));
 
-    register_sidebar(array(
-    	'id' => 'footer-widget-1',
-    	'name' =>  __( 'Footer Widget 1', 'sparkling' ),
-    	'description' =>  __( 'Used for footer widget area', 'sparkling' ),
-    	'before_widget' => '<div id="%1$s" class="widget %2$s">',
-    	'after_widget' => '</div>',
-    	'before_title' => '<h3 class="widgettitle">',
-    	'after_title' => '</h3>',
-    ));
+  register_sidebar(array(
+    'id'            => 'footer-widget-1',
+    'name'          =>  __( 'Footer Widget 1', 'sparkling' ),
+    'description'   =>  __( 'Used for footer widget area', 'sparkling' ),
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h3 class="widgettitle">',
+    'after_title'   => '</h3>',
+  ));
 
-    register_sidebar(array(
-      'id' => 'footer-widget-2',
-      'name' =>  __( 'Footer Widget 2', 'sparkling' ),
-      'description' =>  __( 'Used for footer widget area', 'sparkling' ),
-      'before_widget' => '<div id="%1$s" class="widget %2$s">',
-      'after_widget' => '</div>',
-      'before_title' => '<h3 class="widgettitle">',
-      'after_title' => '</h3>',
-    ));
+  register_sidebar(array(
+    'id'            => 'footer-widget-2',
+    'name'          =>  __( 'Footer Widget 2', 'sparkling' ),
+    'description'   =>  __( 'Used for footer widget area', 'sparkling' ),
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h3 class="widgettitle">',
+    'after_title'   => '</h3>',
+  ));
 
-    register_sidebar(array(
-      'id' => 'footer-widget-3',
-      'name' =>  __( 'Footer Widget 3', 'sparkling' ),
-      'description' =>  __( 'Used for footer widget area', 'sparkling' ),
-      'before_widget' => '<div id="%1$s" class="widget %2$s">',
-      'after_widget' => '</div>',
-      'before_title' => '<h3 class="widgettitle">',
-      'after_title' => '</h3>',
-    ));
+  register_sidebar(array(
+    'id'            => 'footer-widget-3',
+    'name'          =>  __( 'Footer Widget 3', 'sparkling' ),
+    'description'   =>  __( 'Used for footer widget area', 'sparkling' ),
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h3 class="widgettitle">',
+    'after_title'   => '</h3>',
+  ));
 
-    register_widget( 'sparkling_social_widget' );
-    register_widget( 'sparkling_popular_posts' );
-    register_widget( 'sparkling_categories' );
+  register_widget( 'sparkling_social_widget' );
+  register_widget( 'sparkling_popular_posts' );
+  register_widget( 'sparkling_categories' );
 
 }
 add_action( 'widgets_init', 'sparkling_widgets_init' );
@@ -222,38 +222,35 @@ function sparkling_scripts() {
 
   // Add slider CSS only if is front page ans slider is enabled
   if( ( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1 ) {
-		wp_enqueue_style( 'flexslider-css', get_template_directory_uri().'/inc/css/flexslider.css' );
+  	wp_enqueue_style( 'flexslider-css', get_template_directory_uri().'/inc/css/flexslider.css' );
   }
 
   // Add main theme stylesheet
-	wp_enqueue_style( 'sparkling-style', get_stylesheet_uri() );
+  wp_enqueue_style( 'sparkling-style', get_stylesheet_uri() );
 
   // Add Modernizr for better HTML5 and CSS3 support
   wp_enqueue_script('sparkling-modernizr', get_template_directory_uri().'/inc/js/modernizr.min.js', array('jquery') );
 
   // Add Bootstrap default JS
-	wp_enqueue_script('sparkling-bootstrapjs', get_template_directory_uri().'/inc/js/bootstrap.min.js', array('jquery') );
+  wp_enqueue_script('sparkling-bootstrapjs', get_template_directory_uri().'/inc/js/bootstrap.min.js', array('jquery') );
 
-  // Add slider JS only if is front page ans slider is enabled
-	if( ( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1 ) {
-		wp_enqueue_script( 'flexslider-js', get_template_directory_uri() . '/inc/js/flexslider.min.js', array('jquery'), '20140222', true );
-	}
-
-  // Flexslider customization
   if( ( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1 ) {
+    // Add slider JS only if is front page ans slider is enabled
+  	wp_enqueue_script( 'flexslider-js', get_template_directory_uri() . '/inc/js/flexslider.min.js', array('jquery'), '20140222', true );
+    //Flexslider customization
     wp_enqueue_script( 'flexslider-customization', get_template_directory_uri() . '/inc/js/flexslider-custom.js', array('jquery', 'flexslider-js'), '20140716', true );
   }
 
   // Main theme related functions
-	wp_enqueue_script( 'sparkling-functions', get_template_directory_uri() . '/inc/js/functions.min.js', array('jquery') );
+  wp_enqueue_script( 'sparkling-functions', get_template_directory_uri() . '/inc/js/functions.min.js', array('jquery') );
 
-	// This one is for accessibility
+  // This one is for accessibility
   wp_enqueue_script( 'sparkling-skip-link-focus-fix', get_template_directory_uri() . '/inc/js/skip-link-focus-fix.js', array(), '20140222', true );
 
   // Treaded comments
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+  if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+  	wp_enqueue_script( 'comment-reply' );
+  }
 }
 add_action( 'wp_enqueue_scripts', 'sparkling_scripts' );
 
