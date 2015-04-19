@@ -66,7 +66,7 @@ function sparkling_setup() {
 
   // This theme uses wp_nav_menu() in one location.
   register_nav_menus( array(
-    'primary' => __( 'Primary Menu', 'sparkling' ),
+    'primary'      => __( 'Primary Menu', 'sparkling' ),
     'footer-links' => __( 'Footer Links', 'sparkling' ) // secondary nav in footer
   ) );
 
@@ -125,7 +125,7 @@ function sparkling_widgets_init() {
 
   register_sidebar(array(
     'id'            => 'home-widget-2',
-    'name'          =>  __( 'Homepage Widget 2', 'sparkling' ),
+    'name'          => __( 'Homepage Widget 2', 'sparkling' ),
     'description'   => __( 'Displays on the Home Page', 'sparkling' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',
