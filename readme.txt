@@ -67,6 +67,8 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 = 1.8.2 - 23.04.2015 =
 
 * Fixed overlapping CSS selectors when using tag called "navigation".
+* Improved coding for author box below post content
+* Author box is now visible only if there is a author bio/description to show.
 
 = 1.8.1 - 16.04.2015 =
 
