@@ -2,8 +2,8 @@
 
 Theme Name: Sparkling
 Theme URI: http://colorlib.com/wp/sparkling/
-Version: 1.8.1
-Tested up to: WP 4.1
+Version: 1.8.2
+Tested up to: WP 4.2
 
 Author: Aigars Silkalns
 Author URI: http://colorlib.com/wp/
@@ -63,6 +63,10 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
+
+= 1.8.2 - 23.04.2015 =
+
+* Fixed overlapping CSS selectors when using tag called "navigation".
 
 = 1.8.1 - 16.04.2015 =
 
