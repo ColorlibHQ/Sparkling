@@ -1,0 +1,844 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sparkling Theme\n"
+"POT-Creation-Date: 2015-04-04 15:03+0200\n"
+"PO-Revision-Date: 2015-05-01 07:28+0100\n"
+"Last-Translator: Ajvngou <Ajvngou@seznam.cz>\n"
+"Language-Team: colorlib <info@colorlib.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
+"Language: cs_CZ\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Jejda! Stránka nenalezena!"
+
+#: ../404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr "Nenalezeno! Zkuste odkazy dole nebo vyhledávání."
+
+#: ../404.php:25
+msgid "Recent Posts"
+msgstr "Poslední příspěvky"
+
+#: ../404.php:31
+msgid "Most Used Categories"
+msgstr "Nejčastěji používané kategorie"
+
+#: ../404.php:52
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Zkuste se podívat v měsíčním archivu: %1$s"
+
+#: ../404.php:53 ../archive.php:66 ../sidebar.php:19
+msgid "Archives"
+msgstr "Archiv"
+
+#: ../404.php:58
+msgid "Tags"
+msgstr "Štítky"
+
+#: ../archive.php:27
+#, php-format
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+#: ../archive.php:30
+#, php-format
+msgid "Day: %s"
+msgstr "Dnů: %s"
+
+#: ../archive.php:33
+#, php-format
+msgid "Month: %s"
+msgstr "Měsíc: %s"
+
+#: ../archive.php:36
+#, php-format
+msgid "Year: %s"
+msgstr "Rok: %s"
+
+#: ../archive.php:39
+msgid "Asides"
+msgstr ""
+
+#: ../archive.php:42
+msgid "Galleries"
+msgstr "Galerie"
+
+#: ../archive.php:45
+msgid "Images"
+msgstr "Obrázky"
+
+#: ../archive.php:48
+msgid "Videos"
+msgstr "Videa"
+
+#: ../archive.php:51
+msgid "Quotes"
+msgstr "Citace"
+
+#: ../archive.php:54
+msgid "Links"
+msgstr "Odkazy"
+
+#: ../archive.php:57
+msgid "Statuses"
+msgstr "Statusy"
+
+#: ../archive.php:60
+msgid "Audios"
+msgstr "Audio"
+
+#: ../archive.php:63
+msgid "Chats"
+msgstr "Chat"
+
+#: ../comments.php:30
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "1 komentář"
+msgstr[1] "Komentářů: %1$s"
+
+#: ../comments.php:37 ../comments.php:55
+msgid "Comment navigation"
+msgstr "Komentáře"
+
+#: ../comments.php:38 ../comments.php:56
+msgid "&larr; Older Comments"
+msgstr "Starší komentáře"
+
+#: ../comments.php:39 ../comments.php:57
+msgid "Newer Comments &rarr;"
+msgstr "Novější komentáře"
+
+#: ../comments.php:67
+msgid "Comments are closed."
+msgstr "Komentáře jsou uzavřeny."
+
+#: ../content-none.php:13
+msgid "Nothing Found"
+msgstr "Nenalezeno"
+
+#: ../content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Chcete publikovat svůj první příspěvek? <a href=\"%1$s\">Začněte zde</a>."
+
+#: ../content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "Omlouváme se, ale nic jsme nenalezli. Zkuste změnit klíčová slova."
+
+#: ../content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Zdá se, že to nelze najít. Zkuste vyhledávání."
+
+#: ../content-page.php:21 ../content-single.php:35 ../content.php:43
+#: ../image.php:79
+msgid "Pages:"
+msgstr "Stránky:"
+
+#: ../content-page.php:32 ../content-single.php:26 ../content.php:23
+msgid "Edit"
+msgstr "Upravit"
+
+#: ../content-single.php:19
+msgid ", "
+msgstr ", "
+
+#: ../content-single.php:23
+#, php-format
+msgid " %1$s"
+msgstr " %1$s"
+
+#: ../content.php:20
+msgid "Leave a comment"
+msgstr "Napište komentář"
+
+#: ../content.php:20
+msgid "1 Comment"
+msgstr "1 komentář"
+
+#: ../content.php:20
+msgid "% Comments"
+msgstr "Komentářů: %"
+
+#: ../content.php:32 ../content.php:39
+msgid "Read More"
+msgstr "Celý článek"
+
+#: ../functions.php:69
+msgid "Primary Menu"
+msgstr "Hlavní menu"
+
+#: ../functions.php:70 ../inc/extras.php:226
+msgid "Footer Links"
+msgstr "Menu v zápatí"
+
+#: ../functions.php:108
+msgid "Sidebar"
+msgstr "Postranní menu"
+
+#: ../functions.php:118
+msgid "Homepage Widget 1"
+msgstr "Úvodní stránka widget 1"
+
+#: ../functions.php:119 ../functions.php:129 ../functions.php:139
+msgid "Displays on the Home Page"
+msgstr "Zobrazí se na úvodní stránce"
+
+#: ../functions.php:128
+msgid "Homepage Widget 2"
+msgstr "Úvodní stránka widget 2"
+
+#: ../functions.php:138
+msgid "Homepage Widget 3"
+msgstr "Úvodní stránka widget 3"
+
+#: ../functions.php:148
+msgid "Footer Widget 1"
+msgstr "Zápatí widget 1"
+
+#: ../functions.php:149 ../functions.php:159 ../functions.php:169
+msgid "Used for footer widget area"
+msgstr "Zobrazí se v zápatí"
+
+#: ../functions.php:158
+msgid "Footer Widget 2"
+msgstr "Zápatí widget 2"
+
+#: ../functions.php:168
+msgid "Footer Widget 3"
+msgstr "Zápatí widget 3"
+
+#: ../image.php:22
+msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Předchozí"
+
+#: ../image.php:23
+msgid "Next <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Další <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:91
+#: ../inc/admin/includes/class-options-framework-admin.php:92
+msgid "Theme Options"
+msgstr "Možnosti šablony"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:204
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr "Pokud kliknete na OK, přijdete o všechny změny!"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:235
+msgid "Default options restored."
+msgstr "Původní nastavení obnoveno."
+
+#: ../inc/admin/includes/class-options-framework-admin.php:289
+msgid "Options saved."
+msgstr "Změny uloženy."
+
+#: ../inc/admin/includes/class-options-media-uploader.php:62
+msgid "No file chosen"
+msgstr "Soubor není vybrán"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:65
+#: ../inc/admin/includes/class-options-media-uploader.php:118
+msgid "Upload"
+msgstr "Nahrát"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:67
+#: ../inc/admin/includes/class-options-media-uploader.php:119
+msgid "Remove"
+msgstr "Odstranit"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:70
+msgid "Upgrade your version of WordPress for full media support."
+msgstr "Aktualizujte svůj WordPress. Získáte tak plnou podporu."
+
+#: ../inc/admin/includes/class-options-media-uploader.php:94
+msgid "View File"
+msgstr "Prohlédnout soubor"
+
+#: ../inc/admin/includes/class-options-sanitization.php:316
+msgid "No Repeat"
+msgstr "Neopakovat"
+
+#: ../inc/admin/includes/class-options-sanitization.php:317
+msgid "Repeat Horizontally"
+msgstr "Opakovat vodorovně"
+
+#: ../inc/admin/includes/class-options-sanitization.php:318
+msgid "Repeat Vertically"
+msgstr "Opakovat svisle"
+
+#: ../inc/admin/includes/class-options-sanitization.php:319
+msgid "Repeat All"
+msgstr "Opakovat vše"
+
+#: ../inc/admin/includes/class-options-sanitization.php:331
+msgid "Top Left"
+msgstr "Zarovnat doleva"
+
+#: ../inc/admin/includes/class-options-sanitization.php:332
+msgid "Top Center"
+msgstr "Zarovnat na střed"
+
+#: ../inc/admin/includes/class-options-sanitization.php:333
+msgid "Top Right"
+msgstr "Zarovnat doprava"
+
+#: ../inc/admin/includes/class-options-sanitization.php:334
+msgid "Middle Left"
+msgstr "Uprostřed vlevo"
+
+#: ../inc/admin/includes/class-options-sanitization.php:335
+msgid "Middle Center"
+msgstr "Uprostřed"
+
+#: ../inc/admin/includes/class-options-sanitization.php:336
+msgid "Middle Right"
+msgstr "Uprostřed napravo"
+
+#: ../inc/admin/includes/class-options-sanitization.php:337
+msgid "Bottom Left"
+msgstr "Dole vlevo"
+
+#: ../inc/admin/includes/class-options-sanitization.php:338
+msgid "Bottom Center"
+msgstr "Dole uprostřed"
+
+#: ../inc/admin/includes/class-options-sanitization.php:339
+msgid "Bottom Right"
+msgstr "Dole vpravo"
+
+#: ../inc/admin/includes/class-options-sanitization.php:351
+msgid "Scroll Normally"
+msgstr "Skrolovací"
+
+#: ../inc/admin/includes/class-options-sanitization.php:352
+msgid "Fixed in Place"
+msgstr "Nehybný"
+
+#: ../inc/admin/includes/class-options-sanitization.php:424
+msgid "Normal"
+msgstr "Normální"
+
+#: ../inc/admin/includes/class-options-sanitization.php:425
+msgid "Italic"
+msgstr "Kurzíva"
+
+#: ../inc/admin/includes/class-options-sanitization.php:426
+msgid "Bold"
+msgstr "Tučně"
+
+#: ../inc/admin/includes/class-options-sanitization.php:427
+msgid "Bold Italic"
+msgstr "Tučná kurzíva"
+
+#: ../inc/extras.php:61
+#, php-format
+msgid "Page %s"
+msgstr "Stránka %s"
+
+#: ../inc/extras.php:121
+msgid "Search..."
+msgstr "Hledat..."
+
+#: ../inc/extras.php:142
+msgid ""
+"<p>This post is password protected. To view it please enter your password "
+"below:</p>"
+msgstr "<p>Tento příspěvek je chráněn heslem. Napište prosím heslo:</p>"
+
+#: ../inc/extras.php:143
+msgid "Password:"
+msgstr "Heslo:"
+
+#: ../inc/extras.php:146
+msgid "Submit"
+msgstr "Odeslat"
+
+#: ../inc/extras.php:190
+msgid "Follow us on "
+msgstr "Sledujte nás na"
+
+#: ../inc/extras.php:301
+#, php-format
+msgid "Theme by %1$s Powered by %2$s"
+msgstr "Šablonu %1$s pohání %2$s"
+
+#: ../inc/extras.php:405
+msgid "Support and Documentation"
+msgstr "Podpora a dokumentace"
+
+#: ../inc/extras.php:411
+msgid "Sparkling Documentation"
+msgstr "Dokumentace k šabloně"
+
+#: ../inc/extras.php:412
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr ""
+"Nejlepší způsob, jak nás kontaktovat s <b>dotazy</b> nebo <b>nahlásit chybu</"
+"b> je přes"
+
+#: ../inc/extras.php:412
+msgid "Colorlib support forum"
+msgstr "Colorlib forum podpory"
+
+#: ../inc/extras.php:413
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr "Pokud se vám šablona líbí, využijte prosím tyto možnosti:"
+
+#: ../inc/extras.php:415
+msgid "Rate this Theme"
+msgstr "Ohodnotit šablonu"
+
+#: ../inc/extras.php:416
+msgid "Like on Facebook"
+msgstr "Sledovat nás na Facebooku"
+
+#: ../inc/extras.php:417
+msgid "Follow on Twitter"
+msgstr "Sledovat nás na Twitteru"
+
+#: ../inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "Příspěvky"
+
+#: ../inc/template-tags.php:27
+msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Starší příspěvky"
+
+#: ../inc/template-tags.php:31
+msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Novější příspěvky <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "Příspěvky"
+
+#: ../inc/widgets/widget-categories.php:11
+#: ../inc/widgets/widget-categories.php:12
+msgid "Sparkling Categories"
+msgstr "Rubriky šablony"
+
+#: ../inc/widgets/widget-categories.php:17
+#: ../inc/widgets/widget-categories.php:76
+msgid "Categories"
+msgstr "Rubriky"
+
+#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
+msgid "Title "
+msgstr "Název"
+
+#: ../inc/widgets/widget-categories.php:91
+msgid "Limit Categories "
+msgstr "Maximální počet rubrik"
+
+#: ../inc/widgets/widget-categories.php:104
+msgid "Enable Posts Count"
+msgstr "Zobrazit počet příspěvků"
+
+#: ../inc/widgets/widget-popular-posts.php:11
+#: ../inc/widgets/widget-popular-posts.php:12
+msgid "Sparkling Popular Posts Widget"
+msgstr "Oblíbené příspěvky - widget šablony"
+
+#: ../inc/widgets/widget-popular-posts.php:17
+#: ../inc/widgets/widget-popular-posts.php:94
+msgid "Popular Posts"
+msgstr "Oblíbené příspěvky"
+
+#: ../inc/widgets/widget-popular-posts.php:99
+msgid "Title"
+msgstr "Název"
+
+#: ../inc/widgets/widget-popular-posts.php:107
+msgid "Limit Posts Number"
+msgstr "Maximální počet příspěvků"
+
+#: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
+msgid "Sparkling Social Widget"
+msgstr "Sociální widget šablony"
+
+#: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
+msgid "Follow us"
+msgstr "Sledujte nás na"
+
+#: ../options.php:23
+msgid "Right Sidebar"
+msgstr "Pravé postranní menu"
+
+#: ../options.php:23
+msgid "Left Sidebar"
+msgstr "Levé postranní menu"
+
+#: ../options.php:27
+msgid "One"
+msgstr "Jedna"
+
+#: ../options.php:28
+msgid "Two"
+msgstr "Dvě"
+
+#: ../options.php:29
+msgid "Three"
+msgstr "Tři"
+
+#: ../options.php:30
+msgid "Four"
+msgstr "Čtyři"
+
+#: ../options.php:31
+msgid "Five"
+msgstr "Pět"
+
+#: ../options.php:36
+msgid "French Toast"
+msgstr "Francouzský toust"
+
+#: ../options.php:37
+msgid "Pancake"
+msgstr "Lívanec"
+
+#: ../options.php:38
+msgid "Omelette"
+msgstr "Omeleta"
+
+#: ../options.php:39
+msgid "Crepe"
+msgstr "Palačinka"
+
+#: ../options.php:40
+msgid "Waffle"
+msgstr "Vafle"
+
+#: ../options.php:110
+msgid "Main"
+msgstr "Hlavní"
+
+#: ../options.php:115
+msgid "Do You want to display image slider on the Home Page?"
+msgstr "Chcete zobrazit slider na úvodní stránce?"
+
+#: ../options.php:116
+msgid "Check if you want to enable slider"
+msgstr "Zaškrtněte, pokud chcete aktivovat slider"
+
+#: ../options.php:123
+msgid "Slider Category"
+msgstr "Rubrika ve slideru"
+
+#: ../options.php:124
+msgid "Select a category for the featured post slider"
+msgstr "vyberte rubriku, která se zobrazí ve slideru"
+
+#: ../options.php:132
+msgid "Number of slide items"
+msgstr "Počet položek ve slideru"
+
+#: ../options.php:133
+msgid "Enter the number of slide items"
+msgstr "Napište počet"
+
+#: ../options.php:141
+msgid "Website Layout Options"
+msgstr "Vzhled stránky"
+
+#: ../options.php:142
+msgid "Choose between Left and Right sidebar options to be used as default"
+msgstr "Zvolte, kde chcete mít postranní menu"
+
+#: ../options.php:151
+msgid "Element color"
+msgstr "Barva tlačítek"
+
+#: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
+#: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
+#: ../options.php:280 ../options.php:382 ../options.php:390
+msgid "Default used if no color is selected"
+msgstr "Pokud není nic vybráno, zobrazí se defaultní barva"
+
+#: ../options.php:159
+msgid "Element color on hover"
+msgstr "Barva tlačítka po najetí myši"
+
+#: ../options.php:167
+msgid "Custom Favicon"
+msgstr "Vlastní favicon"
+
+#: ../options.php:168
+msgid ""
+"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
+msgstr "Nahrajte obrázek PNG/GIF velikosti 32 x 32 px"
+
+#: ../options.php:175
+msgid "Action Button"
+msgstr "Akční tlačítko"
+
+#: ../options.php:180
+msgid "Call For Action Text"
+msgstr "Text pro akční tlačítko"
+
+#: ../options.php:181
+msgid "Enter the text for call for action section"
+msgstr "Napište text, který se zobrazí v akční sekci"
+
+#: ../options.php:188
+msgid "Call For Action Button Title"
+msgstr "Název akčního tlačítka"
+
+#: ../options.php:189
+msgid "Enter the title for Call For Action button"
+msgstr "Vložte název akčního tlačítka"
+
+#: ../options.php:196
+msgid "CFA button link"
+msgstr "Odkaz akčního tlačítka"
+
+#: ../options.php:197
+msgid "Enter the link for Call For Action button"
+msgstr "Vložte odkaz pro akční tlačítko"
+
+#: ../options.php:204
+msgid "Call For Action Text Color"
+msgstr "Barva akčního textu"
+
+#: ../options.php:212
+msgid "Call For Action Background Color"
+msgstr "Barva pozadí akčního textu"
+
+#: ../options.php:220
+msgid "Call For Action Button Border Color"
+msgstr "Barva ohraničení akčního tlačítka"
+
+#: ../options.php:228
+msgid "Call For Action Button Text Color"
+msgstr "Barva písma akčního tlačítka"
+
+#: ../options.php:236
+msgid "Typography"
+msgstr "Typografie"
+
+#: ../options.php:241
+msgid "Main Body Text"
+msgstr "Hlavní text webu"
+
+#: ../options.php:242
+msgid "Used in P tags"
+msgstr "Text v P tagu"
+
+#: ../options.php:250
+msgid "Heading Color"
+msgstr "Barva nadpisů"
+
+#: ../options.php:251
+msgid "Color for all headings (h1-h6)"
+msgstr "Pro všechny nadpisy (h1-h6)"
+
+#: ../options.php:258
+msgid "Link Color"
+msgstr "Barva odkazu"
+
+#: ../options.php:266
+msgid "Link:hover Color"
+msgstr "Barva aktivního odkazu"
+
+#: ../options.php:274
+msgid "Header"
+msgstr "Záhlaví"
+
+#: ../options.php:279
+msgid "Top nav background color"
+msgstr "Barva pozadí horního menu"
+
+#: ../options.php:287
+msgid "Top nav item color"
+msgstr "Barva textu v horním menu"
+
+#: ../options.php:288
+msgid "Link color"
+msgstr "Barva odkazu"
+
+#: ../options.php:295
+msgid "Top nav item hover color"
+msgstr "Barva aktivní položky v horním menu"
+
+#: ../options.php:296
+msgid "Link:hover color"
+msgstr "Barva aktivního odkazu"
+
+#: ../options.php:303
+msgid "Top nav dropdown background color"
+msgstr "Barva pozadí submenu"
+
+#: ../options.php:304 ../options.php:328
+msgid "Background of dropdown item hover color"
+msgstr "Barva v pozadí aktivního textu v submenu"
+
+#: ../options.php:311
+msgid "Top nav dropdown item color"
+msgstr "Barva textu v submenu horního menu"
+
+#: ../options.php:312
+msgid "Dropdown item color"
+msgstr "Barva textu v submenu"
+
+#: ../options.php:319
+msgid "Top nav dropdown item hover color"
+msgstr "Barva aktivního textu v submenu horního menu"
+
+#: ../options.php:320
+msgid "Dropdown item hover color"
+msgstr "Barva aktivního textu v submenu"
+
+#: ../options.php:327
+msgid "Top nav dropdown item background hover color"
+msgstr "Barva aktivního pozadí submenu v horním menu"
+
+#: ../options.php:335
+msgid "Footer"
+msgstr "Zápatí"
+
+#: ../options.php:340
+msgid "Footer widget area background color"
+msgstr "Barva pozadí widgetů v zápatí"
+
+#: ../options.php:347
+msgid "Footer background color"
+msgstr "Barva pozadí v zápatí"
+
+#: ../options.php:354
+msgid "Footer text color"
+msgstr "Barva textu v zápatí"
+
+#: ../options.php:361
+msgid "Footer link color"
+msgstr "Barva odkazu v zápatí"
+
+#: ../options.php:368
+msgid "Footer information"
+msgstr "Text v zápatí"
+
+#: ../options.php:369
+msgid "Copyright text in footer"
+msgstr "Text autorských práv v zápatí webu"
+
+#: ../options.php:376
+msgid "Social"
+msgstr "Sociální sítě"
+
+#: ../options.php:381
+msgid "Social icon color"
+msgstr "Barva ikonky sociální sítě"
+
+#: ../options.php:389
+msgid "Footer social icon color"
+msgstr "Barva ikonky sociální sítě v zápatí"
+
+#: ../options.php:397
+msgid "Add full URL for your social network profiles"
+msgstr "Přidejte celý odkaz profilu na vaši sociální síť"
+
+#: ../options.php:398
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../options.php:407
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../options.php:415
+msgid "Google+"
+msgstr "Google+"
+
+#: ../options.php:423
+msgid "Youtube"
+msgstr "YouTube"
+
+#: ../options.php:431
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: ../options.php:439
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: ../options.php:447
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: ../options.php:455
+msgid "RSS Feed"
+msgstr "RSS čtečka"
+
+#: ../options.php:463
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: ../options.php:471
+msgid "Flickr"
+msgstr "Flickr"
+
+#: ../options.php:479
+msgid "Instagram"
+msgstr "Instagram"
+
+#: ../options.php:487
+msgid "Dribbble"
+msgstr "Dribble"
+
+#: ../options.php:495
+msgid "Skype"
+msgstr "Skype"
+
+#: ../options.php:503
+msgid "Foursquare"
+msgstr "Foursquare"
+
+#: ../options.php:511
+msgid "SoundCloud"
+msgstr "SoundClound"
+
+#: ../options.php:519
+msgid "GitHub"
+msgstr "GitHub"
+
+#: ../options.php:526
+msgid "Other"
+msgstr "Ostatní"
+
+#: ../options.php:531
+msgid "Custom CSS"
+msgstr "Vlastní CSS"
+
+#: ../options.php:532
+msgid "Additional CSS"
+msgstr "Doplňkové CSS"
+
+#: ../search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Výsledky hledání: %s"
+
+#: ../sidebar.php:26
+msgid "Meta"
+msgstr "Meta"
