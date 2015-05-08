@@ -68,7 +68,7 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 * Added Czech translation
 * Added Ukrainian translation thanks to Vladyslav
-* Added Traditional Chinese thaks to ShuChun 
+* Added Traditional Chinese thaks to ShuChun
 
 = 1.8.2 - 23.04.2015 =
 

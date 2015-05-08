@@ -36,32 +36,32 @@
 			<div class="container">
 				<div class="row">
 					<div class="site-navigation-inner col-sm-12">
-		        <div class="navbar-header">
-		            <button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-		                <span class="sr-only">Toggle navigation</span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		            </button>
+				    <div class="navbar-header">
+	            <button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+	            </button>
 
-				<?php if( get_header_image() != '' ) : ?>
+							<?php if( get_header_image() != '' ) : ?>
 
-					<div id="logo">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
-					</div><!-- end of #logo -->
+								<div id="logo">
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
+								</div><!-- end of #logo -->
 
-				<?php endif; // header image was removed ?>
+							<?php endif; // header image was removed ?>
 
-				<?php if( !get_header_image() ) : ?>
+							<?php if( !get_header_image() ) : ?>
 
-					<div id="logo">
-						<span class="site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
-					</div><!-- end of #logo -->
+								<div id="logo">
+									<span class="site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
+								</div><!-- end of #logo -->
 
-				<?php endif; // header image was removed (again) ?>
+							<?php endif; // header image was removed (again) ?>
 
-		        </div>
-					<?php sparkling_header_menu(); ?>
+				    </div>
+							<?php sparkling_header_menu(); // main navigation ?>
 					</div>
 		    </div>
 		  </div>
