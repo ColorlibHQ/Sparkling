@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-04 15:02+0200\n"
-"PO-Revision-Date: 2015-04-04 15:02+0200\n"
+"POT-Creation-Date: 2015-05-18 15:35+0200\n"
+"PO-Revision-Date: 2015-05-18 15:35+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: lt\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 &&(n"
 "%100<10||n%100 >= 20)? 1 : 2);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.7.5\n"
+"X-Generator: Poedit 1.7.6\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
 "__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
@@ -123,7 +123,7 @@ msgstr "Audio"
 msgid "Chats"
 msgstr "Pokalbiai"
 
-#: ../comments.php:30
+#: ../comments.php:28
 #, fuzzy, php-format
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
@@ -132,19 +132,19 @@ msgstr[0] "%1$s komentaras<!--%2$s-->"
 msgstr[1] "%1$s komentarai<!--%2$s-->"
 msgstr[2] "%1$s komentarų<!--%2$s-->"
 
-#: ../comments.php:37 ../comments.php:55
+#: ../comments.php:35 ../comments.php:53
 msgid "Comment navigation"
 msgstr "Komentarų navigacija"
 
-#: ../comments.php:38 ../comments.php:56
+#: ../comments.php:36 ../comments.php:54
 msgid "&larr; Older Comments"
 msgstr "&larr; Senesni komentarai"
 
-#: ../comments.php:39 ../comments.php:57
+#: ../comments.php:37 ../comments.php:55
 msgid "Newer Comments &rarr;"
 msgstr "Naujesni komentarai &rarr;"
 
-#: ../comments.php:67
+#: ../comments.php:65
 msgid "Comments are closed."
 msgstr "Komentavimo galimybė išjungta."
 
@@ -252,6 +252,11 @@ msgstr "Poraštės valdiklis 2"
 #: ../functions.php:168
 msgid "Footer Widget 3"
 msgstr "Poraštės valdiklis 3"
+
+#: ../header.php:41
+#, fuzzy
+msgid "Toggle navigation"
+msgstr "Įrašo navigacija"
 
 #: ../image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"

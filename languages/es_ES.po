@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-04-04 15:01+0200\n"
-"PO-Revision-Date: 2015-04-04 15:01+0200\n"
+"POT-Creation-Date: 2015-05-18 15:34+0200\n"
+"PO-Revision-Date: 2015-05-18 15:35+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.5\n"
+"X-Generator: Poedit 1.7.6\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
@@ -31,7 +31,7 @@ msgstr ""
 #: ../404.php:25
 #, fuzzy
 msgid "Recent Posts"
-msgstr "Entradas Populares"
+msgstr "Categoría de los artícolos en la página home"
 
 #: ../404.php:31
 msgid "Most Used Categories"
@@ -109,7 +109,7 @@ msgstr "Audios"
 msgid "Chats"
 msgstr "Chats"
 
-#: ../comments.php:30
+#: ../comments.php:28
 #, php-format
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
@@ -117,20 +117,20 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../comments.php:37 ../comments.php:55
+#: ../comments.php:35 ../comments.php:53
 #, fuzzy
 msgid "Comment navigation"
-msgstr "Navegación en los comentarios"
+msgstr "Navigazione commento"
 
-#: ../comments.php:38 ../comments.php:56
+#: ../comments.php:36 ../comments.php:54
 msgid "&larr; Older Comments"
 msgstr "&larr; Comentarios más antiguos"
 
-#: ../comments.php:39 ../comments.php:57
+#: ../comments.php:37 ../comments.php:55
 msgid "Newer Comments &rarr;"
 msgstr "Comentarios más recientes &rarr;"
 
-#: ../comments.php:67
+#: ../comments.php:65
 msgid "Comments are closed."
 msgstr "Los Comentarios están cerrados."
 
@@ -241,6 +241,11 @@ msgstr "Pie de Página Widget 2"
 #: ../functions.php:168
 msgid "Footer Widget 3"
 msgstr "Pie de Página Widget 3"
+
+#: ../header.php:41
+#, fuzzy
+msgid "Toggle navigation"
+msgstr "Navigazione post"
 
 #: ../image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
@@ -736,7 +741,7 @@ msgstr "Color del ítem del menú desplegable"
 #: ../options.php:319
 #, fuzzy
 msgid "Top nav dropdown item hover color"
-msgstr "Colore voce del menu a tendina della navigazione principale"
+msgstr "Color del ítem del menú desplegable Top nav"
 
 #: ../options.php:320
 #, fuzzy
@@ -746,7 +751,7 @@ msgstr "Sfondo della voce in hover del menu a tendina"
 #: ../options.php:327
 #, fuzzy
 msgid "Top nav dropdown item background hover color"
-msgstr "Colore voce del menu a tendina della navigazione principale"
+msgstr "Sfondo della voce in hover del menu a tendina"
 
 #: ../options.php:335
 msgid "Footer"
