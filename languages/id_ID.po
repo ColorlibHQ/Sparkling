@@ -1,0 +1,899 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sparkling\n"
+"POT-Creation-Date: 2015-05-18 13:40+0700\n"
+"PO-Revision-Date: 2015-05-18 13:58+0700\n"
+"Last-Translator: \n"
+"Language-Team: Rhiski Aprilianto <mail@rhiskiapril.com>\n"
+"Language: id_ID\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ups! Halaman itu tidak dapat ditemukan."
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Sepertinya tidak ada yang ditemukan di lokasi ini. Mungkin mencoba salah "
+"satu link di bawah ini atau pencarian?"
+
+#: 404.php:25
+msgid "Recent Posts"
+msgstr "Tulisan Terbaru"
+
+#: 404.php:31
+msgid "Most Used Categories"
+msgstr "Kategori Terbanyak Digunakan"
+
+#: 404.php:52
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Coba cari di arsip bulanan. %1$s"
+
+#: 404.php:53 archive.php:66 sidebar.php:19
+msgid "Archives"
+msgstr "Arsip"
+
+#: 404.php:58
+msgid "Tags"
+msgstr "Tag"
+
+#: archive.php:27
+#, php-format
+msgid "Author: %s"
+msgstr "Penulis: %s"
+
+#: archive.php:30
+#, php-format
+msgid "Day: %s"
+msgstr "Hari: %s"
+
+#: archive.php:33
+#, php-format
+msgid "Month: %s"
+msgstr "Bulan: %s"
+
+#: archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:36
+#, php-format
+msgid "Year: %s"
+msgstr "Tahun: %s"
+
+#: archive.php:36
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:39
+msgid "Asides"
+msgstr "Aside"
+
+#: archive.php:42
+msgid "Galleries"
+msgstr "Galeri"
+
+#: archive.php:45
+msgid "Images"
+msgstr "Gambar"
+
+#: archive.php:48
+msgid "Videos"
+msgstr "Video"
+
+#: archive.php:51
+msgid "Quotes"
+msgstr "Kutipan"
+
+#: archive.php:54
+msgid "Links"
+msgstr "Link"
+
+#: archive.php:57
+msgid "Statuses"
+msgstr "Status"
+
+#: archive.php:60
+msgid "Audios"
+msgstr "Audio"
+
+#: archive.php:63
+msgid "Chats"
+msgstr "Chat"
+
+#: comments.php:28
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Satu pemikiran pada &quot;%2$s&quot;"
+msgstr[1] "%1$s pemikiran pada &quot;%2$s&quot;"
+
+#: comments.php:35 comments.php:53
+msgid "Comment navigation"
+msgstr "Navigasi komentar"
+
+#: comments.php:36 comments.php:54
+msgid "&larr; Older Comments"
+msgstr "&larr; Komentar Lama"
+
+#: comments.php:37 comments.php:55
+msgid "Newer Comments &rarr;"
+msgstr "Komentar baru &rarr;"
+
+#: comments.php:65
+msgid "Comments are closed."
+msgstr "Komentar ditutup."
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "Tidak Ditemukan"
+
+#: content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Siap untuk mempublikasikan posting pertama Anda? <a href=\"%1$s\">Persiapan "
+"di sini</a> ."
+
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Maaf, tapi tidak ada yang cocok dengan istilah pencarian Anda. Silakan coba "
+"lagi dengan beberapa kata kunci yang berbeda."
+
+#: content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Tampaknya kita tidak dapat menemukan apa yang Anda cari. Mungkin pencarian "
+"bisa membantu."
+
+#: content-page.php:21 content-single.php:35 content.php:43 image.php:79
+msgid "Pages:"
+msgstr "Halaman:"
+
+#: content-page.php:32 content-single.php:26 content.php:23
+msgid "Edit"
+msgstr "Edit"
+
+#: content-single.php:19
+msgid ", "
+msgstr ","
+
+#: content-single.php:23
+#, php-format
+msgid " %1$s"
+msgstr " %1$s"
+
+#: content.php:20
+msgid "Leave a comment"
+msgstr "Tinggalkan komentar"
+
+#: content.php:20
+msgid "1 Comment"
+msgstr "1 komentar"
+
+#: content.php:20
+msgid "% Comments"
+msgstr "% Komentar"
+
+#: content.php:32 content.php:39
+msgid "Read More"
+msgstr "Baca Selengkapnya"
+
+#: functions.php:69
+msgid "Primary Menu"
+msgstr "Menu Utama"
+
+#: functions.php:70 inc/extras.php:226
+msgid "Footer Links"
+msgstr "Link footer"
+
+#: functions.php:108
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: functions.php:118
+msgid "Homepage Widget 1"
+msgstr "Homepage Widget 1"
+
+#: functions.php:119 functions.php:129 functions.php:139
+msgid "Displays on the Home Page"
+msgstr "Tampilkan pada Home Page"
+
+#: functions.php:128
+msgid "Homepage Widget 2"
+msgstr "Homepage Widget 2"
+
+#: functions.php:138
+msgid "Homepage Widget 3"
+msgstr "Homepage Widget 3"
+
+#: functions.php:148
+msgid "Footer Widget 1"
+msgstr "Footer Widget 1"
+
+#: functions.php:149 functions.php:159 functions.php:169
+msgid "Used for footer widget area"
+msgstr "Digunakan untuk footer widget area"
+
+#: functions.php:158
+msgid "Footer Widget 2"
+msgstr "Footer Widget 2"
+
+#: functions.php:168
+msgid "Footer Widget 3"
+msgstr "Footer Widget 3"
+
+#: image.php:22
+msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
+msgstr "<i class=\"fa fa-chevron-left\"></i>Sebelumnya"
+
+#: image.php:23
+msgid "Next <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Selanjutnya <i class=\"fa fa-chevron-right\"></i>"
+
+#: inc/admin/includes/class-options-framework-admin.php:91
+#: inc/admin/includes/class-options-framework-admin.php:92
+msgid "Theme Options"
+msgstr "Pengaturan Tema"
+
+#: inc/admin/includes/class-options-framework-admin.php:203
+msgid "Save Options"
+msgstr "Simpan Pilihan"
+
+#: inc/admin/includes/class-options-framework-admin.php:204
+msgid "Restore Defaults"
+msgstr "Kembalikan Default"
+
+#: inc/admin/includes/class-options-framework-admin.php:204
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr "Klik OK untuk me-reset. Pengaturan tema akan hilang!"
+
+#: inc/admin/includes/class-options-framework-admin.php:235
+msgid "Default options restored."
+msgstr "Pilihan default dipulihkan."
+
+#: inc/admin/includes/class-options-framework-admin.php:289
+msgid "Options saved."
+msgstr "Pengaturan disimpan."
+
+#: inc/admin/includes/class-options-media-uploader.php:62
+msgid "No file chosen"
+msgstr "Tak ada file yang dipilih"
+
+#: inc/admin/includes/class-options-media-uploader.php:65
+#: inc/admin/includes/class-options-media-uploader.php:118
+msgid "Upload"
+msgstr "Unggah"
+
+#: inc/admin/includes/class-options-media-uploader.php:67
+#: inc/admin/includes/class-options-media-uploader.php:119
+msgid "Remove"
+msgstr "Hapus"
+
+#: inc/admin/includes/class-options-media-uploader.php:70
+msgid "Upgrade your version of WordPress for full media support."
+msgstr "Meng-upgrade versi WordPress untuk dukungan media penuh."
+
+#: inc/admin/includes/class-options-media-uploader.php:94
+msgid "View File"
+msgstr "Tampilkan File"
+
+#: inc/admin/includes/class-options-sanitization.php:316
+msgid "No Repeat"
+msgstr "No Repeat"
+
+#: inc/admin/includes/class-options-sanitization.php:317
+msgid "Repeat Horizontally"
+msgstr "Repeat Horizontally"
+
+#: inc/admin/includes/class-options-sanitization.php:318
+msgid "Repeat Vertically"
+msgstr "Repeat Horizontally"
+
+#: inc/admin/includes/class-options-sanitization.php:319
+msgid "Repeat All"
+msgstr "Repeat All"
+
+#: inc/admin/includes/class-options-sanitization.php:331
+msgid "Top Left"
+msgstr "Kiri Atas"
+
+#: inc/admin/includes/class-options-sanitization.php:332
+msgid "Top Center"
+msgstr "Tengah Atas"
+
+#: inc/admin/includes/class-options-sanitization.php:333
+msgid "Top Right"
+msgstr "Kanan Atas"
+
+#: inc/admin/includes/class-options-sanitization.php:334
+msgid "Middle Left"
+msgstr "Kiri Tengah"
+
+#: inc/admin/includes/class-options-sanitization.php:335
+msgid "Middle Center"
+msgstr "Tengah Tengah"
+
+#: inc/admin/includes/class-options-sanitization.php:336
+msgid "Middle Right"
+msgstr "Kanan Tengah"
+
+#: inc/admin/includes/class-options-sanitization.php:337
+msgid "Bottom Left"
+msgstr "Kiri Bawah"
+
+#: inc/admin/includes/class-options-sanitization.php:338
+msgid "Bottom Center"
+msgstr "Tengah Bawah"
+
+#: inc/admin/includes/class-options-sanitization.php:339
+msgid "Bottom Right"
+msgstr "Kanan Bawah"
+
+#: inc/admin/includes/class-options-sanitization.php:351
+msgid "Scroll Normally"
+msgstr "Gulir biasa"
+
+#: inc/admin/includes/class-options-sanitization.php:352
+msgid "Fixed in Place"
+msgstr "Tetap di tempat"
+
+#: inc/admin/includes/class-options-sanitization.php:424
+msgid "Normal"
+msgstr "Normal"
+
+#: inc/admin/includes/class-options-sanitization.php:425
+msgid "Italic"
+msgstr "Italic"
+
+#: inc/admin/includes/class-options-sanitization.php:426
+msgid "Bold"
+msgstr "Bold"
+
+#: inc/admin/includes/class-options-sanitization.php:427
+msgid "Bold Italic"
+msgstr "Bold Italic"
+
+#: inc/extras.php:61
+#, php-format
+msgid "Page %s"
+msgstr "Halaman %s"
+
+#: inc/extras.php:121
+msgid "Search..."
+msgstr "Cari..."
+
+#: inc/extras.php:142
+msgid ""
+"<p>This post is password protected. To view it please enter your password "
+"below:</p>"
+msgstr ""
+"<p>Posting ini dilindungi sandi. Untuk melihat Mohon masukkan sandi Anda di "
+"bawah ini:</p>"
+
+#: inc/extras.php:143
+msgid "Password:"
+msgstr "Kata sandi:"
+
+#: inc/extras.php:146
+msgid "Submit"
+msgstr "Kirim"
+
+#: inc/extras.php:190
+msgid "Follow us on "
+msgstr "Ikuti kami di"
+
+#: inc/extras.php:301
+#, php-format
+msgid "Theme by %1$s Powered by %2$s"
+msgstr "Tema oleh %1$s diberdayakan oleh %2$s"
+
+#: inc/extras.php:405
+msgid "Support and Documentation"
+msgstr "Dukungan dan Dokumentasi"
+
+#: inc/extras.php:411
+msgid "Sparkling Documentation"
+msgstr "Dokumentasi Sparkling"
+
+#: inc/extras.php:412
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr ""
+"Cara terbaik untuk menghubungi kami dengan <b>pertanyaan dukungan</b> dan "
+"<b>laporan bug</b> melalui"
+
+#: inc/extras.php:412
+msgid "Colorlib support forum"
+msgstr "Colorlib support forum"
+
+#: inc/extras.php:413
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr "Jika Anda menyukai tema ini, saya akan menghargai hal-hal berikut:"
+
+#: inc/extras.php:415
+msgid "Rate this Theme"
+msgstr "Merating Tema ini"
+
+#: inc/extras.php:416
+msgid "Like on Facebook"
+msgstr "Sukai kami di Facebook"
+
+#: inc/extras.php:417
+msgid "Follow on Twitter"
+msgstr "Ikuti Kami di Twitter"
+
+#: inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "Navigasi tulisan"
+
+#: inc/template-tags.php:27
+msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
+msgstr "<i class=\"fa fa-chevron-left\"></i>Entri Lama "
+
+#: inc/template-tags.php:31
+msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Entri Baru <i class=\"fa fa-chevron-right\"></i>"
+
+#: inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "Navigasi tulisan"
+
+#: inc/template-tags.php:59
+msgctxt "Previous post link"
+msgid "<i class=\"fa fa-chevron-left\"></i> %title"
+msgstr "<i class=\"fa fa-chevron-left\"></i> %title"
+
+#: inc/template-tags.php:60
+msgctxt "Next post link"
+msgid "%title <i class=\"fa fa-chevron-right\"></i>"
+msgstr "%title <i class=\"fa fa-chevron-right\"></i>"
+
+#: inc/widgets/widget-categories.php:11 inc/widgets/widget-categories.php:12
+msgid "Sparkling Categories"
+msgstr "Sparkling Kategori"
+
+#: inc/widgets/widget-categories.php:17 inc/widgets/widget-categories.php:76
+msgid "Categories"
+msgstr "Kategori"
+
+#: inc/widgets/widget-categories.php:83 inc/widgets/widget-social.php:49
+msgid "Title "
+msgstr "Judul"
+
+#: inc/widgets/widget-categories.php:91
+msgid "Limit Categories "
+msgstr "Batasi Kategori"
+
+#: inc/widgets/widget-categories.php:104
+msgid "Enable Posts Count"
+msgstr "Mengaktifkan hitungan posting"
+
+#: inc/widgets/widget-popular-posts.php:11
+#: inc/widgets/widget-popular-posts.php:12
+msgid "Sparkling Popular Posts Widget"
+msgstr "Widget Sparkling Tulisan Populer"
+
+#: inc/widgets/widget-popular-posts.php:17
+#: inc/widgets/widget-popular-posts.php:94
+msgid "Popular Posts"
+msgstr "Tulisan Populer"
+
+#: inc/widgets/widget-popular-posts.php:99
+msgid "Title"
+msgstr "Judul"
+
+#: inc/widgets/widget-popular-posts.php:107
+msgid "Limit Posts Number"
+msgstr "Batasi Jumlah Tulisan"
+
+#: inc/widgets/widget-social.php:11 inc/widgets/widget-social.php:12
+msgid "Sparkling Social Widget"
+msgstr "Sparkling Social Widget"
+
+#: inc/widgets/widget-social.php:17 inc/widgets/widget-social.php:46
+msgid "Follow us"
+msgstr "Ikuti kami"
+
+#: options.php:23
+msgid "Right Sidebar"
+msgstr "Sidebar Kanan"
+
+#: options.php:23
+msgid "Left Sidebar"
+msgstr "Sidebar Kiri"
+
+#: options.php:27
+msgid "One"
+msgstr "Satu"
+
+#: options.php:28
+msgid "Two"
+msgstr "Dua"
+
+#: options.php:29
+msgid "Three"
+msgstr "Tiga"
+
+#: options.php:30
+msgid "Four"
+msgstr "Empat"
+
+#: options.php:31
+msgid "Five"
+msgstr "Lima"
+
+#: options.php:36
+msgid "French Toast"
+msgstr "French Toast"
+
+#: options.php:37
+msgid "Pancake"
+msgstr "Pancake"
+
+#: options.php:38
+msgid "Omelette"
+msgstr "Omelette"
+
+#: options.php:39
+msgid "Crepe"
+msgstr "Crepe"
+
+#: options.php:40
+msgid "Waffle"
+msgstr "Waffle"
+
+#: options.php:110
+msgid "Main"
+msgstr "Utama"
+
+#: options.php:115
+msgid "Do You want to display image slider on the Home Page?"
+msgstr "Apakah Anda ingin menampilkan gambar slider pada Home Page?"
+
+#: options.php:116
+msgid "Check if you want to enable slider"
+msgstr "Centang jika Anda ingin mengaktifkan slider"
+
+#: options.php:123
+msgid "Slider Category"
+msgstr "Slider Kategori"
+
+#: options.php:124
+msgid "Select a category for the featured post slider"
+msgstr "Pilih sebuah kategori untuk tampilan slider pos"
+
+#: options.php:132
+msgid "Number of slide items"
+msgstr "Jumlah item slide"
+
+#: options.php:133
+msgid "Enter the number of slide items"
+msgstr "Masukkan jumlah slide item"
+
+#: options.php:141
+msgid "Website Layout Options"
+msgstr "Pilihan Layout Website"
+
+#: options.php:142
+msgid "Choose between Left and Right sidebar options to be used as default"
+msgstr ""
+"Pilih antara pilihan sidebar kiri dan kanan untuk digunakan sebagai default"
+
+#: options.php:151
+msgid "Element color"
+msgstr "Warna Elemen"
+
+#: options.php:152 options.php:160 options.php:205 options.php:213
+#: options.php:221 options.php:229 options.php:259 options.php:267
+#: options.php:280 options.php:382 options.php:390
+msgid "Default used if no color is selected"
+msgstr "Pengaturan standar digunakan jika tidak ada warna yang dipilih"
+
+#: options.php:159
+msgid "Element color on hover"
+msgstr "Warna Elemen ketika disorot"
+
+#: options.php:167
+msgid "Custom Favicon"
+msgstr "Kustom Favicon"
+
+#: options.php:168
+msgid ""
+"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
+msgstr ""
+"Meng-upload gambar PNG GIF x 32px 32px yang akan mewakili favicon website "
+"Anda"
+
+#: options.php:175
+msgid "Action Button"
+msgstr "Action Button"
+
+#: options.php:180
+msgid "Call For Action Text"
+msgstr "Teks Call For Action"
+
+#: options.php:181
+msgid "Enter the text for call for action section"
+msgstr "Masukkan teks untuk bagian call for action"
+
+#: options.php:188
+msgid "Call For Action Button Title"
+msgstr "Judul Tombol Call For Action"
+
+#: options.php:189
+msgid "Enter the title for Call For Action button"
+msgstr "Masukkan judul untuk tombol Call For Action"
+
+#: options.php:196
+msgid "CFA button link"
+msgstr "CFA tombol link"
+
+#: options.php:197
+msgid "Enter the link for Call For Action button"
+msgstr "Masukkan link untuk tombol Call For Action"
+
+#: options.php:204
+msgid "Call For Action Text Color"
+msgstr "Warna Teks Call For Action"
+
+#: options.php:212
+msgid "Call For Action Background Color"
+msgstr "Warna Background Call For Action"
+
+#: options.php:220
+msgid "Call For Action Button Border Color"
+msgstr "Warna Border Tombol Call For Action"
+
+#: options.php:228
+msgid "Call For Action Button Text Color"
+msgstr "Warna Teks Tombol Call For Action"
+
+#: options.php:236
+msgid "Typography"
+msgstr "Tipografi"
+
+#: options.php:241
+msgid "Main Body Text"
+msgstr "Teks tubuh utama"
+
+#: options.php:242
+msgid "Used in P tags"
+msgstr "Digunakan dalam tag P"
+
+#: options.php:250
+msgid "Heading Color"
+msgstr "Warna Heading"
+
+#: options.php:251
+msgid "Color for all headings (h1-h6)"
+msgstr "Warna untuk semua Heading (h1-h6)"
+
+#: options.php:258
+msgid "Link Color"
+msgstr "Warna Link"
+
+#: options.php:266
+msgid "Link:hover Color"
+msgstr "Warna Link:hover"
+
+#: options.php:274
+msgid "Header"
+msgstr "Header"
+
+#: options.php:279
+msgid "Top nav background color"
+msgstr "Warna Top nav background"
+
+#: options.php:287
+msgid "Top nav item color"
+msgstr "Warna Top nav item"
+
+#: options.php:288
+msgid "Link color"
+msgstr "Warna Link"
+
+#: options.php:295
+msgid "Top nav item hover color"
+msgstr "Warna Top nav item hover"
+
+#: options.php:296
+msgid "Link:hover color"
+msgstr "Warna Link:hover"
+
+#: options.php:303
+msgid "Top nav dropdown background color"
+msgstr "Warna Top nav dropdown background"
+
+#: options.php:304 options.php:328
+msgid "Background of dropdown item hover color"
+msgstr "Warna Background dari dropdown item hover"
+
+#: options.php:311
+msgid "Top nav dropdown item color"
+msgstr "Warna Top nav dropdown item"
+
+#: options.php:312
+msgid "Dropdown item color"
+msgstr "Warna Dropdown item"
+
+#: options.php:319
+msgid "Top nav dropdown item hover color"
+msgstr "Warna Top nav dropdown item hover"
+
+#: options.php:320
+msgid "Dropdown item hover color"
+msgstr "Warna Dropdown item hover"
+
+#: options.php:327
+msgid "Top nav dropdown item background hover color"
+msgstr "Warna Top nav dropdown item background hover"
+
+#: options.php:335
+msgid "Footer"
+msgstr "Footer"
+
+#: options.php:340
+msgid "Footer widget area background color"
+msgstr "Warna Background Footer widget area "
+
+#: options.php:347
+msgid "Footer background color"
+msgstr "Warna background footer"
+
+#: options.php:354
+msgid "Footer text color"
+msgstr "Warna teks footer"
+
+#: options.php:361
+msgid "Footer link color"
+msgstr "Warna link footer"
+
+#: options.php:368
+msgid "Footer information"
+msgstr "Informasi footer"
+
+#: options.php:369
+msgid "Copyright text in footer"
+msgstr "Teks hak cipta di footer"
+
+#: options.php:376
+msgid "Social"
+msgstr "Sosial"
+
+#: options.php:381
+msgid "Social icon color"
+msgstr "Warna ikon sosial"
+
+#: options.php:389
+msgid "Footer social icon color"
+msgstr "Warna footer  ikon sosial"
+
+#: options.php:397
+msgid "Add full URL for your social network profiles"
+msgstr "Tambahkan URL lengkap untuk profil jaringan sosial"
+
+#: options.php:398
+msgid "Facebook"
+msgstr "Facebook"
+
+#: options.php:407
+msgid "Twitter"
+msgstr "Twitter"
+
+#: options.php:415
+msgid "Google+"
+msgstr "Google+"
+
+#: options.php:423
+msgid "Youtube"
+msgstr "YouTube"
+
+#: options.php:431
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: options.php:439
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: options.php:447
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: options.php:455
+msgid "RSS Feed"
+msgstr "RSS feed"
+
+#: options.php:463
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: options.php:471
+msgid "Flickr"
+msgstr "Flickr"
+
+#: options.php:479
+msgid "Instagram"
+msgstr "Instagram"
+
+#: options.php:487
+msgid "Dribbble"
+msgstr "Dribbble"
+
+#: options.php:495
+msgid "Skype"
+msgstr "Skype"
+
+#: options.php:503
+msgid "Foursquare"
+msgstr "Foursquare"
+
+#: options.php:511
+msgid "SoundCloud"
+msgstr "SoundCloud"
+
+#: options.php:519
+msgid "GitHub"
+msgstr "GitHub"
+
+#: options.php:526
+msgid "Other"
+msgstr "Lainnya"
+
+#: options.php:531
+msgid "Custom CSS"
+msgstr "Kustom CSS"
+
+#: options.php:532
+msgid "Additional CSS"
+msgstr "CSS Tambahan"
+
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Hasil Pencarian untuk: %s"
+
+#: searchform.php:10
+msgctxt "label"
+msgid "Search for:"
+msgstr "Mencari:"
+
+#: searchform.php:11
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Cari &hellip;"
+
+#: searchform.php:13
+msgctxt "submit button"
+msgid "Search"
+msgstr "Cari"
+
+#: sidebar.php:26
+msgid "Meta"
+msgstr "Meta"
