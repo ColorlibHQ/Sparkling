@@ -8,13 +8,13 @@ class sparkling_categories extends WP_Widget
 {
 	 function sparkling_categories(){
 
-        $widget_ops = array('classname' => 'sparkling-cats','description' => __( "Sparkling Categories" ,'sparkling') );
-		    $this->WP_Widget('sparkling-cats', __('Sparkling Categories','sparkling'), $widget_ops);
+        $widget_ops = array('classname' => 'sparkling-cats','description' => esc_html__( "Sparkling Categories" ,'sparkling') );
+		    $this->WP_Widget('sparkling-cats', esc_html__('Sparkling Categories','sparkling'), $widget_ops);
     }
 
     function widget($args , $instance) {
     	extract($args);
-        $title = ($instance['title']) ? $instance['title'] : __('Categories' , 'sparkling');
+        $title = ($instance['title']) ? $instance['title'] : esc_html__('Categories' , 'sparkling');
         $enable_count = '';
         if(isset($instance['enable_count']))
         $enable_count = $instance['enable_count'] ? $instance['enable_count'] : 'checked';
@@ -73,7 +73,7 @@ class sparkling_categories extends WP_Widget
 
 
     function form($instance) {
-      if(!isset($instance['title'])) $instance['title'] = __('Categories' , 'sparkling');
+      if(!isset($instance['title'])) $instance['title'] = esc_html__('Categories' , 'sparkling');
       if(!isset($instance['limit'])) $instance['limit'] = 4;
       if(!isset($instance['enable_count'])) $instance['enable_count'] = '';
 

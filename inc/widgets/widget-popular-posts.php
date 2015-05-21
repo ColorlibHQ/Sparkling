@@ -8,13 +8,13 @@ class sparkling_popular_posts extends WP_Widget
 {
 	 function sparkling_popular_posts(){
 
-        $widget_ops = array('classname' => 'sparkling-popular-posts','description' => __( "Sparkling Popular Posts Widget", 'sparkling') );
-		    $this->WP_Widget('sparkling_popular_posts', __('Sparkling Popular Posts Widget','sparkling'), $widget_ops);
+        $widget_ops = array('classname' => 'sparkling-popular-posts','description' => esc_html__( "Sparkling Popular Posts Widget", 'sparkling') );
+		    $this->WP_Widget('sparkling_popular_posts', esc_html__('Sparkling Popular Posts Widget','sparkling'), $widget_ops);
     }
 
     function widget($args , $instance) {
     	extract($args);
-        $title = ($instance['title']) ? $instance['title'] : __('Popular Posts', 'sparkling');
+        $title = ($instance['title']) ? $instance['title'] : esc_html__('Popular Posts', 'sparkling');
         $limit = ($instance['limit']) ? $instance['limit'] : 5;
 
       echo $before_widget;
@@ -91,7 +91,7 @@ class sparkling_popular_posts extends WP_Widget
 
     function form($instance) {
 
-      if(!isset($instance['title'])) $instance['title'] = __('Popular Posts', 'sparkling');
+      if(!isset($instance['title'])) $instance['title'] = esc_html__('Popular Posts', 'sparkling');
       if(!isset($instance['limit'])) $instance['limit'] = 5;
 
     	?>

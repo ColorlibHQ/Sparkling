@@ -66,8 +66,8 @@ function sparkling_setup() {
 
   // This theme uses wp_nav_menu() in one location.
   register_nav_menus( array(
-    'primary'      => __( 'Primary Menu', 'sparkling' ),
-    'footer-links' => __( 'Footer Links', 'sparkling' ) // secondary nav in footer
+    'primary'      => esc_html__( 'Primary Menu', 'sparkling' ),
+    'footer-links' => esc_html__( 'Footer Links', 'sparkling' ) // secondary nav in footer
   ) );
 
   // Enable support for Post Formats.
@@ -105,7 +105,7 @@ add_action( 'after_setup_theme', 'sparkling_setup' );
  */
 function sparkling_widgets_init() {
   register_sidebar( array(
-    'name'          => __( 'Sidebar', 'sparkling' ),
+    'name'          => esc_html__( 'Sidebar', 'sparkling' ),
     'id'            => 'sidebar-1',
     'before_widget' => '<aside id="%1$s" class="widget %2$s">',
     'after_widget'  => '</aside>',
@@ -115,8 +115,8 @@ function sparkling_widgets_init() {
 
   register_sidebar(array(
     'id'            => 'home-widget-1',
-    'name'          => __( 'Homepage Widget 1', 'sparkling' ),
-    'description'   => __( 'Displays on the Home Page', 'sparkling' ),
+    'name'          => esc_html__( 'Homepage Widget 1', 'sparkling' ),
+    'description'   => esc_html__( 'Displays on the Home Page', 'sparkling' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',
     'before_title'  => '<h3 class="widgettitle">',
@@ -125,8 +125,8 @@ function sparkling_widgets_init() {
 
   register_sidebar(array(
     'id'            => 'home-widget-2',
-    'name'          => __( 'Homepage Widget 2', 'sparkling' ),
-    'description'   => __( 'Displays on the Home Page', 'sparkling' ),
+    'name'          => esc_html__( 'Homepage Widget 2', 'sparkling' ),
+    'description'   => esc_html__( 'Displays on the Home Page', 'sparkling' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',
     'before_title'  => '<h3 class="widgettitle">',
@@ -135,8 +135,8 @@ function sparkling_widgets_init() {
 
   register_sidebar(array(
     'id'            => 'home-widget-3',
-    'name'          =>  __( 'Homepage Widget 3', 'sparkling' ),
-    'description'   =>  __( 'Displays on the Home Page', 'sparkling' ),
+    'name'          =>  esc_html__( 'Homepage Widget 3', 'sparkling' ),
+    'description'   =>  esc_html__( 'Displays on the Home Page', 'sparkling' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',
     'before_title'  => '<h3 class="widgettitle">',
@@ -145,8 +145,8 @@ function sparkling_widgets_init() {
 
   register_sidebar(array(
     'id'            => 'footer-widget-1',
-    'name'          =>  __( 'Footer Widget 1', 'sparkling' ),
-    'description'   =>  __( 'Used for footer widget area', 'sparkling' ),
+    'name'          =>  esc_html__( 'Footer Widget 1', 'sparkling' ),
+    'description'   =>  esc_html__( 'Used for footer widget area', 'sparkling' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',
     'before_title'  => '<h3 class="widgettitle">',
@@ -155,8 +155,8 @@ function sparkling_widgets_init() {
 
   register_sidebar(array(
     'id'            => 'footer-widget-2',
-    'name'          =>  __( 'Footer Widget 2', 'sparkling' ),
-    'description'   =>  __( 'Used for footer widget area', 'sparkling' ),
+    'name'          =>  esc_html__( 'Footer Widget 2', 'sparkling' ),
+    'description'   =>  esc_html__( 'Used for footer widget area', 'sparkling' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',
     'before_title'  => '<h3 class="widgettitle">',
@@ -165,8 +165,8 @@ function sparkling_widgets_init() {
 
   register_sidebar(array(
     'id'            => 'footer-widget-3',
-    'name'          =>  __( 'Footer Widget 3', 'sparkling' ),
-    'description'   =>  __( 'Used for footer widget area', 'sparkling' ),
+    'name'          =>  esc_html__( 'Footer Widget 3', 'sparkling' ),
+    'description'   =>  esc_html__( 'Used for footer widget area', 'sparkling' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',
     'before_title'  => '<h3 class="widgettitle">',

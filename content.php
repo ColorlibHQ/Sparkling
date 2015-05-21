@@ -17,10 +17,10 @@
 				<?php if ( 'post' == get_post_type() ) : ?>
 				<div class="entry-meta">
 					<?php sparkling_posted_on(); ?><?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-				<span class="comments-link"><i class="fa fa-comment-o"></i><?php comments_popup_link( __( 'Leave a comment', 'sparkling' ), __( '1 Comment', 'sparkling' ), __( '% Comments', 'sparkling' ) ); ?></span>
+				<span class="comments-link"><i class="fa fa-comment-o"></i><?php comments_popup_link( esc_html__( 'Leave a comment', 'sparkling' ), esc_html__( '1 Comment', 'sparkling' ), esc_html__( '% Comments', 'sparkling' ) ); ?></span>
 				<?php endif; ?>
 
-				<?php edit_post_link( __( 'Edit', 'sparkling' ), '<i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span>' ); ?>
+				<?php edit_post_link( esc_html__( 'Edit', 'sparkling' ), '<i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span>' ); ?>
 
 				</div><!-- .entry-meta -->
 				<?php endif; ?>
@@ -40,7 +40,7 @@
 
 				<?php
 					wp_link_pages( array(
-						'before'            => '<div class="page-links">'.__( 'Pages:', 'sparkling' ),
+						'before'            => '<div class="page-links">'.esc_html__( 'Pages:', 'sparkling' ),
 						'after'             => '</div>',
 						'link_before'       => '<span>',
 						'link_after'        => '</span>',
