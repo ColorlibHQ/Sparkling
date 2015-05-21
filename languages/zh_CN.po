@@ -1,0 +1,842 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sparkling Theme\n"
+"POT-Creation-Date: 2015-04-04 15:03+0200\n"
+"PO-Revision-Date: 2015-05-21 12:55+0800\n"
+"Last-Translator: Amos Lee <iwillhappy1314@gmail.com>\n"
+"Language-Team: Amos Lee <iwillhappy1314@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
+"Language: zh_CN\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "我勒个去！居然没有找到~"
+
+#: ../404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr "这里好像什么都没有，试试搜索功能吧"
+
+#: ../404.php:25
+msgid "Recent Posts"
+msgstr "最新文章"
+
+#: ../404.php:31
+msgid "Most Used Categories"
+msgstr "常用分类"
+
+#: ../404.php:52
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "尝试在月份存档中查找：%1$s"
+
+#: ../404.php:53 ../archive.php:66 ../sidebar.php:19
+msgid "Archives"
+msgstr "存档"
+
+#: ../404.php:58
+msgid "Tags"
+msgstr "标签"
+
+#: ../archive.php:27
+#, php-format
+msgid "Author: %s"
+msgstr "作者存档：%s"
+
+#: ../archive.php:30
+#, php-format
+msgid "Day: %s"
+msgstr "日期存档：%s"
+
+#: ../archive.php:33
+#, php-format
+msgid "Month: %s"
+msgstr "月份存档：%s"
+
+#: ../archive.php:36
+#, php-format
+msgid "Year: %s"
+msgstr "年份存档：%s"
+
+#: ../archive.php:39
+msgid "Asides"
+msgstr "边栏"
+
+#: ../archive.php:42
+msgid "Galleries"
+msgstr "相册"
+
+#: ../archive.php:45
+msgid "Images"
+msgstr "图像"
+
+#: ../archive.php:48
+msgid "Videos"
+msgstr "视频"
+
+#: ../archive.php:51
+msgid "Quotes"
+msgstr "引用"
+
+#: ../archive.php:54
+msgid "Links"
+msgstr "链接"
+
+#: ../archive.php:57
+msgid "Statuses"
+msgstr "状态"
+
+#: ../archive.php:60
+msgid "Audios"
+msgstr "视频"
+
+#: ../archive.php:63
+msgid "Chats"
+msgstr "聊天"
+
+#: ../comments.php:30
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "&ldquo;%2$s&rdquo;上有%1$s条评论"
+msgstr[1] "&ldquo;%2$s&rdquo;上有%1$s条评论"
+
+#: ../comments.php:37 ../comments.php:55
+msgid "Comment navigation"
+msgstr "评论导航"
+
+#: ../comments.php:38 ../comments.php:56
+msgid "&larr; Older Comments"
+msgstr "&larr; 之前的评论"
+
+#: ../comments.php:39 ../comments.php:57
+msgid "Newer Comments &rarr;"
+msgstr "更多评论 &rarr;"
+
+#: ../comments.php:67
+msgid "Comments are closed."
+msgstr "评论已关闭"
+
+#: ../content-none.php:13
+msgid "Nothing Found"
+msgstr "没有内容"
+
+#: ../content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "准备好发表第一篇文章了吗？<a href=\"%1$s\">点击这里开始</a>。"
+
+#: ../content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "非常抱歉，没有符合您需要的搜索内容。请换其它关键词试下吧。"
+
+#: ../content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "看来我们不能找到你要找的东西。请搜索一下试试吧。"
+
+#: ../content-page.php:21 ../content-single.php:35 ../content.php:43
+#: ../image.php:79
+msgid "Pages:"
+msgstr "页面："
+
+#: ../content-page.php:32 ../content-single.php:26 ../content.php:23
+msgid "Edit"
+msgstr "编辑"
+
+#: ../content-single.php:19
+msgid ", "
+msgstr ", "
+
+#: ../content-single.php:23
+#, php-format
+msgid " %1$s"
+msgstr " %1$s"
+
+#: ../content.php:20
+msgid "Leave a comment"
+msgstr "撰写评论"
+
+#: ../content.php:20
+msgid "1 Comment"
+msgstr "1条评论"
+
+#: ../content.php:20
+msgid "% Comments"
+msgstr "% 条评论"
+
+#: ../content.php:32 ../content.php:39
+msgid "Read More"
+msgstr "阅读更多"
+
+#: ../functions.php:69
+msgid "Primary Menu"
+msgstr "主菜单"
+
+#: ../functions.php:70 ../inc/extras.php:226
+msgid "Footer Links"
+msgstr "底部链接"
+
+#: ../functions.php:108
+msgid "Sidebar"
+msgstr "侧边栏"
+
+#: ../functions.php:118
+msgid "Homepage Widget 1"
+msgstr "首页侧边栏1"
+
+#: ../functions.php:119 ../functions.php:129 ../functions.php:139
+msgid "Displays on the Home Page"
+msgstr "在首页显示"
+
+#: ../functions.php:128
+msgid "Homepage Widget 2"
+msgstr "首页侧边栏2"
+
+#: ../functions.php:138
+msgid "Homepage Widget 3"
+msgstr "首页侧边栏3"
+
+#: ../functions.php:148
+msgid "Footer Widget 1"
+msgstr "底部侧边栏1"
+
+#: ../functions.php:149 ../functions.php:159 ../functions.php:169
+msgid "Used for footer widget area"
+msgstr "在底部小工具区域使用"
+
+#: ../functions.php:158
+msgid "Footer Widget 2"
+msgstr "底部侧边栏2"
+
+#: ../functions.php:168
+msgid "Footer Widget 3"
+msgstr "底部侧边栏3"
+
+#: ../image.php:22
+msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
+msgstr "<i class=\"fa fa-chevron-left\"></i> 上一个"
+
+#: ../image.php:23
+msgid "Next <i class=\"fa fa-chevron-right\"></i>"
+msgstr "下一个 <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:91
+#: ../inc/admin/includes/class-options-framework-admin.php:92
+msgid "Theme Options"
+msgstr "主题选项"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:204
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr "点击OK重置，主题的所有设置将丢失！"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:235
+msgid "Default options restored."
+msgstr "默认选项已恢复。"
+
+#: ../inc/admin/includes/class-options-framework-admin.php:289
+msgid "Options saved."
+msgstr "选项已保存"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:62
+msgid "No file chosen"
+msgstr "没有选择文件"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:65
+#: ../inc/admin/includes/class-options-media-uploader.php:118
+msgid "Upload"
+msgstr "上传"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:67
+#: ../inc/admin/includes/class-options-media-uploader.php:119
+msgid "Remove"
+msgstr "移除"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:70
+msgid "Upgrade your version of WordPress for full media support."
+msgstr "为了更全面的媒体支持，请更新你的WordPress版本。"
+
+#: ../inc/admin/includes/class-options-media-uploader.php:94
+msgid "View File"
+msgstr "查看文件"
+
+#: ../inc/admin/includes/class-options-sanitization.php:316
+msgid "No Repeat"
+msgstr "不重复"
+
+#: ../inc/admin/includes/class-options-sanitization.php:317
+msgid "Repeat Horizontally"
+msgstr "横向重复"
+
+#: ../inc/admin/includes/class-options-sanitization.php:318
+msgid "Repeat Vertically"
+msgstr "纵向重复"
+
+#: ../inc/admin/includes/class-options-sanitization.php:319
+msgid "Repeat All"
+msgstr "全部重复"
+
+#: ../inc/admin/includes/class-options-sanitization.php:331
+msgid "Top Left"
+msgstr "左上"
+
+#: ../inc/admin/includes/class-options-sanitization.php:332
+msgid "Top Center"
+msgstr "中上"
+
+#: ../inc/admin/includes/class-options-sanitization.php:333
+msgid "Top Right"
+msgstr "右上"
+
+#: ../inc/admin/includes/class-options-sanitization.php:334
+msgid "Middle Left"
+msgstr "左中"
+
+#: ../inc/admin/includes/class-options-sanitization.php:335
+msgid "Middle Center"
+msgstr "中间"
+
+#: ../inc/admin/includes/class-options-sanitization.php:336
+msgid "Middle Right"
+msgstr "右中"
+
+#: ../inc/admin/includes/class-options-sanitization.php:337
+msgid "Bottom Left"
+msgstr "左下"
+
+#: ../inc/admin/includes/class-options-sanitization.php:338
+msgid "Bottom Center"
+msgstr "中下"
+
+#: ../inc/admin/includes/class-options-sanitization.php:339
+msgid "Bottom Right"
+msgstr "右下"
+
+#: ../inc/admin/includes/class-options-sanitization.php:351
+msgid "Scroll Normally"
+msgstr "普通滚动"
+
+#: ../inc/admin/includes/class-options-sanitization.php:352
+msgid "Fixed in Place"
+msgstr "固定位置"
+
+#: ../inc/admin/includes/class-options-sanitization.php:424
+msgid "Normal"
+msgstr "普通"
+
+#: ../inc/admin/includes/class-options-sanitization.php:425
+msgid "Italic"
+msgstr "斜体"
+
+#: ../inc/admin/includes/class-options-sanitization.php:426
+msgid "Bold"
+msgstr "加粗"
+
+#: ../inc/admin/includes/class-options-sanitization.php:427
+msgid "Bold Italic"
+msgstr "粗斜体"
+
+#: ../inc/extras.php:61
+#, php-format
+msgid "Page %s"
+msgstr "页面 %s"
+
+#: ../inc/extras.php:121
+msgid "Search..."
+msgstr "搜索..."
+
+#: ../inc/extras.php:142
+msgid ""
+"<p>This post is password protected. To view it please enter your password "
+"below:</p>"
+msgstr "<p>次文章已加密，请在下面输入密码查看：</p>"
+
+#: ../inc/extras.php:143
+msgid "Password:"
+msgstr "密码"
+
+#: ../inc/extras.php:146
+msgid "Submit"
+msgstr "提交"
+
+#: ../inc/extras.php:190
+msgid "Follow us on "
+msgstr "关注我们："
+
+#: ../inc/extras.php:301
+#, php-format
+msgid "Theme by %1$s Powered by %2$s"
+msgstr "主题 %1$s 由 %2$s 驱动"
+
+#: ../inc/extras.php:405
+msgid "Support and Documentation"
+msgstr "支持和文档"
+
+#: ../inc/extras.php:411
+msgid "Sparkling Documentation"
+msgstr "Sparkling 文档"
+
+#: ../inc/extras.php:412
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr "建议通过 <b>问题反馈</b> and <b>bug 报告</b> 联系我们。"
+
+#: ../inc/extras.php:412
+msgid "Colorlib support forum"
+msgstr "Colorlib 支持论坛"
+
+#: ../inc/extras.php:413
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr "如果你喜欢这个主题，做下面任何事情我都非常感谢："
+
+#: ../inc/extras.php:415
+msgid "Rate this Theme"
+msgstr "评价这个主题"
+
+#: ../inc/extras.php:416
+msgid "Like on Facebook"
+msgstr "Like on Facebook"
+
+#: ../inc/extras.php:417
+msgid "Follow on Twitter"
+msgstr "Follow on Twitter"
+
+#: ../inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "文章导航"
+
+#: ../inc/template-tags.php:27
+msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
+msgstr "<i class=\"fa fa-chevron-left\"></i> 更多文章"
+
+#: ../inc/template-tags.php:31
+msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
+msgstr "更新文章 <i class=\"fa fa-chevron-right\"></i>"
+
+#: ../inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "文章导航"
+
+#: ../inc/widgets/widget-categories.php:11
+#: ../inc/widgets/widget-categories.php:12
+msgid "Sparkling Categories"
+msgstr "Sparkling 分类"
+
+#: ../inc/widgets/widget-categories.php:17
+#: ../inc/widgets/widget-categories.php:76
+msgid "Categories"
+msgstr "分类"
+
+#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
+msgid "Title "
+msgstr "标题"
+
+#: ../inc/widgets/widget-categories.php:91
+msgid "Limit Categories "
+msgstr "限制分类"
+
+#: ../inc/widgets/widget-categories.php:104
+msgid "Enable Posts Count"
+msgstr "启用文章数量"
+
+#: ../inc/widgets/widget-popular-posts.php:11
+#: ../inc/widgets/widget-popular-posts.php:12
+msgid "Sparkling Popular Posts Widget"
+msgstr "Sparkling 热门文章小工具"
+
+#: ../inc/widgets/widget-popular-posts.php:17
+#: ../inc/widgets/widget-popular-posts.php:94
+msgid "Popular Posts"
+msgstr "热门文章"
+
+#: ../inc/widgets/widget-popular-posts.php:99
+msgid "Title"
+msgstr "标题"
+
+#: ../inc/widgets/widget-popular-posts.php:107
+msgid "Limit Posts Number"
+msgstr "显示文章数量"
+
+#: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
+msgid "Sparkling Social Widget"
+msgstr "Sparkling 社会化小工具"
+
+#: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
+msgid "Follow us"
+msgstr "关注我们"
+
+#: ../options.php:23
+msgid "Right Sidebar"
+msgstr "右侧边栏"
+
+#: ../options.php:23
+msgid "Left Sidebar"
+msgstr "左侧边栏"
+
+#: ../options.php:27
+msgid "One"
+msgstr "一个"
+
+#: ../options.php:28
+msgid "Two"
+msgstr "两个"
+
+#: ../options.php:29
+msgid "Three"
+msgstr "三个"
+
+#: ../options.php:30
+msgid "Four"
+msgstr "四个"
+
+#: ../options.php:31
+msgid "Five"
+msgstr "五个"
+
+#: ../options.php:36
+msgid "French Toast"
+msgstr "French Toast"
+
+#: ../options.php:37
+msgid "Pancake"
+msgstr "煎饼"
+
+#: ../options.php:38
+msgid "Omelette"
+msgstr "煎蛋"
+
+#: ../options.php:39
+msgid "Crepe"
+msgstr "可丽饼"
+
+#: ../options.php:40
+msgid "Waffle"
+msgstr "奶蛋烘饼"
+
+#: ../options.php:110
+msgid "Main"
+msgstr "主要"
+
+#: ../options.php:115
+msgid "Do You want to display image slider on the Home Page?"
+msgstr "你需要在首页显示一个图片幻灯吗？"
+
+#: ../options.php:116
+msgid "Check if you want to enable slider"
+msgstr "请选择是否启用幻灯"
+
+#: ../options.php:123
+msgid "Slider Category"
+msgstr "幻灯分类"
+
+#: ../options.php:124
+msgid "Select a category for the featured post slider"
+msgstr "分类为幻灯文章选择一个分类"
+
+#: ../options.php:132
+msgid "Number of slide items"
+msgstr "幻灯片数量"
+
+#: ../options.php:133
+msgid "Enter the number of slide items"
+msgstr "请输入幻灯数量"
+
+#: ../options.php:141
+msgid "Website Layout Options"
+msgstr "网站布局选项"
+
+#: ../options.php:142
+msgid "Choose between Left and Right sidebar options to be used as default"
+msgstr "请选择默认侧边栏位置。"
+
+#: ../options.php:151
+msgid "Element color"
+msgstr "元素颜色"
+
+#: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
+#: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
+#: ../options.php:280 ../options.php:382 ../options.php:390
+msgid "Default used if no color is selected"
+msgstr "没有选择时的默认颜色"
+
+#: ../options.php:159
+msgid "Element color on hover"
+msgstr "鼠标经过元素颜色"
+
+#: ../options.php:167
+msgid "Custom Favicon"
+msgstr "自定义网站图标"
+
+#: ../options.php:168
+msgid ""
+"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
+msgstr "请上传32px x 32px PNG/GIF格式的favicon图片"
+
+#: ../options.php:175
+msgid "Action Button"
+msgstr "激活按钮"
+
+#: ../options.php:180
+msgid "Call For Action Text"
+msgstr "行动号召文本"
+
+#: ../options.php:181
+msgid "Enter the text for call for action section"
+msgstr "请输入行动号召区域文本"
+
+#: ../options.php:188
+msgid "Call For Action Button Title"
+msgstr "行动号召按钮标题"
+
+#: ../options.php:189
+msgid "Enter the title for Call For Action button"
+msgstr "请输入行动号召按钮标题"
+
+#: ../options.php:196
+msgid "CFA button link"
+msgstr "动作按钮的链接"
+
+#: ../options.php:197
+msgid "Enter the link for Call For Action button"
+msgstr "请输入行动号召按钮链接"
+
+#: ../options.php:204
+msgid "Call For Action Text Color"
+msgstr "行动号召文本颜色"
+
+#: ../options.php:212
+msgid "Call For Action Background Color"
+msgstr "行动号召背景颜色"
+
+#: ../options.php:220
+msgid "Call For Action Button Border Color"
+msgstr "行动号召按钮边框颜色"
+
+#: ../options.php:228
+msgid "Call For Action Button Text Color"
+msgstr "行动号召按钮文本颜色"
+
+#: ../options.php:236
+msgid "Typography"
+msgstr "排版"
+
+#: ../options.php:241
+msgid "Main Body Text"
+msgstr "主要字体"
+
+#: ../options.php:242
+msgid "Used in P tags"
+msgstr "使用P标签"
+
+#: ../options.php:250
+msgid "Heading Color"
+msgstr "顶部颜色"
+
+#: ../options.php:251
+msgid "Color for all headings (h1-h6)"
+msgstr "标题颜色 (h1-h6)"
+
+#: ../options.php:258
+msgid "Link Color"
+msgstr "链接颜色"
+
+#: ../options.php:266
+msgid "Link:hover Color"
+msgstr "鼠标经过颜色"
+
+#: ../options.php:274
+msgid "Header"
+msgstr "顶部"
+
+#: ../options.php:279
+msgid "Top nav background color"
+msgstr "顶部导航背景颜色"
+
+#: ../options.php:287
+msgid "Top nav item color"
+msgstr "顶部导航项目颜色"
+
+#: ../options.php:288
+msgid "Link color"
+msgstr "链接颜色"
+
+#: ../options.php:295
+msgid "Top nav item hover color"
+msgstr "顶部导航鼠标经过颜色"
+
+#: ../options.php:296
+msgid "Link:hover color"
+msgstr "鼠标经过颜色"
+
+#: ../options.php:303
+msgid "Top nav dropdown background color"
+msgstr "顶部导航下拉菜单背景颜色"
+
+#: ../options.php:304 ../options.php:328
+msgid "Background of dropdown item hover color"
+msgstr "下拉菜单项目鼠标经过背景颜色"
+
+#: ../options.php:311
+msgid "Top nav dropdown item color"
+msgstr "顶部导航下拉菜单项目颜色"
+
+#: ../options.php:312
+msgid "Dropdown item color"
+msgstr "顶部导航背景颜色"
+
+#: ../options.php:319
+msgid "Top nav dropdown item hover color"
+msgstr "下拉菜单项目鼠标经过颜色"
+
+#: ../options.php:320
+msgid "Dropdown item hover color"
+msgstr "下拉菜单鼠标经过颜色"
+
+#: ../options.php:327
+msgid "Top nav dropdown item background hover color"
+msgstr "顶部导航下拉菜单鼠标经过背景颜色"
+
+#: ../options.php:335
+msgid "Footer"
+msgstr "底部"
+
+#: ../options.php:340
+msgid "Footer widget area background color"
+msgstr "页脚小工具背景颜色"
+
+#: ../options.php:347
+msgid "Footer background color"
+msgstr "页脚背景色"
+
+#: ../options.php:354
+msgid "Footer text color"
+msgstr "底部文字颜色"
+
+#: ../options.php:361
+msgid "Footer link color"
+msgstr "底部链接颜色"
+
+#: ../options.php:368
+msgid "Footer information"
+msgstr "页脚信息"
+
+#: ../options.php:369
+msgid "Copyright text in footer"
+msgstr "页脚版权文本"
+
+#: ../options.php:376
+msgid "Social"
+msgstr "社交网络"
+
+#: ../options.php:381
+msgid "Social icon color"
+msgstr "社交图标颜色"
+
+#: ../options.php:389
+msgid "Footer social icon color"
+msgstr "页脚社交图标颜色"
+
+#: ../options.php:397
+msgid "Add full URL for your social network profiles"
+msgstr "添加社交网络资料的完整URL"
+
+#: ../options.php:398
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../options.php:407
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../options.php:415
+msgid "Google+"
+msgstr "Google+"
+
+#: ../options.php:423
+msgid "Youtube"
+msgstr "Youtube"
+
+#: ../options.php:431
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: ../options.php:439
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: ../options.php:447
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: ../options.php:455
+msgid "RSS Feed"
+msgstr "RSS Feed"
+
+#: ../options.php:463
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: ../options.php:471
+msgid "Flickr"
+msgstr "Flickr"
+
+#: ../options.php:479
+msgid "Instagram"
+msgstr "Instagram"
+
+#: ../options.php:487
+msgid "Dribbble"
+msgstr "Dribbble"
+
+#: ../options.php:495
+msgid "Skype"
+msgstr "Skype"
+
+#: ../options.php:503
+msgid "Foursquare"
+msgstr "Foursquare"
+
+#: ../options.php:511
+msgid "SoundCloud"
+msgstr "SoundCloud"
+
+#: ../options.php:519
+msgid "GitHub"
+msgstr "GitHub"
+
+#: ../options.php:526
+msgid "Other"
+msgstr "其他"
+
+#: ../options.php:531
+msgid "Custom CSS"
+msgstr "自定义CSS"
+
+#: ../options.php:532
+msgid "Additional CSS"
+msgstr "附加CSS"
+
+#: ../search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "搜索结果：%s"
+
+#: ../sidebar.php:26
+msgid "Meta"
+msgstr "元数据"
