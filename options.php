@@ -20,24 +20,24 @@ function optionsframework_option_name() {
 function optionsframework_options() {
 
 	// Layout options
-	$site_layout = array('pull-left' => esc_html__('Right Sidebar', 'sparkling'),'pull-right' => esc_html__('Left Sidebar', 'sparkling'));
+	$site_layout = array('pull-left' => __('Right Sidebar', 'sparkling'),'pull-right' => __('Left Sidebar', 'sparkling'));
 
 	// Test data
 	$test_array = array(
-		'one'   => esc_html__('One', 'options_framework_theme'),
-		'two'   => esc_html__('Two', 'options_framework_theme'),
-		'three' => esc_html__('Three', 'options_framework_theme'),
-		'four'  => esc_html__('Four', 'options_framework_theme'),
-		'five'  => esc_html__('Five', 'options_framework_theme')
+		'one'   => __('One', 'options_framework_theme'),
+		'two'   => __('Two', 'options_framework_theme'),
+		'three' => __('Three', 'options_framework_theme'),
+		'four'  => __('Four', 'options_framework_theme'),
+		'five'  => __('Five', 'options_framework_theme')
 	);
 
 	// Multicheck Array
 	$multicheck_array = array(
-		'one'   => esc_html__('French Toast', 'options_framework_theme'),
-		'two'   => esc_html__('Pancake', 'options_framework_theme'),
-		'three' => esc_html__('Omelette', 'options_framework_theme'),
-		'four'  => esc_html__('Crepe', 'options_framework_theme'),
-		'five'  => esc_html__('Waffle', 'options_framework_theme')
+		'one'   => __('French Toast', 'options_framework_theme'),
+		'two'   => __('Pancake', 'options_framework_theme'),
+		'three' => __('Omelette', 'options_framework_theme'),
+		'four'  => __('Crepe', 'options_framework_theme'),
+		'five'  => __('Waffle', 'options_framework_theme')
 	);
 
 	// Multicheck Defaults
@@ -73,7 +73,7 @@ function optionsframework_options() {
 		'color'  => true
 	);
 
-	// $radio = array('0' => esc_html__('No', 'sparkling'),'1' => esc_html__('Yes', 'sparkling'));
+	// $radio = array('0' => __('No', 'sparkling'),'1' => __('Yes', 'sparkling'));
 
 	// Pull all the categories into an array
 	$options_categories = array();
@@ -107,21 +107,21 @@ function optionsframework_options() {
 	$options = array();
 
 	$options[] = array(
-		'name' => esc_html__('Main', 'sparkling'),
+		'name' => __('Main', 'sparkling'),
 		'type' => 'heading'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Do You want to display image slider on the Home Page?','sparkling'),
-		'desc' => esc_html__('Check if you want to enable slider', 'sparkling'),
+		'name' => __('Do You want to display image slider on the Home Page?','sparkling'),
+		'desc' => __('Check if you want to enable slider', 'sparkling'),
 		'id'   => 'sparkling_slider_checkbox',
 		'std'  => 0,
 		'type' => 'checkbox'
 	);
 
 	$options[] = array(
-		'name'    => esc_html__('Slider Category', 'sparkling'),
-		'desc'    => esc_html__('Select a category for the featured post slider', 'sparkling'),
+		'name'    => __('Slider Category', 'sparkling'),
+		'desc'    => __('Select a category for the featured post slider', 'sparkling'),
 		'id'      => 'sparkling_slide_categories',
 		'type'    => 'select',
 		'class'   => 'hidden',
@@ -129,8 +129,8 @@ function optionsframework_options() {
 	);
 
 	$options[] = array(
-		'name'  => esc_html__('Number of slide items', 'sparkling'),
-		'desc'  => esc_html__('Enter the number of slide items', 'sparkling'),
+		'name'  => __('Number of slide items', 'sparkling'),
+		'desc'  => __('Enter the number of slide items', 'sparkling'),
 		'id'    => 'sparkling_slide_number',
 		'std'   => '3',
 		'class' => 'hidden',
@@ -138,8 +138,8 @@ function optionsframework_options() {
 	);
 
 	$options[] = array(
-		'name'    => esc_html__('Website Layout Options', 'sparkling'),
-		'desc'    => esc_html__('Choose between Left and Right sidebar options to be used as default', 'sparkling'),
+		'name'    => __('Website Layout Options', 'sparkling'),
+		'desc'    => __('Choose between Left and Right sidebar options to be used as default', 'sparkling'),
 		'id'      => 'site_layout',
 		'std'     => 'pull-left',
 		'type'    => 'select',
@@ -148,98 +148,98 @@ function optionsframework_options() {
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Element color', 'sparkling'),
-		'desc' => esc_html__('Default used if no color is selected', 'sparkling'),
+		'name' => __('Element color', 'sparkling'),
+		'desc' => __('Default used if no color is selected', 'sparkling'),
 		'id'   => 'element_color',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Element color on hover', 'sparkling'),
-		'desc' => esc_html__('Default used if no color is selected', 'sparkling'),
+		'name' => __('Element color on hover', 'sparkling'),
+		'desc' => __('Default used if no color is selected', 'sparkling'),
 		'id'   => 'element_color_hover',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Custom Favicon', 'sparkling'),
-		'desc' => esc_html__('Upload a 32px x 32px PNG/GIF image that will represent your websites favicon', 'sparkling'),
+		'name' => __('Custom Favicon', 'sparkling'),
+		'desc' => __('Upload a 32px x 32px PNG/GIF image that will represent your websites favicon', 'sparkling'),
 		'id'   => 'custom_favicon',
 		'std'  => '',
 		'type' => 'upload'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Action Button', 'sparkling'),
+		'name' => __('Action Button', 'sparkling'),
 		'type' => 'heading'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Call For Action Text', 'sparkling'),
-		'desc' => esc_html__('Enter the text for call for action section', 'sparkling'),
+		'name' => __('Call For Action Text', 'sparkling'),
+		'desc' => __('Enter the text for call for action section', 'sparkling'),
 		'id'   => 'w2f_cfa_text',
 		'std'  => '',
 		'type' => 'textarea'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Call For Action Button Title', 'sparkling'),
-		'desc' => esc_html__('Enter the title for Call For Action button', 'sparkling'),
+		'name' => __('Call For Action Button Title', 'sparkling'),
+		'desc' => __('Enter the title for Call For Action button', 'sparkling'),
 		'id'   => 'w2f_cfa_button',
 		'std'  => '',
 		'type' => 'text'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('CFA button link', 'sparkling'),
-		'desc' => esc_html__('Enter the link for Call For Action button', 'sparkling'),
+		'name' => __('CFA button link', 'sparkling'),
+		'desc' => __('Enter the link for Call For Action button', 'sparkling'),
 		'id'   => 'w2f_cfa_link',
 		'std'  => '',
 		'type' => 'text'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Call For Action Text Color', 'sparkling'),
-		'desc' => esc_html__('Default used if no color is selected', 'sparkling'),
+		'name' => __('Call For Action Text Color', 'sparkling'),
+		'desc' => __('Default used if no color is selected', 'sparkling'),
 		'id'   => 'cfa_color',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Call For Action Background Color', 'sparkling'),
-		'desc' => esc_html__('Default used if no color is selected', 'sparkling'),
+		'name' => __('Call For Action Background Color', 'sparkling'),
+		'desc' => __('Default used if no color is selected', 'sparkling'),
 		'id'   => 'cfa_bg_color',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Call For Action Button Border Color', 'sparkling'),
-		'desc' => esc_html__('Default used if no color is selected', 'sparkling'),
+		'name' => __('Call For Action Button Border Color', 'sparkling'),
+		'desc' => __('Default used if no color is selected', 'sparkling'),
 		'id'   => 'cfa_btn_color',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Call For Action Button Text Color', 'sparkling'),
-		'desc' => esc_html__('Default used if no color is selected', 'sparkling'),
+		'name' => __('Call For Action Button Text Color', 'sparkling'),
+		'desc' => __('Default used if no color is selected', 'sparkling'),
 		'id'   => 'cfa_btn_txt_color',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Typography', 'sparkling'),
+		'name' => __('Typography', 'sparkling'),
 		'type' => 'heading'
 	);
 
 	$options[] = array(
-		'name'    => esc_html__('Main Body Text', 'sparkling'),
-		'desc'    => esc_html__('Used in P tags', 'sparkling'),
+		'name'    => __('Main Body Text', 'sparkling'),
+		'desc'    => __('Used in P tags', 'sparkling'),
 		'id'      => 'main_body_typography',
 		'std'     => $typography_defaults,
 		'type'    => 'typography',
@@ -247,155 +247,155 @@ function optionsframework_options() {
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Heading Color', 'sparkling'),
-		'desc' => esc_html__('Color for all headings (h1-h6)', 'sparkling'),
+		'name' => __('Heading Color', 'sparkling'),
+		'desc' => __('Color for all headings (h1-h6)', 'sparkling'),
 		'id'   => 'heading_color',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Link Color', 'sparkling'),
-		'desc' => esc_html__('Default used if no color is selected', 'sparkling'),
+		'name' => __('Link Color', 'sparkling'),
+		'desc' => __('Default used if no color is selected', 'sparkling'),
 		'id'   => 'link_color',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Link:hover Color', 'sparkling'),
-		'desc' => esc_html__('Default used if no color is selected', 'sparkling'),
+		'name' => __('Link:hover Color', 'sparkling'),
+		'desc' => __('Default used if no color is selected', 'sparkling'),
 		'id'   => 'link_hover_color',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Header', 'sparkling'),
+		'name' => __('Header', 'sparkling'),
 		'type' => 'heading'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Top nav background color', 'sparkling'),
-		'desc' => esc_html__('Default used if no color is selected', 'sparkling'),
+		'name' => __('Top nav background color', 'sparkling'),
+		'desc' => __('Default used if no color is selected', 'sparkling'),
 		'id'   => 'nav_bg_color',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Top nav item color', 'sparkling'),
-		'desc' => esc_html__('Link color', 'sparkling'),
+		'name' => __('Top nav item color', 'sparkling'),
+		'desc' => __('Link color', 'sparkling'),
 		'id'   => 'nav_link_color',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Top nav item hover color', 'sparkling'),
-		'desc' => esc_html__('Link:hover color', 'sparkling'),
+		'name' => __('Top nav item hover color', 'sparkling'),
+		'desc' => __('Link:hover color', 'sparkling'),
 		'id'   => 'nav_item_hover_color',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Top nav dropdown background color', 'sparkling'),
-		'desc' => esc_html__('Background of dropdown item hover color', 'sparkling'),
+		'name' => __('Top nav dropdown background color', 'sparkling'),
+		'desc' => __('Background of dropdown item hover color', 'sparkling'),
 		'id'   => 'nav_dropdown_bg',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Top nav dropdown item color', 'sparkling'),
-		'desc' => esc_html__('Dropdown item color', 'sparkling'),
+		'name' => __('Top nav dropdown item color', 'sparkling'),
+		'desc' => __('Dropdown item color', 'sparkling'),
 		'id'   => 'nav_dropdown_item',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Top nav dropdown item hover color', 'sparkling'),
-		'desc' => esc_html__('Dropdown item hover color', 'sparkling'),
+		'name' => __('Top nav dropdown item hover color', 'sparkling'),
+		'desc' => __('Dropdown item hover color', 'sparkling'),
 		'id'   => 'nav_dropdown_item_hover',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Top nav dropdown item background hover color', 'sparkling'),
-		'desc' => esc_html__('Background of dropdown item hover color', 'sparkling'),
+		'name' => __('Top nav dropdown item background hover color', 'sparkling'),
+		'desc' => __('Background of dropdown item hover color', 'sparkling'),
 		'id'   => 'nav_dropdown_bg_hover',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Footer', 'sparkling'),
+		'name' => __('Footer', 'sparkling'),
 		'type' => 'heading'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Footer widget area background color', 'sparkling'),
+		'name' => __('Footer widget area background color', 'sparkling'),
 		'id'   => 'footer_widget_bg_color',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Footer background color', 'sparkling'),
+		'name' => __('Footer background color', 'sparkling'),
 		'id'   => 'footer_bg_color',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Footer text color', 'sparkling'),
+		'name' => __('Footer text color', 'sparkling'),
 		'id'   => 'footer_text_color',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Footer link color', 'sparkling'),
+		'name' => __('Footer link color', 'sparkling'),
 		'id'   => 'footer_link_color',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Footer information', 'sparkling'),
-		'desc' => esc_html__('Copyright text in footer', 'sparkling'),
+		'name' => __('Footer information', 'sparkling'),
+		'desc' => __('Copyright text in footer', 'sparkling'),
 		'id'   => 'custom_footer_text',
 		'std'  => '<a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" >' . get_bloginfo( 'name', 'display' ) . '</a>  All rights reserved.',
 		'type' => 'textarea'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Social', 'sparkling'),
+		'name' => __('Social', 'sparkling'),
 		'type' => 'heading'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Social icon color', 'sparkling'),
-		'desc' => esc_html__('Default used if no color is selected', 'sparkling'),
+		'name' => __('Social icon color', 'sparkling'),
+		'desc' => __('Default used if no color is selected', 'sparkling'),
 		'id'   => 'social_color',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Footer social icon color', 'sparkling'),
-		'desc' => esc_html__('Default used if no color is selected', 'sparkling'),
+		'name' => __('Footer social icon color', 'sparkling'),
+		'desc' => __('Default used if no color is selected', 'sparkling'),
 		'id'   => 'social_footer_color',
 		'std'  => '',
 		'type' => 'color'
 	);
 
 	$options[] = array(
-		'name'  => esc_html__('Add full URL for your social network profiles', 'sparkling'),
-		'desc'  => esc_html__('Facebook', 'sparkling'),
+		'name'  => __('Add full URL for your social network profiles', 'sparkling'),
+		'desc'  => __('Facebook', 'sparkling'),
 		'id'    => 'social_facebook',
 		'std'   => '',
 		'class' => 'mini',
@@ -404,7 +404,7 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'id'    => 'social_twitter',
-		'desc'  => esc_html__('Twitter', 'sparkling'),
+		'desc'  => __('Twitter', 'sparkling'),
 		'std'   => '',
 		'class' => 'mini',
 		'type'  => 'text'
@@ -412,7 +412,7 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'id'    => 'social_googleplus',
-		'desc'  => esc_html__('Google+', 'sparkling'),
+		'desc'  => __('Google+', 'sparkling'),
 		'std'   => '',
 		'class' => 'mini',
 		'type'  => 'text'
@@ -420,7 +420,7 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'id'    => 'social_youtube',
-		'desc'  => esc_html__('Youtube', 'sparkling'),
+		'desc'  => __('Youtube', 'sparkling'),
 		'std'   => '',
 		'class' => 'mini',
 		'type'  => 'text'
@@ -428,7 +428,7 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'id'    => 'social_vimeo',
-		'desc'  => esc_html__('Vimeo', 'sparkling'),
+		'desc'  => __('Vimeo', 'sparkling'),
 		'std'   => '',
 		'class' => 'mini',
 		'type'  => 'text'
@@ -436,7 +436,7 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'id'    => 'social_linkedin',
-		'desc'  => esc_html__('LinkedIn', 'sparkling'),
+		'desc'  => __('LinkedIn', 'sparkling'),
 		'std'   => '',
 		'class' => 'mini',
 		'type'  => 'text'
@@ -444,7 +444,7 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'id'    => 'social_pinterest',
-		'desc'  => esc_html__('Pinterest', 'sparkling'),
+		'desc'  => __('Pinterest', 'sparkling'),
 		'std'   => '',
 		'class' => 'mini',
 		'type'  => 'text'
@@ -452,7 +452,7 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'id'    => 'social_rss',
-		'desc'  => esc_html__('RSS Feed', 'sparkling'),
+		'desc'  => __('RSS Feed', 'sparkling'),
 		'std'   => '',
 		'class' => 'mini',
 		'type'  => 'text'
@@ -460,7 +460,7 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'id'    => 'social_tumblr',
-		'desc'  => esc_html__('Tumblr', 'sparkling'),
+		'desc'  => __('Tumblr', 'sparkling'),
 		'std'   => '',
 		'class' => 'mini',
 		'type'  => 'text'
@@ -468,7 +468,7 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'id'    => 'social_flickr',
-		'desc'  => esc_html__('Flickr', 'sparkling'),
+		'desc'  => __('Flickr', 'sparkling'),
 		'std'   => '',
 		'class' => 'mini',
 		'type'  => 'text'
@@ -476,7 +476,7 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'id'    => 'social_instagram',
-		'desc'  => esc_html__('Instagram', 'sparkling'),
+		'desc'  => __('Instagram', 'sparkling'),
 		'std'   => '',
 		'class' => 'mini',
 		'type'  => 'text'
@@ -484,7 +484,7 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'id'    => 'social_dribbble',
-		'desc'  => esc_html__('Dribbble', 'sparkling'),
+		'desc'  => __('Dribbble', 'sparkling'),
 		'std'   => '',
 		'class' => 'mini',
 		'type'  => 'text'
@@ -492,7 +492,7 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'id'    => 'social_skype',
-		'desc'  => esc_html__('Skype', 'sparkling'),
+		'desc'  => __('Skype', 'sparkling'),
 		'std'   => '',
 		'class' => 'mini',
 		'type'  => 'text'
@@ -500,7 +500,7 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'id'    => 'social_foursquare',
-		'desc'  => esc_html__('Foursquare', 'sparkling'),
+		'desc'  => __('Foursquare', 'sparkling'),
 		'std'   => '',
 		'class' => 'mini',
 		'type'  => 'text'
@@ -508,7 +508,7 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'id'    => 'social_soundcloud',
-		'desc'  => esc_html__('SoundCloud', 'sparkling'),
+		'desc'  => __('SoundCloud', 'sparkling'),
 		'std'   => '',
 		'class' => 'mini',
 		'type'  => 'text'
@@ -516,20 +516,20 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'id'    => 'social_github',
-		'desc'  => esc_html__('GitHub', 'sparkling'),
+		'desc'  => __('GitHub', 'sparkling'),
 		'std'   => '',
 		'class' => 'mini',
 		'type'  => 'text'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Other', 'sparkling'),
+		'name' => __('Other', 'sparkling'),
 		'type' => 'heading'
 	);
 
 	$options[] = array(
-		'name' => esc_html__('Custom CSS', 'sparkling'),
-		'desc' => esc_html__('Additional CSS', 'sparkling'),
+		'name' => __('Custom CSS', 'sparkling'),
+		'desc' => __('Additional CSS', 'sparkling'),
 		'id'   => 'custom_css',
 		'std'  => '',
 		'type' => 'textarea'

@@ -24,46 +24,46 @@ get_header(); ?>
 							single_tag_title();
 
 						elseif ( is_author() ) :
-							printf( esc_html__( 'Author: %s', 'sparkling' ), '<span class="vcard">' . get_the_author() . '</span>' );
+							printf( __( 'Author: %s', 'sparkling' ), '<span class="vcard">' . get_the_author() . '</span>' );
 
 						elseif ( is_day() ) :
-							printf( esc_html__( 'Day: %s', 'sparkling' ), '<span>' . get_the_date() . '</span>' );
+							printf( __( 'Day: %s', 'sparkling' ), '<span>' . get_the_date() . '</span>' );
 
 						elseif ( is_month() ) :
-							printf( esc_html__( 'Month: %s', 'sparkling' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'sparkling' ) ) . '</span>' );
+							printf( __( 'Month: %s', 'sparkling' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'sparkling' ) ) . '</span>' );
 
 						elseif ( is_year() ) :
-							printf( esc_html__( 'Year: %s', 'sparkling' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'sparkling' ) ) . '</span>' );
+							printf( __( 'Year: %s', 'sparkling' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'sparkling' ) ) . '</span>' );
 
 						elseif ( is_tax( 'post_format', 'post-format-aside' ) ) :
-							esc_html_e( 'Asides', 'sparkling' );
+							_e( 'Asides', 'sparkling' );
 
 						elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) :
-							esc_html_e( 'Galleries', 'sparkling');
+							_e( 'Galleries', 'sparkling');
 
 						elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
-							esc_html_e( 'Images', 'sparkling');
+							_e( 'Images', 'sparkling');
 
 						elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
-							esc_html_e( 'Videos', 'sparkling' );
+							_e( 'Videos', 'sparkling' );
 
 						elseif ( is_tax( 'post_format', 'post-format-quote' ) ) :
-							esc_html_e( 'Quotes', 'sparkling' );
+							_e( 'Quotes', 'sparkling' );
 
 						elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
-							esc_html_e( 'Links', 'sparkling' );
+							_e( 'Links', 'sparkling' );
 
 						elseif ( is_tax( 'post_format', 'post-format-status' ) ) :
-							esc_html_e( 'Statuses', 'sparkling' );
+							_e( 'Statuses', 'sparkling' );
 
 						elseif ( is_tax( 'post_format', 'post-format-audio' ) ) :
-							esc_html_e( 'Audios', 'sparkling' );
+							_e( 'Audios', 'sparkling' );
 
 						elseif ( is_tax( 'post_format', 'post-format-chat' ) ) :
-							esc_html_e( 'Chats', 'sparkling' );
+							_e( 'Chats', 'sparkling' );
 
 						else :
-							esc_html_e( 'Archives', 'sparkling' );
+							_e( 'Archives', 'sparkling' );
 
 						endif;
 					?>

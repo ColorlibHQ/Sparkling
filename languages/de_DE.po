@@ -1,20 +1,20 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling\n"
-"POT-Creation-Date: 2015-05-21 14:30+0200\n"
-"PO-Revision-Date: 2015-05-21 14:30+0200\n"
+"POT-Creation-Date: 2015-04-04 15:01+0200\n"
+"PO-Revision-Date: 2015-04-04 15:01+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8\n"
+"X-Generator: Poedit 1.7.5\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_html__;esc_html_e;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
-"esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
@@ -33,7 +33,9 @@ msgstr ""
 #: 404.php:25
 #, fuzzy
 msgid "Recent Posts"
-msgstr "Zeigt Reiter der beliebtesten und neusten Beiträge & Kommentare"
+msgstr ""
+"Zeigt eine gekennzeichnite Liste mit beliebten Beitr&auml;gen, neuesten "
+"Beitr&auml;gen und Kommentaren an"
 
 #: 404.php:31
 msgid "Most Used Categories"
@@ -119,7 +121,7 @@ msgstr "Audio"
 msgid "Chats"
 msgstr "Chats"
 
-#: comments.php:28
+#: comments.php:30
 #, php-format
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
@@ -127,19 +129,19 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "Ein Kommentar zu &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s Kommentare zu &ldquo;%2$s&rdquo;"
 
-#: comments.php:35 comments.php:53
+#: comments.php:37 comments.php:55
 msgid "Comment navigation"
 msgstr "Kommentare navigieren"
 
-#: comments.php:36 comments.php:54
+#: comments.php:38 comments.php:56
 msgid "&larr; Older Comments"
 msgstr "&larr; ältere Kommentare"
 
-#: comments.php:37 comments.php:55
+#: comments.php:39 comments.php:57
 msgid "Newer Comments &rarr;"
 msgstr "Neueste Kommentare &rarr;"
 
-#: comments.php:65
+#: comments.php:67
 msgid "Comments are closed."
 msgstr "Kommentare sind deaktiviert."
 
