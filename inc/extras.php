@@ -118,7 +118,7 @@ function sparkling_wpsearch( $form ) {
   <div class="row">
     <div class="col-lg-12">
       <div class="input-group">
-        <input type="text" class="form-control search-query" value="' . get_search_query() . '" name="s" id="s" placeholder="'. esc_attresc_html__('Search...','sparkling') .'">
+        <input type="text" class="form-control search-query" value="' . get_search_query() . '" name="s" id="s" placeholder="'. esc_html__('Search...','sparkling') .'">
         <span class="input-group-btn">
           <button type="submit" class="btn btn-default" name="submit" id="searchsubmit" value="Go"><span class="glyphicon glyphicon-search"></span></button>
         </span>
