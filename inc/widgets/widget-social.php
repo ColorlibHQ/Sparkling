@@ -46,7 +46,7 @@ class sparkling_social_widget extends WP_Widget
       if(!isset($instance['title'])) $instance['title'] = __('Follow us' , 'sparkling');
     ?>
 
-      <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title ','sparkling') ?></label>
+      <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title ','sparkling') ?></label>
 
       <input type="text" value="<?php echo esc_attr($instance['title']); ?>"
                           name="<?php echo $this->get_field_name('title'); ?>"
