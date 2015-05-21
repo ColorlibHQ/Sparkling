@@ -80,7 +80,7 @@ class sparkling_categories extends WP_Widget
 
     	?>
 
-      <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title ','sparkling') ?></label>
+      <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title ','sparkling') ?></label>
 
         <input  type="text" value="<?php echo esc_attr($instance['title']); ?>"
                 name="<?php echo $this->get_field_name('title'); ?>"
@@ -88,7 +88,7 @@ class sparkling_categories extends WP_Widget
                 class="widefat" />
       </p>
 
-      <p><label for="<?php echo $this->get_field_id('limit'); ?>"> <?php _e('Limit Categories ','sparkling') ?></label>
+      <p><label for="<?php echo $this->get_field_id('limit'); ?>"> <?php esc_html_e('Limit Categories ','sparkling') ?></label>
 
         <input  type="text" value="<?php echo esc_attr($instance['limit']); ?>"
                 name="<?php echo $this->get_field_name('limit'); ?>"
@@ -101,7 +101,7 @@ class sparkling_categories extends WP_Widget
                 name="<?php echo $this->get_field_name('enable_count'); ?>"
                 id="<?php $this->get_field_id('enable_count'); ?>" <?php if($instance['enable_count'] != '') echo 'checked=checked '; ?>
          />
-         <?php _e('Enable Posts Count','sparkling') ?></label>
+         <?php esc_html_e('Enable Posts Count','sparkling') ?></label>
        </p>
 
     	<?php

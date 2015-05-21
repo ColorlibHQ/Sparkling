@@ -38,7 +38,7 @@
 					<div class="site-navigation-inner col-sm-12">
 						<div class="navbar-header">
 							<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-								<span class="sr-only"><?php _e( 'Toggle navigation', 'sparkling' ); ?></span>
+								<span class="sr-only"><?php esc_html_e( 'Toggle navigation', 'sparkling' ); ?></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>

@@ -96,7 +96,7 @@ class sparkling_popular_posts extends WP_Widget
 
     	?>
 
-      <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title', 'sparkling') ?></label>
+      <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title', 'sparkling') ?></label>
 
       <input  type="text" value="<?php echo esc_attr($instance['title']); ?>"
               name="<?php echo $this->get_field_name('title'); ?>"
@@ -104,7 +104,7 @@ class sparkling_popular_posts extends WP_Widget
               class="widefat" />
       </p>
 
-      <p><label for="<?php echo $this->get_field_id('limit'); ?>"><?php _e('Limit Posts Number', 'sparkling') ?></label>
+      <p><label for="<?php echo $this->get_field_id('limit'); ?>"><?php esc_html_e('Limit Posts Number', 'sparkling') ?></label>
 
       <input  type="text" value="<?php echo esc_attr($instance['limit']); ?>"
               name="<?php echo $this->get_field_name('limit'); ?>"
