@@ -2,7 +2,7 @@
 
 Theme Name: Sparkling
 Theme URI: http://colorlib.com/wp/sparkling/
-Version: 1.8.4
+Version: 1.8.5
 Tested up to: WP 4.2
 
 Author: Aigars Silkalns
@@ -64,10 +64,10 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
 
-= 1.8.4 - 18.05.2015 =
+= 1.8.5 - 21.05.2015 =
 
-* Added missing string for translation.
-* All translation files updated
+* Properly escaped all translation strings
+* Updated translation files
 
 = 1.8.3 - 04.05.2015 =
 

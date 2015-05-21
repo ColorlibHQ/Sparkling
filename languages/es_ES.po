@@ -1,18 +1,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-05-18 15:34+0200\n"
-"PO-Revision-Date: 2015-05-18 15:35+0200\n"
+"POT-Creation-Date: 2015-05-21 14:30+0200\n"
+"PO-Revision-Date: 2015-05-21 14:30+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.6\n"
+"X-Generator: Poedit 1.8\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;_nx:4c,1,2;"
+"_n:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
@@ -31,7 +32,7 @@ msgstr ""
 #: ../404.php:25
 #, fuzzy
 msgid "Recent Posts"
-msgstr "Categoría de los artícolos en la página home"
+msgstr "Entradas Populares"
 
 #: ../404.php:31
 msgid "Most Used Categories"
@@ -241,11 +242,6 @@ msgstr "Pie de Página Widget 2"
 #: ../functions.php:168
 msgid "Footer Widget 3"
 msgstr "Pie de Página Widget 3"
-
-#: ../header.php:41
-#, fuzzy
-msgid "Toggle navigation"
-msgstr "Navigazione post"
 
 #: ../image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
@@ -741,7 +737,7 @@ msgstr "Color del ítem del menú desplegable"
 #: ../options.php:319
 #, fuzzy
 msgid "Top nav dropdown item hover color"
-msgstr "Color del ítem del menú desplegable Top nav"
+msgstr "Colore voce del menu a tendina della navigazione principale"
 
 #: ../options.php:320
 #, fuzzy
@@ -751,7 +747,7 @@ msgstr "Sfondo della voce in hover del menu a tendina"
 #: ../options.php:327
 #, fuzzy
 msgid "Top nav dropdown item background hover color"
-msgstr "Sfondo della voce in hover del menu a tendina"
+msgstr "Colore voce del menu a tendina della navigazione principale"
 
 #: ../options.php:335
 msgid "Footer"

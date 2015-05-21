@@ -58,7 +58,7 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
     }
     // Add a page number if necessary:
     if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
-      $title .= " $sep " . sprintf( __( 'Page %s', 'sparkling' ), max( $paged, $page ) );
+      $title .= " $sep " . sprintf( esc_html__( 'Page %s', 'sparkling' ), max( $paged, $page ) );
     }
     return $title;
   }
@@ -118,7 +118,7 @@ function sparkling_wpsearch( $form ) {
   <div class="row">
     <div class="col-lg-12">
       <div class="input-group">
-        <input type="text" class="form-control search-query" value="' . get_search_query() . '" name="s" id="s" placeholder="'. esc_attr__('Search...','sparkling') .'">
+        <input type="text" class="form-control search-query" value="' . get_search_query() . '" name="s" id="s" placeholder="'. esc_html__('Search...','sparkling') .'">
         <span class="input-group-btn">
           <button type="submit" class="btn btn-default" name="submit" id="searchsubmit" value="Go"><span class="glyphicon glyphicon-search"></span></button>
         </span>
@@ -139,11 +139,11 @@ function custom_password_form() {
   $o = '<form class="protected-post-form" action="' . get_option('siteurl') . '/wp-login.php?action=postpass" method="post">
   <div class="row">
     <div class="col-lg-10">
-        ' . __( "<p>This post is password protected. To view it please enter your password below:</p>" ,'sparkling') . '
-        <label for="' . $label . '">' . __( "Password:" ,'sparkling') . ' </label>
+        ' . esc_html__( "<p>This post is password protected. To view it please enter your password below:</p>" ,'sparkling') . '
+        <label for="' . $label . '">' . esc_html__( "Password:" ,'sparkling') . ' </label>
       <div class="input-group">
         <input class="form-control" value="' . get_search_query() . '" name="post_password" id="' . $label . '" type="password">
-        <span class="input-group-btn"><button type="submit" class="btn btn-default" name="submit" id="searchsubmit" vvalue="' . esc_attr__( "Submit",'sparkling' ) . '">' . __( "Submit" ,'sparkling') . '</button>
+        <span class="input-group-btn"><button type="submit" class="btn btn-default" name="submit" id="searchsubmit" vvalue="' . esc_attresc_html__( "Submit",'sparkling' ) . '">' . esc_html__( "Submit" ,'sparkling') . '</button>
         </span>
       </div>
     </div>
@@ -187,7 +187,7 @@ function sparkling_social(){
   foreach ( $services as $service => $name ) :
 
       $active[ $service ] = of_get_option ( 'social_'.$service );
-      if ( $active[$service] ) { echo '<a href="'. esc_url( $active[$service] ) .'" title="'. __('Follow us on ','sparkling').$name.'" class="'. $service .'" target="_blank"><i class="social_icon fa fa-'.$service.'"></i></a>';}
+      if ( $active[$service] ) { echo '<a href="'. esc_url( $active[$service] ) .'" title="'. esc_html__('Follow us on ','sparkling').$name.'" class="'. $service .'" target="_blank"><i class="social_icon fa fa-'.$service.'"></i></a>';}
 
   endforeach;
   echo '</div>';
@@ -223,7 +223,7 @@ function sparkling_footer_links() {
   wp_nav_menu(array(
     'container'       => '',                              // remove nav container
     'container_class' => 'footer-links clearfix',   // class of container (should you choose to use it)
-    'menu'            => __( 'Footer Links', 'sparkling' ),   // nav name
+    'menu'            => esc_html__( 'Footer Links', 'sparkling' ),   // nav name
     'menu_class'      => 'nav footer-nav clearfix',      // adding custom nav class
     'theme_location'  => 'footer-links',             // where it's located in the theme
     'before'          => '',                                 // before the menu
@@ -298,7 +298,7 @@ endif;
  */
 function sparkling_footer_info() {
 global $sparkling_footer_info;
-  printf( __( 'Theme by %1$s Powered by %2$s', 'sparkling' ) , '<a href="http://colorlib.com/" target="_blank">Colorlib</a>', '<a href="http://wordpress.org/" target="_blank">WordPress</a>');
+  printf( esc_html__( 'Theme by %1$s Powered by %2$s', 'sparkling' ) , '<a href="http://colorlib.com/" target="_blank">Colorlib</a>', '<a href="http://wordpress.org/" target="_blank">WordPress</a>');
 }
 
 
@@ -412,9 +412,9 @@ function sparkling_options_display_sidebar() { ?>
             <p><?php esc_html_e('The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via','sparkling') ?> <a href="<?php echo esc_url( 'http://colorlib.com/wp/forums' ); ?>"><?php esc_html_e('Colorlib support forum','sparkling') ?></a>.</p>
             <p><?php esc_html_e('If you like this theme, I\'d appreciate any of the following:','sparkling') ?></p>
             <ul>
-              <li><a class="button" href="<?php echo esc_url( 'http://wordpress.org/support/view/theme-reviews/sparkling?filter=5' ); ?>" title="<?php esc_attresc_html_e('Rate this Theme', 'sparkling'); ?>" target="_blank"><?php printf(__('Rate this Theme','sparkling')); ?></a></li>
-              <li><a class="button" href="<?php echo esc_url( 'http://www.facebook.com/colorlib' ); ?>" title="Like Colorlib on Facebook" target="_blank"><?php printf(__('Like on Facebook','sparkling')); ?></a></li>
-              <li><a class="button" href="<?php echo esc_url( 'http://twitter.com/colorlib/' ); ?>" title="Follow Colrolib on Twitter" target="_blank"><?php printf(__('Follow on Twitter','sparkling')); ?></a></li>
+              <li><a class="button" href="<?php echo esc_url( 'http://wordpress.org/support/view/theme-reviews/sparkling?filter=5' ); ?>" title="<?php esc_attr_e('Rate this Theme', 'sparkling'); ?>" target="_blank"><?php printf(esc_html__('Rate this Theme','sparkling')); ?></a></li>
+              <li><a class="button" href="<?php echo esc_url( 'http://www.facebook.com/colorlib' ); ?>" title="Like Colorlib on Facebook" target="_blank"><?php printf(esc_html__('Like on Facebook','sparkling')); ?></a></li>
+              <li><a class="button" href="<?php echo esc_url( 'http://twitter.com/colorlib/' ); ?>" title="Follow Colrolib on Twitter" target="_blank"><?php printf(esc_html__('Follow on Twitter','sparkling')); ?></a></li>
             </ul>
         </div>
     </div>

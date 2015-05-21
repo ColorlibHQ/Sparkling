@@ -1,18 +1,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-05-18 15:35+0200\n"
-"PO-Revision-Date: 2015-05-18 15:35+0200\n"
+"POT-Creation-Date: 2015-05-21 14:30+0200\n"
+"PO-Revision-Date: 2015-05-21 14:30+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.6\n"
+"X-Generator: Poedit 1.8\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;_nx:4c,1,2;"
+"_n:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
@@ -235,11 +236,6 @@ msgstr "Widget de bas de page 2"
 #: ../functions.php:168
 msgid "Footer Widget 3"
 msgstr "Widget de bas de page 3"
-
-#: ../header.php:41
-#, fuzzy
-msgid "Toggle navigation"
-msgstr "Pagination d'article"
 
 #: ../image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
@@ -723,14 +719,12 @@ msgstr "Couleur des éléments de menu déroulant"
 #: ../options.php:319
 #, fuzzy
 msgid "Top nav dropdown item hover color"
-msgstr ""
-"Couleur d'un sous-&eacute;l&eacute;ment de la barre de navigation haute"
+msgstr "Couleur des éléments survolés du menu d'en-tête"
 
 #: ../options.php:320
 #, fuzzy
 msgid "Dropdown item hover color"
-msgstr ""
-"Couleur d'un sous-&eacute;l&eacute;ment de l'arrière-plan survol&eacute;"
+msgstr "Couleur d'arrière plan d'un élément survolé du menu déroulant"
 
 #: ../options.php:327
 #, fuzzy

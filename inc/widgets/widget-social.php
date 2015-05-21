@@ -8,13 +8,13 @@ class sparkling_social_widget extends WP_Widget
 {
 	 function sparkling_social_widget(){
 
-        $widget_ops = array('classname' => 'sparkling-social','description' => __( "Sparkling Social Widget" ,'sparkling') );
-		    $this->WP_Widget('sparkling-social', __('Sparkling Social Widget','sparkling'), $widget_ops);
+        $widget_ops = array('classname' => 'sparkling-social','description' => esc_html__( "Sparkling Social Widget" ,'sparkling') );
+		    $this->WP_Widget('sparkling-social', esc_html__('Sparkling Social Widget','sparkling'), $widget_ops);
     }
 
     function widget($args , $instance) {
     	extract($args);
-        $title = ($instance['title']) ? $instance['title'] : __('Follow us' , 'sparkling');
+        $title = ($instance['title']) ? $instance['title'] : esc_html__('Follow us' , 'sparkling');
 
       echo $before_widget;
       echo $before_title;
@@ -43,7 +43,7 @@ class sparkling_social_widget extends WP_Widget
 
 
     function form($instance) {
-      if(!isset($instance['title'])) $instance['title'] = __('Follow us' , 'sparkling');
+      if(!isset($instance['title'])) $instance['title'] = esc_html__('Follow us' , 'sparkling');
     ?>
 
       <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title ','sparkling') ?></label>

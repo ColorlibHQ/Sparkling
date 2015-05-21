@@ -1,14 +1,14 @@
 <?php
 /**
  * Jetpack Compatibility File
- * See: https://jetpack.me/
+ * See: http://jetpack.me/
  *
  * @package sparkling
  */
 
 /**
  * Add theme support for Infinite Scroll.
- * See: https://jetpack.me/support/infinite-scroll/
+ * See: http://jetpack.me/support/infinite-scroll/
  */
 function sparkling_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
