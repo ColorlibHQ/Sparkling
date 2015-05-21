@@ -831,12 +831,14 @@ button:hover {
   font-size: 13px;
 }
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-  color: #656D78;
+  color: #DADADA;
 }
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #DADADA;
+    color: #656D78;
   }
+}
+@media (min-width: 979px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }
