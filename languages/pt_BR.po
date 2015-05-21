@@ -1,18 +1,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-04-04 15:02+0200\n"
-"PO-Revision-Date: 2015-04-04 15:02+0200\n"
+"POT-Creation-Date: 2015-05-21 14:31+0200\n"
+"PO-Revision-Date: 2015-05-21 14:31+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.5\n"
+"X-Generator: Poedit 1.8\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;_nx:4c,1,2;"
+"_n:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
@@ -106,7 +107,7 @@ msgstr "Áudios"
 msgid "Chats"
 msgstr "Chats"
 
-#: ../comments.php:30
+#: ../comments.php:28
 #, php-format
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
@@ -114,19 +115,19 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "Um comentário em &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s comentários em &ldquo;%2$s&rdquo;"
 
-#: ../comments.php:37 ../comments.php:55
+#: ../comments.php:35 ../comments.php:53
 msgid "Comment navigation"
 msgstr "Navegação de comentário"
 
-#: ../comments.php:38 ../comments.php:56
+#: ../comments.php:36 ../comments.php:54
 msgid "&larr; Older Comments"
 msgstr "&larr; Comentários Antigos"
 
-#: ../comments.php:39 ../comments.php:57
+#: ../comments.php:37 ../comments.php:55
 msgid "Newer Comments &rarr;"
 msgstr "Novos Comentários &rarr;"
 
-#: ../comments.php:67
+#: ../comments.php:65
 msgid "Comments are closed."
 msgstr "Comentários fechados."
 
@@ -627,7 +628,7 @@ msgstr "Introduza o título para o botão da Chamada de Ação"
 #: ../options.php:196
 #, fuzzy
 msgid "CFA button link"
-msgstr "Link do Botão do CFA"
+msgstr "Link do Botão da Chamada de Ação"
 
 #: ../options.php:197
 #, fuzzy
@@ -732,7 +733,7 @@ msgstr "Cor do item:hover do menu do topo"
 #: ../options.php:320
 #, fuzzy
 msgid "Dropdown item hover color"
-msgstr "Cor do plano de fundo do ítem do Dropdown (Submenu em lista suspensa)"
+msgstr "Cor do background do dropdown do item:hover"
 
 #: ../options.php:327
 #, fuzzy
@@ -844,8 +845,9 @@ msgid "SoundCloud"
 msgstr "SoundCloud"
 
 #: ../options.php:519
+#, fuzzy
 msgid "GitHub"
-msgstr ""
+msgstr "Github"
 
 #: ../options.php:526
 msgid "Other"

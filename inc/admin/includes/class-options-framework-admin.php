@@ -88,8 +88,8 @@ class Options_Framework_Admin {
             'mode' => 'submenu',
 
             // Submenu default settings
-            'page_title' => __( 'Theme Options', 'sparkling' ),
-			'menu_title' => __( 'Theme Options', 'sparkling' ),
+            'page_title' => esc_html__( 'Theme Options', 'sparkling' ),
+			'menu_title' => esc_html__( 'Theme Options', 'sparkling' ),
 			'capability' => 'edit_theme_options',
 			'menu_slug' => 'options-framework',
             'parent_slug' => 'themes.php',
@@ -201,7 +201,7 @@ class Options_Framework_Admin {
 				<?php Options_Framework_Interface::optionsframework_fields(); /* Settings */ ?>
 				<div id="optionsframework-submit">
 					<input type="submit" class="button-primary" name="update" value="<?php esc_attr_e( 'Save Options', 'sparkling' ); ?>" />
-					<input type="submit" class="reset-button button-secondary" name="reset" value="<?php esc_attr_e( 'Restore Defaults', 'sparkling' ); ?>" onclick="return confirm( '<?php print esc_js( __( 'Click OK to reset. Any theme settings will be lost!', 'sparkling' ) ); ?>' );" />
+					<input type="submit" class="reset-button button-secondary" name="reset" value="<?php esc_attr_e( 'Restore Defaults', 'sparkling' ); ?>" onclick="return confirm( '<?php print esc_js( esc_html__( 'Click OK to reset. Any theme settings will be lost!', 'sparkling' ) ); ?>' );" />
 					<div class="clear"></div>
 				</div>
 				</form>
@@ -232,7 +232,7 @@ class Options_Framework_Admin {
 		 */
 
 		if ( isset( $_POST['reset'] ) ) {
-			add_settings_error( 'options-framework', 'restore_defaults', __( 'Default options restored.', 'sparkling' ), 'updated fade' );
+			add_settings_error( 'options-framework', 'restore_defaults', esc_html__( 'Default options restored.', 'sparkling' ), 'updated fade' );
 			return $this->get_default_values();
 		}
 
@@ -286,7 +286,7 @@ class Options_Framework_Admin {
 	 */
 
 	function save_options_notice() {
-		add_settings_error( 'options-framework', 'save_options', __( 'Options saved.', 'sparkling' ), 'updated fade' );
+		add_settings_error( 'options-framework', 'save_options', esc_html__( 'Options saved.', 'sparkling' ), 'updated fade' );
 	}
 
 	/**
