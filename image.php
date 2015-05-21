@@ -89,8 +89,11 @@ get_header();
 				</div>
 				<?php
 					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() )
-						comments_template();
+					if ( get_theme_mod( 'sparkling_page_comments' ) == 1 ) :
+						if ( comments_open() || '0' != get_comments_number() ) :
+							comments_template();
+						endif;
+					endif;
 				?>
 
 			<?php endwhile; // end of the loop. ?>

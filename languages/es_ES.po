@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-05-21 14:30+0200\n"
-"PO-Revision-Date: 2015-05-21 14:30+0200\n"
+"POT-Creation-Date: 2015-05-21 18:29+0200\n"
+"PO-Revision-Date: 2015-05-21 18:29+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: es_ES\n"
@@ -12,8 +12,8 @@ msgstr ""
 "X-Generator: Poedit 1.8\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;_nx:4c,1,2;"
-"_n:1,2\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x;"
+"_nx:4c,1,2;_n:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
@@ -164,7 +164,7 @@ msgstr ""
 "Sembra che non riusciamo a trovare quello che stai cercando. Forse la "
 "ricerca può aiutare."
 
-#: ../content-page.php:21 ../content-single.php:35 ../content.php:43
+#: ../content-page.php:21 ../content-single.php:35 ../content.php:49
 #: ../image.php:79
 msgid "Pages:"
 msgstr "Páginas:"
@@ -194,7 +194,7 @@ msgstr "1 Comentario"
 msgid "% Comments"
 msgstr "% Comentarios"
 
-#: ../content.php:32 ../content.php:39
+#: ../content.php:32 ../content.php:45
 msgid "Read More"
 msgstr "Leer Más"
 
@@ -202,7 +202,7 @@ msgstr "Leer Más"
 msgid "Primary Menu"
 msgstr "Menú Principal"
 
-#: ../functions.php:70 ../inc/extras.php:226
+#: ../functions.php:70 ../inc/extras.php:208
 msgid "Footer Links"
 msgstr "Enlaces Pie de Página"
 
@@ -372,16 +372,26 @@ msgstr "Negrita"
 msgid "Bold Italic"
 msgstr "Negrita Cursiva"
 
+#: ../inc/customizer.php:27
+#, fuzzy
+msgid "Content Options"
+msgstr "Opciones del Theme"
+
+#: ../inc/customizer.php:39
+msgid "Show post excerpts?"
+msgstr ""
+
+#: ../inc/customizer.php:51
+#, fuzzy
+msgid "Display Comments on Static Pages?"
+msgstr "Se muestra en la Página de Inicio"
+
 #: ../inc/extras.php:61
 #, php-format
 msgid "Page %s"
 msgstr "Página %s"
 
-#: ../inc/extras.php:121
-msgid "Search..."
-msgstr "Buscar..."
-
-#: ../inc/extras.php:142
+#: ../inc/extras.php:124
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
@@ -389,32 +399,32 @@ msgstr ""
 "<p> Esta publicación es protegida por una clave. Para mostrarla escribe tu "
 "clave abajo:</p>"
 
-#: ../inc/extras.php:143
+#: ../inc/extras.php:125
 msgid "Password:"
 msgstr "Contraseña:"
 
-#: ../inc/extras.php:146
+#: ../inc/extras.php:128
 msgid "Submit"
 msgstr "Enviar"
 
-#: ../inc/extras.php:190
+#: ../inc/extras.php:172
 msgid "Follow us on "
 msgstr "Síguenos en"
 
-#: ../inc/extras.php:301
+#: ../inc/extras.php:283
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Theme por %1$s Desarrollado por %2$s"
 
-#: ../inc/extras.php:405
+#: ../inc/extras.php:387
 msgid "Support and Documentation"
 msgstr "Soporte y Documentación"
 
-#: ../inc/extras.php:411
+#: ../inc/extras.php:393
 msgid "Sparkling Documentation"
 msgstr "Documentación de Sparkling"
 
-#: ../inc/extras.php:412
+#: ../inc/extras.php:394
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -422,24 +432,24 @@ msgstr ""
 "La mejor forma de contactar con nosotros <b>Preguntas de Soporte</b> y "
 "<b>reportar bug</b> es vía"
 
-#: ../inc/extras.php:412
+#: ../inc/extras.php:394
 msgid "Colorlib support forum"
 msgstr "Foro de soporte Colorlib"
 
-#: ../inc/extras.php:413
+#: ../inc/extras.php:395
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr ""
 "Si te gusta este tema, agradecería cualquiera de los siguientes acciones:"
 
-#: ../inc/extras.php:415
+#: ../inc/extras.php:397
 msgid "Rate this Theme"
 msgstr "Vota este Theme"
 
-#: ../inc/extras.php:416
+#: ../inc/extras.php:398
 msgid "Like on Facebook"
 msgstr "Me Gusta en Facebook"
 
-#: ../inc/extras.php:417
+#: ../inc/extras.php:399
 msgid "Follow on Twitter"
 msgstr "Síguenos en Twitter"
 
@@ -873,6 +883,15 @@ msgstr "CSS Adicional"
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Resultados de búsqueda para %s"
+
+#: ../searchform.php:11
+msgid "Search..."
+msgstr "Buscar..."
+
+#: ../searchform.php:13
+#, fuzzy
+msgid "Search"
+msgstr "Busca"
 
 #: ../sidebar.php:26
 msgid "Meta"

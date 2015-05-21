@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling\n"
-"POT-Creation-Date: 2015-05-21 14:30+0200\n"
-"PO-Revision-Date: 2015-05-21 14:30+0200\n"
+"POT-Creation-Date: 2015-05-21 18:29+0200\n"
+"PO-Revision-Date: 2015-05-21 18:29+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -13,8 +13,9 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_html__;esc_html_e;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
-"esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_html__;esc_html_e;esc_attr_x;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
+"esc_html_e;esc_attr_x;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;"
+"__ngettext_noop:1,2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
@@ -51,7 +52,7 @@ msgstr "Archive"
 #: 404.php:58
 #, fuzzy
 msgid "Tags"
-msgstr "Benutzt in P-Tags"
+msgstr "Benutzt in P tags"
 
 #: archive.php:27
 #, php-format
@@ -168,7 +169,7 @@ msgstr ""
 "Scheinbar konnten wir das Gewünschte nicht finden. Vielleicht hilft Dir die "
 "Suche."
 
-#: content-page.php:21 content-single.php:35 content.php:43 image.php:79
+#: content-page.php:21 content-single.php:35 content.php:49 image.php:79
 msgid "Pages:"
 msgstr "Seiten:"
 
@@ -197,7 +198,7 @@ msgstr "1 Kommentar"
 msgid "% Comments"
 msgstr "% Kommentare"
 
-#: content.php:32 content.php:39
+#: content.php:32 content.php:45
 msgid "Read More"
 msgstr "Weiterlesen"
 
@@ -205,7 +206,7 @@ msgstr "Weiterlesen"
 msgid "Primary Menu"
 msgstr "Hauptmenü"
 
-#: functions.php:70 inc/extras.php:226
+#: functions.php:70 inc/extras.php:208
 msgid "Footer Links"
 msgstr "Fußzeilenmenü"
 
@@ -378,16 +379,26 @@ msgstr "Fett"
 msgid "Bold Italic"
 msgstr "Fett Kursiv"
 
+#: inc/customizer.php:27
+#, fuzzy
+msgid "Content Options"
+msgstr "Einstellungen speichern"
+
+#: inc/customizer.php:39
+msgid "Show post excerpts?"
+msgstr ""
+
+#: inc/customizer.php:51
+#, fuzzy
+msgid "Display Comments on Static Pages?"
+msgstr "Wird auf der Startseite angezeigt"
+
 #: inc/extras.php:61
 #, php-format
 msgid "Page %s"
 msgstr "Seite %s"
 
-#: inc/extras.php:121
-msgid "Search..."
-msgstr "Suche..."
-
-#: inc/extras.php:142
+#: inc/extras.php:124
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
@@ -395,32 +406,32 @@ msgstr ""
 "<p>Dieser Artikel ist mit einem Passwort geschützt. Gib Dein Passwort ein, "
 "um den Artikel zu lesen:</p>"
 
-#: inc/extras.php:143
+#: inc/extras.php:125
 msgid "Password:"
 msgstr "Passwort:"
 
-#: inc/extras.php:146
+#: inc/extras.php:128
 msgid "Submit"
 msgstr "Absenden"
 
-#: inc/extras.php:190
+#: inc/extras.php:172
 msgid "Follow us on "
 msgstr "Folge uns auf"
 
-#: inc/extras.php:301
+#: inc/extras.php:283
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Theme von %1$s Powered by %2$s"
 
-#: inc/extras.php:405
+#: inc/extras.php:387
 msgid "Support and Documentation"
 msgstr "Support und Dokumentation"
 
-#: inc/extras.php:411
+#: inc/extras.php:393
 msgid "Sparkling Documentation"
 msgstr "Sparkling Dokumentation"
 
-#: inc/extras.php:412
+#: inc/extras.php:394
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -428,23 +439,23 @@ msgstr ""
 "Der beste Weg uns zu <b>Support Anfragen</b> und <b>Fehler Reports</b> zu "
 "kontaktieren ist via"
 
-#: inc/extras.php:412
+#: inc/extras.php:394
 msgid "Colorlib support forum"
 msgstr "Colorlib Support Forum"
 
-#: inc/extras.php:413
+#: inc/extras.php:395
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "Wenn Dir dieses Theme gefällt, dann freue ich mich über:"
 
-#: inc/extras.php:415
+#: inc/extras.php:397
 msgid "Rate this Theme"
 msgstr "Dieses Theme bewerten"
 
-#: inc/extras.php:416
+#: inc/extras.php:398
 msgid "Like on Facebook"
 msgstr "Auf Facebook Liken"
 
-#: inc/extras.php:417
+#: inc/extras.php:399
 msgid "Follow on Twitter"
 msgstr "Auf Twitter folgen"
 
@@ -876,15 +887,11 @@ msgstr "Zusätzliches CSS"
 msgid "Search Results for: %s"
 msgstr "Suchergebnisse für: %s"
 
-#: searchform.php:10
-msgctxt "label"
-msgid "Search for:"
-msgstr "Suche nach:"
-
 #: searchform.php:11
+#, fuzzy
 msgctxt "placeholder"
-msgid "Search &hellip;"
-msgstr "Suche &hellip;"
+msgid "Search..."
+msgstr "Suche..."
 
 #: searchform.php:13
 msgctxt "submit button"
@@ -894,3 +901,11 @@ msgstr "Suche"
 #: sidebar.php:26
 msgid "Meta"
 msgstr "Meta"
+
+#~ msgctxt "label"
+#~ msgid "Search for:"
+#~ msgstr "Suche nach:"
+
+#~ msgctxt "placeholder"
+#~ msgid "Search &hellip;"
+#~ msgstr "Suche &hellip;"

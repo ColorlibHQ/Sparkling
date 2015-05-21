@@ -2,7 +2,7 @@
 
 Theme Name: Sparkling
 Theme URI: http://colorlib.com/wp/sparkling/
-Version: 1.8.5
+Version: 1.9.0
 Tested up to: WP 4.2
 
 Author: Aigars Silkalns
@@ -63,6 +63,12 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
+
+= 1.9.0 - 21.05.2015 =
+
+* Introduced option to change full content vs exceprt for blog page.
+* New option to disable comments on static pages via Customizer
+* Removed redundant search form override
 
 = 1.8.5 - 21.05.2015 =
 

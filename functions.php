@@ -188,11 +188,6 @@ require_once(get_template_directory() . '/inc/widgets/widget-categories.php');
 require_once(get_template_directory() . '/inc/widgets/widget-social.php');
 require_once(get_template_directory() . '/inc/widgets/widget-popular-posts.php');
 
-/**
- * adding the sparkling search form (created in extra.php)
- */
-
-add_filter( 'get_search_form', 'sparkling_wpsearch' );
 
 /**
  * This function removes inline styles set by WordPress gallery.

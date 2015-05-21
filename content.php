@@ -34,7 +34,13 @@
 			<?php else : ?>
 			<div class="entry-content">
 
-					<?php the_content(); ?>
+				<?php
+				if ( get_theme_mod( 'sparkling_excerpts' ) == 1 ) :
+					the_excerpt();
+				else :
+					the_content();
+				endif;
+				 ?>
 
 				<p><a class="btn btn-default read-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php esc_html_e( 'Read More', 'sparkling' ); ?></a></p>
 
