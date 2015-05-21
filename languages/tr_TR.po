@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-05-21 14:32+0200\n"
-"PO-Revision-Date: 2015-05-21 14:32+0200\n"
+"POT-Creation-Date: 2015-05-21 18:35+0200\n"
+"PO-Revision-Date: 2015-05-21 18:35+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: tr_TR\n"
@@ -157,7 +157,7 @@ msgstr ""
 "Görünüyorki istediğinizi bulamadık. Muhtemelen arama yapmak yardımcı "
 "olabilir."
 
-#: ../content-page.php:21 ../content-single.php:35 ../content.php:43
+#: ../content-page.php:21 ../content-single.php:35 ../content.php:49
 #: ../image.php:79
 msgid "Pages:"
 msgstr "Sayfalar:"
@@ -187,7 +187,7 @@ msgstr "1 Yorum"
 msgid "% Comments"
 msgstr "% yorum"
 
-#: ../content.php:32 ../content.php:39
+#: ../content.php:32 ../content.php:45
 msgid "Read More"
 msgstr "Fazlasını Oku"
 
@@ -195,7 +195,7 @@ msgstr "Fazlasını Oku"
 msgid "Primary Menu"
 msgstr "Birincil Menü"
 
-#: ../functions.php:70 ../inc/extras.php:226
+#: ../functions.php:70 ../inc/extras.php:208
 msgid "Footer Links"
 msgstr "Sayfa Altı Bağlantıları"
 
@@ -360,16 +360,26 @@ msgstr "Kalın"
 msgid "Bold Italic"
 msgstr "Kalın İtalik"
 
+#: ../inc/customizer.php:27
+#, fuzzy
+msgid "Content Options"
+msgstr "Tema Ayarları"
+
+#: ../inc/customizer.php:39
+msgid "Show post excerpts?"
+msgstr ""
+
+#: ../inc/customizer.php:51
+#, fuzzy
+msgid "Display Comments on Static Pages?"
+msgstr "Ana sayfada gösterilir"
+
 #: ../inc/extras.php:61
 #, php-format
 msgid "Page %s"
 msgstr "Sayfa  %s"
 
-#: ../inc/extras.php:121
-msgid "Search..."
-msgstr "Ara..."
-
-#: ../inc/extras.php:142
+#: ../inc/extras.php:124
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
@@ -377,32 +387,32 @@ msgstr ""
 "<p>Bu gönderi şifre korumalıdır. Görüntülemek için şifrenizi aşağıya girin:</"
 "p>"
 
-#: ../inc/extras.php:143
+#: ../inc/extras.php:125
 msgid "Password:"
 msgstr "Şifre:"
 
-#: ../inc/extras.php:146
+#: ../inc/extras.php:128
 msgid "Submit"
 msgstr "Teslim et"
 
-#: ../inc/extras.php:190
+#: ../inc/extras.php:172
 msgid "Follow us on "
 msgstr "Bizi takip edin"
 
-#: ../inc/extras.php:301
+#: ../inc/extras.php:283
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Temayı yapan %1$s Çalışmasını sağlayan %2$s"
 
-#: ../inc/extras.php:405
+#: ../inc/extras.php:387
 msgid "Support and Documentation"
 msgstr "Destek ve Dökümanlar"
 
-#: ../inc/extras.php:411
+#: ../inc/extras.php:393
 msgid "Sparkling Documentation"
 msgstr "Sparkling Dökümanları"
 
-#: ../inc/extras.php:412
+#: ../inc/extras.php:394
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -410,38 +420,30 @@ msgstr ""
 "Bizimle temas kurmanın en iyi yolu <b>destek soruları</b> ve <b>hata "
 "raporları</b> ile"
 
-#: ../inc/extras.php:412
+#: ../inc/extras.php:394
 msgid "Colorlib support forum"
 msgstr "Colorlib destek forumu"
 
-#: ../inc/extras.php:413
+#: ../inc/extras.php:395
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr ""
 "Eğer bu temayı sevdiysen, Takip edenlerden herhangi biri makbule geçer:"
 
-#: ../inc/extras.php:415
+#: ../inc/extras.php:397
 msgid "Rate this Theme"
 msgstr "Temayı derecelendir"
 
-#: ../inc/extras.php:416
+#: ../inc/extras.php:398
 msgid "Like on Facebook"
 msgstr "Facebookda beğen"
 
-#: ../inc/extras.php:417
+#: ../inc/extras.php:399
 msgid "Follow on Twitter"
 msgstr " Twitterda takip et"
 
 #: ../inc/template-tags.php:23
 msgid "Posts navigation"
 msgstr "Gönderiler navigasyonu"
-
-#: ../inc/template-tags.php:27
-msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
-msgstr "<i class=\"fa fa-chevron-left\"></i> Daha eski gönderiler"
-
-#: ../inc/template-tags.php:31
-msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
-msgstr "Daha yeni gönderiler <i class=\"fa fa-chevron-right\"></i>"
 
 #: ../inc/template-tags.php:56
 msgid "Post navigation"
@@ -852,6 +854,21 @@ msgstr "Fazladan CSS"
 msgid "Search Results for: %s"
 msgstr ": %s için arama sonuçları"
 
+#: ../searchform.php:11
+msgid "Search..."
+msgstr "Ara..."
+
+#: ../searchform.php:13
+#, fuzzy
+msgid "Search"
+msgstr "Arama"
+
 #: ../sidebar.php:26
 msgid "Meta"
 msgstr "Meta"
+
+#~ msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
+#~ msgstr "<i class=\"fa fa-chevron-left\"></i> Daha eski gönderiler"
+
+#~ msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
+#~ msgstr "Daha yeni gönderiler <i class=\"fa fa-chevron-right\"></i>"

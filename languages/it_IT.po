@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-05-21 14:31+0200\n"
-"PO-Revision-Date: 2015-05-21 14:31+0200\n"
+"POT-Creation-Date: 2015-05-21 18:34+0200\n"
+"PO-Revision-Date: 2015-05-21 18:34+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: es_ES\n"
@@ -12,8 +12,8 @@ msgstr ""
 "X-Generator: Poedit 1.8\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x;_nx:4c,1,2;"
-"_n:1,2\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x;"
+"_nx:4c,1,2;_n:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
@@ -159,7 +159,7 @@ msgstr ""
 "Sembra che non riusciamo a trovare quello che stai cercando. Forse la "
 "ricerca può aiutare."
 
-#: ../content-page.php:21 ../content-single.php:35 ../content.php:43
+#: ../content-page.php:21 ../content-single.php:35 ../content.php:49
 #: ../image.php:79
 msgid "Pages:"
 msgstr "Pagine:"
@@ -189,7 +189,7 @@ msgstr "1 commento"
 msgid "% Comments"
 msgstr "% commenti"
 
-#: ../content.php:32 ../content.php:39
+#: ../content.php:32 ../content.php:45
 msgid "Read More"
 msgstr "Approfondisci"
 
@@ -197,7 +197,7 @@ msgstr "Approfondisci"
 msgid "Primary Menu"
 msgstr "Menu principale"
 
-#: ../functions.php:70 ../inc/extras.php:226
+#: ../functions.php:70 ../inc/extras.php:208
 msgid "Footer Links"
 msgstr "Link nel footer"
 
@@ -362,16 +362,26 @@ msgstr "Grassetto"
 msgid "Bold Italic"
 msgstr "Grassetto Corsivo"
 
+#: ../inc/customizer.php:27
+#, fuzzy
+msgid "Content Options"
+msgstr "Opzioni del tema"
+
+#: ../inc/customizer.php:39
+msgid "Show post excerpts?"
+msgstr ""
+
+#: ../inc/customizer.php:51
+#, fuzzy
+msgid "Display Comments on Static Pages?"
+msgstr "Mostra sulla prima pagina"
+
 #: ../inc/extras.php:61
 #, php-format
 msgid "Page %s"
 msgstr "Pagina %s"
 
-#: ../inc/extras.php:121
-msgid "Search..."
-msgstr "Cerca..."
-
-#: ../inc/extras.php:142
+#: ../inc/extras.php:124
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
@@ -379,32 +389,32 @@ msgstr ""
 "<p>Questo post è protetto da password. Per leggerlo inserire la password di "
 "seguito:</p>"
 
-#: ../inc/extras.php:143
+#: ../inc/extras.php:125
 msgid "Password:"
 msgstr "Password:"
 
-#: ../inc/extras.php:146
+#: ../inc/extras.php:128
 msgid "Submit"
 msgstr "Invia"
 
-#: ../inc/extras.php:190
+#: ../inc/extras.php:172
 msgid "Follow us on "
 msgstr "Seguici su"
 
-#: ../inc/extras.php:301
+#: ../inc/extras.php:283
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Tema per %1$s Disegnato da %2$s"
 
-#: ../inc/extras.php:405
+#: ../inc/extras.php:387
 msgid "Support and Documentation"
 msgstr "Supporto e Documentazione"
 
-#: ../inc/extras.php:411
+#: ../inc/extras.php:393
 msgid "Sparkling Documentation"
 msgstr "Documentazione Sparkling"
 
-#: ../inc/extras.php:412
+#: ../inc/extras.php:394
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -412,23 +422,23 @@ msgstr ""
 "Il modo migliore per contattarci per <b>domande di supporto</b> e "
 "<b>segnalazioni</b> è via"
 
-#: ../inc/extras.php:412
+#: ../inc/extras.php:394
 msgid "Colorlib support forum"
 msgstr "Forum di supporto Colorlib"
 
-#: ../inc/extras.php:413
+#: ../inc/extras.php:395
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "Se ti piace questo tema, apprezzerei una delle seguenti:"
 
-#: ../inc/extras.php:415
+#: ../inc/extras.php:397
 msgid "Rate this Theme"
 msgstr "Vota questo tema"
 
-#: ../inc/extras.php:416
+#: ../inc/extras.php:398
 msgid "Like on Facebook"
 msgstr "Mi Piace su Facebook"
 
-#: ../inc/extras.php:417
+#: ../inc/extras.php:399
 msgid "Follow on Twitter"
 msgstr "Seguici su Twitter"
 
@@ -725,7 +735,7 @@ msgstr "Color del ítem hover del Top nav"
 #: ../options.php:320
 #, fuzzy
 msgid "Dropdown item hover color"
-msgstr "Sfondo della voce in hover del menu a tendina"
+msgstr "Color del fondo del ítem hover del menú desplegable"
 
 #: ../options.php:327
 #, fuzzy
@@ -856,6 +866,15 @@ msgstr "CSS aggiuntivo"
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Risultato della ricerca per: %s"
+
+#: ../searchform.php:11
+msgid "Search..."
+msgstr "Cerca..."
+
+#: ../searchform.php:13
+#, fuzzy
+msgid "Search"
+msgstr "Busca"
 
 #: ../sidebar.php:26
 msgid "Meta"

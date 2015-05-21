@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-21 14:31+0200\n"
-"PO-Revision-Date: 2015-05-21 14:31+0200\n"
+"POT-Creation-Date: 2015-05-21 18:34+0200\n"
+"PO-Revision-Date: 2015-05-21 18:34+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: lt\n"
@@ -175,7 +175,7 @@ msgstr ""
 "Panašu, kad nepavyko rasti jūsų ieškomo puslapio. Galbūt jums padės paieškos "
 "galimybė."
 
-#: ../content-page.php:21 ../content-single.php:35 ../content.php:43
+#: ../content-page.php:21 ../content-single.php:35 ../content.php:49
 #: ../image.php:79
 msgid "Pages:"
 msgstr "Puslapiai:"
@@ -205,7 +205,7 @@ msgstr "Komentarų: 1"
 msgid "% Comments"
 msgstr "Komentarų: %"
 
-#: ../content.php:32 ../content.php:39
+#: ../content.php:32 ../content.php:45
 msgid "Read More"
 msgstr "Skaityti toliau"
 
@@ -213,7 +213,7 @@ msgstr "Skaityti toliau"
 msgid "Primary Menu"
 msgstr "Pagrindinis meniu"
 
-#: ../functions.php:70 ../inc/extras.php:226
+#: ../functions.php:70 ../inc/extras.php:208
 msgid "Footer Links"
 msgstr "Poraštės nuorodos"
 
@@ -385,48 +385,58 @@ msgstr "Paryškintasis"
 msgid "Bold Italic"
 msgstr "Paryškintasis kursyvas"
 
+#: ../inc/customizer.php:27
+#, fuzzy
+msgid "Content Options"
+msgstr "Išsaugoti nustatymus"
+
+#: ../inc/customizer.php:39
+msgid "Show post excerpts?"
+msgstr ""
+
+#: ../inc/customizer.php:51
+#, fuzzy
+msgid "Display Comments on Static Pages?"
+msgstr "Rodomas pagrindiniame puslapyje"
+
 #: ../inc/extras.php:61
 #, php-format
 msgid "Page %s"
 msgstr "Puslapis %s"
 
-#: ../inc/extras.php:121
-msgid "Search..."
-msgstr "Paieška..."
-
-#: ../inc/extras.php:142
+#: ../inc/extras.php:124
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
 msgstr ""
 "<p>Įrašas apsaugotas slaptažodžiu. Įveskite jį, jei norite peržiūrėti:</p>"
 
-#: ../inc/extras.php:143
+#: ../inc/extras.php:125
 msgid "Password:"
 msgstr "Slaptažodis:"
 
-#: ../inc/extras.php:146
+#: ../inc/extras.php:128
 msgid "Submit"
 msgstr "Pateikti"
 
-#: ../inc/extras.php:190
+#: ../inc/extras.php:172
 msgid "Follow us on "
 msgstr "Sekite mus"
 
-#: ../inc/extras.php:301
+#: ../inc/extras.php:283
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "%1$s tema sukurta %2$s sistemai"
 
-#: ../inc/extras.php:405
+#: ../inc/extras.php:387
 msgid "Support and Documentation"
 msgstr "Pagalba ir dokumentacija"
 
-#: ../inc/extras.php:411
+#: ../inc/extras.php:393
 msgid "Sparkling Documentation"
 msgstr "Sparkling dokumentacija"
 
-#: ../inc/extras.php:412
+#: ../inc/extras.php:394
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -434,23 +444,23 @@ msgstr ""
 "Geriausias būdas susisiekti su mumis <b>pagalbos klausimais</b> ir "
 "<b>pranešti apie klaidas</b> yra čia"
 
-#: ../inc/extras.php:412
+#: ../inc/extras.php:394
 msgid "Colorlib support forum"
 msgstr "Colorlib pagalbos forumai"
 
-#: ../inc/extras.php:413
+#: ../inc/extras.php:395
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "Jei jums patinka ši tema, pasirinkite vieną iš būdų ją įvertinti:"
 
-#: ../inc/extras.php:415
+#: ../inc/extras.php:397
 msgid "Rate this Theme"
 msgstr "Įvertinkite temą"
 
-#: ../inc/extras.php:416
+#: ../inc/extras.php:398
 msgid "Like on Facebook"
 msgstr "Patinka Facebook"
 
-#: ../inc/extras.php:417
+#: ../inc/extras.php:399
 msgid "Follow on Twitter"
 msgstr "Sekite Twitter"
 
@@ -885,15 +895,11 @@ msgstr "Papildomas CSS"
 msgid "Search Results for: %s"
 msgstr "Paieškos rezultatai: %s"
 
-#: ../searchform.php:10
-msgctxt "label"
-msgid "Search for:"
-msgstr "Ieškoti:"
-
 #: ../searchform.php:11
+#, fuzzy
 msgctxt "placeholder"
-msgid "Search &hellip;"
-msgstr "Paieška &hellip;"
+msgid "Search..."
+msgstr "Paieška..."
 
 #: ../searchform.php:13
 msgctxt "submit button"
@@ -903,3 +909,11 @@ msgstr "Paieška"
 #: ../sidebar.php:26
 msgid "Meta"
 msgstr "Metainformacija"
+
+#~ msgctxt "label"
+#~ msgid "Search for:"
+#~ msgstr "Ieškoti:"
+
+#~ msgctxt "placeholder"
+#~ msgid "Search &hellip;"
+#~ msgstr "Paieška &hellip;"
