@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-21 18:34+0200\n"
-"PO-Revision-Date: 2015-05-21 18:34+0200\n"
+"POT-Creation-Date: 2015-06-04 14:53+0200\n"
+"PO-Revision-Date: 2015-06-04 14:53+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: pl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Loco-Source-Locale: en_GB\n"
-"X-Generator: Poedit 1.8\n"
+"X-Generator: Poedit 1.8.1\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x;"
 "_nx:4c,1,2;_n:1,2\n"
@@ -203,7 +203,7 @@ msgstr "Czytaj więcej"
 msgid "Primary Menu"
 msgstr "Główne menu"
 
-#: ../functions.php:70 ../inc/extras.php:208
+#: ../functions.php:70 ../inc/extras.php:209
 msgid "Footer Links"
 msgstr "Linki stopki"
 
@@ -401,46 +401,46 @@ msgstr "Hasło:"
 msgid "Submit"
 msgstr "Wyślij"
 
-#: ../inc/extras.php:172
+#: ../inc/extras.php:173
 msgid "Follow us on "
 msgstr "Śledź nas na"
 
-#: ../inc/extras.php:283
+#: ../inc/extras.php:284
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Temat stworzony przez %1$s Napędzany przez %2$s"
 
-#: ../inc/extras.php:387
+#: ../inc/extras.php:388
 msgid "Support and Documentation"
 msgstr "Wsparcie i dokumentacja"
 
-#: ../inc/extras.php:393
+#: ../inc/extras.php:394
 msgid "Sparkling Documentation"
 msgstr "Dokumentacja"
 
-#: ../inc/extras.php:394
+#: ../inc/extras.php:395
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
 msgstr "Najlepsza metoda aby się z nami skontaktować jest przez"
 
-#: ../inc/extras.php:394
+#: ../inc/extras.php:395
 msgid "Colorlib support forum"
 msgstr "Colorlib forum wsparcia"
 
-#: ../inc/extras.php:395
+#: ../inc/extras.php:396
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "Jeśli lubisz ten temat, będę wdzięczny za"
 
-#: ../inc/extras.php:397
+#: ../inc/extras.php:398
 msgid "Rate this Theme"
 msgstr "Oceń ten temat"
 
-#: ../inc/extras.php:398
+#: ../inc/extras.php:399
 msgid "Like on Facebook"
 msgstr "Polub nas na Facebook-u"
 
-#: ../inc/extras.php:399
+#: ../inc/extras.php:400
 msgid "Follow on Twitter"
 msgstr "Śledź nas na Twitterze"
 
@@ -853,15 +853,19 @@ msgstr ""
 msgid "GitHub"
 msgstr "Github"
 
-#: ../options.php:526
+#: ../options.php:527
+msgid "Spotify"
+msgstr ""
+
+#: ../options.php:534
 msgid "Other"
 msgstr "Inne"
 
-#: ../options.php:531
+#: ../options.php:539
 msgid "Custom CSS"
 msgstr "Własny CSS"
 
-#: ../options.php:532
+#: ../options.php:540
 msgid "Additional CSS"
 msgstr "Dodatkowy CSS"
 

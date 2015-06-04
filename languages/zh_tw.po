@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-05-21 18:35+0200\n"
-"PO-Revision-Date: 2015-05-21 18:35+0200\n"
+"POT-Creation-Date: 2015-06-04 14:54+0200\n"
+"PO-Revision-Date: 2015-06-04 14:54+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: 楊舒淳 Chaneswin <chacha@chaneswin.idv.tw>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8\n"
+"X-Generator: Poedit 1.8.1\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x;"
@@ -188,7 +188,7 @@ msgstr "繼續閱讀"
 msgid "Primary Menu"
 msgstr "主選單"
 
-#: ../functions.php:70 ../inc/extras.php:208
+#: ../functions.php:70 ../inc/extras.php:209
 msgid "Footer Links"
 msgstr "頁尾超連結"
 
@@ -384,46 +384,46 @@ msgstr "密碼:"
 msgid "Submit"
 msgstr "送出"
 
-#: ../inc/extras.php:172
+#: ../inc/extras.php:173
 msgid "Follow us on "
 msgstr "關注我們的"
 
-#: ../inc/extras.php:283
+#: ../inc/extras.php:284
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Theme by %1$s Powered by %2$s"
 
-#: ../inc/extras.php:387
+#: ../inc/extras.php:388
 msgid "Support and Documentation"
 msgstr "支援與輔助文件"
 
-#: ../inc/extras.php:393
+#: ../inc/extras.php:394
 msgid "Sparkling Documentation"
 msgstr "Sparkling 輔助文件"
 
-#: ../inc/extras.php:394
+#: ../inc/extras.php:395
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
 msgstr "聯絡我們以回報問題與提問的最好方式是用"
 
-#: ../inc/extras.php:394
+#: ../inc/extras.php:395
 msgid "Colorlib support forum"
 msgstr "Colorlib 支援論壇"
 
-#: ../inc/extras.php:395
+#: ../inc/extras.php:396
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "謝謝你喜歡這個佈景主題，請..."
 
-#: ../inc/extras.php:397
+#: ../inc/extras.php:398
 msgid "Rate this Theme"
 msgstr "為這個主題評分"
 
-#: ../inc/extras.php:398
+#: ../inc/extras.php:399
 msgid "Like on Facebook"
 msgstr "在 Facebook 幫我們按讚"
 
-#: ../inc/extras.php:399
+#: ../inc/extras.php:400
 msgid "Follow on Twitter"
 msgstr "在 Twitter 關注我們"
 
@@ -830,15 +830,19 @@ msgstr "SoundCloud"
 msgid "GitHub"
 msgstr "GitHub"
 
-#: ../options.php:526
+#: ../options.php:527
+msgid "Spotify"
+msgstr ""
+
+#: ../options.php:534
 msgid "Other"
 msgstr "其他"
 
-#: ../options.php:531
+#: ../options.php:539
 msgid "Custom CSS"
 msgstr "自訂CSS"
 
-#: ../options.php:532
+#: ../options.php:540
 msgid "Additional CSS"
 msgstr "外加的CSS"
 

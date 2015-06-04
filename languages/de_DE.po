@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling\n"
-"POT-Creation-Date: 2015-05-21 18:29+0200\n"
-"PO-Revision-Date: 2015-05-21 18:29+0200\n"
+"POT-Creation-Date: 2015-06-04 14:52+0200\n"
+"PO-Revision-Date: 2015-06-04 14:52+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8\n"
+"X-Generator: Poedit 1.8.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -206,7 +206,7 @@ msgstr "Weiterlesen"
 msgid "Primary Menu"
 msgstr "Hauptmenü"
 
-#: functions.php:70 inc/extras.php:208
+#: functions.php:70 inc/extras.php:209
 msgid "Footer Links"
 msgstr "Fußzeilenmenü"
 
@@ -414,24 +414,24 @@ msgstr "Passwort:"
 msgid "Submit"
 msgstr "Absenden"
 
-#: inc/extras.php:172
+#: inc/extras.php:173
 msgid "Follow us on "
 msgstr "Folge uns auf"
 
-#: inc/extras.php:283
+#: inc/extras.php:284
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Theme von %1$s Powered by %2$s"
 
-#: inc/extras.php:387
+#: inc/extras.php:388
 msgid "Support and Documentation"
 msgstr "Support und Dokumentation"
 
-#: inc/extras.php:393
+#: inc/extras.php:394
 msgid "Sparkling Documentation"
 msgstr "Sparkling Dokumentation"
 
-#: inc/extras.php:394
+#: inc/extras.php:395
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -439,23 +439,23 @@ msgstr ""
 "Der beste Weg uns zu <b>Support Anfragen</b> und <b>Fehler Reports</b> zu "
 "kontaktieren ist via"
 
-#: inc/extras.php:394
+#: inc/extras.php:395
 msgid "Colorlib support forum"
 msgstr "Colorlib Support Forum"
 
-#: inc/extras.php:395
+#: inc/extras.php:396
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "Wenn Dir dieses Theme gefällt, dann freue ich mich über:"
 
-#: inc/extras.php:397
+#: inc/extras.php:398
 msgid "Rate this Theme"
 msgstr "Dieses Theme bewerten"
 
-#: inc/extras.php:398
+#: inc/extras.php:399
 msgid "Like on Facebook"
 msgstr "Auf Facebook Liken"
 
-#: inc/extras.php:399
+#: inc/extras.php:400
 msgid "Follow on Twitter"
 msgstr "Auf Twitter folgen"
 
@@ -870,15 +870,19 @@ msgstr "SoundCloud"
 msgid "GitHub"
 msgstr ""
 
-#: options.php:526
+#: options.php:527
+msgid "Spotify"
+msgstr ""
+
+#: options.php:534
 msgid "Other"
 msgstr "Andere"
 
-#: options.php:531
+#: options.php:539
 msgid "Custom CSS"
 msgstr "Benutzerdefiniertes CSS"
 
-#: options.php:532
+#: options.php:540
 msgid "Additional CSS"
 msgstr "Zusätzliches CSS"
 

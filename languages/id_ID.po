@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling\n"
-"POT-Creation-Date: 2015-05-28 16:17+0700\n"
-"PO-Revision-Date: 2015-05-28 16:21+0700\n"
+"POT-Creation-Date: 2015-06-04 14:53+0200\n"
+"PO-Revision-Date: 2015-06-04 14:53+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: Rhiski Aprilianto <mail@rhiskiapril.com>\n"
 "Language: id_ID\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.6\n"
+"X-Generator: Poedit 1.8.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -208,7 +208,7 @@ msgstr "Baca Selengkapnya"
 msgid "Primary Menu"
 msgstr "Menu Utama"
 
-#: functions.php:70 inc/extras.php:208
+#: functions.php:70 inc/extras.php:209
 msgid "Footer Links"
 msgstr "Link footer"
 
@@ -412,24 +412,24 @@ msgstr "Kata sandi:"
 msgid "Submit"
 msgstr "Kirim"
 
-#: inc/extras.php:172
+#: inc/extras.php:173
 msgid "Follow us on "
 msgstr "Ikuti kami di"
 
-#: inc/extras.php:283
+#: inc/extras.php:284
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Tema oleh %1$s diberdayakan oleh %2$s"
 
-#: inc/extras.php:387
+#: inc/extras.php:388
 msgid "Support and Documentation"
 msgstr "Dukungan dan Dokumentasi"
 
-#: inc/extras.php:393
+#: inc/extras.php:394
 msgid "Sparkling Documentation"
 msgstr "Dokumentasi Sparkling"
 
-#: inc/extras.php:394
+#: inc/extras.php:395
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -437,23 +437,23 @@ msgstr ""
 "Cara terbaik untuk menghubungi kami dengan <b>pertanyaan dukungan</b> dan "
 "<b>laporan bug</b> melalui"
 
-#: inc/extras.php:394
+#: inc/extras.php:395
 msgid "Colorlib support forum"
 msgstr "Colorlib support forum"
 
-#: inc/extras.php:395
+#: inc/extras.php:396
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "Jika Anda menyukai tema ini, saya akan menghargai hal-hal berikut:"
 
-#: inc/extras.php:397
+#: inc/extras.php:398
 msgid "Rate this Theme"
 msgstr "Merating Tema ini"
 
-#: inc/extras.php:398
+#: inc/extras.php:399
 msgid "Like on Facebook"
 msgstr "Sukai kami di Facebook"
 
-#: inc/extras.php:399
+#: inc/extras.php:400
 msgid "Follow on Twitter"
 msgstr "Ikuti Kami di Twitter"
 
@@ -871,15 +871,19 @@ msgstr "SoundCloud"
 msgid "GitHub"
 msgstr "GitHub"
 
-#: options.php:526
+#: options.php:527
+msgid "Spotify"
+msgstr ""
+
+#: options.php:534
 msgid "Other"
 msgstr "Lainnya"
 
-#: options.php:531
+#: options.php:539
 msgid "Custom CSS"
 msgstr "Kustom CSS"
 
-#: options.php:532
+#: options.php:540
 msgid "Additional CSS"
 msgstr "CSS Tambahan"
 
