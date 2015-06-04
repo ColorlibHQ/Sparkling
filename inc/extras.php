@@ -146,22 +146,23 @@ if ( ! function_exists( 'sparkling_social' ) ) :
  */
 function sparkling_social(){
   $services = array (
-    'facebook'    => 'Facebook',
-    'twitter'     => 'Twitter',
-    'googleplus'  => 'Google+',
-    'youtube'     => 'Youtube',
-    'vimeo'       => 'Vimeo',
-    'linkedin'    => 'LinkedIn',
-    'pinterest'   => 'Pinterest',
-    'rss'         => 'RSS',
-    'tumblr'      => 'Tumblr',
-    'flickr'      => 'Flickr',
-    'instagram'   => 'Instagram',
-    'dribbble'    => 'Dribbble',
-    'skype'       => 'Skype',
-    'foursquare'  => 'Foursquare',
-    'soundcloud'  => 'SoundCloud',
-    'github'      => 'GitHub'
+    'facebook'   => 'Facebook',
+    'twitter'    => 'Twitter',
+    'googleplus' => 'Google+',
+    'youtube'    => 'Youtube',
+    'vimeo'      => 'Vimeo',
+    'linkedin'   => 'LinkedIn',
+    'pinterest'  => 'Pinterest',
+    'rss'        => 'RSS',
+    'tumblr'     => 'Tumblr',
+    'flickr'     => 'Flickr',
+    'instagram'  => 'Instagram',
+    'dribbble'   => 'Dribbble',
+    'skype'      => 'Skype',
+    'foursquare' => 'Foursquare',
+    'soundcloud' => 'SoundCloud',
+    'github'     => 'GitHub',
+    'spotify'    => 'Spotify'
     );
 
   echo '<div class="social-icons">';

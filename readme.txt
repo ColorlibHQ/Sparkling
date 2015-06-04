@@ -69,6 +69,8 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 * Introduced option to change full content vs exceprt for blog page.
 * New option to disable comments on static pages via Customizer
 * Removed redundant search form override
+* Added Spotify icon
+* Updated FontAwesome librayry to 4.3
 
 = 1.8.5 - 21.05.2015 =
 

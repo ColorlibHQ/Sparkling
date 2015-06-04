@@ -1313,6 +1313,9 @@ p.logged-in-as {
 .social-icons a.github:hover {
   background-color: #4183C4 !important;
 }
+.social-icons a.spotify:hover {
+  background-color: #81b71a !important;
+}
 .fa-googleplus:before {
   content: "\f0d5";
 }
