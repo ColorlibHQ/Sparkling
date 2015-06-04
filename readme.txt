@@ -28,7 +28,7 @@ Sparkling theme uses:
 
 /*========= Description =========*/
 
-Sparkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, portfolio, design, art, photography, personal and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready, compatible with WPML and is available in Spanish, French, Dutch, Polish, Russian, German, Brazilian Portuguese, Portuguese (Portugal), Persian (Iranian language), Romanian, Turkish, Bulgarian, Japanese, Lithuanian, Czech, Ukrainian, Traditional Chinese and Italian. Sparkling is a free WordPress theme with premium functionality and design. Now theme is optimized to work with bbPress, Contact Form 7, Jetpack and other popular free and premium plugins.
+Sparkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, portfolio, design, art, photography, personal and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready, compatible with WPML and is available in Spanish, French, Dutch, Polish, Russian, German, Brazilian Portuguese, Portuguese (Portugal), Persian (Iranian language), Romanian, Turkish, Bulgarian, Japanese, Lithuanian, Czech, Ukrainian, Traditional Chinese, Indonesian and Italian. Sparkling is a free WordPress theme with premium functionality and design. Now theme is optimized to work with bbPress, Contact Form 7, Jetpack and other popular free and premium plugins.
 
 
 
@@ -71,6 +71,7 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 * Removed redundant search form override
 * Added Spotify icon
 * Updated FontAwesome librayry to 4.3
+* Added Indonesian translation
 
 = 1.8.5 - 21.05.2015 =
 
