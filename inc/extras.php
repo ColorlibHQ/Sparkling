@@ -111,8 +111,9 @@ function sparkling_setup_author() {
 add_action( 'wp', 'sparkling_setup_author' );
 
 
-/****************** password protected post form *****/
-
+/**
+ * Password protected post form using Boostrap classes
+ */
 add_filter( 'the_password_form', 'custom_password_form' );
 
 function custom_password_form() {
@@ -125,7 +126,7 @@ function custom_password_form() {
         <label for="' . $label . '">' . esc_html__( "Password:" ,'sparkling') . ' </label>
       <div class="input-group">
         <input class="form-control" value="' . get_search_query() . '" name="post_password" id="' . $label . '" type="password">
-        <span class="input-group-btn"><button type="submit" class="btn btn-default" name="submit" id="searchsubmit" vvalue="' . esc_attresc_html__( "Submit",'sparkling' ) . '">' . esc_html__( "Submit" ,'sparkling') . '</button>
+        <span class="input-group-btn"><button type="submit" class="btn btn-default" name="submit" id="searchsubmit" value="' . esc_attr__( "Submit",'sparkling' ) . '">' . esc_html__( "Submit" ,'sparkling') . '</button>
         </span>
       </div>
     </div>
@@ -392,7 +393,7 @@ function sparkling_options_display_sidebar() { ?>
             <div class="tw-follow" ><a href="https://twitter.com/colorlib" class="twitter-follow-button" data-show-count="false">Follow @colorlib</a></div>
           </div>
             <p><b><a href="<?php echo esc_url( 'http://colorlib.com/wp/support/sparkling' ); ?>"><?php esc_html_e('Sparkling Documentation','sparkling'); ?></a></b></p>
-            <p><?php esc_html_e('The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via','sparkling') ?> <a href="<?php echo esc_url( 'http://colorlib.com/wp/forums' ); ?>"><?php esc_html_e('Colorlib support forum','sparkling') ?></a>.</p>
+            <p><?php _e('The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via','sparkling') ?> <a href="<?php echo esc_url( 'http://colorlib.com/wp/forums' ); ?>"><?php esc_html_e('Colorlib support forum','sparkling') ?></a>.</p>
             <p><?php esc_html_e('If you like this theme, I\'d appreciate any of the following:','sparkling') ?></p>
             <ul>
               <li><a class="button" href="<?php echo esc_url( 'http://wordpress.org/support/view/theme-reviews/sparkling?filter=5' ); ?>" title="<?php esc_attr_e('Rate this Theme', 'sparkling'); ?>" target="_blank"><?php printf(esc_html__('Rate this Theme','sparkling')); ?></a></li>

@@ -14,8 +14,8 @@ class sparkling_popular_posts extends WP_Widget
 
     function widget($args , $instance) {
     	extract($args);
-        $title = ($instance['title']) ? $instance['title'] : esc_html__('Popular Posts', 'sparkling');
-        $limit = ($instance['limit']) ? $instance['limit'] : 5;
+        $title = isset($instance['title']) ? $instance['title'] : esc_html__('Popular Posts', 'sparkling');
+        $limit = isset($instance['limit']) ? $instance['limit'] : 5;
 
       echo $before_widget;
       echo $before_title;

@@ -14,7 +14,7 @@ class sparkling_categories extends WP_Widget
 
     function widget($args , $instance) {
     	extract($args);
-        $title = ($instance['title']) ? $instance['title'] : esc_html__('Categories' , 'sparkling');
+        $title = isset($instance['title']) ? $instance['title'] : esc_html__('Categories' , 'sparkling');
         $enable_count = '';
         if(isset($instance['enable_count']))
         $enable_count = $instance['enable_count'] ? $instance['enable_count'] : 'checked';

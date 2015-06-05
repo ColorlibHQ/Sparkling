@@ -14,7 +14,7 @@ class sparkling_social_widget extends WP_Widget
 
     function widget($args , $instance) {
     	extract($args);
-        $title = ($instance['title']) ? $instance['title'] : esc_html__('Follow us' , 'sparkling');
+        $title = isset($instance['title']) ? $instance['title'] : esc_html__('Follow us' , 'sparkling');
 
       echo $before_widget;
       echo $before_title;
