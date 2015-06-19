@@ -19,8 +19,8 @@ get_header();
 							</div><!-- .entry-meta -->
 
 							<nav role="navigation" id="image-navigation" class="navigation-image nav-links">
-								<div class="nav-previous"><?php previous_image_link( false, esc_html__( '<i class="fa fa-chevron-left"></i> Previous', 'sparkling' ) ); ?></div>
-								<div class="nav-next"><?php next_image_link( false, esc_html__( 'Next <i class="fa fa-chevron-right"></i>', 'sparkling' ) ); ?></div>
+								<div class="nav-previous"><?php previous_image_link( false, __( '<i class="fa fa-chevron-left"></i> Previous', 'sparkling' ) ); ?></div>
+								<div class="nav-next"><?php next_image_link( false, __( 'Next <i class="fa fa-chevron-right"></i>', 'sparkling' ) ); ?></div>
 							</nav><!-- #image-navigation -->
 						</header><!-- .entry-header -->
 

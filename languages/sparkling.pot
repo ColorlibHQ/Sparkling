@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-06-04 14:52+0200\n"
+"POT-Creation-Date: 2015-06-19 09:44+0200\n"
 "PO-Revision-Date: 2015-04-04 15:03+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
@@ -142,7 +142,8 @@ msgstr ""
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
-#: ../content-page.php:21 ../content-single.php:35 ../content.php:49 ../image.php:79
+#: ../content-page.php:21 ../content-single.php:35 ../content.php:49
+#: ../image.php:79
 msgid "Pages:"
 msgstr ""
 
@@ -179,7 +180,7 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: ../functions.php:70 ../inc/extras.php:209
+#: ../functions.php:70 ../inc/extras.php:210
 msgid "Footer Links"
 msgstr ""
 
@@ -248,11 +249,13 @@ msgstr ""
 msgid "No file chosen"
 msgstr ""
 
-#: ../inc/admin/includes/class-options-media-uploader.php:65 ../inc/admin/includes/class-options-media-uploader.php:118
+#: ../inc/admin/includes/class-options-media-uploader.php:65
+#: ../inc/admin/includes/class-options-media-uploader.php:118
 msgid "Upload"
 msgstr ""
 
-#: ../inc/admin/includes/class-options-media-uploader.php:67 ../inc/admin/includes/class-options-media-uploader.php:119
+#: ../inc/admin/includes/class-options-media-uploader.php:67
+#: ../inc/admin/includes/class-options-media-uploader.php:119
 msgid "Remove"
 msgstr ""
 
@@ -357,56 +360,56 @@ msgstr ""
 msgid "Page %s"
 msgstr ""
 
-#: ../inc/extras.php:124
+#: ../inc/extras.php:125
 msgid "<p>This post is password protected. To view it please enter your password below:</p>"
 msgstr ""
 
-#: ../inc/extras.php:125
+#: ../inc/extras.php:126
 msgid "Password:"
 msgstr ""
 
-#: ../inc/extras.php:128
+#: ../inc/extras.php:129
 msgid "Submit"
 msgstr ""
 
-#: ../inc/extras.php:173
+#: ../inc/extras.php:174
 msgid "Follow us on "
 msgstr ""
 
-#: ../inc/extras.php:284
+#: ../inc/extras.php:285
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr ""
 
-#: ../inc/extras.php:388
+#: ../inc/extras.php:389
 msgid "Support and Documentation"
 msgstr ""
 
-#: ../inc/extras.php:394
+#: ../inc/extras.php:395
 msgid "Sparkling Documentation"
 msgstr ""
 
-#: ../inc/extras.php:395
+#: ../inc/extras.php:396
 msgid "The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via"
 msgstr ""
 
-#: ../inc/extras.php:395
+#: ../inc/extras.php:396
 msgid "Colorlib support forum"
 msgstr ""
 
-#: ../inc/extras.php:396
+#: ../inc/extras.php:397
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr ""
 
-#: ../inc/extras.php:398
+#: ../inc/extras.php:399
 msgid "Rate this Theme"
 msgstr ""
 
-#: ../inc/extras.php:399
+#: ../inc/extras.php:400
 msgid "Like on Facebook"
 msgstr ""
 
-#: ../inc/extras.php:400
+#: ../inc/extras.php:401
 msgid "Follow on Twitter"
 msgstr ""
 
@@ -426,11 +429,13 @@ msgstr ""
 msgid "Post navigation"
 msgstr ""
 
-#: ../inc/widgets/widget-categories.php:11 ../inc/widgets/widget-categories.php:12
+#: ../inc/widgets/widget-categories.php:11
+#: ../inc/widgets/widget-categories.php:12
 msgid "Sparkling Categories"
 msgstr ""
 
-#: ../inc/widgets/widget-categories.php:17 ../inc/widgets/widget-categories.php:76
+#: ../inc/widgets/widget-categories.php:17
+#: ../inc/widgets/widget-categories.php:76
 msgid "Categories"
 msgstr ""
 
@@ -446,11 +451,13 @@ msgstr ""
 msgid "Enable Posts Count"
 msgstr ""
 
-#: ../inc/widgets/widget-popular-posts.php:11 ../inc/widgets/widget-popular-posts.php:12
+#: ../inc/widgets/widget-popular-posts.php:11
+#: ../inc/widgets/widget-popular-posts.php:12
 msgid "Sparkling Popular Posts Widget"
 msgstr ""
 
-#: ../inc/widgets/widget-popular-posts.php:17 ../inc/widgets/widget-popular-posts.php:94
+#: ../inc/widgets/widget-popular-posts.php:17
+#: ../inc/widgets/widget-popular-posts.php:94
 msgid "Popular Posts"
 msgstr ""
 
@@ -558,8 +565,9 @@ msgstr ""
 msgid "Element color"
 msgstr ""
 
-#: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213 ../options.php:221 ../options.php:229
-#: ../options.php:259 ../options.php:267 ../options.php:280 ../options.php:382 ../options.php:390
+#: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
+#: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
+#: ../options.php:280 ../options.php:382 ../options.php:390
 msgid "Default used if no color is selected"
 msgstr ""
 

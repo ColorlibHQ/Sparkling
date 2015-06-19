@@ -2,7 +2,7 @@
 
 Theme Name: Sparkling
 Theme URI: http://colorlib.com/wp/sparkling/
-Version: 1.9.1
+Version: 1.9.2
 Tested up to: WP 4.2
 
 Author: Aigars Silkalns
@@ -64,17 +64,21 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
 
+= 1.9.2 - 19.06.2015 =
+
+* Fixed minor bug with attachement pages
+
 = 1.9.1 - 05.06.2015 =
 
 * Fixed two minor bugs in custom theme widgets
 
 = 1.9.0 - 21.05.2015 =
 
-* Introduced option to change full content vs exceprt for blog page.
+* Introduced option to change full content vs excerpt for blog page.
 * New option to disable comments on static pages via Customizer
 * Removed redundant search form override
 * Added Spotify icon
-* Updated FontAwesome librayry to 4.3
+* Updated FontAwesome library to 4.3
 * Added Indonesian translation
 
 = 1.8.5 - 21.05.2015 =
@@ -86,7 +90,7 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 * Added Czech translation
 * Added Ukrainian translation thanks to Vladyslav
-* Added Traditional Chinese thaks to ShuChun
+* Added Traditional Chinese thanks to ShuChun
 
 = 1.8.2 - 23.04.2015 =
 
@@ -96,7 +100,7 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 = 1.8.1 - 16.04.2015 =
 
-* Removed accidently added string from header.php
+* Removed accidentally added string from header.php
 
 = 1.8.0 - 04.04.2015 =
 
