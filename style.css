@@ -827,16 +827,19 @@ button:hover {
   color: #fff;
   background-color: #DA4453;
 }
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
+  .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {
+    color: #fff;
+    background-color: #DA4453;
+  }
+}
 .dropdown-menu {
   font-size: 13px;
 }
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
   color: #DADADA;
-}
-@media (min-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #656D78;
-  }
 }
 @media (min-width: 979px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {

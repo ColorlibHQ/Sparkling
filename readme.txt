@@ -66,7 +66,9 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 = 1.9.2 - 19.06.2015 =
 
-* Fixed minor bug with attachement pages
+* Fixed minor bug with attachement pages.
+* Fixed minor bug with navigation submenu color on mobile devices.
+* Other menu styling improvements
 
 = 1.9.1 - 05.06.2015 =
 
