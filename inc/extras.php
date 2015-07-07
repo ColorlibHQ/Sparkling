@@ -145,8 +145,8 @@ if ( ! function_exists( 'sparkling_social' ) ) :
 /**
  * Display social links in footer and widgets if enabled
  */
-function sparkling_social(){
-  if(of_get_option( 'footer_social' ) != 0){
+function sparkling_social($force = false){
+  if($force || of_get_option( 'footer_social' ) != 0){
     $services = array (
       'facebook'   => 'Facebook',
       'twitter'    => 'Twitter',
