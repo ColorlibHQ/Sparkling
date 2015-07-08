@@ -1,15 +1,13 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-06-04 14:54+0200\n"
-"PO-Revision-Date: 2015-06-04 14:54+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: tr_TR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.1\n"
+"X-Generator: Poedit 1.8.2\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;esc_html__;esc_html_e__;esc_attr__;esc_html__;"
@@ -188,7 +186,6 @@ msgstr "Fazlasını Oku"
 msgid "Primary Menu"
 msgstr "Birincil Menü"
 
-#: ../functions.php:70 ../inc/extras.php:209
 msgid "Footer Links"
 msgstr "Sayfa Altı Bağlantıları"
 
@@ -372,7 +369,6 @@ msgstr "Ana sayfada gösterilir"
 msgid "Page %s"
 msgstr "Sayfa  %s"
 
-#: ../inc/extras.php:124
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
@@ -380,32 +376,25 @@ msgstr ""
 "<p>Bu gönderi şifre korumalıdır. Görüntülemek için şifrenizi aşağıya girin:</"
 "p>"
 
-#: ../inc/extras.php:125
 msgid "Password:"
 msgstr "Şifre:"
 
-#: ../inc/extras.php:128
 msgid "Submit"
 msgstr "Teslim et"
 
-#: ../inc/extras.php:173
 msgid "Follow us on "
 msgstr "Bizi takip edin"
 
-#: ../inc/extras.php:284
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Temayı yapan %1$s Çalışmasını sağlayan %2$s"
 
-#: ../inc/extras.php:388
 msgid "Support and Documentation"
 msgstr "Destek ve Dökümanlar"
 
-#: ../inc/extras.php:394
 msgid "Sparkling Documentation"
 msgstr "Sparkling Dökümanları"
 
-#: ../inc/extras.php:395
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -413,24 +402,19 @@ msgstr ""
 "Bizimle temas kurmanın en iyi yolu <b>destek soruları</b> ve <b>hata "
 "raporları</b> ile"
 
-#: ../inc/extras.php:395
 msgid "Colorlib support forum"
 msgstr "Colorlib destek forumu"
 
-#: ../inc/extras.php:396
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr ""
 "Eğer bu temayı sevdiysen, Takip edenlerden herhangi biri makbule geçer:"
 
-#: ../inc/extras.php:398
 msgid "Rate this Theme"
 msgstr "Temayı derecelendir"
 
-#: ../inc/extras.php:399
 msgid "Like on Facebook"
 msgstr "Facebookda beğen"
 
-#: ../inc/extras.php:400
 msgid "Follow on Twitter"
 msgstr " Twitterda takip et"
 
@@ -580,7 +564,6 @@ msgstr "Element rengi"
 
 #: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
 #: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
-#: ../options.php:280 ../options.php:382 ../options.php:390
 msgid "Default used if no color is selected"
 msgstr "Ren seçilmediyse ön ayarlı renk kullanılır"
 
@@ -754,95 +737,72 @@ msgstr "Site altındaki telif hakkı yazısı"
 msgid "Social"
 msgstr "Sosyal"
 
-#: ../options.php:381
 msgid "Social icon color"
 msgstr "Sosyak ikon rengi"
 
-#: ../options.php:389
 msgid "Footer social icon color"
 msgstr "Site altı sosyal ikon rengi"
 
-#: ../options.php:397
 msgid "Add full URL for your social network profiles"
 msgstr "Sosyal ağ profillerinizin tam URL sini ekleyin"
 
-#: ../options.php:398
 msgid "Facebook"
 msgstr "Facebook"
 
-#: ../options.php:407
 msgid "Twitter"
 msgstr "Twitter"
 
-#: ../options.php:415
 msgid "Google+"
 msgstr "Google+"
 
-#: ../options.php:423
 msgid "Youtube"
 msgstr "Youtube"
 
-#: ../options.php:431
 msgid "Vimeo"
 msgstr "Vimeo"
 
-#: ../options.php:439
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
-#: ../options.php:447
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: ../options.php:455
 msgid "RSS Feed"
 msgstr "RSS Besleme"
 
-#: ../options.php:463
 msgid "Tumblr"
 msgstr "Tumblr"
 
-#: ../options.php:471
 msgid "Flickr"
 msgstr "Flickr"
 
-#: ../options.php:479
 msgid "Instagram"
 msgstr "Instagram"
 
-#: ../options.php:487
 msgid "Dribbble"
 msgstr "Dribbble"
 
-#: ../options.php:495
 msgid "Skype"
 msgstr "Skype"
 
-#: ../options.php:503
 msgid "Foursquare"
 msgstr "Foursquare"
 
-#: ../options.php:511
 msgid "SoundCloud"
 msgstr "SoundCloud"
 
-#: ../options.php:519
 msgid "GitHub"
 msgstr "GitHub"
 
-#: ../options.php:527
 msgid "Spotify"
 msgstr ""
 
-#: ../options.php:534
 msgid "Other"
 msgstr "Diğer"
 
-#: ../options.php:539
 msgid "Custom CSS"
 msgstr "Özel CSS"
 
-#: ../options.php:540
 msgid "Additional CSS"
 msgstr "Fazladan CSS"
 

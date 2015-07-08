@@ -2,14 +2,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-06-19 09:44+0200\n"
+"POT-Creation-Date: 2015-07-08 14:18+0300\n"
 "PO-Revision-Date: 2015-04-04 15:03+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.1\n"
+"X-Generator: Poedit 1.8.2\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x;_nx:4c,1,2;_n:1,2\n"
@@ -180,7 +180,7 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: ../functions.php:70 ../inc/extras.php:210
+#: ../functions.php:70 ../inc/extras.php:212
 msgid "Footer Links"
 msgstr ""
 
@@ -372,44 +372,44 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: ../inc/extras.php:174
+#: ../inc/extras.php:175
 msgid "Follow us on "
 msgstr ""
 
-#: ../inc/extras.php:285
+#: ../inc/extras.php:287
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr ""
 
-#: ../inc/extras.php:389
+#: ../inc/extras.php:394
 msgid "Support and Documentation"
 msgstr ""
 
-#: ../inc/extras.php:395
+#: ../inc/extras.php:400
 msgid "Sparkling Documentation"
 msgstr ""
 
-#: ../inc/extras.php:396
+#: ../inc/extras.php:401
 msgid "The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via"
 msgstr ""
 
-#: ../inc/extras.php:396
+#: ../inc/extras.php:401
 msgid "Colorlib support forum"
 msgstr ""
 
-#: ../inc/extras.php:397
+#: ../inc/extras.php:402
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr ""
 
-#: ../inc/extras.php:399
+#: ../inc/extras.php:404
 msgid "Rate this Theme"
 msgstr ""
 
-#: ../inc/extras.php:400
+#: ../inc/extras.php:405
 msgid "Like on Facebook"
 msgstr ""
 
-#: ../inc/extras.php:401
+#: ../inc/extras.php:406
 msgid "Follow on Twitter"
 msgstr ""
 
@@ -567,7 +567,7 @@ msgstr ""
 
 #: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
 #: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
-#: ../options.php:280 ../options.php:382 ../options.php:390
+#: ../options.php:280 ../options.php:390 ../options.php:398
 msgid "Default used if no color is selected"
 msgstr ""
 
@@ -736,98 +736,106 @@ msgid "Copyright text in footer"
 msgstr ""
 
 #: ../options.php:376
+msgid "Footer Social Icons"
+msgstr ""
+
+#: ../options.php:377
+msgid "Show/Hide social icons in footer"
+msgstr ""
+
+#: ../options.php:384
 msgid "Social"
 msgstr ""
 
-#: ../options.php:381
+#: ../options.php:389
 msgid "Social icon color"
 msgstr ""
 
-#: ../options.php:389
+#: ../options.php:397
 msgid "Footer social icon color"
 msgstr ""
 
-#: ../options.php:397
+#: ../options.php:405
 msgid "Add full URL for your social network profiles"
 msgstr ""
 
-#: ../options.php:398
+#: ../options.php:406
 msgid "Facebook"
 msgstr ""
 
-#: ../options.php:407
+#: ../options.php:415
 msgid "Twitter"
 msgstr ""
 
-#: ../options.php:415
+#: ../options.php:423
 msgid "Google+"
 msgstr ""
 
-#: ../options.php:423
+#: ../options.php:431
 msgid "Youtube"
 msgstr ""
 
-#: ../options.php:431
+#: ../options.php:439
 msgid "Vimeo"
 msgstr ""
 
-#: ../options.php:439
+#: ../options.php:447
 msgid "LinkedIn"
 msgstr ""
 
-#: ../options.php:447
+#: ../options.php:455
 msgid "Pinterest"
 msgstr ""
 
-#: ../options.php:455
+#: ../options.php:463
 msgid "RSS Feed"
 msgstr ""
 
-#: ../options.php:463
+#: ../options.php:471
 msgid "Tumblr"
 msgstr ""
 
-#: ../options.php:471
+#: ../options.php:479
 msgid "Flickr"
 msgstr ""
 
-#: ../options.php:479
+#: ../options.php:487
 msgid "Instagram"
 msgstr ""
 
-#: ../options.php:487
+#: ../options.php:495
 msgid "Dribbble"
 msgstr ""
 
-#: ../options.php:495
+#: ../options.php:503
 msgid "Skype"
 msgstr ""
 
-#: ../options.php:503
+#: ../options.php:511
 msgid "Foursquare"
 msgstr ""
 
-#: ../options.php:511
+#: ../options.php:519
 msgid "SoundCloud"
 msgstr ""
 
-#: ../options.php:519
+#: ../options.php:527
 msgid "GitHub"
 msgstr ""
 
-#: ../options.php:527
+#: ../options.php:535
 msgid "Spotify"
 msgstr ""
 
-#: ../options.php:534
+#: ../options.php:542
 msgid "Other"
 msgstr ""
 
-#: ../options.php:539
+#: ../options.php:547
 msgid "Custom CSS"
 msgstr ""
 
-#: ../options.php:540
+#: ../options.php:548
 msgid "Additional CSS"
 msgstr ""
 
