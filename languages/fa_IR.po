@@ -1,19 +1,20 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-06-04 14:53+0200\n"
-"PO-Revision-Date: 2015-06-04 14:53+0200\n"
+"POT-Creation-Date: 2015-07-08 17:07+0300\n"
+"PO-Revision-Date: 2015-07-08 17:07+0300\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: RobertCreed <info@robertcreed.me>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.1\n"
+"X-Generator: Poedit 1.8.2\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x;"
-"_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
+"esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
+"_nx: 4c,1,2;_n:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
@@ -196,7 +197,7 @@ msgstr "بیشتر بخوانید"
 msgid "Primary Menu"
 msgstr "قهرست اولیه"
 
-#: ../functions.php:70 ../inc/extras.php:209
+#: ../functions.php:70 ../inc/extras.php:212
 msgid "Footer Links"
 msgstr "لینک پانویس"
 
@@ -379,7 +380,7 @@ msgstr "نمایش در صفحه اصلی"
 msgid "Page %s"
 msgstr "صفحات %s"
 
-#: ../inc/extras.php:124
+#: ../inc/extras.php:125
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
@@ -387,54 +388,54 @@ msgstr ""
 "<p>این مطلب با رمز عبور محافظت می شود. برای نمایش رمز را در پایین وارد کنید: "
 "</p>"
 
-#: ../inc/extras.php:125
+#: ../inc/extras.php:126
 msgid "Password:"
 msgstr "رمز عبور:"
 
-#: ../inc/extras.php:128
+#: ../inc/extras.php:129
 msgid "Submit"
 msgstr "تایید"
 
-#: ../inc/extras.php:173
+#: ../inc/extras.php:175
 msgid "Follow us on "
 msgstr "ما را دنبال کنید در"
 
-#: ../inc/extras.php:284
+#: ../inc/extras.php:287
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "پوسته توسط %1$s قدرت گرفته از %2$s"
 
-#: ../inc/extras.php:388
+#: ../inc/extras.php:394
 msgid "Support and Documentation"
 msgstr "پشتیبانی و مستندات"
 
-#: ../inc/extras.php:394
+#: ../inc/extras.php:400
 msgid "Sparkling Documentation"
 msgstr "مستندات Sparkling"
 
-#: ../inc/extras.php:395
+#: ../inc/extras.php:401
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
 msgstr "بهترین راه تماس با ما <b>پشتیبانی پرسش</b> و <b>گزارش باگ </b> است"
 
-#: ../inc/extras.php:395
+#: ../inc/extras.php:401
 msgid "Colorlib support forum"
 msgstr "انجمن پشتیبانی Colorlib"
 
-#: ../inc/extras.php:396
+#: ../inc/extras.php:402
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "اگر این قالب را می پسندید، من قدردانی میکنم از هر نوع دنبال کردنی:"
 
-#: ../inc/extras.php:398
+#: ../inc/extras.php:404
 msgid "Rate this Theme"
 msgstr "رای به این قالب"
 
-#: ../inc/extras.php:399
+#: ../inc/extras.php:405
 msgid "Like on Facebook"
 msgstr "پسند به ما در فیسبوک"
 
-#: ../inc/extras.php:400
+#: ../inc/extras.php:406
 msgid "Follow on Twitter"
 msgstr "دنبال کردن ما در توییتر"
 
@@ -592,7 +593,7 @@ msgstr "رنگ عنصر"
 
 #: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
 #: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
-#: ../options.php:280 ../options.php:382 ../options.php:390
+#: ../options.php:280 ../options.php:390 ../options.php:398
 msgid "Default used if no color is selected"
 msgstr "به طور پیش فرض استفاده می شود اگر رنگ انتخاب شود"
 
@@ -764,111 +765,121 @@ msgid "Copyright text in footer"
 msgstr "رنگ متن کپی رایت در پانویس"
 
 #: ../options.php:376
+#, fuzzy
+msgid "Footer Social Icons"
+msgstr "رنگ آیکون های اجتماعی پانویس"
+
+#: ../options.php:377
+#, fuzzy
+msgid "Show/Hide social icons in footer"
+msgstr "رنگ آیکون های اجتماعی پانویس"
+
+#: ../options.php:384
 msgid "Social"
 msgstr "اجتماعی"
 
-#: ../options.php:381
+#: ../options.php:389
 msgid "Social icon color"
 msgstr "رنگ آیکون های اجتماعی"
 
-#: ../options.php:389
+#: ../options.php:397
 msgid "Footer social icon color"
 msgstr "رنگ آیکون های اجتماعی پانویس"
 
-#: ../options.php:397
+#: ../options.php:405
 msgid "Add full URL for your social network profiles"
 msgstr "اضافه کردن URL کامل برای پروفایل های شبکه های اجتماعی خود"
 
-#: ../options.php:398
+#: ../options.php:406
 #, fuzzy
 msgid "Facebook"
 msgstr "فیسبوک"
 
-#: ../options.php:407
+#: ../options.php:415
 #, fuzzy
 msgid "Twitter"
 msgstr "توئیتر"
 
-#: ../options.php:415
+#: ../options.php:423
 #, fuzzy
 msgid "Google+"
 msgstr "گوگل پلاس"
 
-#: ../options.php:423
+#: ../options.php:431
 #, fuzzy
 msgid "Youtube"
 msgstr "یوتیوب"
 
-#: ../options.php:431
+#: ../options.php:439
 msgid "Vimeo"
 msgstr ""
 
-#: ../options.php:439
+#: ../options.php:447
 #, fuzzy
 msgid "LinkedIn"
 msgstr "لينكداين"
 
-#: ../options.php:447
+#: ../options.php:455
 #, fuzzy
 msgid "Pinterest"
 msgstr "پینترست"
 
-#: ../options.php:455
+#: ../options.php:463
 #, fuzzy
 msgid "RSS Feed"
 msgstr "خوراک RSS"
 
-#: ../options.php:463
+#: ../options.php:471
 #, fuzzy
 msgid "Tumblr"
 msgstr "تامبلر"
 
-#: ../options.php:471
+#: ../options.php:479
 #, fuzzy
 msgid "Flickr"
 msgstr "فلیکر"
 
-#: ../options.php:479
+#: ../options.php:487
 #, fuzzy
 msgid "Instagram"
 msgstr "اینستاگرام"
 
-#: ../options.php:487
+#: ../options.php:495
 #, fuzzy
 msgid "Dribbble"
 msgstr "دریبل"
 
-#: ../options.php:495
+#: ../options.php:503
 #, fuzzy
 msgid "Skype"
 msgstr "اسکایپ"
 
-#: ../options.php:503
+#: ../options.php:511
 msgid "Foursquare"
 msgstr ""
 
-#: ../options.php:511
+#: ../options.php:519
 msgid "SoundCloud"
 msgstr ""
 
-#: ../options.php:519
+#: ../options.php:527
 #, fuzzy
 msgid "GitHub"
 msgstr "گیت هاب"
 
-#: ../options.php:527
+#: ../options.php:535
 msgid "Spotify"
 msgstr ""
 
-#: ../options.php:534
+#: ../options.php:542
 msgid "Other"
 msgstr "دیگر"
 
-#: ../options.php:539
+#: ../options.php:547
 msgid "Custom CSS"
 msgstr "CSS سفارشی"
 
-#: ../options.php:540
+#: ../options.php:548
 msgid "Additional CSS"
 msgstr "CSS اضافی"
 
@@ -878,14 +889,31 @@ msgid "Search Results for: %s"
 msgstr "نتایج جستجو برای: %s"
 
 #: ../searchform.php:11
-msgid "Search..."
-msgstr "جستجو..."
-
-#: ../searchform.php:13
 #, fuzzy
+msgid "Search for:"
+msgstr "جستجو برای:"
+
+#: ../searchform.php:12
+#, fuzzy
+msgctxt "placeholder"
+msgid "Search&hellip;"
+msgstr "جستجو"
+
+#: ../searchform.php:12
+#, fuzzy
+msgctxt "label"
+msgid "Search for:"
+msgstr "جستجو برای:"
+
+#: ../searchform.php:14
+#, fuzzy
+msgctxt "submit button"
 msgid "Search"
 msgstr "جستجو"
 
 #: ../sidebar.php:26
 msgid "Meta"
 msgstr "متا"
+
+#~ msgid "Search..."
+#~ msgstr "جستجو..."

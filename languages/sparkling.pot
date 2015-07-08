@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-07-08 14:18+0300\n"
+"POT-Creation-Date: 2015-07-08 16:26+0300\n"
 "PO-Revision-Date: 2015-04-04 15:03+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
@@ -12,7 +12,8 @@ msgstr ""
 "X-Generator: Poedit 1.8.2\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
@@ -845,10 +846,21 @@ msgid "Search Results for: %s"
 msgstr ""
 
 #: ../searchform.php:11
-msgid "Search..."
+msgid "Search for:"
 msgstr ""
 
-#: ../searchform.php:13
+#: ../searchform.php:12
+msgctxt "placeholder"
+msgid "Search&hellip;"
+msgstr ""
+
+#: ../searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: ../searchform.php:14
+msgctxt "submit button"
 msgid "Search"
 msgstr ""
 

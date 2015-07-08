@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-04 14:53+0200\n"
-"PO-Revision-Date: 2015-06-04 14:53+0200\n"
+"POT-Creation-Date: 2015-07-08 17:07+0300\n"
+"PO-Revision-Date: 2015-07-08 17:07+0300\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: lt\n"
@@ -13,13 +13,10 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 &&(n"
 "%100<10||n%100 >= 20)? 1 : 2);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.1\n"
+"X-Generator: Poedit 1.8.2\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
-"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
-"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
-"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
-"esc_html_x:1,2c;comments_number_link:2,3\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
+"esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
 "X-Loco-Target-Locale: lt_LT\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
@@ -72,20 +69,10 @@ msgstr "Diena: %s"
 msgid "Month: %s"
 msgstr "Mėnuo: %s"
 
-#: ../archive.php:33
-msgctxt "monthly archives date format"
-msgid "F Y"
-msgstr "Y F"
-
 #: ../archive.php:36
 #, php-format
 msgid "Year: %s"
 msgstr "Metai: %s"
-
-#: ../archive.php:36
-msgctxt "yearly archives date format"
-msgid "Y"
-msgstr "Y"
 
 #: ../archive.php:39
 msgid "Asides"
@@ -213,7 +200,7 @@ msgstr "Skaityti toliau"
 msgid "Primary Menu"
 msgstr "Pagrindinis meniu"
 
-#: ../functions.php:70 ../inc/extras.php:209
+#: ../functions.php:70 ../inc/extras.php:212
 msgid "Footer Links"
 msgstr "Poraštės nuorodos"
 
@@ -265,14 +252,6 @@ msgstr "Kitas <i class=\"fa fa-chevron-right\"></i>"
 #: ../inc/admin/includes/class-options-framework-admin.php:92
 msgid "Theme Options"
 msgstr "Temos nustatymai"
-
-#: ../inc/admin/includes/class-options-framework-admin.php:203
-msgid "Save Options"
-msgstr "Išsaugoti nustatymus"
-
-#: ../inc/admin/includes/class-options-framework-admin.php:204
-msgid "Restore Defaults"
-msgstr "Atkurti numatytuosius"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:204
 msgid "Click OK to reset. Any theme settings will be lost!"
@@ -404,39 +383,39 @@ msgstr "Rodomas pagrindiniame puslapyje"
 msgid "Page %s"
 msgstr "Puslapis %s"
 
-#: ../inc/extras.php:124
+#: ../inc/extras.php:125
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
 msgstr ""
 "<p>Įrašas apsaugotas slaptažodžiu. Įveskite jį, jei norite peržiūrėti:</p>"
 
-#: ../inc/extras.php:125
+#: ../inc/extras.php:126
 msgid "Password:"
 msgstr "Slaptažodis:"
 
-#: ../inc/extras.php:128
+#: ../inc/extras.php:129
 msgid "Submit"
 msgstr "Pateikti"
 
-#: ../inc/extras.php:173
+#: ../inc/extras.php:175
 msgid "Follow us on "
 msgstr "Sekite mus"
 
-#: ../inc/extras.php:284
+#: ../inc/extras.php:287
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "%1$s tema sukurta %2$s sistemai"
 
-#: ../inc/extras.php:388
+#: ../inc/extras.php:394
 msgid "Support and Documentation"
 msgstr "Pagalba ir dokumentacija"
 
-#: ../inc/extras.php:394
+#: ../inc/extras.php:400
 msgid "Sparkling Documentation"
 msgstr "Sparkling dokumentacija"
 
-#: ../inc/extras.php:395
+#: ../inc/extras.php:401
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -444,23 +423,23 @@ msgstr ""
 "Geriausias būdas susisiekti su mumis <b>pagalbos klausimais</b> ir "
 "<b>pranešti apie klaidas</b> yra čia"
 
-#: ../inc/extras.php:395
+#: ../inc/extras.php:401
 msgid "Colorlib support forum"
 msgstr "Colorlib pagalbos forumai"
 
-#: ../inc/extras.php:396
+#: ../inc/extras.php:402
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "Jei jums patinka ši tema, pasirinkite vieną iš būdų ją įvertinti:"
 
-#: ../inc/extras.php:398
+#: ../inc/extras.php:404
 msgid "Rate this Theme"
 msgstr "Įvertinkite temą"
 
-#: ../inc/extras.php:399
+#: ../inc/extras.php:405
 msgid "Like on Facebook"
 msgstr "Patinka Facebook"
 
-#: ../inc/extras.php:400
+#: ../inc/extras.php:406
 msgid "Follow on Twitter"
 msgstr "Sekite Twitter"
 
@@ -479,16 +458,6 @@ msgstr "Naujesni įrašai <i class=\"fa fa-chevron-right\"></i>"
 #: ../inc/template-tags.php:56
 msgid "Post navigation"
 msgstr "Įrašo navigacija"
-
-#: ../inc/template-tags.php:59
-msgctxt "Previous post link"
-msgid "<i class=\"fa fa-chevron-left\"></i> %title"
-msgstr "<i class=\"fa fa-chevron-left\"></i> %title"
-
-#: ../inc/template-tags.php:60
-msgctxt "Next post link"
-msgid "%title <i class=\"fa fa-chevron-right\"></i>"
-msgstr "%title <i class=\"fa fa-chevron-right\"></i>"
 
 #: ../inc/widgets/widget-categories.php:11
 #: ../inc/widgets/widget-categories.php:12
@@ -629,7 +598,7 @@ msgstr "Elemento spalva"
 
 #: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
 #: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
-#: ../options.php:280 ../options.php:382 ../options.php:390
+#: ../options.php:280 ../options.php:390 ../options.php:398
 msgid "Default used if no color is selected"
 msgstr "Numatytasis nustatymas jei nėra pasirinkta spalva"
 
@@ -799,98 +768,108 @@ msgid "Copyright text in footer"
 msgstr "Autorinių teisių tekstas poraštėje"
 
 #: ../options.php:376
+#, fuzzy
+msgid "Footer Social Icons"
+msgstr "Poraštės socialinių ikonų spalva"
+
+#: ../options.php:377
+#, fuzzy
+msgid "Show/Hide social icons in footer"
+msgstr "Poraštės socialinių ikonų spalva"
+
+#: ../options.php:384
 msgid "Social"
 msgstr "Socialiniai"
 
-#: ../options.php:381
+#: ../options.php:389
 msgid "Social icon color"
 msgstr "Socialinių ikonų spalva"
 
-#: ../options.php:389
+#: ../options.php:397
 msgid "Footer social icon color"
 msgstr "Poraštės socialinių ikonų spalva"
 
-#: ../options.php:397
+#: ../options.php:405
 msgid "Add full URL for your social network profiles"
 msgstr "Pridėkite pilną URL į savo socialinį profilį"
 
-#: ../options.php:398
+#: ../options.php:406
 msgid "Facebook"
 msgstr "Facebook"
 
-#: ../options.php:407
+#: ../options.php:415
 msgid "Twitter"
 msgstr "Twitter"
 
-#: ../options.php:415
+#: ../options.php:423
 msgid "Google+"
 msgstr "Google+"
 
-#: ../options.php:423
+#: ../options.php:431
 msgid "Youtube"
 msgstr "Youtube"
 
-#: ../options.php:431
+#: ../options.php:439
 msgid "Vimeo"
 msgstr "Vimeo"
 
-#: ../options.php:439
+#: ../options.php:447
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
-#: ../options.php:447
+#: ../options.php:455
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: ../options.php:455
+#: ../options.php:463
 msgid "RSS Feed"
 msgstr "RSS srautas"
 
-#: ../options.php:463
+#: ../options.php:471
 msgid "Tumblr"
 msgstr "Tumblr"
 
-#: ../options.php:471
+#: ../options.php:479
 msgid "Flickr"
 msgstr "Flickr"
 
-#: ../options.php:479
+#: ../options.php:487
 msgid "Instagram"
 msgstr "Instagram"
 
-#: ../options.php:487
+#: ../options.php:495
 msgid "Dribbble"
 msgstr "Dribbble"
 
-#: ../options.php:495
+#: ../options.php:503
 msgid "Skype"
 msgstr "Skype"
 
-#: ../options.php:503
+#: ../options.php:511
 msgid "Foursquare"
 msgstr "Foursquare"
 
-#: ../options.php:511
+#: ../options.php:519
 msgid "SoundCloud"
 msgstr "SoundCloud"
 
-#: ../options.php:519
+#: ../options.php:527
 msgid "GitHub"
 msgstr "GitHub"
 
-#: ../options.php:527
+#: ../options.php:535
 msgid "Spotify"
 msgstr ""
 
-#: ../options.php:534
+#: ../options.php:542
 msgid "Other"
 msgstr "Kita"
 
-#: ../options.php:539
+#: ../options.php:547
 msgid "Custom CSS"
 msgstr "Pasirinktinis CSS"
 
-#: ../options.php:540
+#: ../options.php:548
 msgid "Additional CSS"
 msgstr "Papildomas CSS"
 
@@ -901,11 +880,21 @@ msgstr "Paieškos rezultatai: %s"
 
 #: ../searchform.php:11
 #, fuzzy
-msgctxt "placeholder"
-msgid "Search..."
-msgstr "Paieška..."
+msgid "Search for:"
+msgstr "Ieškoti:"
 
-#: ../searchform.php:13
+#: ../searchform.php:12
+#, fuzzy
+msgctxt "placeholder"
+msgid "Search&hellip;"
+msgstr "Paieška &hellip;"
+
+#: ../searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr "Ieškoti:"
+
+#: ../searchform.php:14
 msgctxt "submit button"
 msgid "Search"
 msgstr "Paieška"
@@ -914,10 +903,29 @@ msgstr "Paieška"
 msgid "Meta"
 msgstr "Metainformacija"
 
-#~ msgctxt "label"
-#~ msgid "Search for:"
-#~ msgstr "Ieškoti:"
+#~ msgctxt "monthly archives date format"
+#~ msgid "F Y"
+#~ msgstr "Y F"
 
+#~ msgctxt "yearly archives date format"
+#~ msgid "Y"
+#~ msgstr "Y"
+
+#~ msgid "Save Options"
+#~ msgstr "Išsaugoti nustatymus"
+
+#~ msgid "Restore Defaults"
+#~ msgstr "Atkurti numatytuosius"
+
+#~ msgctxt "Previous post link"
+#~ msgid "<i class=\"fa fa-chevron-left\"></i> %title"
+#~ msgstr "<i class=\"fa fa-chevron-left\"></i> %title"
+
+#~ msgctxt "Next post link"
+#~ msgid "%title <i class=\"fa fa-chevron-right\"></i>"
+#~ msgstr "%title <i class=\"fa fa-chevron-right\"></i>"
+
+#, fuzzy
 #~ msgctxt "placeholder"
-#~ msgid "Search &hellip;"
-#~ msgstr "Paieška &hellip;"
+#~ msgid "Search..."
+#~ msgstr "Paieška..."
