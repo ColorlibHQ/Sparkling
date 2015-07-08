@@ -373,6 +373,14 @@ function optionsframework_options() {
 	);
 
 	$options[] = array(
+		"name" => esc_html__('Footer Social Icons', 'sparkling'),
+		'desc' => esc_html__('Show/Hide social icons in footer', 'sparkling'),
+		'id'   => 'footer_social',
+		'std'  => 0,
+		'type' => 'checkbox'
+	);
+
+	$options[] = array(
 		'name' => esc_html__('Social', 'sparkling'),
 		'type' => 'heading'
 	);

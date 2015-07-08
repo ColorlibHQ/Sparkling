@@ -145,36 +145,38 @@ if ( ! function_exists( 'sparkling_social' ) ) :
 /**
  * Display social links in footer and widgets if enabled
  */
-function sparkling_social(){
-  $services = array (
-    'facebook'   => 'Facebook',
-    'twitter'    => 'Twitter',
-    'googleplus' => 'Google+',
-    'youtube'    => 'Youtube',
-    'vimeo'      => 'Vimeo',
-    'linkedin'   => 'LinkedIn',
-    'pinterest'  => 'Pinterest',
-    'rss'        => 'RSS',
-    'tumblr'     => 'Tumblr',
-    'flickr'     => 'Flickr',
-    'instagram'  => 'Instagram',
-    'dribbble'   => 'Dribbble',
-    'skype'      => 'Skype',
-    'foursquare' => 'Foursquare',
-    'soundcloud' => 'SoundCloud',
-    'github'     => 'GitHub',
-    'spotify'    => 'Spotify'
-    );
+function sparkling_social($force = false){
+  if($force || of_get_option( 'footer_social' ) != 0){
+    $services = array (
+      'facebook'   => 'Facebook',
+      'twitter'    => 'Twitter',
+      'googleplus' => 'Google+',
+      'youtube'    => 'Youtube',
+      'vimeo'      => 'Vimeo',
+      'linkedin'   => 'LinkedIn',
+      'pinterest'  => 'Pinterest',
+      'rss'        => 'RSS',
+      'tumblr'     => 'Tumblr',
+      'flickr'     => 'Flickr',
+      'instagram'  => 'Instagram',
+      'dribbble'   => 'Dribbble',
+      'skype'      => 'Skype',
+      'foursquare' => 'Foursquare',
+      'soundcloud' => 'SoundCloud',
+      'github'     => 'GitHub',
+      'spotify'    => 'Spotify'
+      );
 
-  echo '<div class="social-icons">';
+    echo '<div class="social-icons">';
 
-  foreach ( $services as $service => $name ) :
+    foreach ( $services as $service => $name ) :
 
-      $active[ $service ] = of_get_option ( 'social_'.$service );
-      if ( $active[$service] ) { echo '<a href="'. esc_url( $active[$service] ) .'" title="'. esc_html__('Follow us on ','sparkling').$name.'" class="'. $service .'" target="_blank"><i class="social_icon fa fa-'.$service.'"></i></a>';}
+        $active[ $service ] = of_get_option ( 'social_'.$service );
+        if ( $active[$service] ) { echo '<a href="'. esc_url( $active[$service] ) .'" title="'. esc_html__('Follow us on ','sparkling').$name.'" class="'. $service .'" target="_blank"><i class="social_icon fa fa-'.$service.'"></i></a>';}
 
-  endforeach;
-  echo '</div>';
+    endforeach;
+    echo '</div>';
+  }
 
 }
 endif;

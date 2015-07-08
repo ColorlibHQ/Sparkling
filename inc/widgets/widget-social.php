@@ -30,7 +30,7 @@ class sparkling_social_widget extends WP_Widget
     <div class="social-icons sticky-sidebar-social">
 
 
-    <?php sparkling_social(); ?>
+    <?php sparkling_social(true); ?>
 
 
     </div><!-- end social icons -->
