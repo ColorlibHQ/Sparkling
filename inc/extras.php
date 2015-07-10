@@ -364,7 +364,7 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
         echo '.entry-content {font-family: ' . $typography['face'] . '; font-size:' . $typography['size'] . '; font-weight: ' . $typography['style'] . '; color:'.$typography['color'] . ';}';
       }
       if ( of_get_option('custom_css')) {
-        echo of_get_option( 'custom_css', 'no entry' );
+        echo html_entity_decode( of_get_option( 'custom_css', 'no entry' ) );
       }
         echo '</style>';
     }
