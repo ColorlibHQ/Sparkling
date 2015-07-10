@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
 "POT-Creation-Date: 2015-07-08 17:07+0300\n"
-"PO-Revision-Date: 2015-07-08 17:08+0300\n"
+"PO-Revision-Date: 2015-07-10 13:00+0300\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: pt_BR\n"
@@ -367,7 +367,7 @@ msgstr "Opções do Tema"
 
 #: ../inc/customizer.php:39
 msgid "Show post excerpts?"
-msgstr ""
+msgstr "Mostrar trechos do post"
 
 #: ../inc/customizer.php:51
 #, fuzzy
@@ -871,7 +871,7 @@ msgstr "Github"
 
 #: ../options.php:535
 msgid "Spotify"
-msgstr ""
+msgstr "Spotify"
 
 #: ../options.php:542
 msgid "Other"
@@ -896,7 +896,6 @@ msgid "Search for:"
 msgstr "Pesquisar..."
 
 #: ../searchform.php:12
-#, fuzzy
 msgctxt "placeholder"
 msgid "Search&hellip;"
 msgstr "Procurar&hellip;"
