@@ -9,7 +9,7 @@ class sparkling_categories extends WP_Widget
 	 function sparkling_categories(){
 
         $widget_ops = array('classname' => 'sparkling-cats','description' => esc_html__( "Sparkling Categories" ,'sparkling') );
-		    $this->WP_Widget('sparkling-cats', esc_html__('Sparkling Categories','sparkling'), $widget_ops);
+		    parent::__construct('sparkling-cats', esc_html__('Sparkling Categories','sparkling'), $widget_ops);
     }
 
     function widget($args , $instance) {

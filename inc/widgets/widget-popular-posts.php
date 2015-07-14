@@ -9,7 +9,7 @@ class sparkling_popular_posts extends WP_Widget
 	 function sparkling_popular_posts(){
 
         $widget_ops = array('classname' => 'sparkling-popular-posts','description' => esc_html__( "Sparkling Popular Posts Widget", 'sparkling') );
-		    $this->WP_Widget('sparkling_popular_posts', esc_html__('Sparkling Popular Posts Widget','sparkling'), $widget_ops);
+		    parent::__construct('sparkling_popular_posts', esc_html__('Sparkling Popular Posts Widget','sparkling'), $widget_ops);
     }
 
     function widget($args , $instance) {
