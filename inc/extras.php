@@ -122,7 +122,7 @@ function custom_password_form() {
   $o = '<form class="protected-post-form" action="' . get_option('siteurl') . '/wp-login.php?action=postpass" method="post">
   <div class="row">
     <div class="col-lg-10">
-        ' . esc_html__( "<p>This post is password protected. To view it please enter your password below:</p>" ,'sparkling') . '
+        <p>' . esc_html__( "This post is password protected. To view it please enter your password below:" ,'sparkling') . '</p>
         <label for="' . $label . '">' . esc_html__( "Password:" ,'sparkling') . ' </label>
       <div class="input-group">
         <input class="form-control" value="' . get_search_query() . '" name="post_password" id="' . $label . '" type="password">
