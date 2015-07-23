@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling\n"
 "POT-Creation-Date: 2015-07-08 17:06+0300\n"
-"PO-Revision-Date: 2015-07-08 17:06+0300\n"
+"PO-Revision-Date: 2015-07-23 16:08+0300\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -180,7 +180,7 @@ msgstr "Editiere"
 
 #: content-single.php:19
 msgid ", "
-msgstr ","
+msgstr ", "
 
 #: content-single.php:23
 #, php-format
