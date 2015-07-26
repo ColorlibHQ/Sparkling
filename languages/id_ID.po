@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling\n"
 "POT-Creation-Date: 2015-07-08 17:07+0300\n"
-"PO-Revision-Date: 2015-07-08 17:07+0300\n"
+"PO-Revision-Date: 2015-07-26 00:08+0700\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: Rhiski Aprilianto <mail@rhiskiapril.com>\n"
 "Language: id_ID\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.2\n"
+"X-Generator: Poedit 1.7.6\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -792,14 +792,12 @@ msgid "Copyright text in footer"
 msgstr "Teks hak cipta di footer"
 
 #: options.php:376
-#, fuzzy
 msgid "Footer Social Icons"
-msgstr "Warna footer  ikon sosial"
+msgstr "Footer  ikon sosial"
 
 #: options.php:377
-#, fuzzy
 msgid "Show/Hide social icons in footer"
-msgstr "Warna footer  ikon sosial"
+msgstr "Tampilkan/Sembunyikan ikon sosial di footer"
 
 #: options.php:384
 msgid "Social"
@@ -883,7 +881,7 @@ msgstr "GitHub"
 
 #: options.php:535
 msgid "Spotify"
-msgstr ""
+msgstr "Spotify"
 
 #: options.php:542
 msgid "Other"
@@ -903,12 +901,10 @@ msgid "Search Results for: %s"
 msgstr "Hasil Pencarian untuk: %s"
 
 #: searchform.php:11
-#, fuzzy
 msgid "Search for:"
 msgstr "Mencari:"
 
 #: searchform.php:12
-#, fuzzy
 msgctxt "placeholder"
 msgid "Search&hellip;"
 msgstr "Cari &hellip;"
