@@ -48,11 +48,11 @@ function sparkling_customizer( $wp_customize ) {
 	) );
 
 	$wp_customize->add_control( 'sparkling_page_comments', array(
-	'label'		=> esc_html__( 'Display Comments on Static Pages?', 'sparkling' ),
-	'section'	=> 'sparkling_content_section',
-	'priority'	=> 20,
-	'type'      => 'checkbox',
-) );
+		'label'		=> esc_html__( 'Display Comments on Static Pages?', 'sparkling' ),
+		'section'	=> 'sparkling_content_section',
+		'priority'	=> 20,
+		'type'      => 'checkbox',
+	) );
 }
 add_action( 'customize_register', 'sparkling_customizer' );
 
