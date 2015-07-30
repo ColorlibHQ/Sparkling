@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-07-08 16:26+0300\n"
+"POT-Creation-Date: 2015-07-29 20:08+0100\n"
 "PO-Revision-Date: 2015-04-04 15:03+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
@@ -362,7 +362,7 @@ msgid "Page %s"
 msgstr ""
 
 #: ../inc/extras.php:125
-msgid "<p>This post is password protected. To view it please enter your password below:</p>"
+msgid "This post is password protected. To view it please enter your password below:"
 msgstr ""
 
 #: ../inc/extras.php:126

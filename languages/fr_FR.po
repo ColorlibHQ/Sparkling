@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-07-08 17:07+0300\n"
-"PO-Revision-Date: 2015-07-08 17:07+0300\n"
+"POT-Creation-Date: 2015-07-30 07:38+0200\n"
+"PO-Revision-Date: 2015-07-30 07:54+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: fr_FR\n"
@@ -31,10 +31,8 @@ msgstr ""
 "liens ci-dessous ou une recherche ?"
 
 #: ../404.php:25
-#, fuzzy
 msgid "Recent Posts"
-msgstr ""
-"Affiche les listes d'articles populaires, r&eacute;cents & commentaires"
+msgstr "Articles récents"
 
 #: ../404.php:31
 msgid "Most Used Categories"
@@ -50,9 +48,8 @@ msgid "Archives"
 msgstr "Archives"
 
 #: ../404.php:58
-#, fuzzy
 msgid "Tags"
-msgstr "Appliqu&eacute; &agrave; la balise P ou paragraphe"
+msgstr "Étiquettes"
 
 #: ../archive.php:27
 #, php-format
@@ -363,18 +360,16 @@ msgid "Bold Italic"
 msgstr "Gras Italique"
 
 #: ../inc/customizer.php:27
-#, fuzzy
 msgid "Content Options"
-msgstr "Options du thème"
+msgstr "Options du contenu"
 
 #: ../inc/customizer.php:39
 msgid "Show post excerpts?"
-msgstr ""
+msgstr "Montrer le résumé de l’article ?"
 
 #: ../inc/customizer.php:51
-#, fuzzy
 msgid "Display Comments on Static Pages?"
-msgstr "Affiché sur la page d'accueil"
+msgstr "Afficher les commentaires sur les pages statiques ?"
 
 #: ../inc/extras.php:61
 #, php-format
@@ -383,11 +378,10 @@ msgstr "Page %s"
 
 #: ../inc/extras.php:125
 msgid ""
-"<p>This post is password protected. To view it please enter your password "
-"below:</p>"
+"This post is password protected. To view it please enter your password below:"
 msgstr ""
-"<p>Cet article est protégé par un mot de passe. Pour le lire, veuillez "
-"entrer votre mot de passe ci-dessous :</p>"
+"Cet article est protégé par un mot de passe. Pour le lire, veuillez entrer "
+"votre mot de passe ci-dessous :"
 
 #: ../inc/extras.php:126
 msgid "Password:"
@@ -772,14 +766,12 @@ msgid "Copyright text in footer"
 msgstr "Texte de copyright en bas de page"
 
 #: ../options.php:376
-#, fuzzy
 msgid "Footer Social Icons"
-msgstr "Couleur des icônes de réseaux sociaux de bas de page"
+msgstr "Icônes de réseaux sociaux de bas de page"
 
 #: ../options.php:377
-#, fuzzy
 msgid "Show/Hide social icons in footer"
-msgstr "Couleur des icônes de réseaux sociaux de bas de page"
+msgstr "Montrer/Cacher les icônes de réseaux sociaux de bas de page"
 
 #: ../options.php:384
 msgid "Social"
@@ -815,7 +807,7 @@ msgstr "Youtube"
 
 #: ../options.php:439
 msgid "Vimeo"
-msgstr ""
+msgstr "Vimeo"
 
 #: ../options.php:447
 msgid "LinkedIn"
@@ -855,15 +847,15 @@ msgstr "Foursquare"
 
 #: ../options.php:519
 msgid "SoundCloud"
-msgstr ""
+msgstr "SoundCloud"
 
 #: ../options.php:527
 msgid "GitHub"
-msgstr ""
+msgstr "GitHub"
 
 #: ../options.php:535
 msgid "Spotify"
-msgstr ""
+msgstr "Spotify"
 
 #: ../options.php:542
 msgid "Other"
@@ -908,6 +900,13 @@ msgstr "Rechercher"
 #: ../sidebar.php:26
 msgid "Meta"
 msgstr "Méta"
+
+#~ msgid ""
+#~ "<p>This post is password protected. To view it please enter your password "
+#~ "below:</p>"
+#~ msgstr ""
+#~ "<p>Cet article est protégé par un mot de passe. Pour le lire, veuillez "
+#~ "entrer votre mot de passe ci-dessous :</p>"
 
 #~ msgid "Search..."
 #~ msgstr "Rechercher..."
