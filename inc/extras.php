@@ -268,11 +268,10 @@ function sparkling_featured_slider() {
                   if ( get_the_title() != '' ) echo '<h2 class="entry-title">'. get_the_title().'</h2>';
                   if ( get_the_excerpt() != '' ) echo '<div class="excerpt">' . get_the_excerpt() .'</div>';
               echo '</div>';
-
+              echo '</a></li>';
               endwhile;
             endif;
 
-          echo '</a></li>';
       echo '</ul>';
     echo ' </div>';
   }
