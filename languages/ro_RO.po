@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../404.php:25
 msgid "Recent Posts"
-msgstr ""
+msgstr "Ultimele Articole"
 
 #: ../404.php:31
 msgid "Most Used Categories"
@@ -48,7 +48,7 @@ msgstr "Arhive"
 
 #: ../404.php:58
 msgid "Tags"
-msgstr ""
+msgstr "Legături"
 
 #: ../archive.php:27
 #, php-format
@@ -132,13 +132,13 @@ msgstr "Nu se adaugă comentarii."
 
 #: ../content-none.php:13
 msgid "Nothing Found"
-msgstr "Nu s-a găsit nimic."
+msgstr "Nu s-a găsit nimic"
 
 #: ../content-none.php:19
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Ești gata ăs publici primul articol? <a href=\"%1$s\">Începe aici</a>."
+msgstr "Ești gata să publici primul articol? <a href=\"%1$s\">Începe aici</a>."
 
 #: ../content-none.php:23
 msgid ""
@@ -146,13 +146,13 @@ msgid ""
 "different keywords."
 msgstr ""
 "Ne pare rău, dar nu am găsit nimic potrivit cu ce ai căutat. Încearcă să "
-"schi,bi cuvintele cheie și caută din nou."
+"schimbi cuvintele cheie și caută din nou."
 
 #: ../content-none.php:28
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
-msgstr "Nu am găsit ceea ce cauți. Încearcă facilitatatea de căutare."
+msgstr "Nu am găsit ceea ce cauți. Încearcă formularul de căutare."
 
 #: ../content-page.php:21 ../content-single.php:35 ../content.php:49
 #: ../image.php:79
@@ -178,7 +178,7 @@ msgstr "Lasă un comentariu"
 
 #: ../content.php:20
 msgid "1 Comment"
-msgstr "1 comentariu"
+msgstr "1 Comentariu"
 
 #: ../content.php:20
 msgid "% Comments"
@@ -243,7 +243,7 @@ msgstr "Următor <i class=\"fa fa-chevron-right\"></i>"
 #: ../inc/admin/includes/class-options-framework-admin.php:91
 #: ../inc/admin/includes/class-options-framework-admin.php:92
 msgid "Theme Options"
-msgstr "Opțiuni temă"
+msgstr "Opțiuni Temă"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:204
 msgid "Click OK to reset. Any theme settings will be lost!"
@@ -353,7 +353,7 @@ msgstr "Îngroșat"
 
 #: ../inc/admin/includes/class-options-sanitization.php:427
 msgid "Bold Italic"
-msgstr "Cursin Îngroșat"
+msgstr "Cursiv Îngroșat"
 
 #: ../inc/customizer.php:27
 #, fuzzy
@@ -362,12 +362,12 @@ msgstr "Opțiuni temă"
 
 #: ../inc/customizer.php:39
 msgid "Show post excerpts?"
-msgstr ""
+msgstr "Arata rezumatul articolelor?"
 
 #: ../inc/customizer.php:51
 #, fuzzy
 msgid "Display Comments on Static Pages?"
-msgstr "Afișare pe Prima Pagină"
+msgstr "Afișez Comentariile pe o Pagină Statica?"
 
 #: ../inc/extras.php:61
 #, php-format
@@ -379,7 +379,7 @@ msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
 msgstr ""
-"<p>Acest articol este privat. Pentru a-l vedea introdu parila mai jos:</p>"
+"<p>Acest articol este privat. Pentru a-l vedea introdu parola mai jos:</p>"
 
 #: ../inc/extras.php:126
 msgid "Password:"
@@ -598,14 +598,14 @@ msgstr "Culoare element (mouse deasupra)"
 
 #: ../options.php:167
 msgid "Custom Favicon"
-msgstr "Pictograma mea"
+msgstr "Favicon propriu"
 
 #: ../options.php:168
 msgid ""
 "Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
 msgstr ""
 "Încarcă o imagine de 32x32 pixeli, format PNG/GIF care să reprezinte "
-"pictograma site-ului"
+"pictograma site-ului (favicon)"
 
 #: ../options.php:175
 msgid "Action Button"
