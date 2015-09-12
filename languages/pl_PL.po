@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-04 15:02+0200\n"
-"PO-Revision-Date: 2015-04-04 15:02+0200\n"
+"POT-Creation-Date: 2015-07-08 17:07+0300\n"
+"PO-Revision-Date: 2015-07-08 17:07+0300\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: pl\n"
@@ -13,9 +13,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Loco-Source-Locale: en_GB\n"
-"X-Generator: Poedit 1.7.5\n"
+"X-Generator: Poedit 1.8.2\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
+"esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
 "X-Loco-Parser: loco_parse_po\n"
 "X-Loco-Target-Locale: pl_PL\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -112,7 +113,7 @@ msgstr "Dzwięki"
 msgid "Chats"
 msgstr "Czaty"
 
-#: ../comments.php:30
+#: ../comments.php:28
 #, php-format
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
@@ -120,19 +121,19 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "Jedna myśl na temat &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s myśli na temat &ldquo;%2$s&rdquo;"
 
-#: ../comments.php:37 ../comments.php:55
+#: ../comments.php:35 ../comments.php:53
 msgid "Comment navigation"
 msgstr "Nawigacja komentarzy"
 
-#: ../comments.php:38 ../comments.php:56
+#: ../comments.php:36 ../comments.php:54
 msgid "&larr; Older Comments"
 msgstr "&larr; Starsze komentarze"
 
-#: ../comments.php:39 ../comments.php:57
+#: ../comments.php:37 ../comments.php:55
 msgid "Newer Comments &rarr;"
 msgstr "Nowsze komentarze &rarr;"
 
-#: ../comments.php:67
+#: ../comments.php:65
 msgid "Comments are closed."
 msgstr "Komentarze są zamknięte."
 
@@ -164,7 +165,7 @@ msgstr ""
 "Wygląda na to że nie możemy znaleźć tego czego szukasz. Może wyszukiwarka "
 "pomoże?"
 
-#: ../content-page.php:21 ../content-single.php:35 ../content.php:43
+#: ../content-page.php:21 ../content-single.php:35 ../content.php:49
 #: ../image.php:79
 msgid "Pages:"
 msgstr "Strony:"
@@ -194,7 +195,7 @@ msgstr "1 komentarz"
 msgid "% Comments"
 msgstr "% komentarzy"
 
-#: ../content.php:32 ../content.php:39
+#: ../content.php:32 ../content.php:45
 msgid "Read More"
 msgstr "Czytaj więcej"
 
@@ -202,7 +203,7 @@ msgstr "Czytaj więcej"
 msgid "Primary Menu"
 msgstr "Główne menu"
 
-#: ../functions.php:70 ../inc/extras.php:226
+#: ../functions.php:70 ../inc/extras.php:212
 msgid "Footer Links"
 msgstr "Linki stopki"
 
@@ -366,70 +367,80 @@ msgstr "Pogrubiona"
 msgid "Bold Italic"
 msgstr "Pogrubiona Kursywa"
 
+#: ../inc/customizer.php:27
+#, fuzzy
+msgid "Content Options"
+msgstr "Opcje tematu"
+
+#: ../inc/customizer.php:39
+msgid "Show post excerpts?"
+msgstr ""
+
+#: ../inc/customizer.php:51
+#, fuzzy
+msgid "Display Comments on Static Pages?"
+msgstr "Wyświetl na stronie głównej"
+
 #: ../inc/extras.php:61
 #, php-format
 msgid "Page %s"
 msgstr "Strona %s"
 
-#: ../inc/extras.php:121
-msgid "Search..."
-msgstr "Szukaj..."
-
-#: ../inc/extras.php:142
+#: ../inc/extras.php:125
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
 msgstr ""
 "<p>Ten post jest chroniony hasłem. Aby go zobaczyć wpisz hasło poniżej:</p>"
 
-#: ../inc/extras.php:143
+#: ../inc/extras.php:126
 msgid "Password:"
 msgstr "Hasło:"
 
-#: ../inc/extras.php:146
+#: ../inc/extras.php:129
 msgid "Submit"
 msgstr "Wyślij"
 
-#: ../inc/extras.php:190
+#: ../inc/extras.php:175
 msgid "Follow us on "
 msgstr "Śledź nas na"
 
-#: ../inc/extras.php:301
+#: ../inc/extras.php:287
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Temat stworzony przez %1$s Napędzany przez %2$s"
 
-#: ../inc/extras.php:405
+#: ../inc/extras.php:394
 msgid "Support and Documentation"
 msgstr "Wsparcie i dokumentacja"
 
-#: ../inc/extras.php:411
+#: ../inc/extras.php:400
 msgid "Sparkling Documentation"
 msgstr "Dokumentacja"
 
-#: ../inc/extras.php:412
+#: ../inc/extras.php:401
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
 msgstr "Najlepsza metoda aby się z nami skontaktować jest przez"
 
-#: ../inc/extras.php:412
+#: ../inc/extras.php:401
 msgid "Colorlib support forum"
 msgstr "Colorlib forum wsparcia"
 
-#: ../inc/extras.php:413
+#: ../inc/extras.php:402
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "Jeśli lubisz ten temat, będę wdzięczny za"
 
-#: ../inc/extras.php:415
+#: ../inc/extras.php:404
 msgid "Rate this Theme"
 msgstr "Oceń ten temat"
 
-#: ../inc/extras.php:416
+#: ../inc/extras.php:405
 msgid "Like on Facebook"
 msgstr "Polub nas na Facebook-u"
 
-#: ../inc/extras.php:417
+#: ../inc/extras.php:406
 msgid "Follow on Twitter"
 msgstr "Śledź nas na Twitterze"
 
@@ -587,7 +598,7 @@ msgstr "Kolor elementów"
 
 #: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
 #: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
-#: ../options.php:280 ../options.php:382 ../options.php:390
+#: ../options.php:280 ../options.php:390 ../options.php:398
 msgid "Default used if no color is selected"
 msgstr "Domyślny kolor jeśli nie wybrano"
 
@@ -762,94 +773,109 @@ msgid "Copyright text in footer"
 msgstr "Tekst informacji o prawach autorskich"
 
 #: ../options.php:376
+#, fuzzy
+msgid "Footer Social Icons"
+msgstr "Kolor ikon społecznościowych w stopce"
+
+#: ../options.php:377
+#, fuzzy
+msgid "Show/Hide social icons in footer"
+msgstr "Kolor ikon społecznościowych w stopce"
+
+#: ../options.php:384
 msgid "Social"
 msgstr "Społecznościowe"
 
-#: ../options.php:381
+#: ../options.php:389
 msgid "Social icon color"
 msgstr "Kolor ikon społecznościowych"
 
-#: ../options.php:389
+#: ../options.php:397
 msgid "Footer social icon color"
 msgstr "Kolor ikon społecznościowych w stopce"
 
-#: ../options.php:397
+#: ../options.php:405
 msgid "Add full URL for your social network profiles"
 msgstr "Dodaj pełny adres URL do twoich profili społecznościowych"
 
-#: ../options.php:398
+#: ../options.php:406
 msgid "Facebook"
 msgstr "Facebook"
 
-#: ../options.php:407
+#: ../options.php:415
 msgid "Twitter"
 msgstr "Twitter"
 
-#: ../options.php:415
+#: ../options.php:423
 msgid "Google+"
 msgstr "Google+"
 
-#: ../options.php:423
+#: ../options.php:431
 msgid "Youtube"
 msgstr "Youtube"
 
-#: ../options.php:431
+#: ../options.php:439
 msgid "Vimeo"
 msgstr ""
 
-#: ../options.php:439
+#: ../options.php:447
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
-#: ../options.php:447
+#: ../options.php:455
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: ../options.php:455
+#: ../options.php:463
 msgid "RSS Feed"
 msgstr "Kanał RSS"
 
-#: ../options.php:463
+#: ../options.php:471
 msgid "Tumblr"
 msgstr "Tumblr"
 
-#: ../options.php:471
+#: ../options.php:479
 msgid "Flickr"
 msgstr "Flickr"
 
-#: ../options.php:479
+#: ../options.php:487
 msgid "Instagram"
 msgstr "Instagram"
 
-#: ../options.php:487
+#: ../options.php:495
 msgid "Dribbble"
 msgstr "Dribbble"
 
-#: ../options.php:495
+#: ../options.php:503
 msgid "Skype"
 msgstr "Skype"
 
-#: ../options.php:503
+#: ../options.php:511
 msgid "Foursquare"
 msgstr "Foursquare"
 
-#: ../options.php:511
+#: ../options.php:519
 msgid "SoundCloud"
 msgstr ""
 
-#: ../options.php:519
+#: ../options.php:527
+#, fuzzy
 msgid "GitHub"
+msgstr "Github"
+
+#: ../options.php:535
+msgid "Spotify"
 msgstr ""
 
-#: ../options.php:526
+#: ../options.php:542
 msgid "Other"
 msgstr "Inne"
 
-#: ../options.php:531
+#: ../options.php:547
 msgid "Custom CSS"
 msgstr "Własny CSS"
 
-#: ../options.php:532
+#: ../options.php:548
 msgid "Additional CSS"
 msgstr "Dodatkowy CSS"
 
@@ -858,6 +884,32 @@ msgstr "Dodatkowy CSS"
 msgid "Search Results for: %s"
 msgstr "Wyniki wyszukiwania dla: %s"
 
+#: ../searchform.php:11
+#, fuzzy
+msgid "Search for:"
+msgstr "Szukaj:"
+
+#: ../searchform.php:12
+#, fuzzy
+msgctxt "placeholder"
+msgid "Search&hellip;"
+msgstr "Szukaj&hellip;"
+
+#: ../searchform.php:12
+#, fuzzy
+msgctxt "label"
+msgid "Search for:"
+msgstr "Szukaj:"
+
+#: ../searchform.php:14
+#, fuzzy
+msgctxt "submit button"
+msgid "Search"
+msgstr "Szukaj"
+
 #: ../sidebar.php:26
 msgid "Meta"
 msgstr "Meta"
+
+#~ msgid "Search..."
+#~ msgstr "Szukaj..."

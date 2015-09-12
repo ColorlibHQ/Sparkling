@@ -1,370 +1,368 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-07-08 17:07+0300\n"
-"PO-Revision-Date: 2015-07-08 17:07+0300\n"
+"POT-Creation-Date: 2015-07-08 17:08+0300\n"
+"PO-Revision-Date: 2015-07-08 17:08+0300\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
-"Language-Team: RobertCreed <info@robertcreed.me>\n"
-"Language: fa\n"
+"Language-Team: colorlib <info@colorlib.com>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.2\n"
 "X-Poedit-Basepath: .\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
 "esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
-"_nx: 4c,1,2;_n:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
 #: ../404.php:15
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "اوه! این صفحه نمی&rsquo;تواند پیدا شود."
+msgstr "Перепрошую. Вказаної сторінки не існує. "
 
 #: ../404.php:19
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr ""
-"بنظر می رسد چیزی در این محل پیدا نشد. شاید امتحان یکی از لینک های زیر یا "
-"جستجو؟"
+"Нічого не знайдено. Спробуйте використати один з наведених нижче посилань, "
+"або скористайтесь форму пошуку."
 
 #: ../404.php:25
-#, fuzzy
 msgid "Recent Posts"
-msgstr "ناوبری مطالب"
+msgstr "Нещодавні публікації"
 
 #: ../404.php:31
 msgid "Most Used Categories"
-msgstr "بیشترین دسته بندی های استفاده شده"
+msgstr "Найпопулярніші категорії"
 
 #: ../404.php:52
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
-msgstr "نگاهی به بایگانی ماهیانه. %1$s"
+msgstr "Пошукайте в архівах. %1$s"
 
 #: ../404.php:53 ../archive.php:66 ../sidebar.php:19
 msgid "Archives"
-msgstr "بایگانی ها"
+msgstr "Архіви"
 
 #: ../404.php:58
-#, fuzzy
 msgid "Tags"
-msgstr "مورد استفاده در تگ P"
+msgstr "Теґи"
 
 #: ../archive.php:27
 #, php-format
 msgid "Author: %s"
-msgstr "نویسنده: %s"
+msgstr "Автор: %s"
 
 #: ../archive.php:30
 #, php-format
 msgid "Day: %s"
-msgstr "روز: %s"
+msgstr "День: %s"
 
 #: ../archive.php:33
 #, php-format
 msgid "Month: %s"
-msgstr "ماه: %s"
+msgstr "Місяць: %s"
 
 #: ../archive.php:36
 #, php-format
 msgid "Year: %s"
-msgstr "سال: %s"
+msgstr "Рік: %s"
 
 #: ../archive.php:39
 msgid "Asides"
-msgstr "گذشته ها"
+msgstr "Бічні панелі"
 
 #: ../archive.php:42
 msgid "Galleries"
-msgstr "گالری ها"
+msgstr "Галереї"
 
 #: ../archive.php:45
 msgid "Images"
-msgstr "تصاویر"
+msgstr "Світлини"
 
 #: ../archive.php:48
 msgid "Videos"
-msgstr "ویدئوها"
+msgstr "Відеострічки"
 
 #: ../archive.php:51
 msgid "Quotes"
-msgstr "نقل قول ها"
+msgstr "Цитати"
 
 #: ../archive.php:54
 msgid "Links"
-msgstr "لینک ها"
+msgstr "Посилання"
 
 #: ../archive.php:57
 msgid "Statuses"
-msgstr "وضعیت ها"
+msgstr "Статуси"
 
 #: ../archive.php:60
 msgid "Audios"
-msgstr "صدا ها"
+msgstr "Аудіо"
 
 #: ../archive.php:63
 msgid "Chats"
-msgstr "گفتگو ها"
+msgstr "Чати"
 
 #: ../comments.php:28
 #, php-format
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
+msgstr[0] "Коментарій &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s Коментарів &ldquo;%2$s&rdquo;"
 
 #: ../comments.php:35 ../comments.php:53
 msgid "Comment navigation"
-msgstr "ناوبری نظر"
+msgstr "Шляхівниця коментарів"
 
 #: ../comments.php:36 ../comments.php:54
 msgid "&larr; Older Comments"
-msgstr "&larr; نظرات قدیمی تر"
+msgstr "&larr; Попередні коментарі"
 
 #: ../comments.php:37 ../comments.php:55
 msgid "Newer Comments &rarr;"
-msgstr "نظرات جدیدتر &rarr;"
+msgstr "Нові комментарии &rarr;"
 
 #: ../comments.php:65
 msgid "Comments are closed."
-msgstr "نظرات بسته شده اند."
+msgstr "Публікація коментарів обмежена"
 
 #: ../content-none.php:13
 msgid "Nothing Found"
-msgstr "چیزی یافت نشد."
+msgstr "Нічого не знайдено"
 
 #: ../content-none.php:19
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-"آماده اید برای ارسال اولین مطلب؟ <a href=\"%1$s\">از اینجا شروع کنید</a>."
+msgstr "Чи готові Ви додати перший запис? <a href=\"%1$s\">Почнемо</a>."
 
 #: ../content-none.php:23
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"متاسفیم، اما چیزی مطابق جستجوی شما یافت نشد. لطفا مجدد سعی کنید با کلمات "
-"متفاوت."
+"Жодний результат не відповідає Вашому запиту. Будь ласка, спробуйте замінити "
+"ключові слова."
 
 #: ../content-none.php:28
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
-"بنظر می رسد ما نمی&rsquo;توانیم پیدا کنیم آنچه شما&rsquo;بدنبالش هستید. "
-"احتمالا جستجو می تواند کمک کند."
+"Схоже, ми не можемо знайти інформацію згідно Вашого запиту. Спробуйте "
+"використати \"Пошук\"."
 
 #: ../content-page.php:21 ../content-single.php:35 ../content.php:49
 #: ../image.php:79
 msgid "Pages:"
-msgstr "صفحات:"
+msgstr "Сторінки:"
 
 #: ../content-page.php:32 ../content-single.php:26 ../content.php:23
 msgid "Edit"
-msgstr "ویرایش"
+msgstr "Редагувати"
 
 #: ../content-single.php:19
 msgid ", "
-msgstr ""
+msgstr ","
 
 #: ../content-single.php:23
-#, fuzzy, php-format
+#, php-format
 msgid " %1$s"
 msgstr " %1$s"
 
 #: ../content.php:20
 msgid "Leave a comment"
-msgstr "نظر بگذارید"
+msgstr "Залишити коментар"
 
 #: ../content.php:20
 msgid "1 Comment"
-msgstr "1 نظر"
+msgstr "1 коментар"
 
 #: ../content.php:20
 msgid "% Comments"
-msgstr "% نظر"
+msgstr "% коментарів"
 
 #: ../content.php:32 ../content.php:45
 msgid "Read More"
-msgstr "بیشتر بخوانید"
+msgstr "Детальніше"
 
 #: ../functions.php:69
 msgid "Primary Menu"
-msgstr "قهرست اولیه"
+msgstr "Головне меню"
 
 #: ../functions.php:70 ../inc/extras.php:212
 msgid "Footer Links"
-msgstr "لینک پانویس"
+msgstr "Посилання нижнього колонтитула"
 
 #: ../functions.php:108
 msgid "Sidebar"
-msgstr "نوار کناری"
+msgstr "Бічна панель"
 
 #: ../functions.php:118
 msgid "Homepage Widget 1"
-msgstr "ویدجت خانه 1"
+msgstr "Перший застосунок на Головній сторінці"
 
 #: ../functions.php:119 ../functions.php:129 ../functions.php:139
 msgid "Displays on the Home Page"
-msgstr "نمایش در صفحه اصلی"
+msgstr "Відображається на Головній сторінці"
 
 #: ../functions.php:128
 msgid "Homepage Widget 2"
-msgstr "ویدجت خانه 2"
+msgstr "Другий застосунок на Головній сторінці"
 
 #: ../functions.php:138
 msgid "Homepage Widget 3"
-msgstr "ویدجت خانه 3"
+msgstr "Третій застосунок на Головній сторінці"
 
 #: ../functions.php:148
 msgid "Footer Widget 1"
-msgstr "ویدجت پانویس 1"
+msgstr "Перший застосунок нижнього колонтитула"
 
 #: ../functions.php:149 ../functions.php:159 ../functions.php:169
 msgid "Used for footer widget area"
-msgstr "استفاده در محل ویدجت پانویس"
+msgstr "Використано для застосунка нижнього колонтитула"
 
 #: ../functions.php:158
 msgid "Footer Widget 2"
-msgstr "ویدجت پانویس 2"
+msgstr "Другий застосунок нижнього колонтитула"
 
 #: ../functions.php:168
 msgid "Footer Widget 3"
-msgstr "ویدجت پانویس 3"
+msgstr "Третій застосунок нижнього колонтитула"
 
 #: ../image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
-msgstr "<i class=\"fa fa-chevron-left\"></i> قبلی"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Попередній"
 
 #: ../image.php:23
 msgid "Next <i class=\"fa fa-chevron-right\"></i>"
-msgstr "بعدی <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Наступний <i class=\"fa fa-chevron-right\"></i>"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:91
 #: ../inc/admin/includes/class-options-framework-admin.php:92
 msgid "Theme Options"
-msgstr "تنظیمات قالب"
+msgstr "Налаштування теми"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:204
 msgid "Click OK to reset. Any theme settings will be lost!"
 msgstr ""
-"روی ok برای تنظیم مجدد کلیک کنید. تمام تنظیمات به حالت اولیه در خواهند آمد!"
+"Натисність ОК для скидування налаштувань. Увага! Усі параментри будуть "
+"видалені!"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:235
 msgid "Default options restored."
-msgstr "تنظیمات پیش فرض اعمال شدند."
+msgstr "Відновленні налаштування за замовчуванням."
 
 #: ../inc/admin/includes/class-options-framework-admin.php:289
 msgid "Options saved."
-msgstr "تنظیمات ذخیره شدند."
+msgstr "Налаштування збережені."
 
 #: ../inc/admin/includes/class-options-media-uploader.php:62
 msgid "No file chosen"
-msgstr "پرونده ای انتخاب نشده"
+msgstr "Файл не обраний"
 
 #: ../inc/admin/includes/class-options-media-uploader.php:65
 #: ../inc/admin/includes/class-options-media-uploader.php:118
 msgid "Upload"
-msgstr "بارگذاری"
+msgstr "Завантажити"
 
 #: ../inc/admin/includes/class-options-media-uploader.php:67
 #: ../inc/admin/includes/class-options-media-uploader.php:119
 msgid "Remove"
-msgstr "حذف"
+msgstr "Видалити"
 
 #: ../inc/admin/includes/class-options-media-uploader.php:70
 msgid "Upgrade your version of WordPress for full media support."
-msgstr "نسخه وردپرس خود را برای پشتیبانی از تمام پرونده های مدیا ارتقا دهید."
+msgstr "Оновіть двигун WordPress  для повної підтримки додатку \"Медіа\"."
 
 #: ../inc/admin/includes/class-options-media-uploader.php:94
 msgid "View File"
-msgstr "نمایش پرونده"
+msgstr "Переглянути файл"
 
 #: ../inc/admin/includes/class-options-sanitization.php:316
 msgid "No Repeat"
-msgstr "بدون تکرار"
+msgstr "Не повторювати\t"
 
 #: ../inc/admin/includes/class-options-sanitization.php:317
 msgid "Repeat Horizontally"
-msgstr "تکرار به صورت افقی"
+msgstr "Повторити горизонтально"
 
 #: ../inc/admin/includes/class-options-sanitization.php:318
 msgid "Repeat Vertically"
-msgstr "تکرار به صورت عمودی"
+msgstr "Повторити вертикально"
 
 #: ../inc/admin/includes/class-options-sanitization.php:319
 msgid "Repeat All"
-msgstr "تکرار همه"
+msgstr "Заповнити"
 
 #: ../inc/admin/includes/class-options-sanitization.php:331
 msgid "Top Left"
-msgstr "بالا چپ"
+msgstr "Зверху ліворуч"
 
 #: ../inc/admin/includes/class-options-sanitization.php:332
 msgid "Top Center"
-msgstr "بالا مرکز"
+msgstr "Зверху центрально"
 
 #: ../inc/admin/includes/class-options-sanitization.php:333
 msgid "Top Right"
-msgstr "بالا راست"
+msgstr "Зверху праворуч"
 
 #: ../inc/admin/includes/class-options-sanitization.php:334
 msgid "Middle Left"
-msgstr "وسط چپ"
+msgstr "По середині ліворуч"
 
 #: ../inc/admin/includes/class-options-sanitization.php:335
 msgid "Middle Center"
-msgstr "وسط مرکز"
+msgstr "По середині центрально"
 
 #: ../inc/admin/includes/class-options-sanitization.php:336
 msgid "Middle Right"
-msgstr "وسط راست"
+msgstr "По середині праворуч"
 
 #: ../inc/admin/includes/class-options-sanitization.php:337
 msgid "Bottom Left"
-msgstr "پایین چپ"
+msgstr "Знизу ліворуч"
 
 #: ../inc/admin/includes/class-options-sanitization.php:338
 msgid "Bottom Center"
-msgstr "پایین مرکز"
+msgstr "Знизу центрально"
 
 #: ../inc/admin/includes/class-options-sanitization.php:339
 msgid "Bottom Right"
-msgstr "پایین راست"
+msgstr "Знизу праворуч"
 
 #: ../inc/admin/includes/class-options-sanitization.php:351
 msgid "Scroll Normally"
-msgstr "حرکت عادی"
+msgstr "Звичайна прокручування"
 
 #: ../inc/admin/includes/class-options-sanitization.php:352
 msgid "Fixed in Place"
-msgstr "ثابت در مکان"
+msgstr "Зафіксовано на місці"
 
 #: ../inc/admin/includes/class-options-sanitization.php:424
 msgid "Normal"
-msgstr "معمولی"
+msgstr "Звичайний"
 
 #: ../inc/admin/includes/class-options-sanitization.php:425
 msgid "Italic"
-msgstr "اریب"
+msgstr "Похилий"
 
 #: ../inc/admin/includes/class-options-sanitization.php:426
 msgid "Bold"
-msgstr "ضخیم"
+msgstr "Напівжирний"
 
 #: ../inc/admin/includes/class-options-sanitization.php:427
 msgid "Bold Italic"
-msgstr "ضخیم و اریب"
+msgstr "Напівширний похилий"
 
 #: ../inc/customizer.php:27
 #, fuzzy
 msgid "Content Options"
-msgstr "تنظیمات قالب"
+msgstr "Налаштування теми"
 
 #: ../inc/customizer.php:39
 msgid "Show post excerpts?"
@@ -373,499 +371,493 @@ msgstr ""
 #: ../inc/customizer.php:51
 #, fuzzy
 msgid "Display Comments on Static Pages?"
-msgstr "نمایش در صفحه اصلی"
+msgstr "Відображається на Головній сторінці"
 
 #: ../inc/extras.php:61
 #, php-format
 msgid "Page %s"
-msgstr "صفحات %s"
+msgstr "Сторінка %s"
 
 #: ../inc/extras.php:125
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
 msgstr ""
-"<p>این مطلب با رمز عبور محافظت می شود. برای نمایش رمز را در پایین وارد کنید: "
-"</p>"
+"<p>Цей запис захищений гаслом. Аби подивитися цей запис, будь ласка, уведіть "
+"гасло:</p>"
 
 #: ../inc/extras.php:126
 msgid "Password:"
-msgstr "رمز عبور:"
+msgstr "Гасло:"
 
 #: ../inc/extras.php:129
 msgid "Submit"
-msgstr "تایید"
+msgstr "Підтвердити"
 
 #: ../inc/extras.php:175
 msgid "Follow us on "
-msgstr "ما را دنبال کنید در"
+msgstr "Приєднуйтесь до нас"
 
 #: ../inc/extras.php:287
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
-msgstr "پوسته توسط %1$s قدرت گرفته از %2$s"
+msgstr "Тема від %1$s. Працює на %2$s"
 
 #: ../inc/extras.php:394
 msgid "Support and Documentation"
-msgstr "پشتیبانی و مستندات"
+msgstr "Підтримка та Документація"
 
 #: ../inc/extras.php:400
 msgid "Sparkling Documentation"
-msgstr "مستندات Sparkling"
+msgstr "Документація Sparkling"
 
 #: ../inc/extras.php:401
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
-msgstr "بهترین راه تماس با ما <b>پشتیبانی پرسش</b> و <b>گزارش باگ </b> است"
+msgstr ""
+"Щоб зв'язатись з питаннь <b>технічної підтримки</b> та <b>звітів про "
+"помилки</b>, використайте"
 
 #: ../inc/extras.php:401
 msgid "Colorlib support forum"
-msgstr "انجمن پشتیبانی Colorlib"
+msgstr "Толока підтримки Colorlib"
 
 #: ../inc/extras.php:402
 msgid "If you like this theme, I'd appreciate any of the following:"
-msgstr "اگر این قالب را می پسندید، من قدردانی میکنم از هر نوع دنبال کردنی:"
+msgstr ""
+"Якщо Вам сподобалась ця тема, я був би вельми вдячний за будь-який наступний "
+"варіант:"
 
 #: ../inc/extras.php:404
 msgid "Rate this Theme"
-msgstr "رای به این قالب"
+msgstr "Оцінити цю тему"
 
 #: ../inc/extras.php:405
 msgid "Like on Facebook"
-msgstr "پسند به ما در فیسبوک"
+msgstr "Поставити вподобайку на Facebook"
 
 #: ../inc/extras.php:406
 msgid "Follow on Twitter"
-msgstr "دنبال کردن ما در توییتر"
+msgstr "Читати Twitter"
 
 #: ../inc/template-tags.php:23
 msgid "Posts navigation"
-msgstr "ناوبری مطالب"
+msgstr "Навігація записами"
 
 #: ../inc/template-tags.php:27
 msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
-msgstr "<i class=\"fa fa-chevron-left\"></i> مطالب قدیمی تر"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Показати ще"
 
 #: ../inc/template-tags.php:31
 msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
-msgstr "مطالب جدیدتر <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Нові записи <i class=\"fa fa-chevron-right\"></i>"
 
 #: ../inc/template-tags.php:56
 msgid "Post navigation"
-msgstr "ناوبری مطالب"
+msgstr "Навігація записами"
 
 #: ../inc/widgets/widget-categories.php:11
 #: ../inc/widgets/widget-categories.php:12
 msgid "Sparkling Categories"
-msgstr "دسته بندی Sparkling"
+msgstr "(Sparkling) Категорії"
 
 #: ../inc/widgets/widget-categories.php:17
 #: ../inc/widgets/widget-categories.php:76
 msgid "Categories"
-msgstr "دسته بندی"
+msgstr "Категорії"
 
 #: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
 msgid "Title "
-msgstr "عنوان"
+msgstr "Назви"
 
 #: ../inc/widgets/widget-categories.php:91
 msgid "Limit Categories "
-msgstr "محدودیت دسته بندی"
+msgstr "Обмеження категорій"
 
 #: ../inc/widgets/widget-categories.php:104
 msgid "Enable Posts Count"
-msgstr "فعال کردن شمارش مطالب"
+msgstr "Увімкнути лічильник записів"
 
 #: ../inc/widgets/widget-popular-posts.php:11
 #: ../inc/widgets/widget-popular-posts.php:12
 msgid "Sparkling Popular Posts Widget"
-msgstr "ویدجت مطالب محبوب Sparkling"
+msgstr "(Sparkling) Популярні записи"
 
 #: ../inc/widgets/widget-popular-posts.php:17
 #: ../inc/widgets/widget-popular-posts.php:94
 msgid "Popular Posts"
-msgstr "مطالب محبوب"
+msgstr "Популярні записи"
 
 #: ../inc/widgets/widget-popular-posts.php:99
 msgid "Title"
-msgstr "عنوان"
+msgstr "Назва"
 
 #: ../inc/widgets/widget-popular-posts.php:107
 msgid "Limit Posts Number"
-msgstr "محدودیت شماره مطالب"
+msgstr "Увімкнути лічильник записів"
 
 #: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
 msgid "Sparkling Social Widget"
-msgstr "ویدجت شبکه Sparkling"
+msgstr "Соціальні мережі Sparkling"
 
 #: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
 msgid "Follow us"
-msgstr "ما را دنبال کنید"
+msgstr "Приєднуйтесь до нас"
 
 #: ../options.php:23
 msgid "Right Sidebar"
-msgstr "نوار کناری راست"
+msgstr "Праворуч"
 
 #: ../options.php:23
 msgid "Left Sidebar"
-msgstr "نوار کناری چپ"
+msgstr "Ліворуч"
 
 #: ../options.php:27
 msgid "One"
-msgstr "یک"
+msgstr "Один"
 
 #: ../options.php:28
 msgid "Two"
-msgstr "دو"
+msgstr "Два"
 
 #: ../options.php:29
 msgid "Three"
-msgstr "سه"
+msgstr "Три"
 
 #: ../options.php:30
 msgid "Four"
-msgstr "چهار"
+msgstr "Чотири"
 
 #: ../options.php:31
 msgid "Five"
-msgstr "پنج"
+msgstr "П'ять"
 
 #: ../options.php:36
 msgid "French Toast"
-msgstr "نان تست فرانسوی"
+msgstr "Французька грінківниця"
 
 #: ../options.php:37
 msgid "Pancake"
-msgstr "کلوچه"
+msgstr "Млинець"
 
 #: ../options.php:38
 msgid "Omelette"
-msgstr "املت"
+msgstr "Омлет"
 
 #: ../options.php:39
 msgid "Crepe"
-msgstr "کرپ"
+msgstr "Креп"
 
 #: ../options.php:40
 msgid "Waffle"
-msgstr "وفل"
+msgstr "Вафлі"
 
 #: ../options.php:110
 msgid "Main"
-msgstr "صفحه اصلی"
+msgstr "Головна"
 
 #: ../options.php:115
 msgid "Do You want to display image slider on the Home Page?"
-msgstr "آیا مایلید اسلایدر را در صفحه اصلی نمایش دهید؟"
+msgstr "Чи бажаєте Ви бачити на головній сторінці повзунок?"
 
 #: ../options.php:116
 msgid "Check if you want to enable slider"
-msgstr "فعال کنید اگر مایل به نمایش اسلایدر هستید"
+msgstr "Увімкнити повзунок"
 
 #: ../options.php:123
 msgid "Slider Category"
-msgstr "دسته بندی اسلایدر"
+msgstr "Категорія для повзунка"
 
 #: ../options.php:124
 msgid "Select a category for the featured post slider"
-msgstr "انتخاب دسته بندی برای اسلایدر مطالب ویژه"
+msgstr "Оберіть найцікавішу категорію для повзунка"
 
 #: ../options.php:132
 msgid "Number of slide items"
-msgstr "تعداد اسلایدها"
+msgstr "Кількість повзунків"
 
 #: ../options.php:133
 msgid "Enter the number of slide items"
-msgstr "تعداد موارد  اسلاید را وارد کنید"
+msgstr "Уведіть кількість повзунків"
 
 #: ../options.php:141
 msgid "Website Layout Options"
-msgstr "گزینه های طرح بندی وب سایت"
+msgstr "Налаштування макету сторінки"
 
 #: ../options.php:142
 msgid "Choose between Left and Right sidebar options to be used as default"
-msgstr "انتخاب کنید بین نوار کنار چپ و راست برای تایین بعنوان پیش فرض"
+msgstr ""
+"Оберіть, де за замовчуванням відображатиметься бічна панель: ліворуч чи "
+"праворуч? "
 
 #: ../options.php:151
 msgid "Element color"
-msgstr "رنگ عنصر"
+msgstr "Колір складника"
 
 #: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
 #: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
 #: ../options.php:280 ../options.php:390 ../options.php:398
 msgid "Default used if no color is selected"
-msgstr "به طور پیش فرض استفاده می شود اگر رنگ انتخاب شود"
+msgstr ""
+"Якщо Ви не оберете свій колір, буде використано значення за замовчуванням"
 
 #: ../options.php:159
 msgid "Element color on hover"
-msgstr "رنگ عنصر در شناور"
+msgstr "Колір сладника при наведенн"
 
 #: ../options.php:167
 msgid "Custom Favicon"
-msgstr "فاویکن دلخواه"
+msgstr "Власний ярличок сайту (Favicon)"
 
 #: ../options.php:168
 msgid ""
 "Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
 msgstr ""
-"بارگذاری یک تصویر 32px x 32px PNG/GIF و آن استفاده خواهد شد بعنوان فاویکن "
-"سایت شما"
+"Завантажте власний ярличок сайту (Favicon) -  зображення розміром 32px х "
+"32px у форматі PNG/GIF."
 
 #: ../options.php:175
 msgid "Action Button"
-msgstr "دکمه اکشن"
+msgstr "Action Button"
 
 #: ../options.php:180
 msgid "Call For Action Text"
-msgstr "فراخوان متن اکشن"
+msgstr "Текст Call for Action"
 
 #: ../options.php:181
 msgid "Enter the text for call for action section"
-msgstr "متن را وارد کنید برای انتخاب اکشن"
+msgstr "Уведіть текст для розділу Call for Action"
 
 #: ../options.php:188
 msgid "Call For Action Button Title"
-msgstr "عنوان متن کلید اکشن"
+msgstr "Текст кнопки Call for Action"
 
 #: ../options.php:189
 msgid "Enter the title for Call For Action button"
-msgstr "وارد کردن یک عنوان  برای کلید اکشن"
+msgstr "Уведіть назву для розділу Call for Action"
 
 #: ../options.php:196
 msgid "CFA button link"
-msgstr "لینک کلید CFA"
+msgstr "Посилання кнопки Call for Action"
 
 #: ../options.php:197
 msgid "Enter the link for Call For Action button"
-msgstr "وارد کردن یک لینک برای کلید اکشن"
+msgstr "Уведіть адресу для кнопки Call for Action"
 
 #: ../options.php:204
 msgid "Call For Action Text Color"
-msgstr "فراخوان رنگ متن اکشن"
+msgstr "Колір тексту Call for Action"
 
 #: ../options.php:212
 msgid "Call For Action Background Color"
-msgstr "فراخوان رنگ پس زمینه اکشن"
+msgstr "Колір тла для Call for Action"
 
 #: ../options.php:220
 msgid "Call For Action Button Border Color"
-msgstr "فراخوان رنگ حاشیه کلید اکشن"
+msgstr "Колір меж кнопки  Call for Action"
 
 #: ../options.php:228
 msgid "Call For Action Button Text Color"
-msgstr "فراخوان رنگ متن کلید اکشن"
+msgstr "Колір текста кнопки Call for Action"
 
 #: ../options.php:236
 msgid "Typography"
-msgstr "تایپوگرافی"
+msgstr "Оформлення"
 
 #: ../options.php:241
 msgid "Main Body Text"
-msgstr "متن بدنه اصلی"
+msgstr "Основний шрифт"
 
 #: ../options.php:242
 msgid "Used in P tags"
-msgstr "مورد استفاده در تگ P"
+msgstr "Використаний у теґах <p> (абзац)"
 
 #: ../options.php:250
 msgid "Heading Color"
-msgstr "رنگ عنوان"
+msgstr "Колір заголовку"
 
 #: ../options.php:251
 msgid "Color for all headings (h1-h6)"
-msgstr "رنگ برای تمام عناوین (h1-h6)"
+msgstr "Колір для усіх заголовків (h1-h6)"
 
 #: ../options.php:258
 msgid "Link Color"
-msgstr "رنگ لینک"
+msgstr "Колір посилань"
 
 #: ../options.php:266
 msgid "Link:hover Color"
-msgstr "لینک:رنگ شناور"
+msgstr "Колір посилань при наведенні"
 
 #: ../options.php:274
 msgid "Header"
-msgstr "سربرگ"
+msgstr "Верхній колонтитул"
 
 #: ../options.php:279
 msgid "Top nav background color"
-msgstr "رنگ پس زمینه منو بالا"
+msgstr "Колір тла верхнього меню"
 
 #: ../options.php:287
 msgid "Top nav item color"
-msgstr "رنگ آیتم های منو بالا"
+msgstr "Колір матеріалів складника меню"
 
 #: ../options.php:288
 msgid "Link color"
-msgstr "رنگ لینک"
+msgstr "Колір посилання"
 
 #: ../options.php:295
 msgid "Top nav item hover color"
-msgstr "رنگ مورد شناور منو بالا"
+msgstr "Колір текста складника мені під час наведення"
 
 #: ../options.php:296
 msgid "Link:hover color"
-msgstr "لینک:رنگ شناور"
+msgstr "Колір посилання при наведенні"
 
 #: ../options.php:303
 msgid "Top nav dropdown background color"
-msgstr "رنگ پس زمینه منو کرکره ای بالا"
+msgstr "Колір тла меню другого рівня"
 
 #: ../options.php:304 ../options.php:328
 msgid "Background of dropdown item hover color"
-msgstr "رنگ شناور پس زمینه منو کرکره ای بالا"
+msgstr "Колір тла складника меню другого рівня під час наведення"
 
 #: ../options.php:311
 msgid "Top nav dropdown item color"
-msgstr "رنگ مورد کرکره منو بالا"
+msgstr "Колір складника в меню другого рівня"
 
 #: ../options.php:312
 msgid "Dropdown item color"
-msgstr "رنگ مورد کرکره"
+msgstr "Колір складника"
 
 #: ../options.php:319
 msgid "Top nav dropdown item hover color"
-msgstr "رنگ شناور آیتم کرکره منو بالا"
+msgstr "Колір тексту меню другого рівня під час наведення"
 
 #: ../options.php:320
 msgid "Dropdown item hover color"
-msgstr "رنگ شناور اقلام منو"
+msgstr "Колір тла складника в меню другого рівня"
 
 #: ../options.php:327
 msgid "Top nav dropdown item background hover color"
-msgstr "رنگ پس زمینه شناور اقلام منو بالا"
+msgstr "Колір тексту складника меню другого рівня під час наведення"
 
 #: ../options.php:335
 msgid "Footer"
-msgstr "پانویس"
+msgstr "Нижній колонтил (Footer)"
 
 #: ../options.php:340
 msgid "Footer widget area background color"
-msgstr "رنگ پس زمینه محل ویدجت پانویس"
+msgstr "Колір фона тла стосунків нижнього колонтитулу"
 
 #: ../options.php:347
 msgid "Footer background color"
-msgstr "رنگ پس زمینه پانویس"
+msgstr "Колір тла нижнього колонтитула"
 
 #: ../options.php:354
 msgid "Footer text color"
-msgstr "رنگ متن پانویس"
+msgstr "Колір тексту нижнього колонтитула"
 
 #: ../options.php:361
 msgid "Footer link color"
-msgstr "رنگ لینک پانویس"
+msgstr "Колір посилань нижнього колонтитула"
 
 #: ../options.php:368
 msgid "Footer information"
-msgstr "اطلاعات پانویس"
+msgstr "Інформація нижнього колонтутила"
 
 #: ../options.php:369
 msgid "Copyright text in footer"
-msgstr "رنگ متن کپی رایت در پانویس"
+msgstr "Текст авторських прав у нижньому колонтитулі"
 
 #: ../options.php:376
 #, fuzzy
 msgid "Footer Social Icons"
-msgstr "رنگ آیکون های اجتماعی پانویس"
+msgstr "Колір піктограми соціальних мереж у нижньому колонтитулі"
 
 #: ../options.php:377
 #, fuzzy
 msgid "Show/Hide social icons in footer"
-msgstr "رنگ آیکون های اجتماعی پانویس"
+msgstr "Колір піктограми соціальних мереж у нижньому колонтитулі"
 
 #: ../options.php:384
 msgid "Social"
-msgstr "اجتماعی"
+msgstr "Соц. мережі"
 
 #: ../options.php:389
 msgid "Social icon color"
-msgstr "رنگ آیکون های اجتماعی"
+msgstr "Колір піктограми соціальних мереж"
 
 #: ../options.php:397
 msgid "Footer social icon color"
-msgstr "رنگ آیکون های اجتماعی پانویس"
+msgstr "Колір піктограми соціальних мереж у нижньому колонтитулі"
 
 #: ../options.php:405
 msgid "Add full URL for your social network profiles"
-msgstr "اضافه کردن URL کامل برای پروفایل های شبکه های اجتماعی خود"
+msgstr "Додати повні посилання облікових записів у соціальних мережах"
 
 #: ../options.php:406
-#, fuzzy
 msgid "Facebook"
-msgstr "فیسبوک"
+msgstr "Facebook"
 
 #: ../options.php:415
-#, fuzzy
 msgid "Twitter"
-msgstr "توئیتر"
+msgstr "Twitter"
 
 #: ../options.php:423
-#, fuzzy
 msgid "Google+"
-msgstr "گوگل پلاس"
+msgstr "Google+"
 
 #: ../options.php:431
-#, fuzzy
 msgid "Youtube"
-msgstr "یوتیوب"
+msgstr "Youtube"
 
 #: ../options.php:439
 msgid "Vimeo"
-msgstr ""
+msgstr "Vimeo"
 
 #: ../options.php:447
-#, fuzzy
 msgid "LinkedIn"
-msgstr "لينكداين"
+msgstr "LinkedIn"
 
 #: ../options.php:455
-#, fuzzy
 msgid "Pinterest"
-msgstr "پینترست"
+msgstr "Pinterest"
 
 #: ../options.php:463
-#, fuzzy
 msgid "RSS Feed"
-msgstr "خوراک RSS"
+msgstr "RSS"
 
 #: ../options.php:471
-#, fuzzy
 msgid "Tumblr"
-msgstr "تامبلر"
+msgstr "Tumblr"
 
 #: ../options.php:479
-#, fuzzy
 msgid "Flickr"
-msgstr "فلیکر"
+msgstr "Flickr"
 
 #: ../options.php:487
-#, fuzzy
 msgid "Instagram"
-msgstr "اینستاگرام"
+msgstr "Instagram"
 
 #: ../options.php:495
-#, fuzzy
 msgid "Dribbble"
-msgstr "دریبل"
+msgstr "Dribble"
 
 #: ../options.php:503
-#, fuzzy
 msgid "Skype"
-msgstr "اسکایپ"
+msgstr "Skype"
 
 #: ../options.php:511
 msgid "Foursquare"
-msgstr ""
+msgstr "Foursquare"
 
 #: ../options.php:519
 msgid "SoundCloud"
-msgstr ""
+msgstr "SoundCloud"
 
 #: ../options.php:527
-#, fuzzy
 msgid "GitHub"
-msgstr "گیت هاب"
+msgstr "GitHub"
 
 #: ../options.php:535
 msgid "Spotify"
@@ -873,47 +865,50 @@ msgstr ""
 
 #: ../options.php:542
 msgid "Other"
-msgstr "دیگر"
+msgstr "Інші"
 
 #: ../options.php:547
 msgid "Custom CSS"
-msgstr "CSS سفارشی"
+msgstr "CSS користувача"
 
 #: ../options.php:548
 msgid "Additional CSS"
-msgstr "CSS اضافی"
+msgstr "Додатковий CSS"
 
 #: ../search.php:16
 #, php-format
 msgid "Search Results for: %s"
-msgstr "نتایج جستجو برای: %s"
+msgstr "Результати пошуку за запитом: %s"
 
 #: ../searchform.php:11
 #, fuzzy
 msgid "Search for:"
-msgstr "جستجو برای:"
+msgstr "Результат пошуку за запитом: %s"
 
 #: ../searchform.php:12
 #, fuzzy
 msgctxt "placeholder"
 msgid "Search&hellip;"
-msgstr "جستجو"
+msgstr "Результат пошуку за запитом: %s"
 
 #: ../searchform.php:12
 #, fuzzy
 msgctxt "label"
 msgid "Search for:"
-msgstr "جستجو برای:"
+msgstr "Результат пошуку за запитом: %s"
 
 #: ../searchform.php:14
 #, fuzzy
 msgctxt "submit button"
 msgid "Search"
-msgstr "جستجو"
+msgstr "Результат пошуку за запитом: %s"
 
 #: ../sidebar.php:26
 msgid "Meta"
-msgstr "متا"
+msgstr "Мета"
 
 #~ msgid "Search..."
-#~ msgstr "جستجو..."
+#~ msgstr "Результат пошуку за запитом: %s"
+
+#~ msgid "Default used if no color is selected."
+#~ msgstr "Если не выберите свой цвет, будет использовано стандартное значение"

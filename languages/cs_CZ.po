@@ -1,17 +1,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-07-08 17:07+0300\n"
-"PO-Revision-Date: 2015-07-08 17:07+0300\n"
+"POT-Creation-Date: 2015-07-08 17:06+0300\n"
+"PO-Revision-Date: 2015-07-08 17:06+0300\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
-"Language-Team: RobertCreed <info@robertcreed.me>\n"
-"Language: fa\n"
+"Language-Team: colorlib <info@colorlib.com>\n"
+"Language: cs_CZ\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.2\n"
 "X-Poedit-Basepath: .\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
 "esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
 "_nx: 4c,1,2;_n:1,2\n"
@@ -20,351 +20,343 @@ msgstr ""
 
 #: ../404.php:15
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "اوه! این صفحه نمی&rsquo;تواند پیدا شود."
+msgstr "Jejda! Stránka nenalezena!"
 
 #: ../404.php:19
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
-msgstr ""
-"بنظر می رسد چیزی در این محل پیدا نشد. شاید امتحان یکی از لینک های زیر یا "
-"جستجو؟"
+msgstr "Nenalezeno! Zkuste odkazy dole nebo vyhledávání."
 
 #: ../404.php:25
-#, fuzzy
 msgid "Recent Posts"
-msgstr "ناوبری مطالب"
+msgstr "Poslední příspěvky"
 
 #: ../404.php:31
 msgid "Most Used Categories"
-msgstr "بیشترین دسته بندی های استفاده شده"
+msgstr "Nejčastěji používané kategorie"
 
 #: ../404.php:52
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
-msgstr "نگاهی به بایگانی ماهیانه. %1$s"
+msgstr "Zkuste se podívat v měsíčním archivu: %1$s"
 
 #: ../404.php:53 ../archive.php:66 ../sidebar.php:19
 msgid "Archives"
-msgstr "بایگانی ها"
+msgstr "Archiv"
 
 #: ../404.php:58
-#, fuzzy
 msgid "Tags"
-msgstr "مورد استفاده در تگ P"
+msgstr "Štítky"
 
 #: ../archive.php:27
 #, php-format
 msgid "Author: %s"
-msgstr "نویسنده: %s"
+msgstr "Autor: %s"
 
 #: ../archive.php:30
 #, php-format
 msgid "Day: %s"
-msgstr "روز: %s"
+msgstr "Dnů: %s"
 
 #: ../archive.php:33
 #, php-format
 msgid "Month: %s"
-msgstr "ماه: %s"
+msgstr "Měsíc: %s"
 
 #: ../archive.php:36
 #, php-format
 msgid "Year: %s"
-msgstr "سال: %s"
+msgstr "Rok: %s"
 
 #: ../archive.php:39
 msgid "Asides"
-msgstr "گذشته ها"
+msgstr ""
 
 #: ../archive.php:42
 msgid "Galleries"
-msgstr "گالری ها"
+msgstr "Galerie"
 
 #: ../archive.php:45
 msgid "Images"
-msgstr "تصاویر"
+msgstr "Obrázky"
 
 #: ../archive.php:48
 msgid "Videos"
-msgstr "ویدئوها"
+msgstr "Videa"
 
 #: ../archive.php:51
 msgid "Quotes"
-msgstr "نقل قول ها"
+msgstr "Citace"
 
 #: ../archive.php:54
 msgid "Links"
-msgstr "لینک ها"
+msgstr "Odkazy"
 
 #: ../archive.php:57
 msgid "Statuses"
-msgstr "وضعیت ها"
+msgstr "Statusy"
 
 #: ../archive.php:60
 msgid "Audios"
-msgstr "صدا ها"
+msgstr "Audio"
 
 #: ../archive.php:63
 msgid "Chats"
-msgstr "گفتگو ها"
+msgstr "Chat"
 
 #: ../comments.php:28
 #, php-format
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
+msgstr[0] "1 komentář"
+msgstr[1] "Komentářů: %1$s"
 
 #: ../comments.php:35 ../comments.php:53
 msgid "Comment navigation"
-msgstr "ناوبری نظر"
+msgstr "Komentáře"
 
 #: ../comments.php:36 ../comments.php:54
 msgid "&larr; Older Comments"
-msgstr "&larr; نظرات قدیمی تر"
+msgstr "Starší komentáře"
 
 #: ../comments.php:37 ../comments.php:55
 msgid "Newer Comments &rarr;"
-msgstr "نظرات جدیدتر &rarr;"
+msgstr "Novější komentáře"
 
 #: ../comments.php:65
 msgid "Comments are closed."
-msgstr "نظرات بسته شده اند."
+msgstr "Komentáře jsou uzavřeny."
 
 #: ../content-none.php:13
 msgid "Nothing Found"
-msgstr "چیزی یافت نشد."
+msgstr "Nenalezeno"
 
 #: ../content-none.php:19
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
-"آماده اید برای ارسال اولین مطلب؟ <a href=\"%1$s\">از اینجا شروع کنید</a>."
+"Chcete publikovat svůj první příspěvek? <a href=\"%1$s\">Začněte zde</a>."
 
 #: ../content-none.php:23
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
-msgstr ""
-"متاسفیم، اما چیزی مطابق جستجوی شما یافت نشد. لطفا مجدد سعی کنید با کلمات "
-"متفاوت."
+msgstr "Omlouváme se, ale nic jsme nenalezli. Zkuste změnit klíčová slova."
 
 #: ../content-none.php:28
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
-msgstr ""
-"بنظر می رسد ما نمی&rsquo;توانیم پیدا کنیم آنچه شما&rsquo;بدنبالش هستید. "
-"احتمالا جستجو می تواند کمک کند."
+msgstr "Zdá se, že to nelze najít. Zkuste vyhledávání."
 
 #: ../content-page.php:21 ../content-single.php:35 ../content.php:49
 #: ../image.php:79
 msgid "Pages:"
-msgstr "صفحات:"
+msgstr "Stránky:"
 
 #: ../content-page.php:32 ../content-single.php:26 ../content.php:23
 msgid "Edit"
-msgstr "ویرایش"
+msgstr "Upravit"
 
 #: ../content-single.php:19
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: ../content-single.php:23
-#, fuzzy, php-format
+#, php-format
 msgid " %1$s"
 msgstr " %1$s"
 
 #: ../content.php:20
 msgid "Leave a comment"
-msgstr "نظر بگذارید"
+msgstr "Napište komentář"
 
 #: ../content.php:20
 msgid "1 Comment"
-msgstr "1 نظر"
+msgstr "1 komentář"
 
 #: ../content.php:20
 msgid "% Comments"
-msgstr "% نظر"
+msgstr "Komentářů: %"
 
 #: ../content.php:32 ../content.php:45
 msgid "Read More"
-msgstr "بیشتر بخوانید"
+msgstr "Celý článek"
 
 #: ../functions.php:69
 msgid "Primary Menu"
-msgstr "قهرست اولیه"
+msgstr "Hlavní menu"
 
 #: ../functions.php:70 ../inc/extras.php:212
 msgid "Footer Links"
-msgstr "لینک پانویس"
+msgstr "Menu v zápatí"
 
 #: ../functions.php:108
 msgid "Sidebar"
-msgstr "نوار کناری"
+msgstr "Postranní menu"
 
 #: ../functions.php:118
 msgid "Homepage Widget 1"
-msgstr "ویدجت خانه 1"
+msgstr "Úvodní stránka widget 1"
 
 #: ../functions.php:119 ../functions.php:129 ../functions.php:139
 msgid "Displays on the Home Page"
-msgstr "نمایش در صفحه اصلی"
+msgstr "Zobrazí se na úvodní stránce"
 
 #: ../functions.php:128
 msgid "Homepage Widget 2"
-msgstr "ویدجت خانه 2"
+msgstr "Úvodní stránka widget 2"
 
 #: ../functions.php:138
 msgid "Homepage Widget 3"
-msgstr "ویدجت خانه 3"
+msgstr "Úvodní stránka widget 3"
 
 #: ../functions.php:148
 msgid "Footer Widget 1"
-msgstr "ویدجت پانویس 1"
+msgstr "Zápatí widget 1"
 
 #: ../functions.php:149 ../functions.php:159 ../functions.php:169
 msgid "Used for footer widget area"
-msgstr "استفاده در محل ویدجت پانویس"
+msgstr "Zobrazí se v zápatí"
 
 #: ../functions.php:158
 msgid "Footer Widget 2"
-msgstr "ویدجت پانویس 2"
+msgstr "Zápatí widget 2"
 
 #: ../functions.php:168
 msgid "Footer Widget 3"
-msgstr "ویدجت پانویس 3"
+msgstr "Zápatí widget 3"
 
 #: ../image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
-msgstr "<i class=\"fa fa-chevron-left\"></i> قبلی"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Předchozí"
 
 #: ../image.php:23
 msgid "Next <i class=\"fa fa-chevron-right\"></i>"
-msgstr "بعدی <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Další <i class=\"fa fa-chevron-right\"></i>"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:91
 #: ../inc/admin/includes/class-options-framework-admin.php:92
 msgid "Theme Options"
-msgstr "تنظیمات قالب"
+msgstr "Možnosti šablony"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:204
 msgid "Click OK to reset. Any theme settings will be lost!"
-msgstr ""
-"روی ok برای تنظیم مجدد کلیک کنید. تمام تنظیمات به حالت اولیه در خواهند آمد!"
+msgstr "Pokud kliknete na OK, přijdete o všechny změny!"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:235
 msgid "Default options restored."
-msgstr "تنظیمات پیش فرض اعمال شدند."
+msgstr "Původní nastavení obnoveno."
 
 #: ../inc/admin/includes/class-options-framework-admin.php:289
 msgid "Options saved."
-msgstr "تنظیمات ذخیره شدند."
+msgstr "Změny uloženy."
 
 #: ../inc/admin/includes/class-options-media-uploader.php:62
 msgid "No file chosen"
-msgstr "پرونده ای انتخاب نشده"
+msgstr "Soubor není vybrán"
 
 #: ../inc/admin/includes/class-options-media-uploader.php:65
 #: ../inc/admin/includes/class-options-media-uploader.php:118
 msgid "Upload"
-msgstr "بارگذاری"
+msgstr "Nahrát"
 
 #: ../inc/admin/includes/class-options-media-uploader.php:67
 #: ../inc/admin/includes/class-options-media-uploader.php:119
 msgid "Remove"
-msgstr "حذف"
+msgstr "Odstranit"
 
 #: ../inc/admin/includes/class-options-media-uploader.php:70
 msgid "Upgrade your version of WordPress for full media support."
-msgstr "نسخه وردپرس خود را برای پشتیبانی از تمام پرونده های مدیا ارتقا دهید."
+msgstr "Aktualizujte svůj WordPress. Získáte tak plnou podporu."
 
 #: ../inc/admin/includes/class-options-media-uploader.php:94
 msgid "View File"
-msgstr "نمایش پرونده"
+msgstr "Prohlédnout soubor"
 
 #: ../inc/admin/includes/class-options-sanitization.php:316
 msgid "No Repeat"
-msgstr "بدون تکرار"
+msgstr "Neopakovat"
 
 #: ../inc/admin/includes/class-options-sanitization.php:317
 msgid "Repeat Horizontally"
-msgstr "تکرار به صورت افقی"
+msgstr "Opakovat vodorovně"
 
 #: ../inc/admin/includes/class-options-sanitization.php:318
 msgid "Repeat Vertically"
-msgstr "تکرار به صورت عمودی"
+msgstr "Opakovat svisle"
 
 #: ../inc/admin/includes/class-options-sanitization.php:319
 msgid "Repeat All"
-msgstr "تکرار همه"
+msgstr "Opakovat vše"
 
 #: ../inc/admin/includes/class-options-sanitization.php:331
 msgid "Top Left"
-msgstr "بالا چپ"
+msgstr "Zarovnat doleva"
 
 #: ../inc/admin/includes/class-options-sanitization.php:332
 msgid "Top Center"
-msgstr "بالا مرکز"
+msgstr "Zarovnat na střed"
 
 #: ../inc/admin/includes/class-options-sanitization.php:333
 msgid "Top Right"
-msgstr "بالا راست"
+msgstr "Zarovnat doprava"
 
 #: ../inc/admin/includes/class-options-sanitization.php:334
 msgid "Middle Left"
-msgstr "وسط چپ"
+msgstr "Uprostřed vlevo"
 
 #: ../inc/admin/includes/class-options-sanitization.php:335
 msgid "Middle Center"
-msgstr "وسط مرکز"
+msgstr "Uprostřed"
 
 #: ../inc/admin/includes/class-options-sanitization.php:336
 msgid "Middle Right"
-msgstr "وسط راست"
+msgstr "Uprostřed napravo"
 
 #: ../inc/admin/includes/class-options-sanitization.php:337
 msgid "Bottom Left"
-msgstr "پایین چپ"
+msgstr "Dole vlevo"
 
 #: ../inc/admin/includes/class-options-sanitization.php:338
 msgid "Bottom Center"
-msgstr "پایین مرکز"
+msgstr "Dole uprostřed"
 
 #: ../inc/admin/includes/class-options-sanitization.php:339
 msgid "Bottom Right"
-msgstr "پایین راست"
+msgstr "Dole vpravo"
 
 #: ../inc/admin/includes/class-options-sanitization.php:351
 msgid "Scroll Normally"
-msgstr "حرکت عادی"
+msgstr "Skrolovací"
 
 #: ../inc/admin/includes/class-options-sanitization.php:352
 msgid "Fixed in Place"
-msgstr "ثابت در مکان"
+msgstr "Nehybný"
 
 #: ../inc/admin/includes/class-options-sanitization.php:424
 msgid "Normal"
-msgstr "معمولی"
+msgstr "Normální"
 
 #: ../inc/admin/includes/class-options-sanitization.php:425
 msgid "Italic"
-msgstr "اریب"
+msgstr "Kurzíva"
 
 #: ../inc/admin/includes/class-options-sanitization.php:426
 msgid "Bold"
-msgstr "ضخیم"
+msgstr "Tučně"
 
 #: ../inc/admin/includes/class-options-sanitization.php:427
 msgid "Bold Italic"
-msgstr "ضخیم و اریب"
+msgstr "Tučná kurzíva"
 
 #: ../inc/customizer.php:27
 #, fuzzy
 msgid "Content Options"
-msgstr "تنظیمات قالب"
+msgstr "Možnosti šablony"
 
 #: ../inc/customizer.php:39
 msgid "Show post excerpts?"
@@ -373,499 +365,484 @@ msgstr ""
 #: ../inc/customizer.php:51
 #, fuzzy
 msgid "Display Comments on Static Pages?"
-msgstr "نمایش در صفحه اصلی"
+msgstr "Zobrazí se na úvodní stránce"
 
 #: ../inc/extras.php:61
 #, php-format
 msgid "Page %s"
-msgstr "صفحات %s"
+msgstr "Stránka %s"
 
 #: ../inc/extras.php:125
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
-msgstr ""
-"<p>این مطلب با رمز عبور محافظت می شود. برای نمایش رمز را در پایین وارد کنید: "
-"</p>"
+msgstr "<p>Tento příspěvek je chráněn heslem. Napište prosím heslo:</p>"
 
 #: ../inc/extras.php:126
 msgid "Password:"
-msgstr "رمز عبور:"
+msgstr "Heslo:"
 
 #: ../inc/extras.php:129
 msgid "Submit"
-msgstr "تایید"
+msgstr "Odeslat"
 
 #: ../inc/extras.php:175
 msgid "Follow us on "
-msgstr "ما را دنبال کنید در"
+msgstr "Sledujte nás na"
 
 #: ../inc/extras.php:287
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
-msgstr "پوسته توسط %1$s قدرت گرفته از %2$s"
+msgstr "Šablonu %1$s pohání %2$s"
 
 #: ../inc/extras.php:394
 msgid "Support and Documentation"
-msgstr "پشتیبانی و مستندات"
+msgstr "Podpora a dokumentace"
 
 #: ../inc/extras.php:400
 msgid "Sparkling Documentation"
-msgstr "مستندات Sparkling"
+msgstr "Dokumentace k šabloně"
 
 #: ../inc/extras.php:401
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
-msgstr "بهترین راه تماس با ما <b>پشتیبانی پرسش</b> و <b>گزارش باگ </b> است"
+msgstr ""
+"Nejlepší způsob, jak nás kontaktovat s <b>dotazy</b> nebo <b>nahlásit chybu</"
+"b> je přes"
 
 #: ../inc/extras.php:401
 msgid "Colorlib support forum"
-msgstr "انجمن پشتیبانی Colorlib"
+msgstr "Colorlib forum podpory"
 
 #: ../inc/extras.php:402
 msgid "If you like this theme, I'd appreciate any of the following:"
-msgstr "اگر این قالب را می پسندید، من قدردانی میکنم از هر نوع دنبال کردنی:"
+msgstr "Pokud se vám šablona líbí, využijte prosím tyto možnosti:"
 
 #: ../inc/extras.php:404
 msgid "Rate this Theme"
-msgstr "رای به این قالب"
+msgstr "Ohodnotit šablonu"
 
 #: ../inc/extras.php:405
 msgid "Like on Facebook"
-msgstr "پسند به ما در فیسبوک"
+msgstr "Sledovat nás na Facebooku"
 
 #: ../inc/extras.php:406
 msgid "Follow on Twitter"
-msgstr "دنبال کردن ما در توییتر"
+msgstr "Sledovat nás na Twitteru"
 
 #: ../inc/template-tags.php:23
 msgid "Posts navigation"
-msgstr "ناوبری مطالب"
+msgstr "Příspěvky"
 
 #: ../inc/template-tags.php:27
 msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
-msgstr "<i class=\"fa fa-chevron-left\"></i> مطالب قدیمی تر"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Starší příspěvky"
 
 #: ../inc/template-tags.php:31
 msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
-msgstr "مطالب جدیدتر <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Novější příspěvky <i class=\"fa fa-chevron-right\"></i>"
 
 #: ../inc/template-tags.php:56
 msgid "Post navigation"
-msgstr "ناوبری مطالب"
+msgstr "Příspěvky"
 
 #: ../inc/widgets/widget-categories.php:11
 #: ../inc/widgets/widget-categories.php:12
 msgid "Sparkling Categories"
-msgstr "دسته بندی Sparkling"
+msgstr "Rubriky šablony"
 
 #: ../inc/widgets/widget-categories.php:17
 #: ../inc/widgets/widget-categories.php:76
 msgid "Categories"
-msgstr "دسته بندی"
+msgstr "Rubriky"
 
 #: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
 msgid "Title "
-msgstr "عنوان"
+msgstr "Název"
 
 #: ../inc/widgets/widget-categories.php:91
 msgid "Limit Categories "
-msgstr "محدودیت دسته بندی"
+msgstr "Maximální počet rubrik"
 
 #: ../inc/widgets/widget-categories.php:104
 msgid "Enable Posts Count"
-msgstr "فعال کردن شمارش مطالب"
+msgstr "Zobrazit počet příspěvků"
 
 #: ../inc/widgets/widget-popular-posts.php:11
 #: ../inc/widgets/widget-popular-posts.php:12
 msgid "Sparkling Popular Posts Widget"
-msgstr "ویدجت مطالب محبوب Sparkling"
+msgstr "Oblíbené příspěvky - widget šablony"
 
 #: ../inc/widgets/widget-popular-posts.php:17
 #: ../inc/widgets/widget-popular-posts.php:94
 msgid "Popular Posts"
-msgstr "مطالب محبوب"
+msgstr "Oblíbené příspěvky"
 
 #: ../inc/widgets/widget-popular-posts.php:99
 msgid "Title"
-msgstr "عنوان"
+msgstr "Název"
 
 #: ../inc/widgets/widget-popular-posts.php:107
 msgid "Limit Posts Number"
-msgstr "محدودیت شماره مطالب"
+msgstr "Maximální počet příspěvků"
 
 #: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
 msgid "Sparkling Social Widget"
-msgstr "ویدجت شبکه Sparkling"
+msgstr "Sociální widget šablony"
 
 #: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
 msgid "Follow us"
-msgstr "ما را دنبال کنید"
+msgstr "Sledujte nás na"
 
 #: ../options.php:23
 msgid "Right Sidebar"
-msgstr "نوار کناری راست"
+msgstr "Pravé postranní menu"
 
 #: ../options.php:23
 msgid "Left Sidebar"
-msgstr "نوار کناری چپ"
+msgstr "Levé postranní menu"
 
 #: ../options.php:27
 msgid "One"
-msgstr "یک"
+msgstr "Jedna"
 
 #: ../options.php:28
 msgid "Two"
-msgstr "دو"
+msgstr "Dvě"
 
 #: ../options.php:29
 msgid "Three"
-msgstr "سه"
+msgstr "Tři"
 
 #: ../options.php:30
 msgid "Four"
-msgstr "چهار"
+msgstr "Čtyři"
 
 #: ../options.php:31
 msgid "Five"
-msgstr "پنج"
+msgstr "Pět"
 
 #: ../options.php:36
 msgid "French Toast"
-msgstr "نان تست فرانسوی"
+msgstr "Francouzský toust"
 
 #: ../options.php:37
 msgid "Pancake"
-msgstr "کلوچه"
+msgstr "Lívanec"
 
 #: ../options.php:38
 msgid "Omelette"
-msgstr "املت"
+msgstr "Omeleta"
 
 #: ../options.php:39
 msgid "Crepe"
-msgstr "کرپ"
+msgstr "Palačinka"
 
 #: ../options.php:40
 msgid "Waffle"
-msgstr "وفل"
+msgstr "Vafle"
 
 #: ../options.php:110
 msgid "Main"
-msgstr "صفحه اصلی"
+msgstr "Hlavní"
 
 #: ../options.php:115
 msgid "Do You want to display image slider on the Home Page?"
-msgstr "آیا مایلید اسلایدر را در صفحه اصلی نمایش دهید؟"
+msgstr "Chcete zobrazit slider na úvodní stránce?"
 
 #: ../options.php:116
 msgid "Check if you want to enable slider"
-msgstr "فعال کنید اگر مایل به نمایش اسلایدر هستید"
+msgstr "Zaškrtněte, pokud chcete aktivovat slider"
 
 #: ../options.php:123
 msgid "Slider Category"
-msgstr "دسته بندی اسلایدر"
+msgstr "Rubrika ve slideru"
 
 #: ../options.php:124
 msgid "Select a category for the featured post slider"
-msgstr "انتخاب دسته بندی برای اسلایدر مطالب ویژه"
+msgstr "vyberte rubriku, která se zobrazí ve slideru"
 
 #: ../options.php:132
 msgid "Number of slide items"
-msgstr "تعداد اسلایدها"
+msgstr "Počet položek ve slideru"
 
 #: ../options.php:133
 msgid "Enter the number of slide items"
-msgstr "تعداد موارد  اسلاید را وارد کنید"
+msgstr "Napište počet"
 
 #: ../options.php:141
 msgid "Website Layout Options"
-msgstr "گزینه های طرح بندی وب سایت"
+msgstr "Vzhled stránky"
 
 #: ../options.php:142
 msgid "Choose between Left and Right sidebar options to be used as default"
-msgstr "انتخاب کنید بین نوار کنار چپ و راست برای تایین بعنوان پیش فرض"
+msgstr "Zvolte, kde chcete mít postranní menu"
 
 #: ../options.php:151
 msgid "Element color"
-msgstr "رنگ عنصر"
+msgstr "Barva tlačítek"
 
 #: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
 #: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
 #: ../options.php:280 ../options.php:390 ../options.php:398
 msgid "Default used if no color is selected"
-msgstr "به طور پیش فرض استفاده می شود اگر رنگ انتخاب شود"
+msgstr "Pokud není nic vybráno, zobrazí se defaultní barva"
 
 #: ../options.php:159
 msgid "Element color on hover"
-msgstr "رنگ عنصر در شناور"
+msgstr "Barva tlačítka po najetí myši"
 
 #: ../options.php:167
 msgid "Custom Favicon"
-msgstr "فاویکن دلخواه"
+msgstr "Vlastní favicon"
 
 #: ../options.php:168
 msgid ""
 "Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
-msgstr ""
-"بارگذاری یک تصویر 32px x 32px PNG/GIF و آن استفاده خواهد شد بعنوان فاویکن "
-"سایت شما"
+msgstr "Nahrajte obrázek PNG/GIF velikosti 32 x 32 px"
 
 #: ../options.php:175
 msgid "Action Button"
-msgstr "دکمه اکشن"
+msgstr "Akční tlačítko"
 
 #: ../options.php:180
 msgid "Call For Action Text"
-msgstr "فراخوان متن اکشن"
+msgstr "Text pro akční tlačítko"
 
 #: ../options.php:181
 msgid "Enter the text for call for action section"
-msgstr "متن را وارد کنید برای انتخاب اکشن"
+msgstr "Napište text, který se zobrazí v akční sekci"
 
 #: ../options.php:188
 msgid "Call For Action Button Title"
-msgstr "عنوان متن کلید اکشن"
+msgstr "Název akčního tlačítka"
 
 #: ../options.php:189
 msgid "Enter the title for Call For Action button"
-msgstr "وارد کردن یک عنوان  برای کلید اکشن"
+msgstr "Vložte název akčního tlačítka"
 
 #: ../options.php:196
 msgid "CFA button link"
-msgstr "لینک کلید CFA"
+msgstr "Odkaz akčního tlačítka"
 
 #: ../options.php:197
 msgid "Enter the link for Call For Action button"
-msgstr "وارد کردن یک لینک برای کلید اکشن"
+msgstr "Vložte odkaz pro akční tlačítko"
 
 #: ../options.php:204
 msgid "Call For Action Text Color"
-msgstr "فراخوان رنگ متن اکشن"
+msgstr "Barva akčního textu"
 
 #: ../options.php:212
 msgid "Call For Action Background Color"
-msgstr "فراخوان رنگ پس زمینه اکشن"
+msgstr "Barva pozadí akčního textu"
 
 #: ../options.php:220
 msgid "Call For Action Button Border Color"
-msgstr "فراخوان رنگ حاشیه کلید اکشن"
+msgstr "Barva ohraničení akčního tlačítka"
 
 #: ../options.php:228
 msgid "Call For Action Button Text Color"
-msgstr "فراخوان رنگ متن کلید اکشن"
+msgstr "Barva písma akčního tlačítka"
 
 #: ../options.php:236
 msgid "Typography"
-msgstr "تایپوگرافی"
+msgstr "Typografie"
 
 #: ../options.php:241
 msgid "Main Body Text"
-msgstr "متن بدنه اصلی"
+msgstr "Hlavní text webu"
 
 #: ../options.php:242
 msgid "Used in P tags"
-msgstr "مورد استفاده در تگ P"
+msgstr "Text v P tagu"
 
 #: ../options.php:250
 msgid "Heading Color"
-msgstr "رنگ عنوان"
+msgstr "Barva nadpisů"
 
 #: ../options.php:251
 msgid "Color for all headings (h1-h6)"
-msgstr "رنگ برای تمام عناوین (h1-h6)"
+msgstr "Pro všechny nadpisy (h1-h6)"
 
 #: ../options.php:258
 msgid "Link Color"
-msgstr "رنگ لینک"
+msgstr "Barva odkazu"
 
 #: ../options.php:266
 msgid "Link:hover Color"
-msgstr "لینک:رنگ شناور"
+msgstr "Barva aktivního odkazu"
 
 #: ../options.php:274
 msgid "Header"
-msgstr "سربرگ"
+msgstr "Záhlaví"
 
 #: ../options.php:279
 msgid "Top nav background color"
-msgstr "رنگ پس زمینه منو بالا"
+msgstr "Barva pozadí horního menu"
 
 #: ../options.php:287
 msgid "Top nav item color"
-msgstr "رنگ آیتم های منو بالا"
+msgstr "Barva textu v horním menu"
 
 #: ../options.php:288
 msgid "Link color"
-msgstr "رنگ لینک"
+msgstr "Barva odkazu"
 
 #: ../options.php:295
 msgid "Top nav item hover color"
-msgstr "رنگ مورد شناور منو بالا"
+msgstr "Barva aktivní položky v horním menu"
 
 #: ../options.php:296
 msgid "Link:hover color"
-msgstr "لینک:رنگ شناور"
+msgstr "Barva aktivního odkazu"
 
 #: ../options.php:303
 msgid "Top nav dropdown background color"
-msgstr "رنگ پس زمینه منو کرکره ای بالا"
+msgstr "Barva pozadí submenu"
 
 #: ../options.php:304 ../options.php:328
 msgid "Background of dropdown item hover color"
-msgstr "رنگ شناور پس زمینه منو کرکره ای بالا"
+msgstr "Barva v pozadí aktivního textu v submenu"
 
 #: ../options.php:311
 msgid "Top nav dropdown item color"
-msgstr "رنگ مورد کرکره منو بالا"
+msgstr "Barva textu v submenu horního menu"
 
 #: ../options.php:312
 msgid "Dropdown item color"
-msgstr "رنگ مورد کرکره"
+msgstr "Barva textu v submenu"
 
 #: ../options.php:319
 msgid "Top nav dropdown item hover color"
-msgstr "رنگ شناور آیتم کرکره منو بالا"
+msgstr "Barva aktivního textu v submenu horního menu"
 
 #: ../options.php:320
 msgid "Dropdown item hover color"
-msgstr "رنگ شناور اقلام منو"
+msgstr "Barva aktivního textu v submenu"
 
 #: ../options.php:327
 msgid "Top nav dropdown item background hover color"
-msgstr "رنگ پس زمینه شناور اقلام منو بالا"
+msgstr "Barva aktivního pozadí submenu v horním menu"
 
 #: ../options.php:335
 msgid "Footer"
-msgstr "پانویس"
+msgstr "Zápatí"
 
 #: ../options.php:340
 msgid "Footer widget area background color"
-msgstr "رنگ پس زمینه محل ویدجت پانویس"
+msgstr "Barva pozadí widgetů v zápatí"
 
 #: ../options.php:347
 msgid "Footer background color"
-msgstr "رنگ پس زمینه پانویس"
+msgstr "Barva pozadí v zápatí"
 
 #: ../options.php:354
 msgid "Footer text color"
-msgstr "رنگ متن پانویس"
+msgstr "Barva textu v zápatí"
 
 #: ../options.php:361
 msgid "Footer link color"
-msgstr "رنگ لینک پانویس"
+msgstr "Barva odkazu v zápatí"
 
 #: ../options.php:368
 msgid "Footer information"
-msgstr "اطلاعات پانویس"
+msgstr "Text v zápatí"
 
 #: ../options.php:369
 msgid "Copyright text in footer"
-msgstr "رنگ متن کپی رایت در پانویس"
+msgstr "Text autorských práv v zápatí webu"
 
 #: ../options.php:376
 #, fuzzy
 msgid "Footer Social Icons"
-msgstr "رنگ آیکون های اجتماعی پانویس"
+msgstr "Barva ikonky sociální sítě v zápatí"
 
 #: ../options.php:377
 #, fuzzy
 msgid "Show/Hide social icons in footer"
-msgstr "رنگ آیکون های اجتماعی پانویس"
+msgstr "Barva ikonky sociální sítě v zápatí"
 
 #: ../options.php:384
 msgid "Social"
-msgstr "اجتماعی"
+msgstr "Sociální sítě"
 
 #: ../options.php:389
 msgid "Social icon color"
-msgstr "رنگ آیکون های اجتماعی"
+msgstr "Barva ikonky sociální sítě"
 
 #: ../options.php:397
 msgid "Footer social icon color"
-msgstr "رنگ آیکون های اجتماعی پانویس"
+msgstr "Barva ikonky sociální sítě v zápatí"
 
 #: ../options.php:405
 msgid "Add full URL for your social network profiles"
-msgstr "اضافه کردن URL کامل برای پروفایل های شبکه های اجتماعی خود"
+msgstr "Přidejte celý odkaz profilu na vaši sociální síť"
 
 #: ../options.php:406
-#, fuzzy
 msgid "Facebook"
-msgstr "فیسبوک"
+msgstr "Facebook"
 
 #: ../options.php:415
-#, fuzzy
 msgid "Twitter"
-msgstr "توئیتر"
+msgstr "Twitter"
 
 #: ../options.php:423
-#, fuzzy
 msgid "Google+"
-msgstr "گوگل پلاس"
+msgstr "Google+"
 
 #: ../options.php:431
-#, fuzzy
 msgid "Youtube"
-msgstr "یوتیوب"
+msgstr "YouTube"
 
 #: ../options.php:439
 msgid "Vimeo"
-msgstr ""
+msgstr "Vimeo"
 
 #: ../options.php:447
-#, fuzzy
 msgid "LinkedIn"
-msgstr "لينكداين"
+msgstr "LinkedIn"
 
 #: ../options.php:455
-#, fuzzy
 msgid "Pinterest"
-msgstr "پینترست"
+msgstr "Pinterest"
 
 #: ../options.php:463
-#, fuzzy
 msgid "RSS Feed"
-msgstr "خوراک RSS"
+msgstr "RSS čtečka"
 
 #: ../options.php:471
-#, fuzzy
 msgid "Tumblr"
-msgstr "تامبلر"
+msgstr "Tumblr"
 
 #: ../options.php:479
-#, fuzzy
 msgid "Flickr"
-msgstr "فلیکر"
+msgstr "Flickr"
 
 #: ../options.php:487
-#, fuzzy
 msgid "Instagram"
-msgstr "اینستاگرام"
+msgstr "Instagram"
 
 #: ../options.php:495
-#, fuzzy
 msgid "Dribbble"
-msgstr "دریبل"
+msgstr "Dribble"
 
 #: ../options.php:503
-#, fuzzy
 msgid "Skype"
-msgstr "اسکایپ"
+msgstr "Skype"
 
 #: ../options.php:511
 msgid "Foursquare"
-msgstr ""
+msgstr "Foursquare"
 
 #: ../options.php:519
 msgid "SoundCloud"
-msgstr ""
+msgstr "SoundClound"
 
 #: ../options.php:527
-#, fuzzy
 msgid "GitHub"
-msgstr "گیت هاب"
+msgstr "GitHub"
 
 #: ../options.php:535
 msgid "Spotify"
@@ -873,47 +850,47 @@ msgstr ""
 
 #: ../options.php:542
 msgid "Other"
-msgstr "دیگر"
+msgstr "Ostatní"
 
 #: ../options.php:547
 msgid "Custom CSS"
-msgstr "CSS سفارشی"
+msgstr "Vlastní CSS"
 
 #: ../options.php:548
 msgid "Additional CSS"
-msgstr "CSS اضافی"
+msgstr "Doplňkové CSS"
 
 #: ../search.php:16
 #, php-format
 msgid "Search Results for: %s"
-msgstr "نتایج جستجو برای: %s"
+msgstr "Výsledky hledání: %s"
 
 #: ../searchform.php:11
 #, fuzzy
 msgid "Search for:"
-msgstr "جستجو برای:"
+msgstr "Hledat..."
 
 #: ../searchform.php:12
 #, fuzzy
 msgctxt "placeholder"
 msgid "Search&hellip;"
-msgstr "جستجو"
+msgstr "Hledat..."
 
 #: ../searchform.php:12
 #, fuzzy
 msgctxt "label"
 msgid "Search for:"
-msgstr "جستجو برای:"
+msgstr "Hledat..."
 
 #: ../searchform.php:14
 #, fuzzy
 msgctxt "submit button"
 msgid "Search"
-msgstr "جستجو"
+msgstr "Hledat..."
 
 #: ../sidebar.php:26
 msgid "Meta"
-msgstr "متا"
+msgstr "Meta"
 
 #~ msgid "Search..."
-#~ msgstr "جستجو..."
+#~ msgstr "Hledat..."

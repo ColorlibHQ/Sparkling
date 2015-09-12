@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-07-08 17:07+0300\n"
-"PO-Revision-Date: 2015-07-08 17:07+0300\n"
+"POT-Creation-Date: 2015-07-08 17:08+0300\n"
+"PO-Revision-Date: 2015-07-08 17:09+0300\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
-"Language-Team: RobertCreed <info@robertcreed.me>\n"
-"Language: fa\n"
+"Language-Team: 楊舒淳 Chaneswin <chacha@chaneswin.idv.tw>\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,357 +14,347 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
 "esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
-"_nx: 4c,1,2;_n:1,2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
 #: ../404.php:15
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "اوه! این صفحه نمی&rsquo;تواند پیدا شود."
+msgstr "抱歉！找不到此頁面。"
 
 #: ../404.php:19
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
-msgstr ""
-"بنظر می رسد چیزی در این محل پیدا نشد. شاید امتحان یکی از لینک های زیر یا "
-"جستجو؟"
+msgstr "這裡好像什麼都沒有，請試試其他超連結或搜尋"
 
 #: ../404.php:25
-#, fuzzy
 msgid "Recent Posts"
-msgstr "ناوبری مطالب"
+msgstr "最新文章"
 
 #: ../404.php:31
 msgid "Most Used Categories"
-msgstr "بیشترین دسته بندی های استفاده شده"
+msgstr "常用分類"
 
 #: ../404.php:52
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
-msgstr "نگاهی به بایگانی ماهیانه. %1$s"
+msgstr "請查看文章彙整 %1$s"
 
 #: ../404.php:53 ../archive.php:66 ../sidebar.php:19
 msgid "Archives"
-msgstr "بایگانی ها"
+msgstr "彙整"
 
 #: ../404.php:58
-#, fuzzy
 msgid "Tags"
-msgstr "مورد استفاده در تگ P"
+msgstr "標籤"
 
 #: ../archive.php:27
 #, php-format
 msgid "Author: %s"
-msgstr "نویسنده: %s"
+msgstr "作者：%s"
 
 #: ../archive.php:30
 #, php-format
 msgid "Day: %s"
-msgstr "روز: %s"
+msgstr "日: %s"
 
 #: ../archive.php:33
 #, php-format
 msgid "Month: %s"
-msgstr "ماه: %s"
+msgstr "月: %s"
 
 #: ../archive.php:36
 #, php-format
 msgid "Year: %s"
-msgstr "سال: %s"
+msgstr "年: %s"
 
 #: ../archive.php:39
 msgid "Asides"
-msgstr "گذشته ها"
+msgstr "邊欄"
 
 #: ../archive.php:42
 msgid "Galleries"
-msgstr "گالری ها"
+msgstr "藝廊"
 
 #: ../archive.php:45
 msgid "Images"
-msgstr "تصاویر"
+msgstr "圖片"
 
 #: ../archive.php:48
 msgid "Videos"
-msgstr "ویدئوها"
+msgstr "影片"
 
 #: ../archive.php:51
 msgid "Quotes"
-msgstr "نقل قول ها"
+msgstr "Quotes"
 
 #: ../archive.php:54
 msgid "Links"
-msgstr "لینک ها"
+msgstr "連結"
 
 #: ../archive.php:57
 msgid "Statuses"
-msgstr "وضعیت ها"
+msgstr "狀態"
 
 #: ../archive.php:60
 msgid "Audios"
-msgstr "صدا ها"
+msgstr "聲音"
 
 #: ../archive.php:63
 msgid "Chats"
-msgstr "گفتگو ها"
+msgstr "聊天"
 
 #: ../comments.php:28
 #, php-format
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
+msgstr[0] "在 &ldquo;%2$s&rdquo; 有 %1$s 則留言"
 
 #: ../comments.php:35 ../comments.php:53
 msgid "Comment navigation"
-msgstr "ناوبری نظر"
+msgstr "留言導覽"
 
 #: ../comments.php:36 ../comments.php:54
 msgid "&larr; Older Comments"
-msgstr "&larr; نظرات قدیمی تر"
+msgstr "&larr;  較舊的留言"
 
 #: ../comments.php:37 ../comments.php:55
 msgid "Newer Comments &rarr;"
-msgstr "نظرات جدیدتر &rarr;"
+msgstr "較新的留言  &rarr;"
 
 #: ../comments.php:65
 msgid "Comments are closed."
-msgstr "نظرات بسته شده اند."
+msgstr "留言功能已關閉"
 
 #: ../content-none.php:13
 msgid "Nothing Found"
-msgstr "چیزی یافت نشد."
+msgstr "找不到東西"
 
 #: ../content-none.php:19
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-"آماده اید برای ارسال اولین مطلب؟ <a href=\"%1$s\">از اینجا شروع کنید</a>."
+msgstr "準備好發表你的第一篇文章了嗎？<a href=\"%1$s\">按這裡開始</a>"
 
 #: ../content-none.php:23
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
-msgstr ""
-"متاسفیم، اما چیزی مطابق جستجوی شما یافت نشد. لطفا مجدد سعی کنید با کلمات "
-"متفاوت."
+msgstr "抱歉，沒有符合的搜尋結果，請試試不同的關鍵字"
 
 #: ../content-none.php:28
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
-msgstr ""
-"بنظر می رسد ما نمی&rsquo;توانیم پیدا کنیم آنچه شما&rsquo;بدنبالش هستید. "
-"احتمالا جستجو می تواند کمک کند."
+msgstr "我們找不到你要的東西，請試試其他搜尋"
 
 #: ../content-page.php:21 ../content-single.php:35 ../content.php:49
 #: ../image.php:79
 msgid "Pages:"
-msgstr "صفحات:"
+msgstr "頁面:"
 
 #: ../content-page.php:32 ../content-single.php:26 ../content.php:23
 msgid "Edit"
-msgstr "ویرایش"
+msgstr "編輯"
 
 #: ../content-single.php:19
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: ../content-single.php:23
-#, fuzzy, php-format
+#, php-format
 msgid " %1$s"
 msgstr " %1$s"
 
 #: ../content.php:20
 msgid "Leave a comment"
-msgstr "نظر بگذارید"
+msgstr "留言"
 
 #: ../content.php:20
 msgid "1 Comment"
-msgstr "1 نظر"
+msgstr "1 Comment"
 
 #: ../content.php:20
 msgid "% Comments"
-msgstr "% نظر"
+msgstr "% 筆留言"
 
 #: ../content.php:32 ../content.php:45
 msgid "Read More"
-msgstr "بیشتر بخوانید"
+msgstr "繼續閱讀"
 
 #: ../functions.php:69
 msgid "Primary Menu"
-msgstr "قهرست اولیه"
+msgstr "主選單"
 
 #: ../functions.php:70 ../inc/extras.php:212
 msgid "Footer Links"
-msgstr "لینک پانویس"
+msgstr "頁尾超連結"
 
 #: ../functions.php:108
 msgid "Sidebar"
-msgstr "نوار کناری"
+msgstr "側欄"
 
 #: ../functions.php:118
 msgid "Homepage Widget 1"
-msgstr "ویدجت خانه 1"
+msgstr "首頁小工具 1"
 
 #: ../functions.php:119 ../functions.php:129 ../functions.php:139
 msgid "Displays on the Home Page"
-msgstr "نمایش در صفحه اصلی"
+msgstr "在首頁顯示"
 
 #: ../functions.php:128
 msgid "Homepage Widget 2"
-msgstr "ویدجت خانه 2"
+msgstr "首頁小工具 2"
 
 #: ../functions.php:138
 msgid "Homepage Widget 3"
-msgstr "ویدجت خانه 3"
+msgstr "首頁小工具 3"
 
 #: ../functions.php:148
 msgid "Footer Widget 1"
-msgstr "ویدجت پانویس 1"
+msgstr "頁尾小工具 1"
 
 #: ../functions.php:149 ../functions.php:159 ../functions.php:169
 msgid "Used for footer widget area"
-msgstr "استفاده در محل ویدجت پانویس"
+msgstr "用於頁尾小工具"
 
 #: ../functions.php:158
 msgid "Footer Widget 2"
-msgstr "ویدجت پانویس 2"
+msgstr "頁尾小工具 2"
 
 #: ../functions.php:168
 msgid "Footer Widget 3"
-msgstr "ویدجت پانویس 3"
+msgstr "頁尾小工具 3"
 
 #: ../image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
-msgstr "<i class=\"fa fa-chevron-left\"></i> قبلی"
+msgstr "<i class=\"fa fa-chevron-left\"></i> 上一筆"
 
 #: ../image.php:23
 msgid "Next <i class=\"fa fa-chevron-right\"></i>"
-msgstr "بعدی <i class=\"fa fa-chevron-right\"></i>"
+msgstr "下一筆 <i class=\"fa fa-chevron-right\"></i>"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:91
 #: ../inc/admin/includes/class-options-framework-admin.php:92
 msgid "Theme Options"
-msgstr "تنظیمات قالب"
+msgstr "Sparkling 佈景主題選項"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:204
 msgid "Click OK to reset. Any theme settings will be lost!"
-msgstr ""
-"روی ok برای تنظیم مجدد کلیک کنید. تمام تنظیمات به حالت اولیه در خواهند آمد!"
+msgstr "按下確定重設，現在的所有設定都會被清除"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:235
 msgid "Default options restored."
-msgstr "تنظیمات پیش فرض اعمال شدند."
+msgstr "恢復成預設值"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:289
 msgid "Options saved."
-msgstr "تنظیمات ذخیره شدند."
+msgstr "已儲存"
 
 #: ../inc/admin/includes/class-options-media-uploader.php:62
 msgid "No file chosen"
-msgstr "پرونده ای انتخاب نشده"
+msgstr "沒有選擇檔案"
 
 #: ../inc/admin/includes/class-options-media-uploader.php:65
 #: ../inc/admin/includes/class-options-media-uploader.php:118
 msgid "Upload"
-msgstr "بارگذاری"
+msgstr "上傳"
 
 #: ../inc/admin/includes/class-options-media-uploader.php:67
 #: ../inc/admin/includes/class-options-media-uploader.php:119
 msgid "Remove"
-msgstr "حذف"
+msgstr "移除"
 
 #: ../inc/admin/includes/class-options-media-uploader.php:70
 msgid "Upgrade your version of WordPress for full media support."
-msgstr "نسخه وردپرس خود را برای پشتیبانی از تمام پرونده های مدیا ارتقا دهید."
+msgstr "升級你的 WordPress 來獲得完整媒體支援"
 
 #: ../inc/admin/includes/class-options-media-uploader.php:94
 msgid "View File"
-msgstr "نمایش پرونده"
+msgstr "查看檔案"
 
 #: ../inc/admin/includes/class-options-sanitization.php:316
 msgid "No Repeat"
-msgstr "بدون تکرار"
+msgstr "不重複"
 
 #: ../inc/admin/includes/class-options-sanitization.php:317
 msgid "Repeat Horizontally"
-msgstr "تکرار به صورت افقی"
+msgstr "水平重複"
 
 #: ../inc/admin/includes/class-options-sanitization.php:318
 msgid "Repeat Vertically"
-msgstr "تکرار به صورت عمودی"
+msgstr "垂直重複"
 
 #: ../inc/admin/includes/class-options-sanitization.php:319
 msgid "Repeat All"
-msgstr "تکرار همه"
+msgstr "重複"
 
 #: ../inc/admin/includes/class-options-sanitization.php:331
 msgid "Top Left"
-msgstr "بالا چپ"
+msgstr "Top Left"
 
 #: ../inc/admin/includes/class-options-sanitization.php:332
 msgid "Top Center"
-msgstr "بالا مرکز"
+msgstr "Top Center"
 
 #: ../inc/admin/includes/class-options-sanitization.php:333
 msgid "Top Right"
-msgstr "بالا راست"
+msgstr "Top Right"
 
 #: ../inc/admin/includes/class-options-sanitization.php:334
 msgid "Middle Left"
-msgstr "وسط چپ"
+msgstr "Middle Left"
 
 #: ../inc/admin/includes/class-options-sanitization.php:335
 msgid "Middle Center"
-msgstr "وسط مرکز"
+msgstr "Middle Center"
 
 #: ../inc/admin/includes/class-options-sanitization.php:336
 msgid "Middle Right"
-msgstr "وسط راست"
+msgstr "Middle Right"
 
 #: ../inc/admin/includes/class-options-sanitization.php:337
 msgid "Bottom Left"
-msgstr "پایین چپ"
+msgstr "Bottom Left"
 
 #: ../inc/admin/includes/class-options-sanitization.php:338
 msgid "Bottom Center"
-msgstr "پایین مرکز"
+msgstr "Bottom Center"
 
 #: ../inc/admin/includes/class-options-sanitization.php:339
 msgid "Bottom Right"
-msgstr "پایین راست"
+msgstr "Bottom Right"
 
 #: ../inc/admin/includes/class-options-sanitization.php:351
 msgid "Scroll Normally"
-msgstr "حرکت عادی"
+msgstr "捲動"
 
 #: ../inc/admin/includes/class-options-sanitization.php:352
 msgid "Fixed in Place"
-msgstr "ثابت در مکان"
+msgstr "固定位置"
 
 #: ../inc/admin/includes/class-options-sanitization.php:424
 msgid "Normal"
-msgstr "معمولی"
+msgstr "正常"
 
 #: ../inc/admin/includes/class-options-sanitization.php:425
 msgid "Italic"
-msgstr "اریب"
+msgstr "斜體"
 
 #: ../inc/admin/includes/class-options-sanitization.php:426
 msgid "Bold"
-msgstr "ضخیم"
+msgstr "粗體"
 
 #: ../inc/admin/includes/class-options-sanitization.php:427
 msgid "Bold Italic"
-msgstr "ضخیم و اریب"
+msgstr "粗斜體"
 
 #: ../inc/customizer.php:27
 #, fuzzy
 msgid "Content Options"
-msgstr "تنظیمات قالب"
+msgstr "Sparkling 佈景主題選項"
 
 #: ../inc/customizer.php:39
 msgid "Show post excerpts?"
@@ -373,499 +363,482 @@ msgstr ""
 #: ../inc/customizer.php:51
 #, fuzzy
 msgid "Display Comments on Static Pages?"
-msgstr "نمایش در صفحه اصلی"
+msgstr "在首頁顯示"
 
 #: ../inc/extras.php:61
 #, php-format
 msgid "Page %s"
-msgstr "صفحات %s"
+msgstr "Page %s"
 
 #: ../inc/extras.php:125
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
-msgstr ""
-"<p>این مطلب با رمز عبور محافظت می شود. برای نمایش رمز را در پایین وارد کنید: "
-"</p>"
+msgstr "請輸入密碼後才能觀看此文章"
 
 #: ../inc/extras.php:126
 msgid "Password:"
-msgstr "رمز عبور:"
+msgstr "密碼:"
 
 #: ../inc/extras.php:129
 msgid "Submit"
-msgstr "تایید"
+msgstr "送出"
 
 #: ../inc/extras.php:175
 msgid "Follow us on "
-msgstr "ما را دنبال کنید در"
+msgstr "關注我們的"
 
 #: ../inc/extras.php:287
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
-msgstr "پوسته توسط %1$s قدرت گرفته از %2$s"
+msgstr "Theme by %1$s Powered by %2$s"
 
 #: ../inc/extras.php:394
 msgid "Support and Documentation"
-msgstr "پشتیبانی و مستندات"
+msgstr "支援與輔助文件"
 
 #: ../inc/extras.php:400
 msgid "Sparkling Documentation"
-msgstr "مستندات Sparkling"
+msgstr "Sparkling 輔助文件"
 
 #: ../inc/extras.php:401
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
-msgstr "بهترین راه تماس با ما <b>پشتیبانی پرسش</b> و <b>گزارش باگ </b> است"
+msgstr "聯絡我們以回報問題與提問的最好方式是用"
 
 #: ../inc/extras.php:401
 msgid "Colorlib support forum"
-msgstr "انجمن پشتیبانی Colorlib"
+msgstr "Colorlib 支援論壇"
 
 #: ../inc/extras.php:402
 msgid "If you like this theme, I'd appreciate any of the following:"
-msgstr "اگر این قالب را می پسندید، من قدردانی میکنم از هر نوع دنبال کردنی:"
+msgstr "謝謝你喜歡這個佈景主題，請..."
 
 #: ../inc/extras.php:404
 msgid "Rate this Theme"
-msgstr "رای به این قالب"
+msgstr "為這個主題評分"
 
 #: ../inc/extras.php:405
 msgid "Like on Facebook"
-msgstr "پسند به ما در فیسبوک"
+msgstr "在 Facebook 幫我們按讚"
 
 #: ../inc/extras.php:406
 msgid "Follow on Twitter"
-msgstr "دنبال کردن ما در توییتر"
+msgstr "在 Twitter 關注我們"
 
 #: ../inc/template-tags.php:23
 msgid "Posts navigation"
-msgstr "ناوبری مطالب"
+msgstr "文章導覽"
 
 #: ../inc/template-tags.php:27
 msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
-msgstr "<i class=\"fa fa-chevron-left\"></i> مطالب قدیمی تر"
+msgstr "<i class=\"fa fa-chevron-left\"></i> 較舊的文章"
 
 #: ../inc/template-tags.php:31
 msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
-msgstr "مطالب جدیدتر <i class=\"fa fa-chevron-right\"></i>"
+msgstr "較新的文章 <i class=\"fa fa-chevron-right\"></i>"
 
 #: ../inc/template-tags.php:56
 msgid "Post navigation"
-msgstr "ناوبری مطالب"
+msgstr "文章導覽"
 
 #: ../inc/widgets/widget-categories.php:11
 #: ../inc/widgets/widget-categories.php:12
 msgid "Sparkling Categories"
-msgstr "دسته بندی Sparkling"
+msgstr "Sparkling 分類"
 
 #: ../inc/widgets/widget-categories.php:17
 #: ../inc/widgets/widget-categories.php:76
 msgid "Categories"
-msgstr "دسته بندی"
+msgstr "分類"
 
 #: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
 msgid "Title "
-msgstr "عنوان"
+msgstr "標題"
 
 #: ../inc/widgets/widget-categories.php:91
 msgid "Limit Categories "
-msgstr "محدودیت دسته بندی"
+msgstr "最多顯示幾個分類？"
 
 #: ../inc/widgets/widget-categories.php:104
 msgid "Enable Posts Count"
-msgstr "فعال کردن شمارش مطالب"
+msgstr "啟用文章計數"
 
 #: ../inc/widgets/widget-popular-posts.php:11
 #: ../inc/widgets/widget-popular-posts.php:12
 msgid "Sparkling Popular Posts Widget"
-msgstr "ویدجت مطالب محبوب Sparkling"
+msgstr "Sparkling 熱門文章小工具"
 
 #: ../inc/widgets/widget-popular-posts.php:17
 #: ../inc/widgets/widget-popular-posts.php:94
 msgid "Popular Posts"
-msgstr "مطالب محبوب"
+msgstr "熱門文章"
 
 #: ../inc/widgets/widget-popular-posts.php:99
 msgid "Title"
-msgstr "عنوان"
+msgstr "標題"
 
 #: ../inc/widgets/widget-popular-posts.php:107
 msgid "Limit Posts Number"
-msgstr "محدودیت شماره مطالب"
+msgstr "最多顯示幾篇文章？"
 
 #: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
 msgid "Sparkling Social Widget"
-msgstr "ویدجت شبکه Sparkling"
+msgstr "Sparkling 社群小工具"
 
 #: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
 msgid "Follow us"
-msgstr "ما را دنبال کنید"
+msgstr "關注我們"
 
 #: ../options.php:23
 msgid "Right Sidebar"
-msgstr "نوار کناری راست"
+msgstr "右側邊欄"
 
 #: ../options.php:23
 msgid "Left Sidebar"
-msgstr "نوار کناری چپ"
+msgstr "左側邊欄"
 
 #: ../options.php:27
 msgid "One"
-msgstr "یک"
+msgstr "1"
 
 #: ../options.php:28
 msgid "Two"
-msgstr "دو"
+msgstr "2"
 
 #: ../options.php:29
 msgid "Three"
-msgstr "سه"
+msgstr "3"
 
 #: ../options.php:30
 msgid "Four"
-msgstr "چهار"
+msgstr "4"
 
 #: ../options.php:31
 msgid "Five"
-msgstr "پنج"
+msgstr "5"
 
 #: ../options.php:36
 msgid "French Toast"
-msgstr "نان تست فرانسوی"
+msgstr "French Toast"
 
 #: ../options.php:37
 msgid "Pancake"
-msgstr "کلوچه"
+msgstr "Pancake"
 
 #: ../options.php:38
 msgid "Omelette"
-msgstr "املت"
+msgstr "Omelette"
 
 #: ../options.php:39
 msgid "Crepe"
-msgstr "کرپ"
+msgstr "Crepe"
 
 #: ../options.php:40
 msgid "Waffle"
-msgstr "وفل"
+msgstr "Waffle"
 
 #: ../options.php:110
 msgid "Main"
-msgstr "صفحه اصلی"
+msgstr "主要"
 
 #: ../options.php:115
 msgid "Do You want to display image slider on the Home Page?"
-msgstr "آیا مایلید اسلایدر را در صفحه اصلی نمایش دهید؟"
+msgstr "是否在首頁側欄顯示圖片？"
 
 #: ../options.php:116
 msgid "Check if you want to enable slider"
-msgstr "فعال کنید اگر مایل به نمایش اسلایدر هستید"
+msgstr "是否顯示側欄？"
 
 #: ../options.php:123
 msgid "Slider Category"
-msgstr "دسته بندی اسلایدر"
+msgstr "側欄分類"
 
 #: ../options.php:124
 msgid "Select a category for the featured post slider"
-msgstr "انتخاب دسته بندی برای اسلایدر مطالب ویژه"
+msgstr "為特色文章秀選擇分類"
 
 #: ../options.php:132
 msgid "Number of slide items"
-msgstr "تعداد اسلایدها"
+msgstr "投影片數量"
 
 #: ../options.php:133
 msgid "Enter the number of slide items"
-msgstr "تعداد موارد  اسلاید را وارد کنید"
+msgstr "輸入投影片數量"
 
 #: ../options.php:141
 msgid "Website Layout Options"
-msgstr "گزینه های طرح بندی وب سایت"
+msgstr "網站版型選項"
 
 #: ../options.php:142
 msgid "Choose between Left and Right sidebar options to be used as default"
-msgstr "انتخاب کنید بین نوار کنار چپ و راست برای تایین بعنوان پیش فرض"
+msgstr "Choose between Left and Right sidebar options to be used as default"
 
 #: ../options.php:151
 msgid "Element color"
-msgstr "رنگ عنصر"
+msgstr "元素顏色"
 
 #: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
 #: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
 #: ../options.php:280 ../options.php:390 ../options.php:398
 msgid "Default used if no color is selected"
-msgstr "به طور پیش فرض استفاده می شود اگر رنگ انتخاب شود"
+msgstr "沒有選擇顏色就使用預設值"
 
 #: ../options.php:159
 msgid "Element color on hover"
-msgstr "رنگ عنصر در شناور"
+msgstr "滑鼠滑入時的元素顏色"
 
 #: ../options.php:167
 msgid "Custom Favicon"
-msgstr "فاویکن دلخواه"
+msgstr "自訂 Favicon"
 
 #: ../options.php:168
 msgid ""
 "Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
-msgstr ""
-"بارگذاری یک تصویر 32px x 32px PNG/GIF و آن استفاده خواهد شد بعنوان فاویکن "
-"سایت شما"
+msgstr "為你的網站上傳 Favicon（32像素x32像素，PNG或GIF）"
 
 #: ../options.php:175
 msgid "Action Button"
-msgstr "دکمه اکشن"
+msgstr "呼籲行動按鈕"
 
 #: ../options.php:180
 msgid "Call For Action Text"
-msgstr "فراخوان متن اکشن"
+msgstr "呼籲行動文字"
 
 #: ../options.php:181
 msgid "Enter the text for call for action section"
-msgstr "متن را وارد کنید برای انتخاب اکشن"
+msgstr "輸入呼籲行動文字"
 
 #: ../options.php:188
 msgid "Call For Action Button Title"
-msgstr "عنوان متن کلید اکشن"
+msgstr "呼籲行動按鈕標題"
 
 #: ../options.php:189
 msgid "Enter the title for Call For Action button"
-msgstr "وارد کردن یک عنوان  برای کلید اکشن"
+msgstr "輸入呼籲行動按鈕標題"
 
 #: ../options.php:196
 msgid "CFA button link"
-msgstr "لینک کلید CFA"
+msgstr "呼籲行動按鈕連結"
 
 #: ../options.php:197
 msgid "Enter the link for Call For Action button"
-msgstr "وارد کردن یک لینک برای کلید اکشن"
+msgstr "輸入呼籲行動按鈕連結網址"
 
 #: ../options.php:204
 msgid "Call For Action Text Color"
-msgstr "فراخوان رنگ متن اکشن"
+msgstr "呼籲行動文字的顏色"
 
 #: ../options.php:212
 msgid "Call For Action Background Color"
-msgstr "فراخوان رنگ پس زمینه اکشن"
+msgstr "呼籲行動的背景色"
 
 #: ../options.php:220
 msgid "Call For Action Button Border Color"
-msgstr "فراخوان رنگ حاشیه کلید اکشن"
+msgstr "呼籲行動按鈕的邊框顏色"
 
 #: ../options.php:228
 msgid "Call For Action Button Text Color"
-msgstr "فراخوان رنگ متن کلید اکشن"
+msgstr "呼籲行動按鈕的文字顏色"
 
 #: ../options.php:236
 msgid "Typography"
-msgstr "تایپوگرافی"
+msgstr "Typography"
 
 #: ../options.php:241
 msgid "Main Body Text"
-msgstr "متن بدنه اصلی"
+msgstr "主要文字顏色"
 
 #: ../options.php:242
 msgid "Used in P tags"
-msgstr "مورد استفاده در تگ P"
+msgstr "用於<p>段落標籤"
 
 #: ../options.php:250
 msgid "Heading Color"
-msgstr "رنگ عنوان"
+msgstr "標題顏色"
 
 #: ../options.php:251
 msgid "Color for all headings (h1-h6)"
-msgstr "رنگ برای تمام عناوین (h1-h6)"
+msgstr "標題顏色 (h1-h6)"
 
 #: ../options.php:258
 msgid "Link Color"
-msgstr "رنگ لینک"
+msgstr "超連結顏色"
 
 #: ../options.php:266
 msgid "Link:hover Color"
-msgstr "لینک:رنگ شناور"
+msgstr "超連結顏色（滑鼠滑入）"
 
 #: ../options.php:274
 msgid "Header"
-msgstr "سربرگ"
+msgstr "頁首"
 
 #: ../options.php:279
 msgid "Top nav background color"
-msgstr "رنگ پس زمینه منو بالا"
+msgstr "上方導覽列背景色"
 
 #: ../options.php:287
 msgid "Top nav item color"
-msgstr "رنگ آیتم های منو بالا"
+msgstr "上方導覽列項目顏色"
 
 #: ../options.php:288
 msgid "Link color"
-msgstr "رنگ لینک"
+msgstr "超連結顏色"
 
 #: ../options.php:295
 msgid "Top nav item hover color"
-msgstr "رنگ مورد شناور منو بالا"
+msgstr "上方導覽列項目顏色（滑鼠滑入）"
 
 #: ../options.php:296
 msgid "Link:hover color"
-msgstr "لینک:رنگ شناور"
+msgstr "超連結顏色（滑鼠滑入）"
 
 #: ../options.php:303
 msgid "Top nav dropdown background color"
-msgstr "رنگ پس زمینه منو کرکره ای بالا"
+msgstr "上方導覽列下拉式選單背景色"
 
 #: ../options.php:304 ../options.php:328
 msgid "Background of dropdown item hover color"
-msgstr "رنگ شناور پس زمینه منو کرکره ای بالا"
+msgstr "下拉式選單項目背景色（滑鼠滑入）"
 
 #: ../options.php:311
 msgid "Top nav dropdown item color"
-msgstr "رنگ مورد کرکره منو بالا"
+msgstr "上方導覽列下拉式選單項目顏色"
 
 #: ../options.php:312
 msgid "Dropdown item color"
-msgstr "رنگ مورد کرکره"
+msgstr "下拉式選單項目色彩"
 
 #: ../options.php:319
 msgid "Top nav dropdown item hover color"
-msgstr "رنگ شناور آیتم کرکره منو بالا"
+msgstr "上方導覽列下拉式選單項目顏色（滑鼠滑入）"
 
 #: ../options.php:320
 msgid "Dropdown item hover color"
-msgstr "رنگ شناور اقلام منو"
+msgstr "下拉式選單項目色彩（滑鼠滑入）"
 
 #: ../options.php:327
 msgid "Top nav dropdown item background hover color"
-msgstr "رنگ پس زمینه شناور اقلام منو بالا"
+msgstr "上方導覽列下拉式選單項目背景色（滑鼠滑入）"
 
 #: ../options.php:335
 msgid "Footer"
-msgstr "پانویس"
+msgstr "頁尾"
 
 #: ../options.php:340
 msgid "Footer widget area background color"
-msgstr "رنگ پس زمینه محل ویدجت پانویس"
+msgstr "頁尾 widget 背景色"
 
 #: ../options.php:347
 msgid "Footer background color"
-msgstr "رنگ پس زمینه پانویس"
+msgstr "頁尾背景色"
 
 #: ../options.php:354
 msgid "Footer text color"
-msgstr "رنگ متن پانویس"
+msgstr "頁尾文字顏色"
 
 #: ../options.php:361
 msgid "Footer link color"
-msgstr "رنگ لینک پانویس"
+msgstr "頁尾超連結顏色"
 
 #: ../options.php:368
 msgid "Footer information"
-msgstr "اطلاعات پانویس"
+msgstr "頁尾資訊"
 
 #: ../options.php:369
 msgid "Copyright text in footer"
-msgstr "رنگ متن کپی رایت در پانویس"
+msgstr "頁尾版權宣告文字"
 
 #: ../options.php:376
 #, fuzzy
 msgid "Footer Social Icons"
-msgstr "رنگ آیکون های اجتماعی پانویس"
+msgstr "頁尾社群圖示顏色"
 
 #: ../options.php:377
 #, fuzzy
 msgid "Show/Hide social icons in footer"
-msgstr "رنگ آیکون های اجتماعی پانویس"
+msgstr "頁尾社群圖示顏色"
 
 #: ../options.php:384
 msgid "Social"
-msgstr "اجتماعی"
+msgstr "社群"
 
 #: ../options.php:389
 msgid "Social icon color"
-msgstr "رنگ آیکون های اجتماعی"
+msgstr "社群圖示顏色"
 
 #: ../options.php:397
 msgid "Footer social icon color"
-msgstr "رنگ آیکون های اجتماعی پانویس"
+msgstr "頁尾社群圖示顏色"
 
 #: ../options.php:405
 msgid "Add full URL for your social network profiles"
-msgstr "اضافه کردن URL کامل برای پروفایل های شبکه های اجتماعی خود"
+msgstr "請輸入您社群頁面的完整網址"
 
 #: ../options.php:406
-#, fuzzy
 msgid "Facebook"
-msgstr "فیسبوک"
+msgstr "Facebook"
 
 #: ../options.php:415
-#, fuzzy
 msgid "Twitter"
-msgstr "توئیتر"
+msgstr "Twitter"
 
 #: ../options.php:423
-#, fuzzy
 msgid "Google+"
-msgstr "گوگل پلاس"
+msgstr "Google+"
 
 #: ../options.php:431
-#, fuzzy
 msgid "Youtube"
-msgstr "یوتیوب"
+msgstr "Youtube"
 
 #: ../options.php:439
 msgid "Vimeo"
-msgstr ""
+msgstr "Vimeo"
 
 #: ../options.php:447
-#, fuzzy
 msgid "LinkedIn"
-msgstr "لينكداين"
+msgstr "LinkedIn"
 
 #: ../options.php:455
-#, fuzzy
 msgid "Pinterest"
-msgstr "پینترست"
+msgstr "Pinterest"
 
 #: ../options.php:463
-#, fuzzy
 msgid "RSS Feed"
-msgstr "خوراک RSS"
+msgstr "RSS Feed"
 
 #: ../options.php:471
-#, fuzzy
 msgid "Tumblr"
-msgstr "تامبلر"
+msgstr "Tumblr"
 
 #: ../options.php:479
-#, fuzzy
 msgid "Flickr"
-msgstr "فلیکر"
+msgstr "Flickr"
 
 #: ../options.php:487
-#, fuzzy
 msgid "Instagram"
-msgstr "اینستاگرام"
+msgstr "Instagram"
 
 #: ../options.php:495
-#, fuzzy
 msgid "Dribbble"
-msgstr "دریبل"
+msgstr "Dribbble"
 
 #: ../options.php:503
-#, fuzzy
 msgid "Skype"
-msgstr "اسکایپ"
+msgstr "Skype"
 
 #: ../options.php:511
 msgid "Foursquare"
-msgstr ""
+msgstr "Foursquare"
 
 #: ../options.php:519
 msgid "SoundCloud"
-msgstr ""
+msgstr "SoundCloud"
 
 #: ../options.php:527
-#, fuzzy
 msgid "GitHub"
-msgstr "گیت هاب"
+msgstr "GitHub"
 
 #: ../options.php:535
 msgid "Spotify"
@@ -873,47 +846,47 @@ msgstr ""
 
 #: ../options.php:542
 msgid "Other"
-msgstr "دیگر"
+msgstr "其他"
 
 #: ../options.php:547
 msgid "Custom CSS"
-msgstr "CSS سفارشی"
+msgstr "自訂CSS"
 
 #: ../options.php:548
 msgid "Additional CSS"
-msgstr "CSS اضافی"
+msgstr "外加的CSS"
 
 #: ../search.php:16
 #, php-format
 msgid "Search Results for: %s"
-msgstr "نتایج جستجو برای: %s"
+msgstr "%s 的搜尋結果："
 
 #: ../searchform.php:11
 #, fuzzy
 msgid "Search for:"
-msgstr "جستجو برای:"
+msgstr "尋找..."
 
 #: ../searchform.php:12
 #, fuzzy
 msgctxt "placeholder"
 msgid "Search&hellip;"
-msgstr "جستجو"
+msgstr "搜索"
 
 #: ../searchform.php:12
 #, fuzzy
 msgctxt "label"
 msgid "Search for:"
-msgstr "جستجو برای:"
+msgstr "尋找..."
 
 #: ../searchform.php:14
 #, fuzzy
 msgctxt "submit button"
 msgid "Search"
-msgstr "جستجو"
+msgstr "搜索"
 
 #: ../sidebar.php:26
 msgid "Meta"
-msgstr "متا"
+msgstr "Meta"
 
 #~ msgid "Search..."
-#~ msgstr "جستجو..."
+#~ msgstr "尋找..."

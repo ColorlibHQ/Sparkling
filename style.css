@@ -3,8 +3,8 @@ Theme Name: Sparkling
 Theme URI: http://colorlib.com/wp/themes/sparkling
 Author: Colorlib
 Author URI: http://colorlib.com/
-Description: Sparkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, portfolio, design, art, photography, personal and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready, compatible with WPML and is available in Spanish, French, Dutch, Polish, Russian, German, Brazilian Portuguese, Portuguese (Portugal), Persian (Iranian language), Romanian, Turkish, Bulgarian, Japanese, Lithuanian and Italian. Sparkling is a free WordPress theme with premium functionality and design. Now theme is optimized to work with bbPress, Contact Form 7, Jetpack and other popular free and premium plugins.
-Version: 1.8.2
+Description: Sparkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, portfolio, design, art, photography, personal and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready, compatible with WPML and is available in Spanish, French, Dutch, Polish, Russian, German, Brazilian Portuguese, Portuguese (Portugal), Persian (Iranian language), Romanian, Turkish, Bulgarian, Japanese, Lithuanian, Czech, Ukrainian, Traditional Chinese, Simplified Chinese, Indonesian, Estonian and Italian. Sparkling is a free WordPress theme with premium functionality and design. Now theme is optimized to work with bbPress, Contact Form 7, Jetpack and other popular free and premium plugins.
+Version: 1.9.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sparkling
@@ -140,6 +140,7 @@ input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly i
 }
 input[type="text"],
 input[type="email"],
+input[type="tel"],
 input[type="url"],
 input[type="password"],
 input[type="search"],
@@ -150,6 +151,7 @@ textarea {
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
+input[type="tel"]:focus,
 input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
@@ -158,6 +160,7 @@ textarea:focus {
 }
 input[type="text"],
 input[type="email"],
+input[type="tel"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
@@ -827,16 +830,28 @@ button:hover {
   color: #fff;
   background-color: #DA4453;
 }
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
+  .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {
+    color: #fff;
+    background-color: #DA4453;
+  }
+}
 .dropdown-menu {
   font-size: 13px;
 }
-.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-  color: #656D78;
+.navbar-default .navbar-nav .current-menu-ancestor a.dropdown-toggle {
+  color: #DA4453;
+  background-color: transparent;
 }
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #DADADA;
-  }
+.navbar-default .navbar-nav .open .dropdown-menu > li.active > a {
+  color: #fff;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: #DADADA;
+}
+@media (min-width: 979px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }
@@ -1018,6 +1033,12 @@ p.logged-in-as {
 #image-navigation .nav-previous,
 #image-navigation .nav-next {
   margin: 10px 0;
+}
+#image-navigation .nav-previous a {
+  float: left;
+}
+#image-navigation .nav-next a {
+  float: right;
 }
 
 /* =Gallery
@@ -1310,6 +1331,9 @@ p.logged-in-as {
 }
 .social-icons a.github:hover {
   background-color: #4183C4 !important;
+}
+.social-icons a.spotify:hover {
+  background-color: #81b71a !important;
 }
 .fa-googleplus:before {
   content: "\f0d5";

@@ -1,18 +1,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-04-04 15:01+0200\n"
-"PO-Revision-Date: 2015-04-04 15:01+0200\n"
+"POT-Creation-Date: 2015-06-04 14:52+0200\n"
+"PO-Revision-Date: 2015-06-04 14:52+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: Petko Bossakov <petko@bossakov.eu>\n"
 "Language: bg_BG\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.5\n"
+"X-Generator: Poedit 1.8.1\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
+"_nx:4c,1,2;_n:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
@@ -105,7 +106,7 @@ msgstr "Аудио"
 msgid "Chats"
 msgstr "Лафче"
 
-#: ../comments.php:30
+#: ../comments.php:28
 #, php-format
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
@@ -113,19 +114,19 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "Една мисъл по темата &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s мисли по темата &ldquo;%2$s&rdquo;"
 
-#: ../comments.php:37 ../comments.php:55
+#: ../comments.php:35 ../comments.php:53
 msgid "Comment navigation"
 msgstr "Навигация в коментарите"
 
-#: ../comments.php:38 ../comments.php:56
+#: ../comments.php:36 ../comments.php:54
 msgid "&larr; Older Comments"
 msgstr "&larr; По-стари коментари"
 
-#: ../comments.php:39 ../comments.php:57
+#: ../comments.php:37 ../comments.php:55
 msgid "Newer Comments &rarr;"
 msgstr "По-нови коментари &rarr;"
 
-#: ../comments.php:67
+#: ../comments.php:65
 msgid "Comments are closed."
 msgstr "Коментарите са затворени."
 
@@ -155,7 +156,7 @@ msgstr ""
 "Изглежда не можем да открием това, което търсиш. Функцията за търсене може "
 "да помогне."
 
-#: ../content-page.php:21 ../content-single.php:35 ../content.php:43
+#: ../content-page.php:21 ../content-single.php:35 ../content.php:49
 #: ../image.php:79
 msgid "Pages:"
 msgstr "Страници:"
@@ -185,7 +186,7 @@ msgstr "1 коментар"
 msgid "% Comments"
 msgstr "% коментара"
 
-#: ../content.php:32 ../content.php:39
+#: ../content.php:32 ../content.php:45
 msgid "Read More"
 msgstr "Повече"
 
@@ -193,7 +194,7 @@ msgstr "Повече"
 msgid "Primary Menu"
 msgstr "Главно меню"
 
-#: ../functions.php:70 ../inc/extras.php:226
+#: ../functions.php:70 ../inc/extras.php:209
 msgid "Footer Links"
 msgstr "Връзки в долната част"
 
@@ -358,16 +359,26 @@ msgstr "Получер "
 msgid "Bold Italic"
 msgstr "Получер Курсив"
 
+#: ../inc/customizer.php:27
+#, fuzzy
+msgid "Content Options"
+msgstr "Настройки на темата"
+
+#: ../inc/customizer.php:39
+msgid "Show post excerpts?"
+msgstr ""
+
+#: ../inc/customizer.php:51
+#, fuzzy
+msgid "Display Comments on Static Pages?"
+msgstr "Показва се на заглавната страница"
+
 #: ../inc/extras.php:61
 #, php-format
 msgid "Page %s"
 msgstr "Страница %s"
 
-#: ../inc/extras.php:121
-msgid "Search..."
-msgstr "Търсене..."
-
-#: ../inc/extras.php:142
+#: ../inc/extras.php:124
 msgid ""
 "<p>This post is password protected. To view it please enter your password "
 "below:</p>"
@@ -375,32 +386,32 @@ msgstr ""
 "<p>Тази статия е защитена с парола. За да я прочетеш, въведи паролата тук:</"
 "p>"
 
-#: ../inc/extras.php:143
+#: ../inc/extras.php:125
 msgid "Password:"
 msgstr "Парола:"
 
-#: ../inc/extras.php:146
+#: ../inc/extras.php:128
 msgid "Submit"
 msgstr "Изпрати"
 
-#: ../inc/extras.php:190
+#: ../inc/extras.php:173
 msgid "Follow us on "
 msgstr "Следвай ни: "
 
-#: ../inc/extras.php:301
+#: ../inc/extras.php:284
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Дизайн: %1$s Работи с %2$s"
 
-#: ../inc/extras.php:405
+#: ../inc/extras.php:388
 msgid "Support and Documentation"
 msgstr "Поддръжка и документация"
 
-#: ../inc/extras.php:411
+#: ../inc/extras.php:394
 msgid "Sparkling Documentation"
 msgstr "Документация на Sparkling"
 
-#: ../inc/extras.php:412
+#: ../inc/extras.php:395
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -408,23 +419,23 @@ msgstr ""
 "Най-добрият начин да се свържете с нас за <b>поддръжка</b> и <b>докладване "
 "на проблеми</b> е чрез"
 
-#: ../inc/extras.php:412
+#: ../inc/extras.php:395
 msgid "Colorlib support forum"
 msgstr "Форум за поддръжка на Colorlib"
 
-#: ../inc/extras.php:413
+#: ../inc/extras.php:396
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "Ако харесваш тази тема, ще съм благодарен, ако:"
 
-#: ../inc/extras.php:415
+#: ../inc/extras.php:398
 msgid "Rate this Theme"
 msgstr "Гласуваш за тази тема"
 
-#: ../inc/extras.php:416
+#: ../inc/extras.php:399
 msgid "Like on Facebook"
 msgstr "Харесаш във Facebook"
 
-#: ../inc/extras.php:417
+#: ../inc/extras.php:400
 msgid "Follow on Twitter"
 msgstr "Последваш в Twitter"
 
@@ -836,15 +847,19 @@ msgstr "SoundCloud"
 msgid "GitHub"
 msgstr "GitHub"
 
-#: ../options.php:526
+#: ../options.php:527
+msgid "Spotify"
+msgstr ""
+
+#: ../options.php:534
 msgid "Other"
 msgstr "Други"
 
-#: ../options.php:531
+#: ../options.php:539
 msgid "Custom CSS"
 msgstr "Добавяне на CSS"
 
-#: ../options.php:532
+#: ../options.php:540
 msgid "Additional CSS"
 msgstr "Допълнителен CSS код"
 
@@ -852,6 +867,15 @@ msgstr "Допълнителен CSS код"
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Резултати от търсенето за: %s"
+
+#: ../searchform.php:11
+msgid "Search..."
+msgstr "Търсене..."
+
+#: ../searchform.php:13
+#, fuzzy
+msgid "Search"
+msgstr "Търси"
 
 #: ../sidebar.php:26
 msgid "Meta"

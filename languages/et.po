@@ -1,919 +1,897 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-07-08 17:07+0300\n"
-"PO-Revision-Date: 2015-07-08 17:07+0300\n"
+"POT-Creation-Date: 2015-07-29 23:05+0300\n"
+"PO-Revision-Date: 2015-07-29 23:05+0300\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
-"Language-Team: RobertCreed <info@robertcreed.me>\n"
-"Language: fa\n"
+"Language-Team: colorlib <info@colorlib.com>\n"
+"Language: et_EE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.2\n"
+"X-Generator: Poedit 1.8.3\n"
 "X-Poedit-Basepath: .\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
 "esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
-"_nx: 4c,1,2;_n:1,2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
 #: ../404.php:15
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "اوه! این صفحه نمی&rsquo;تواند پیدا شود."
+msgstr "Lehte ei leitud"
 
 #: ../404.php:19
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
-msgstr ""
-"بنظر می رسد چیزی در این محل پیدا نشد. شاید امتحان یکی از لینک های زیر یا "
-"جستجو؟"
+msgstr "Tundub, et midagi ei leitud. Võibolla proovid otsida?"
 
 #: ../404.php:25
-#, fuzzy
 msgid "Recent Posts"
-msgstr "ناوبری مطالب"
+msgstr "Viimased postitused"
 
 #: ../404.php:31
 msgid "Most Used Categories"
-msgstr "بیشترین دسته بندی های استفاده شده"
+msgstr "Enamik kasutatud Kategooriad"
 
 #: ../404.php:52
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
-msgstr "نگاهی به بایگانی ماهیانه. %1$s"
+msgstr "Proovi otsida arhiivist. %1$s"
 
 #: ../404.php:53 ../archive.php:66 ../sidebar.php:19
 msgid "Archives"
-msgstr "بایگانی ها"
+msgstr "Arhiiv"
 
 #: ../404.php:58
-#, fuzzy
 msgid "Tags"
-msgstr "مورد استفاده در تگ P"
+msgstr "Märksõnad"
 
 #: ../archive.php:27
 #, php-format
 msgid "Author: %s"
-msgstr "نویسنده: %s"
+msgstr "Autor:%s"
 
 #: ../archive.php:30
 #, php-format
 msgid "Day: %s"
-msgstr "روز: %s"
+msgstr "Päev:%s"
 
 #: ../archive.php:33
 #, php-format
 msgid "Month: %s"
-msgstr "ماه: %s"
+msgstr "Kuu:%s"
 
 #: ../archive.php:36
 #, php-format
 msgid "Year: %s"
-msgstr "سال: %s"
+msgstr "Aasta: %s"
 
 #: ../archive.php:39
 msgid "Asides"
-msgstr "گذشته ها"
+msgstr "Asides"
 
 #: ../archive.php:42
 msgid "Galleries"
-msgstr "گالری ها"
+msgstr "Galeriid"
 
 #: ../archive.php:45
 msgid "Images"
-msgstr "تصاویر"
+msgstr "Pildid"
 
 #: ../archive.php:48
 msgid "Videos"
-msgstr "ویدئوها"
+msgstr "Videod"
 
 #: ../archive.php:51
 msgid "Quotes"
-msgstr "نقل قول ها"
+msgstr "Ütlused"
 
 #: ../archive.php:54
 msgid "Links"
-msgstr "لینک ها"
+msgstr "Lingid"
 
 #: ../archive.php:57
 msgid "Statuses"
-msgstr "وضعیت ها"
+msgstr "Staatused"
 
 #: ../archive.php:60
 msgid "Audios"
-msgstr "صدا ها"
+msgstr "Audiod"
 
 #: ../archive.php:63
 msgid "Chats"
-msgstr "گفتگو ها"
+msgstr "Chatid"
 
 #: ../comments.php:28
 #, php-format
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
+msgstr[0] "Üks müte &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s mõtteid &ldquo;%2$s&rdquo;"
 
 #: ../comments.php:35 ../comments.php:53
 msgid "Comment navigation"
-msgstr "ناوبری نظر"
+msgstr "Komentaari navigatsioon"
 
 #: ../comments.php:36 ../comments.php:54
 msgid "&larr; Older Comments"
-msgstr "&larr; نظرات قدیمی تر"
+msgstr "%larr; Vanemad komentaarid"
 
 #: ../comments.php:37 ../comments.php:55
 msgid "Newer Comments &rarr;"
-msgstr "نظرات جدیدتر &rarr;"
+msgstr "Uuemad kommentaarid &rarr;"
 
 #: ../comments.php:65
 msgid "Comments are closed."
-msgstr "نظرات بسته شده اند."
+msgstr "Kommentaarid on suletud."
 
 #: ../content-none.php:13
 msgid "Nothing Found"
-msgstr "چیزی یافت نشد."
+msgstr "Mitte midagi ei leitud"
 
 #: ../content-none.php:19
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-"آماده اید برای ارسال اولین مطلب؟ <a href=\"%1$s\">از اینجا شروع کنید</a>."
+msgstr "Valmis oma postistust avalikustama? <a href=\"%1$s\">Alusta siit</a>."
 
 #: ../content-none.php:23
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"متاسفیم، اما چیزی مطابق جستجوی شما یافت نشد. لطفا مجدد سعی کنید با کلمات "
-"متفاوت."
+"Vabandame, mitte miski ei klappinud teie otsingu terminitega. Palun proovige "
+"uuesti erinevate teminitega."
 
 #: ../content-none.php:28
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
-msgstr ""
-"بنظر می رسد ما نمی&rsquo;توانیم پیدا کنیم آنچه شما&rsquo;بدنبالش هستید. "
-"احتمالا جستجو می تواند کمک کند."
+msgstr "Tundub et me ei suuda leida seda mida te otsite. Äkki aitab otsimine."
 
 #: ../content-page.php:21 ../content-single.php:35 ../content.php:49
 #: ../image.php:79
 msgid "Pages:"
-msgstr "صفحات:"
+msgstr "Lehed:"
 
 #: ../content-page.php:32 ../content-single.php:26 ../content.php:23
 msgid "Edit"
-msgstr "ویرایش"
+msgstr "Muuda"
 
 #: ../content-single.php:19
 msgid ", "
-msgstr ""
+msgstr ","
 
 #: ../content-single.php:23
-#, fuzzy, php-format
+#, php-format
 msgid " %1$s"
-msgstr " %1$s"
+msgstr "%1$s"
 
 #: ../content.php:20
 msgid "Leave a comment"
-msgstr "نظر بگذارید"
+msgstr "Jäta komentaar"
 
 #: ../content.php:20
 msgid "1 Comment"
-msgstr "1 نظر"
+msgstr "1 komentaar"
 
 #: ../content.php:20
 msgid "% Comments"
-msgstr "% نظر"
+msgstr "% komentaari"
 
 #: ../content.php:32 ../content.php:45
 msgid "Read More"
-msgstr "بیشتر بخوانید"
+msgstr "Loe edasi"
 
 #: ../functions.php:69
 msgid "Primary Menu"
-msgstr "قهرست اولیه"
+msgstr "Põhi menüü"
 
 #: ../functions.php:70 ../inc/extras.php:212
 msgid "Footer Links"
-msgstr "لینک پانویس"
+msgstr "Jaluse lingid"
 
 #: ../functions.php:108
 msgid "Sidebar"
-msgstr "نوار کناری"
+msgstr "Kõrvalriba"
 
 #: ../functions.php:118
 msgid "Homepage Widget 1"
-msgstr "ویدجت خانه 1"
+msgstr "Kodulehe vidin 1"
 
 #: ../functions.php:119 ../functions.php:129 ../functions.php:139
 msgid "Displays on the Home Page"
-msgstr "نمایش در صفحه اصلی"
+msgstr "On nähtav kodu lehel"
 
 #: ../functions.php:128
 msgid "Homepage Widget 2"
-msgstr "ویدجت خانه 2"
+msgstr "Kodulehe vidin 2"
 
 #: ../functions.php:138
 msgid "Homepage Widget 3"
-msgstr "ویدجت خانه 3"
+msgstr "Kodulehe vidin 3"
 
 #: ../functions.php:148
 msgid "Footer Widget 1"
-msgstr "ویدجت پانویس 1"
+msgstr "Jaluse vidin 1"
 
 #: ../functions.php:149 ../functions.php:159 ../functions.php:169
 msgid "Used for footer widget area"
-msgstr "استفاده در محل ویدجت پانویس"
+msgstr "Kasutatud jaluse vidina ala jaoks"
 
 #: ../functions.php:158
 msgid "Footer Widget 2"
-msgstr "ویدجت پانویس 2"
+msgstr "Jaluse vidin 2"
 
 #: ../functions.php:168
 msgid "Footer Widget 3"
-msgstr "ویدجت پانویس 3"
+msgstr "Jaluse vidin 3"
 
 #: ../image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
-msgstr "<i class=\"fa fa-chevron-left\"></i> قبلی"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Eelmine"
 
 #: ../image.php:23
 msgid "Next <i class=\"fa fa-chevron-right\"></i>"
-msgstr "بعدی <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Järgmine <i class=\"fa fa-chevron-right\"></i>"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:91
 #: ../inc/admin/includes/class-options-framework-admin.php:92
 msgid "Theme Options"
-msgstr "تنظیمات قالب"
+msgstr "Teema valikud"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:204
 msgid "Click OK to reset. Any theme settings will be lost!"
-msgstr ""
-"روی ok برای تنظیم مجدد کلیک کنید. تمام تنظیمات به حالت اولیه در خواهند آمد!"
+msgstr "Vajuta OK et resettida. Kõik teema settingud kaovad!"
 
 #: ../inc/admin/includes/class-options-framework-admin.php:235
 msgid "Default options restored."
-msgstr "تنظیمات پیش فرض اعمال شدند."
+msgstr "Vaike sätted taastatud."
 
 #: ../inc/admin/includes/class-options-framework-admin.php:289
 msgid "Options saved."
-msgstr "تنظیمات ذخیره شدند."
+msgstr "Sättes salvestatud."
 
 #: ../inc/admin/includes/class-options-media-uploader.php:62
 msgid "No file chosen"
-msgstr "پرونده ای انتخاب نشده"
+msgstr "Faili ei ole valitud"
 
 #: ../inc/admin/includes/class-options-media-uploader.php:65
 #: ../inc/admin/includes/class-options-media-uploader.php:118
 msgid "Upload"
-msgstr "بارگذاری"
+msgstr "Lae üles"
 
 #: ../inc/admin/includes/class-options-media-uploader.php:67
 #: ../inc/admin/includes/class-options-media-uploader.php:119
 msgid "Remove"
-msgstr "حذف"
+msgstr "Eemalda"
 
 #: ../inc/admin/includes/class-options-media-uploader.php:70
 msgid "Upgrade your version of WordPress for full media support."
-msgstr "نسخه وردپرس خود را برای پشتیبانی از تمام پرونده های مدیا ارتقا دهید."
+msgstr "Uuenda oma WordPressi täieliku meedia toe jaoks."
 
 #: ../inc/admin/includes/class-options-media-uploader.php:94
 msgid "View File"
-msgstr "نمایش پرونده"
+msgstr "Vaata faili"
 
 #: ../inc/admin/includes/class-options-sanitization.php:316
 msgid "No Repeat"
-msgstr "بدون تکرار"
+msgstr "Ära Korda"
 
 #: ../inc/admin/includes/class-options-sanitization.php:317
 msgid "Repeat Horizontally"
-msgstr "تکرار به صورت افقی"
+msgstr "Korda horisontaalselt"
 
 #: ../inc/admin/includes/class-options-sanitization.php:318
 msgid "Repeat Vertically"
-msgstr "تکرار به صورت عمودی"
+msgstr "Korda vertikaalselt"
 
 #: ../inc/admin/includes/class-options-sanitization.php:319
 msgid "Repeat All"
-msgstr "تکرار همه"
+msgstr "Korda kõik"
 
 #: ../inc/admin/includes/class-options-sanitization.php:331
 msgid "Top Left"
-msgstr "بالا چپ"
+msgstr "Ülemine vasak"
 
 #: ../inc/admin/includes/class-options-sanitization.php:332
 msgid "Top Center"
-msgstr "بالا مرکز"
+msgstr "Ülemine keskmine"
 
 #: ../inc/admin/includes/class-options-sanitization.php:333
 msgid "Top Right"
-msgstr "بالا راست"
+msgstr "Ülemine parem"
 
 #: ../inc/admin/includes/class-options-sanitization.php:334
 msgid "Middle Left"
-msgstr "وسط چپ"
+msgstr "Keskmine vasak"
 
 #: ../inc/admin/includes/class-options-sanitization.php:335
 msgid "Middle Center"
-msgstr "وسط مرکز"
+msgstr "Keskmine keskmine"
 
 #: ../inc/admin/includes/class-options-sanitization.php:336
 msgid "Middle Right"
-msgstr "وسط راست"
+msgstr "Keskmine parem"
 
 #: ../inc/admin/includes/class-options-sanitization.php:337
 msgid "Bottom Left"
-msgstr "پایین چپ"
+msgstr "Alumine vasak"
 
 #: ../inc/admin/includes/class-options-sanitization.php:338
 msgid "Bottom Center"
-msgstr "پایین مرکز"
+msgstr "Alumine keskmine"
 
 #: ../inc/admin/includes/class-options-sanitization.php:339
 msgid "Bottom Right"
-msgstr "پایین راست"
+msgstr "Alumine parem"
 
 #: ../inc/admin/includes/class-options-sanitization.php:351
 msgid "Scroll Normally"
-msgstr "حرکت عادی"
+msgstr "Skrolli tavaliselt"
 
 #: ../inc/admin/includes/class-options-sanitization.php:352
 msgid "Fixed in Place"
-msgstr "ثابت در مکان"
+msgstr "Ühe kohas kinni"
 
 #: ../inc/admin/includes/class-options-sanitization.php:424
 msgid "Normal"
-msgstr "معمولی"
+msgstr "Normaalne"
 
 #: ../inc/admin/includes/class-options-sanitization.php:425
 msgid "Italic"
-msgstr "اریب"
+msgstr "Kalduskiri"
 
 #: ../inc/admin/includes/class-options-sanitization.php:426
 msgid "Bold"
-msgstr "ضخیم"
+msgstr "Rasvane kiri"
 
 #: ../inc/admin/includes/class-options-sanitization.php:427
 msgid "Bold Italic"
-msgstr "ضخیم و اریب"
+msgstr "Rasvane kaldkiri"
 
 #: ../inc/customizer.php:27
-#, fuzzy
 msgid "Content Options"
-msgstr "تنظیمات قالب"
+msgstr "Sisu valikud"
 
 #: ../inc/customizer.php:39
 msgid "Show post excerpts?"
-msgstr ""
+msgstr "Näita postituse lühitutvustusi?"
 
 #: ../inc/customizer.php:51
-#, fuzzy
 msgid "Display Comments on Static Pages?"
-msgstr "نمایش در صفحه اصلی"
+msgstr "Näita komentaare staatilistel lehtedel?"
 
 #: ../inc/extras.php:61
 #, php-format
 msgid "Page %s"
-msgstr "صفحات %s"
+msgstr "%s leht"
 
 #: ../inc/extras.php:125
 msgid ""
-"<p>This post is password protected. To view it please enter your password "
-"below:</p>"
-msgstr ""
-"<p>این مطلب با رمز عبور محافظت می شود. برای نمایش رمز را در پایین وارد کنید: "
-"</p>"
+"This post is password protected. To view it please enter your password below:"
+msgstr "See postitus on salasõnaga kaitstud. Et seda näha sisestage salasõna:"
 
 #: ../inc/extras.php:126
 msgid "Password:"
-msgstr "رمز عبور:"
+msgstr "Salasõna:"
 
 #: ../inc/extras.php:129
 msgid "Submit"
-msgstr "تایید"
+msgstr "Saada"
 
 #: ../inc/extras.php:175
 msgid "Follow us on "
-msgstr "ما را دنبال کنید در"
+msgstr "Jälgi meid"
 
 #: ../inc/extras.php:287
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
-msgstr "پوسته توسط %1$s قدرت گرفته از %2$s"
+msgstr "Teema %1$s poolt. Töötab %2$s abil"
 
-#: ../inc/extras.php:394
+#: ../inc/extras.php:397
 msgid "Support and Documentation"
-msgstr "پشتیبانی و مستندات"
+msgstr "Tugi ja dokumentatsioon"
 
-#: ../inc/extras.php:400
+#: ../inc/extras.php:403
 msgid "Sparkling Documentation"
-msgstr "مستندات Sparkling"
+msgstr "Sparklingi dokumentatsioon"
 
-#: ../inc/extras.php:401
+#: ../inc/extras.php:404
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
-msgstr "بهترین راه تماس با ما <b>پشتیبانی پرسش</b> و <b>گزارش باگ </b> است"
-
-#: ../inc/extras.php:401
-msgid "Colorlib support forum"
-msgstr "انجمن پشتیبانی Colorlib"
-
-#: ../inc/extras.php:402
-msgid "If you like this theme, I'd appreciate any of the following:"
-msgstr "اگر این قالب را می پسندید، من قدردانی میکنم از هر نوع دنبال کردنی:"
+msgstr ""
+"Parim viis meiega kontakti võtta <b>toe küsimuste</b> ja <b>vea raporitega</"
+"b> on kasutades"
 
 #: ../inc/extras.php:404
-msgid "Rate this Theme"
-msgstr "رای به این قالب"
+msgid "Colorlib support forum"
+msgstr "Cololibi toe foorum"
 
 #: ../inc/extras.php:405
-msgid "Like on Facebook"
-msgstr "پسند به ما در فیسبوک"
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr ""
+"Kui teile see teema meeldib, Siis see oleks tore kui teeksite järgmisi:"
 
-#: ../inc/extras.php:406
+#: ../inc/extras.php:407
+msgid "Rate this Theme"
+msgstr "Hinnake seda teemat"
+
+#: ../inc/extras.php:408
+msgid "Like on Facebook"
+msgstr "Likige Facebookis"
+
+#: ../inc/extras.php:409
 msgid "Follow on Twitter"
-msgstr "دنبال کردن ما در توییتر"
+msgstr "Jälgige Twitteris"
 
 #: ../inc/template-tags.php:23
 msgid "Posts navigation"
-msgstr "ناوبری مطالب"
+msgstr "Postituste navigatsioon"
 
 #: ../inc/template-tags.php:27
 msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
-msgstr "<i class=\"fa fa-chevron-left\"></i> مطالب قدیمی تر"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Vanemad postitused"
 
 #: ../inc/template-tags.php:31
 msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
-msgstr "مطالب جدیدتر <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Uuemad postitused <i class=\"fa fa-chevron-right\"></i>"
 
 #: ../inc/template-tags.php:56
 msgid "Post navigation"
-msgstr "ناوبری مطالب"
+msgstr "Postituste navigatsioon"
 
 #: ../inc/widgets/widget-categories.php:11
 #: ../inc/widgets/widget-categories.php:12
 msgid "Sparkling Categories"
-msgstr "دسته بندی Sparkling"
+msgstr "Sparklingi kategooriad"
 
 #: ../inc/widgets/widget-categories.php:17
 #: ../inc/widgets/widget-categories.php:76
 msgid "Categories"
-msgstr "دسته بندی"
+msgstr "Kategooriad"
 
 #: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
 msgid "Title "
-msgstr "عنوان"
+msgstr "Tiitel"
 
 #: ../inc/widgets/widget-categories.php:91
 msgid "Limit Categories "
-msgstr "محدودیت دسته بندی"
+msgstr "Limiteeri kategooriaid"
 
 #: ../inc/widgets/widget-categories.php:104
 msgid "Enable Posts Count"
-msgstr "فعال کردن شمارش مطالب"
+msgstr "Luba postituste arv"
 
 #: ../inc/widgets/widget-popular-posts.php:11
 #: ../inc/widgets/widget-popular-posts.php:12
 msgid "Sparkling Popular Posts Widget"
-msgstr "ویدجت مطالب محبوب Sparkling"
+msgstr "Sparklingi populaarsete postituste vidin"
 
 #: ../inc/widgets/widget-popular-posts.php:17
 #: ../inc/widgets/widget-popular-posts.php:94
 msgid "Popular Posts"
-msgstr "مطالب محبوب"
+msgstr "Populaarsed postitused"
 
 #: ../inc/widgets/widget-popular-posts.php:99
 msgid "Title"
-msgstr "عنوان"
+msgstr "Tiitel"
 
 #: ../inc/widgets/widget-popular-posts.php:107
 msgid "Limit Posts Number"
-msgstr "محدودیت شماره مطالب"
+msgstr "Limiteeri postituste arv"
 
 #: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
 msgid "Sparkling Social Widget"
-msgstr "ویدجت شبکه Sparkling"
+msgstr "Sparklingi sotsiaalne vidin"
 
 #: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
 msgid "Follow us"
-msgstr "ما را دنبال کنید"
+msgstr "Jälgi meid"
 
 #: ../options.php:23
 msgid "Right Sidebar"
-msgstr "نوار کناری راست"
+msgstr "Parem külgriba"
 
 #: ../options.php:23
 msgid "Left Sidebar"
-msgstr "نوار کناری چپ"
+msgstr "Vasak külgriba"
 
 #: ../options.php:27
 msgid "One"
-msgstr "یک"
+msgstr "Üks"
 
 #: ../options.php:28
 msgid "Two"
-msgstr "دو"
+msgstr "Kaks"
 
 #: ../options.php:29
 msgid "Three"
-msgstr "سه"
+msgstr "Kolm"
 
 #: ../options.php:30
 msgid "Four"
-msgstr "چهار"
+msgstr "Neli"
 
 #: ../options.php:31
 msgid "Five"
-msgstr "پنج"
+msgstr "Viis"
 
 #: ../options.php:36
 msgid "French Toast"
-msgstr "نان تست فرانسوی"
+msgstr "Prantsuse Röstsai"
 
 #: ../options.php:37
 msgid "Pancake"
-msgstr "کلوچه"
+msgstr "Pannkook"
 
 #: ../options.php:38
 msgid "Omelette"
-msgstr "املت"
+msgstr "Omlett"
 
 #: ../options.php:39
 msgid "Crepe"
-msgstr "کرپ"
+msgstr "Kreep"
 
 #: ../options.php:40
 msgid "Waffle"
-msgstr "وفل"
+msgstr "Vaffel"
 
 #: ../options.php:110
 msgid "Main"
-msgstr "صفحه اصلی"
+msgstr "Põhi"
 
 #: ../options.php:115
 msgid "Do You want to display image slider on the Home Page?"
-msgstr "آیا مایلید اسلایدر را در صفحه اصلی نمایش دهید؟"
+msgstr "Kas te tahate näidata pildi slaiderit kodu lehel?"
 
 #: ../options.php:116
 msgid "Check if you want to enable slider"
-msgstr "فعال کنید اگر مایل به نمایش اسلایدر هستید"
+msgstr "Pane linnuke kui tahate slaiderit lubada"
 
 #: ../options.php:123
 msgid "Slider Category"
-msgstr "دسته بندی اسلایدر"
+msgstr "Slideri kategooria"
 
 #: ../options.php:124
 msgid "Select a category for the featured post slider"
-msgstr "انتخاب دسته بندی برای اسلایدر مطالب ویژه"
+msgstr "Vali kategooria esiletoodud postituste slaideri jaoks"
 
 #: ../options.php:132
 msgid "Number of slide items"
-msgstr "تعداد اسلایدها"
+msgstr "Slaidide arv"
 
 #: ../options.php:133
 msgid "Enter the number of slide items"
-msgstr "تعداد موارد  اسلاید را وارد کنید"
+msgstr "Sisestage slaidide arv"
 
 #: ../options.php:141
 msgid "Website Layout Options"
-msgstr "گزینه های طرح بندی وب سایت"
+msgstr "Veebilehe paigutuse sätted"
 
 #: ../options.php:142
 msgid "Choose between Left and Right sidebar options to be used as default"
-msgstr "انتخاب کنید بین نوار کنار چپ و راست برای تایین بعنوان پیش فرض"
+msgstr ""
+"Valige vasaku ja parema külgriba settingute vahel et kasutada eelsättena"
 
 #: ../options.php:151
 msgid "Element color"
-msgstr "رنگ عنصر"
+msgstr "Elemendi värv"
 
 #: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
 #: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
 #: ../options.php:280 ../options.php:390 ../options.php:398
 msgid "Default used if no color is selected"
-msgstr "به طور پیش فرض استفاده می شود اگر رنگ انتخاب شود"
+msgstr "Eelsäte kui värvi ei ole valitud"
 
 #: ../options.php:159
 msgid "Element color on hover"
-msgstr "رنگ عنصر در شناور"
+msgstr "Elemendi värv hiirega üle minemise puhul"
 
 #: ../options.php:167
 msgid "Custom Favicon"
-msgstr "فاویکن دلخواه"
+msgstr "Eri favicon"
 
 #: ../options.php:168
 msgid ""
 "Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
 msgstr ""
-"بارگذاری یک تصویر 32px x 32px PNG/GIF و آن استفاده خواهد شد بعنوان فاویکن "
-"سایت شما"
+"Lae üles 32px x 32px PNG/GIF pilt mis iseloomustab teie veebilehe faviconi"
 
 #: ../options.php:175
 msgid "Action Button"
-msgstr "دکمه اکشن"
+msgstr "Tegevuse nupp"
 
 #: ../options.php:180
 msgid "Call For Action Text"
-msgstr "فراخوان متن اکشن"
+msgstr "Tegevusele kutsumise tekst"
 
 #: ../options.php:181
 msgid "Enter the text for call for action section"
-msgstr "متن را وارد کنید برای انتخاب اکشن"
+msgstr "Sisesta tekst tegevusele kutsumine sektsiooni jaoks"
 
 #: ../options.php:188
 msgid "Call For Action Button Title"
-msgstr "عنوان متن کلید اکشن"
+msgstr "Tegevusele kutsumise nupu tiitel"
 
 #: ../options.php:189
 msgid "Enter the title for Call For Action button"
-msgstr "وارد کردن یک عنوان  برای کلید اکشن"
+msgstr "Sisesta tiitel tegevusele kutsumise nupu jaoks"
 
 #: ../options.php:196
 msgid "CFA button link"
-msgstr "لینک کلید CFA"
+msgstr "CFA nupu link"
 
 #: ../options.php:197
 msgid "Enter the link for Call For Action button"
-msgstr "وارد کردن یک لینک برای کلید اکشن"
+msgstr "Sisesta link tegevusele kutsumise nupu jaoks"
 
 #: ../options.php:204
 msgid "Call For Action Text Color"
-msgstr "فراخوان رنگ متن اکشن"
+msgstr "Tegevusele kutsumise teksti värv"
 
 #: ../options.php:212
 msgid "Call For Action Background Color"
-msgstr "فراخوان رنگ پس زمینه اکشن"
+msgstr "Tegevusele kutsumise tausta värv"
 
 #: ../options.php:220
 msgid "Call For Action Button Border Color"
-msgstr "فراخوان رنگ حاشیه کلید اکشن"
+msgstr "Tegevusele kutsumise serva värv"
 
 #: ../options.php:228
 msgid "Call For Action Button Text Color"
-msgstr "فراخوان رنگ متن کلید اکشن"
+msgstr "Tegevusele kutsumise nupu teksti värv"
 
 #: ../options.php:236
 msgid "Typography"
-msgstr "تایپوگرافی"
+msgstr "Trükikunst"
 
 #: ../options.php:241
 msgid "Main Body Text"
-msgstr "متن بدنه اصلی"
+msgstr "Põhi osa tekst"
 
 #: ../options.php:242
 msgid "Used in P tags"
-msgstr "مورد استفاده در تگ P"
+msgstr "Kaustatud P tagides"
 
 #: ../options.php:250
 msgid "Heading Color"
-msgstr "رنگ عنوان"
+msgstr "Pealkirja värv"
 
 #: ../options.php:251
 msgid "Color for all headings (h1-h6)"
-msgstr "رنگ برای تمام عناوین (h1-h6)"
+msgstr "Kõikide (h1-h6) pealkirjade värv"
 
 #: ../options.php:258
 msgid "Link Color"
-msgstr "رنگ لینک"
+msgstr "Lingi värv"
 
 #: ../options.php:266
 msgid "Link:hover Color"
-msgstr "لینک:رنگ شناور"
+msgstr "Elemendi värv hiirega üle minemise puhul"
 
 #: ../options.php:274
 msgid "Header"
-msgstr "سربرگ"
+msgstr "Pealis"
 
 #: ../options.php:279
 msgid "Top nav background color"
-msgstr "رنگ پس زمینه منو بالا"
+msgstr "Üla navigatsiooni tausta värv"
 
 #: ../options.php:287
 msgid "Top nav item color"
-msgstr "رنگ آیتم های منو بالا"
+msgstr "Üle navigatsiooni osa värv"
 
 #: ../options.php:288
 msgid "Link color"
-msgstr "رنگ لینک"
+msgstr "Lingi värv"
 
 #: ../options.php:295
 msgid "Top nav item hover color"
-msgstr "رنگ مورد شناور منو بالا"
+msgstr "Üla navigatsiooni värv hiirega üle minemise puhul"
 
 #: ../options.php:296
 msgid "Link:hover color"
-msgstr "لینک:رنگ شناور"
+msgstr "Lingi värv hiirega üle minemise puhul"
 
 #: ../options.php:303
 msgid "Top nav dropdown background color"
-msgstr "رنگ پس زمینه منو کرکره ای بالا"
+msgstr "Üla navigatsiooni rippmenüü tausta värv"
 
 #: ../options.php:304 ../options.php:328
 msgid "Background of dropdown item hover color"
-msgstr "رنگ شناور پس زمینه منو کرکره ای بالا"
+msgstr "Ripp menüü valiku tausta värv hiirega üle minemise puhul"
 
 #: ../options.php:311
 msgid "Top nav dropdown item color"
-msgstr "رنگ مورد کرکره منو بالا"
+msgstr "Üla navigatsiooni rippmenüü valiku värv"
 
 #: ../options.php:312
 msgid "Dropdown item color"
-msgstr "رنگ مورد کرکره"
+msgstr "Rippmenüü valiku värv"
 
 #: ../options.php:319
 msgid "Top nav dropdown item hover color"
-msgstr "رنگ شناور آیتم کرکره منو بالا"
+msgstr "Üla navigatsiooni rippmenüü valiku värv hiirega üle minemise puhul"
 
 #: ../options.php:320
 msgid "Dropdown item hover color"
-msgstr "رنگ شناور اقلام منو"
+msgstr "Rippmenüü valiku värv hiirega üle minemise puhul"
 
 #: ../options.php:327
 msgid "Top nav dropdown item background hover color"
-msgstr "رنگ پس زمینه شناور اقلام منو بالا"
+msgstr ""
+"Üla navigatsiooni rippmenüü valiku tausta värv hiirega üle minemise puhul"
 
 #: ../options.php:335
 msgid "Footer"
-msgstr "پانویس"
+msgstr "Jalus"
 
 #: ../options.php:340
 msgid "Footer widget area background color"
-msgstr "رنگ پس زمینه محل ویدجت پانویس"
+msgstr "Jaluse vidinate ala tausta värv"
 
 #: ../options.php:347
 msgid "Footer background color"
-msgstr "رنگ پس زمینه پانویس"
+msgstr "Jaluse tausta värv"
 
 #: ../options.php:354
 msgid "Footer text color"
-msgstr "رنگ متن پانویس"
+msgstr "Jaluse teksti värv"
 
 #: ../options.php:361
 msgid "Footer link color"
-msgstr "رنگ لینک پانویس"
+msgstr "Jaluse lingi värv"
 
 #: ../options.php:368
 msgid "Footer information"
-msgstr "اطلاعات پانویس"
+msgstr "Jaluse informatsioon"
 
 #: ../options.php:369
 msgid "Copyright text in footer"
-msgstr "رنگ متن کپی رایت در پانویس"
+msgstr "Autorõiguste tekst jaluses"
 
 #: ../options.php:376
-#, fuzzy
 msgid "Footer Social Icons"
-msgstr "رنگ آیکون های اجتماعی پانویس"
+msgstr "Jaluse sotsiaal ikoonid"
 
 #: ../options.php:377
-#, fuzzy
 msgid "Show/Hide social icons in footer"
-msgstr "رنگ آیکون های اجتماعی پانویس"
+msgstr "Näita/Peida sotsiaal ikoonid jaluses"
 
 #: ../options.php:384
 msgid "Social"
-msgstr "اجتماعی"
+msgstr "Sotsiaal"
 
 #: ../options.php:389
 msgid "Social icon color"
-msgstr "رنگ آیکون های اجتماعی"
+msgstr "Sotsiaal ikooni värv"
 
 #: ../options.php:397
 msgid "Footer social icon color"
-msgstr "رنگ آیکون های اجتماعی پانویس"
+msgstr "Jaluse sotsiaal ikooni värv"
 
 #: ../options.php:405
 msgid "Add full URL for your social network profiles"
-msgstr "اضافه کردن URL کامل برای پروفایل های شبکه های اجتماعی خود"
+msgstr "Lisa täis URL oma sotsiaal võrgustiku profiilide jaoks"
 
 #: ../options.php:406
-#, fuzzy
 msgid "Facebook"
-msgstr "فیسبوک"
+msgstr "Facebook"
 
 #: ../options.php:415
-#, fuzzy
 msgid "Twitter"
-msgstr "توئیتر"
+msgstr "Twitter"
 
 #: ../options.php:423
-#, fuzzy
 msgid "Google+"
-msgstr "گوگل پلاس"
+msgstr "Google+"
 
 #: ../options.php:431
-#, fuzzy
 msgid "Youtube"
-msgstr "یوتیوب"
+msgstr "Youtube"
 
 #: ../options.php:439
 msgid "Vimeo"
-msgstr ""
+msgstr "Vimeo"
 
 #: ../options.php:447
-#, fuzzy
 msgid "LinkedIn"
-msgstr "لينكداين"
+msgstr "LinkedIn"
 
 #: ../options.php:455
-#, fuzzy
 msgid "Pinterest"
-msgstr "پینترست"
+msgstr "Pinterest"
 
 #: ../options.php:463
-#, fuzzy
 msgid "RSS Feed"
-msgstr "خوراک RSS"
+msgstr "RSS voog"
 
 #: ../options.php:471
-#, fuzzy
 msgid "Tumblr"
-msgstr "تامبلر"
+msgstr "Tumblr"
 
 #: ../options.php:479
-#, fuzzy
 msgid "Flickr"
-msgstr "فلیکر"
+msgstr "Flickr"
 
 #: ../options.php:487
-#, fuzzy
 msgid "Instagram"
-msgstr "اینستاگرام"
+msgstr "Instagram"
 
 #: ../options.php:495
-#, fuzzy
 msgid "Dribbble"
-msgstr "دریبل"
+msgstr "Dribbble"
 
 #: ../options.php:503
-#, fuzzy
 msgid "Skype"
-msgstr "اسکایپ"
+msgstr "Skype"
 
 #: ../options.php:511
 msgid "Foursquare"
-msgstr ""
+msgstr "Foursquare"
 
 #: ../options.php:519
 msgid "SoundCloud"
-msgstr ""
+msgstr "SoundCloud"
 
 #: ../options.php:527
-#, fuzzy
 msgid "GitHub"
-msgstr "گیت هاب"
+msgstr "GitHub"
 
 #: ../options.php:535
 msgid "Spotify"
-msgstr ""
+msgstr "Spotify"
 
 #: ../options.php:542
 msgid "Other"
-msgstr "دیگر"
+msgstr "Muu"
 
 #: ../options.php:547
 msgid "Custom CSS"
-msgstr "CSS سفارشی"
+msgstr "Eri CSS"
 
 #: ../options.php:548
 msgid "Additional CSS"
-msgstr "CSS اضافی"
+msgstr "Lisa CSS"
 
 #: ../search.php:16
 #, php-format
 msgid "Search Results for: %s"
-msgstr "نتایج جستجو برای: %s"
+msgstr "Otsingu tulemused %s jaoks"
 
 #: ../searchform.php:11
-#, fuzzy
 msgid "Search for:"
-msgstr "جستجو برای:"
+msgstr "Otsi seda:"
 
 #: ../searchform.php:12
-#, fuzzy
 msgctxt "placeholder"
 msgid "Search&hellip;"
-msgstr "جستجو"
+msgstr "Otsi&hellip;"
 
 #: ../searchform.php:12
-#, fuzzy
 msgctxt "label"
 msgid "Search for:"
-msgstr "جستجو برای:"
+msgstr "Otsi seda&hellip;"
 
 #: ../searchform.php:14
-#, fuzzy
 msgctxt "submit button"
 msgid "Search"
-msgstr "جستجو"
+msgstr "Otsi"
 
 #: ../sidebar.php:26
 msgid "Meta"
-msgstr "متا"
+msgstr "Meta"
 
-#~ msgid "Search..."
-#~ msgstr "جستجو..."
+#~ msgctxt "label"
+#~ msgid ""
+#~ "Search \n"
+#~ "for:"
+#~ msgstr ""
+#~ "Otsi \n"
+#~ "seda:"

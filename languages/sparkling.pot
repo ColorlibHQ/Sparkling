@@ -1,17 +1,19 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-04-04 15:03+0200\n"
+"POT-Creation-Date: 2015-07-29 20:08+0100\n"
 "PO-Revision-Date: 2015-04-04 15:03+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.5\n"
+"X-Generator: Poedit 1.8.2\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-KeywordsList: _e;__;esc_attr__;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
@@ -20,9 +22,7 @@ msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
 #: ../404.php:19
-msgid ""
-"It looks like nothing was found at this location. Maybe try one of the links "
-"below or a search?"
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
 msgstr ""
 
 #: ../404.php:25
@@ -102,7 +102,7 @@ msgstr ""
 msgid "Chats"
 msgstr ""
 
-#: ../comments.php:30
+#: ../comments.php:28
 #, php-format
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
@@ -110,19 +110,19 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../comments.php:37 ../comments.php:55
+#: ../comments.php:35 ../comments.php:53
 msgid "Comment navigation"
 msgstr ""
 
-#: ../comments.php:38 ../comments.php:56
+#: ../comments.php:36 ../comments.php:54
 msgid "&larr; Older Comments"
 msgstr ""
 
-#: ../comments.php:39 ../comments.php:57
+#: ../comments.php:37 ../comments.php:55
 msgid "Newer Comments &rarr;"
 msgstr ""
 
-#: ../comments.php:67
+#: ../comments.php:65
 msgid "Comments are closed."
 msgstr ""
 
@@ -132,23 +132,18 @@ msgstr ""
 
 #: ../content-none.php:19
 #, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
 #: ../content-none.php:23
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr ""
 
 #: ../content-none.php:28
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
-#: ../content-page.php:21 ../content-single.php:35 ../content.php:43
+#: ../content-page.php:21 ../content-single.php:35 ../content.php:49
 #: ../image.php:79
 msgid "Pages:"
 msgstr ""
@@ -178,7 +173,7 @@ msgstr ""
 msgid "% Comments"
 msgstr ""
 
-#: ../content.php:32 ../content.php:39
+#: ../content.php:32 ../content.php:45
 msgid "Read More"
 msgstr ""
 
@@ -186,7 +181,7 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: ../functions.php:70 ../inc/extras.php:226
+#: ../functions.php:70 ../inc/extras.php:212
 msgid "Footer Links"
 msgstr ""
 
@@ -349,69 +344,73 @@ msgstr ""
 msgid "Bold Italic"
 msgstr ""
 
+#: ../inc/customizer.php:27
+msgid "Content Options"
+msgstr ""
+
+#: ../inc/customizer.php:39
+msgid "Show post excerpts?"
+msgstr ""
+
+#: ../inc/customizer.php:51
+msgid "Display Comments on Static Pages?"
+msgstr ""
+
 #: ../inc/extras.php:61
 #, php-format
 msgid "Page %s"
 msgstr ""
 
-#: ../inc/extras.php:121
-msgid "Search..."
+#: ../inc/extras.php:125
+msgid "This post is password protected. To view it please enter your password below:"
 msgstr ""
 
-#: ../inc/extras.php:142
-msgid ""
-"<p>This post is password protected. To view it please enter your password "
-"below:</p>"
-msgstr ""
-
-#: ../inc/extras.php:143
+#: ../inc/extras.php:126
 msgid "Password:"
 msgstr ""
 
-#: ../inc/extras.php:146
+#: ../inc/extras.php:129
 msgid "Submit"
 msgstr ""
 
-#: ../inc/extras.php:190
+#: ../inc/extras.php:175
 msgid "Follow us on "
 msgstr ""
 
-#: ../inc/extras.php:301
+#: ../inc/extras.php:287
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr ""
 
-#: ../inc/extras.php:405
+#: ../inc/extras.php:394
 msgid "Support and Documentation"
 msgstr ""
 
-#: ../inc/extras.php:411
+#: ../inc/extras.php:400
 msgid "Sparkling Documentation"
 msgstr ""
 
-#: ../inc/extras.php:412
-msgid ""
-"The best way to contact us with <b>support questions</b> and <b>bug reports</"
-"b> is via"
+#: ../inc/extras.php:401
+msgid "The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via"
 msgstr ""
 
-#: ../inc/extras.php:412
+#: ../inc/extras.php:401
 msgid "Colorlib support forum"
 msgstr ""
 
-#: ../inc/extras.php:413
+#: ../inc/extras.php:402
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr ""
 
-#: ../inc/extras.php:415
+#: ../inc/extras.php:404
 msgid "Rate this Theme"
 msgstr ""
 
-#: ../inc/extras.php:416
+#: ../inc/extras.php:405
 msgid "Like on Facebook"
 msgstr ""
 
-#: ../inc/extras.php:417
+#: ../inc/extras.php:406
 msgid "Follow on Twitter"
 msgstr ""
 
@@ -569,7 +568,7 @@ msgstr ""
 
 #: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
 #: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
-#: ../options.php:280 ../options.php:382 ../options.php:390
+#: ../options.php:280 ../options.php:390 ../options.php:398
 msgid "Default used if no color is selected"
 msgstr ""
 
@@ -582,8 +581,7 @@ msgid "Custom Favicon"
 msgstr ""
 
 #: ../options.php:168
-msgid ""
-"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
+msgid "Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
 msgstr ""
 
 #: ../options.php:175
@@ -739,100 +737,131 @@ msgid "Copyright text in footer"
 msgstr ""
 
 #: ../options.php:376
+msgid "Footer Social Icons"
+msgstr ""
+
+#: ../options.php:377
+msgid "Show/Hide social icons in footer"
+msgstr ""
+
+#: ../options.php:384
 msgid "Social"
 msgstr ""
 
-#: ../options.php:381
+#: ../options.php:389
 msgid "Social icon color"
 msgstr ""
 
-#: ../options.php:389
+#: ../options.php:397
 msgid "Footer social icon color"
 msgstr ""
 
-#: ../options.php:397
+#: ../options.php:405
 msgid "Add full URL for your social network profiles"
 msgstr ""
 
-#: ../options.php:398
+#: ../options.php:406
 msgid "Facebook"
 msgstr ""
 
-#: ../options.php:407
+#: ../options.php:415
 msgid "Twitter"
 msgstr ""
 
-#: ../options.php:415
+#: ../options.php:423
 msgid "Google+"
 msgstr ""
 
-#: ../options.php:423
+#: ../options.php:431
 msgid "Youtube"
 msgstr ""
 
-#: ../options.php:431
+#: ../options.php:439
 msgid "Vimeo"
 msgstr ""
 
-#: ../options.php:439
+#: ../options.php:447
 msgid "LinkedIn"
 msgstr ""
 
-#: ../options.php:447
+#: ../options.php:455
 msgid "Pinterest"
 msgstr ""
 
-#: ../options.php:455
+#: ../options.php:463
 msgid "RSS Feed"
 msgstr ""
 
-#: ../options.php:463
+#: ../options.php:471
 msgid "Tumblr"
 msgstr ""
 
-#: ../options.php:471
+#: ../options.php:479
 msgid "Flickr"
 msgstr ""
 
-#: ../options.php:479
+#: ../options.php:487
 msgid "Instagram"
 msgstr ""
 
-#: ../options.php:487
+#: ../options.php:495
 msgid "Dribbble"
 msgstr ""
 
-#: ../options.php:495
+#: ../options.php:503
 msgid "Skype"
 msgstr ""
 
-#: ../options.php:503
+#: ../options.php:511
 msgid "Foursquare"
 msgstr ""
 
-#: ../options.php:511
+#: ../options.php:519
 msgid "SoundCloud"
 msgstr ""
 
-#: ../options.php:519
+#: ../options.php:527
 msgid "GitHub"
 msgstr ""
 
-#: ../options.php:526
+#: ../options.php:535
+msgid "Spotify"
+msgstr ""
+
+#: ../options.php:542
 msgid "Other"
 msgstr ""
 
-#: ../options.php:531
+#: ../options.php:547
 msgid "Custom CSS"
 msgstr ""
 
-#: ../options.php:532
+#: ../options.php:548
 msgid "Additional CSS"
 msgstr ""
 
 #: ../search.php:16
 #, php-format
 msgid "Search Results for: %s"
+msgstr ""
+
+#: ../searchform.php:11
+msgid "Search for:"
+msgstr ""
+
+#: ../searchform.php:12
+msgctxt "placeholder"
+msgid "Search&hellip;"
+msgstr ""
+
+#: ../searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: ../searchform.php:14
+msgctxt "submit button"
+msgid "Search"
 msgstr ""
 
 #: ../sidebar.php:26
