@@ -241,6 +241,9 @@ function sparkling_scripts() {
   // This one is for accessibility
   wp_enqueue_script( 'sparkling-skip-link-focus-fix', get_template_directory_uri() . '/inc/js/skip-link-focus-fix.js', array(), '20140222', true );
 
+  // Sticky Footer related functions
+  wp_enqueue_script( 'sticky-footer', get_template_directory_uri() . '/inc/js/sticky-footer.js', array('jquery') );
+
   // Treaded comments
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );

@@ -4,12 +4,12 @@ Theme URI: http://colorlib.com/wp/themes/sparkling
 Author: Colorlib
 Author URI: http://colorlib.com/
 Description: Sparkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, portfolio, design, art, photography, personal and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready, compatible with WPML and is available in Spanish, French, Dutch, Polish, Russian, German, Brazilian Portuguese, Portuguese (Portugal), Persian (Iranian language), Romanian, Turkish, Bulgarian, Japanese, Lithuanian, Czech, Ukrainian, Traditional Chinese, Simplified Chinese, Indonesian, Estonian and Italian. Sparkling is a free WordPress theme with premium functionality and design. Now theme is optimized to work with bbPress, Contact Form 7, Jetpack and other popular free and premium plugins.
-Version: 1.9.4
+Version: 1.9.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sparkling
 Domain Path: /languages/
-Tags: green, light, white, gray, black, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, photoblogging, left-sidebar, translation-ready, custom-background, custom-colors, custom-menu, featured-images, full-width-template, post-formats, theme-options, threaded-comments
+Tags: green, light, white, gray, black, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, photoblogging, left-sidebar, translation-ready, custom-background, custom-colors, custom-menu, featured-images, full-width-template, post-formats, theme-options, threaded-comments, sticky-footer
 
 
 This theme, like WordPress, is licensed under the GPL.
@@ -36,6 +36,7 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
 13. Footer
 14. Social icons
 15. Call For Action
+16. Sticky Footer
 */
 
 /* =Global
@@ -1404,4 +1405,24 @@ button[type=submit],
 .no-js .postform,
 .no-js table#wp-calendar {
   display: block;
+}
+
+/* =Sticky Footer
+----------------------------------------------- */
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+/* The bottom margin is the negative value of the footer's height and
+is overridden via JavaScript to account for the user's footer content */
+.sticky-footer-wrapper {
+  min-height: 100%;
+  margin: 0 auto;
+}
+/* .sticky-footer-push must be the same height as #footer-area and is
+overridden via JavaScript to account for the user's footer content */
+#footer-area, .sticky-footer-push {
+  height: auto;
 }
