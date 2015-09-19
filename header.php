@@ -29,7 +29,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
+<div id="page" class="hfeed site sticky-footer-wrapper">
 
 	<header id="masthead" class="site-header" role="banner">
 		<nav class="navbar navbar-default" role="navigation">
