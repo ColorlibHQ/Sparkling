@@ -141,43 +141,29 @@ function sparkling_add_custom_table_class( $content ) {
     return str_replace( '<table>', '<table class="table table-hover">', $content );
 }
 
-if ( ! function_exists( 'sparkling_social' ) ) :
+if ( ! function_exists( 'sparkling_social_icons' ) ) :
 /**
- * Display social links in footer and widgets if enabled
+ * Display social links in footer and widgets
+ *
+ * @package sparkling
  */
-function sparkling_social($force = false){
-  if($force || of_get_option( 'footer_social' ) != 0){
-    $services = array (
-      'facebook'   => 'Facebook',
-      'twitter'    => 'Twitter',
-      'googleplus' => 'Google+',
-      'youtube'    => 'Youtube',
-      'vimeo'      => 'Vimeo',
-      'linkedin'   => 'LinkedIn',
-      'pinterest'  => 'Pinterest',
-      'rss'        => 'RSS',
-      'tumblr'     => 'Tumblr',
-      'flickr'     => 'Flickr',
-      'instagram'  => 'Instagram',
-      'dribbble'   => 'Dribbble',
-      'skype'      => 'Skype',
-      'foursquare' => 'Foursquare',
-      'soundcloud' => 'SoundCloud',
-      'github'     => 'GitHub',
-      'spotify'    => 'Spotify'
-      );
-
-    echo '<div class="social-icons">';
-
-    foreach ( $services as $service => $name ) :
-
-        $active[ $service ] = of_get_option ( 'social_'.$service );
-        if ( $active[$service] ) { echo '<a href="'. esc_url( $active[$service] ) .'" title="'. esc_html__('Follow us on ','sparkling').$name.'" class="'. $service .'" target="_blank"><i class="social_icon fa fa-'.$service.'"></i></a>';}
-
-    endforeach;
-    echo '</div>';
+function sparkling_social_icons(){
+  if ( has_nav_menu( 'social-menu' ) ) {
+  	wp_nav_menu(
+  		array(
+  			'theme_location'  => 'social-menu',
+  			'container'       => 'nav',
+  			'container_id'    => 'menu-social',
+  			'container_class' => 'social-icons',
+  			'menu_id'         => 'menu-social-items',
+  			'menu_class'      => 'social-menu',
+  			'depth'           => 1,
+  			'fallback_cb'     => '',
+                        'link_before'     => '<i class="social_icon fa"><span>',
+                        'link_after'      => '</span></i>'
+  		)
+	  );
   }
-
 }
 endif;
 
@@ -356,10 +342,10 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
         echo '.site-info a, #footer-area a {color: '.of_get_option('footer_link_color').';}';
       }
       if ( of_get_option('social_color')) {
-        echo '.well .social-icons a {background-color: '.of_get_option('social_color').' !important ;}';
+        echo '.social-icons li a {background-color: '.of_get_option('social_color').' !important ;}';
       }
       if ( of_get_option('social_footer_color')) {
-        echo '#footer-area .social-icons a {background-color: '.of_get_option('social_footer_color').' ;}';
+        echo '#footer-area .social-icons li a {background-color: '.of_get_option('social_footer_color').' !important ;}';
       }
       $typography = of_get_option('main_body_typography');
       if ( $typography ) {
@@ -459,46 +445,3 @@ function sparkling_allow_skype_protocol( $protocols ){
     return $protocols;
 }
 add_filter( 'kses_allowed_protocols' , 'sparkling_allow_skype_protocol' );
-
-/**
- * Add custom favicon displayed in WordPress dashboard and frontend
- */
-function sparkling_add_favicon() {
-  if ( of_get_option( 'custom_favicon' ) ) {
-    echo '<link rel="shortcut icon" type="image/x-icon" href="' . of_get_option( 'custom_favicon' ) . '" />'. "\n";
-  }
-}
-add_action( 'wp_head', 'sparkling_add_favicon', 0 );
-add_action( 'admin_head', 'sparkling_add_favicon', 0 );
-
-/*
- * This one shows/hides the an option when a checkbox is clicked.
- */
-add_action( 'optionsframework_custom_scripts', 'optionsframework_custom_scripts' );
-
-function optionsframework_custom_scripts() { ?>
-
-<script type="text/javascript">
-jQuery(document).ready(function() {
-
-  jQuery('#sparkling_slider_checkbox').click(function() {
-      jQuery('#section-sparkling_slide_categories').fadeToggle(400);
-  });
-
-  if (jQuery('#sparkling_slider_checkbox:checked').val() !== undefined) {
-    jQuery('#section-sparkling_slide_categories').show();
-  }
-
-  jQuery('#sparkling_slider_checkbox').click(function() {
-      jQuery('#section-sparkling_slide_number').fadeToggle(400);
-  });
-
-  if (jQuery('#sparkling_slider_checkbox:checked').val() !== undefined) {
-    jQuery('#section-sparkling_slide_number').show();
-  }
-
-});
-</script>
-
-<?php
-}

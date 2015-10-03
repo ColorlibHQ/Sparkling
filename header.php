@@ -6,16 +6,17 @@
  *
  * @package sparkling
  */
-?><!doctype html>
-	<!--[if !IE]>
-	<html class="no-js non-ie" <?php language_attributes(); ?>> <![endif]-->
-	<!--[if IE 7 ]>
-	<html class="no-js ie7" <?php language_attributes(); ?>> <![endif]-->
-	<!--[if IE 8 ]>
-	<html class="no-js ie8" <?php language_attributes(); ?>> <![endif]-->
-	<!--[if IE 9 ]>
-	<html class="no-js ie9" <?php language_attributes(); ?>> <![endif]-->
-	<!--[if gt IE 9]><!-->
+?>
+<!doctype html>
+<!--[if !IE]>
+<html class="no-js non-ie" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 7 ]>
+<html class="no-js ie7" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 8 ]>
+<html class="no-js ie8" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 9 ]>
+<html class="no-js ie9" <?php language_attributes(); ?>> <![endif]-->
+<!--[if gt IE 9]><!-->
 <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -76,5 +77,5 @@
 		</div>
 
 		<div class="container main-content-area">
-			<div class="row">
-				<div class="main-content-inner <?php echo sparkling_main_content_bootstrap_classes(); ?> <?php echo of_get_option( 'site_layout' ); ?>">
+			<div class="row <?php echo of_get_option( 'site_layout' ); ?>">
+				<div class="main-content-inner <?php echo sparkling_main_content_bootstrap_classes(); ?>">
