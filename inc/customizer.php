@@ -121,7 +121,7 @@ function sparkling_customizer( $wp_customize ) {
             $wp_customize->add_setting('sparkling[site_layout]', array(
                  'default' => 'side-pull-left',
                  'type' => 'option',
-                 //'sanitize_callback' => 'sparkling_sanitize_layout'
+                 'sanitize_callback' => 'sparkling_sanitize_layout'
             ));
             $wp_customize->add_control('sparkling[site_layout]', array(
                  'label' => __('Website Layout Options', 'sparkling'),
