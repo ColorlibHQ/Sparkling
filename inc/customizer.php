@@ -175,7 +175,7 @@ function sparkling_customizer( $wp_customize ) {
             ));
             
             $wp_customize->add_setting('sparkling[w2f_cfa_button]', array(
-                'default' => 3,
+                'default' => '',
                 'type' => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_nohtml'
             ));
@@ -187,7 +187,7 @@ function sparkling_customizer( $wp_customize ) {
             ));
             
             $wp_customize->add_setting('sparkling[w2f_cfa_link]', array(
-                'default' => 3,
+                'default' => '',
                 'type' => 'option',
                 'sanitize_callback' => 'esc_url_raw'
             ));
@@ -257,7 +257,7 @@ function sparkling_customizer( $wp_customize ) {
             // Typography Options
             global $typography_options;
             $wp_customize->add_setting('sparkling[main_body_typography][size]', array(
-                'default' => 14,
+                'default' => '14px',
                 'type' => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_typo_size'
             ));
@@ -289,7 +289,7 @@ function sparkling_customizer( $wp_customize ) {
                 'choices'    => $typography_options['styles']
             ));
             $wp_customize->add_setting('sparkling[main_body_typography][color]', array(
-                'default' => '',
+                'default' => $typography_defaults['style'],
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
