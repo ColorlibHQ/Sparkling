@@ -76,6 +76,13 @@
 			<?php sparkling_call_for_action(); ?>
 		</div>
 
-		<div class="container main-content-area">
-			<div class="row <?php echo of_get_option( 'site_layout' ); ?>">
+		<div class="container main-content-area"><?php 
+			global $post;
+			if( get_post_meta($post->ID, 'site_layout', true) ){
+				$layout_class = get_post_meta($post->ID, 'site_layout', true);
+			}
+			else{
+				$layout_class = of_get_option( 'site_layout' );
+			}?>
+			<div class="row <?php echo $layout_class; ?>">
 				<div class="main-content-inner <?php echo sparkling_main_content_bootstrap_classes(); ?>">
