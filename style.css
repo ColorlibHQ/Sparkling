@@ -191,6 +191,23 @@ textarea {
   margin: 0 auto;
 }
 
+/* Layout */
+.side-pull-left .main-content-inner{
+    float: left;
+}
+.side-pull-right .main-content-inner{
+    float: right;
+}
+.no-sidebar #secondary, .full-width #secondary{
+    display: none;
+}
+.no-sidebar .main-content-inner{
+    float: none;
+    margin: 0 auto;
+}
+.full-width .main-content-inner{
+    width: 100%;
+}
 /* Text meant only for screen readers */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
@@ -1254,14 +1271,14 @@ p.logged-in-as {
 #secondary .widget .social-icons a {
   color: #fff;
 }
-.social-icons {
+.social-icons, #menu-social {
   position: relative;
   text-align: center;
 }
 #secondary .widget .social-icons {
   text-align: left;
 }
-.social-icons a {
+.social-icons a{
   font-size: 18px;
   line-height: 40px;
   list-style: none;
@@ -1278,73 +1295,98 @@ p.logged-in-as {
        -o-transition: background-color  0.5s;
           transition: background-color  0.5s;
 }
-#footer-area .social-icons a {
+#menu-social li{
+    border: none;
+    display: inline-block;
+    margin: 0;
+}
+.social-icons li a{
+  font-size: 18px;
+  line-height: 40px;
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  background-color: #DADADA;
+  -webkit-transition: background-color  0.5s;
+     -moz-transition: background-color  0.5s;
+       -o-transition: background-color  0.5s;
+          transition: background-color  0.5s;
+}
+#footer-area .social-icons a{
   margin-right: 7px;
   background-color: #363636;
   color: #fff;
 }
+#footer-area .social-icons li a {
+  background-color: #363636;
+  color: #fff;
+  margin-right: 7px;
+}
+#menu-social li a span{ display: none; }
 
-.social-icons a.facebook:hover {
+.social-icons a.facebook:hover, #menu-social li a[href*="facebook.com"]:hover {
   background-color: #4265b9 !important;
 }
-.social-icons a.twitter:hover {
+.social-icons a.twitter:hover, #menu-social li a[href*="twitter.com"]:hover {
   background-color: #55ACEE !important;
 }
-.social-icons a.dribbble:hover {
+.social-icons a.dribbble:hover,#menu-social li a[href*="dribbble.com"]:hover {
   background-color: #ea4c89 !important;
 }
-.social-icons a.flickr:hover {
+.social-icons a.flickr:hover, #menu-social li a[href*="flickr.com"]:hover {
   background-color: #ff0084 !important;
 }
-.social-icons a.googleplus:hover {
+.social-icons a.googleplus:hover, #menu-social li a[href*="plus.google.com"]:hover {
   background-color: #d62408 !important;
 }
-.social-icons a.skype:hover {
+.social-icons a.skype:hover, #menu-social li a[href*="skype.com"]:hover {
   background-color: #0bbff2 !important;
 }
-.social-icons a.pinterest:hover {
+.social-icons a.pinterest:hover, #menu-social li a[href*="pinterest.com"]:hover {
   background-color: #c31e26 !important;
 }
-.social-icons a.linkedin:hover {
+.social-icons a.linkedin:hover, #menu-social li a[href*="linkedin.com"]:hover {
   background-color: #005987 !important;
 }
-.social-icons a.vimeo:hover {
+.social-icons a.vimeo:hover, #menu-social li a[href*="vimeo.com"]:hover {
   background-color: #1bb6ec !important;
 }
-.social-icons a.tumblr:hover {
+.social-icons a.tumblr:hover, #menu-social li a[href*="tumblr.com"]:hover {
   background-color: #35506b !important;
 }
-.social-icons a.youtube:hover {
+.social-icons a.youtube:hover, #menu-social li a[href*="youtube.com"]:hover {
   background-color: #df3333 !important;
 }
-.social-icons a.instagram:hover {
+.social-icons a.instagram:hover, #menu-social li a[href*="instagram.com"]:hover {
   background-color: #F95B60 !important;
 }
-.social-icons a.rss:hover {
+.social-icons a.rss:hover, #menu-social li a[href*="/feed"]:hover {
   background-color: #f39c12 !important;
 }
-.social-icons a.foursquare:hover {
+.social-icons a.foursquare:hover, #menu-social li a[href*="foursquare.com"]:hover {
   background-color: #2398C9 !important;
 }
-.social-icons a.soundcloud:hover {
+.social-icons a.soundcloud:hover, #menu-social li a[href*="soundcloud.com"]:hover {
   background-color: #F50 !important;
 }
-.social-icons a.github:hover {
+.social-icons a.github:hover, #menu-social li a[href*="github.com"]:hover {
   background-color: #4183C4 !important;
 }
-.social-icons a.spotify:hover {
+.social-icons a.spotify:hover, #menu-social li a[href*="spotify.com"]:hover {
   background-color: #81b71a !important;
-}
-.fa-googleplus:before {
-  content: "\f0d5";
-}
-.fa-vimeo:before {
-  content: "\f194";
 }
 
 @media (max-width: 992px) {
   .site-branding {
     text-align: center;
+  }
+  .side-pull-left .main-content-inner, .side-pull-right .main-content-inner{
+    float: none;
   }
 }
 

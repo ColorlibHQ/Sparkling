@@ -22,7 +22,7 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="site-info container">
 				<div class="row">
-					<?php sparkling_social(); ?>
+					<?php if( of_get_option('footer_social') ) sparkling_social_icons(); ?>
 					<nav role="navigation" class="col-md-6">
 						<?php sparkling_footer_links(); ?>
 					</nav>
