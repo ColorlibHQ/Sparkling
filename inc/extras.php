@@ -347,9 +347,10 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
       if ( of_get_option('social_footer_color')) {
         echo '#footer-area .social-icons li a {background-color: '.of_get_option('social_footer_color').' !important ;}';
       }
+      global $typography_options;
       $typography = of_get_option('main_body_typography');
       if ( $typography ) {
-        echo '.entry-content {font-family: ' . $typography['face'] . '; font-size:' . $typography['size'] . '; font-weight: ' . $typography['style'] . '; color:'.$typography['color'] . ';}';
+        echo '.entry-content {font-family: ' . $typography_options['faces'][$typography['face']] . '; font-size:' . $typography['size'] . '; font-weight: ' . $typography['style'] . '; color:'.$typography['color'] . ';}';
       }
       if ( of_get_option('custom_css')) {
         echo html_entity_decode( of_get_option( 'custom_css', 'no entry' ) );

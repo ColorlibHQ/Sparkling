@@ -257,7 +257,7 @@ function sparkling_customizer( $wp_customize ) {
             // Typography Options
             global $typography_options;
             $wp_customize->add_setting('sparkling[main_body_typography][size]', array(
-                'default' => '14px',
+                'default' => $typography_defaults['size'],
                 'type' => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_typo_size'
             ));
@@ -643,11 +643,11 @@ function sparkling_sanitize_layout( $input ) {
  * @package Sparkling
  */
 function sparkling_sanitize_typo_size( $input ) {
-    global $typography_options;
+    global $typography_options, $typography_defaults;
     if ( array_key_exists( $input, $typography_options['sizes'] ) ) {
         return $input;
     } else {
-        return '';
+        return $typography_defaults['size'];
     }
 }
 /**
@@ -655,11 +655,11 @@ function sparkling_sanitize_typo_size( $input ) {
  * @package Sparkling
  */
 function sparkling_sanitize_typo_face( $input ) {
-    global $typography_options;$i=0;
+    global $typography_options, $typography_defaults;
     if ( array_key_exists( $input, $typography_options['faces'] ) ) {
         return $input;
     } else {
-        return '';
+        return $typography_defaults['face'];
     }
 }
 /**
@@ -667,11 +667,11 @@ function sparkling_sanitize_typo_face( $input ) {
  * @package Sparkling
  */
 function sparkling_sanitize_typo_style( $input ) {
-    global $typography_options;
+    global $typography_options, $typography_defaults;
     if ( array_key_exists( $input, $typography_options['styles'] ) ) {
         return $input;
     } else {
-        return '';
+        return $typography_defaults['style'];
     }
 }
 

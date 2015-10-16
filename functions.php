@@ -317,7 +317,7 @@ $typography_options = array(
                 'Open Sans'      => 'Open Sans',
                 'palatino'       => 'Palatino',
                 'helvetica'      => 'Helvetica',
-                'Helvetica Neue' => 'Helvetica Neue'
+                'Helvetica Neue' => 'Helvetica Neue,Helvetica,Arial,sans-serif'
         ),
         'styles' => array( 'normal' => 'Normal','bold' => 'Bold' ),
         'color'  => true

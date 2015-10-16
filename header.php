@@ -83,6 +83,9 @@
 			}
 			else{
 				$layout_class = of_get_option( 'site_layout' );
-			}?>
+			}
+                        if( is_home() && is_sticky( $post->ID ) ){
+                                $layout_class = of_get_option( 'site_layout' );
+                        }?>
 			<div class="row <?php echo $layout_class; ?>">
 				<div class="main-content-inner <?php echo sparkling_main_content_bootstrap_classes(); ?>">
