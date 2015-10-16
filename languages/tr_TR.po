@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-07-08 17:08+0300\n"
-"PO-Revision-Date: 2015-07-08 17:08+0300\n"
+"POT-Creation-Date: 2015-10-16 20:24+0300\n"
+"PO-Revision-Date: 2015-10-16 20:24+0300\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: tr_TR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.2\n"
+"X-Generator: Poedit 1.8.5\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
@@ -195,7 +195,7 @@ msgstr "Fazlasını Oku"
 msgid "Primary Menu"
 msgstr "Birincil Menü"
 
-#: ../functions.php:70 ../inc/extras.php:212
+#: ../functions.php:70 ../inc/extras.php:198
 msgid "Footer Links"
 msgstr "Sayfa Altı Bağlantıları"
 
@@ -235,6 +235,23 @@ msgstr "Sayfa Altı Widget 2"
 msgid "Footer Widget 3"
 msgstr "Sayfa Altı Widget 3"
 
+#: ../functions.php:304 ../options.php:23
+msgid "Right Sidebar"
+msgstr "Sağ Kenar Çubuğu"
+
+#: ../functions.php:304 ../options.php:23
+msgid "Left Sidebar"
+msgstr "Sol Kenar Çubuğu"
+
+#: ../functions.php:304
+#, fuzzy
+msgid "No Sidebar"
+msgstr "Hayır Kenar Çubuğu"
+
+#: ../functions.php:304
+msgid "Full Width"
+msgstr ""
+
 #: ../image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
 msgstr "<i class=\"fa fa-chevron-left\"></i> Önceki"
@@ -243,136 +260,313 @@ msgstr "<i class=\"fa fa-chevron-left\"></i> Önceki"
 msgid "Next <i class=\"fa fa-chevron-right\"></i>"
 msgstr "Sonraki <i class=\"fa fa-chevron-right\"></i>"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:91
-#: ../inc/admin/includes/class-options-framework-admin.php:92
-msgid "Theme Options"
-msgstr "Tema Ayarları"
+#: ../inc/customizer.php:29
+#, fuzzy
+msgid "Sparkling Options"
+msgstr "Sparkling Bölümleri"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:204
-msgid "Click OK to reset. Any theme settings will be lost!"
+#: ../inc/customizer.php:30
+msgid "Panel to update sparkling theme options"
 msgstr ""
-"Sıfırlamak (Reset) için tamama tıklayın. Bütün tema ayarları kaybolacak "
-"(sıfırlanacak)!"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:235
-msgid "Default options restored."
-msgstr "Öntanımlı ayarlara dönüldü."
-
-#: ../inc/admin/includes/class-options-framework-admin.php:289
-msgid "Options saved."
-msgstr "Ayarlar kaydedildi"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:62
-msgid "No file chosen"
-msgstr "Dosya seçilmedi"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:65
-#: ../inc/admin/includes/class-options-media-uploader.php:118
-msgid "Upload"
-msgstr "Yükle"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:67
-#: ../inc/admin/includes/class-options-media-uploader.php:119
-msgid "Remove"
-msgstr "Kaldır"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:70
-msgid "Upgrade your version of WordPress for full media support."
-msgstr "Tam medya desteği için WordPress sürümünüzü yükseltin."
-
-#: ../inc/admin/includes/class-options-media-uploader.php:94
-msgid "View File"
-msgstr "Dosyayı görüntüle"
-
-#: ../inc/admin/includes/class-options-sanitization.php:316
-msgid "No Repeat"
-msgstr "Tekrar yok"
-
-#: ../inc/admin/includes/class-options-sanitization.php:317
-msgid "Repeat Horizontally"
-msgstr "Yatay Tekrar"
-
-#: ../inc/admin/includes/class-options-sanitization.php:318
-msgid "Repeat Vertically"
-msgstr "Dikey Tekrar"
-
-#: ../inc/admin/includes/class-options-sanitization.php:319
-msgid "Repeat All"
-msgstr "Hepsini Tekrarla"
-
-#: ../inc/admin/includes/class-options-sanitization.php:331
-msgid "Top Left"
-msgstr "Sol Üst"
-
-#: ../inc/admin/includes/class-options-sanitization.php:332
-msgid "Top Center"
-msgstr "Merkez Üst"
-
-#: ../inc/admin/includes/class-options-sanitization.php:333
-msgid "Top Right"
-msgstr "Sağ üst"
-
-#: ../inc/admin/includes/class-options-sanitization.php:334
-msgid "Middle Left"
-msgstr "Orta Sol"
-
-#: ../inc/admin/includes/class-options-sanitization.php:335
-msgid "Middle Center"
-msgstr "Orta Merkez"
-
-#: ../inc/admin/includes/class-options-sanitization.php:336
-msgid "Middle Right"
-msgstr "Orta Sağ"
-
-#: ../inc/admin/includes/class-options-sanitization.php:337
-msgid "Bottom Left"
-msgstr "Alt Sol"
-
-#: ../inc/admin/includes/class-options-sanitization.php:338
-msgid "Bottom Center"
-msgstr "Alt Merkez"
-
-#: ../inc/admin/includes/class-options-sanitization.php:339
-msgid "Bottom Right"
-msgstr "Alt Sağ"
-
-#: ../inc/admin/includes/class-options-sanitization.php:351
-msgid "Scroll Normally"
-msgstr "Normal Kaydır"
-
-#: ../inc/admin/includes/class-options-sanitization.php:352
-msgid "Fixed in Place"
-msgstr "Yerinde Sabit"
-
-#: ../inc/admin/includes/class-options-sanitization.php:424
-msgid "Normal"
-msgstr "Normal"
-
-#: ../inc/admin/includes/class-options-sanitization.php:425
-msgid "Italic"
-msgstr "İtalik"
-
-#: ../inc/admin/includes/class-options-sanitization.php:426
-msgid "Bold"
-msgstr "Kalın"
-
-#: ../inc/admin/includes/class-options-sanitization.php:427
-msgid "Bold Italic"
-msgstr "Kalın İtalik"
-
-#: ../inc/customizer.php:27
+#: ../inc/customizer.php:36
 #, fuzzy
 msgid "Content Options"
 msgstr "Tema Ayarları"
 
-#: ../inc/customizer.php:39
+#: ../inc/customizer.php:47
 msgid "Show post excerpts?"
 msgstr ""
 
-#: ../inc/customizer.php:51
+#: ../inc/customizer.php:58
 #, fuzzy
 msgid "Display Comments on Static Pages?"
 msgstr "Ana sayfada gösterilir"
+
+#: ../inc/customizer.php:66
+#, fuzzy
+msgid "Slider options"
+msgstr "Slider Seçenekleri"
+
+#: ../inc/customizer.php:76 ../options.php:116
+msgid "Check if you want to enable slider"
+msgstr "Slaytçıyı aktive etmek için işaretle"
+
+#: ../inc/customizer.php:91 ../options.php:123
+msgid "Slider Category"
+msgstr "Slaytçı bölümü"
+
+#: ../inc/customizer.php:94 ../options.php:124
+msgid "Select a category for the featured post slider"
+msgstr "En son gönderi slaytçısı için bölüm seç"
+
+#: ../inc/customizer.php:104 ../options.php:132
+msgid "Number of slide items"
+msgstr "Slayt nesnelerinin sayısı"
+
+#: ../inc/customizer.php:106 ../options.php:133
+msgid "Enter the number of slide items"
+msgstr "Slayt nesnelerinin sayısını gir"
+
+#: ../inc/customizer.php:111
+#, fuzzy
+msgid "Layout options"
+msgstr "Düzen Seçenekleri"
+
+#: ../inc/customizer.php:123 ../options.php:141
+msgid "Website Layout Options"
+msgstr "Website Düzen Ayarları"
+
+#: ../inc/customizer.php:126
+#, fuzzy
+msgid "Choose between different layout options to be used as default"
+msgstr "Sağ ve Sol kenar çubuğu arasından ön ayarlı olarak kullanılacağı seç"
+
+#: ../inc/customizer.php:136
+#, fuzzy
+msgid "Element Color"
+msgstr "Element rengi"
+
+#: ../inc/customizer.php:137 ../inc/customizer.php:149
+#: ../inc/customizer.php:203 ../inc/customizer.php:213
+#: ../inc/customizer.php:223 ../inc/customizer.php:233
+#: ../inc/customizer.php:311 ../inc/customizer.php:321
+#: ../inc/customizer.php:338 ../inc/customizer.php:478
+#: ../inc/customizer.php:489 ../options.php:152 ../options.php:160
+#: ../options.php:205 ../options.php:213 ../options.php:221 ../options.php:229
+#: ../options.php:259 ../options.php:267 ../options.php:280 ../options.php:390
+#: ../options.php:398
+msgid "Default used if no color is selected"
+msgstr "Ren seçilmediyse ön ayarlı renk kullanılır"
+
+#: ../inc/customizer.php:148 ../options.php:159
+msgid "Element color on hover"
+msgstr "Vurgulanmmış alanda element rengi"
+
+#: ../inc/customizer.php:156 ../options.php:175
+msgid "Action Button"
+msgstr "Eylem Butonu"
+
+#: ../inc/customizer.php:166 ../options.php:180
+msgid "Call For Action Text"
+msgstr "Eylem yazısını cağır"
+
+#: ../inc/customizer.php:167 ../options.php:181
+msgid "Enter the text for call for action section"
+msgstr "Eylem bölümümün çağırmak için gereken yazıyı gir"
+
+#: ../inc/customizer.php:178 ../options.php:188
+msgid "Call For Action Button Title"
+msgstr "Eylem çağırma butonu başlığı"
+
+#: ../inc/customizer.php:180 ../options.php:189
+msgid "Enter the title for Call For Action button"
+msgstr "Eylem için çağır butonunun başlığını gir"
+
+#: ../inc/customizer.php:190 ../options.php:196
+msgid "CFA button link"
+msgstr "Eylem için çağır butonu bağlantısı"
+
+#: ../inc/customizer.php:192 ../options.php:197
+msgid "Enter the link for Call For Action button"
+msgstr "Eylem için çağır butonu bağlantısını gir"
+
+#: ../inc/customizer.php:202 ../options.php:204
+msgid "Call For Action Text Color"
+msgstr "Eylem için çağır yazı rengi"
+
+#: ../inc/customizer.php:212 ../options.php:212
+msgid "Call For Action Background Color"
+msgstr "Eylem için çağır arkaplan rengi"
+
+#: ../inc/customizer.php:222 ../options.php:220
+msgid "Call For Action Button Border Color"
+msgstr "Eylem için çağır butonu kenar rengi"
+
+#: ../inc/customizer.php:232 ../options.php:228
+msgid "Call For Action Button Text Color"
+msgstr "Eylem için çağır butonu yazı rengi"
+
+#: ../inc/customizer.php:239 ../options.php:236
+msgid "Typography"
+msgstr "Basımcılık"
+
+#: ../inc/customizer.php:259 ../options.php:241
+msgid "Main Body Text"
+msgstr "Ana gövde metni"
+
+#: ../inc/customizer.php:260
+#, fuzzy
+msgid "Used in p tags"
+msgstr "P etiketlerinde kullanılır"
+
+#: ../inc/customizer.php:300 ../options.php:250
+msgid "Heading Color"
+msgstr "Heading rengi"
+
+#: ../inc/customizer.php:301 ../options.php:251
+msgid "Color for all headings (h1-h6)"
+msgstr "Bütün (h1-h6)headingler için renk"
+
+#: ../inc/customizer.php:310 ../options.php:258
+msgid "Link Color"
+msgstr "Bağlantı rengi"
+
+#: ../inc/customizer.php:320 ../options.php:266
+msgid "Link:hover Color"
+msgstr "Bağlantı:vurgulanmış rengi"
+
+#: ../inc/customizer.php:327 ../options.php:274
+msgid "Header"
+msgstr "Header"
+
+#: ../inc/customizer.php:337 ../options.php:279
+msgid "Top nav background color"
+msgstr "Üst navigason arkaplan rengi"
+
+#: ../inc/customizer.php:347 ../options.php:287
+msgid "Top nav item color"
+msgstr "Üst navigasyon nesne rengi"
+
+#: ../inc/customizer.php:348 ../options.php:288
+msgid "Link color"
+msgstr "Bağlantı rengi"
+
+#: ../inc/customizer.php:358 ../options.php:295
+msgid "Top nav item hover color"
+msgstr "Üst navigasyon nesne vurgulanmış rengi"
+
+#: ../inc/customizer.php:359 ../options.php:296
+msgid "Link:hover color"
+msgstr "Link:vurgulanmış rengi"
+
+#: ../inc/customizer.php:369 ../options.php:303
+msgid "Top nav dropdown background color"
+msgstr "Üst navigasyon aşağı düşen arkaplan rengi"
+
+#: ../inc/customizer.php:370 ../inc/customizer.php:403 ../options.php:304
+#: ../options.php:328
+msgid "Background of dropdown item hover color"
+msgstr "Aşağı düşen nesnenin vurgulanmış arkaplan rengi"
+
+#: ../inc/customizer.php:380 ../options.php:311
+msgid "Top nav dropdown item color"
+msgstr "Üst navigasyon nesne rengi"
+
+#: ../inc/customizer.php:381 ../options.php:312
+msgid "Dropdown item color"
+msgstr "Aşağı düşen nesne rengi"
+
+#: ../inc/customizer.php:391 ../options.php:319
+msgid "Top nav dropdown item hover color"
+msgstr "Üst navigasyon aşağı düşen vurgulanmış nesne rengi"
+
+#: ../inc/customizer.php:392 ../options.php:320
+msgid "Dropdown item hover color"
+msgstr "Aşağı düşen vurgulanmış nesne rengi"
+
+#: ../inc/customizer.php:402 ../options.php:327
+msgid "Top nav dropdown item background hover color"
+msgstr "Üst navigasyon aşağı düşen vurgulanmış nesnenin arkaplan rengi"
+
+#: ../inc/customizer.php:409 ../options.php:335
+msgid "Footer"
+msgstr "Site altı(ayakçı)"
+
+#: ../inc/customizer.php:419 ../options.php:340
+msgid "Footer widget area background color"
+msgstr "Site altı widget alanı arkaplan rengi"
+
+#: ../inc/customizer.php:429 ../options.php:347
+msgid "Footer background color"
+msgstr "Site altı arkaplan rengi"
+
+#: ../inc/customizer.php:439 ../options.php:354
+msgid "Footer text color"
+msgstr "Site altı yazı rengi"
+
+#: ../inc/customizer.php:449 ../options.php:361
+msgid "Footer link color"
+msgstr "Site altı bağlantı rengi"
+
+#: ../inc/customizer.php:459 ../options.php:368
+msgid "Footer information"
+msgstr "Site altı bilgisi"
+
+#: ../inc/customizer.php:460 ../options.php:369
+msgid "Copyright text in footer"
+msgstr "Site altındaki telif hakkı yazısı"
+
+#: ../inc/customizer.php:467 ../options.php:384
+msgid "Social"
+msgstr "Sosyal"
+
+#: ../inc/customizer.php:477 ../options.php:389
+msgid "Social icon color"
+msgstr "Sosyak ikon rengi"
+
+#: ../inc/customizer.php:488 ../options.php:397
+msgid "Footer social icon color"
+msgstr "Site altı sosyal ikon rengi"
+
+#: ../inc/customizer.php:499 ../options.php:376
+#, fuzzy
+msgid "Footer Social Icons"
+msgstr "Site altı sosyal ikon rengi"
+
+#: ../inc/customizer.php:500
+#, fuzzy
+msgid "Check to show social icons in footer"
+msgstr "Site altı sosyal ikon rengi"
+
+#: ../inc/customizer.php:507 ../options.php:542
+msgid "Other"
+msgstr "Diğer"
+
+#: ../inc/customizer.php:517 ../options.php:547
+msgid "Custom CSS"
+msgstr "Özel CSS"
+
+#: ../inc/customizer.php:518 ../options.php:548
+msgid "Additional CSS"
+msgstr "Fazladan CSS"
+
+#: ../inc/customizer.php:525 ../inc/extras.php:383
+msgid "Support and Documentation"
+msgstr "Destek ve Dökümanlar"
+
+#: ../inc/customizer.php:701 ../inc/extras.php:389
+msgid "Sparkling Documentation"
+msgstr "Sparkling Dökümanları"
+
+#: ../inc/customizer.php:702 ../inc/extras.php:390
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr ""
+"Bizimle temas kurmanın en iyi yolu <b>destek soruları</b> ve <b>hata "
+"raporları</b> ile"
+
+#: ../inc/customizer.php:702 ../inc/extras.php:390
+msgid "Colorlib support forum"
+msgstr "Colorlib destek forumu"
+
+#: ../inc/customizer.php:703 ../inc/extras.php:391
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr ""
+"Eğer bu temayı sevdiysen, Takip edenlerden herhangi biri makbule geçer:"
+
+#: ../inc/customizer.php:705 ../inc/extras.php:393
+msgid "Rate this Theme"
+msgstr "Temayı derecelendir"
+
+#: ../inc/customizer.php:706 ../inc/extras.php:394
+msgid "Like on Facebook"
+msgstr "Facebookda beğen"
+
+#: ../inc/customizer.php:707 ../inc/extras.php:395
+msgid "Follow on Twitter"
+msgstr " Twitterda takip et"
 
 #: ../inc/extras.php:61
 #, php-format
@@ -380,9 +574,9 @@ msgid "Page %s"
 msgstr "Sayfa  %s"
 
 #: ../inc/extras.php:125
+#, fuzzy
 msgid ""
-"<p>This post is password protected. To view it please enter your password "
-"below:</p>"
+"This post is password protected. To view it please enter your password below:"
 msgstr ""
 "<p>Bu gönderi şifre korumalıdır. Görüntülemek için şifrenizi aşağıya girin:</"
 "p>"
@@ -395,51 +589,24 @@ msgstr "Şifre:"
 msgid "Submit"
 msgstr "Teslim et"
 
-#: ../inc/extras.php:175
-msgid "Follow us on "
-msgstr "Bizi takip edin"
-
-#: ../inc/extras.php:287
+#: ../inc/extras.php:272
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Temayı yapan %1$s Çalışmasını sağlayan %2$s"
 
-#: ../inc/extras.php:394
-msgid "Support and Documentation"
-msgstr "Destek ve Dökümanlar"
-
-#: ../inc/extras.php:400
-msgid "Sparkling Documentation"
-msgstr "Sparkling Dökümanları"
-
-#: ../inc/extras.php:401
+#: ../inc/metaboxes.php:16
+#, fuzzy
 msgid ""
-"The best way to contact us with <b>support questions</b> and <b>bug reports</"
-"b> is via"
+"Select layout for this specific Page only ( Note: This setting only reflects "
+"if page Template is set as Default Template and Blog Type Templates.)"
 msgstr ""
-"Bizimle temas kurmanın en iyi yolu <b>destek soruları</b> ve <b>hata "
-"raporları</b> ile"
+"Özel Sayfa Seçin düzen sadece (Not:. Sayfa Şablon Standart Şablon ve blog "
+"tipi şablonları olarak ayarlanırsa bu ayar sadece yansıtır)"
 
-#: ../inc/extras.php:401
-msgid "Colorlib support forum"
-msgstr "Colorlib destek forumu"
-
-#: ../inc/extras.php:402
-msgid "If you like this theme, I'd appreciate any of the following:"
-msgstr ""
-"Eğer bu temayı sevdiysen, Takip edenlerden herhangi biri makbule geçer:"
-
-#: ../inc/extras.php:404
-msgid "Rate this Theme"
-msgstr "Temayı derecelendir"
-
-#: ../inc/extras.php:405
-msgid "Like on Facebook"
-msgstr "Facebookda beğen"
-
-#: ../inc/extras.php:406
-msgid "Follow on Twitter"
-msgstr " Twitterda takip et"
+#: ../inc/metaboxes.php:21
+#, fuzzy
+msgid "Select layout for this specific Post only"
+msgstr "Özel yazı için düzeni seçin"
 
 #: ../inc/template-tags.php:23
 msgid "Posts navigation"
@@ -467,7 +634,7 @@ msgstr "Sparkling Bölümleri"
 msgid "Categories"
 msgstr "Bölümler"
 
-#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
+#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:42
 msgid "Title "
 msgstr "Başlık"
 
@@ -501,17 +668,9 @@ msgstr "Gönderi Sayısını Sınırla"
 msgid "Sparkling Social Widget"
 msgstr "Sparkling Sosyal Widget ı"
 
-#: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
+#: ../inc/widgets/widget-social.php:18 ../inc/widgets/widget-social.php:40
 msgid "Follow us"
 msgstr "Bizi takip et"
-
-#: ../options.php:23
-msgid "Right Sidebar"
-msgstr "Sağ Kenar Çubuğu"
-
-#: ../options.php:23
-msgid "Left Sidebar"
-msgstr "Sol Kenar Çubuğu"
 
 #: ../options.php:27
 msgid "One"
@@ -561,30 +720,6 @@ msgstr "Ana"
 msgid "Do You want to display image slider on the Home Page?"
 msgstr "Ana Sayfada görüntü slaytçısının gözükmesini istiyorumusun?"
 
-#: ../options.php:116
-msgid "Check if you want to enable slider"
-msgstr "Slaytçıyı aktive etmek için işaretle"
-
-#: ../options.php:123
-msgid "Slider Category"
-msgstr "Slaytçı bölümü"
-
-#: ../options.php:124
-msgid "Select a category for the featured post slider"
-msgstr "En son gönderi slaytçısı için bölüm seç"
-
-#: ../options.php:132
-msgid "Number of slide items"
-msgstr "Slayt nesnelerinin sayısı"
-
-#: ../options.php:133
-msgid "Enter the number of slide items"
-msgstr "Slayt nesnelerinin sayısını gir"
-
-#: ../options.php:141
-msgid "Website Layout Options"
-msgstr "Website Düzen Ayarları"
-
 #: ../options.php:142
 msgid "Choose between Left and Right sidebar options to be used as default"
 msgstr "Sağ ve Sol kenar çubuğu arasından ön ayarlı olarak kullanılacağı seç"
@@ -592,16 +727,6 @@ msgstr "Sağ ve Sol kenar çubuğu arasından ön ayarlı olarak kullanılacağ�
 #: ../options.php:151
 msgid "Element color"
 msgstr "Element rengi"
-
-#: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
-#: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
-#: ../options.php:280 ../options.php:390 ../options.php:398
-msgid "Default used if no color is selected"
-msgstr "Ren seçilmediyse ön ayarlı renk kullanılır"
-
-#: ../options.php:159
-msgid "Element color on hover"
-msgstr "Vurgulanmmış alanda element rengi"
 
 #: ../options.php:167
 msgid "Custom Favicon"
@@ -613,178 +738,13 @@ msgid ""
 msgstr ""
 "Websitenin faviconunu temsil edicek 32px x 32px PNG/GIF görselini yükle"
 
-#: ../options.php:175
-msgid "Action Button"
-msgstr "Eylem Butonu"
-
-#: ../options.php:180
-msgid "Call For Action Text"
-msgstr "Eylem yazısını cağır"
-
-#: ../options.php:181
-msgid "Enter the text for call for action section"
-msgstr "Eylem bölümümün çağırmak için gereken yazıyı gir"
-
-#: ../options.php:188
-msgid "Call For Action Button Title"
-msgstr "Eylem çağırma butonu başlığı"
-
-#: ../options.php:189
-msgid "Enter the title for Call For Action button"
-msgstr "Eylem için çağır butonunun başlığını gir"
-
-#: ../options.php:196
-msgid "CFA button link"
-msgstr "Eylem için çağır butonu bağlantısı"
-
-#: ../options.php:197
-msgid "Enter the link for Call For Action button"
-msgstr "Eylem için çağır butonu bağlantısını gir"
-
-#: ../options.php:204
-msgid "Call For Action Text Color"
-msgstr "Eylem için çağır yazı rengi"
-
-#: ../options.php:212
-msgid "Call For Action Background Color"
-msgstr "Eylem için çağır arkaplan rengi"
-
-#: ../options.php:220
-msgid "Call For Action Button Border Color"
-msgstr "Eylem için çağır butonu kenar rengi"
-
-#: ../options.php:228
-msgid "Call For Action Button Text Color"
-msgstr "Eylem için çağır butonu yazı rengi"
-
-#: ../options.php:236
-msgid "Typography"
-msgstr "Basımcılık"
-
-#: ../options.php:241
-msgid "Main Body Text"
-msgstr "Ana gövde metni"
-
 #: ../options.php:242
 msgid "Used in P tags"
 msgstr "P etiketlerinde kullanılır"
 
-#: ../options.php:250
-msgid "Heading Color"
-msgstr "Heading rengi"
-
-#: ../options.php:251
-msgid "Color for all headings (h1-h6)"
-msgstr "Bütün (h1-h6)headingler için renk"
-
-#: ../options.php:258
-msgid "Link Color"
-msgstr "Bağlantı rengi"
-
-#: ../options.php:266
-msgid "Link:hover Color"
-msgstr "Bağlantı:vurgulanmış rengi"
-
-#: ../options.php:274
-msgid "Header"
-msgstr "Header"
-
-#: ../options.php:279
-msgid "Top nav background color"
-msgstr "Üst navigason arkaplan rengi"
-
-#: ../options.php:287
-msgid "Top nav item color"
-msgstr "Üst navigasyon nesne rengi"
-
-#: ../options.php:288
-msgid "Link color"
-msgstr "Bağlantı rengi"
-
-#: ../options.php:295
-msgid "Top nav item hover color"
-msgstr "Üst navigasyon nesne vurgulanmış rengi"
-
-#: ../options.php:296
-msgid "Link:hover color"
-msgstr "Link:vurgulanmış rengi"
-
-#: ../options.php:303
-msgid "Top nav dropdown background color"
-msgstr "Üst navigasyon aşağı düşen arkaplan rengi"
-
-#: ../options.php:304 ../options.php:328
-msgid "Background of dropdown item hover color"
-msgstr "Aşağı düşen nesnenin vurgulanmış arkaplan rengi"
-
-#: ../options.php:311
-msgid "Top nav dropdown item color"
-msgstr "Üst navigasyon nesne rengi"
-
-#: ../options.php:312
-msgid "Dropdown item color"
-msgstr "Aşağı düşen nesne rengi"
-
-#: ../options.php:319
-msgid "Top nav dropdown item hover color"
-msgstr "Üst navigasyon aşağı düşen vurgulanmış nesne rengi"
-
-#: ../options.php:320
-msgid "Dropdown item hover color"
-msgstr "Aşağı düşen vurgulanmış nesne rengi"
-
-#: ../options.php:327
-msgid "Top nav dropdown item background hover color"
-msgstr "Üst navigasyon aşağı düşen vurgulanmış nesnenin arkaplan rengi"
-
-#: ../options.php:335
-msgid "Footer"
-msgstr "Site altı(ayakçı)"
-
-#: ../options.php:340
-msgid "Footer widget area background color"
-msgstr "Site altı widget alanı arkaplan rengi"
-
-#: ../options.php:347
-msgid "Footer background color"
-msgstr "Site altı arkaplan rengi"
-
-#: ../options.php:354
-msgid "Footer text color"
-msgstr "Site altı yazı rengi"
-
-#: ../options.php:361
-msgid "Footer link color"
-msgstr "Site altı bağlantı rengi"
-
-#: ../options.php:368
-msgid "Footer information"
-msgstr "Site altı bilgisi"
-
-#: ../options.php:369
-msgid "Copyright text in footer"
-msgstr "Site altındaki telif hakkı yazısı"
-
-#: ../options.php:376
-#, fuzzy
-msgid "Footer Social Icons"
-msgstr "Site altı sosyal ikon rengi"
-
 #: ../options.php:377
 #, fuzzy
 msgid "Show/Hide social icons in footer"
-msgstr "Site altı sosyal ikon rengi"
-
-#: ../options.php:384
-msgid "Social"
-msgstr "Sosyal"
-
-#: ../options.php:389
-msgid "Social icon color"
-msgstr "Sosyak ikon rengi"
-
-#: ../options.php:397
-msgid "Footer social icon color"
 msgstr "Site altı sosyal ikon rengi"
 
 #: ../options.php:405
@@ -859,18 +819,6 @@ msgstr "GitHub"
 msgid "Spotify"
 msgstr "Spotify"
 
-#: ../options.php:542
-msgid "Other"
-msgstr "Diğer"
-
-#: ../options.php:547
-msgid "Custom CSS"
-msgstr "Özel CSS"
-
-#: ../options.php:548
-msgid "Additional CSS"
-msgstr "Fazladan CSS"
-
 #: ../search.php:16
 #, php-format
 msgid "Search Results for: %s"
@@ -901,3 +849,92 @@ msgstr "Arama"
 #: ../sidebar.php:26
 msgid "Meta"
 msgstr "Meta"
+
+#~ msgid "Theme Options"
+#~ msgstr "Tema Ayarları"
+
+#~ msgid "Click OK to reset. Any theme settings will be lost!"
+#~ msgstr ""
+#~ "Sıfırlamak (Reset) için tamama tıklayın. Bütün tema ayarları kaybolacak "
+#~ "(sıfırlanacak)!"
+
+#~ msgid "Default options restored."
+#~ msgstr "Öntanımlı ayarlara dönüldü."
+
+#~ msgid "Options saved."
+#~ msgstr "Ayarlar kaydedildi"
+
+#~ msgid "No file chosen"
+#~ msgstr "Dosya seçilmedi"
+
+#~ msgid "Upload"
+#~ msgstr "Yükle"
+
+#~ msgid "Remove"
+#~ msgstr "Kaldır"
+
+#~ msgid "Upgrade your version of WordPress for full media support."
+#~ msgstr "Tam medya desteği için WordPress sürümünüzü yükseltin."
+
+#~ msgid "View File"
+#~ msgstr "Dosyayı görüntüle"
+
+#~ msgid "No Repeat"
+#~ msgstr "Tekrar yok"
+
+#~ msgid "Repeat Horizontally"
+#~ msgstr "Yatay Tekrar"
+
+#~ msgid "Repeat Vertically"
+#~ msgstr "Dikey Tekrar"
+
+#~ msgid "Repeat All"
+#~ msgstr "Hepsini Tekrarla"
+
+#~ msgid "Top Left"
+#~ msgstr "Sol Üst"
+
+#~ msgid "Top Center"
+#~ msgstr "Merkez Üst"
+
+#~ msgid "Top Right"
+#~ msgstr "Sağ üst"
+
+#~ msgid "Middle Left"
+#~ msgstr "Orta Sol"
+
+#~ msgid "Middle Center"
+#~ msgstr "Orta Merkez"
+
+#~ msgid "Middle Right"
+#~ msgstr "Orta Sağ"
+
+#~ msgid "Bottom Left"
+#~ msgstr "Alt Sol"
+
+#~ msgid "Bottom Center"
+#~ msgstr "Alt Merkez"
+
+#~ msgid "Bottom Right"
+#~ msgstr "Alt Sağ"
+
+#~ msgid "Scroll Normally"
+#~ msgstr "Normal Kaydır"
+
+#~ msgid "Fixed in Place"
+#~ msgstr "Yerinde Sabit"
+
+#~ msgid "Normal"
+#~ msgstr "Normal"
+
+#~ msgid "Italic"
+#~ msgstr "İtalik"
+
+#~ msgid "Bold"
+#~ msgstr "Kalın"
+
+#~ msgid "Bold Italic"
+#~ msgstr "Kalın İtalik"
+
+#~ msgid "Follow us on "
+#~ msgstr "Bizi takip edin"

@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling\n"
-"POT-Creation-Date: 2015-07-08 17:07+0300\n"
-"PO-Revision-Date: 2015-07-26 00:08+0700\n"
+"POT-Creation-Date: 2015-10-16 20:22+0300\n"
+"PO-Revision-Date: 2015-10-16 20:22+0300\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: Rhiski Aprilianto <mail@rhiskiapril.com>\n"
 "Language: id_ID\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.6\n"
+"X-Generator: Poedit 1.8.5\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -208,7 +208,7 @@ msgstr "Baca Selengkapnya"
 msgid "Primary Menu"
 msgstr "Menu Utama"
 
-#: functions.php:70 inc/extras.php:212
+#: functions.php:70 inc/extras.php:198
 msgid "Footer Links"
 msgstr "Link footer"
 
@@ -248,6 +248,29 @@ msgstr "Footer Widget 2"
 msgid "Footer Widget 3"
 msgstr "Footer Widget 3"
 
+#: functions.php:292
+#, fuzzy
+msgctxt "nav menu location"
+msgid "Social Menu"
+msgstr "Sosial"
+
+#: functions.php:304 options.php:23
+msgid "Right Sidebar"
+msgstr "Sidebar Kanan"
+
+#: functions.php:304 options.php:23
+msgid "Left Sidebar"
+msgstr "Sidebar Kiri"
+
+#: functions.php:304
+#, fuzzy
+msgid "No Sidebar"
+msgstr "Sidebar"
+
+#: functions.php:304
+msgid "Full Width"
+msgstr ""
+
 #: image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
 msgstr "<i class=\"fa fa-chevron-left\"></i>Sebelumnya"
@@ -256,140 +279,308 @@ msgstr "<i class=\"fa fa-chevron-left\"></i>Sebelumnya"
 msgid "Next <i class=\"fa fa-chevron-right\"></i>"
 msgstr "Selanjutnya <i class=\"fa fa-chevron-right\"></i>"
 
-#: inc/admin/includes/class-options-framework-admin.php:91
-#: inc/admin/includes/class-options-framework-admin.php:92
-msgid "Theme Options"
-msgstr "Pengaturan Tema"
+#: inc/customizer.php:29
+#, fuzzy
+msgid "Sparkling Options"
+msgstr "Sparkling Kategori"
 
-#: inc/admin/includes/class-options-framework-admin.php:203
-msgid "Save Options"
-msgstr "Simpan Pilihan"
+#: inc/customizer.php:30
+msgid "Panel to update sparkling theme options"
+msgstr ""
 
-#: inc/admin/includes/class-options-framework-admin.php:204
-msgid "Restore Defaults"
-msgstr "Kembalikan Default"
-
-#: inc/admin/includes/class-options-framework-admin.php:204
-msgid "Click OK to reset. Any theme settings will be lost!"
-msgstr "Klik OK untuk me-reset. Pengaturan tema akan hilang!"
-
-#: inc/admin/includes/class-options-framework-admin.php:235
-msgid "Default options restored."
-msgstr "Pilihan default dipulihkan."
-
-#: inc/admin/includes/class-options-framework-admin.php:289
-msgid "Options saved."
-msgstr "Pengaturan disimpan."
-
-#: inc/admin/includes/class-options-media-uploader.php:62
-msgid "No file chosen"
-msgstr "Tak ada file yang dipilih"
-
-#: inc/admin/includes/class-options-media-uploader.php:65
-#: inc/admin/includes/class-options-media-uploader.php:118
-msgid "Upload"
-msgstr "Unggah"
-
-#: inc/admin/includes/class-options-media-uploader.php:67
-#: inc/admin/includes/class-options-media-uploader.php:119
-msgid "Remove"
-msgstr "Hapus"
-
-#: inc/admin/includes/class-options-media-uploader.php:70
-msgid "Upgrade your version of WordPress for full media support."
-msgstr "Meng-upgrade versi WordPress untuk dukungan media penuh."
-
-#: inc/admin/includes/class-options-media-uploader.php:94
-msgid "View File"
-msgstr "Tampilkan File"
-
-#: inc/admin/includes/class-options-sanitization.php:316
-msgid "No Repeat"
-msgstr "No Repeat"
-
-#: inc/admin/includes/class-options-sanitization.php:317
-msgid "Repeat Horizontally"
-msgstr "Repeat Horizontally"
-
-#: inc/admin/includes/class-options-sanitization.php:318
-msgid "Repeat Vertically"
-msgstr "Repeat Horizontally"
-
-#: inc/admin/includes/class-options-sanitization.php:319
-msgid "Repeat All"
-msgstr "Repeat All"
-
-#: inc/admin/includes/class-options-sanitization.php:331
-msgid "Top Left"
-msgstr "Kiri Atas"
-
-#: inc/admin/includes/class-options-sanitization.php:332
-msgid "Top Center"
-msgstr "Tengah Atas"
-
-#: inc/admin/includes/class-options-sanitization.php:333
-msgid "Top Right"
-msgstr "Kanan Atas"
-
-#: inc/admin/includes/class-options-sanitization.php:334
-msgid "Middle Left"
-msgstr "Kiri Tengah"
-
-#: inc/admin/includes/class-options-sanitization.php:335
-msgid "Middle Center"
-msgstr "Tengah Tengah"
-
-#: inc/admin/includes/class-options-sanitization.php:336
-msgid "Middle Right"
-msgstr "Kanan Tengah"
-
-#: inc/admin/includes/class-options-sanitization.php:337
-msgid "Bottom Left"
-msgstr "Kiri Bawah"
-
-#: inc/admin/includes/class-options-sanitization.php:338
-msgid "Bottom Center"
-msgstr "Tengah Bawah"
-
-#: inc/admin/includes/class-options-sanitization.php:339
-msgid "Bottom Right"
-msgstr "Kanan Bawah"
-
-#: inc/admin/includes/class-options-sanitization.php:351
-msgid "Scroll Normally"
-msgstr "Gulir biasa"
-
-#: inc/admin/includes/class-options-sanitization.php:352
-msgid "Fixed in Place"
-msgstr "Tetap di tempat"
-
-#: inc/admin/includes/class-options-sanitization.php:424
-msgid "Normal"
-msgstr "Normal"
-
-#: inc/admin/includes/class-options-sanitization.php:425
-msgid "Italic"
-msgstr "Italic"
-
-#: inc/admin/includes/class-options-sanitization.php:426
-msgid "Bold"
-msgstr "Bold"
-
-#: inc/admin/includes/class-options-sanitization.php:427
-msgid "Bold Italic"
-msgstr "Bold Italic"
-
-#: inc/customizer.php:27
+#: inc/customizer.php:36
 msgid "Content Options"
 msgstr "Pengaturan Konten"
 
-#: inc/customizer.php:39
+#: inc/customizer.php:47
 msgid "Show post excerpts?"
 msgstr "Tampilkan kutipan posting?"
 
-#: inc/customizer.php:51
+#: inc/customizer.php:58
 msgid "Display Comments on Static Pages?"
 msgstr "Tampilan Komentar Halaman Statik?"
+
+#: inc/customizer.php:66
+#, fuzzy
+msgid "Slider options"
+msgstr "Simpan Pilihan"
+
+#: inc/customizer.php:76 options.php:116
+msgid "Check if you want to enable slider"
+msgstr "Centang jika Anda ingin mengaktifkan slider"
+
+#: inc/customizer.php:91 options.php:123
+msgid "Slider Category"
+msgstr "Slider Kategori"
+
+#: inc/customizer.php:94 options.php:124
+msgid "Select a category for the featured post slider"
+msgstr "Pilih sebuah kategori untuk tampilan slider pos"
+
+#: inc/customizer.php:104 options.php:132
+msgid "Number of slide items"
+msgstr "Jumlah item slide"
+
+#: inc/customizer.php:106 options.php:133
+msgid "Enter the number of slide items"
+msgstr "Masukkan jumlah slide item"
+
+#: inc/customizer.php:111
+#, fuzzy
+msgid "Layout options"
+msgstr "Pilihan Layout Website"
+
+#: inc/customizer.php:123 options.php:141
+msgid "Website Layout Options"
+msgstr "Pilihan Layout Website"
+
+#: inc/customizer.php:126
+#, fuzzy
+msgid "Choose between different layout options to be used as default"
+msgstr ""
+"Pilih antara pilihan sidebar kiri dan kanan untuk digunakan sebagai default"
+
+#: inc/customizer.php:136
+#, fuzzy
+msgid "Element Color"
+msgstr "Warna Elemen"
+
+#: inc/customizer.php:137 inc/customizer.php:149 inc/customizer.php:203
+#: inc/customizer.php:213 inc/customizer.php:223 inc/customizer.php:233
+#: inc/customizer.php:311 inc/customizer.php:321 inc/customizer.php:338
+#: inc/customizer.php:478 inc/customizer.php:489 options.php:152
+#: options.php:160 options.php:205 options.php:213 options.php:221
+#: options.php:229 options.php:259 options.php:267 options.php:280
+#: options.php:390 options.php:398
+msgid "Default used if no color is selected"
+msgstr "Pengaturan standar digunakan jika tidak ada warna yang dipilih"
+
+#: inc/customizer.php:148 options.php:159
+msgid "Element color on hover"
+msgstr "Warna Elemen ketika disorot"
+
+#: inc/customizer.php:156 options.php:175
+msgid "Action Button"
+msgstr "Action Button"
+
+#: inc/customizer.php:166 options.php:180
+msgid "Call For Action Text"
+msgstr "Teks Call For Action"
+
+#: inc/customizer.php:167 options.php:181
+msgid "Enter the text for call for action section"
+msgstr "Masukkan teks untuk bagian call for action"
+
+#: inc/customizer.php:178 options.php:188
+msgid "Call For Action Button Title"
+msgstr "Judul Tombol Call For Action"
+
+#: inc/customizer.php:180 options.php:189
+msgid "Enter the title for Call For Action button"
+msgstr "Masukkan judul untuk tombol Call For Action"
+
+#: inc/customizer.php:190 options.php:196
+msgid "CFA button link"
+msgstr "CFA tombol link"
+
+#: inc/customizer.php:192 options.php:197
+msgid "Enter the link for Call For Action button"
+msgstr "Masukkan link untuk tombol Call For Action"
+
+#: inc/customizer.php:202 options.php:204
+msgid "Call For Action Text Color"
+msgstr "Warna Teks Call For Action"
+
+#: inc/customizer.php:212 options.php:212
+msgid "Call For Action Background Color"
+msgstr "Warna Background Call For Action"
+
+#: inc/customizer.php:222 options.php:220
+msgid "Call For Action Button Border Color"
+msgstr "Warna Border Tombol Call For Action"
+
+#: inc/customizer.php:232 options.php:228
+msgid "Call For Action Button Text Color"
+msgstr "Warna Teks Tombol Call For Action"
+
+#: inc/customizer.php:239 options.php:236
+msgid "Typography"
+msgstr "Tipografi"
+
+#: inc/customizer.php:259 options.php:241
+msgid "Main Body Text"
+msgstr "Teks tubuh utama"
+
+#: inc/customizer.php:260
+#, fuzzy
+msgid "Used in p tags"
+msgstr "Digunakan dalam tag P"
+
+#: inc/customizer.php:300 options.php:250
+msgid "Heading Color"
+msgstr "Warna Heading"
+
+#: inc/customizer.php:301 options.php:251
+msgid "Color for all headings (h1-h6)"
+msgstr "Warna untuk semua Heading (h1-h6)"
+
+#: inc/customizer.php:310 options.php:258
+msgid "Link Color"
+msgstr "Warna Link"
+
+#: inc/customizer.php:320 options.php:266
+msgid "Link:hover Color"
+msgstr "Warna Link:hover"
+
+#: inc/customizer.php:327 options.php:274
+msgid "Header"
+msgstr "Header"
+
+#: inc/customizer.php:337 options.php:279
+msgid "Top nav background color"
+msgstr "Warna Top nav background"
+
+#: inc/customizer.php:347 options.php:287
+msgid "Top nav item color"
+msgstr "Warna Top nav item"
+
+#: inc/customizer.php:348 options.php:288
+msgid "Link color"
+msgstr "Warna Link"
+
+#: inc/customizer.php:358 options.php:295
+msgid "Top nav item hover color"
+msgstr "Warna Top nav item hover"
+
+#: inc/customizer.php:359 options.php:296
+msgid "Link:hover color"
+msgstr "Warna Link:hover"
+
+#: inc/customizer.php:369 options.php:303
+msgid "Top nav dropdown background color"
+msgstr "Warna Top nav dropdown background"
+
+#: inc/customizer.php:370 inc/customizer.php:403 options.php:304
+#: options.php:328
+msgid "Background of dropdown item hover color"
+msgstr "Warna Background dari dropdown item hover"
+
+#: inc/customizer.php:380 options.php:311
+msgid "Top nav dropdown item color"
+msgstr "Warna Top nav dropdown item"
+
+#: inc/customizer.php:381 options.php:312
+msgid "Dropdown item color"
+msgstr "Warna Dropdown item"
+
+#: inc/customizer.php:391 options.php:319
+msgid "Top nav dropdown item hover color"
+msgstr "Warna Top nav dropdown item hover"
+
+#: inc/customizer.php:392 options.php:320
+msgid "Dropdown item hover color"
+msgstr "Warna Dropdown item hover"
+
+#: inc/customizer.php:402 options.php:327
+msgid "Top nav dropdown item background hover color"
+msgstr "Warna Top nav dropdown item background hover"
+
+#: inc/customizer.php:409 options.php:335
+msgid "Footer"
+msgstr "Footer"
+
+#: inc/customizer.php:419 options.php:340
+msgid "Footer widget area background color"
+msgstr "Warna Background Footer widget area "
+
+#: inc/customizer.php:429 options.php:347
+msgid "Footer background color"
+msgstr "Warna background footer"
+
+#: inc/customizer.php:439 options.php:354
+msgid "Footer text color"
+msgstr "Warna teks footer"
+
+#: inc/customizer.php:449 options.php:361
+msgid "Footer link color"
+msgstr "Warna link footer"
+
+#: inc/customizer.php:459 options.php:368
+msgid "Footer information"
+msgstr "Informasi footer"
+
+#: inc/customizer.php:460 options.php:369
+msgid "Copyright text in footer"
+msgstr "Teks hak cipta di footer"
+
+#: inc/customizer.php:467 options.php:384
+msgid "Social"
+msgstr "Sosial"
+
+#: inc/customizer.php:477 options.php:389
+msgid "Social icon color"
+msgstr "Warna ikon sosial"
+
+#: inc/customizer.php:488 options.php:397
+msgid "Footer social icon color"
+msgstr "Warna footer  ikon sosial"
+
+#: inc/customizer.php:499 options.php:376
+msgid "Footer Social Icons"
+msgstr "Footer  ikon sosial"
+
+#: inc/customizer.php:500
+#, fuzzy
+msgid "Check to show social icons in footer"
+msgstr "Tampilkan/Sembunyikan ikon sosial di footer"
+
+#: inc/customizer.php:507 options.php:542
+msgid "Other"
+msgstr "Lainnya"
+
+#: inc/customizer.php:517 options.php:547
+msgid "Custom CSS"
+msgstr "Kustom CSS"
+
+#: inc/customizer.php:518 options.php:548
+msgid "Additional CSS"
+msgstr "CSS Tambahan"
+
+#: inc/customizer.php:525 inc/extras.php:383
+msgid "Support and Documentation"
+msgstr "Dukungan dan Dokumentasi"
+
+#: inc/customizer.php:701 inc/extras.php:389
+msgid "Sparkling Documentation"
+msgstr "Dokumentasi Sparkling"
+
+#: inc/customizer.php:702 inc/extras.php:390
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr ""
+"Cara terbaik untuk menghubungi kami dengan <b>pertanyaan dukungan</b> dan "
+"<b>laporan bug</b> melalui"
+
+#: inc/customizer.php:702 inc/extras.php:390
+msgid "Colorlib support forum"
+msgstr "Colorlib support forum"
+
+#: inc/customizer.php:703 inc/extras.php:391
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr "Jika Anda menyukai tema ini, saya akan menghargai hal-hal berikut:"
+
+#: inc/customizer.php:705 inc/extras.php:393
+msgid "Rate this Theme"
+msgstr "Merating Tema ini"
+
+#: inc/customizer.php:706 inc/extras.php:394
+msgid "Like on Facebook"
+msgstr "Sukai kami di Facebook"
+
+#: inc/customizer.php:707 inc/extras.php:395
+msgid "Follow on Twitter"
+msgstr "Ikuti Kami di Twitter"
 
 #: inc/extras.php:61
 #, php-format
@@ -397,9 +588,9 @@ msgid "Page %s"
 msgstr "Halaman %s"
 
 #: inc/extras.php:125
+#, fuzzy
 msgid ""
-"<p>This post is password protected. To view it please enter your password "
-"below:</p>"
+"This post is password protected. To view it please enter your password below:"
 msgstr ""
 "<p>Posting ini dilindungi sandi. Untuk melihat Mohon masukkan sandi Anda di "
 "bawah ini:</p>"
@@ -412,50 +603,20 @@ msgstr "Kata sandi:"
 msgid "Submit"
 msgstr "Kirim"
 
-#: inc/extras.php:175
-msgid "Follow us on "
-msgstr "Ikuti kami di"
-
-#: inc/extras.php:287
+#: inc/extras.php:272
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Tema oleh %1$s diberdayakan oleh %2$s"
 
-#: inc/extras.php:394
-msgid "Support and Documentation"
-msgstr "Dukungan dan Dokumentasi"
-
-#: inc/extras.php:400
-msgid "Sparkling Documentation"
-msgstr "Dokumentasi Sparkling"
-
-#: inc/extras.php:401
+#: inc/metaboxes.php:16
 msgid ""
-"The best way to contact us with <b>support questions</b> and <b>bug reports</"
-"b> is via"
+"Select layout for this specific Page only ( Note: This setting only reflects "
+"if page Template is set as Default Template and Blog Type Templates.)"
 msgstr ""
-"Cara terbaik untuk menghubungi kami dengan <b>pertanyaan dukungan</b> dan "
-"<b>laporan bug</b> melalui"
 
-#: inc/extras.php:401
-msgid "Colorlib support forum"
-msgstr "Colorlib support forum"
-
-#: inc/extras.php:402
-msgid "If you like this theme, I'd appreciate any of the following:"
-msgstr "Jika Anda menyukai tema ini, saya akan menghargai hal-hal berikut:"
-
-#: inc/extras.php:404
-msgid "Rate this Theme"
-msgstr "Merating Tema ini"
-
-#: inc/extras.php:405
-msgid "Like on Facebook"
-msgstr "Sukai kami di Facebook"
-
-#: inc/extras.php:406
-msgid "Follow on Twitter"
-msgstr "Ikuti Kami di Twitter"
+#: inc/metaboxes.php:21
+msgid "Select layout for this specific Post only"
+msgstr ""
 
 #: inc/template-tags.php:23
 msgid "Posts navigation"
@@ -491,7 +652,7 @@ msgstr "Sparkling Kategori"
 msgid "Categories"
 msgstr "Kategori"
 
-#: inc/widgets/widget-categories.php:83 inc/widgets/widget-social.php:49
+#: inc/widgets/widget-categories.php:83 inc/widgets/widget-social.php:42
 msgid "Title "
 msgstr "Judul"
 
@@ -525,17 +686,9 @@ msgstr "Batasi Jumlah Tulisan"
 msgid "Sparkling Social Widget"
 msgstr "Sparkling Social Widget"
 
-#: inc/widgets/widget-social.php:17 inc/widgets/widget-social.php:46
+#: inc/widgets/widget-social.php:18 inc/widgets/widget-social.php:40
 msgid "Follow us"
 msgstr "Ikuti kami"
-
-#: options.php:23
-msgid "Right Sidebar"
-msgstr "Sidebar Kanan"
-
-#: options.php:23
-msgid "Left Sidebar"
-msgstr "Sidebar Kiri"
 
 #: options.php:27
 msgid "One"
@@ -585,30 +738,6 @@ msgstr "Utama"
 msgid "Do You want to display image slider on the Home Page?"
 msgstr "Apakah Anda ingin menampilkan gambar slider pada Home Page?"
 
-#: options.php:116
-msgid "Check if you want to enable slider"
-msgstr "Centang jika Anda ingin mengaktifkan slider"
-
-#: options.php:123
-msgid "Slider Category"
-msgstr "Slider Kategori"
-
-#: options.php:124
-msgid "Select a category for the featured post slider"
-msgstr "Pilih sebuah kategori untuk tampilan slider pos"
-
-#: options.php:132
-msgid "Number of slide items"
-msgstr "Jumlah item slide"
-
-#: options.php:133
-msgid "Enter the number of slide items"
-msgstr "Masukkan jumlah slide item"
-
-#: options.php:141
-msgid "Website Layout Options"
-msgstr "Pilihan Layout Website"
-
 #: options.php:142
 msgid "Choose between Left and Right sidebar options to be used as default"
 msgstr ""
@@ -617,16 +746,6 @@ msgstr ""
 #: options.php:151
 msgid "Element color"
 msgstr "Warna Elemen"
-
-#: options.php:152 options.php:160 options.php:205 options.php:213
-#: options.php:221 options.php:229 options.php:259 options.php:267
-#: options.php:280 options.php:390 options.php:398
-msgid "Default used if no color is selected"
-msgstr "Pengaturan standar digunakan jika tidak ada warna yang dipilih"
-
-#: options.php:159
-msgid "Element color on hover"
-msgstr "Warna Elemen ketika disorot"
 
 #: options.php:167
 msgid "Custom Favicon"
@@ -639,177 +758,13 @@ msgstr ""
 "Meng-upload gambar PNG GIF x 32px 32px yang akan mewakili favicon website "
 "Anda"
 
-#: options.php:175
-msgid "Action Button"
-msgstr "Action Button"
-
-#: options.php:180
-msgid "Call For Action Text"
-msgstr "Teks Call For Action"
-
-#: options.php:181
-msgid "Enter the text for call for action section"
-msgstr "Masukkan teks untuk bagian call for action"
-
-#: options.php:188
-msgid "Call For Action Button Title"
-msgstr "Judul Tombol Call For Action"
-
-#: options.php:189
-msgid "Enter the title for Call For Action button"
-msgstr "Masukkan judul untuk tombol Call For Action"
-
-#: options.php:196
-msgid "CFA button link"
-msgstr "CFA tombol link"
-
-#: options.php:197
-msgid "Enter the link for Call For Action button"
-msgstr "Masukkan link untuk tombol Call For Action"
-
-#: options.php:204
-msgid "Call For Action Text Color"
-msgstr "Warna Teks Call For Action"
-
-#: options.php:212
-msgid "Call For Action Background Color"
-msgstr "Warna Background Call For Action"
-
-#: options.php:220
-msgid "Call For Action Button Border Color"
-msgstr "Warna Border Tombol Call For Action"
-
-#: options.php:228
-msgid "Call For Action Button Text Color"
-msgstr "Warna Teks Tombol Call For Action"
-
-#: options.php:236
-msgid "Typography"
-msgstr "Tipografi"
-
-#: options.php:241
-msgid "Main Body Text"
-msgstr "Teks tubuh utama"
-
 #: options.php:242
 msgid "Used in P tags"
 msgstr "Digunakan dalam tag P"
 
-#: options.php:250
-msgid "Heading Color"
-msgstr "Warna Heading"
-
-#: options.php:251
-msgid "Color for all headings (h1-h6)"
-msgstr "Warna untuk semua Heading (h1-h6)"
-
-#: options.php:258
-msgid "Link Color"
-msgstr "Warna Link"
-
-#: options.php:266
-msgid "Link:hover Color"
-msgstr "Warna Link:hover"
-
-#: options.php:274
-msgid "Header"
-msgstr "Header"
-
-#: options.php:279
-msgid "Top nav background color"
-msgstr "Warna Top nav background"
-
-#: options.php:287
-msgid "Top nav item color"
-msgstr "Warna Top nav item"
-
-#: options.php:288
-msgid "Link color"
-msgstr "Warna Link"
-
-#: options.php:295
-msgid "Top nav item hover color"
-msgstr "Warna Top nav item hover"
-
-#: options.php:296
-msgid "Link:hover color"
-msgstr "Warna Link:hover"
-
-#: options.php:303
-msgid "Top nav dropdown background color"
-msgstr "Warna Top nav dropdown background"
-
-#: options.php:304 options.php:328
-msgid "Background of dropdown item hover color"
-msgstr "Warna Background dari dropdown item hover"
-
-#: options.php:311
-msgid "Top nav dropdown item color"
-msgstr "Warna Top nav dropdown item"
-
-#: options.php:312
-msgid "Dropdown item color"
-msgstr "Warna Dropdown item"
-
-#: options.php:319
-msgid "Top nav dropdown item hover color"
-msgstr "Warna Top nav dropdown item hover"
-
-#: options.php:320
-msgid "Dropdown item hover color"
-msgstr "Warna Dropdown item hover"
-
-#: options.php:327
-msgid "Top nav dropdown item background hover color"
-msgstr "Warna Top nav dropdown item background hover"
-
-#: options.php:335
-msgid "Footer"
-msgstr "Footer"
-
-#: options.php:340
-msgid "Footer widget area background color"
-msgstr "Warna Background Footer widget area "
-
-#: options.php:347
-msgid "Footer background color"
-msgstr "Warna background footer"
-
-#: options.php:354
-msgid "Footer text color"
-msgstr "Warna teks footer"
-
-#: options.php:361
-msgid "Footer link color"
-msgstr "Warna link footer"
-
-#: options.php:368
-msgid "Footer information"
-msgstr "Informasi footer"
-
-#: options.php:369
-msgid "Copyright text in footer"
-msgstr "Teks hak cipta di footer"
-
-#: options.php:376
-msgid "Footer Social Icons"
-msgstr "Footer  ikon sosial"
-
 #: options.php:377
 msgid "Show/Hide social icons in footer"
 msgstr "Tampilkan/Sembunyikan ikon sosial di footer"
-
-#: options.php:384
-msgid "Social"
-msgstr "Sosial"
-
-#: options.php:389
-msgid "Social icon color"
-msgstr "Warna ikon sosial"
-
-#: options.php:397
-msgid "Footer social icon color"
-msgstr "Warna footer  ikon sosial"
 
 #: options.php:405
 msgid "Add full URL for your social network profiles"
@@ -883,18 +838,6 @@ msgstr "GitHub"
 msgid "Spotify"
 msgstr "Spotify"
 
-#: options.php:542
-msgid "Other"
-msgstr "Lainnya"
-
-#: options.php:547
-msgid "Custom CSS"
-msgstr "Kustom CSS"
-
-#: options.php:548
-msgid "Additional CSS"
-msgstr "CSS Tambahan"
-
 #: search.php:16
 #, php-format
 msgid "Search Results for: %s"
@@ -922,6 +865,96 @@ msgstr "Cari"
 #: sidebar.php:26
 msgid "Meta"
 msgstr "Meta"
+
+#~ msgid "Theme Options"
+#~ msgstr "Pengaturan Tema"
+
+#~ msgid "Restore Defaults"
+#~ msgstr "Kembalikan Default"
+
+#~ msgid "Click OK to reset. Any theme settings will be lost!"
+#~ msgstr "Klik OK untuk me-reset. Pengaturan tema akan hilang!"
+
+#~ msgid "Default options restored."
+#~ msgstr "Pilihan default dipulihkan."
+
+#~ msgid "Options saved."
+#~ msgstr "Pengaturan disimpan."
+
+#~ msgid "No file chosen"
+#~ msgstr "Tak ada file yang dipilih"
+
+#~ msgid "Upload"
+#~ msgstr "Unggah"
+
+#~ msgid "Remove"
+#~ msgstr "Hapus"
+
+#~ msgid "Upgrade your version of WordPress for full media support."
+#~ msgstr "Meng-upgrade versi WordPress untuk dukungan media penuh."
+
+#~ msgid "View File"
+#~ msgstr "Tampilkan File"
+
+#~ msgid "No Repeat"
+#~ msgstr "No Repeat"
+
+#~ msgid "Repeat Horizontally"
+#~ msgstr "Repeat Horizontally"
+
+#~ msgid "Repeat Vertically"
+#~ msgstr "Repeat Horizontally"
+
+#~ msgid "Repeat All"
+#~ msgstr "Repeat All"
+
+#~ msgid "Top Left"
+#~ msgstr "Kiri Atas"
+
+#~ msgid "Top Center"
+#~ msgstr "Tengah Atas"
+
+#~ msgid "Top Right"
+#~ msgstr "Kanan Atas"
+
+#~ msgid "Middle Left"
+#~ msgstr "Kiri Tengah"
+
+#~ msgid "Middle Center"
+#~ msgstr "Tengah Tengah"
+
+#~ msgid "Middle Right"
+#~ msgstr "Kanan Tengah"
+
+#~ msgid "Bottom Left"
+#~ msgstr "Kiri Bawah"
+
+#~ msgid "Bottom Center"
+#~ msgstr "Tengah Bawah"
+
+#~ msgid "Bottom Right"
+#~ msgstr "Kanan Bawah"
+
+#~ msgid "Scroll Normally"
+#~ msgstr "Gulir biasa"
+
+#~ msgid "Fixed in Place"
+#~ msgstr "Tetap di tempat"
+
+#~ msgid "Normal"
+#~ msgstr "Normal"
+
+#~ msgid "Italic"
+#~ msgstr "Italic"
+
+#~ msgid "Bold"
+#~ msgstr "Bold"
+
+#~ msgid "Bold Italic"
+#~ msgstr "Bold Italic"
+
+#~ msgid "Follow us on "
+#~ msgstr "Ikuti kami di"
 
 #~ msgctxt "placeholder"
 #~ msgid "Search..."

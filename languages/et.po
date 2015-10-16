@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-07-29 23:05+0300\n"
-"PO-Revision-Date: 2015-07-29 23:05+0300\n"
+"POT-Creation-Date: 2015-10-16 20:22+0300\n"
+"PO-Revision-Date: 2015-10-16 20:22+0300\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: et_EE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.3\n"
+"X-Generator: Poedit 1.8.5\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
@@ -191,7 +191,7 @@ msgstr "Loe edasi"
 msgid "Primary Menu"
 msgstr "Põhi menüü"
 
-#: ../functions.php:70 ../inc/extras.php:212
+#: ../functions.php:70 ../inc/extras.php:198
 msgid "Footer Links"
 msgstr "Jaluse lingid"
 
@@ -231,6 +231,23 @@ msgstr "Jaluse vidin 2"
 msgid "Footer Widget 3"
 msgstr "Jaluse vidin 3"
 
+#: ../functions.php:304 ../options.php:23
+msgid "Right Sidebar"
+msgstr "Parem külgriba"
+
+#: ../functions.php:304 ../options.php:23
+msgid "Left Sidebar"
+msgstr "Vasak külgriba"
+
+#: ../functions.php:304
+#, fuzzy
+msgid "No Sidebar"
+msgstr "Kõrvalriba"
+
+#: ../functions.php:304
+msgid "Full Width"
+msgstr ""
+
 #: ../image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
 msgstr "<i class=\"fa fa-chevron-left\"></i> Eelmine"
@@ -239,132 +256,312 @@ msgstr "<i class=\"fa fa-chevron-left\"></i> Eelmine"
 msgid "Next <i class=\"fa fa-chevron-right\"></i>"
 msgstr "Järgmine <i class=\"fa fa-chevron-right\"></i>"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:91
-#: ../inc/admin/includes/class-options-framework-admin.php:92
-msgid "Theme Options"
-msgstr "Teema valikud"
+#: ../inc/customizer.php:29
+#, fuzzy
+msgid "Sparkling Options"
+msgstr "Sparklingi kategooriad"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:204
-msgid "Click OK to reset. Any theme settings will be lost!"
-msgstr "Vajuta OK et resettida. Kõik teema settingud kaovad!"
+#: ../inc/customizer.php:30
+msgid "Panel to update sparkling theme options"
+msgstr ""
 
-#: ../inc/admin/includes/class-options-framework-admin.php:235
-msgid "Default options restored."
-msgstr "Vaike sätted taastatud."
-
-#: ../inc/admin/includes/class-options-framework-admin.php:289
-msgid "Options saved."
-msgstr "Sättes salvestatud."
-
-#: ../inc/admin/includes/class-options-media-uploader.php:62
-msgid "No file chosen"
-msgstr "Faili ei ole valitud"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:65
-#: ../inc/admin/includes/class-options-media-uploader.php:118
-msgid "Upload"
-msgstr "Lae üles"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:67
-#: ../inc/admin/includes/class-options-media-uploader.php:119
-msgid "Remove"
-msgstr "Eemalda"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:70
-msgid "Upgrade your version of WordPress for full media support."
-msgstr "Uuenda oma WordPressi täieliku meedia toe jaoks."
-
-#: ../inc/admin/includes/class-options-media-uploader.php:94
-msgid "View File"
-msgstr "Vaata faili"
-
-#: ../inc/admin/includes/class-options-sanitization.php:316
-msgid "No Repeat"
-msgstr "Ära Korda"
-
-#: ../inc/admin/includes/class-options-sanitization.php:317
-msgid "Repeat Horizontally"
-msgstr "Korda horisontaalselt"
-
-#: ../inc/admin/includes/class-options-sanitization.php:318
-msgid "Repeat Vertically"
-msgstr "Korda vertikaalselt"
-
-#: ../inc/admin/includes/class-options-sanitization.php:319
-msgid "Repeat All"
-msgstr "Korda kõik"
-
-#: ../inc/admin/includes/class-options-sanitization.php:331
-msgid "Top Left"
-msgstr "Ülemine vasak"
-
-#: ../inc/admin/includes/class-options-sanitization.php:332
-msgid "Top Center"
-msgstr "Ülemine keskmine"
-
-#: ../inc/admin/includes/class-options-sanitization.php:333
-msgid "Top Right"
-msgstr "Ülemine parem"
-
-#: ../inc/admin/includes/class-options-sanitization.php:334
-msgid "Middle Left"
-msgstr "Keskmine vasak"
-
-#: ../inc/admin/includes/class-options-sanitization.php:335
-msgid "Middle Center"
-msgstr "Keskmine keskmine"
-
-#: ../inc/admin/includes/class-options-sanitization.php:336
-msgid "Middle Right"
-msgstr "Keskmine parem"
-
-#: ../inc/admin/includes/class-options-sanitization.php:337
-msgid "Bottom Left"
-msgstr "Alumine vasak"
-
-#: ../inc/admin/includes/class-options-sanitization.php:338
-msgid "Bottom Center"
-msgstr "Alumine keskmine"
-
-#: ../inc/admin/includes/class-options-sanitization.php:339
-msgid "Bottom Right"
-msgstr "Alumine parem"
-
-#: ../inc/admin/includes/class-options-sanitization.php:351
-msgid "Scroll Normally"
-msgstr "Skrolli tavaliselt"
-
-#: ../inc/admin/includes/class-options-sanitization.php:352
-msgid "Fixed in Place"
-msgstr "Ühe kohas kinni"
-
-#: ../inc/admin/includes/class-options-sanitization.php:424
-msgid "Normal"
-msgstr "Normaalne"
-
-#: ../inc/admin/includes/class-options-sanitization.php:425
-msgid "Italic"
-msgstr "Kalduskiri"
-
-#: ../inc/admin/includes/class-options-sanitization.php:426
-msgid "Bold"
-msgstr "Rasvane kiri"
-
-#: ../inc/admin/includes/class-options-sanitization.php:427
-msgid "Bold Italic"
-msgstr "Rasvane kaldkiri"
-
-#: ../inc/customizer.php:27
+#: ../inc/customizer.php:36
 msgid "Content Options"
 msgstr "Sisu valikud"
 
-#: ../inc/customizer.php:39
+#: ../inc/customizer.php:47
 msgid "Show post excerpts?"
 msgstr "Näita postituse lühitutvustusi?"
 
-#: ../inc/customizer.php:51
+#: ../inc/customizer.php:58
 msgid "Display Comments on Static Pages?"
 msgstr "Näita komentaare staatilistel lehtedel?"
+
+#: ../inc/customizer.php:66
+#, fuzzy
+msgid "Slider options"
+msgstr "Slideri kategooria"
+
+#: ../inc/customizer.php:76 ../options.php:116
+msgid "Check if you want to enable slider"
+msgstr "Pane linnuke kui tahate slaiderit lubada"
+
+#: ../inc/customizer.php:91 ../options.php:123
+msgid "Slider Category"
+msgstr "Slideri kategooria"
+
+#: ../inc/customizer.php:94 ../options.php:124
+msgid "Select a category for the featured post slider"
+msgstr "Vali kategooria esiletoodud postituste slaideri jaoks"
+
+#: ../inc/customizer.php:104 ../options.php:132
+msgid "Number of slide items"
+msgstr "Slaidide arv"
+
+#: ../inc/customizer.php:106 ../options.php:133
+msgid "Enter the number of slide items"
+msgstr "Sisestage slaidide arv"
+
+#: ../inc/customizer.php:111
+#, fuzzy
+msgid "Layout options"
+msgstr "Veebilehe paigutuse sätted"
+
+#: ../inc/customizer.php:123 ../options.php:141
+msgid "Website Layout Options"
+msgstr "Veebilehe paigutuse sätted"
+
+#: ../inc/customizer.php:126
+#, fuzzy
+msgid "Choose between different layout options to be used as default"
+msgstr ""
+"Valige vasaku ja parema külgriba settingute vahel et kasutada eelsättena"
+
+#: ../inc/customizer.php:136
+#, fuzzy
+msgid "Element Color"
+msgstr "Elemendi värv"
+
+#: ../inc/customizer.php:137 ../inc/customizer.php:149
+#: ../inc/customizer.php:203 ../inc/customizer.php:213
+#: ../inc/customizer.php:223 ../inc/customizer.php:233
+#: ../inc/customizer.php:311 ../inc/customizer.php:321
+#: ../inc/customizer.php:338 ../inc/customizer.php:478
+#: ../inc/customizer.php:489 ../options.php:152 ../options.php:160
+#: ../options.php:205 ../options.php:213 ../options.php:221 ../options.php:229
+#: ../options.php:259 ../options.php:267 ../options.php:280 ../options.php:390
+#: ../options.php:398
+msgid "Default used if no color is selected"
+msgstr "Eelsäte kui värvi ei ole valitud"
+
+#: ../inc/customizer.php:148 ../options.php:159
+msgid "Element color on hover"
+msgstr "Elemendi värv hiirega üle minemise puhul"
+
+#: ../inc/customizer.php:156 ../options.php:175
+msgid "Action Button"
+msgstr "Tegevuse nupp"
+
+#: ../inc/customizer.php:166 ../options.php:180
+msgid "Call For Action Text"
+msgstr "Tegevusele kutsumise tekst"
+
+#: ../inc/customizer.php:167 ../options.php:181
+msgid "Enter the text for call for action section"
+msgstr "Sisesta tekst tegevusele kutsumine sektsiooni jaoks"
+
+#: ../inc/customizer.php:178 ../options.php:188
+msgid "Call For Action Button Title"
+msgstr "Tegevusele kutsumise nupu tiitel"
+
+#: ../inc/customizer.php:180 ../options.php:189
+msgid "Enter the title for Call For Action button"
+msgstr "Sisesta tiitel tegevusele kutsumise nupu jaoks"
+
+#: ../inc/customizer.php:190 ../options.php:196
+msgid "CFA button link"
+msgstr "CFA nupu link"
+
+#: ../inc/customizer.php:192 ../options.php:197
+msgid "Enter the link for Call For Action button"
+msgstr "Sisesta link tegevusele kutsumise nupu jaoks"
+
+#: ../inc/customizer.php:202 ../options.php:204
+msgid "Call For Action Text Color"
+msgstr "Tegevusele kutsumise teksti värv"
+
+#: ../inc/customizer.php:212 ../options.php:212
+msgid "Call For Action Background Color"
+msgstr "Tegevusele kutsumise tausta värv"
+
+#: ../inc/customizer.php:222 ../options.php:220
+msgid "Call For Action Button Border Color"
+msgstr "Tegevusele kutsumise serva värv"
+
+#: ../inc/customizer.php:232 ../options.php:228
+msgid "Call For Action Button Text Color"
+msgstr "Tegevusele kutsumise nupu teksti värv"
+
+#: ../inc/customizer.php:239 ../options.php:236
+msgid "Typography"
+msgstr "Trükikunst"
+
+#: ../inc/customizer.php:259 ../options.php:241
+msgid "Main Body Text"
+msgstr "Põhi osa tekst"
+
+#: ../inc/customizer.php:260
+#, fuzzy
+msgid "Used in p tags"
+msgstr "Kaustatud P tagides"
+
+#: ../inc/customizer.php:300 ../options.php:250
+msgid "Heading Color"
+msgstr "Pealkirja värv"
+
+#: ../inc/customizer.php:301 ../options.php:251
+msgid "Color for all headings (h1-h6)"
+msgstr "Kõikide (h1-h6) pealkirjade värv"
+
+#: ../inc/customizer.php:310 ../options.php:258
+msgid "Link Color"
+msgstr "Lingi värv"
+
+#: ../inc/customizer.php:320 ../options.php:266
+msgid "Link:hover Color"
+msgstr "Elemendi värv hiirega üle minemise puhul"
+
+#: ../inc/customizer.php:327 ../options.php:274
+msgid "Header"
+msgstr "Pealis"
+
+#: ../inc/customizer.php:337 ../options.php:279
+msgid "Top nav background color"
+msgstr "Üla navigatsiooni tausta värv"
+
+#: ../inc/customizer.php:347 ../options.php:287
+msgid "Top nav item color"
+msgstr "Üle navigatsiooni osa värv"
+
+#: ../inc/customizer.php:348 ../options.php:288
+msgid "Link color"
+msgstr "Lingi värv"
+
+#: ../inc/customizer.php:358 ../options.php:295
+msgid "Top nav item hover color"
+msgstr "Üla navigatsiooni värv hiirega üle minemise puhul"
+
+#: ../inc/customizer.php:359 ../options.php:296
+msgid "Link:hover color"
+msgstr "Lingi värv hiirega üle minemise puhul"
+
+#: ../inc/customizer.php:369 ../options.php:303
+msgid "Top nav dropdown background color"
+msgstr "Üla navigatsiooni rippmenüü tausta värv"
+
+#: ../inc/customizer.php:370 ../inc/customizer.php:403 ../options.php:304
+#: ../options.php:328
+msgid "Background of dropdown item hover color"
+msgstr "Ripp menüü valiku tausta värv hiirega üle minemise puhul"
+
+#: ../inc/customizer.php:380 ../options.php:311
+msgid "Top nav dropdown item color"
+msgstr "Üla navigatsiooni rippmenüü valiku värv"
+
+#: ../inc/customizer.php:381 ../options.php:312
+msgid "Dropdown item color"
+msgstr "Rippmenüü valiku värv"
+
+#: ../inc/customizer.php:391 ../options.php:319
+msgid "Top nav dropdown item hover color"
+msgstr "Üla navigatsiooni rippmenüü valiku värv hiirega üle minemise puhul"
+
+#: ../inc/customizer.php:392 ../options.php:320
+msgid "Dropdown item hover color"
+msgstr "Rippmenüü valiku värv hiirega üle minemise puhul"
+
+#: ../inc/customizer.php:402 ../options.php:327
+msgid "Top nav dropdown item background hover color"
+msgstr ""
+"Üla navigatsiooni rippmenüü valiku tausta värv hiirega üle minemise puhul"
+
+#: ../inc/customizer.php:409 ../options.php:335
+msgid "Footer"
+msgstr "Jalus"
+
+#: ../inc/customizer.php:419 ../options.php:340
+msgid "Footer widget area background color"
+msgstr "Jaluse vidinate ala tausta värv"
+
+#: ../inc/customizer.php:429 ../options.php:347
+msgid "Footer background color"
+msgstr "Jaluse tausta värv"
+
+#: ../inc/customizer.php:439 ../options.php:354
+msgid "Footer text color"
+msgstr "Jaluse teksti värv"
+
+#: ../inc/customizer.php:449 ../options.php:361
+msgid "Footer link color"
+msgstr "Jaluse lingi värv"
+
+#: ../inc/customizer.php:459 ../options.php:368
+msgid "Footer information"
+msgstr "Jaluse informatsioon"
+
+#: ../inc/customizer.php:460 ../options.php:369
+msgid "Copyright text in footer"
+msgstr "Autorõiguste tekst jaluses"
+
+#: ../inc/customizer.php:467 ../options.php:384
+msgid "Social"
+msgstr "Sotsiaal"
+
+#: ../inc/customizer.php:477 ../options.php:389
+msgid "Social icon color"
+msgstr "Sotsiaal ikooni värv"
+
+#: ../inc/customizer.php:488 ../options.php:397
+msgid "Footer social icon color"
+msgstr "Jaluse sotsiaal ikooni värv"
+
+#: ../inc/customizer.php:499 ../options.php:376
+msgid "Footer Social Icons"
+msgstr "Jaluse sotsiaal ikoonid"
+
+#: ../inc/customizer.php:500
+#, fuzzy
+msgid "Check to show social icons in footer"
+msgstr "Näita/Peida sotsiaal ikoonid jaluses"
+
+#: ../inc/customizer.php:507 ../options.php:542
+msgid "Other"
+msgstr "Muu"
+
+#: ../inc/customizer.php:517 ../options.php:547
+msgid "Custom CSS"
+msgstr "Eri CSS"
+
+#: ../inc/customizer.php:518 ../options.php:548
+msgid "Additional CSS"
+msgstr "Lisa CSS"
+
+#: ../inc/customizer.php:525 ../inc/extras.php:383
+msgid "Support and Documentation"
+msgstr "Tugi ja dokumentatsioon"
+
+#: ../inc/customizer.php:701 ../inc/extras.php:389
+msgid "Sparkling Documentation"
+msgstr "Sparklingi dokumentatsioon"
+
+#: ../inc/customizer.php:702 ../inc/extras.php:390
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr ""
+"Parim viis meiega kontakti võtta <b>toe küsimuste</b> ja <b>vea raporitega</"
+"b> on kasutades"
+
+#: ../inc/customizer.php:702 ../inc/extras.php:390
+msgid "Colorlib support forum"
+msgstr "Cololibi toe foorum"
+
+#: ../inc/customizer.php:703 ../inc/extras.php:391
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr ""
+"Kui teile see teema meeldib, Siis see oleks tore kui teeksite järgmisi:"
+
+#: ../inc/customizer.php:705 ../inc/extras.php:393
+msgid "Rate this Theme"
+msgstr "Hinnake seda teemat"
+
+#: ../inc/customizer.php:706 ../inc/extras.php:394
+msgid "Like on Facebook"
+msgstr "Likige Facebookis"
+
+#: ../inc/customizer.php:707 ../inc/extras.php:395
+msgid "Follow on Twitter"
+msgstr "Jälgige Twitteris"
 
 #: ../inc/extras.php:61
 #, php-format
@@ -384,51 +581,20 @@ msgstr "Salasõna:"
 msgid "Submit"
 msgstr "Saada"
 
-#: ../inc/extras.php:175
-msgid "Follow us on "
-msgstr "Jälgi meid"
-
-#: ../inc/extras.php:287
+#: ../inc/extras.php:272
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Teema %1$s poolt. Töötab %2$s abil"
 
-#: ../inc/extras.php:397
-msgid "Support and Documentation"
-msgstr "Tugi ja dokumentatsioon"
-
-#: ../inc/extras.php:403
-msgid "Sparkling Documentation"
-msgstr "Sparklingi dokumentatsioon"
-
-#: ../inc/extras.php:404
+#: ../inc/metaboxes.php:16
 msgid ""
-"The best way to contact us with <b>support questions</b> and <b>bug reports</"
-"b> is via"
+"Select layout for this specific Page only ( Note: This setting only reflects "
+"if page Template is set as Default Template and Blog Type Templates.)"
 msgstr ""
-"Parim viis meiega kontakti võtta <b>toe küsimuste</b> ja <b>vea raporitega</"
-"b> on kasutades"
 
-#: ../inc/extras.php:404
-msgid "Colorlib support forum"
-msgstr "Cololibi toe foorum"
-
-#: ../inc/extras.php:405
-msgid "If you like this theme, I'd appreciate any of the following:"
+#: ../inc/metaboxes.php:21
+msgid "Select layout for this specific Post only"
 msgstr ""
-"Kui teile see teema meeldib, Siis see oleks tore kui teeksite järgmisi:"
-
-#: ../inc/extras.php:407
-msgid "Rate this Theme"
-msgstr "Hinnake seda teemat"
-
-#: ../inc/extras.php:408
-msgid "Like on Facebook"
-msgstr "Likige Facebookis"
-
-#: ../inc/extras.php:409
-msgid "Follow on Twitter"
-msgstr "Jälgige Twitteris"
 
 #: ../inc/template-tags.php:23
 msgid "Posts navigation"
@@ -456,7 +622,7 @@ msgstr "Sparklingi kategooriad"
 msgid "Categories"
 msgstr "Kategooriad"
 
-#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
+#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:42
 msgid "Title "
 msgstr "Tiitel"
 
@@ -490,17 +656,9 @@ msgstr "Limiteeri postituste arv"
 msgid "Sparkling Social Widget"
 msgstr "Sparklingi sotsiaalne vidin"
 
-#: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
+#: ../inc/widgets/widget-social.php:18 ../inc/widgets/widget-social.php:40
 msgid "Follow us"
 msgstr "Jälgi meid"
-
-#: ../options.php:23
-msgid "Right Sidebar"
-msgstr "Parem külgriba"
-
-#: ../options.php:23
-msgid "Left Sidebar"
-msgstr "Vasak külgriba"
 
 #: ../options.php:27
 msgid "One"
@@ -550,30 +708,6 @@ msgstr "Põhi"
 msgid "Do You want to display image slider on the Home Page?"
 msgstr "Kas te tahate näidata pildi slaiderit kodu lehel?"
 
-#: ../options.php:116
-msgid "Check if you want to enable slider"
-msgstr "Pane linnuke kui tahate slaiderit lubada"
-
-#: ../options.php:123
-msgid "Slider Category"
-msgstr "Slideri kategooria"
-
-#: ../options.php:124
-msgid "Select a category for the featured post slider"
-msgstr "Vali kategooria esiletoodud postituste slaideri jaoks"
-
-#: ../options.php:132
-msgid "Number of slide items"
-msgstr "Slaidide arv"
-
-#: ../options.php:133
-msgid "Enter the number of slide items"
-msgstr "Sisestage slaidide arv"
-
-#: ../options.php:141
-msgid "Website Layout Options"
-msgstr "Veebilehe paigutuse sätted"
-
 #: ../options.php:142
 msgid "Choose between Left and Right sidebar options to be used as default"
 msgstr ""
@@ -582,16 +716,6 @@ msgstr ""
 #: ../options.php:151
 msgid "Element color"
 msgstr "Elemendi värv"
-
-#: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
-#: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
-#: ../options.php:280 ../options.php:390 ../options.php:398
-msgid "Default used if no color is selected"
-msgstr "Eelsäte kui värvi ei ole valitud"
-
-#: ../options.php:159
-msgid "Element color on hover"
-msgstr "Elemendi värv hiirega üle minemise puhul"
 
 #: ../options.php:167
 msgid "Custom Favicon"
@@ -603,178 +727,13 @@ msgid ""
 msgstr ""
 "Lae üles 32px x 32px PNG/GIF pilt mis iseloomustab teie veebilehe faviconi"
 
-#: ../options.php:175
-msgid "Action Button"
-msgstr "Tegevuse nupp"
-
-#: ../options.php:180
-msgid "Call For Action Text"
-msgstr "Tegevusele kutsumise tekst"
-
-#: ../options.php:181
-msgid "Enter the text for call for action section"
-msgstr "Sisesta tekst tegevusele kutsumine sektsiooni jaoks"
-
-#: ../options.php:188
-msgid "Call For Action Button Title"
-msgstr "Tegevusele kutsumise nupu tiitel"
-
-#: ../options.php:189
-msgid "Enter the title for Call For Action button"
-msgstr "Sisesta tiitel tegevusele kutsumise nupu jaoks"
-
-#: ../options.php:196
-msgid "CFA button link"
-msgstr "CFA nupu link"
-
-#: ../options.php:197
-msgid "Enter the link for Call For Action button"
-msgstr "Sisesta link tegevusele kutsumise nupu jaoks"
-
-#: ../options.php:204
-msgid "Call For Action Text Color"
-msgstr "Tegevusele kutsumise teksti värv"
-
-#: ../options.php:212
-msgid "Call For Action Background Color"
-msgstr "Tegevusele kutsumise tausta värv"
-
-#: ../options.php:220
-msgid "Call For Action Button Border Color"
-msgstr "Tegevusele kutsumise serva värv"
-
-#: ../options.php:228
-msgid "Call For Action Button Text Color"
-msgstr "Tegevusele kutsumise nupu teksti värv"
-
-#: ../options.php:236
-msgid "Typography"
-msgstr "Trükikunst"
-
-#: ../options.php:241
-msgid "Main Body Text"
-msgstr "Põhi osa tekst"
-
 #: ../options.php:242
 msgid "Used in P tags"
 msgstr "Kaustatud P tagides"
 
-#: ../options.php:250
-msgid "Heading Color"
-msgstr "Pealkirja värv"
-
-#: ../options.php:251
-msgid "Color for all headings (h1-h6)"
-msgstr "Kõikide (h1-h6) pealkirjade värv"
-
-#: ../options.php:258
-msgid "Link Color"
-msgstr "Lingi värv"
-
-#: ../options.php:266
-msgid "Link:hover Color"
-msgstr "Elemendi värv hiirega üle minemise puhul"
-
-#: ../options.php:274
-msgid "Header"
-msgstr "Pealis"
-
-#: ../options.php:279
-msgid "Top nav background color"
-msgstr "Üla navigatsiooni tausta värv"
-
-#: ../options.php:287
-msgid "Top nav item color"
-msgstr "Üle navigatsiooni osa värv"
-
-#: ../options.php:288
-msgid "Link color"
-msgstr "Lingi värv"
-
-#: ../options.php:295
-msgid "Top nav item hover color"
-msgstr "Üla navigatsiooni värv hiirega üle minemise puhul"
-
-#: ../options.php:296
-msgid "Link:hover color"
-msgstr "Lingi värv hiirega üle minemise puhul"
-
-#: ../options.php:303
-msgid "Top nav dropdown background color"
-msgstr "Üla navigatsiooni rippmenüü tausta värv"
-
-#: ../options.php:304 ../options.php:328
-msgid "Background of dropdown item hover color"
-msgstr "Ripp menüü valiku tausta värv hiirega üle minemise puhul"
-
-#: ../options.php:311
-msgid "Top nav dropdown item color"
-msgstr "Üla navigatsiooni rippmenüü valiku värv"
-
-#: ../options.php:312
-msgid "Dropdown item color"
-msgstr "Rippmenüü valiku värv"
-
-#: ../options.php:319
-msgid "Top nav dropdown item hover color"
-msgstr "Üla navigatsiooni rippmenüü valiku värv hiirega üle minemise puhul"
-
-#: ../options.php:320
-msgid "Dropdown item hover color"
-msgstr "Rippmenüü valiku värv hiirega üle minemise puhul"
-
-#: ../options.php:327
-msgid "Top nav dropdown item background hover color"
-msgstr ""
-"Üla navigatsiooni rippmenüü valiku tausta värv hiirega üle minemise puhul"
-
-#: ../options.php:335
-msgid "Footer"
-msgstr "Jalus"
-
-#: ../options.php:340
-msgid "Footer widget area background color"
-msgstr "Jaluse vidinate ala tausta värv"
-
-#: ../options.php:347
-msgid "Footer background color"
-msgstr "Jaluse tausta värv"
-
-#: ../options.php:354
-msgid "Footer text color"
-msgstr "Jaluse teksti värv"
-
-#: ../options.php:361
-msgid "Footer link color"
-msgstr "Jaluse lingi värv"
-
-#: ../options.php:368
-msgid "Footer information"
-msgstr "Jaluse informatsioon"
-
-#: ../options.php:369
-msgid "Copyright text in footer"
-msgstr "Autorõiguste tekst jaluses"
-
-#: ../options.php:376
-msgid "Footer Social Icons"
-msgstr "Jaluse sotsiaal ikoonid"
-
 #: ../options.php:377
 msgid "Show/Hide social icons in footer"
 msgstr "Näita/Peida sotsiaal ikoonid jaluses"
-
-#: ../options.php:384
-msgid "Social"
-msgstr "Sotsiaal"
-
-#: ../options.php:389
-msgid "Social icon color"
-msgstr "Sotsiaal ikooni värv"
-
-#: ../options.php:397
-msgid "Footer social icon color"
-msgstr "Jaluse sotsiaal ikooni värv"
 
 #: ../options.php:405
 msgid "Add full URL for your social network profiles"
@@ -848,18 +807,6 @@ msgstr "GitHub"
 msgid "Spotify"
 msgstr "Spotify"
 
-#: ../options.php:542
-msgid "Other"
-msgstr "Muu"
-
-#: ../options.php:547
-msgid "Custom CSS"
-msgstr "Eri CSS"
-
-#: ../options.php:548
-msgid "Additional CSS"
-msgstr "Lisa CSS"
-
 #: ../search.php:16
 #, php-format
 msgid "Search Results for: %s"
@@ -887,6 +834,93 @@ msgstr "Otsi"
 #: ../sidebar.php:26
 msgid "Meta"
 msgstr "Meta"
+
+#~ msgid "Theme Options"
+#~ msgstr "Teema valikud"
+
+#~ msgid "Click OK to reset. Any theme settings will be lost!"
+#~ msgstr "Vajuta OK et resettida. Kõik teema settingud kaovad!"
+
+#~ msgid "Default options restored."
+#~ msgstr "Vaike sätted taastatud."
+
+#~ msgid "Options saved."
+#~ msgstr "Sättes salvestatud."
+
+#~ msgid "No file chosen"
+#~ msgstr "Faili ei ole valitud"
+
+#~ msgid "Upload"
+#~ msgstr "Lae üles"
+
+#~ msgid "Remove"
+#~ msgstr "Eemalda"
+
+#~ msgid "Upgrade your version of WordPress for full media support."
+#~ msgstr "Uuenda oma WordPressi täieliku meedia toe jaoks."
+
+#~ msgid "View File"
+#~ msgstr "Vaata faili"
+
+#~ msgid "No Repeat"
+#~ msgstr "Ära Korda"
+
+#~ msgid "Repeat Horizontally"
+#~ msgstr "Korda horisontaalselt"
+
+#~ msgid "Repeat Vertically"
+#~ msgstr "Korda vertikaalselt"
+
+#~ msgid "Repeat All"
+#~ msgstr "Korda kõik"
+
+#~ msgid "Top Left"
+#~ msgstr "Ülemine vasak"
+
+#~ msgid "Top Center"
+#~ msgstr "Ülemine keskmine"
+
+#~ msgid "Top Right"
+#~ msgstr "Ülemine parem"
+
+#~ msgid "Middle Left"
+#~ msgstr "Keskmine vasak"
+
+#~ msgid "Middle Center"
+#~ msgstr "Keskmine keskmine"
+
+#~ msgid "Middle Right"
+#~ msgstr "Keskmine parem"
+
+#~ msgid "Bottom Left"
+#~ msgstr "Alumine vasak"
+
+#~ msgid "Bottom Center"
+#~ msgstr "Alumine keskmine"
+
+#~ msgid "Bottom Right"
+#~ msgstr "Alumine parem"
+
+#~ msgid "Scroll Normally"
+#~ msgstr "Skrolli tavaliselt"
+
+#~ msgid "Fixed in Place"
+#~ msgstr "Ühe kohas kinni"
+
+#~ msgid "Normal"
+#~ msgstr "Normaalne"
+
+#~ msgid "Italic"
+#~ msgstr "Kalduskiri"
+
+#~ msgid "Bold"
+#~ msgstr "Rasvane kiri"
+
+#~ msgid "Bold Italic"
+#~ msgstr "Rasvane kaldkiri"
+
+#~ msgid "Follow us on "
+#~ msgstr "Jälgi meid"
 
 #~ msgctxt "label"
 #~ msgid ""

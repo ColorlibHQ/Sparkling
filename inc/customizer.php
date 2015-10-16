@@ -30,7 +30,7 @@ function sparkling_customizer( $wp_customize ) {
         'description' => __('Panel to update sparkling theme options', 'sparkling'), // Include html tags such as <p>.
         'priority' => 10 // Mixed with top-level-section hierarchy.
     ));
-    
+
         // add "Content Options" section
         $wp_customize->add_section( 'sparkling_content_section' , array(
                 'title'      => esc_html__( 'Content Options', 'sparkling' ),
@@ -60,13 +60,10 @@ function sparkling_customizer( $wp_customize ) {
                     'priority'	=> 20,
                     'type'      => 'checkbox',
             ) );
-            
-            //$options = get_option('sparkling');echo '<pre>';print_r($options);
-            
+
         /* Sparkling Main Options */
         $wp_customize->add_section('sparkling_slider_options', array(
             'title' => __('Slider options', 'sparkling'),
-            'description' => sprintf(__('', 'sparkling')),
             'priority' => 31,
             'panel' => 'sparkling_main_options'
         ));
@@ -81,7 +78,7 @@ function sparkling_customizer( $wp_customize ) {
                     'priority'	=> 5,
                     'type'      => 'checkbox',
             ) );
-            
+
             // Pull all the categories into an array
             global $options_categories;
             $wp_customize->add_setting('sparkling[sparkling_slide_categories]', array(
@@ -97,7 +94,7 @@ function sparkling_customizer( $wp_customize ) {
                 'description' => __('Select a category for the featured post slider', 'sparkling'),
                 'choices'    => $options_categories
             ));
-            
+
             $wp_customize->add_setting('sparkling[sparkling_slide_number]', array(
                 'default' => 3,
                 'type' => 'option',
@@ -109,10 +106,9 @@ function sparkling_customizer( $wp_customize ) {
                 'description' => __('Enter the number of slide items', 'sparkling'),
                 'type' => 'text'
             ));
-                        
+
         $wp_customize->add_section('sparkling_layout_options', array(
             'title' => __('Layout options', 'sparkling'),
-            'description' => sprintf(__('', 'sparkling')),
             'priority' => 31,
             'panel' => 'sparkling_main_options'
         ));
@@ -129,8 +125,8 @@ function sparkling_customizer( $wp_customize ) {
                  'type'    => 'select',
                  'description' => __('Choose between different layout options to be used as default', 'sparkling'),
                  'choices'    => $site_layout
-            )); 
-             
+            ));
+
             $wp_customize->add_setting('sparkling[element_color]', array(
                 'default' => '',
                 'type'  => 'option',
@@ -140,9 +136,9 @@ function sparkling_customizer( $wp_customize ) {
                 'label' => __('Element Color', 'sparkling'),
                 'description'   => __('Default used if no color is selected','sparkling'),
                 'section' => 'sparkling_layout_options',
-                'settings' => 'sparkling[element_color]',                
+                'settings' => 'sparkling[element_color]',
             )));
-            
+
             $wp_customize->add_setting('sparkling[element_color_hover]', array(
                 'default' => '',
                 'type'  => 'option',
@@ -152,19 +148,18 @@ function sparkling_customizer( $wp_customize ) {
                 'label' => __('Element color on hover', 'sparkling'),
                 'description'   => __('Default used if no color is selected','sparkling'),
                 'section' => 'sparkling_layout_options',
-                'settings' => 'sparkling[element_color_hover]',                
+                'settings' => 'sparkling[element_color_hover]',
             )));
-            
+
          /* Sparkling Action Options */
         $wp_customize->add_section('sparkling_action_options', array(
             'title' => __('Action Button', 'sparkling'),
-            'description' => sprintf(__('', 'sparkling')),
             'priority' => 31,
             'panel' => 'sparkling_main_options'
         ));
             $wp_customize->add_setting('sparkling[w2f_cfa_text]', array(
                 'default' => '',
-                'type' => 'option',                
+                'type' => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_strip_slashes'
             ));
             $wp_customize->add_control('sparkling[w2f_cfa_text]', array(
@@ -173,7 +168,7 @@ function sparkling_customizer( $wp_customize ) {
                 'section' => 'sparkling_action_options',
                 'type' => 'textarea'
             ));
-            
+
             $wp_customize->add_setting('sparkling[w2f_cfa_button]', array(
                 'default' => '',
                 'type' => 'option',
@@ -185,7 +180,7 @@ function sparkling_customizer( $wp_customize ) {
                 'description' => __('Enter the title for Call For Action button', 'sparkling'),
                 'type' => 'text'
             ));
-            
+
             $wp_customize->add_setting('sparkling[w2f_cfa_link]', array(
                 'default' => '',
                 'type' => 'option',
@@ -197,7 +192,7 @@ function sparkling_customizer( $wp_customize ) {
                 'description' => __('Enter the link for Call For Action button', 'sparkling'),
                 'type' => 'text'
             ));
-            
+
             $wp_customize->add_setting('sparkling[cfa_color]', array(
                 'default' => '',
                 'type'  => 'option',
@@ -206,7 +201,7 @@ function sparkling_customizer( $wp_customize ) {
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'sparkling[cfa_color]', array(
                 'label' => __('Call For Action Text Color', 'sparkling'),
                 'description'   => __('Default used if no color is selected','sparkling'),
-                'section' => 'sparkling_action_options',              
+                'section' => 'sparkling_action_options',
             )));
             $wp_customize->add_setting('sparkling[cfa_bg_color]', array(
                 'default' => '',
@@ -216,7 +211,7 @@ function sparkling_customizer( $wp_customize ) {
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'sparkling[cfa_bg_color]', array(
                 'label' => __('Call For Action Background Color', 'sparkling'),
                 'description'   => __('Default used if no color is selected','sparkling'),
-                'section' => 'sparkling_action_options',              
+                'section' => 'sparkling_action_options',
             )));
             $wp_customize->add_setting('sparkling[cfa_btn_color]', array(
                 'default' => '',
@@ -226,8 +221,8 @@ function sparkling_customizer( $wp_customize ) {
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'sparkling[cfa_btn_color]', array(
                 'label' => __('Call For Action Button Border Color', 'sparkling'),
                 'description'   => __('Default used if no color is selected','sparkling'),
-                'section' => 'sparkling_action_options',             
-            )));            
+                'section' => 'sparkling_action_options',
+            )));
             $wp_customize->add_setting('sparkling[cfa_btn_txt_color]', array(
                 'default' => '',
                 'type'  => 'option',
@@ -236,13 +231,12 @@ function sparkling_customizer( $wp_customize ) {
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'sparkling[cfa_btn_txt_color]', array(
                 'label' => __('Call For Action Button Text Color', 'sparkling'),
                 'description'   => __('Default used if no color is selected','sparkling'),
-                'section' => 'sparkling_action_options',             
+                'section' => 'sparkling_action_options',
             )));
-            
+
         /* Sparkling Typography Options */
         $wp_customize->add_section('sparkling_typography_options', array(
             'title' => __('Typography', 'sparkling'),
-            'description' => sprintf(__('', 'sparkling')),
             'priority' => 31,
             'panel' => 'sparkling_main_options'
         ));
@@ -294,9 +288,9 @@ function sparkling_customizer( $wp_customize ) {
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'sparkling[main_body_typography][color]', array(
-                'section' => 'sparkling_typography_options',              
+                'section' => 'sparkling_typography_options',
             )));
-            
+
             $wp_customize->add_setting('sparkling[heading_color]', array(
                 'default' => '',
                 'type'  => 'option',
@@ -331,7 +325,6 @@ function sparkling_customizer( $wp_customize ) {
         /* Sparkling Header Options */
         $wp_customize->add_section('sparkling_header_options', array(
             'title' => __('Header', 'sparkling'),
-            'description' => sprintf(__('', 'sparkling')),
             'priority' => 31,
             'panel' => 'sparkling_main_options'
         ));
@@ -414,7 +407,6 @@ function sparkling_customizer( $wp_customize ) {
         /* Sparkling Footer Options */
         $wp_customize->add_section('sparkling_footer_options', array(
             'title' => __('Footer', 'sparkling'),
-            'description' => sprintf(__('', 'sparkling')),
             'priority' => 31,
             'panel' => 'sparkling_main_options'
         ));
@@ -473,7 +465,6 @@ function sparkling_customizer( $wp_customize ) {
         /* Sparkling Social Options */
         $wp_customize->add_section('sparkling_social_options', array(
             'title' => __('Social', 'sparkling'),
-            'description' => sprintf(__('', 'sparkling')),
             'priority' => 31,
             'panel' => 'sparkling_main_options'
         ));
@@ -667,9 +658,9 @@ function sparkling_customize_preview_js() {
 add_action( 'customize_preview_init', 'sparkling_customize_preview_js' );
 
 /**
- * Add CSS for custom controls 
+ * Add CSS for custom controls
  */
-function sparkling_customizer_custom_control_css() { 
+function sparkling_customizer_custom_control_css() {
 	?>
     <style>
         #customize-control-sparkling-main_body_typography-size select, #customize-control-sparkling-main_body_typography-face select,#customize-control-sparkling-main_body_typography-style select { width: 60%; }
