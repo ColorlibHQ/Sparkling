@@ -305,7 +305,7 @@ function sparkling_customizer( $wp_customize ) {
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'sparkling[heading_color]', array(
                 'label' => __('Heading Color', 'sparkling'),
                 'description'   => __('Color for all headings (h1-h6)','sparkling'),
-                'section' => 'sparkling_typography_options',              
+                'section' => 'sparkling_typography_options',
             )));
             $wp_customize->add_setting('sparkling[link_color]', array(
                 'default' => '',
@@ -315,7 +315,7 @@ function sparkling_customizer( $wp_customize ) {
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'sparkling[link_color]', array(
                 'label' => __('Link Color', 'sparkling'),
                 'description'   => __('Default used if no color is selected','sparkling'),
-                'section' => 'sparkling_typography_options',              
+                'section' => 'sparkling_typography_options',
             )));
             $wp_customize->add_setting('sparkling[link_hover_color]', array(
                 'default' => '',
@@ -325,9 +325,9 @@ function sparkling_customizer( $wp_customize ) {
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'sparkling[link_hover_color]', array(
                 'label' => __('Link:hover Color', 'sparkling'),
                 'description'   => __('Default used if no color is selected','sparkling'),
-                'section' => 'sparkling_typography_options',              
+                'section' => 'sparkling_typography_options',
             )));
-            
+
         /* Sparkling Header Options */
         $wp_customize->add_section('sparkling_header_options', array(
             'title' => __('Header', 'sparkling'),
@@ -343,7 +343,7 @@ function sparkling_customizer( $wp_customize ) {
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'sparkling[nav_bg_color]', array(
                 'label' => __('Top nav background color', 'sparkling'),
                 'description'   => __('Default used if no color is selected','sparkling'),
-                'section' => 'sparkling_header_options',              
+                'section' => 'sparkling_header_options',
             )));
             $wp_customize->add_setting('sparkling[nav_link_color]', array(
                 'default' => '',
@@ -353,9 +353,9 @@ function sparkling_customizer( $wp_customize ) {
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'sparkling[nav_link_color]', array(
                 'label' => __('Top nav item color', 'sparkling'),
                 'description'   => __('Link color','sparkling'),
-                'section' => 'sparkling_header_options',              
+                'section' => 'sparkling_header_options',
             )));
-            
+
             $wp_customize->add_setting('sparkling[nav_item_hover_color]', array(
                 'default' => '',
                 'type'  => 'option',
@@ -364,9 +364,9 @@ function sparkling_customizer( $wp_customize ) {
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'sparkling[nav_item_hover_color]', array(
                 'label' => __('Top nav item hover color', 'sparkling'),
                 'description'   => __('Link:hover color','sparkling'),
-                'section' => 'sparkling_header_options',              
+                'section' => 'sparkling_header_options',
             )));
-            
+
             $wp_customize->add_setting('sparkling[nav_dropdown_bg]', array(
                 'default' => '',
                 'type'  => 'option',
@@ -375,9 +375,9 @@ function sparkling_customizer( $wp_customize ) {
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'sparkling[nav_dropdown_bg]', array(
                 'label' => __('Top nav dropdown background color', 'sparkling'),
                 'description'   => __('Background of dropdown item hover color','sparkling'),
-                'section' => 'sparkling_header_options',              
+                'section' => 'sparkling_header_options',
             )));
-            
+
             $wp_customize->add_setting('sparkling[nav_dropdown_item]', array(
                 'default' => '',
                 'type'  => 'option',
@@ -386,9 +386,9 @@ function sparkling_customizer( $wp_customize ) {
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'sparkling[nav_dropdown_item]', array(
                 'label' => __('Top nav dropdown item color', 'sparkling'),
                 'description'   => __('Dropdown item color','sparkling'),
-                'section' => 'sparkling_header_options',              
+                'section' => 'sparkling_header_options',
             )));
-            
+
             $wp_customize->add_setting('sparkling[nav_dropdown_item_hover]', array(
                 'default' => '',
                 'type'  => 'option',
@@ -397,9 +397,9 @@ function sparkling_customizer( $wp_customize ) {
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'sparkling[nav_dropdown_item_hover]', array(
                 'label' => __('Top nav dropdown item hover color', 'sparkling'),
                 'description'   => __('Dropdown item hover color','sparkling'),
-                'section' => 'sparkling_header_options',              
+                'section' => 'sparkling_header_options',
             )));
-            
+
             $wp_customize->add_setting('sparkling[nav_dropdown_bg_hover]', array(
                 'default' => '',
                 'type'  => 'option',
@@ -408,9 +408,9 @@ function sparkling_customizer( $wp_customize ) {
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'sparkling[nav_dropdown_bg_hover]', array(
                 'label' => __('Top nav dropdown item background hover color', 'sparkling'),
                 'description'   => __('Background of dropdown item hover color','sparkling'),
-                'section' => 'sparkling_header_options',              
+                'section' => 'sparkling_header_options',
             )));
-            
+
         /* Sparkling Footer Options */
         $wp_customize->add_section('sparkling_footer_options', array(
             'title' => __('Footer', 'sparkling'),
@@ -425,9 +425,9 @@ function sparkling_customizer( $wp_customize ) {
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'sparkling[footer_widget_bg_color]', array(
                 'label' => __('Footer widget area background color', 'sparkling'),
-                'section' => 'sparkling_footer_options',              
+                'section' => 'sparkling_footer_options',
             )));
-            
+
             $wp_customize->add_setting('sparkling[footer_bg_color]', array(
                 'default' => '',
                 'type'  => 'option',
@@ -435,9 +435,9 @@ function sparkling_customizer( $wp_customize ) {
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'sparkling[footer_bg_color]', array(
                 'label' => __('Footer background color', 'sparkling'),
-                'section' => 'sparkling_footer_options',              
+                'section' => 'sparkling_footer_options',
             )));
-            
+
             $wp_customize->add_setting('sparkling[footer_text_color]', array(
                 'default' => '',
                 'type'  => 'option',
@@ -445,9 +445,9 @@ function sparkling_customizer( $wp_customize ) {
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'sparkling[footer_text_color]', array(
                 'label' => __('Footer text color', 'sparkling'),
-                'section' => 'sparkling_footer_options',              
+                'section' => 'sparkling_footer_options',
             )));
-            
+
             $wp_customize->add_setting('sparkling[footer_link_color]', array(
                 'default' => '',
                 'type'  => 'option',
@@ -455,12 +455,12 @@ function sparkling_customizer( $wp_customize ) {
             ));
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'sparkling[footer_link_color]', array(
                 'label' => __('Footer link color', 'sparkling'),
-                'section' => 'sparkling_footer_options',              
+                'section' => 'sparkling_footer_options',
             )));
-            
+
             $wp_customize->add_setting('sparkling[custom_footer_text]', array(
                 'default' => '',
-                'type' => 'option',                
+                'type' => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_strip_slashes'
             ));
             $wp_customize->add_control('sparkling[custom_footer_text]', array(
@@ -469,7 +469,7 @@ function sparkling_customizer( $wp_customize ) {
                 'section' => 'sparkling_footer_options',
                 'type' => 'textarea'
             ));
-            
+
         /* Sparkling Social Options */
         $wp_customize->add_section('sparkling_social_options', array(
             'title' => __('Social', 'sparkling'),
@@ -485,9 +485,9 @@ function sparkling_customizer( $wp_customize ) {
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'sparkling[social_color]', array(
                 'label' => __('Social icon color', 'sparkling'),
                 'description' => sprintf(__('Default used if no color is selected', 'sparkling')),
-                'section' => 'sparkling_social_options',              
+                'section' => 'sparkling_social_options',
             )));
-            
+
             $wp_customize->add_setting('sparkling[social_footer_color]', array(
                 'default' => '',
                 'type'  => 'option',
@@ -496,9 +496,9 @@ function sparkling_customizer( $wp_customize ) {
             $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'sparkling[social_footer_color]', array(
                 'label' => __('Footer social icon color', 'sparkling'),
                 'description' => sprintf(__('Default used if no color is selected', 'sparkling')),
-                'section' => 'sparkling_social_options',              
+                'section' => 'sparkling_social_options',
             )));
-            
+
             $wp_customize->add_setting('sparkling[footer_social]', array(
                 'default' => 0,
                 'type' => 'option',
@@ -510,24 +510,7 @@ function sparkling_customizer( $wp_customize ) {
                 'section' => 'sparkling_social_options',
                 'type' => 'checkbox',
             ));
-            
-            /* Delete this */
-            /*$social_links = array( 'Facebook' => 'social_facebook', 'Twitter' => 'social_twitter', 'Google-Plus' => 'social_googleplus', 'Pinterest' => 'social_pinterest', 'YouTube' => 'social_youtube', 'Vimeo' => 'social_vimeo', 'LinkedIn' => 'social_linkedin', 'Flickr' => 'social_flickr', 'Tumblr' => 'social_tumblr', 'Instagram' => 'social_instagram', 'RSS Feed' => 'social_rss', 'GitHub' => 'social_github', 'Dribbble' => 'social_dribbble', 'Skype' => 'social_skype', 'Foursquare' => 'social_foursquare', 'SoundCloud' => 'social_soundcloud', 'Spotify' => 'social_spotify' );
-            
-            foreach ($social_links as $key => $val) {
 
-                $wp_customize->add_setting('sparkling[' . $val . ']', array(
-                    'default' => '',
-                    'type' => 'option',  
-                    'sanitize_callback' => 'esc_url_raw'
-                ));
-                $wp_customize->add_control('sparkling[' . $val . ']', array(
-                    'label' => sprintf(__('%s', 'sparkling'), $key),
-                    'section' => 'sparkling_social_options',
-                    'type' => 'text'
-                ));
-            } */
-            
         /* Sparkling Other Options */
         $wp_customize->add_section('sparkling_other_options', array(
             'title' => __('Other', 'sparkling'),
@@ -545,7 +528,7 @@ function sparkling_customizer( $wp_customize ) {
                 'section' => 'sparkling_other_options',
                 'type' => 'textarea'
             ));
-            
+
         $wp_customize->add_section('sparkling_important_links', array(
             'priority' => 5,
             'title' => __('Support and Documentation', 'sparkling')
@@ -560,7 +543,7 @@ function sparkling_customizer( $wp_customize ) {
                 'section' => 'sparkling_important_links',
                 'type' => 'sparkling-important-links'
             )));
-       
+
 }
 add_action( 'customize_register', 'sparkling_customizer' );
 
@@ -732,7 +715,7 @@ class Sparkling_Important_Links extends WP_Customize_Control {
               <li><a class="button" href="<?php echo esc_url( 'http://www.facebook.com/colorlib' ); ?>" title="Like Colorlib on Facebook" target="_blank"><?php printf(esc_html__('Like on Facebook','sparkling')); ?></a></li>
               <li><a class="button" href="<?php echo esc_url( 'http://twitter.com/colorlib/' ); ?>" title="Follow Colrolib on Twitter" target="_blank"><?php printf(esc_html__('Follow on Twitter','sparkling')); ?></a></li>
             </ul>
-        </div><?php      
+        </div><?php
    }
 
 }

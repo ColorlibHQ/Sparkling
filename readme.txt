@@ -2,7 +2,7 @@
 
 Theme Name: Sparkling
 Theme URI: http://colorlib.com/wp/sparkling/
-Version: 1.9.3
+Version: 2.0
 Tested up to: WP 4.3
 
 Author: Aigars Silkalns
@@ -63,6 +63,12 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
+
+= 2.0 - 16.10.2015 =
+
+* Removed Options Frameowrk in favor to WordPress Theme Customizer. Be careful with this update as it might break things.
+* Added layout selecotr for individual posts/pages.
+* Other code cleanups and improvements.
 
 = 1.9.4 - 29.07.2015 =
 

@@ -76,7 +76,7 @@
 			<?php sparkling_call_for_action(); ?>
 		</div>
 
-		<div class="container main-content-area"><?php 
+		<div class="container main-content-area"><?php
 			global $post;
 			if( get_post_meta($post->ID, 'site_layout', true) ){
 				$layout_class = get_post_meta($post->ID, 'site_layout', true);
