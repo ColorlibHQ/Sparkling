@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling\n"
-"POT-Creation-Date: 2015-10-16 20:22+0300\n"
-"PO-Revision-Date: 2015-10-16 20:22+0300\n"
+"POT-Creation-Date: 2015-10-18 12:52+0700\n"
+"PO-Revision-Date: 2015-10-18 12:55+0700\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: Rhiski Aprilianto <mail@rhiskiapril.com>\n"
 "Language: id_ID\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.7.6\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -249,10 +249,9 @@ msgid "Footer Widget 3"
 msgstr "Footer Widget 3"
 
 #: functions.php:292
-#, fuzzy
 msgctxt "nav menu location"
 msgid "Social Menu"
-msgstr "Sosial"
+msgstr "Sosial Menu"
 
 #: functions.php:304 options.php:23
 msgid "Right Sidebar"
@@ -263,13 +262,12 @@ msgid "Left Sidebar"
 msgstr "Sidebar Kiri"
 
 #: functions.php:304
-#, fuzzy
 msgid "No Sidebar"
-msgstr "Sidebar"
+msgstr "Tidak Ada Sidebar"
 
 #: functions.php:304
 msgid "Full Width"
-msgstr ""
+msgstr "Lebar Penuh"
 
 #: image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
@@ -280,13 +278,12 @@ msgid "Next <i class=\"fa fa-chevron-right\"></i>"
 msgstr "Selanjutnya <i class=\"fa fa-chevron-right\"></i>"
 
 #: inc/customizer.php:29
-#, fuzzy
 msgid "Sparkling Options"
-msgstr "Sparkling Kategori"
+msgstr "Sparkling Option"
 
 #: inc/customizer.php:30
 msgid "Panel to update sparkling theme options"
-msgstr ""
+msgstr "Panel untuk memperbarui Sparkling Theme Option"
 
 #: inc/customizer.php:36
 msgid "Content Options"
@@ -301,9 +298,8 @@ msgid "Display Comments on Static Pages?"
 msgstr "Tampilan Komentar Halaman Statik?"
 
 #: inc/customizer.php:66
-#, fuzzy
 msgid "Slider options"
-msgstr "Simpan Pilihan"
+msgstr "Slider options"
 
 #: inc/customizer.php:76 options.php:116
 msgid "Check if you want to enable slider"
@@ -326,24 +322,20 @@ msgid "Enter the number of slide items"
 msgstr "Masukkan jumlah slide item"
 
 #: inc/customizer.php:111
-#, fuzzy
 msgid "Layout options"
-msgstr "Pilihan Layout Website"
+msgstr "Layout pilihan"
 
 #: inc/customizer.php:123 options.php:141
 msgid "Website Layout Options"
 msgstr "Pilihan Layout Website"
 
 #: inc/customizer.php:126
-#, fuzzy
 msgid "Choose between different layout options to be used as default"
-msgstr ""
-"Pilih antara pilihan sidebar kiri dan kanan untuk digunakan sebagai default"
+msgstr "Pilih tata letak yang berbeda untuk digunakan sebagai default"
 
 #: inc/customizer.php:136
-#, fuzzy
 msgid "Element Color"
-msgstr "Warna Elemen"
+msgstr "Element Color"
 
 #: inc/customizer.php:137 inc/customizer.php:149 inc/customizer.php:203
 #: inc/customizer.php:213 inc/customizer.php:223 inc/customizer.php:233
@@ -588,12 +580,11 @@ msgid "Page %s"
 msgstr "Halaman %s"
 
 #: inc/extras.php:125
-#, fuzzy
 msgid ""
 "This post is password protected. To view it please enter your password below:"
 msgstr ""
-"<p>Posting ini dilindungi sandi. Untuk melihat Mohon masukkan sandi Anda di "
-"bawah ini:</p>"
+"Posting ini dilindungi sandi. Untuk melihat Mohon masukkan sandi Anda di "
+"bawah ini:"
 
 #: inc/extras.php:126
 msgid "Password:"
@@ -613,10 +604,13 @@ msgid ""
 "Select layout for this specific Page only ( Note: This setting only reflects "
 "if page Template is set as Default Template and Blog Type Templates.)"
 msgstr ""
+"Pilih layout untuk Halaman tertentu saja (Catatan: Pengaturan ini hanya "
+"mencerminkan jika Template halaman ditetapkan sebagai Template default dan "
+"Blog Template.)"
 
 #: inc/metaboxes.php:21
 msgid "Select layout for this specific Post only"
-msgstr ""
+msgstr "Pilih tata letak untuk Posting tertentu saja"
 
 #: inc/template-tags.php:23
 msgid "Posts navigation"
