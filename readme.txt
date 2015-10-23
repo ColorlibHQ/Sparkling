@@ -2,7 +2,7 @@
 
 Theme Name: Sparkling
 Theme URI: http://colorlib.com/wp/sparkling/
-Version: 2.0
+Version: 2.0.1
 Tested up to: WP 4.3
 
 Author: Aigars Silkalns
@@ -62,6 +62,11 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
+
+= 2.0.1 - 23.10.2015 =
+
+* Added callback function for old Social Icons.
+* Removed wp_title callback
 
 = 2.0 - 16.10.2015 =
 

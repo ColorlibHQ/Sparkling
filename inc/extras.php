@@ -36,48 +36,6 @@ function sparkling_body_classes( $classes ) {
 add_filter( 'body_class', 'sparkling_body_classes' );
 
 
-if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
-  /**
-   * Filters wp_title to print a neat <title> tag based on what is being viewed.
-   *
-   * @param string $title Default title text for current view.
-   * @param string $sep Optional separator.
-   * @return string The filtered title.
-   */
-  function sparkling_wp_title( $title, $sep ) {
-    if ( is_feed() ) {
-      return $title;
-    }
-    global $page, $paged;
-    // Add the blog name
-    $title .= get_bloginfo( 'name', 'display' );
-    // Add the blog description for the home/front page.
-    $site_description = get_bloginfo( 'description', 'display' );
-    if ( $site_description && ( is_home() || is_front_page() ) ) {
-      $title .= " $sep $site_description";
-    }
-    // Add a page number if necessary:
-    if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
-      $title .= " $sep " . sprintf( esc_html__( 'Page %s', 'sparkling' ), max( $paged, $page ) );
-    }
-    return $title;
-  }
-  add_filter( 'wp_title', 'sparkling_wp_title', 10, 2 );
-  /**
-   * Title shim for sites older than WordPress 4.1.
-   *
-   * @link https://make.wordpress.org/core/2014/10/29/title-tags-in-4-1/
-   * @todo Remove this function when WordPress 4.3 is released.
-   */
-  function sparkling_render_title() {
-    ?>
-    <title><?php wp_title( '|', true, 'right' ); ?></title>
-    <?php
-  }
-  add_action( 'wp_head', 'sparkling_render_title' );
-endif;
-
-
 // Mark Posts/Pages as Untiled when no title is used
 add_filter( 'the_title', 'sparkling_title' );
 
@@ -159,8 +117,8 @@ function sparkling_social_icons(){
   			'menu_class'      => 'social-menu',
   			'depth'           => 1,
   			'fallback_cb'     => '',
-                        'link_before'     => '<i class="social_icon fa"><span>',
-                        'link_after'      => '</span></i>'
+        'link_before'     => '<i class="social_icon fa"><span>',
+        'link_after'      => '</span></i>'
   		)
 	  );
   }
@@ -446,3 +404,13 @@ function sparkling_allow_skype_protocol( $protocols ){
     return $protocols;
 }
 add_filter( 'kses_allowed_protocols' , 'sparkling_allow_skype_protocol' );
+
+/**
+ * Fallback option for the old Socual Icons.
+ */
+function sparkling_social(){
+
+     if( of_get_option('footer_social') ) {
+        sparkling_social_icons();
+     }
+}
