@@ -63,10 +63,13 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
 
-= 2.0.1 - 23.10.2015 =
+= 2.0.1 - 27.10.2015 =
 
 * Added callback function for old Social Icons.
 * Removed wp_title callback
+* Updated Font Awesome icon library
+* Simplified social icons
+* Added support for "mailto". Email icon. 
 
 = 2.0 - 16.10.2015 =
 
