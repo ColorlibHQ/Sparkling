@@ -1329,57 +1329,84 @@ p.logged-in-as {
 }
 #menu-social li a span{ display: none; }
 
-.social-icons a.facebook:hover, #menu-social li a[href*="facebook.com"]:hover {
+#menu-social li a[href*="facebook.com"]:hover {
   background-color: #4265b9 !important;
 }
-.social-icons a.twitter:hover, #menu-social li a[href*="twitter.com"]:hover {
+#menu-social li a[href*="twitter.com"]:hover {
   background-color: #55ACEE !important;
 }
-.social-icons a.dribbble:hover,#menu-social li a[href*="dribbble.com"]:hover {
+#menu-social li a[href*="dribbble.com"]:hover {
   background-color: #ea4c89 !important;
 }
-.social-icons a.flickr:hover, #menu-social li a[href*="flickr.com"]:hover {
+#menu-social li a[href*="flickr.com"]:hover {
   background-color: #ff0084 !important;
 }
-.social-icons a.googleplus:hover, #menu-social li a[href*="plus.google.com"]:hover {
+#menu-social li a[href*="plus.google.com"]:hover {
   background-color: #d62408 !important;
 }
-.social-icons a.skype:hover, #menu-social li a[href*="skype.com"]:hover {
+#menu-social li a[href*="skype.com"]:hover {
   background-color: #0bbff2 !important;
 }
-.social-icons a.pinterest:hover, #menu-social li a[href*="pinterest.com"]:hover {
+#menu-social li a[href*="pinterest.com"]:hover {
   background-color: #c31e26 !important;
 }
-.social-icons a.linkedin:hover, #menu-social li a[href*="linkedin.com"]:hover {
+#menu-social li a[href*="linkedin.com"]:hover {
   background-color: #005987 !important;
 }
-.social-icons a.vimeo:hover, #menu-social li a[href*="vimeo.com"]:hover {
+#menu-social li a[href*="vimeo.com"]:hover {
   background-color: #1bb6ec !important;
 }
-.social-icons a.tumblr:hover, #menu-social li a[href*="tumblr.com"]:hover {
+#menu-social li a[href*="tumblr.com"]:hover {
   background-color: #35506b !important;
 }
-.social-icons a.youtube:hover, #menu-social li a[href*="youtube.com"]:hover {
+#menu-social li a[href*="youtube.com"]:hover {
   background-color: #df3333 !important;
 }
-.social-icons a.instagram:hover, #menu-social li a[href*="instagram.com"]:hover {
+#menu-social li a[href*="instagram.com"]:hover {
   background-color: #F95B60 !important;
 }
-.social-icons a.rss:hover, #menu-social li a[href*="/feed"]:hover {
+#menu-social li a[href*="/feed"]:hover {
   background-color: #f39c12 !important;
 }
-.social-icons a.foursquare:hover, #menu-social li a[href*="foursquare.com"]:hover {
+#menu-social li a[href*="foursquare.com"]:hover {
   background-color: #2398C9 !important;
 }
-.social-icons a.soundcloud:hover, #menu-social li a[href*="soundcloud.com"]:hover {
+#menu-social li a[href*="soundcloud.com"]:hover {
   background-color: #F50 !important;
 }
-.social-icons a.github:hover, #menu-social li a[href*="github.com"]:hover {
+#menu-social li a[href*="github.com"]:hover {
   background-color: #4183C4 !important;
 }
-.social-icons a.spotify:hover, #menu-social li a[href*="spotify.com"]:hover {
+#menu-social li a[href*="spotify.com"]:hover {
   background-color: #81b71a !important;
 }
+#menu-social li a[href*="mailto"]:hover {
+  background-color: #DA4453 !important;
+}
+#menu-social li, #menu-social ul {
+  border: 0!important;
+  list-style: none;
+  padding-left: 0;
+}
+
+#menu-social li a[href*="twitter.com"] .fa:before{content:"\f099"}
+#menu-social li a[href*="facebook.com"] .fa:before{content:"\f09a"}
+#menu-social li a[href*="github.com"] .fa:before{content:"\f09b"}
+#menu-social li a[href*="/feed"] .fa:before{content:"\f09e"}
+#menu-social li a[href*="dribbble.com"] .fa:before,{content: "\f17d"}
+#menu-social li a[href*="skype.com"] .fa:before{content: "\f17e"}
+#menu-social li a[href*="foursquare.com"] .fa:before{content: "\f180"}
+#menu-social li a[href*="spotify.com"] .fa:before{content: "\f1bc"}
+#menu-social li a[href*="soundcloud.com"] .fa:before{content: "\f1be"}
+#menu-social li a[href*="vimeo.com"] .fa:before{content: "\f194"}
+#menu-social li a[href*="youtube.com"] .fa:before{content: "\f167"}
+#menu-social li a[href*="instagram.com"] .fa:before{content: "\f16d"}
+#menu-social li a[href*="flickr.com"] .fa:before{content: "\f16e"}
+#menu-social li a[href*="tumblr.com"] .fa:before{content: "\f173"}
+#menu-social li a[href*="pinterest.com"] .fa:before{content: "\f0d2"}
+#menu-social li a[href*="plus.google.com"] .fa:before{content: "\f0d5"}
+#menu-social li a[href*="linkedin.com"] .fa:before{content: "\f0e1"}
+#menu-social li a[href*="mailto"] .fa:before{content: "\f003"}
 
 @media (max-width: 992px) {
   .site-branding {
