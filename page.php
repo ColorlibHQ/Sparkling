@@ -21,8 +21,10 @@ get_header(); ?>
 				<?php get_template_part( 'content', 'page' ); ?>
 
 				<?php
+				echo "string";
+				var_dump(get_theme_mod( 'sparkling_page_comments' ));
 					// If comments are open or we have at least one comment, load up the comment template
-					if ( get_theme_mod( 'sparkling_page_comments' ) == 1 ) :
+					if ( get_theme_mod( 'sparkling_page_comments', 1 ) == 1 ) :
 						if ( comments_open() || '0' != get_comments_number() ) :
 							comments_template();
 						endif;
