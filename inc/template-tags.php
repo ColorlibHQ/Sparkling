@@ -22,20 +22,47 @@ function sparkling_paging_nav() {
 	<nav class="navigation paging-navigation" role="navigation">
 		<h1 class="screen-reader-text"><?php esc_html_e( 'Posts navigation', 'sparkling' ); ?></h1>
 		<div class="nav-links">
+			<?php
+				if( function_exists('wp_pagenavi') ){					
+					wp_pagenavi();
+				} else {
 
-			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"> <?php next_posts_link( __( '<i class="fa fa-chevron-left"></i> Older posts', 'sparkling' ) ); ?></div>
-			<?php endif; ?>
+				if ( get_next_posts_link() ) : ?>
+					<div class="nav-previous"> <?php next_posts_link( __( '<i class="fa fa-chevron-left"></i> Older posts', 'sparkling' ) ); ?></div>
+				<?php endif; ?>
 
-			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <i class="fa fa-chevron-right"></i>', 'sparkling' ) ); ?> </div>
-			<?php endif; ?>
+				<?php if ( get_previous_posts_link() ) : ?>
+					<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <i class="fa fa-chevron-right"></i>', 'sparkling' ) ); ?> </div>
+				<?php endif; 
+				}
+			?>
 
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
 	<?php
 }
 endif;
+
+
+/**
+ * Customize the PageNavi HTML before it is output to support bootstrap
+ */
+function sparkling_wp_pagenavi_bootstrap_markup( $html ) {
+	$out = '';
+
+	//wrap a's and span's in li's
+	$out = str_replace( "<div", "", $html );
+	$out = str_replace( "class='wp-pagenavi'>", "", $out );
+	$out = str_replace( "<a", "<li><a", $out );
+	$out = str_replace( "</a>", "</a></li>", $out );
+	$out = str_replace( "<span", "<li><span", $out );  
+	$out = str_replace( "</span>", "</span></li>", $out );
+	$out = str_replace( "</div>", "", $out );
+
+	return '<ul class="pagination pagination-centered wp-pagenavi-pagination">' . $out . '</ul>';
+}
+add_filter( 'wp_pagenavi', 'sparkling_wp_pagenavi_bootstrap_markup' );
+
 
 if ( ! function_exists( 'sparkling_post_nav' ) ) :
 /**
