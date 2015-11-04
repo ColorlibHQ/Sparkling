@@ -391,6 +391,11 @@ hr.section-divider {
   text-transform: uppercase;
   font-weight: 700;
 }
+#bbp-single-user-details #bbp-user-avatar img.avatar {
+  position: relative;
+  left: 0;
+  top: 0;
+}
 
 /* =Singe Post/Page Pagination
 ----------------------------------------------- */
