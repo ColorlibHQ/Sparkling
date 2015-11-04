@@ -927,6 +927,20 @@ button:hover {
     padding-bottom: 10px;
   }
 }
+.navigation .wp-pagenavi-pagination a{
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.navigation .wp-pagenavi-pagination span{
+  font-size: 12px;
+}
+.navigation .wp-pagenavi-pagination span.current,
+.navigation .wp-pagenavi-pagination a:hover {
+  background-color: #DA4453;  
+  border-color: #DA4453;
+  color: #FFF;
+  text-decoration: none;
+}
 
 /* =Comments
 ----------------------------------------------- */
