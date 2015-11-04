@@ -246,10 +246,14 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
         echo 'a:hover, a:active, #secondary .widget .post-content a:hover {color: '.of_get_option('link_hover_color').';}';
       }
       if ( of_get_option('element_color')) {
-        echo '.btn-default, .label-default, .flex-caption h2, .btn.btn-default.read-more, button {background-color: '.of_get_option('element_color').'; border-color: '.of_get_option('element_color').';} .site-main [class*="navigation"] a, .more-link { color: '.of_get_option('element_color').'}';
+        echo '.btn-default, .label-default, .flex-caption h2, .btn.btn-default.read-more, button, .navigation .wp-pagenavi-pagination span.current, .navigation .wp-pagenavi-pagination a:hover {background-color: '.of_get_option('element_color').'; border-color: '.of_get_option('element_color').';} .site-main [class*="navigation"] a, .more-link, .pagination>li>a, .pagination>li>span { color: '.of_get_option('element_color').'}';
       }
+
       if ( of_get_option('element_color_hover')) {
         echo '.btn-default:hover, .label-default[href]:hover, .tagcloud a:hover, button, .main-content [class*="navigation"] a:hover, .label-default[href]:focus, #infinite-handle span:hover, .btn.btn-default.read-more:hover, .btn-default:hover, .scroll-to-top:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .site-main [class*="navigation"] a:hover, .more-link:hover, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover, .cfa-button:hover { background-color: '.of_get_option('element_color_hover').'; border-color: '.of_get_option('element_color_hover').'; }';
+      }
+      if ( of_get_option('element_color_hover')) {
+        echo '.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {color: '.of_get_option('element_color_hover').';}';
       }
       if ( of_get_option('cfa_bg_color')) {
         echo '.cfa { background-color: '.of_get_option('cfa_bg_color').'; } .cfa-button:hover a {color: '.of_get_option('cfa_bg_color').';}';

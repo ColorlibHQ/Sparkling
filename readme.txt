@@ -2,7 +2,7 @@
 
 Theme Name: Sparkling
 Theme URI: http://colorlib.com/wp/sparkling/
-Version: 2.0.1
+Version: 2.1.0
 Tested up to: WP 4.3
 
 Author: Aigars Silkalns
@@ -63,13 +63,19 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
 
+= 2.1.0 - 27.10.2015 =
+
+* Added WP-PageNavi support
+* Fixed option for comment section on static pages
+* Fixed problem with French translation
+
 = 2.0.1 - 27.10.2015 =
 
 * Added callback function for old Social Icons.
 * Removed wp_title callback
 * Updated Font Awesome icon library
 * Simplified social icons
-* Added support for "mailto". Email icon. 
+* Added support for "mailto". Email icon.
 
 = 2.0 - 16.10.2015 =
 

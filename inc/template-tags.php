@@ -23,7 +23,7 @@ function sparkling_paging_nav() {
 		<h1 class="screen-reader-text"><?php esc_html_e( 'Posts navigation', 'sparkling' ); ?></h1>
 		<div class="nav-links">
 			<?php
-				if( function_exists('wp_pagenavi') ){					
+				if( function_exists('wp_pagenavi') ){
 					wp_pagenavi();
 				} else {
 
@@ -33,7 +33,7 @@ function sparkling_paging_nav() {
 
 				<?php if ( get_previous_posts_link() ) : ?>
 					<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <i class="fa fa-chevron-right"></i>', 'sparkling' ) ); ?> </div>
-				<?php endif; 
+				<?php endif;
 				}
 			?>
 
@@ -55,7 +55,7 @@ function sparkling_wp_pagenavi_bootstrap_markup( $html ) {
 	$out = str_replace( "class='wp-pagenavi'>", "", $out );
 	$out = str_replace( "<a", "<li><a", $out );
 	$out = str_replace( "</a>", "</a></li>", $out );
-	$out = str_replace( "<span", "<li><span", $out );  
+	$out = str_replace( "<span", "<li><span", $out );
 	$out = str_replace( "</span>", "</span></li>", $out );
 	$out = str_replace( "</div>", "", $out );
 
