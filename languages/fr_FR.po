@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
 "POT-Creation-Date: 2015-10-16 20:22+0300\n"
-"PO-Revision-Date: 2015-10-16 20:22+0300\n"
+"PO-Revision-Date: 2015-11-04 16:59+0530\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
@@ -827,24 +827,20 @@ msgid "Search Results for: %s"
 msgstr "Résultats de recherche pour : %s"
 
 #: ../searchform.php:11
-#, fuzzy
 msgid "Search for:"
 msgstr "Rechercher..."
 
 #: ../searchform.php:12
-#, fuzzy
 msgctxt "placeholder"
 msgid "Search&hellip;"
 msgstr "Rechercher"
 
 #: ../searchform.php:12
-#, fuzzy
 msgctxt "label"
 msgid "Search for:"
 msgstr "Rechercher..."
 
 #: ../searchform.php:14
-#, fuzzy
 msgctxt "submit button"
 msgid "Search"
 msgstr "Rechercher"
