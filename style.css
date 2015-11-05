@@ -737,8 +737,7 @@ button:hover {
 }
 /* =Custom Styles
 ----------------------------------------------- */
-#logo h1.site-name,
-#logo p.site-name {
+#logo .site-name {
   margin: 0;
 }
 .site-branding {
