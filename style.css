@@ -877,7 +877,7 @@ button:hover {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
   color: #DADADA;
 }
-@media (min-width: 979px) {
+@media (min-width: 768px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }

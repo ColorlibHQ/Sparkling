@@ -410,7 +410,7 @@ function sparkling_allow_skype_protocol( $protocols ){
 add_filter( 'kses_allowed_protocols' , 'sparkling_allow_skype_protocol' );
 
 /**
- * Fallback option for the old Socual Icons.
+ * Fallback option for the old Social Icons.
  */
 function sparkling_social(){
 
@@ -418,3 +418,32 @@ function sparkling_social(){
         sparkling_social_icons();
      }
 }
+
+/**
+ * Adds the URL to the top level navigation menu item
+ */
+function  sparkling_add_top_level_menu_url( $atts, $item, $args ){
+  if ( !wp_is_mobile() && $args->has_children  ) {
+            $atts['href'] = ! empty( $item->url ) ? $item->url : '';
+    }
+  return $atts;
+}
+add_filter( 'nav_menu_link_attributes', 'sparkling_add_top_level_menu_url', 99, 3 );
+
+/**
+ * Makes the top level navigation menu item clickable
+ */
+function sparkling_make_top_level_menu_clickable(){
+if ( !wp_is_mobile() ) { ?>
+  <script type="text/javascript">
+    jQuery( document ).ready( function( $ ){      
+      if ( $( window ).width() >= 767 ){
+        $( '.navbar-nav > li.menu-item > a' ).click( function(){
+          window.location = $( this ).attr( 'href' );
+        });
+      }
+    });
+  </script>
+<?php }
+}
+add_action('wp_footer', 'sparkling_make_top_level_menu_clickable', 1);
