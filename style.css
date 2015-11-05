@@ -322,6 +322,7 @@ footer.entry-meta {
 }
 .entry-title {
   color: #444;
+  font-size: 28px;
   margin-bottom: 30px;
 }
 .entry-title a {
@@ -736,6 +737,10 @@ button:hover {
 }
 /* =Custom Styles
 ----------------------------------------------- */
+#logo h1.site-name,
+#logo p.site-name {
+  margin: 0;
+}
 .site-branding {
   margin-top: 20px;
   margin-bottom: 20px;
