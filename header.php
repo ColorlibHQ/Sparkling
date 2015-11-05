@@ -56,7 +56,9 @@
 							<?php if( !get_header_image() ) : ?>
 
 							<div id="logo">
-								<span class="site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
+								<?php echo is_home() ?  '<h1 class="site-name">' : '<p class="site-name">'; ?>
+									<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+								<?php echo is_home() ?  '</h1>' : '</p>'; ?>
 							</div><!-- end of #logo -->
 
 							<?php endif; // header image was removed (again) ?>

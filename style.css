@@ -322,6 +322,7 @@ footer.entry-meta {
 }
 .entry-title {
   color: #444;
+  font-size: 28px;
   margin-bottom: 30px;
 }
 .entry-title a {
@@ -736,6 +737,9 @@ button:hover {
 }
 /* =Custom Styles
 ----------------------------------------------- */
+#logo .site-name {
+  margin: 0;
+}
 .site-branding {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -873,7 +877,7 @@ button:hover {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
   color: #DADADA;
 }
-@media (min-width: 979px) {
+@media (min-width: 768px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }
