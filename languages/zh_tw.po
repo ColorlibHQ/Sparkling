@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-07-08 17:08+0300\n"
-"PO-Revision-Date: 2015-07-08 17:09+0300\n"
+"POT-Creation-Date: 2015-10-16 20:24+0300\n"
+"PO-Revision-Date: 2015-10-16 20:24+0300\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: 楊舒淳 Chaneswin <chacha@chaneswin.idv.tw>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.2\n"
+"X-Generator: Poedit 1.8.5\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
@@ -188,7 +188,7 @@ msgstr "繼續閱讀"
 msgid "Primary Menu"
 msgstr "主選單"
 
-#: ../functions.php:70 ../inc/extras.php:212
+#: ../functions.php:70 ../inc/extras.php:198
 msgid "Footer Links"
 msgstr "頁尾超連結"
 
@@ -228,6 +228,23 @@ msgstr "頁尾小工具 2"
 msgid "Footer Widget 3"
 msgstr "頁尾小工具 3"
 
+#: ../functions.php:304 ../options.php:23
+msgid "Right Sidebar"
+msgstr "右側邊欄"
+
+#: ../functions.php:304 ../options.php:23
+msgid "Left Sidebar"
+msgstr "左側邊欄"
+
+#: ../functions.php:304
+#, fuzzy
+msgid "No Sidebar"
+msgstr "无侧边栏"
+
+#: ../functions.php:304
+msgid "Full Width"
+msgstr ""
+
 #: ../image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
 msgstr "<i class=\"fa fa-chevron-left\"></i> 上一筆"
@@ -236,134 +253,310 @@ msgstr "<i class=\"fa fa-chevron-left\"></i> 上一筆"
 msgid "Next <i class=\"fa fa-chevron-right\"></i>"
 msgstr "下一筆 <i class=\"fa fa-chevron-right\"></i>"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:91
-#: ../inc/admin/includes/class-options-framework-admin.php:92
-msgid "Theme Options"
-msgstr "Sparkling 佈景主題選項"
+#: ../inc/customizer.php:29
+#, fuzzy
+msgid "Sparkling Options"
+msgstr "Sparkling 分類"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:204
-msgid "Click OK to reset. Any theme settings will be lost!"
-msgstr "按下確定重設，現在的所有設定都會被清除"
+#: ../inc/customizer.php:30
+msgid "Panel to update sparkling theme options"
+msgstr ""
 
-#: ../inc/admin/includes/class-options-framework-admin.php:235
-msgid "Default options restored."
-msgstr "恢復成預設值"
-
-#: ../inc/admin/includes/class-options-framework-admin.php:289
-msgid "Options saved."
-msgstr "已儲存"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:62
-msgid "No file chosen"
-msgstr "沒有選擇檔案"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:65
-#: ../inc/admin/includes/class-options-media-uploader.php:118
-msgid "Upload"
-msgstr "上傳"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:67
-#: ../inc/admin/includes/class-options-media-uploader.php:119
-msgid "Remove"
-msgstr "移除"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:70
-msgid "Upgrade your version of WordPress for full media support."
-msgstr "升級你的 WordPress 來獲得完整媒體支援"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:94
-msgid "View File"
-msgstr "查看檔案"
-
-#: ../inc/admin/includes/class-options-sanitization.php:316
-msgid "No Repeat"
-msgstr "不重複"
-
-#: ../inc/admin/includes/class-options-sanitization.php:317
-msgid "Repeat Horizontally"
-msgstr "水平重複"
-
-#: ../inc/admin/includes/class-options-sanitization.php:318
-msgid "Repeat Vertically"
-msgstr "垂直重複"
-
-#: ../inc/admin/includes/class-options-sanitization.php:319
-msgid "Repeat All"
-msgstr "重複"
-
-#: ../inc/admin/includes/class-options-sanitization.php:331
-msgid "Top Left"
-msgstr "Top Left"
-
-#: ../inc/admin/includes/class-options-sanitization.php:332
-msgid "Top Center"
-msgstr "Top Center"
-
-#: ../inc/admin/includes/class-options-sanitization.php:333
-msgid "Top Right"
-msgstr "Top Right"
-
-#: ../inc/admin/includes/class-options-sanitization.php:334
-msgid "Middle Left"
-msgstr "Middle Left"
-
-#: ../inc/admin/includes/class-options-sanitization.php:335
-msgid "Middle Center"
-msgstr "Middle Center"
-
-#: ../inc/admin/includes/class-options-sanitization.php:336
-msgid "Middle Right"
-msgstr "Middle Right"
-
-#: ../inc/admin/includes/class-options-sanitization.php:337
-msgid "Bottom Left"
-msgstr "Bottom Left"
-
-#: ../inc/admin/includes/class-options-sanitization.php:338
-msgid "Bottom Center"
-msgstr "Bottom Center"
-
-#: ../inc/admin/includes/class-options-sanitization.php:339
-msgid "Bottom Right"
-msgstr "Bottom Right"
-
-#: ../inc/admin/includes/class-options-sanitization.php:351
-msgid "Scroll Normally"
-msgstr "捲動"
-
-#: ../inc/admin/includes/class-options-sanitization.php:352
-msgid "Fixed in Place"
-msgstr "固定位置"
-
-#: ../inc/admin/includes/class-options-sanitization.php:424
-msgid "Normal"
-msgstr "正常"
-
-#: ../inc/admin/includes/class-options-sanitization.php:425
-msgid "Italic"
-msgstr "斜體"
-
-#: ../inc/admin/includes/class-options-sanitization.php:426
-msgid "Bold"
-msgstr "粗體"
-
-#: ../inc/admin/includes/class-options-sanitization.php:427
-msgid "Bold Italic"
-msgstr "粗斜體"
-
-#: ../inc/customizer.php:27
+#: ../inc/customizer.php:36
 #, fuzzy
 msgid "Content Options"
 msgstr "Sparkling 佈景主題選項"
 
-#: ../inc/customizer.php:39
+#: ../inc/customizer.php:47
 msgid "Show post excerpts?"
 msgstr ""
 
-#: ../inc/customizer.php:51
+#: ../inc/customizer.php:58
 #, fuzzy
 msgid "Display Comments on Static Pages?"
 msgstr "在首頁顯示"
+
+#: ../inc/customizer.php:66
+#, fuzzy
+msgid "Slider options"
+msgstr "滑块选项"
+
+#: ../inc/customizer.php:76 ../options.php:116
+msgid "Check if you want to enable slider"
+msgstr "是否顯示側欄？"
+
+#: ../inc/customizer.php:91 ../options.php:123
+msgid "Slider Category"
+msgstr "側欄分類"
+
+#: ../inc/customizer.php:94 ../options.php:124
+msgid "Select a category for the featured post slider"
+msgstr "為特色文章秀選擇分類"
+
+#: ../inc/customizer.php:104 ../options.php:132
+msgid "Number of slide items"
+msgstr "投影片數量"
+
+#: ../inc/customizer.php:106 ../options.php:133
+msgid "Enter the number of slide items"
+msgstr "輸入投影片數量"
+
+#: ../inc/customizer.php:111
+#, fuzzy
+msgid "Layout options"
+msgstr "布局选项"
+
+#: ../inc/customizer.php:123 ../options.php:141
+msgid "Website Layout Options"
+msgstr "網站版型選項"
+
+#: ../inc/customizer.php:126
+#, fuzzy
+msgid "Choose between different layout options to be used as default"
+msgstr "Choose between Left and Right sidebar options to be used as default"
+
+#: ../inc/customizer.php:136
+#, fuzzy
+msgid "Element Color"
+msgstr "元素顏色"
+
+#: ../inc/customizer.php:137 ../inc/customizer.php:149
+#: ../inc/customizer.php:203 ../inc/customizer.php:213
+#: ../inc/customizer.php:223 ../inc/customizer.php:233
+#: ../inc/customizer.php:311 ../inc/customizer.php:321
+#: ../inc/customizer.php:338 ../inc/customizer.php:478
+#: ../inc/customizer.php:489 ../options.php:152 ../options.php:160
+#: ../options.php:205 ../options.php:213 ../options.php:221 ../options.php:229
+#: ../options.php:259 ../options.php:267 ../options.php:280 ../options.php:390
+#: ../options.php:398
+msgid "Default used if no color is selected"
+msgstr "沒有選擇顏色就使用預設值"
+
+#: ../inc/customizer.php:148 ../options.php:159
+msgid "Element color on hover"
+msgstr "滑鼠滑入時的元素顏色"
+
+#: ../inc/customizer.php:156 ../options.php:175
+msgid "Action Button"
+msgstr "呼籲行動按鈕"
+
+#: ../inc/customizer.php:166 ../options.php:180
+msgid "Call For Action Text"
+msgstr "呼籲行動文字"
+
+#: ../inc/customizer.php:167 ../options.php:181
+msgid "Enter the text for call for action section"
+msgstr "輸入呼籲行動文字"
+
+#: ../inc/customizer.php:178 ../options.php:188
+msgid "Call For Action Button Title"
+msgstr "呼籲行動按鈕標題"
+
+#: ../inc/customizer.php:180 ../options.php:189
+msgid "Enter the title for Call For Action button"
+msgstr "輸入呼籲行動按鈕標題"
+
+#: ../inc/customizer.php:190 ../options.php:196
+msgid "CFA button link"
+msgstr "呼籲行動按鈕連結"
+
+#: ../inc/customizer.php:192 ../options.php:197
+msgid "Enter the link for Call For Action button"
+msgstr "輸入呼籲行動按鈕連結網址"
+
+#: ../inc/customizer.php:202 ../options.php:204
+msgid "Call For Action Text Color"
+msgstr "呼籲行動文字的顏色"
+
+#: ../inc/customizer.php:212 ../options.php:212
+msgid "Call For Action Background Color"
+msgstr "呼籲行動的背景色"
+
+#: ../inc/customizer.php:222 ../options.php:220
+msgid "Call For Action Button Border Color"
+msgstr "呼籲行動按鈕的邊框顏色"
+
+#: ../inc/customizer.php:232 ../options.php:228
+msgid "Call For Action Button Text Color"
+msgstr "呼籲行動按鈕的文字顏色"
+
+#: ../inc/customizer.php:239 ../options.php:236
+msgid "Typography"
+msgstr "Typography"
+
+#: ../inc/customizer.php:259 ../options.php:241
+msgid "Main Body Text"
+msgstr "主要文字顏色"
+
+#: ../inc/customizer.php:260
+#, fuzzy
+msgid "Used in p tags"
+msgstr "用於<p>段落標籤"
+
+#: ../inc/customizer.php:300 ../options.php:250
+msgid "Heading Color"
+msgstr "標題顏色"
+
+#: ../inc/customizer.php:301 ../options.php:251
+msgid "Color for all headings (h1-h6)"
+msgstr "標題顏色 (h1-h6)"
+
+#: ../inc/customizer.php:310 ../options.php:258
+msgid "Link Color"
+msgstr "超連結顏色"
+
+#: ../inc/customizer.php:320 ../options.php:266
+msgid "Link:hover Color"
+msgstr "超連結顏色（滑鼠滑入）"
+
+#: ../inc/customizer.php:327 ../options.php:274
+msgid "Header"
+msgstr "頁首"
+
+#: ../inc/customizer.php:337 ../options.php:279
+msgid "Top nav background color"
+msgstr "上方導覽列背景色"
+
+#: ../inc/customizer.php:347 ../options.php:287
+msgid "Top nav item color"
+msgstr "上方導覽列項目顏色"
+
+#: ../inc/customizer.php:348 ../options.php:288
+msgid "Link color"
+msgstr "超連結顏色"
+
+#: ../inc/customizer.php:358 ../options.php:295
+msgid "Top nav item hover color"
+msgstr "上方導覽列項目顏色（滑鼠滑入）"
+
+#: ../inc/customizer.php:359 ../options.php:296
+msgid "Link:hover color"
+msgstr "超連結顏色（滑鼠滑入）"
+
+#: ../inc/customizer.php:369 ../options.php:303
+msgid "Top nav dropdown background color"
+msgstr "上方導覽列下拉式選單背景色"
+
+#: ../inc/customizer.php:370 ../inc/customizer.php:403 ../options.php:304
+#: ../options.php:328
+msgid "Background of dropdown item hover color"
+msgstr "下拉式選單項目背景色（滑鼠滑入）"
+
+#: ../inc/customizer.php:380 ../options.php:311
+msgid "Top nav dropdown item color"
+msgstr "上方導覽列下拉式選單項目顏色"
+
+#: ../inc/customizer.php:381 ../options.php:312
+msgid "Dropdown item color"
+msgstr "下拉式選單項目色彩"
+
+#: ../inc/customizer.php:391 ../options.php:319
+msgid "Top nav dropdown item hover color"
+msgstr "上方導覽列下拉式選單項目顏色（滑鼠滑入）"
+
+#: ../inc/customizer.php:392 ../options.php:320
+msgid "Dropdown item hover color"
+msgstr "下拉式選單項目色彩（滑鼠滑入）"
+
+#: ../inc/customizer.php:402 ../options.php:327
+msgid "Top nav dropdown item background hover color"
+msgstr "上方導覽列下拉式選單項目背景色（滑鼠滑入）"
+
+#: ../inc/customizer.php:409 ../options.php:335
+msgid "Footer"
+msgstr "頁尾"
+
+#: ../inc/customizer.php:419 ../options.php:340
+msgid "Footer widget area background color"
+msgstr "頁尾 widget 背景色"
+
+#: ../inc/customizer.php:429 ../options.php:347
+msgid "Footer background color"
+msgstr "頁尾背景色"
+
+#: ../inc/customizer.php:439 ../options.php:354
+msgid "Footer text color"
+msgstr "頁尾文字顏色"
+
+#: ../inc/customizer.php:449 ../options.php:361
+msgid "Footer link color"
+msgstr "頁尾超連結顏色"
+
+#: ../inc/customizer.php:459 ../options.php:368
+msgid "Footer information"
+msgstr "頁尾資訊"
+
+#: ../inc/customizer.php:460 ../options.php:369
+msgid "Copyright text in footer"
+msgstr "頁尾版權宣告文字"
+
+#: ../inc/customizer.php:467 ../options.php:384
+msgid "Social"
+msgstr "社群"
+
+#: ../inc/customizer.php:477 ../options.php:389
+msgid "Social icon color"
+msgstr "社群圖示顏色"
+
+#: ../inc/customizer.php:488 ../options.php:397
+msgid "Footer social icon color"
+msgstr "頁尾社群圖示顏色"
+
+#: ../inc/customizer.php:499 ../options.php:376
+#, fuzzy
+msgid "Footer Social Icons"
+msgstr "頁尾社群圖示顏色"
+
+#: ../inc/customizer.php:500
+#, fuzzy
+msgid "Check to show social icons in footer"
+msgstr "頁尾社群圖示顏色"
+
+#: ../inc/customizer.php:507 ../options.php:542
+msgid "Other"
+msgstr "其他"
+
+#: ../inc/customizer.php:517 ../options.php:547
+msgid "Custom CSS"
+msgstr "自訂CSS"
+
+#: ../inc/customizer.php:518 ../options.php:548
+msgid "Additional CSS"
+msgstr "外加的CSS"
+
+#: ../inc/customizer.php:525 ../inc/extras.php:383
+msgid "Support and Documentation"
+msgstr "支援與輔助文件"
+
+#: ../inc/customizer.php:701 ../inc/extras.php:389
+msgid "Sparkling Documentation"
+msgstr "Sparkling 輔助文件"
+
+#: ../inc/customizer.php:702 ../inc/extras.php:390
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr "聯絡我們以回報問題與提問的最好方式是用"
+
+#: ../inc/customizer.php:702 ../inc/extras.php:390
+msgid "Colorlib support forum"
+msgstr "Colorlib 支援論壇"
+
+#: ../inc/customizer.php:703 ../inc/extras.php:391
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr "謝謝你喜歡這個佈景主題，請..."
+
+#: ../inc/customizer.php:705 ../inc/extras.php:393
+msgid "Rate this Theme"
+msgstr "為這個主題評分"
+
+#: ../inc/customizer.php:706 ../inc/extras.php:394
+msgid "Like on Facebook"
+msgstr "在 Facebook 幫我們按讚"
+
+#: ../inc/customizer.php:707 ../inc/extras.php:395
+msgid "Follow on Twitter"
+msgstr "在 Twitter 關注我們"
 
 #: ../inc/extras.php:61
 #, php-format
@@ -371,9 +564,9 @@ msgid "Page %s"
 msgstr "Page %s"
 
 #: ../inc/extras.php:125
+#, fuzzy
 msgid ""
-"<p>This post is password protected. To view it please enter your password "
-"below:</p>"
+"This post is password protected. To view it please enter your password below:"
 msgstr "請輸入密碼後才能觀看此文章"
 
 #: ../inc/extras.php:126
@@ -384,48 +577,24 @@ msgstr "密碼:"
 msgid "Submit"
 msgstr "送出"
 
-#: ../inc/extras.php:175
-msgid "Follow us on "
-msgstr "關注我們的"
-
-#: ../inc/extras.php:287
+#: ../inc/extras.php:272
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Theme by %1$s Powered by %2$s"
 
-#: ../inc/extras.php:394
-msgid "Support and Documentation"
-msgstr "支援與輔助文件"
-
-#: ../inc/extras.php:400
-msgid "Sparkling Documentation"
-msgstr "Sparkling 輔助文件"
-
-#: ../inc/extras.php:401
+#: ../inc/metaboxes.php:16
+#, fuzzy
 msgid ""
-"The best way to contact us with <b>support questions</b> and <b>bug reports</"
-"b> is via"
-msgstr "聯絡我們以回報問題與提問的最好方式是用"
+"Select layout for this specific Page only ( Note: This setting only reflects "
+"if page Template is set as Default Template and Blog Type Templates.)"
+msgstr ""
+"为本页面指定布局（提示：本设置仅在页面模板被设置为默认模板或博客类型模板时生"
+"效）"
 
-#: ../inc/extras.php:401
-msgid "Colorlib support forum"
-msgstr "Colorlib 支援論壇"
-
-#: ../inc/extras.php:402
-msgid "If you like this theme, I'd appreciate any of the following:"
-msgstr "謝謝你喜歡這個佈景主題，請..."
-
-#: ../inc/extras.php:404
-msgid "Rate this Theme"
-msgstr "為這個主題評分"
-
-#: ../inc/extras.php:405
-msgid "Like on Facebook"
-msgstr "在 Facebook 幫我們按讚"
-
-#: ../inc/extras.php:406
-msgid "Follow on Twitter"
-msgstr "在 Twitter 關注我們"
+#: ../inc/metaboxes.php:21
+#, fuzzy
+msgid "Select layout for this specific Post only"
+msgstr "仅为本文选择布局"
 
 #: ../inc/template-tags.php:23
 msgid "Posts navigation"
@@ -453,7 +622,7 @@ msgstr "Sparkling 分類"
 msgid "Categories"
 msgstr "分類"
 
-#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
+#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:42
 msgid "Title "
 msgstr "標題"
 
@@ -487,17 +656,9 @@ msgstr "最多顯示幾篇文章？"
 msgid "Sparkling Social Widget"
 msgstr "Sparkling 社群小工具"
 
-#: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
+#: ../inc/widgets/widget-social.php:18 ../inc/widgets/widget-social.php:40
 msgid "Follow us"
 msgstr "關注我們"
-
-#: ../options.php:23
-msgid "Right Sidebar"
-msgstr "右側邊欄"
-
-#: ../options.php:23
-msgid "Left Sidebar"
-msgstr "左側邊欄"
 
 #: ../options.php:27
 msgid "One"
@@ -547,30 +708,6 @@ msgstr "主要"
 msgid "Do You want to display image slider on the Home Page?"
 msgstr "是否在首頁側欄顯示圖片？"
 
-#: ../options.php:116
-msgid "Check if you want to enable slider"
-msgstr "是否顯示側欄？"
-
-#: ../options.php:123
-msgid "Slider Category"
-msgstr "側欄分類"
-
-#: ../options.php:124
-msgid "Select a category for the featured post slider"
-msgstr "為特色文章秀選擇分類"
-
-#: ../options.php:132
-msgid "Number of slide items"
-msgstr "投影片數量"
-
-#: ../options.php:133
-msgid "Enter the number of slide items"
-msgstr "輸入投影片數量"
-
-#: ../options.php:141
-msgid "Website Layout Options"
-msgstr "網站版型選項"
-
 #: ../options.php:142
 msgid "Choose between Left and Right sidebar options to be used as default"
 msgstr "Choose between Left and Right sidebar options to be used as default"
@@ -578,16 +715,6 @@ msgstr "Choose between Left and Right sidebar options to be used as default"
 #: ../options.php:151
 msgid "Element color"
 msgstr "元素顏色"
-
-#: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
-#: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
-#: ../options.php:280 ../options.php:390 ../options.php:398
-msgid "Default used if no color is selected"
-msgstr "沒有選擇顏色就使用預設值"
-
-#: ../options.php:159
-msgid "Element color on hover"
-msgstr "滑鼠滑入時的元素顏色"
 
 #: ../options.php:167
 msgid "Custom Favicon"
@@ -598,178 +725,13 @@ msgid ""
 "Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
 msgstr "為你的網站上傳 Favicon（32像素x32像素，PNG或GIF）"
 
-#: ../options.php:175
-msgid "Action Button"
-msgstr "呼籲行動按鈕"
-
-#: ../options.php:180
-msgid "Call For Action Text"
-msgstr "呼籲行動文字"
-
-#: ../options.php:181
-msgid "Enter the text for call for action section"
-msgstr "輸入呼籲行動文字"
-
-#: ../options.php:188
-msgid "Call For Action Button Title"
-msgstr "呼籲行動按鈕標題"
-
-#: ../options.php:189
-msgid "Enter the title for Call For Action button"
-msgstr "輸入呼籲行動按鈕標題"
-
-#: ../options.php:196
-msgid "CFA button link"
-msgstr "呼籲行動按鈕連結"
-
-#: ../options.php:197
-msgid "Enter the link for Call For Action button"
-msgstr "輸入呼籲行動按鈕連結網址"
-
-#: ../options.php:204
-msgid "Call For Action Text Color"
-msgstr "呼籲行動文字的顏色"
-
-#: ../options.php:212
-msgid "Call For Action Background Color"
-msgstr "呼籲行動的背景色"
-
-#: ../options.php:220
-msgid "Call For Action Button Border Color"
-msgstr "呼籲行動按鈕的邊框顏色"
-
-#: ../options.php:228
-msgid "Call For Action Button Text Color"
-msgstr "呼籲行動按鈕的文字顏色"
-
-#: ../options.php:236
-msgid "Typography"
-msgstr "Typography"
-
-#: ../options.php:241
-msgid "Main Body Text"
-msgstr "主要文字顏色"
-
 #: ../options.php:242
 msgid "Used in P tags"
 msgstr "用於<p>段落標籤"
 
-#: ../options.php:250
-msgid "Heading Color"
-msgstr "標題顏色"
-
-#: ../options.php:251
-msgid "Color for all headings (h1-h6)"
-msgstr "標題顏色 (h1-h6)"
-
-#: ../options.php:258
-msgid "Link Color"
-msgstr "超連結顏色"
-
-#: ../options.php:266
-msgid "Link:hover Color"
-msgstr "超連結顏色（滑鼠滑入）"
-
-#: ../options.php:274
-msgid "Header"
-msgstr "頁首"
-
-#: ../options.php:279
-msgid "Top nav background color"
-msgstr "上方導覽列背景色"
-
-#: ../options.php:287
-msgid "Top nav item color"
-msgstr "上方導覽列項目顏色"
-
-#: ../options.php:288
-msgid "Link color"
-msgstr "超連結顏色"
-
-#: ../options.php:295
-msgid "Top nav item hover color"
-msgstr "上方導覽列項目顏色（滑鼠滑入）"
-
-#: ../options.php:296
-msgid "Link:hover color"
-msgstr "超連結顏色（滑鼠滑入）"
-
-#: ../options.php:303
-msgid "Top nav dropdown background color"
-msgstr "上方導覽列下拉式選單背景色"
-
-#: ../options.php:304 ../options.php:328
-msgid "Background of dropdown item hover color"
-msgstr "下拉式選單項目背景色（滑鼠滑入）"
-
-#: ../options.php:311
-msgid "Top nav dropdown item color"
-msgstr "上方導覽列下拉式選單項目顏色"
-
-#: ../options.php:312
-msgid "Dropdown item color"
-msgstr "下拉式選單項目色彩"
-
-#: ../options.php:319
-msgid "Top nav dropdown item hover color"
-msgstr "上方導覽列下拉式選單項目顏色（滑鼠滑入）"
-
-#: ../options.php:320
-msgid "Dropdown item hover color"
-msgstr "下拉式選單項目色彩（滑鼠滑入）"
-
-#: ../options.php:327
-msgid "Top nav dropdown item background hover color"
-msgstr "上方導覽列下拉式選單項目背景色（滑鼠滑入）"
-
-#: ../options.php:335
-msgid "Footer"
-msgstr "頁尾"
-
-#: ../options.php:340
-msgid "Footer widget area background color"
-msgstr "頁尾 widget 背景色"
-
-#: ../options.php:347
-msgid "Footer background color"
-msgstr "頁尾背景色"
-
-#: ../options.php:354
-msgid "Footer text color"
-msgstr "頁尾文字顏色"
-
-#: ../options.php:361
-msgid "Footer link color"
-msgstr "頁尾超連結顏色"
-
-#: ../options.php:368
-msgid "Footer information"
-msgstr "頁尾資訊"
-
-#: ../options.php:369
-msgid "Copyright text in footer"
-msgstr "頁尾版權宣告文字"
-
-#: ../options.php:376
-#, fuzzy
-msgid "Footer Social Icons"
-msgstr "頁尾社群圖示顏色"
-
 #: ../options.php:377
 #, fuzzy
 msgid "Show/Hide social icons in footer"
-msgstr "頁尾社群圖示顏色"
-
-#: ../options.php:384
-msgid "Social"
-msgstr "社群"
-
-#: ../options.php:389
-msgid "Social icon color"
-msgstr "社群圖示顏色"
-
-#: ../options.php:397
-msgid "Footer social icon color"
 msgstr "頁尾社群圖示顏色"
 
 #: ../options.php:405
@@ -844,18 +806,6 @@ msgstr "GitHub"
 msgid "Spotify"
 msgstr ""
 
-#: ../options.php:542
-msgid "Other"
-msgstr "其他"
-
-#: ../options.php:547
-msgid "Custom CSS"
-msgstr "自訂CSS"
-
-#: ../options.php:548
-msgid "Additional CSS"
-msgstr "外加的CSS"
-
 #: ../search.php:16
 #, php-format
 msgid "Search Results for: %s"
@@ -887,6 +837,93 @@ msgstr "搜索"
 #: ../sidebar.php:26
 msgid "Meta"
 msgstr "Meta"
+
+#~ msgid "Theme Options"
+#~ msgstr "Sparkling 佈景主題選項"
+
+#~ msgid "Click OK to reset. Any theme settings will be lost!"
+#~ msgstr "按下確定重設，現在的所有設定都會被清除"
+
+#~ msgid "Default options restored."
+#~ msgstr "恢復成預設值"
+
+#~ msgid "Options saved."
+#~ msgstr "已儲存"
+
+#~ msgid "No file chosen"
+#~ msgstr "沒有選擇檔案"
+
+#~ msgid "Upload"
+#~ msgstr "上傳"
+
+#~ msgid "Remove"
+#~ msgstr "移除"
+
+#~ msgid "Upgrade your version of WordPress for full media support."
+#~ msgstr "升級你的 WordPress 來獲得完整媒體支援"
+
+#~ msgid "View File"
+#~ msgstr "查看檔案"
+
+#~ msgid "No Repeat"
+#~ msgstr "不重複"
+
+#~ msgid "Repeat Horizontally"
+#~ msgstr "水平重複"
+
+#~ msgid "Repeat Vertically"
+#~ msgstr "垂直重複"
+
+#~ msgid "Repeat All"
+#~ msgstr "重複"
+
+#~ msgid "Top Left"
+#~ msgstr "Top Left"
+
+#~ msgid "Top Center"
+#~ msgstr "Top Center"
+
+#~ msgid "Top Right"
+#~ msgstr "Top Right"
+
+#~ msgid "Middle Left"
+#~ msgstr "Middle Left"
+
+#~ msgid "Middle Center"
+#~ msgstr "Middle Center"
+
+#~ msgid "Middle Right"
+#~ msgstr "Middle Right"
+
+#~ msgid "Bottom Left"
+#~ msgstr "Bottom Left"
+
+#~ msgid "Bottom Center"
+#~ msgstr "Bottom Center"
+
+#~ msgid "Bottom Right"
+#~ msgstr "Bottom Right"
+
+#~ msgid "Scroll Normally"
+#~ msgstr "捲動"
+
+#~ msgid "Fixed in Place"
+#~ msgstr "固定位置"
+
+#~ msgid "Normal"
+#~ msgstr "正常"
+
+#~ msgid "Italic"
+#~ msgstr "斜體"
+
+#~ msgid "Bold"
+#~ msgstr "粗體"
+
+#~ msgid "Bold Italic"
+#~ msgstr "粗斜體"
+
+#~ msgid "Follow us on "
+#~ msgstr "關注我們的"
 
 #~ msgid "Search..."
 #~ msgstr "尋找..."

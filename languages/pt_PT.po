@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-07-08 17:08+0300\n"
-"PO-Revision-Date: 2015-07-08 17:08+0300\n"
+"POT-Creation-Date: 2015-10-16 20:23+0300\n"
+"PO-Revision-Date: 2015-10-16 20:23+0300\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.2\n"
+"X-Generator: Poedit 1.8.5\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
@@ -197,7 +197,7 @@ msgstr "Leia Mais"
 msgid "Primary Menu"
 msgstr "Menu principal"
 
-#: ../functions.php:70 ../inc/extras.php:212
+#: ../functions.php:70 ../inc/extras.php:198
 msgid "Footer Links"
 msgstr "Links rodapé"
 
@@ -237,6 +237,23 @@ msgstr "Footer Widget 2"
 msgid "Footer Widget 3"
 msgstr "Footer Widget 3"
 
+#: ../functions.php:304 ../options.php:23
+msgid "Right Sidebar"
+msgstr "Sidebar Direita"
+
+#: ../functions.php:304 ../options.php:23
+msgid "Left Sidebar"
+msgstr "Sidebar Esquerda"
+
+#: ../functions.php:304
+#, fuzzy
+msgid "No Sidebar"
+msgstr "Sidebar"
+
+#: ../functions.php:304
+msgid "Full Width"
+msgstr ""
+
 #: ../image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
 msgstr "<i class=\"fa fa-chevron-left\"></i> Anterior"
@@ -245,135 +262,312 @@ msgstr "<i class=\"fa fa-chevron-left\"></i> Anterior"
 msgid "Next <i class=\"fa fa-chevron-right\"></i>"
 msgstr "Seguinte <i class=\"fa fa-chevron-right\"></i>"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:91
-#: ../inc/admin/includes/class-options-framework-admin.php:92
-msgid "Theme Options"
-msgstr "Opções do Tema"
+#: ../inc/customizer.php:29
+#, fuzzy
+msgid "Sparkling Options"
+msgstr "Categorias Sparkling"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:204
-msgid "Click OK to reset. Any theme settings will be lost!"
+#: ../inc/customizer.php:30
+msgid "Panel to update sparkling theme options"
 msgstr ""
-"Clique em OK para reiniciar. Todas as configurações do tema serão perdidas!"
 
-#: ../inc/admin/includes/class-options-framework-admin.php:235
-msgid "Default options restored."
-msgstr "Opções padrão restauradas."
-
-#: ../inc/admin/includes/class-options-framework-admin.php:289
-msgid "Options saved."
-msgstr "Opções guardadas."
-
-#: ../inc/admin/includes/class-options-media-uploader.php:62
-msgid "No file chosen"
-msgstr "Nenhum arquivo selecionado"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:65
-#: ../inc/admin/includes/class-options-media-uploader.php:118
-msgid "Upload"
-msgstr "Carregar"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:67
-#: ../inc/admin/includes/class-options-media-uploader.php:119
-msgid "Remove"
-msgstr "Remover"
-
-#: ../inc/admin/includes/class-options-media-uploader.php:70
-msgid "Upgrade your version of WordPress for full media support."
-msgstr "Atualize a sua versão do WordPress para suporte de mídia completa."
-
-#: ../inc/admin/includes/class-options-media-uploader.php:94
-msgid "View File"
-msgstr "Ver Arquivo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:316
-msgid "No Repeat"
-msgstr "Não Repetir"
-
-#: ../inc/admin/includes/class-options-sanitization.php:317
-msgid "Repeat Horizontally"
-msgstr "Repetir Horizontalmente"
-
-#: ../inc/admin/includes/class-options-sanitization.php:318
-msgid "Repeat Vertically"
-msgstr "Repetir Verticalmente"
-
-#: ../inc/admin/includes/class-options-sanitization.php:319
-msgid "Repeat All"
-msgstr "Repetir Tudo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:331
-msgid "Top Left"
-msgstr "Superior Esquerdo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:332
-msgid "Top Center"
-msgstr "Superior Centro"
-
-#: ../inc/admin/includes/class-options-sanitization.php:333
-msgid "Top Right"
-msgstr "Superior Direito"
-
-#: ../inc/admin/includes/class-options-sanitization.php:334
-msgid "Middle Left"
-msgstr "Meio Esquerdo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:335
-msgid "Middle Center"
-msgstr "Meio Centro"
-
-#: ../inc/admin/includes/class-options-sanitization.php:336
-msgid "Middle Right"
-msgstr "Meio Direito"
-
-#: ../inc/admin/includes/class-options-sanitization.php:337
-msgid "Bottom Left"
-msgstr "Inferior Esquerdo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:338
-msgid "Bottom Center"
-msgstr "Inferior Centro"
-
-#: ../inc/admin/includes/class-options-sanitization.php:339
-msgid "Bottom Right"
-msgstr "Inferior Direito"
-
-#: ../inc/admin/includes/class-options-sanitization.php:351
-msgid "Scroll Normally"
-msgstr "Rolar Normalmente"
-
-#: ../inc/admin/includes/class-options-sanitization.php:352
-msgid "Fixed in Place"
-msgstr "Lugar Fixo"
-
-#: ../inc/admin/includes/class-options-sanitization.php:424
-msgid "Normal"
-msgstr "Normal"
-
-#: ../inc/admin/includes/class-options-sanitization.php:425
-msgid "Italic"
-msgstr "Itálico"
-
-#: ../inc/admin/includes/class-options-sanitization.php:426
-msgid "Bold"
-msgstr "Negrito"
-
-#: ../inc/admin/includes/class-options-sanitization.php:427
-msgid "Bold Italic"
-msgstr "Negrito Itálico"
-
-#: ../inc/customizer.php:27
+#: ../inc/customizer.php:36
 #, fuzzy
 msgid "Content Options"
 msgstr "Opções do Tema"
 
-#: ../inc/customizer.php:39
+#: ../inc/customizer.php:47
 msgid "Show post excerpts?"
 msgstr ""
 
-#: ../inc/customizer.php:51
+#: ../inc/customizer.php:58
 #, fuzzy
 msgid "Display Comments on Static Pages?"
 msgstr "Mostrar na Página Inicial"
+
+#: ../inc/customizer.php:66
+#, fuzzy
+msgid "Slider options"
+msgstr "Slider Categoria"
+
+#: ../inc/customizer.php:76 ../options.php:116
+msgid "Check if you want to enable slider"
+msgstr "Check se deseja habilitar o slide de imagens"
+
+#: ../inc/customizer.php:91 ../options.php:123
+msgid "Slider Category"
+msgstr "Slider Categoria"
+
+#: ../inc/customizer.php:94 ../options.php:124
+msgid "Select a category for the featured post slider"
+msgstr "Selecione uma categoria para o slide de posts"
+
+#: ../inc/customizer.php:104 ../options.php:132
+msgid "Number of slide items"
+msgstr "Número de itens do slide"
+
+#: ../inc/customizer.php:106 ../options.php:133
+msgid "Enter the number of slide items"
+msgstr "Digite o número de itens do slide"
+
+#: ../inc/customizer.php:111
+#, fuzzy
+msgid "Layout options"
+msgstr "Opções de Layout"
+
+#: ../inc/customizer.php:123 ../options.php:141
+msgid "Website Layout Options"
+msgstr "Opções de Layout"
+
+#: ../inc/customizer.php:126
+#, fuzzy
+msgid "Choose between different layout options to be used as default"
+msgstr "Escolha entre sidebar Esquerda e Direita para ser usado como padrão"
+
+#: ../inc/customizer.php:136
+#, fuzzy
+msgid "Element Color"
+msgstr "Cor do elemento"
+
+#: ../inc/customizer.php:137 ../inc/customizer.php:149
+#: ../inc/customizer.php:203 ../inc/customizer.php:213
+#: ../inc/customizer.php:223 ../inc/customizer.php:233
+#: ../inc/customizer.php:311 ../inc/customizer.php:321
+#: ../inc/customizer.php:338 ../inc/customizer.php:478
+#: ../inc/customizer.php:489 ../options.php:152 ../options.php:160
+#: ../options.php:205 ../options.php:213 ../options.php:221 ../options.php:229
+#: ../options.php:259 ../options.php:267 ../options.php:280 ../options.php:390
+#: ../options.php:398
+msgid "Default used if no color is selected"
+msgstr "Padrão usado se nenhuma cor for selecionada"
+
+#: ../inc/customizer.php:148 ../options.php:159
+msgid "Element color on hover"
+msgstr "Cor do elemento on hover"
+
+#: ../inc/customizer.php:156 ../options.php:175
+msgid "Action Button"
+msgstr "Botão de ação"
+
+#: ../inc/customizer.php:166 ../options.php:180
+msgid "Call For Action Text"
+msgstr "Texto do botão Call For Action"
+
+#: ../inc/customizer.php:167 ../options.php:181
+msgid "Enter the text for call for action section"
+msgstr "Introduza o texto para a descrição do botão Call For Action"
+
+#: ../inc/customizer.php:178 ../options.php:188
+msgid "Call For Action Button Title"
+msgstr "Título do botão Call For Action"
+
+#: ../inc/customizer.php:180 ../options.php:189
+msgid "Enter the title for Call For Action button"
+msgstr "Introduza o título para o botão Call For Action"
+
+#: ../inc/customizer.php:190 ../options.php:196
+msgid "CFA button link"
+msgstr "Link do Botão do CFA"
+
+#: ../inc/customizer.php:192 ../options.php:197
+msgid "Enter the link for Call For Action button"
+msgstr "Introduza o link para o botão Call For Action"
+
+#: ../inc/customizer.php:202 ../options.php:204
+msgid "Call For Action Text Color"
+msgstr "Cor do texto do botão Call For Action"
+
+#: ../inc/customizer.php:212 ../options.php:212
+msgid "Call For Action Background Color"
+msgstr "Cor do fundo do botão Call For Action"
+
+#: ../inc/customizer.php:222 ../options.php:220
+msgid "Call For Action Button Border Color"
+msgstr "Cor da borda do botão Call For Action"
+
+#: ../inc/customizer.php:232 ../options.php:228
+msgid "Call For Action Button Text Color"
+msgstr "Cor do texto do botão Call For Action"
+
+#: ../inc/customizer.php:239 ../options.php:236
+msgid "Typography"
+msgstr "Tipografia"
+
+#: ../inc/customizer.php:259 ../options.php:241
+msgid "Main Body Text"
+msgstr "Corpo do texto da Página Principal"
+
+#: ../inc/customizer.php:260
+#, fuzzy
+msgid "Used in p tags"
+msgstr "Usado em tags P (Parágrafo)"
+
+#: ../inc/customizer.php:300 ../options.php:250
+msgid "Heading Color"
+msgstr "Cor do Título"
+
+#: ../inc/customizer.php:301 ../options.php:251
+msgid "Color for all headings (h1-h6)"
+msgstr "Cor para todos os títulos (h1-h6)"
+
+#: ../inc/customizer.php:310 ../options.php:258
+msgid "Link Color"
+msgstr "Cor do Link"
+
+#: ../inc/customizer.php:320 ../options.php:266
+msgid "Link:hover Color"
+msgstr "Cor do Link:hover"
+
+#: ../inc/customizer.php:327 ../options.php:274
+msgid "Header"
+msgstr "Cabeçalho"
+
+#: ../inc/customizer.php:337 ../options.php:279
+msgid "Top nav background color"
+msgstr "Cor do fundo do menu do topo"
+
+#: ../inc/customizer.php:347 ../options.php:287
+msgid "Top nav item color"
+msgstr "Cor do item do menu do topo"
+
+#: ../inc/customizer.php:348 ../options.php:288
+msgid "Link color"
+msgstr "Cor do link"
+
+#: ../inc/customizer.php:358 ../options.php:295
+msgid "Top nav item hover color"
+msgstr "Cor do item:hover do menu do topo"
+
+#: ../inc/customizer.php:359 ../options.php:296
+msgid "Link:hover color"
+msgstr "Cor do link:hover"
+
+#: ../inc/customizer.php:369 ../options.php:303
+msgid "Top nav dropdown background color"
+msgstr "Cor do fundo da dropdown do menu do topo"
+
+#: ../inc/customizer.php:370 ../inc/customizer.php:403 ../options.php:304
+#: ../options.php:328
+msgid "Background of dropdown item hover color"
+msgstr "Cor do fundo da dropdown do item:hover"
+
+#: ../inc/customizer.php:380 ../options.php:311
+msgid "Top nav dropdown item color"
+msgstr "Cor do item do dropdown do menu do topo"
+
+#: ../inc/customizer.php:381 ../options.php:312
+msgid "Dropdown item color"
+msgstr "Cor do item do dropdown"
+
+#: ../inc/customizer.php:391 ../options.php:319
+msgid "Top nav dropdown item hover color"
+msgstr "Cor do item:hover da dropdown do menu do topo"
+
+#: ../inc/customizer.php:392 ../options.php:320
+msgid "Dropdown item hover color"
+msgstr "Cor do fundo do ítem da dropdown"
+
+#: ../inc/customizer.php:402 ../options.php:327
+msgid "Top nav dropdown item background hover color"
+msgstr "Cor do fundo da dropdown do item:hover do menu do topo"
+
+#: ../inc/customizer.php:409 ../options.php:335
+msgid "Footer"
+msgstr "Rodapé"
+
+#: ../inc/customizer.php:419 ../options.php:340
+msgid "Footer widget area background color"
+msgstr "Cor do fundo do widget do rodapé"
+
+#: ../inc/customizer.php:429 ../options.php:347
+msgid "Footer background color"
+msgstr "Cor do fundo do rodapé"
+
+#: ../inc/customizer.php:439 ../options.php:354
+msgid "Footer text color"
+msgstr "Cor do texto do rodapé"
+
+#: ../inc/customizer.php:449 ../options.php:361
+msgid "Footer link color"
+msgstr "Cor do link do rodapé"
+
+#: ../inc/customizer.php:459 ../options.php:368
+msgid "Footer information"
+msgstr "Informações rodapé"
+
+#: ../inc/customizer.php:460 ../options.php:369
+msgid "Copyright text in footer"
+msgstr "Texto de Copyright no rodapé"
+
+#: ../inc/customizer.php:467 ../options.php:384
+msgid "Social"
+msgstr "Social"
+
+#: ../inc/customizer.php:477 ../options.php:389
+msgid "Social icon color"
+msgstr "Cor do ícone social"
+
+#: ../inc/customizer.php:488 ../options.php:397
+msgid "Footer social icon color"
+msgstr "Cor do ícone social no rodapé"
+
+#: ../inc/customizer.php:499 ../options.php:376
+#, fuzzy
+msgid "Footer Social Icons"
+msgstr "Cor do ícone social no rodapé"
+
+#: ../inc/customizer.php:500
+#, fuzzy
+msgid "Check to show social icons in footer"
+msgstr "Cor do ícone social no rodapé"
+
+#: ../inc/customizer.php:507 ../options.php:542
+msgid "Other"
+msgstr "Outro"
+
+#: ../inc/customizer.php:517 ../options.php:547
+msgid "Custom CSS"
+msgstr "CSS Personalizado"
+
+#: ../inc/customizer.php:518 ../options.php:548
+msgid "Additional CSS"
+msgstr "CSS Adicional"
+
+#: ../inc/customizer.php:525 ../inc/extras.php:383
+msgid "Support and Documentation"
+msgstr "Suporte e Documentação"
+
+#: ../inc/customizer.php:701 ../inc/extras.php:389
+msgid "Sparkling Documentation"
+msgstr "Documentação Sparkling"
+
+#: ../inc/customizer.php:702 ../inc/extras.php:390
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr ""
+"A melhor maneira de nos contactar com <b>questões de suporte</b> e "
+"<b>relatórios de bugs</b> é através"
+
+#: ../inc/customizer.php:702 ../inc/extras.php:390
+msgid "Colorlib support forum"
+msgstr "Fórum de suporte do Colorlib"
+
+#: ../inc/customizer.php:703 ../inc/extras.php:391
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr "Se gosta deste tema, agradeço qualquer uma das seguintes opções:"
+
+#: ../inc/customizer.php:705 ../inc/extras.php:393
+msgid "Rate this Theme"
+msgstr "Avalie este Tema"
+
+#: ../inc/customizer.php:706 ../inc/extras.php:394
+msgid "Like on Facebook"
+msgstr "Gosto no Facebook"
+
+#: ../inc/customizer.php:707 ../inc/extras.php:395
+msgid "Follow on Twitter"
+msgstr "Siga no Twitter"
 
 #: ../inc/extras.php:61
 #, php-format
@@ -381,9 +575,9 @@ msgid "Page %s"
 msgstr "Página %s"
 
 #: ../inc/extras.php:125
+#, fuzzy
 msgid ""
-"<p>This post is password protected. To view it please enter your password "
-"below:</p>"
+"This post is password protected. To view it please enter your password below:"
 msgstr ""
 "<p>Este post é protegido por password. Para visualizar escreva a password "
 "abaixo:</p>"
@@ -396,50 +590,20 @@ msgstr "Password:"
 msgid "Submit"
 msgstr "Enviar"
 
-#: ../inc/extras.php:175
-msgid "Follow us on "
-msgstr "Segue-nos "
-
-#: ../inc/extras.php:287
+#: ../inc/extras.php:272
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Theme by %1$s Powered by %2$s"
 
-#: ../inc/extras.php:394
-msgid "Support and Documentation"
-msgstr "Suporte e Documentação"
-
-#: ../inc/extras.php:400
-msgid "Sparkling Documentation"
-msgstr "Documentação Sparkling"
-
-#: ../inc/extras.php:401
+#: ../inc/metaboxes.php:16
 msgid ""
-"The best way to contact us with <b>support questions</b> and <b>bug reports</"
-"b> is via"
+"Select layout for this specific Page only ( Note: This setting only reflects "
+"if page Template is set as Default Template and Blog Type Templates.)"
 msgstr ""
-"A melhor maneira de nos contactar com <b>questões de suporte</b> e "
-"<b>relatórios de bugs</b> é através"
 
-#: ../inc/extras.php:401
-msgid "Colorlib support forum"
-msgstr "Fórum de suporte do Colorlib"
-
-#: ../inc/extras.php:402
-msgid "If you like this theme, I'd appreciate any of the following:"
-msgstr "Se gosta deste tema, agradeço qualquer uma das seguintes opções:"
-
-#: ../inc/extras.php:404
-msgid "Rate this Theme"
-msgstr "Avalie este Tema"
-
-#: ../inc/extras.php:405
-msgid "Like on Facebook"
-msgstr "Gosto no Facebook"
-
-#: ../inc/extras.php:406
-msgid "Follow on Twitter"
-msgstr "Siga no Twitter"
+#: ../inc/metaboxes.php:21
+msgid "Select layout for this specific Post only"
+msgstr ""
 
 #: ../inc/template-tags.php:23
 msgid "Posts navigation"
@@ -467,7 +631,7 @@ msgstr "Categorias Sparkling"
 msgid "Categories"
 msgstr "Categorias"
 
-#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:49
+#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:42
 msgid "Title "
 msgstr "Título"
 
@@ -501,17 +665,9 @@ msgstr "Limite de Posts"
 msgid "Sparkling Social Widget"
 msgstr "Sparkling Social Widget"
 
-#: ../inc/widgets/widget-social.php:17 ../inc/widgets/widget-social.php:46
+#: ../inc/widgets/widget-social.php:18 ../inc/widgets/widget-social.php:40
 msgid "Follow us"
 msgstr "Segue-nos"
-
-#: ../options.php:23
-msgid "Right Sidebar"
-msgstr "Sidebar Direita"
-
-#: ../options.php:23
-msgid "Left Sidebar"
-msgstr "Sidebar Esquerda"
 
 #: ../options.php:27
 msgid "One"
@@ -561,30 +717,6 @@ msgstr "Principal"
 msgid "Do You want to display image slider on the Home Page?"
 msgstr "Quer exibir o slide de imagem na página inicial?"
 
-#: ../options.php:116
-msgid "Check if you want to enable slider"
-msgstr "Check se deseja habilitar o slide de imagens"
-
-#: ../options.php:123
-msgid "Slider Category"
-msgstr "Slider Categoria"
-
-#: ../options.php:124
-msgid "Select a category for the featured post slider"
-msgstr "Selecione uma categoria para o slide de posts"
-
-#: ../options.php:132
-msgid "Number of slide items"
-msgstr "Número de itens do slide"
-
-#: ../options.php:133
-msgid "Enter the number of slide items"
-msgstr "Digite o número de itens do slide"
-
-#: ../options.php:141
-msgid "Website Layout Options"
-msgstr "Opções de Layout"
-
 #: ../options.php:142
 msgid "Choose between Left and Right sidebar options to be used as default"
 msgstr "Escolha entre sidebar Esquerda e Direita para ser usado como padrão"
@@ -592,16 +724,6 @@ msgstr "Escolha entre sidebar Esquerda e Direita para ser usado como padrão"
 #: ../options.php:151
 msgid "Element color"
 msgstr "Cor do elemento"
-
-#: ../options.php:152 ../options.php:160 ../options.php:205 ../options.php:213
-#: ../options.php:221 ../options.php:229 ../options.php:259 ../options.php:267
-#: ../options.php:280 ../options.php:390 ../options.php:398
-msgid "Default used if no color is selected"
-msgstr "Padrão usado se nenhuma cor for selecionada"
-
-#: ../options.php:159
-msgid "Element color on hover"
-msgstr "Cor do elemento on hover"
 
 #: ../options.php:167
 msgid "Custom Favicon"
@@ -612,178 +734,13 @@ msgid ""
 "Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
 msgstr "Carregar uma imagem PNG/GIF  32px x 32px  para o favicon do seu site"
 
-#: ../options.php:175
-msgid "Action Button"
-msgstr "Botão de ação"
-
-#: ../options.php:180
-msgid "Call For Action Text"
-msgstr "Texto do botão Call For Action"
-
-#: ../options.php:181
-msgid "Enter the text for call for action section"
-msgstr "Introduza o texto para a descrição do botão Call For Action"
-
-#: ../options.php:188
-msgid "Call For Action Button Title"
-msgstr "Título do botão Call For Action"
-
-#: ../options.php:189
-msgid "Enter the title for Call For Action button"
-msgstr "Introduza o título para o botão Call For Action"
-
-#: ../options.php:196
-msgid "CFA button link"
-msgstr "Link do Botão do CFA"
-
-#: ../options.php:197
-msgid "Enter the link for Call For Action button"
-msgstr "Introduza o link para o botão Call For Action"
-
-#: ../options.php:204
-msgid "Call For Action Text Color"
-msgstr "Cor do texto do botão Call For Action"
-
-#: ../options.php:212
-msgid "Call For Action Background Color"
-msgstr "Cor do fundo do botão Call For Action"
-
-#: ../options.php:220
-msgid "Call For Action Button Border Color"
-msgstr "Cor da borda do botão Call For Action"
-
-#: ../options.php:228
-msgid "Call For Action Button Text Color"
-msgstr "Cor do texto do botão Call For Action"
-
-#: ../options.php:236
-msgid "Typography"
-msgstr "Tipografia"
-
-#: ../options.php:241
-msgid "Main Body Text"
-msgstr "Corpo do texto da Página Principal"
-
 #: ../options.php:242
 msgid "Used in P tags"
 msgstr "Usado em tags P (Parágrafo)"
 
-#: ../options.php:250
-msgid "Heading Color"
-msgstr "Cor do Título"
-
-#: ../options.php:251
-msgid "Color for all headings (h1-h6)"
-msgstr "Cor para todos os títulos (h1-h6)"
-
-#: ../options.php:258
-msgid "Link Color"
-msgstr "Cor do Link"
-
-#: ../options.php:266
-msgid "Link:hover Color"
-msgstr "Cor do Link:hover"
-
-#: ../options.php:274
-msgid "Header"
-msgstr "Cabeçalho"
-
-#: ../options.php:279
-msgid "Top nav background color"
-msgstr "Cor do fundo do menu do topo"
-
-#: ../options.php:287
-msgid "Top nav item color"
-msgstr "Cor do item do menu do topo"
-
-#: ../options.php:288
-msgid "Link color"
-msgstr "Cor do link"
-
-#: ../options.php:295
-msgid "Top nav item hover color"
-msgstr "Cor do item:hover do menu do topo"
-
-#: ../options.php:296
-msgid "Link:hover color"
-msgstr "Cor do link:hover"
-
-#: ../options.php:303
-msgid "Top nav dropdown background color"
-msgstr "Cor do fundo da dropdown do menu do topo"
-
-#: ../options.php:304 ../options.php:328
-msgid "Background of dropdown item hover color"
-msgstr "Cor do fundo da dropdown do item:hover"
-
-#: ../options.php:311
-msgid "Top nav dropdown item color"
-msgstr "Cor do item do dropdown do menu do topo"
-
-#: ../options.php:312
-msgid "Dropdown item color"
-msgstr "Cor do item do dropdown"
-
-#: ../options.php:319
-msgid "Top nav dropdown item hover color"
-msgstr "Cor do item:hover da dropdown do menu do topo"
-
-#: ../options.php:320
-msgid "Dropdown item hover color"
-msgstr "Cor do fundo do ítem da dropdown"
-
-#: ../options.php:327
-msgid "Top nav dropdown item background hover color"
-msgstr "Cor do fundo da dropdown do item:hover do menu do topo"
-
-#: ../options.php:335
-msgid "Footer"
-msgstr "Rodapé"
-
-#: ../options.php:340
-msgid "Footer widget area background color"
-msgstr "Cor do fundo do widget do rodapé"
-
-#: ../options.php:347
-msgid "Footer background color"
-msgstr "Cor do fundo do rodapé"
-
-#: ../options.php:354
-msgid "Footer text color"
-msgstr "Cor do texto do rodapé"
-
-#: ../options.php:361
-msgid "Footer link color"
-msgstr "Cor do link do rodapé"
-
-#: ../options.php:368
-msgid "Footer information"
-msgstr "Informações rodapé"
-
-#: ../options.php:369
-msgid "Copyright text in footer"
-msgstr "Texto de Copyright no rodapé"
-
-#: ../options.php:376
-#, fuzzy
-msgid "Footer Social Icons"
-msgstr "Cor do ícone social no rodapé"
-
 #: ../options.php:377
 #, fuzzy
 msgid "Show/Hide social icons in footer"
-msgstr "Cor do ícone social no rodapé"
-
-#: ../options.php:384
-msgid "Social"
-msgstr "Social"
-
-#: ../options.php:389
-msgid "Social icon color"
-msgstr "Cor do ícone social"
-
-#: ../options.php:397
-msgid "Footer social icon color"
 msgstr "Cor do ícone social no rodapé"
 
 #: ../options.php:405
@@ -858,18 +815,6 @@ msgstr ""
 msgid "Spotify"
 msgstr ""
 
-#: ../options.php:542
-msgid "Other"
-msgstr "Outro"
-
-#: ../options.php:547
-msgid "Custom CSS"
-msgstr "CSS Personalizado"
-
-#: ../options.php:548
-msgid "Additional CSS"
-msgstr "CSS Adicional"
-
 #: ../search.php:16
 #, php-format
 msgid "Search Results for: %s"
@@ -901,6 +846,95 @@ msgstr "Pesquisar..."
 #: ../sidebar.php:26
 msgid "Meta"
 msgstr "Meta"
+
+#~ msgid "Theme Options"
+#~ msgstr "Opções do Tema"
+
+#~ msgid "Click OK to reset. Any theme settings will be lost!"
+#~ msgstr ""
+#~ "Clique em OK para reiniciar. Todas as configurações do tema serão "
+#~ "perdidas!"
+
+#~ msgid "Default options restored."
+#~ msgstr "Opções padrão restauradas."
+
+#~ msgid "Options saved."
+#~ msgstr "Opções guardadas."
+
+#~ msgid "No file chosen"
+#~ msgstr "Nenhum arquivo selecionado"
+
+#~ msgid "Upload"
+#~ msgstr "Carregar"
+
+#~ msgid "Remove"
+#~ msgstr "Remover"
+
+#~ msgid "Upgrade your version of WordPress for full media support."
+#~ msgstr "Atualize a sua versão do WordPress para suporte de mídia completa."
+
+#~ msgid "View File"
+#~ msgstr "Ver Arquivo"
+
+#~ msgid "No Repeat"
+#~ msgstr "Não Repetir"
+
+#~ msgid "Repeat Horizontally"
+#~ msgstr "Repetir Horizontalmente"
+
+#~ msgid "Repeat Vertically"
+#~ msgstr "Repetir Verticalmente"
+
+#~ msgid "Repeat All"
+#~ msgstr "Repetir Tudo"
+
+#~ msgid "Top Left"
+#~ msgstr "Superior Esquerdo"
+
+#~ msgid "Top Center"
+#~ msgstr "Superior Centro"
+
+#~ msgid "Top Right"
+#~ msgstr "Superior Direito"
+
+#~ msgid "Middle Left"
+#~ msgstr "Meio Esquerdo"
+
+#~ msgid "Middle Center"
+#~ msgstr "Meio Centro"
+
+#~ msgid "Middle Right"
+#~ msgstr "Meio Direito"
+
+#~ msgid "Bottom Left"
+#~ msgstr "Inferior Esquerdo"
+
+#~ msgid "Bottom Center"
+#~ msgstr "Inferior Centro"
+
+#~ msgid "Bottom Right"
+#~ msgstr "Inferior Direito"
+
+#~ msgid "Scroll Normally"
+#~ msgstr "Rolar Normalmente"
+
+#~ msgid "Fixed in Place"
+#~ msgstr "Lugar Fixo"
+
+#~ msgid "Normal"
+#~ msgstr "Normal"
+
+#~ msgid "Italic"
+#~ msgstr "Itálico"
+
+#~ msgid "Bold"
+#~ msgstr "Negrito"
+
+#~ msgid "Bold Italic"
+#~ msgstr "Negrito Itálico"
+
+#~ msgid "Follow us on "
+#~ msgstr "Segue-nos "
 
 #~ msgid "Search..."
 #~ msgstr "Pesquisar..."

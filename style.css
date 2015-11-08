@@ -3,8 +3,8 @@ Theme Name: Sparkling
 Theme URI: http://colorlib.com/wp/themes/sparkling
 Author: Colorlib
 Author URI: http://colorlib.com/
-Description: Sparkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, portfolio, design, art, photography, personal and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready, compatible with WPML and is available in Spanish, French, Dutch, Polish, Russian, German, Brazilian Portuguese, Portuguese (Portugal), Persian (Iranian language), Romanian, Turkish, Bulgarian, Japanese, Lithuanian, Czech, Ukrainian, Traditional Chinese, Simplified Chinese, Indonesian, Estonian and Italian. Sparkling is a free WordPress theme with premium functionality and design. Now theme is optimized to work with bbPress, Contact Form 7, Jetpack and other popular free and premium plugins.
-Version: 1.9.4
+Description: Sparkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, portfolio, design, art, photography, personal and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready, compatible with WPML and is available in Spanish, French, Dutch, Polish, Russian, German, Brazilian Portuguese, Portuguese (Portugal), Persian (Iranian language), Romanian, Turkish, Bulgarian, Japanese, Lithuanian, Czech, Ukrainian, Traditional Chinese, Simplified Chinese, Indonesian, Estonian, Spanish (Argentina) and Italian. Sparkling is a free WordPress theme with premium functionality and design. Now theme is optimized to work with bbPress, Contact Form 7, Jetpack and other popular free and premium plugins.
+Version: 2.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sparkling
@@ -191,6 +191,23 @@ textarea {
   margin: 0 auto;
 }
 
+/* Layout */
+.side-pull-left .main-content-inner{
+    float: left;
+}
+.side-pull-right .main-content-inner{
+    float: right;
+}
+.no-sidebar #secondary, .full-width #secondary{
+    display: none;
+}
+.no-sidebar .main-content-inner{
+    float: none;
+    margin: 0 auto;
+}
+.full-width .main-content-inner{
+    width: 100%;
+}
 /* Text meant only for screen readers */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
@@ -305,6 +322,7 @@ footer.entry-meta {
 }
 .entry-title {
   color: #444;
+  font-size: 28px;
   margin-bottom: 30px;
 }
 .entry-title a {
@@ -373,6 +391,11 @@ hr.section-divider {
 .comment-reply-title {
   text-transform: uppercase;
   font-weight: 700;
+}
+#bbp-single-user-details #bbp-user-avatar img.avatar {
+  position: relative;
+  left: 0;
+  top: 0;
 }
 
 /* =Singe Post/Page Pagination
@@ -714,6 +737,9 @@ button:hover {
 }
 /* =Custom Styles
 ----------------------------------------------- */
+#logo .site-name {
+  margin: 0;
+}
 .site-branding {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -851,7 +877,7 @@ button:hover {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
   color: #DADADA;
 }
-@media (min-width: 979px) {
+@media (min-width: 768px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }
@@ -905,6 +931,32 @@ button:hover {
     padding-bottom: 10px;
   }
 }
+.navigation .wp-pagenavi-pagination a{
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.navigation .wp-pagenavi-pagination span{
+  font-size: 12px;
+}
+.navigation .wp-pagenavi-pagination span.current,
+.navigation .wp-pagenavi-pagination a:hover {
+  background-color: #DA4453;
+  border-color: #DA4453;
+  color: #FFF;
+  text-decoration: none;
+}
+.pagination>li>a,
+.pagination>li>span,
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+  color: #DA4453;
+}
+.nav-links {
+  text-align: center;
+}
+
 
 /* =Comments
 ----------------------------------------------- */
@@ -1254,14 +1306,14 @@ p.logged-in-as {
 #secondary .widget .social-icons a {
   color: #fff;
 }
-.social-icons {
+.social-icons, #menu-social {
   position: relative;
   text-align: center;
 }
 #secondary .widget .social-icons {
   text-align: left;
 }
-.social-icons a {
+.social-icons a{
   font-size: 18px;
   line-height: 40px;
   list-style: none;
@@ -1278,73 +1330,125 @@ p.logged-in-as {
        -o-transition: background-color  0.5s;
           transition: background-color  0.5s;
 }
-#footer-area .social-icons a {
+#menu-social li{
+    border: none;
+    display: inline-block;
+    margin: 0;
+}
+.social-icons li a{
+  font-size: 18px;
+  line-height: 40px;
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  background-color: #DADADA;
+  -webkit-transition: background-color  0.5s;
+     -moz-transition: background-color  0.5s;
+       -o-transition: background-color  0.5s;
+          transition: background-color  0.5s;
+}
+#footer-area .social-icons a{
   margin-right: 7px;
   background-color: #363636;
   color: #fff;
 }
+#footer-area .social-icons li a {
+  background-color: #363636;
+  color: #fff;
+  margin-right: 7px;
+}
+#menu-social li a span{ display: none; }
 
-.social-icons a.facebook:hover {
+#menu-social li a[href*="facebook.com"]:hover {
   background-color: #4265b9 !important;
 }
-.social-icons a.twitter:hover {
+#menu-social li a[href*="twitter.com"]:hover {
   background-color: #55ACEE !important;
 }
-.social-icons a.dribbble:hover {
+#menu-social li a[href*="dribbble.com"]:hover {
   background-color: #ea4c89 !important;
 }
-.social-icons a.flickr:hover {
+#menu-social li a[href*="flickr.com"]:hover {
   background-color: #ff0084 !important;
 }
-.social-icons a.googleplus:hover {
+#menu-social li a[href*="plus.google.com"]:hover {
   background-color: #d62408 !important;
 }
-.social-icons a.skype:hover {
+#menu-social li a[href*="skype.com"]:hover {
   background-color: #0bbff2 !important;
 }
-.social-icons a.pinterest:hover {
+#menu-social li a[href*="pinterest.com"]:hover {
   background-color: #c31e26 !important;
 }
-.social-icons a.linkedin:hover {
+#menu-social li a[href*="linkedin.com"]:hover {
   background-color: #005987 !important;
 }
-.social-icons a.vimeo:hover {
+#menu-social li a[href*="vimeo.com"]:hover {
   background-color: #1bb6ec !important;
 }
-.social-icons a.tumblr:hover {
+#menu-social li a[href*="tumblr.com"]:hover {
   background-color: #35506b !important;
 }
-.social-icons a.youtube:hover {
+#menu-social li a[href*="youtube.com"]:hover {
   background-color: #df3333 !important;
 }
-.social-icons a.instagram:hover {
+#menu-social li a[href*="instagram.com"]:hover {
   background-color: #F95B60 !important;
 }
-.social-icons a.rss:hover {
+#menu-social li a[href*="/feed"]:hover {
   background-color: #f39c12 !important;
 }
-.social-icons a.foursquare:hover {
+#menu-social li a[href*="foursquare.com"]:hover {
   background-color: #2398C9 !important;
 }
-.social-icons a.soundcloud:hover {
+#menu-social li a[href*="soundcloud.com"]:hover {
   background-color: #F50 !important;
 }
-.social-icons a.github:hover {
+#menu-social li a[href*="github.com"]:hover {
   background-color: #4183C4 !important;
 }
-.social-icons a.spotify:hover {
+#menu-social li a[href*="spotify.com"]:hover {
   background-color: #81b71a !important;
 }
-.fa-googleplus:before {
-  content: "\f0d5";
+#menu-social li a[href*="mailto"]:hover {
+  background-color: #DA4453 !important;
 }
-.fa-vimeo:before {
-  content: "\f194";
+#menu-social li, #menu-social ul {
+  border: 0!important;
+  list-style: none;
+  padding-left: 0;
 }
+
+#menu-social li a[href*="twitter.com"] .fa:before{content:"\f099"}
+#menu-social li a[href*="facebook.com"] .fa:before{content:"\f09a"}
+#menu-social li a[href*="github.com"] .fa:before{content:"\f09b"}
+#menu-social li a[href*="/feed"] .fa:before{content:"\f09e"}
+#menu-social li a[href*="dribbble.com"] .fa:before,{content: "\f17d"}
+#menu-social li a[href*="skype.com"] .fa:before{content: "\f17e"}
+#menu-social li a[href*="foursquare.com"] .fa:before{content: "\f180"}
+#menu-social li a[href*="spotify.com"] .fa:before{content: "\f1bc"}
+#menu-social li a[href*="soundcloud.com"] .fa:before{content: "\f1be"}
+#menu-social li a[href*="vimeo.com"] .fa:before{content: "\f194"}
+#menu-social li a[href*="youtube.com"] .fa:before{content: "\f167"}
+#menu-social li a[href*="instagram.com"] .fa:before{content: "\f16d"}
+#menu-social li a[href*="flickr.com"] .fa:before{content: "\f16e"}
+#menu-social li a[href*="tumblr.com"] .fa:before{content: "\f173"}
+#menu-social li a[href*="pinterest.com"] .fa:before{content: "\f0d2"}
+#menu-social li a[href*="plus.google.com"] .fa:before{content: "\f0d5"}
+#menu-social li a[href*="linkedin.com"] .fa:before{content: "\f0e1"}
+#menu-social li a[href*="mailto"] .fa:before{content: "\f003"}
 
 @media (max-width: 992px) {
   .site-branding {
     text-align: center;
+  }
+  .side-pull-left .main-content-inner, .side-pull-right .main-content-inner{
+    float: none;
   }
 }
 

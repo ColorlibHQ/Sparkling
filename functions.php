@@ -248,19 +248,6 @@ function sparkling_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'sparkling_scripts' );
 
-/*
- * Loads the Options Panel
- *
- * If you're loading from a child theme use stylesheet_directory
- * instead of template_directory
- */
-
-define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/admin/' );
-require_once dirname( __FILE__ ) . '/inc/admin/options-framework.php';
-// Loads options.php from child or parent theme
-$optionsfile = locate_template( 'options.php' );
-load_template( $optionsfile );
-
 /**
  * Implement the Custom Header feature.
  */
@@ -282,6 +269,11 @@ require get_template_directory() . '/inc/extras.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Metabox additions.
+ */
+require get_template_directory() . '/inc/metaboxes.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
@@ -290,3 +282,66 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load custom nav walker
  */
 require get_template_directory() . '/inc/navwalker.php';
+
+/**
+ * Register Social Icon menu
+ */
+add_action( 'init', 'register_social_menu' );
+
+function register_social_menu() {
+	register_nav_menu( 'social-menu', _x( 'Social Menu', 'nav menu location', 'sparkling' ) );
+}
+
+/* Globals variables */
+global $options_categories;
+$options_categories = array();
+$options_categories_obj = get_categories();
+foreach ($options_categories_obj as $category) {
+        $options_categories[$category->cat_ID] = $category->cat_name;
+}
+
+global $site_layout;
+$site_layout = array('side-pull-left' => esc_html__('Right Sidebar', 'sparkling'),'side-pull-right' => esc_html__('Left Sidebar', 'sparkling'),'no-sidebar' => esc_html__('No Sidebar', 'sparkling'),'full-width' => esc_html__('Full Width', 'sparkling'));
+
+// Typography Options
+global $typography_options;
+$typography_options = array(
+        'sizes' => array( '6px' => '6px','10px' => '10px','12px' => '12px','14px' => '14px','15px' => '15px','16px' => '16px','18'=> '18px','20px' => '20px','24px' => '24px','28px' => '28px','32px' => '32px','36px' => '36px','42px' => '42px','48px' => '48px' ),
+        'faces' => array(
+                'arial'          => 'Arial',
+                'verdana'        => 'Verdana, Geneva',
+                'trebuchet'      => 'Trebuchet',
+                'georgia'        => 'Georgia',
+                'times'          => 'Times New Roman',
+                'tahoma'         => 'Tahoma, Geneva',
+                'Open Sans'      => 'Open Sans',
+                'palatino'       => 'Palatino',
+                'helvetica'      => 'Helvetica',
+                'Helvetica Neue' => 'Helvetica Neue,Helvetica,Arial,sans-serif'
+        ),
+        'styles' => array( 'normal' => 'Normal','bold' => 'Bold' ),
+        'color'  => true
+);
+
+/**
+ * Helper function to return the theme option value.
+ * If no value has been saved, it returns $default.
+ * Needed because options are saved as serialized strings.
+ *
+ * Not in a class to support backwards compatibility in themes.
+ */
+if ( ! function_exists( 'of_get_option' ) ) :
+function of_get_option( $name, $default = false ) {
+
+	$option_name = '';
+	// Get option settings from database
+	$options = get_option( 'sparkling' );
+
+	// Return specific option
+	if ( isset( $options[$name] ) ) {
+		return $options[$name];
+	}
+
+	return $default;
+}
+endif;
