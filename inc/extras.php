@@ -74,10 +74,12 @@ function custom_password_form() {
 // Add Bootstrap classes for table
 add_filter( 'the_content', 'sparkling_add_custom_table_class' );
 function sparkling_add_custom_table_class( $content ) {
-    return str_replace( '<table>', '<table class="table table-hover">', $content );
+  return preg_replace( '/(<table) ?(([^>]*)class="([^"]*)")?/', '$1 $3 class="$4 table table-hover" ', $content);
 }
 
+
 if ( ! function_exists( 'sparkling_social_icons' ) ) :
+
 /**
  * Display social links in footer and widgets
  *
@@ -414,7 +416,7 @@ add_filter( 'nav_menu_link_attributes', 'sparkling_add_top_level_menu_url', 99, 
 function sparkling_make_top_level_menu_clickable(){
 if ( !wp_is_mobile() ) { ?>
   <script type="text/javascript">
-    jQuery( document ).ready( function( $ ){      
+    jQuery( document ).ready( function( $ ){
       if ( $( window ).width() >= 767 ){
         $( '.navbar-nav > li.menu-item > a' ).click( function(){
           window.location = $( this ).attr( 'href' );
