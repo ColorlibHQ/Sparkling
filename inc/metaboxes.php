@@ -23,6 +23,14 @@ function sparkling_add_custom_box()
         'post', //show metabox in posts
         'side'
         );
+    if ( class_exists( 'WooCommerce' ) ) {
+        add_meta_box('product-siderbar-layout', //Unique ID
+            __('Select layout for this specific Product only', 'sparkling'), //Title
+            'sparkling_sidebar_layout', //Callback function
+            'product', //show metabox in posts
+            'side'
+            );
+    }
 }
 
 /****************************************************************************************/

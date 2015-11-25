@@ -1516,3 +1516,13 @@ button[type=submit],
 .no-js table#wp-calendar {
   display: block;
 }
+
+/* WooCommerce Support */
+.woocommerce-cart .cart-collaterals .cart_totals table td, 
+.woocommerce-cart .cart-collaterals .cart_totals table th { 
+  padding: 6px;
+}
+
+.woocommerce div.product .woocommerce-tabs .panel {
+  padding: 10px 30px 20px;
+}

@@ -223,17 +223,19 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
         echo 'a, #infinite-handle span, #secondary .widget .post-content a {color:' . of_get_option('link_color') . '}';
       }
       if ( of_get_option('link_hover_color')) {
-        echo 'a:hover, a:active, #secondary .widget .post-content a:hover {color: '.of_get_option('link_hover_color').';}';
+        echo 'a:hover, a:active, #secondary .widget .post-content a:hover,
+        .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover,
+        .woocommerce nav.woocommerce-pagination ul li span.current  {color: '.of_get_option('link_hover_color').';}';
       }
       if ( of_get_option('element_color')) {
-        echo '.btn-default, .label-default, .flex-caption h2, .btn.btn-default.read-more,
-            button, .navigation .wp-pagenavi-pagination span.current,
-            .navigation .wp-pagenavi-pagination a:hover,
-            .woocommerce a.button, .woocommerce button.button,
-            .woocommerce input.button, .woocommerce #respond input#submit.alt,
-            .woocommerce a.button, .woocommerce button.button, .woocommerce input.button:,
-            .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
-            background-color: '.of_get_option('element_color_hover').'{background-color: '.of_get_option('element_color').'; border-color: '.of_get_option('element_color').';} .site-main [class*="navigation"] a, .more-link, .pagination>li>a, .pagination>li>span { color: '.of_get_option('element_color').'}';
+        echo '.btn-default, .label-default, .flex-caption h2, .btn.btn-default.read-more,button,
+              .navigation .wp-pagenavi-pagination span.current,.navigation .wp-pagenavi-pagination a:hover,
+              .woocommerce a.button, .woocommerce button.button,
+              .woocommerce input.button, .woocommerce #respond input#submit.alt,
+              .woocommerce a.button, .woocommerce button.button,
+              .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt { background-color: '.of_get_option('element_color').'; border-color: '.of_get_option('element_color').';}';
+        
+        echo '.site-main [class*="navigation"] a, .more-link, .pagination>li>a, .pagination>li>span { color: '.of_get_option('element_color').'}';
       }
 
       if ( of_get_option('element_color_hover')) {
