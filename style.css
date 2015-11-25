@@ -656,7 +656,10 @@ object {
 
 /* =Buttons
 ----------------------------------------------- */
-.btn-default, .label-default {
+.btn-default, .label-default, .woocommerce #respond input#submit, 
+.woocommerce a.button, .woocommerce button.button, .woocommerce input.button,
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt,
+.woocommerce button.button.alt, .woocommerce input.button.alt {
   background-color: #DA4453;
   border-color: #DA4453;
   -webkit-transition: background-color 0.3s linear;
@@ -671,18 +674,22 @@ object {
 .btn-default:active,
 .btn-default.active,
 #image-navigation .nav-previous a:hover,
-#image-navigation .nav-next a:hover {
+#image-navigation .nav-next a:hover, .woocommerce #respond input#submit:hover, 
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover,
+.woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover{
   background-color: #363636;
   border-color: #363636;
+  color: #FFF;
 }
-.btn.btn-default {
+.btn.btn-default, .woocommerce #respond input#submit, .woocommerce a.button, 
+.woocommerce button.button, .woocommerce input.button {
   color: #FFF;
   text-transform: uppercase;
 }
 .input-group-btn:last-child>.btn {
   margin-left: 0;
 }
-button {
+button, .button {
   background-color: #DA4453;
   border: none;
   text-transform: uppercase;
@@ -696,7 +703,7 @@ button {
        -o-transition: background-color 0.3s linear;
           transition: background-color 0.3s linear;
 }
-button:hover {
+button:hover, .button:hover {
   background-color: #363636;
 }
 #subscription-toggle {
