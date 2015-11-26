@@ -345,3 +345,18 @@ function of_get_option( $name, $default = false ) {
 	return $default;
 }
 endif;
+
+/* WooCommerce Support Declaration */
+if ( ! function_exists( 'sparkling_woo_setup' ) ) :
+/**
+ * Sets up theme defaults and registers support for various WordPress features.
+ */
+function sparkling_woo_setup() {
+	/*
+	 * Enable support for WooCemmerce.
+	*/
+	add_theme_support( 'woocommerce' );
+
+}
+endif; // sparkling_woo_setup
+add_action( 'after_setup_theme', 'sparkling_woo_setup' );
