@@ -126,6 +126,21 @@ function sparkling_customizer( $wp_customize ) {
                  'description' => __('Choose between different layout options to be used as default', 'sparkling'),
                  'choices'    => $site_layout
             ));
+            
+            if ( class_exists( 'WooCommerce' ) ) {
+                $wp_customize->add_setting('sparkling[woo_site_layout]', array(
+                     'default' => 'full-width',
+                     'type' => 'option',
+                     'sanitize_callback' => 'sparkling_sanitize_layout'
+                ));
+                $wp_customize->add_control('sparkling[woo_site_layout]', array(
+                     'label' => __('WooCommerce Page Layout Options', 'sparkling'),
+                     'section' => 'sparkling_layout_options',
+                     'type'    => 'select',
+                     'description' => __('Choose between different layout options to be used as default for all woocommerce pages', 'sparkling'),
+                     'choices'    => $site_layout
+                ));
+            }
 
             $wp_customize->add_setting('sparkling[element_color]', array(
                 'default' => '',
@@ -328,6 +343,19 @@ function sparkling_customizer( $wp_customize ) {
             'priority' => 31,
             'panel' => 'sparkling_main_options'
         ));
+        
+            $wp_customize->add_setting('sparkling[sticky_header]', array(
+                'default' => 0,
+                'type' => 'option',
+                'sanitize_callback' => 'sparkling_sanitize_checkbox'
+            ));
+            $wp_customize->add_control('sparkling[sticky_header]', array(
+                'label' => __('Sticky Header', 'sparkling'),
+                'description' => sprintf(__('Check to show fixed header', 'sparkling')),
+                'section' => 'sparkling_header_options',
+                'type' => 'checkbox',
+            ));
+            
             $wp_customize->add_setting('sparkling[nav_bg_color]', array(
                 'default' => '',
                 'type'  => 'option',
