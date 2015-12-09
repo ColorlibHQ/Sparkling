@@ -1526,3 +1526,9 @@ button[type=submit],
 .woocommerce div.product .woocommerce-tabs .panel {
   padding: 10px 30px 20px;
 }
+.woocommerce .main-content-inner{ 
+  background-color: #fff;
+  border: 1px solid #dadada;
+  border-top: none;
+  padding: 45px 50px;
+}
