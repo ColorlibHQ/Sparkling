@@ -539,7 +539,7 @@ function sparkling_customizer( $wp_customize ) {
             $wp_customize->add_setting('sparkling[custom_css]', array(
                 'default' => '',
                 'type' => 'option',
-                'sanitize_callback' => 'sparkling_sanitize_strip_slashes'
+                'sanitize_callback' => 'sparkling_sanitize_textarea'
             ));
             $wp_customize->add_control('sparkling[custom_css]', array(
                 'label' => __('Custom CSS', 'sparkling'),
@@ -612,6 +612,14 @@ function sparkling_sanitize_number($input) {
  */
 function sparkling_sanitize_strip_slashes($input) {
     return wp_kses_stripslashes($input);
+}
+
+/**
+ * Adds sanitization callback function: Sanitize Text area
+ * @package Sparkling
+ */
+function sparkling_sanitize_textarea($input) {
+    return sanitize_text_field($input);
 }
 
 /**
