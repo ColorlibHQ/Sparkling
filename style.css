@@ -1527,6 +1527,8 @@ button[type=submit],
   padding: 10px 30px 20px;
 }
 .woocommerce .main-content-inner{ 
-    background: #fff; 
-    padding: 45px 50px; 
+  background-color: #fff;
+  border: 1px solid #dadada;
+  border-top: none;
+  padding: 45px 50px;
 }
