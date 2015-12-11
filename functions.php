@@ -423,7 +423,7 @@ if ( ! function_exists( 'get_layout_class' ) ) :
 
 function get_layout_class () {
     global $post;           
-    if( is_singular() && get_post_meta($post->ID, 'site_layout', true) && !is_product() ){
+    if( is_singular() && get_post_meta($post->ID, 'site_layout', true) && !is_singular( array( 'product' ) ) ){
         $layout_class = get_post_meta($post->ID, 'site_layout', true);
     }
     elseif( function_exists ( "is_woocommerce" ) && function_exists ( "is_it_woocommerce_page" ) && is_it_woocommerce_page() && !is_search() ){// Check for WooCommerce
