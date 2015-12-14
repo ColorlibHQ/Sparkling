@@ -48,28 +48,6 @@ function sparkling_title( $title ) {
 }
 
 /**
- * Sets the authordata global when viewing an author archive.
- *
- * This provides backwards compatibility with
- * http://core.trac.wordpress.org/changeset/25574
- *
- * It removes the need to call the_post() and rewind_posts() in an author
- * template to print information about the author.
- *
- * @global WP_Query $wp_query WordPress Query object.
- * @return void
- */
-function sparkling_setup_author() {
-  global $wp_query;
-
-  if ( $wp_query->is_author() && isset( $wp_query->post ) ) {
-    $GLOBALS['authordata'] = get_userdata( $wp_query->post->post_author );
-  }
-}
-add_action( 'wp', 'sparkling_setup_author' );
-
-
-/**
  * Password protected post form using Boostrap classes
  */
 add_filter( 'the_password_form', 'custom_password_form' );
@@ -96,10 +74,12 @@ function custom_password_form() {
 // Add Bootstrap classes for table
 add_filter( 'the_content', 'sparkling_add_custom_table_class' );
 function sparkling_add_custom_table_class( $content ) {
-    return str_replace( '<table>', '<table class="table table-hover">', $content );
+  return preg_replace( '/(<table) ?(([^>]*)class="([^"]*)")?/', '$1 $3 class="$4 table table-hover" ', $content);
 }
 
+
 if ( ! function_exists( 'sparkling_social_icons' ) ) :
+
 /**
  * Display social links in footer and widgets
  *
@@ -243,14 +223,23 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
         echo 'a, #infinite-handle span, #secondary .widget .post-content a {color:' . of_get_option('link_color') . '}';
       }
       if ( of_get_option('link_hover_color')) {
-        echo 'a:hover, a:active, #secondary .widget .post-content a:hover {color: '.of_get_option('link_hover_color').';}';
+        echo 'a:hover, a:active, #secondary .widget .post-content a:hover,
+        .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover,
+        .woocommerce nav.woocommerce-pagination ul li span.current  {color: '.of_get_option('link_hover_color').';}';
       }
       if ( of_get_option('element_color')) {
-        echo '.btn-default, .label-default, .flex-caption h2, .btn.btn-default.read-more, button, .navigation .wp-pagenavi-pagination span.current, .navigation .wp-pagenavi-pagination a:hover {background-color: '.of_get_option('element_color').'; border-color: '.of_get_option('element_color').';} .site-main [class*="navigation"] a, .more-link, .pagination>li>a, .pagination>li>span { color: '.of_get_option('element_color').'}';
+        echo '.btn-default, .label-default, .flex-caption h2, .btn.btn-default.read-more,button,
+              .navigation .wp-pagenavi-pagination span.current,.navigation .wp-pagenavi-pagination a:hover,
+              .woocommerce a.button, .woocommerce button.button,
+              .woocommerce input.button, .woocommerce #respond input#submit.alt,
+              .woocommerce a.button, .woocommerce button.button,
+              .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt { background-color: '.of_get_option('element_color').'; border-color: '.of_get_option('element_color').';}';
+        
+        echo '.site-main [class*="navigation"] a, .more-link, .pagination>li>a, .pagination>li>span { color: '.of_get_option('element_color').'}';
       }
 
       if ( of_get_option('element_color_hover')) {
-        echo '.btn-default:hover, .label-default[href]:hover, .tagcloud a:hover, button, .main-content [class*="navigation"] a:hover, .label-default[href]:focus, #infinite-handle span:hover, .btn.btn-default.read-more:hover, .btn-default:hover, .scroll-to-top:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .site-main [class*="navigation"] a:hover, .more-link:hover, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover, .cfa-button:hover { background-color: '.of_get_option('element_color_hover').'; border-color: '.of_get_option('element_color_hover').'; }';
+        echo '.btn-default:hover, .label-default[href]:hover, .tagcloud a:hover,button, .main-content [class*="navigation"] a:hover,.label-default[href]:focus, #infinite-handle span:hover,.btn.btn-default.read-more:hover, .btn-default:hover, .scroll-to-top:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .site-main [class*="navigation"] a:hover, .more-link:hover, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover, .cfa-button:hover,.woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover,.woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover{ background-color: '.of_get_option('element_color_hover').'; border-color: '.of_get_option('element_color_hover').'; }';
       }
       if ( of_get_option('element_color_hover')) {
         echo '.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {color: '.of_get_option('element_color_hover').';}';
@@ -274,7 +263,7 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
         echo '.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { color: '.of_get_option('nav_link_color').';}';
       }
       if ( of_get_option('nav_item_hover_color')) {
-        echo '.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .entry-title a:hover {color: '.of_get_option('nav_item_hover_color').';}';
+        echo '.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {color: '.of_get_option('nav_item_hover_color').';}';
       }
       if ( of_get_option('nav_dropdown_bg_hover') || of_get_option('nav_dropdown_item_hover') ) {
         echo '@media (max-width: 767px) {.navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {background: '.of_get_option('nav_dropdown_bg_hover').'; color:'.of_get_option('nav_dropdown_item_hover').';} }';
@@ -413,19 +402,18 @@ add_filter( 'kses_allowed_protocols' , 'sparkling_allow_skype_protocol' );
  * Fallback option for the old Social Icons.
  */
 function sparkling_social(){
-
-     if( of_get_option('footer_social') ) {
-        sparkling_social_icons();
-     }
+  if( of_get_option('footer_social') ) {
+    sparkling_social_icons();
+  }
 }
 
 /**
  * Adds the URL to the top level navigation menu item
  */
 function  sparkling_add_top_level_menu_url( $atts, $item, $args ){
-  if ( !wp_is_mobile() && $args->has_children  ) {
-            $atts['href'] = ! empty( $item->url ) ? $item->url : '';
-    }
+  if ( !wp_is_mobile() && isset($args->has_children) && $args->has_children  ) {
+    $atts['href'] = ! empty( $item->url ) ? $item->url : '';
+  }
   return $atts;
 }
 add_filter( 'nav_menu_link_attributes', 'sparkling_add_top_level_menu_url', 99, 3 );
@@ -436,7 +424,7 @@ add_filter( 'nav_menu_link_attributes', 'sparkling_add_top_level_menu_url', 99, 
 function sparkling_make_top_level_menu_clickable(){
 if ( !wp_is_mobile() ) { ?>
   <script type="text/javascript">
-    jQuery( document ).ready( function( $ ){      
+    jQuery( document ).ready( function( $ ){
       if ( $( window ).width() >= 767 ){
         $( '.navbar-nav > li.menu-item > a' ).click( function(){
           window.location = $( this ).attr( 'href' );

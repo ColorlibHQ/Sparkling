@@ -2,8 +2,8 @@
 
 Theme Name: Sparkling
 Theme URI: http://colorlib.com/wp/sparkling/
-Version: 2.1.0
-Tested up to: WP 4.3
+Version: 2.2.1
+Tested up to: WP 4.4
 
 Author: Aigars Silkalns
 Author URI: http://colorlib.com/wp/
@@ -27,7 +27,7 @@ Sparkling theme uses:
 
 /*========= Description =========*/
 
-Sparkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, portfolio, design, art, photography, personal and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready, compatible with WPML and is available in Spanish, French, Dutch, Polish, Russian, German, Brazilian Portuguese, Portuguese (Portugal), Persian (Iranian language), Romanian, Turkish, Bulgarian, Japanese, Lithuanian, Czech, Ukrainian, Traditional Chinese, Simplified Chinese, Indonesian, Estonian, Spanish (Argentina) and Italian. Sparkling is a free WordPress theme with premium functionality and design. Now theme is optimized to work with bbPress, Contact Form 7, Jetpack and other popular free and premium plugins.
+parkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, portfolio, design, art, photography, personal, ecommerce and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options based on WordPress Customizer to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready, compatible with WPML and is available in Spanish, French, Dutch, Polish, Russian, German, Brazilian Portuguese, Portuguese (Portugal), Persian (Iranian language), Romanian, Turkish, Bulgarian, Japanese, Lithuanian, Czech, Ukrainian, Traditional Chinese, Simplified Chinese, Indonesian, Estonian, Spanish (Argentina) and Italian. Sparkling is a free WordPress theme with premium functionality and design. Theme is ecommerce ready thanks to its WooCommerce integration. Now theme is optimized to work with bbPress, Contact Form 7, Jetpack, WooCommerce and other popular free and premium plugins. Lately we introduced a sticky/fixed navigation that you can enable or disable via WordPress Customizer.
 
 
 
@@ -47,7 +47,7 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 * Responsive design
 * Unlimited color variations
 * SEO friendly
-* Theme Options
+* WordPress Theme Customizer support
 * Image centric approach
 * Internationalized & localization
 * Drop-down Menu
@@ -56,12 +56,28 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 * Gravatar ready
 * Featured slider
 * Font Awesome icons
+* WooCommerce support
 
 /*========= Documentation =========*/
 
 Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
+
+= 2.2.1 - 11.12.2015 =
+
+* Fixed error with WooCommerce
+
+= 2.2.0 - 09.12.2015 =
+
+* Added WooCommerce support
+* Removed legacy code
+* Improved layout manager
+* Added options for sticky/fixed navigation.
+
+= 2.1.1 - 17.11.2015 =
+
+* Removed redundant function
 
 = 2.1.0 - 27.10.2015 =
 
