@@ -36,13 +36,12 @@
 
 				<?php
 				if ( get_theme_mod( 'sparkling_excerpts' ) == 1 ) :
-					the_excerpt();
-				else :
+					the_excerpt();?>
+					<p><a class="btn btn-default read-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php esc_html_e( 'Read More', 'sparkling' ); ?></a></p>
+				<?php else :
 					the_content();
 				endif;
 				 ?>
-
-				<p><a class="btn btn-default read-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php esc_html_e( 'Read More', 'sparkling' ); ?></a></p>
 
 				<?php
 					wp_link_pages( array(
