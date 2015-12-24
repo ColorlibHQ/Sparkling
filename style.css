@@ -70,6 +70,15 @@ a:focus {
   outline-offset: -2px;
 }
 
+pre {
+  width: 100%; /* specify width */
+  white-space: pre-wrap; /* CSS3 browsers */
+  white-space: -moz-pre-wrap !important; /* 1999+ Mozilla */
+  white-space: -pre-wrap; /* Opera 4 thru 6 */
+  white-space: -o-pre-wrap; /* Opera 7 and up */
+  word-wrap: break-word; /* IE 5.5+ and up */
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #DA4453;
   font-weight: 700;
