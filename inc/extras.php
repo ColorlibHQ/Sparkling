@@ -427,7 +427,9 @@ if ( !wp_is_mobile() ) { ?>
     jQuery( document ).ready( function( $ ){
       if ( $( window ).width() >= 767 ){
         $( '.navbar-nav > li.menu-item > a' ).click( function(){
-          window.location = $( this ).attr( 'href' );
+            if( $( this ).attr('target') !== '_blank' ){
+                window.location = $( this ).attr( 'href' );
+            }
         });
       }
     });
