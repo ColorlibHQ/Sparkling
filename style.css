@@ -1444,7 +1444,7 @@ p.logged-in-as {
 #menu-social li a[href*="facebook.com"] .fa:before{content:"\f09a"}
 #menu-social li a[href*="github.com"] .fa:before{content:"\f09b"}
 #menu-social li a[href*="/feed"] .fa:before{content:"\f09e"}
-#menu-social li a[href*="dribbble.com"] .fa:before,{content: "\f17d"}
+#menu-social li a[href*="dribbble.com"] .fa:before{content: "\f17d"}
 #menu-social li a[href*="skype.com"] .fa:before{content: "\f17e"}
 #menu-social li a[href*="foursquare.com"] .fa:before{content: "\f180"}
 #menu-social li a[href*="spotify.com"] .fa:before{content: "\f1bc"}
