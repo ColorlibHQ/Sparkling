@@ -1428,6 +1428,9 @@ p.logged-in-as {
 #menu-social li a[href*="github.com"]:hover {
   background-color: #4183C4 !important;
 }
+#menu-social li a[href*="xing.com"]:hover {
+  background-color: #006567 !important;
+}
 #menu-social li a[href*="spotify.com"]:hover {
   background-color: #81b71a !important;
 }
@@ -1441,6 +1444,7 @@ p.logged-in-as {
 }
 
 #menu-social li a[href*="twitter.com"] .fa:before{content:"\f099"}
+#menu-social li a[href*="xing.com"] .fa:before{content:"\f168"}
 #menu-social li a[href*="facebook.com"] .fa:before{content:"\f09a"}
 #menu-social li a[href*="github.com"] .fa:before{content:"\f09b"}
 #menu-social li a[href*="/feed"] .fa:before{content:"\f09e"}
