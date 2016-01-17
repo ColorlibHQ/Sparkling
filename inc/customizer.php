@@ -287,6 +287,17 @@ function sparkling_customizer( $wp_customize ) {
                 'type'    => 'select',
                 'choices'    => $typography_options['faces']
             ));
+            $wp_customize->add_setting('sparkling[main_body_typography][subset]', array(
+                'default' => '',
+                'type' => 'option',
+                'sanitize_callback' => 'sparkling_sanitize_nohtml'
+            ));
+            $wp_customize->add_control('sparkling[main_body_typography][subset]', array(
+                'label' => __('Font susbet', 'sparkling'),
+                'section' => 'sparkling_typography_options',
+                'description' => __('Enter the Google fonts subset', 'sparkling'),
+                'type' => 'text'
+            ));
             $wp_customize->add_setting('sparkling[main_body_typography][style]', array(
                 'default' => $typography_defaults['style'],
                 'type' => 'option',
