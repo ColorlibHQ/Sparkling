@@ -33,7 +33,7 @@ class sparkling_popular_posts extends WP_Widget
                 <?php
 
                   $featured_args = array(
-                      'posts_per_page' => $limit + 1 ,
+                      'posts_per_page' => $limit,
                       'orderby' => 'comment_count',
                       'order' => 'DESC',
                       'ignore_sticky_posts' => 1

@@ -385,6 +385,8 @@ hr.section-divider {
   border: 1px solid #dadada;
   border-top: none;
 }
+body.archive .post-inner-content,
+body.blog .post-inner-content,
 .post-inner-content:first-child {
   border-top: 1px solid #dadada;;
 }
