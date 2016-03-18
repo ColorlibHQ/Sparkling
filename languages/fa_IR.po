@@ -1,19 +1,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-10-16 20:22+0300\n"
-"PO-Revision-Date: 2015-10-16 20:22+0300\n"
+"POT-Creation-Date: 2016-03-18 11:07+0200\n"
+"PO-Revision-Date: 2016-03-18 11:07+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: RobertCreed <info@robertcreed.me>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
-"esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x:1,2c;"
+"_nx:4c,1,2;_n:1,2\n"
 "_nx: 4c,1,2;_n:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
@@ -24,11 +24,9 @@ msgstr "اوه! این صفحه نمی&rsquo;تواند پیدا شود."
 
 #: ../404.php:19
 msgid ""
-"It looks like nothing was found at this location. Maybe try one of the links "
-"below or a search?"
-msgstr ""
-"بنظر می رسد چیزی در این محل پیدا نشد. شاید امتحان یکی از لینک های زیر یا "
-"جستجو؟"
+"It looks like nothing was found at this location. Maybe try one of the links below or "
+"a search?"
+msgstr "بنظر می رسد چیزی در این محل پیدا نشد. شاید امتحان یکی از لینک های زیر یا جستجو؟"
 
 #: ../404.php:25
 #, fuzzy
@@ -138,29 +136,25 @@ msgstr "چیزی یافت نشد."
 
 #: ../content-none.php:19
 #, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-"آماده اید برای ارسال اولین مطلب؟ <a href=\"%1$s\">از اینجا شروع کنید</a>."
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "آماده اید برای ارسال اولین مطلب؟ <a href=\"%1$s\">از اینجا شروع کنید</a>."
 
 #: ../content-none.php:23
 msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
+"Sorry, but nothing matched your search terms. Please try again with some different "
+"keywords."
 msgstr ""
-"متاسفیم، اما چیزی مطابق جستجوی شما یافت نشد. لطفا مجدد سعی کنید با کلمات "
-"متفاوت."
+"متاسفیم، اما چیزی مطابق جستجوی شما یافت نشد. لطفا مجدد سعی کنید با کلمات متفاوت."
 
 #: ../content-none.php:28
 msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can "
+"help."
 msgstr ""
-"بنظر می رسد ما نمی&rsquo;توانیم پیدا کنیم آنچه شما&rsquo;بدنبالش هستید. "
-"احتمالا جستجو می تواند کمک کند."
+"بنظر می رسد ما نمی&rsquo;توانیم پیدا کنیم آنچه شما&rsquo;بدنبالش هستید. احتمالا جستجو "
+"می تواند کمک کند."
 
-#: ../content-page.php:21 ../content-single.php:35 ../content.php:49
-#: ../image.php:79
+#: ../content-page.php:21 ../content-single.php:35 ../content.php:48 ../image.php:79
 msgid "Pages:"
 msgstr "صفحات:"
 
@@ -189,7 +183,7 @@ msgstr "1 نظر"
 msgid "% Comments"
 msgstr "% نظر"
 
-#: ../content.php:32 ../content.php:45
+#: ../content.php:32 ../content.php:40
 msgid "Read More"
 msgstr "بیشتر بخوانید"
 
@@ -197,7 +191,7 @@ msgstr "بیشتر بخوانید"
 msgid "Primary Menu"
 msgstr "قهرست اولیه"
 
-#: ../functions.php:70 ../inc/extras.php:198
+#: ../functions.php:70 ../inc/extras.php:136
 msgid "Footer Links"
 msgstr "لینک پانویس"
 
@@ -237,11 +231,11 @@ msgstr "ویدجت پانویس 2"
 msgid "Footer Widget 3"
 msgstr "ویدجت پانویس 3"
 
-#: ../functions.php:304 ../options.php:23
+#: ../functions.php:304
 msgid "Right Sidebar"
 msgstr "نوار کناری راست"
 
-#: ../functions.php:304 ../options.php:23
+#: ../functions.php:304
 msgid "Left Sidebar"
 msgstr "نوار کناری چپ"
 
@@ -290,23 +284,23 @@ msgstr "نمایش در صفحه اصلی"
 msgid "Slider options"
 msgstr "تنظیمات اسلایدر"
 
-#: ../inc/customizer.php:76 ../options.php:116
+#: ../inc/customizer.php:76
 msgid "Check if you want to enable slider"
 msgstr "فعال کنید اگر مایل به نمایش اسلایدر هستید"
 
-#: ../inc/customizer.php:91 ../options.php:123
+#: ../inc/customizer.php:91
 msgid "Slider Category"
 msgstr "دسته بندی اسلایدر"
 
-#: ../inc/customizer.php:94 ../options.php:124
+#: ../inc/customizer.php:94
 msgid "Select a category for the featured post slider"
 msgstr "انتخاب دسته بندی برای اسلایدر مطالب ویژه"
 
-#: ../inc/customizer.php:104 ../options.php:132
+#: ../inc/customizer.php:104
 msgid "Number of slide items"
 msgstr "تعداد اسلایدها"
 
-#: ../inc/customizer.php:106 ../options.php:133
+#: ../inc/customizer.php:106
 msgid "Enter the number of slide items"
 msgstr "تعداد موارد  اسلاید را وارد کنید"
 
@@ -315,7 +309,7 @@ msgstr "تعداد موارد  اسلاید را وارد کنید"
 msgid "Layout options"
 msgstr "تنظیمات چیدمان (Layout)"
 
-#: ../inc/customizer.php:123 ../options.php:141
+#: ../inc/customizer.php:123
 msgid "Website Layout Options"
 msgstr "گزینه های طرح بندی وب سایت"
 
@@ -324,271 +318,275 @@ msgstr "گزینه های طرح بندی وب سایت"
 msgid "Choose between different layout options to be used as default"
 msgstr "انتخاب کنید بین نوار کنار چپ و راست برای تایین بعنوان پیش فرض"
 
-#: ../inc/customizer.php:136
+#: ../inc/customizer.php:137
+msgid "WooCommerce Page Layout Options"
+msgstr ""
+
+#: ../inc/customizer.php:140
+msgid ""
+"Choose between different layout options to be used as default for all woocommerce "
+"pages"
+msgstr ""
+
+#: ../inc/customizer.php:151
 #, fuzzy
 msgid "Element Color"
 msgstr "رنگ اِلِمان و دگمه‌ها"
 
-#: ../inc/customizer.php:137 ../inc/customizer.php:149
-#: ../inc/customizer.php:203 ../inc/customizer.php:213
-#: ../inc/customizer.php:223 ../inc/customizer.php:233
-#: ../inc/customizer.php:311 ../inc/customizer.php:321
-#: ../inc/customizer.php:338 ../inc/customizer.php:478
-#: ../inc/customizer.php:489 ../options.php:152 ../options.php:160
-#: ../options.php:205 ../options.php:213 ../options.php:221 ../options.php:229
-#: ../options.php:259 ../options.php:267 ../options.php:280 ../options.php:390
-#: ../options.php:398
+#: ../inc/customizer.php:152 ../inc/customizer.php:164 ../inc/customizer.php:218
+#: ../inc/customizer.php:228 ../inc/customizer.php:238 ../inc/customizer.php:248
+#: ../inc/customizer.php:326 ../inc/customizer.php:336 ../inc/customizer.php:366
+#: ../inc/customizer.php:506 ../inc/customizer.php:517
 msgid "Default used if no color is selected"
 msgstr "به طور پیش فرض استفاده می شود اگر رنگ انتخاب شود"
 
-#: ../inc/customizer.php:148 ../options.php:159
+#: ../inc/customizer.php:163
 msgid "Element color on hover"
 msgstr "رنگ عنصر در شناور"
 
-#: ../inc/customizer.php:156 ../options.php:175
+#: ../inc/customizer.php:171
 msgid "Action Button"
 msgstr "دکمه اکشن"
 
-#: ../inc/customizer.php:166 ../options.php:180
+#: ../inc/customizer.php:181
 msgid "Call For Action Text"
 msgstr "فراخوان متن اکشن"
 
-#: ../inc/customizer.php:167 ../options.php:181
+#: ../inc/customizer.php:182
 msgid "Enter the text for call for action section"
 msgstr "متن را وارد کنید برای انتخاب اکشن"
 
-#: ../inc/customizer.php:178 ../options.php:188
+#: ../inc/customizer.php:193
 msgid "Call For Action Button Title"
 msgstr "عنوان متن کلید اکشن"
 
-#: ../inc/customizer.php:180 ../options.php:189
+#: ../inc/customizer.php:195
 msgid "Enter the title for Call For Action button"
 msgstr "وارد کردن یک عنوان  برای کلید اکشن"
 
-#: ../inc/customizer.php:190 ../options.php:196
+#: ../inc/customizer.php:205
 msgid "CFA button link"
 msgstr "لینک کلید CFA"
 
-#: ../inc/customizer.php:192 ../options.php:197
+#: ../inc/customizer.php:207
 msgid "Enter the link for Call For Action button"
 msgstr "وارد کردن یک لینک برای کلید اکشن"
 
-#: ../inc/customizer.php:202 ../options.php:204
+#: ../inc/customizer.php:217
 msgid "Call For Action Text Color"
 msgstr "فراخوان رنگ متن اکشن"
 
-#: ../inc/customizer.php:212 ../options.php:212
+#: ../inc/customizer.php:227
 msgid "Call For Action Background Color"
 msgstr "فراخوان رنگ پس زمینه اکشن"
 
-#: ../inc/customizer.php:222 ../options.php:220
+#: ../inc/customizer.php:237
 msgid "Call For Action Button Border Color"
 msgstr "فراخوان رنگ حاشیه کلید اکشن"
 
-#: ../inc/customizer.php:232 ../options.php:228
+#: ../inc/customizer.php:247
 msgid "Call For Action Button Text Color"
 msgstr "فراخوان رنگ متن کلید اکشن"
 
-#: ../inc/customizer.php:239 ../options.php:236
+#: ../inc/customizer.php:254
 msgid "Typography"
 msgstr "تایپوگرافی"
 
-#: ../inc/customizer.php:259 ../options.php:241
+#: ../inc/customizer.php:274
 msgid "Main Body Text"
 msgstr "متن بدنه اصلی"
 
-#: ../inc/customizer.php:260
+#: ../inc/customizer.php:275
 #, fuzzy
 msgid "Used in p tags"
 msgstr "مورد استفاده در تگ P"
 
-#: ../inc/customizer.php:300 ../options.php:250
+#: ../inc/customizer.php:315
 msgid "Heading Color"
 msgstr "رنگ عنوان"
 
-#: ../inc/customizer.php:301 ../options.php:251
+#: ../inc/customizer.php:316
 msgid "Color for all headings (h1-h6)"
 msgstr "رنگ برای تمام عناوین (h1-h6)"
 
-#: ../inc/customizer.php:310 ../options.php:258
+#: ../inc/customizer.php:325
 msgid "Link Color"
 msgstr "رنگ لینک"
 
-#: ../inc/customizer.php:320 ../options.php:266
+#: ../inc/customizer.php:335
 msgid "Link:hover Color"
 msgstr "لینک:رنگ شناور"
 
-#: ../inc/customizer.php:327 ../options.php:274
+#: ../inc/customizer.php:342
 msgid "Header"
 msgstr "سربرگ"
 
-#: ../inc/customizer.php:337 ../options.php:279
+#: ../inc/customizer.php:353
+msgid "Sticky Header"
+msgstr ""
+
+#: ../inc/customizer.php:354
+msgid "Check to show fixed header"
+msgstr ""
+
+#: ../inc/customizer.php:365
 msgid "Top nav background color"
 msgstr "رنگ پس زمینه منو بالا"
 
-#: ../inc/customizer.php:347 ../options.php:287
+#: ../inc/customizer.php:375
 msgid "Top nav item color"
 msgstr "رنگ آیتم های منو بالا"
 
-#: ../inc/customizer.php:348 ../options.php:288
+#: ../inc/customizer.php:376
 msgid "Link color"
 msgstr "رنگ لینک"
 
-#: ../inc/customizer.php:358 ../options.php:295
+#: ../inc/customizer.php:386
 msgid "Top nav item hover color"
 msgstr "رنگ مورد شناور منو بالا"
 
-#: ../inc/customizer.php:359 ../options.php:296
+#: ../inc/customizer.php:387
 msgid "Link:hover color"
 msgstr "لینک:رنگ شناور"
 
-#: ../inc/customizer.php:369 ../options.php:303
+#: ../inc/customizer.php:397
 msgid "Top nav dropdown background color"
 msgstr "رنگ پس زمینه منو کرکره ای بالا"
 
-#: ../inc/customizer.php:370 ../inc/customizer.php:403 ../options.php:304
-#: ../options.php:328
+#: ../inc/customizer.php:398 ../inc/customizer.php:431
 msgid "Background of dropdown item hover color"
 msgstr "رنگ شناور پس زمینه منو کرکره ای بالا"
 
-#: ../inc/customizer.php:380 ../options.php:311
+#: ../inc/customizer.php:408
 msgid "Top nav dropdown item color"
 msgstr "رنگ مورد کرکره منو بالا"
 
-#: ../inc/customizer.php:381 ../options.php:312
+#: ../inc/customizer.php:409
 msgid "Dropdown item color"
 msgstr "رنگ مورد کرکره"
 
-#: ../inc/customizer.php:391 ../options.php:319
+#: ../inc/customizer.php:419
 msgid "Top nav dropdown item hover color"
 msgstr "رنگ شناور آیتم کرکره منو بالا"
 
-#: ../inc/customizer.php:392 ../options.php:320
+#: ../inc/customizer.php:420
 msgid "Dropdown item hover color"
 msgstr "رنگ شناور اقلام منو"
 
-#: ../inc/customizer.php:402 ../options.php:327
+#: ../inc/customizer.php:430
 msgid "Top nav dropdown item background hover color"
 msgstr "رنگ پس زمینه شناور اقلام منو بالا"
 
-#: ../inc/customizer.php:409 ../options.php:335
+#: ../inc/customizer.php:437
 msgid "Footer"
 msgstr "پانویس"
 
-#: ../inc/customizer.php:419 ../options.php:340
+#: ../inc/customizer.php:447
 msgid "Footer widget area background color"
 msgstr "رنگ پس زمینه محل ویدجت پانویس"
 
-#: ../inc/customizer.php:429 ../options.php:347
+#: ../inc/customizer.php:457
 msgid "Footer background color"
 msgstr "رنگ پس زمینه پانویس"
 
-#: ../inc/customizer.php:439 ../options.php:354
+#: ../inc/customizer.php:467
 msgid "Footer text color"
 msgstr "رنگ متن پانویس"
 
-#: ../inc/customizer.php:449 ../options.php:361
+#: ../inc/customizer.php:477
 msgid "Footer link color"
 msgstr "رنگ لینک پانویس"
 
-#: ../inc/customizer.php:459 ../options.php:368
+#: ../inc/customizer.php:487
 msgid "Footer information"
 msgstr "اطلاعات پانویس"
 
-#: ../inc/customizer.php:460 ../options.php:369
+#: ../inc/customizer.php:488
 msgid "Copyright text in footer"
 msgstr "رنگ متن کپی رایت در پانویس"
 
-#: ../inc/customizer.php:467 ../options.php:384
+#: ../inc/customizer.php:495
 msgid "Social"
 msgstr "اجتماعی"
 
-#: ../inc/customizer.php:477 ../options.php:389
+#: ../inc/customizer.php:505
 msgid "Social icon color"
 msgstr "رنگ آیکون های اجتماعی"
 
-#: ../inc/customizer.php:488 ../options.php:397
+#: ../inc/customizer.php:516
 msgid "Footer social icon color"
 msgstr "رنگ آیکون های اجتماعی پانویس"
 
-#: ../inc/customizer.php:499 ../options.php:376
+#: ../inc/customizer.php:527
 #, fuzzy
 msgid "Footer Social Icons"
 msgstr "رنگ آیکون های اجتماعی پانویس"
 
-#: ../inc/customizer.php:500
+#: ../inc/customizer.php:528
 #, fuzzy
 msgid "Check to show social icons in footer"
 msgstr "رنگ آیکون های اجتماعی پانویس"
 
-#: ../inc/customizer.php:507 ../options.php:542
+#: ../inc/customizer.php:535
 msgid "Other"
 msgstr "دیگر"
 
-#: ../inc/customizer.php:517 ../options.php:547
+#: ../inc/customizer.php:545
 msgid "Custom CSS"
 msgstr "CSS سفارشی"
 
-#: ../inc/customizer.php:518 ../options.php:548
+#: ../inc/customizer.php:546
 msgid "Additional CSS"
 msgstr "CSS اضافی"
 
-#: ../inc/customizer.php:525 ../inc/extras.php:383
+#: ../inc/customizer.php:553 ../inc/extras.php:334
 msgid "Support and Documentation"
 msgstr "پشتیبانی و مستندات"
 
-#: ../inc/customizer.php:701 ../inc/extras.php:389
+#: ../inc/customizer.php:737 ../inc/extras.php:340
 msgid "Sparkling Documentation"
 msgstr "مستندات Sparkling"
 
-#: ../inc/customizer.php:702 ../inc/extras.php:390
+#: ../inc/customizer.php:738 ../inc/extras.php:341
 msgid ""
-"The best way to contact us with <b>support questions</b> and <b>bug reports</"
-"b> is via"
+"The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via"
 msgstr "بهترین راه تماس با ما <b>پشتیبانی پرسش</b> و <b>گزارش باگ </b> است"
 
-#: ../inc/customizer.php:702 ../inc/extras.php:390
+#: ../inc/customizer.php:738 ../inc/extras.php:341
 msgid "Colorlib support forum"
 msgstr "انجمن پشتیبانی Colorlib"
 
-#: ../inc/customizer.php:703 ../inc/extras.php:391
+#: ../inc/customizer.php:739 ../inc/extras.php:342
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "اگر این قالب را می پسندید، من قدردانی میکنم از هر نوع دنبال کردنی:"
 
-#: ../inc/customizer.php:705 ../inc/extras.php:393
+#: ../inc/customizer.php:741 ../inc/extras.php:344
 msgid "Rate this Theme"
 msgstr "رای به این قالب"
 
-#: ../inc/customizer.php:706 ../inc/extras.php:394
+#: ../inc/customizer.php:742 ../inc/extras.php:345
 msgid "Like on Facebook"
 msgstr "پسند به ما در فیسبوک"
 
-#: ../inc/customizer.php:707 ../inc/extras.php:395
+#: ../inc/customizer.php:743 ../inc/extras.php:346
 msgid "Follow on Twitter"
 msgstr "دنبال کردن ما در توییتر"
 
 #: ../inc/extras.php:61
-#, php-format
-msgid "Page %s"
-msgstr "صفحات %s"
-
-#: ../inc/extras.php:125
 #, fuzzy
-msgid ""
-"This post is password protected. To view it please enter your password below:"
+msgid "This post is password protected. To view it please enter your password below:"
 msgstr ""
-"<p>این مطلب با رمز عبور محافظت می شود. برای نمایش رمز را در پایین وارد کنید: "
-"</p>"
+"<p>این مطلب با رمز عبور محافظت می شود. برای نمایش رمز را در پایین وارد کنید: </p>"
 
-#: ../inc/extras.php:126
+#: ../inc/extras.php:62
 msgid "Password:"
 msgstr "رمز عبور:"
 
-#: ../inc/extras.php:129
+#: ../inc/extras.php:65
 msgid "Submit"
 msgstr "تایید"
 
-#: ../inc/extras.php:272
+#: ../inc/extras.php:210
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "پوسته توسط %1$s قدرت گرفته از %2$s"
@@ -596,41 +594,43 @@ msgstr "پوسته توسط %1$s قدرت گرفته از %2$s"
 #: ../inc/metaboxes.php:16
 #, fuzzy
 msgid ""
-"Select layout for this specific Page only ( Note: This setting only reflects "
-"if page Template is set as Default Template and Blog Type Templates.)"
+"Select layout for this specific Page only ( Note: This setting only reflects if page "
+"Template is set as Default Template and Blog Type Templates.)"
 msgstr ""
-"انتخاب این چیدمان (layout) فقط برای یک صفحه‌ی مشخص. (توجه: این مورد تنها "
-"زمانی تاثیرگذار خواهد بود که پوسته بر روی ‪\"‬پوسته‌ی پیشفرض‪\"‬ و ‪\"‬حالت وبلاگ‪\"‬ "
-"تنظیم شده باشد.)"
+"انتخاب این چیدمان (layout) فقط برای یک صفحه‌ی مشخص. (توجه: این مورد تنها زمانی "
+"تاثیرگذار خواهد بود که پوسته بر روی ‪\"‬پوسته‌ی پیشفرض‪\"‬ و ‪\"‬حالت وبلاگ‪\"‬ تنظیم شده "
+"باشد.)"
 
 #: ../inc/metaboxes.php:21
 #, fuzzy
 msgid "Select layout for this specific Post only"
 msgstr "انتخاب چیدمان (layout) فقط برای این مطلب"
 
+#: ../inc/metaboxes.php:28
+msgid "Select layout for this specific Product only"
+msgstr ""
+
 #: ../inc/template-tags.php:23
 msgid "Posts navigation"
 msgstr "ناوبری مطالب"
 
-#: ../inc/template-tags.php:27
+#: ../inc/template-tags.php:31
 msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
 msgstr "<i class=\"fa fa-chevron-left\"></i> مطالب قدیمی تر"
 
-#: ../inc/template-tags.php:31
+#: ../inc/template-tags.php:35
 msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
 msgstr "مطالب جدیدتر <i class=\"fa fa-chevron-right\"></i>"
 
-#: ../inc/template-tags.php:56
+#: ../inc/template-tags.php:83
 msgid "Post navigation"
 msgstr "ناوبری مطالب"
 
-#: ../inc/widgets/widget-categories.php:11
-#: ../inc/widgets/widget-categories.php:12
+#: ../inc/widgets/widget-categories.php:11 ../inc/widgets/widget-categories.php:12
 msgid "Sparkling Categories"
 msgstr "دسته بندی Sparkling"
 
-#: ../inc/widgets/widget-categories.php:17
-#: ../inc/widgets/widget-categories.php:76
+#: ../inc/widgets/widget-categories.php:17 ../inc/widgets/widget-categories.php:76
 msgid "Categories"
 msgstr "دسته بندی"
 
@@ -646,13 +646,11 @@ msgstr "محدودیت دسته بندی"
 msgid "Enable Posts Count"
 msgstr "فعال کردن شمارش مطالب"
 
-#: ../inc/widgets/widget-popular-posts.php:11
-#: ../inc/widgets/widget-popular-posts.php:12
+#: ../inc/widgets/widget-popular-posts.php:11 ../inc/widgets/widget-popular-posts.php:12
 msgid "Sparkling Popular Posts Widget"
 msgstr "ویدجت مطالب محبوب Sparkling"
 
-#: ../inc/widgets/widget-popular-posts.php:17
-#: ../inc/widgets/widget-popular-posts.php:94
+#: ../inc/widgets/widget-popular-posts.php:17 ../inc/widgets/widget-popular-posts.php:94
 msgid "Popular Posts"
 msgstr "مطالب محبوب"
 
@@ -671,167 +669,6 @@ msgstr "ویدجت شبکه Sparkling"
 #: ../inc/widgets/widget-social.php:18 ../inc/widgets/widget-social.php:40
 msgid "Follow us"
 msgstr "ما را دنبال کنید"
-
-#: ../options.php:27
-msgid "One"
-msgstr "یک"
-
-#: ../options.php:28
-msgid "Two"
-msgstr "دو"
-
-#: ../options.php:29
-msgid "Three"
-msgstr "سه"
-
-#: ../options.php:30
-msgid "Four"
-msgstr "چهار"
-
-#: ../options.php:31
-msgid "Five"
-msgstr "پنج"
-
-#: ../options.php:36
-msgid "French Toast"
-msgstr "نان تست فرانسوی"
-
-#: ../options.php:37
-msgid "Pancake"
-msgstr "کلوچه"
-
-#: ../options.php:38
-msgid "Omelette"
-msgstr "املت"
-
-#: ../options.php:39
-msgid "Crepe"
-msgstr "کرپ"
-
-#: ../options.php:40
-msgid "Waffle"
-msgstr "وفل"
-
-#: ../options.php:110
-msgid "Main"
-msgstr "صفحه اصلی"
-
-#: ../options.php:115
-msgid "Do You want to display image slider on the Home Page?"
-msgstr "آیا مایلید اسلایدر را در صفحه اصلی نمایش دهید؟"
-
-#: ../options.php:142
-msgid "Choose between Left and Right sidebar options to be used as default"
-msgstr "انتخاب کنید بین نوار کنار چپ و راست برای تایین بعنوان پیش فرض"
-
-#: ../options.php:151
-msgid "Element color"
-msgstr "رنگ عنصر"
-
-#: ../options.php:167
-msgid "Custom Favicon"
-msgstr "فاویکن دلخواه"
-
-#: ../options.php:168
-msgid ""
-"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
-msgstr ""
-"بارگذاری یک تصویر 32px x 32px PNG/GIF و آن استفاده خواهد شد بعنوان فاویکن "
-"سایت شما"
-
-#: ../options.php:242
-msgid "Used in P tags"
-msgstr "مورد استفاده در تگ P"
-
-#: ../options.php:377
-#, fuzzy
-msgid "Show/Hide social icons in footer"
-msgstr "رنگ آیکون های اجتماعی پانویس"
-
-#: ../options.php:405
-msgid "Add full URL for your social network profiles"
-msgstr "اضافه کردن URL کامل برای پروفایل های شبکه های اجتماعی خود"
-
-#: ../options.php:406
-#, fuzzy
-msgid "Facebook"
-msgstr "فیسبوک"
-
-#: ../options.php:415
-#, fuzzy
-msgid "Twitter"
-msgstr "توییتر"
-
-#: ../options.php:423
-#, fuzzy
-msgid "Google+"
-msgstr "گوگل پلاس"
-
-#: ../options.php:431
-#, fuzzy
-msgid "Youtube"
-msgstr "یوتیوب"
-
-#: ../options.php:439
-msgid "Vimeo"
-msgstr ""
-
-#: ../options.php:447
-#, fuzzy
-msgid "LinkedIn"
-msgstr "لينكداين"
-
-#: ../options.php:455
-#, fuzzy
-msgid "Pinterest"
-msgstr "پینترست"
-
-#: ../options.php:463
-#, fuzzy
-msgid "RSS Feed"
-msgstr "خوراک RSS"
-
-#: ../options.php:471
-#, fuzzy
-msgid "Tumblr"
-msgstr "تامبلر"
-
-#: ../options.php:479
-#, fuzzy
-msgid "Flickr"
-msgstr "فلیکر"
-
-#: ../options.php:487
-#, fuzzy
-msgid "Instagram"
-msgstr "اینستاگرام"
-
-#: ../options.php:495
-#, fuzzy
-msgid "Dribbble"
-msgstr "دریبل"
-
-#: ../options.php:503
-#, fuzzy
-msgid "Skype"
-msgstr "اسکایپ"
-
-#: ../options.php:511
-msgid "Foursquare"
-msgstr ""
-
-#: ../options.php:519
-msgid "SoundCloud"
-msgstr ""
-
-#: ../options.php:527
-#, fuzzy
-msgid "GitHub"
-msgstr "گیت هاب"
-
-#: ../options.php:535
-msgid "Spotify"
-msgstr ""
 
 #: ../search.php:16
 #, php-format
@@ -865,13 +702,125 @@ msgstr "جستجو"
 msgid "Meta"
 msgstr "متا"
 
+#~ msgid "Page %s"
+#~ msgstr "صفحات %s"
+
+#~ msgid "One"
+#~ msgstr "یک"
+
+#~ msgid "Two"
+#~ msgstr "دو"
+
+#~ msgid "Three"
+#~ msgstr "سه"
+
+#~ msgid "Four"
+#~ msgstr "چهار"
+
+#~ msgid "Five"
+#~ msgstr "پنج"
+
+#~ msgid "French Toast"
+#~ msgstr "نان تست فرانسوی"
+
+#~ msgid "Pancake"
+#~ msgstr "کلوچه"
+
+#~ msgid "Omelette"
+#~ msgstr "املت"
+
+#~ msgid "Crepe"
+#~ msgstr "کرپ"
+
+#~ msgid "Waffle"
+#~ msgstr "وفل"
+
+#~ msgid "Main"
+#~ msgstr "صفحه اصلی"
+
+#~ msgid "Do You want to display image slider on the Home Page?"
+#~ msgstr "آیا مایلید اسلایدر را در صفحه اصلی نمایش دهید؟"
+
+#~ msgid "Choose between Left and Right sidebar options to be used as default"
+#~ msgstr "انتخاب کنید بین نوار کنار چپ و راست برای تایین بعنوان پیش فرض"
+
+#~ msgid "Element color"
+#~ msgstr "رنگ عنصر"
+
+#~ msgid "Custom Favicon"
+#~ msgstr "فاویکن دلخواه"
+
+#~ msgid "Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
+#~ msgstr ""
+#~ "بارگذاری یک تصویر 32px x 32px PNG/GIF و آن استفاده خواهد شد بعنوان فاویکن سایت شما"
+
+#~ msgid "Used in P tags"
+#~ msgstr "مورد استفاده در تگ P"
+
+#, fuzzy
+#~ msgid "Show/Hide social icons in footer"
+#~ msgstr "رنگ آیکون های اجتماعی پانویس"
+
+#~ msgid "Add full URL for your social network profiles"
+#~ msgstr "اضافه کردن URL کامل برای پروفایل های شبکه های اجتماعی خود"
+
+#, fuzzy
+#~ msgid "Facebook"
+#~ msgstr "فیسبوک"
+
+#, fuzzy
+#~ msgid "Twitter"
+#~ msgstr "توییتر"
+
+#, fuzzy
+#~ msgid "Google+"
+#~ msgstr "گوگل پلاس"
+
+#, fuzzy
+#~ msgid "Youtube"
+#~ msgstr "یوتیوب"
+
+#, fuzzy
+#~ msgid "LinkedIn"
+#~ msgstr "لينكداين"
+
+#, fuzzy
+#~ msgid "Pinterest"
+#~ msgstr "پینترست"
+
+#, fuzzy
+#~ msgid "RSS Feed"
+#~ msgstr "خوراک RSS"
+
+#, fuzzy
+#~ msgid "Tumblr"
+#~ msgstr "تامبلر"
+
+#, fuzzy
+#~ msgid "Flickr"
+#~ msgstr "فلیکر"
+
+#, fuzzy
+#~ msgid "Instagram"
+#~ msgstr "اینستاگرام"
+
+#, fuzzy
+#~ msgid "Dribbble"
+#~ msgstr "دریبل"
+
+#, fuzzy
+#~ msgid "Skype"
+#~ msgstr "اسکایپ"
+
+#, fuzzy
+#~ msgid "GitHub"
+#~ msgstr "گیت هاب"
+
 #~ msgid "Theme Options"
 #~ msgstr "تنظیمات قالب"
 
 #~ msgid "Click OK to reset. Any theme settings will be lost!"
-#~ msgstr ""
-#~ "روی ok برای تنظیم مجدد کلیک کنید. تمام تنظیمات به حالت اولیه در خواهند "
-#~ "آمد!"
+#~ msgstr "روی ok برای تنظیم مجدد کلیک کنید. تمام تنظیمات به حالت اولیه در خواهند آمد!"
 
 #~ msgid "Default options restored."
 #~ msgstr "تنظیمات پیش فرض اعمال شدند."
@@ -889,8 +838,7 @@ msgstr "متا"
 #~ msgstr "حذف"
 
 #~ msgid "Upgrade your version of WordPress for full media support."
-#~ msgstr ""
-#~ "نسخه وردپرس خود را برای پشتیبانی از تمام پرونده های مدیا ارتقا دهید."
+#~ msgstr "نسخه وردپرس خود را برای پشتیبانی از تمام پرونده های مدیا ارتقا دهید."
 
 #~ msgid "View File"
 #~ msgstr "نمایش پرونده"
