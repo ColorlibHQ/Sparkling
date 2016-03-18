@@ -10,9 +10,9 @@ Author URI: http://colorlib.com/wp/
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl.html
 -------------------------------------------------------
-Sparkling theme, Copyright 2014-2015 colorlib.com
+Sparkling theme, Copyright 2014-2016 colorlib.com
 Sparkling WordPress theme is distributed under the terms of the GNU GPL
-Sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Sparkling is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 -------------------------------------------------------
 
 /*========= Credits =========*/
