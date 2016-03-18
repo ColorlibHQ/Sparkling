@@ -64,6 +64,14 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
 
+= 2.2.3 - 18.03.2016 =
+
+* Fixed problem when top menu items set to open on new tab.
+* Fixed problems with font reset
+* Fixed problem with one extra post for recent post widget
+* Added missing border for posts when no featured image is used.
+* Added new social media icons.
+
 = 2.2.2 - 18.01.2016 =
 
 * Updated Spanish translation
