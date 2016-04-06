@@ -76,7 +76,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
                         $output .= $indent . '<li' . $id . $value . $class_names .'>';
 
                         $atts = array();
-                        $atts['title']  = ( ! empty( $item->attr_title ) && !strpos($item->attr_title, 'fa-') )       ? $item->attr_title        : $item->title;
+                        $atts['title']  = ( empty( $item->attr_title ) || ( (strpos($item->attr_title, 'fa-') !== false) || (strpos($item->attr_title, 'glyphicon-') !== false) ) )       ? $item->title        : $item->attr_title;
                         $atts['target'] = ! empty( $item->target )        ? $item->target        : '';
                         $atts['rel']    = ! empty( $item->xfn )                ? $item->xfn        : '';
 
@@ -108,10 +108,16 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
                          * if there is a value in the attr_title property. If the attr_title
                          * property is NOT null we apply it as the class name for the glyphicon.
                          */
-                        if ( ! empty( $item->attr_title ) )
-                                $item_output .= '<a'. $attributes .'><span class="glyphicon ' . esc_attr( $item->attr_title ) . '"></span>&nbsp;';
-                        else
-                                $item_output .= '<a'. $attributes .'>';
+                        if ( ! empty( $item->attr_title)){
+				if (strpos( $item->attr_title, 'glyphicon-' ) !== false )
+					$item_output .= '<a'. $attributes .'><span class="glyphicon ' . esc_attr( $item->attr_title ) . '"></span>&nbsp;';
+				elseif (strpos( $item->attr_title, 'fa-' ) !== false )
+					$item_output .= '<a'. $attributes .'><span class="' . esc_attr( $item->attr_title ) . '"></span>&nbsp;';
+				else
+					$item_output .= '<a'. $attributes .'>';
+			}
+			else
+				$item_output .= '<a'. $attributes .'>';
 
                         $item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
                         $item_output .= ( $args->has_children && 0 === $depth ) ? ' <span class="caret"></span></a>' : '</a>';
