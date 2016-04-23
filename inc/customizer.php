@@ -298,7 +298,7 @@ function sparkling_customizer( $wp_customize ) {
                 'choices'    => $typography_options['styles']
             ));
             $wp_customize->add_setting('sparkling[main_body_typography][color]', array(
-                'default' => $typography_defaults['style'],
+                'default' => '',
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));

@@ -3,8 +3,8 @@ Theme Name: Sparkling
 Theme URI: http://colorlib.com/wp/themes/sparkling
 Author: Colorlib
 Author URI: http://colorlib.com/
-Description: parkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, portfolio, design, art, photography, personal, ecommerce and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options based on WordPress Customizer to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready, compatible with WPML and is available in Spanish, French, Dutch, Polish, Russian, German, Brazilian Portuguese, Portuguese (Portugal), Persian (Iranian language), Romanian, Turkish, Bulgarian, Japanese, Lithuanian, Czech, Ukrainian, Traditional Chinese, Simplified Chinese, Indonesian, Estonian, Spanish (Argentina) and Italian. Sparkling is a free WordPress theme with premium functionality and design. Theme is ecommerce ready thanks to its WooCommerce integration. Now theme is optimized to work with bbPress, Contact Form 7, Jetpack, WooCommerce and other popular free and premium plugins. Lately we introduced a sticky/fixed navigation that you can enable or disable via WordPress Customizer.
-Version: 2.2.1
+Description: Sparkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, portfolio, design, art, photography, personal, ecommerce and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options based on WordPress Customizer to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready, compatible with WPML and is available in Spanish, French, Dutch, Polish, Russian, German, Brazilian Portuguese, Portuguese (Portugal), Persian (Iranian language), Romanian, Turkish, Bulgarian, Japanese, Lithuanian, Czech, Ukrainian, Traditional Chinese, Simplified Chinese, Indonesian, Estonian, Spanish (Argentina) and Italian. Sparkling is a free WordPress theme with premium functionality and design. Theme is ecommerce ready thanks to its WooCommerce integration. Now theme is optimized to work with bbPress, Contact Form 7, Jetpack, WooCommerce and other popular free and premium plugins. Lately we introduced a sticky/fixed navigation that you can enable or disable via WordPress Customizer.
+Version: 2.2.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sparkling
@@ -68,6 +68,15 @@ a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
+}
+
+pre {
+  width: 100%; /* specify width */
+  white-space: pre-wrap; /* CSS3 browsers */
+  white-space: -moz-pre-wrap !important; /* 1999+ Mozilla */
+  white-space: -pre-wrap; /* Opera 4 thru 6 */
+  white-space: -o-pre-wrap; /* Opera 7 and up */
+  word-wrap: break-word; /* IE 5.5+ and up */
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -376,6 +385,8 @@ hr.section-divider {
   border: 1px solid #dadada;
   border-top: none;
 }
+body.archive .post-inner-content,
+body.blog .post-inner-content,
 .post-inner-content:first-child {
   border-top: 1px solid #dadada;;
 }
@@ -656,7 +667,7 @@ object {
 
 /* =Buttons
 ----------------------------------------------- */
-.btn-default, .label-default, .woocommerce #respond input#submit, 
+.btn-default, .label-default, .woocommerce #respond input#submit,
 .woocommerce a.button, .woocommerce button.button, .woocommerce input.button,
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt,
 .woocommerce button.button.alt, .woocommerce input.button.alt {
@@ -674,14 +685,14 @@ object {
 .btn-default:active,
 .btn-default.active,
 #image-navigation .nav-previous a:hover,
-#image-navigation .nav-next a:hover, .woocommerce #respond input#submit:hover, 
+#image-navigation .nav-next a:hover, .woocommerce #respond input#submit:hover,
 .woocommerce #respond input#submit.alt:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover,
 .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover{
   background-color: #363636;
   border-color: #363636;
   color: #FFF;
 }
-.btn.btn-default, .woocommerce #respond input#submit, .woocommerce a.button, 
+.btn.btn-default, .woocommerce #respond input#submit, .woocommerce a.button,
 .woocommerce button.button, .woocommerce input.button {
   color: #FFF;
   text-transform: uppercase;
@@ -1419,6 +1430,9 @@ p.logged-in-as {
 #menu-social li a[href*="github.com"]:hover {
   background-color: #4183C4 !important;
 }
+#menu-social li a[href*="xing.com"]:hover {
+  background-color: #006567 !important;
+}
 #menu-social li a[href*="spotify.com"]:hover {
   background-color: #81b71a !important;
 }
@@ -1432,10 +1446,11 @@ p.logged-in-as {
 }
 
 #menu-social li a[href*="twitter.com"] .fa:before{content:"\f099"}
+#menu-social li a[href*="xing.com"] .fa:before{content:"\f168"}
 #menu-social li a[href*="facebook.com"] .fa:before{content:"\f09a"}
 #menu-social li a[href*="github.com"] .fa:before{content:"\f09b"}
 #menu-social li a[href*="/feed"] .fa:before{content:"\f09e"}
-#menu-social li a[href*="dribbble.com"] .fa:before,{content: "\f17d"}
+#menu-social li a[href*="dribbble.com"] .fa:before{content: "\f17d"}
 #menu-social li a[href*="skype.com"] .fa:before{content: "\f17e"}
 #menu-social li a[href*="foursquare.com"] .fa:before{content: "\f180"}
 #menu-social li a[href*="spotify.com"] .fa:before{content: "\f1bc"}
@@ -1518,15 +1533,15 @@ button[type=submit],
 }
 
 /* WooCommerce Support */
-.woocommerce-cart .cart-collaterals .cart_totals table td, 
-.woocommerce-cart .cart-collaterals .cart_totals table th { 
+.woocommerce-cart .cart-collaterals .cart_totals table td,
+.woocommerce-cart .cart-collaterals .cart_totals table th {
   padding: 6px;
 }
 
 .woocommerce div.product .woocommerce-tabs .panel {
   padding: 10px 30px 20px;
 }
-.woocommerce .main-content-inner{ 
+.woocommerce .main-content-inner{
   background-color: #fff;
   border: 1px solid #dadada;
   padding: 45px 50px;
