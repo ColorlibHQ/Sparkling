@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2016-03-18 11:06+0200\n"
-"PO-Revision-Date: 2016-03-18 11:06+0200\n"
-"Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
+"POT-Creation-Date: 2016-04-24 10:52+0800\n"
+"PO-Revision-Date: 2016-04-24 10:58+0800\n"
+"Last-Translator: Amos Lee <iwillhappy1314@gmail.com>\n"
 "Language-Team: 神楽坂琴梨(Kagurazaka Kotori) <kotori@kagurazaka.moe>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -237,13 +237,12 @@ msgid "Left Sidebar"
 msgstr "左边栏"
 
 #: ../functions.php:304
-#, fuzzy
 msgid "No Sidebar"
 msgstr "无侧边栏"
 
 #: ../functions.php:304
 msgid "Full Width"
-msgstr ""
+msgstr "全宽"
 
 #: ../image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
@@ -254,13 +253,12 @@ msgid "Next <i class=\"fa fa-chevron-right\"></i>"
 msgstr "下一筆 <i class=\"fa fa-chevron-right\"></i>"
 
 #: ../inc/customizer.php:29
-#, fuzzy
 msgid "Sparkling Options"
-msgstr "Sparkling 分类目录"
+msgstr "Sparkling 选项"
 
 #: ../inc/customizer.php:30
 msgid "Panel to update sparkling theme options"
-msgstr ""
+msgstr "更新主题选项的面板"
 
 #: ../inc/customizer.php:36
 msgid "Content Options"
@@ -275,7 +273,6 @@ msgid "Display Comments on Static Pages?"
 msgstr "在静态页面显示评论？"
 
 #: ../inc/customizer.php:66
-#, fuzzy
 msgid "Slider options"
 msgstr "滑块选项"
 
@@ -300,7 +297,6 @@ msgid "Enter the number of slide items"
 msgstr "输入图片数目"
 
 #: ../inc/customizer.php:111
-#, fuzzy
 msgid "Layout options"
 msgstr "布局选项"
 
@@ -309,22 +305,20 @@ msgid "Website Layout Options"
 msgstr "网站版式选项"
 
 #: ../inc/customizer.php:126
-#, fuzzy
 msgid "Choose between different layout options to be used as default"
-msgstr "Choose between Left and Right sidebar options to be used as default"
+msgstr "不同的布局选项之间选择要使用的默认"
 
 #: ../inc/customizer.php:137
 msgid "WooCommerce Page Layout Options"
-msgstr ""
+msgstr "WooCommerce 页面布局选项"
 
 #: ../inc/customizer.php:140
 msgid ""
 "Choose between different layout options to be used as default for all "
 "woocommerce pages"
-msgstr ""
+msgstr "选择 WooCommerce 页面的默认布局"
 
 #: ../inc/customizer.php:151
-#, fuzzy
 msgid "Element Color"
 msgstr "元素颜色"
 
@@ -394,7 +388,6 @@ msgid "Main Body Text"
 msgstr "主要文字颜色"
 
 #: ../inc/customizer.php:275
-#, fuzzy
 msgid "Used in p tags"
 msgstr "用于<p>标签中"
 
@@ -420,11 +413,11 @@ msgstr "顶部"
 
 #: ../inc/customizer.php:353
 msgid "Sticky Header"
-msgstr ""
+msgstr "固定页头"
 
 #: ../inc/customizer.php:354
 msgid "Check to show fixed header"
-msgstr ""
+msgstr "选中显示固定的头"
 
 #: ../inc/customizer.php:365
 msgid "Top nav background color"
@@ -515,14 +508,12 @@ msgid "Footer social icon color"
 msgstr "底部社交网站图标颜色"
 
 #: ../inc/customizer.php:527
-#, fuzzy
 msgid "Footer Social Icons"
-msgstr "底部社交网站图标颜色"
+msgstr "底部社交网站图标"
 
 #: ../inc/customizer.php:528
-#, fuzzy
 msgid "Check to show social icons in footer"
-msgstr "底部社交网站图标颜色"
+msgstr "选中在页脚显示社会图标"
 
 #: ../inc/customizer.php:535
 msgid "Other"
@@ -571,10 +562,9 @@ msgid "Follow on Twitter"
 msgstr "在Twitter上关注我們"
 
 #: ../inc/extras.php:61
-#, fuzzy
 msgid ""
 "This post is password protected. To view it please enter your password below:"
-msgstr "<p>这篇文章被密码保护，请输入密码来浏览此文章</p>"
+msgstr "这是一篇受密码保护的文章，请输入密码后查看："
 
 #: ../inc/extras.php:62
 msgid "Password:"
@@ -590,22 +580,20 @@ msgid "Theme by %1$s Powered by %2$s"
 msgstr "Theme by %1$s Powered by %2$s"
 
 #: ../inc/metaboxes.php:16
-#, fuzzy
 msgid ""
 "Select layout for this specific Page only ( Note: This setting only reflects "
 "if page Template is set as Default Template and Blog Type Templates.)"
 msgstr ""
-"为本页面指定布局（提示：本设置仅在页面模板被设置为默认模板或博客类型模板时生"
-"效）"
+"给特定页面选择布局（注意：该设定只有在模板设为默认模板或博客类型的模板才会显"
+"示）"
 
 #: ../inc/metaboxes.php:21
-#, fuzzy
 msgid "Select layout for this specific Post only"
-msgstr "仅为本文选择布局"
+msgstr "给该文章选择页面布局"
 
 #: ../inc/metaboxes.php:28
 msgid "Select layout for this specific Product only"
-msgstr ""
+msgstr "给该产品选择页面布局"
 
 #: ../inc/template-tags.php:23
 msgid "Posts navigation"
@@ -677,31 +665,27 @@ msgid "Search Results for: %s"
 msgstr "%s 的搜索结果："
 
 #: ../searchform.php:11
-#, fuzzy
 msgid "Search for:"
-msgstr "搜索"
+msgstr "搜索："
 
 #: ../searchform.php:12
-#, fuzzy
 msgctxt "placeholder"
 msgid "Search&hellip;"
-msgstr "搜索"
+msgstr "搜索&hellip;"
 
 #: ../searchform.php:12
-#, fuzzy
 msgctxt "label"
 msgid "Search for:"
-msgstr "搜索"
+msgstr "搜索："
 
 #: ../searchform.php:14
-#, fuzzy
 msgctxt "submit button"
 msgid "Search"
 msgstr "搜索"
 
 #: ../sidebar.php:26
 msgid "Meta"
-msgstr "Meta"
+msgstr "元数据"
 
 #~ msgid "Page %s"
 #~ msgstr "Page %s"
