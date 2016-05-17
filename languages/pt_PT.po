@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
 "POT-Creation-Date: 2016-03-18 11:05+0200\n"
-"PO-Revision-Date: 2016-05-18 00:03+0100\n"
+"PO-Revision-Date: 2016-05-18 00:16+0100\n"
 "Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language-Team: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language: pt_PT\n"
@@ -308,7 +308,7 @@ msgstr "Tipografia"
 
 #: inc/customizer.php:76
 msgid "Check if you want to enable slider"
-msgstr "Seleccione se quiser activar o slide de imagens"
+msgstr "Seleccione se quiser activar o slider de imagens"
 
 #: inc/customizer.php:91
 msgid "Slider Category"
@@ -320,17 +320,20 @@ msgstr "Seleccione uma categoria para o slider de conteúdos em destaque"
 
 #: inc/customizer.php:104
 msgid "Number of slide items"
-msgstr "Número de itens do slide"
+msgstr "Número de itens de slide"
 
 #: inc/customizer.php:106
 msgid "Enter the number of slide items"
-msgstr "Insira o número de itens do slide"
+msgstr "Insira o número de itens de slide"
 
 #: inc/customizer.php:123
 msgid "Website Layout Options"
 msgstr "Opções do layout do site"
 
-#: inc/customizer.php:152 inc/customizer.php:164 inc/customizer.php:218 inc/customizer.php:228 inc/customizer.php:238 inc/customizer.php:248 inc/customizer.php:326 inc/customizer.php:336 inc/customizer.php:366 inc/customizer.php:506 inc/customizer.php:517
+#: inc/customizer.php:152 inc/customizer.php:164 inc/customizer.php:218
+#: inc/customizer.php:228 inc/customizer.php:238 inc/customizer.php:248
+#: inc/customizer.php:326 inc/customizer.php:336 inc/customizer.php:366
+#: inc/customizer.php:506 inc/customizer.php:517
 msgid "Default used if no color is selected"
 msgstr "Padrão usado se nenhuma cor for selecionada"
 
@@ -366,11 +369,13 @@ msgstr "Limitar categorias "
 msgid "Enable Posts Count"
 msgstr "Activar contagem de conteúdos"
 
-#: inc/widgets/widget-popular-posts.php:11 inc/widgets/widget-popular-posts.php:12
+#: inc/widgets/widget-popular-posts.php:11
+#: inc/widgets/widget-popular-posts.php:12
 msgid "Sparkling Popular Posts Widget"
 msgstr "Widget de conteúdos populares do Sparkling"
 
-#: inc/widgets/widget-popular-posts.php:17 inc/widgets/widget-popular-posts.php:94
+#: inc/widgets/widget-popular-posts.php:17
+#: inc/widgets/widget-popular-posts.php:94
 msgid "Popular Posts"
 msgstr "Artigos populares"
 
