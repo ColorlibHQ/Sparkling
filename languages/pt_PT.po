@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
 "POT-Creation-Date: 2016-03-18 11:05+0200\n"
-"PO-Revision-Date: 2016-05-18 00:16+0100\n"
+"PO-Revision-Date: 2016-05-18 01:01+0100\n"
 "Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language-Team: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language: pt_PT\n"
@@ -443,7 +443,7 @@ msgstr "Se gostar deste tema, agradeço qualquer uma das seguintes opções:"
 
 #: inc/customizer.php:741 inc/extras.php:344
 msgid "Rate this Theme"
-msgstr "Avalie este Tema"
+msgstr "Avalie este tema"
 
 #: inc/customizer.php:742 inc/extras.php:345
 msgid "Like on Facebook"
