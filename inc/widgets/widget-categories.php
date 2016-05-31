@@ -6,7 +6,7 @@
  */
 class sparkling_categories extends WP_Widget
 {
-	 function sparkling_categories(){
+	 function __construct(){
 
         $widget_ops = array('classname' => 'sparkling-cats','description' => esc_html__( "Sparkling Categories" ,'sparkling') );
 		    parent::__construct('sparkling-cats', esc_html__('Sparkling Categories','sparkling'), $widget_ops);
