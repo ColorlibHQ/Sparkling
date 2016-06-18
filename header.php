@@ -1,12 +1,13 @@
 <?php
-/**
+/* *
  * The Header for our theme.
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
  * @package sparkling
  */
-?>
+
+if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== false)) header('X-UA-Compatible: IE=edge,chrome=1'); ?>
 <!doctype html>
 <!--[if !IE]>
 <html class="no-js non-ie" <?php language_attributes(); ?>> <![endif]-->
@@ -20,7 +21,6 @@
 <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<?php if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== false)) header('X-UA-Compatible: IE=edge,chrome=1'); ?>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
