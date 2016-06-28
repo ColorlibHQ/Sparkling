@@ -6,7 +6,7 @@
  */
 class sparkling_social_widget extends WP_Widget
 {
-	 function sparkling_social_widget(){
+	 function __construct(){
             
             $widget_ops = array('classname' => 'sparkling-social','description' => esc_html__( "Sparkling Social Widget" ,'sparkling') );
             parent::__construct('sparkling-social', esc_html__('Sparkling Social Widget','sparkling'), $widget_ops);
