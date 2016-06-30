@@ -284,6 +284,11 @@ require get_template_directory() . '/inc/jetpack.php';
 require get_template_directory() . '/inc/navwalker.php';
 
 /**
+ * TGMPA
+ */
+require get_template_directory() . '/inc/tgmpa/tgm-plugin-activation.php';
+
+/**
  * Register Social Icon menu
  */
 add_action( 'init', 'register_social_menu' );

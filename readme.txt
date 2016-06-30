@@ -64,6 +64,11 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 /*========= Changelog =========*/
 
+= 2.2.4 - 28.06.2016 =
+* Added TGMPA & Kiwi Social Share Plugin
+* Updated theme tags
+* Fixed deprecated constructor notice for widgets
+
 = 2.2.3 - 18.03.2016 =
 
 * Fixed problem when top menu items set to open on new tab.
