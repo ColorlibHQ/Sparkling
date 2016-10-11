@@ -234,7 +234,7 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
               .woocommerce input.button, .woocommerce #respond input#submit.alt,
               .woocommerce a.button, .woocommerce button.button,
               .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt { background-color: '.of_get_option('element_color').'; border-color: '.of_get_option('element_color').';}';
-        
+
         echo '.site-main [class*="navigation"] a, .more-link, .pagination>li>a, .pagination>li>span { color: '.of_get_option('element_color').'}';
       }
 
@@ -408,6 +408,32 @@ function sparkling_social(){
 }
 
 /**
+ * Fallback for removed sparkling_post_nav function
+ */
+if (!function_exists('sparkling_post_nav')) {
+  function sparkling_post_nav() {
+    the_post_navigation( array(
+      'next_text' 		=> '<span class="post-title">%title <i class="fa fa-chevron-right"></i></span>',
+      'prev_text' 		=> '<i class="fa fa-chevron-left"></i> <span class="post-title">%title</span>',
+      'in_same_term'  => true,
+    ) );
+    //
+  }
+}
+
+/**
+ * Fallback for removed sparkling_paging_nav function
+ */
+if (!function_exists('sparkling_paging_nav')) {
+  function sparkling_paging_nav() {
+    the_posts_pagination( array(
+        'prev_text' => '<i class="fa fa-chevron-left"></i> ' . __( 'Newer posts', 'sparkling' ),
+        'next_text' => __( 'Older posts', 'sparkling' ) . ' <i class="fa fa-chevron-right"></i>' ,
+    ) );
+  }
+}
+
+/**
  * Adds the URL to the top level navigation menu item
  */
 function  sparkling_add_top_level_menu_url( $atts, $item, $args ){
@@ -440,3 +466,13 @@ if ( !wp_is_mobile() ) { ?>
 <?php }
 }
 add_action('wp_footer', 'sparkling_make_top_level_menu_clickable', 1);
+
+/**
+ * Add a pingback url auto-discovery header for singularly identifiable articles.
+ */
+function _s_pingback_header() {
+	if ( is_singular() && pings_open() ) {
+		echo '<link rel="pingback" href="', bloginfo( 'pingback_url' ), '">';
+	}
+}
+add_action( 'wp_head', '_s_pingback_header' );

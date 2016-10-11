@@ -23,7 +23,19 @@
 					<?php printf( esc_html__( ' %1$s', 'sparkling' ), $categories_list ); ?>
 				</span>
 				<?php endif; // End if categories ?>
-				<?php edit_post_link( esc_html__( 'Edit', 'sparkling' ), '<i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span>' ); ?>
+				<?php if ( get_edit_post_link() ) : ?>
+					<?php
+						edit_post_link(
+							sprintf(
+								/* translators: %s: Name of current post */
+								esc_html__( 'Edit %s', 'sparkling' ),
+								the_title( '<span class="screen-reader-text">"', '"</span>', false )
+							),
+							'<i class="fa fa-pencil-square-o"></i><span class="edit-link">',
+							'</span>'
+						);
+					?>
+				<?php endif; ?>
 
 			</div><!-- .entry-meta -->
 		</header><!-- .entry-header -->

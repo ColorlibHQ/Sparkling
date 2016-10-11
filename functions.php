@@ -283,10 +283,10 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 require get_template_directory() . '/inc/navwalker.php';
 
-/**
- * TGMPA
- */
-require get_template_directory() . '/inc/tgmpa/tgm-plugin-activation.php';
+// /**
+//  * TGMPA
+//  */
+// require get_template_directory() . '/inc/tgmpa/tgm-plugin-activation.php';
 
 /**
  * Register Social Icon menu
@@ -427,7 +427,7 @@ endif;
 if ( ! function_exists( 'get_layout_class' ) ) :
 
 function get_layout_class () {
-    global $post;           
+    global $post;
     if( is_singular() && get_post_meta($post->ID, 'site_layout', true) && !is_singular( array( 'product' ) ) ){
         $layout_class = get_post_meta($post->ID, 'site_layout', true);
     }

@@ -2,14 +2,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2016-03-18 11:04+0200\n"
+"POT-Creation-Date: 2016-10-11 20:54+0300\n"
 "PO-Revision-Date: 2015-04-04 15:03+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.8.9\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
@@ -38,7 +38,7 @@ msgstr ""
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
-#: ../404.php:53 ../archive.php:66 ../sidebar.php:19
+#: ../404.php:53 ../sidebar.php:19
 msgid "Archives"
 msgstr ""
 
@@ -46,63 +46,15 @@ msgstr ""
 msgid "Tags"
 msgstr ""
 
-#: ../archive.php:27
-#, php-format
-msgid "Author: %s"
+#: ../archive.php:39 ../inc/extras.php:430 ../index.php:40 ../search.php:34
+msgid "Newer posts"
 msgstr ""
 
-#: ../archive.php:30
-#, php-format
-msgid "Day: %s"
+#: ../archive.php:40 ../inc/extras.php:431 ../index.php:41 ../search.php:35
+msgid "Older posts"
 msgstr ""
 
-#: ../archive.php:33
-#, php-format
-msgid "Month: %s"
-msgstr ""
-
-#: ../archive.php:36
-#, php-format
-msgid "Year: %s"
-msgstr ""
-
-#: ../archive.php:39
-msgid "Asides"
-msgstr ""
-
-#: ../archive.php:42
-msgid "Galleries"
-msgstr ""
-
-#: ../archive.php:45
-msgid "Images"
-msgstr ""
-
-#: ../archive.php:48
-msgid "Videos"
-msgstr ""
-
-#: ../archive.php:51
-msgid "Quotes"
-msgstr ""
-
-#: ../archive.php:54
-msgid "Links"
-msgstr ""
-
-#: ../archive.php:57
-msgid "Statuses"
-msgstr ""
-
-#: ../archive.php:60
-msgid "Audios"
-msgstr ""
-
-#: ../archive.php:63
-msgid "Chats"
-msgstr ""
-
-#: ../comments.php:28
+#: ../comments.php:29
 #, php-format
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
@@ -110,19 +62,19 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../comments.php:35 ../comments.php:53
+#: ../comments.php:38 ../comments.php:60
 msgid "Comment navigation"
 msgstr ""
 
-#: ../comments.php:36 ../comments.php:54
-msgid "&larr; Older Comments"
+#: ../comments.php:41 ../comments.php:63
+msgid "Older Comments"
 msgstr ""
 
-#: ../comments.php:37 ../comments.php:55
-msgid "Newer Comments &rarr;"
+#: ../comments.php:42 ../comments.php:64
+msgid "Newer Comments"
 msgstr ""
 
-#: ../comments.php:65
+#: ../comments.php:77
 msgid "Comments are closed."
 msgstr ""
 
@@ -130,26 +82,27 @@ msgstr ""
 msgid "Nothing Found"
 msgstr ""
 
-#: ../content-none.php:19
+#: ../content-none.php:20
 #, php-format
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: ../content-none.php:23
+#: ../content-none.php:24
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr ""
 
-#: ../content-none.php:28
+#: ../content-none.php:29
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
-#: ../content-page.php:21 ../content-single.php:35 ../content.php:48
+#: ../content-page.php:21 ../content-single.php:47 ../content.php:60
 #: ../image.php:79
 msgid "Pages:"
 msgstr ""
 
-#: ../content-page.php:32 ../content-single.php:26 ../content.php:23
-msgid "Edit"
+#: ../content-page.php:40 ../content-single.php:31 ../content.php:28
+#, php-format
+msgid "Edit %s"
 msgstr ""
 
 #: ../content-single.php:19
@@ -173,7 +126,7 @@ msgstr ""
 msgid "% Comments"
 msgstr ""
 
-#: ../content.php:32 ../content.php:40
+#: ../content.php:44 ../content.php:52
 msgid "Read More"
 msgstr ""
 
@@ -221,19 +174,19 @@ msgstr ""
 msgid "Footer Widget 3"
 msgstr ""
 
-#: ../functions.php:304
+#: ../functions.php:309
 msgid "Right Sidebar"
 msgstr ""
 
-#: ../functions.php:304
+#: ../functions.php:309
 msgid "Left Sidebar"
 msgstr ""
 
-#: ../functions.php:304
+#: ../functions.php:309
 msgid "No Sidebar"
 msgstr ""
 
-#: ../functions.php:304
+#: ../functions.php:309
 msgid "Full Width"
 msgstr ""
 
@@ -579,20 +532,346 @@ msgstr ""
 msgid "Select layout for this specific Product only"
 msgstr ""
 
-#: ../inc/template-tags.php:23
-msgid "Posts navigation"
+#: ../inc/navwalker.php:202
+msgid "Add a menu"
 msgstr ""
 
-#: ../inc/template-tags.php:31
-msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:327
+#: ../inc/tgmpa/tgm-plugin-activation.php:79
+msgid "Install Required Plugins"
 msgstr ""
 
-#: ../inc/template-tags.php:35
-msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:328
+#: ../inc/tgmpa/tgm-plugin-activation.php:80
+msgid "Install Plugins"
 msgstr ""
 
-#: ../inc/template-tags.php:83
-msgid "Post navigation"
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:330
+#: ../inc/tgmpa/tgm-plugin-activation.php:81
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:332
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:333
+#: ../inc/tgmpa/tgm-plugin-activation.php:82
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:385
+#: ../inc/tgmpa/tgm-plugin-activation.php:93
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:386
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:827
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2533
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:387
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3159
+#: ../inc/tgmpa/tgm-plugin-activation.php:94
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:388
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:390
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:392
+#, php-format
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:394
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:396
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:934
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:934
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:937
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:937
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:1982
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2388
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2392
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2396
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2400
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2603
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2608
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2614
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3498
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3501
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3503
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3507
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3509
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3509
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3509
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3512
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3515
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3517
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../inc/tgmpa/class-tgm-plugin-activation.php:3520
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/tgmpa/tgm-plugin-activation.php:95
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
 msgstr ""
 
 #: ../inc/widgets/widget-categories.php:11
@@ -643,7 +922,7 @@ msgstr ""
 msgid "Follow us"
 msgstr ""
 
-#: ../search.php:16
+#: ../search.php:17
 #, php-format
 msgid "Search Results for: %s"
 msgstr ""
