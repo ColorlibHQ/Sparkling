@@ -31,7 +31,7 @@ msgstr ""
 #: ../404.php:25
 #, fuzzy
 msgid "Recent Posts"
-msgstr "Exibir lista de Postagens Populares, Postagens Recentes & Comentários"
+msgstr "Postagens Recentes"
 
 #: ../404.php:31
 msgid "Most Used Categories"
@@ -198,11 +198,11 @@ msgstr "Menu principal"
 
 #: ../functions.php:70 ../inc/extras.php:136
 msgid "Footer Links"
-msgstr "Links rodapé"
+msgstr "Links de rodapé"
 
 #: ../functions.php:108
 msgid "Sidebar"
-msgstr "Sidebar"
+msgstr "Barra Lateral"
 
 #: ../functions.php:118
 msgid "Homepage Widget 1"
@@ -238,11 +238,11 @@ msgstr "Footer Widget 3"
 
 #: ../functions.php:304
 msgid "Right Sidebar"
-msgstr "Sidebar Direita"
+msgstr "Barra Lateral Direita"
 
 #: ../functions.php:304
 msgid "Left Sidebar"
-msgstr "Sidebar Esquerda"
+msgstr "Barra Lateral Esquerda"
 
 #: ../functions.php:304
 #, fuzzy
@@ -268,7 +268,7 @@ msgstr "Categorias Sparkling"
 
 #: ../inc/customizer.php:30
 msgid "Panel to update sparkling theme options"
-msgstr ""
+msgstr "Painel para atualizar opções do tema sparkling"
 
 #: ../inc/customizer.php:36
 #, fuzzy
@@ -321,11 +321,11 @@ msgstr "Opções de Layout"
 #: ../inc/customizer.php:126
 #, fuzzy
 msgid "Choose between different layout options to be used as default"
-msgstr "Escolha entre sidebar Esquerda e Direita para ser usado como padrão"
+msgstr "Escolha entre opções diferentes de layout para ser usado como padrão"
 
 #: ../inc/customizer.php:137
 msgid "WooCommerce Page Layout Options"
-msgstr ""
+msgstr "Opções de layout da página WooCommerce"
 
 #: ../inc/customizer.php:140
 msgid ""
