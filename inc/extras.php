@@ -183,7 +183,13 @@ function sparkling_featured_slider() {
         if ($query->have_posts()) :
           while ($query->have_posts()) : $query->the_post();
 
-          echo '<li><a href="'. get_permalink() .'">';
+          #echo '<li><a href="'. get_permalink() .'">';
+          #echo '<li>';
+		  if(of_get_option( 'sparkling_slider_link_checkbox' ) == 1){
+			echo '<li><a href="'. get_permalink() .'">';
+		  }else{
+			echo '<li>';
+		  }
             if ( (function_exists( 'has_post_thumbnail' )) && ( has_post_thumbnail() ) ) :
               echo get_the_post_thumbnail();
             endif;
