@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling\n"
 "POT-Creation-Date: 2016-11-01 22:40+0100\n"
-"PO-Revision-Date: 2016-11-01 23:20+0100\n"
+"PO-Revision-Date: 2016-11-02 00:10+0100\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -370,7 +370,7 @@ msgstr "Link:hover Farbe"
 
 #: inc/customizer.php:353
 msgid "Header"
-msgstr "Kopf"
+msgstr "Header"
 
 #: inc/customizer.php:364
 msgid "Sticky Header"
