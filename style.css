@@ -756,7 +756,11 @@ button:hover, .button:hover {
 /* =Custom Styles
 ----------------------------------------------- */
 #logo .site-name {
+  font-weight: bold;
   margin: 0;
+}
+#logo .site-name.hide-site-name {
+  display: none;
 }
 .site-branding {
   margin-top: 20px;
