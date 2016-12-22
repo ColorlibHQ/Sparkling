@@ -833,27 +833,23 @@ msgid "Search Results for: %s"
 msgstr "Risultato della ricerca per: %s"
 
 #: ../searchform.php:11
-#, fuzzy
 msgid "Search for:"
 msgstr "Cerca..."
 
 #: ../searchform.php:12
-#, fuzzy
 msgctxt "placeholder"
 msgid "Search&hellip;"
-msgstr "Busca"
+msgstr "Cerca nel sito&hellip;"
 
 #: ../searchform.php:12
-#, fuzzy
 msgctxt "label"
 msgid "Search for:"
 msgstr "Cerca..."
 
 #: ../searchform.php:14
-#, fuzzy
 msgctxt "submit button"
 msgid "Search"
-msgstr "Busca"
+msgstr "Cerca"
 
 #: ../sidebar.php:26
 msgid "Meta"
