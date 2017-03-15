@@ -62,7 +62,6 @@ function sparkling_setup() {
   add_theme_support( 'post-thumbnails' );
 
   add_image_size( 'sparkling-featured', 750, 410, true );
-  add_image_size( 'sparkling-featured-fullwidth', 1140, 624, true );
   add_image_size( 'tab-small', 60, 60 , true); // Small Thumbnail
 
   // This theme uses wp_nav_menu() in one location.
@@ -284,10 +283,6 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 require get_template_directory() . '/inc/navwalker.php';
 
-// /**
-//  * TGMPA
-//  */
-// require get_template_directory() . '/inc/tgmpa/tgm-plugin-activation.php';
 
 /**
  * Register Social Icon menu
@@ -449,3 +444,7 @@ function get_layout_class () {
 }
 
 endif;
+
+
+//Include Welcome Screen
+require get_template_directory() . '/inc/welcome-screen/welcome-page-setup.php';
