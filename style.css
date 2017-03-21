@@ -259,7 +259,9 @@ textarea {
 .site-content:after,
 .site-footer:before,
 .site-footer:after,
-.home-widget-area:before {
+.home-widget-area:before,
+.entry-summary:after,
+.entry-summary:before {
   content: '';
   display: table;
 }
@@ -271,7 +273,9 @@ textarea {
 .site-header:after,
 .site-content:after,
 .site-footer:after,
-.home-widget-area:before {
+.home-widget-area:before,
+.entry-summary:after,
+.entry-summary:before {
   clear: both;
 }
 
@@ -340,14 +344,12 @@ footer.entry-meta {
 .entry-title a:hover {
   color: #DA4453;
 }
-.btn.btn-default.read-more {
+.btn.btn-default.read-more,
+a.more-link {
   float: right;
   margin-top: 10px;
   font-size: 12px;
   padding: 11px 13px;
-}
-.search .btn.btn-default.read-more {
-  float: none;
 }
 hr.section-divider {
   border-color: #E8E8E8;
@@ -393,7 +395,7 @@ body.blog .post-inner-content,
 .entry-title {
   margin-top: 0;
 }
-.more-link,
+
 .says {
   display: none;
 }
@@ -670,9 +672,11 @@ object {
 .btn-default, .label-default, .woocommerce #respond input#submit,
 .woocommerce a.button, .woocommerce button.button, .woocommerce input.button,
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt,
-.woocommerce button.button.alt, .woocommerce input.button.alt {
+.woocommerce button.button.alt, .woocommerce input.button.alt,
+a.more-link {
   background-color: #DA4453;
   border-color: #DA4453;
+  border-radius: 4px;
   -webkit-transition: background-color 0.3s linear;
      -moz-transition: background-color 0.3s linear;
        -o-transition: background-color 0.3s linear;
@@ -687,13 +691,15 @@ object {
 #image-navigation .nav-previous a:hover,
 #image-navigation .nav-next a:hover, .woocommerce #respond input#submit:hover,
 .woocommerce #respond input#submit.alt:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover,
-.woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover{
+.woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover,
+a.more-link:hover {
   background-color: #363636;
   border-color: #363636;
   color: #FFF;
 }
 .btn.btn-default, .woocommerce #respond input#submit, .woocommerce a.button,
-.woocommerce button.button, .woocommerce input.button {
+.woocommerce button.button, .woocommerce input.button,
+a.more-link {
   color: #FFF;
   text-transform: uppercase;
 }
@@ -756,11 +762,10 @@ button:hover, .button:hover {
 /* =Custom Styles
 ----------------------------------------------- */
 #logo .site-name {
-  font-weight: bold;
   margin: 0;
 }
-#logo .site-name.hide-site-name {
-  display: none;
+#logo .navbar-brand {
+  font-weight: bold;
 }
 .site-branding {
   margin-top: 20px;
@@ -1474,6 +1479,7 @@ p.logged-in-as {
 #menu-social li a[href*="plus.google.com"] .fa:before{content: "\f0d5"}
 #menu-social li a[href*="linkedin.com"] .fa:before{content: "\f0e1"}
 #menu-social li a[href*="mailto"] .fa:before{content: "\f003"}
+#menu-social li a[href*="telegram.me"] .fa:before{content: "\f2c6"}
 
 @media (max-width: 992px) {
   .site-branding {
