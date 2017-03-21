@@ -22,8 +22,7 @@ get_header(); ?>
 
 			the_post_navigation( array(
 				'next_text' 		=> '<span class="post-title">%title <i class="fa fa-chevron-right"></i></span>',
-     		'prev_text' 		=> '<i class="fa fa-chevron-left"></i> <span class="post-title">%title</span>',
-				'in_same_term'  => true,
+     			'prev_text' 		=> '<i class="fa fa-chevron-left"></i> <span class="post-title">%title</span>',
 			) );
 
 		endwhile; // end of the loop.
