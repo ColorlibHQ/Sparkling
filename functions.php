@@ -285,6 +285,7 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 require get_template_directory() . '/inc/navwalker.php';
 
+
 /**
  * Register Social Icon menu
  */
@@ -424,7 +425,7 @@ endif;
 if ( ! function_exists( 'get_layout_class' ) ) :
 
 function get_layout_class () {
-    global $post;           
+    global $post;
     if( is_singular() && get_post_meta($post->ID, 'site_layout', true) && !is_singular( array( 'product' ) ) ){
         $layout_class = get_post_meta($post->ID, 'site_layout', true);
     }
@@ -445,3 +446,7 @@ function get_layout_class () {
 }
 
 endif;
+
+
+//Include Welcome Screen
+require get_template_directory() . '/inc/welcome-screen/welcome-page-setup.php';

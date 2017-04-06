@@ -3,13 +3,13 @@ Theme Name: Sparkling
 Theme URI: http://colorlib.com/wp/themes/sparkling
 Author: Colorlib
 Author URI: http://colorlib.com/
-Description: parkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, portfolio, design, art, photography, personal, ecommerce and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options based on WordPress Customizer to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready, compatible with WPML and is available in Spanish, French, Dutch, Polish, Russian, German, Brazilian Portuguese, Portuguese (Portugal), Persian (Iranian language), Romanian, Turkish, Bulgarian, Japanese, Lithuanian, Czech, Ukrainian, Traditional Chinese, Simplified Chinese, Indonesian, Estonian, Spanish (Argentina) and Italian. Sparkling is a free WordPress theme with premium functionality and design. Theme is ecommerce ready thanks to its WooCommerce integration. Now theme is optimized to work with bbPress, Contact Form 7, Jetpack, WooCommerce and other popular free and premium plugins. Lately we introduced a sticky/fixed navigation that you can enable or disable via WordPress Customizer.
-Version: 2.2.1
+Description: Sparkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, portfolio, design, art, photography, personal, ecommerce and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options based on WordPress Customizer to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready, compatible with WPML and is available in Spanish, French, Dutch, Polish, Russian, German, Brazilian Portuguese, Portuguese (Portugal), Persian (Iranian language), Romanian, Turkish, Bulgarian, Japanese, Lithuanian, Czech, Ukrainian, Traditional Chinese, Simplified Chinese, Indonesian, Estonian, Spanish (Argentina), Hungarian and Italian. Sparkling is a free WordPress theme with premium functionality and design. Theme is ecommerce ready thanks to its WooCommerce integration. Now theme is optimized to work with bbPress, Contact Form 7, Jetpack, WooCommerce and other popular free and premium plugins. Lately we introduced a sticky/fixed navigation that you can enable or disable via WordPress Customizer.
+Version: 2.3.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sparkling
 Domain Path: /languages/
-Tags: green, light, white, gray, black, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, photoblogging, left-sidebar, translation-ready, custom-background, custom-colors, custom-menu, featured-images, full-width-template, post-formats, theme-options, threaded-comments
+Tags: grid-layout, footer-widgets, blog, education, entertainment, food-and-drink, news, photography, portfolio, e-commerce
 
 
 This theme, like WordPress, is licensed under the GPL.
@@ -259,7 +259,9 @@ textarea {
 .site-content:after,
 .site-footer:before,
 .site-footer:after,
-.home-widget-area:before {
+.home-widget-area:before,
+.entry-summary:after,
+.entry-summary:before {
   content: '';
   display: table;
 }
@@ -271,7 +273,9 @@ textarea {
 .site-header:after,
 .site-content:after,
 .site-footer:after,
-.home-widget-area:before {
+.home-widget-area:before,
+.entry-summary:after,
+.entry-summary:before {
   clear: both;
 }
 
@@ -340,14 +344,12 @@ footer.entry-meta {
 .entry-title a:hover {
   color: #DA4453;
 }
-.btn.btn-default.read-more {
+.btn.btn-default.read-more,
+a.more-link {
   float: right;
   margin-top: 10px;
   font-size: 12px;
   padding: 11px 13px;
-}
-.search .btn.btn-default.read-more {
-  float: none;
 }
 hr.section-divider {
   border-color: #E8E8E8;
@@ -385,13 +387,15 @@ hr.section-divider {
   border: 1px solid #dadada;
   border-top: none;
 }
+body.archive .post-inner-content,
+body.blog .post-inner-content,
 .post-inner-content:first-child {
   border-top: 1px solid #dadada;;
 }
 .entry-title {
   margin-top: 0;
 }
-.more-link,
+
 .says {
   display: none;
 }
@@ -665,12 +669,14 @@ object {
 
 /* =Buttons
 ----------------------------------------------- */
-.btn-default, .label-default, .woocommerce #respond input#submit, 
+.btn-default, .label-default, .woocommerce #respond input#submit,
 .woocommerce a.button, .woocommerce button.button, .woocommerce input.button,
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt,
-.woocommerce button.button.alt, .woocommerce input.button.alt {
+.woocommerce button.button.alt, .woocommerce input.button.alt,
+a.more-link {
   background-color: #DA4453;
   border-color: #DA4453;
+  border-radius: 4px;
   -webkit-transition: background-color 0.3s linear;
      -moz-transition: background-color 0.3s linear;
        -o-transition: background-color 0.3s linear;
@@ -683,15 +689,17 @@ object {
 .btn-default:active,
 .btn-default.active,
 #image-navigation .nav-previous a:hover,
-#image-navigation .nav-next a:hover, .woocommerce #respond input#submit:hover, 
+#image-navigation .nav-next a:hover, .woocommerce #respond input#submit:hover,
 .woocommerce #respond input#submit.alt:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover,
-.woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover{
+.woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover,
+a.more-link:hover {
   background-color: #363636;
   border-color: #363636;
   color: #FFF;
 }
-.btn.btn-default, .woocommerce #respond input#submit, .woocommerce a.button, 
-.woocommerce button.button, .woocommerce input.button {
+.btn.btn-default, .woocommerce #respond input#submit, .woocommerce a.button,
+.woocommerce button.button, .woocommerce input.button,
+a.more-link {
   color: #FFF;
   text-transform: uppercase;
 }
@@ -722,7 +730,7 @@ button:hover, .button:hover {
 ----------------------------------------------- */
 
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .paging-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll .pagination, /* Older / Newer Posts Navigation (always hidden) */
 .infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
   display: none;
 }
@@ -756,6 +764,9 @@ button:hover, .button:hover {
 #logo .site-name {
   margin: 0;
 }
+#logo .navbar-brand {
+  font-weight: bold;
+}
 .site-branding {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -786,31 +797,37 @@ button:hover, .button:hover {
 ----------------------------------------------- */
 
 .post-navigation a,
-.paging-navigation a {
+.page-numbers,
+.pagination .prev,
+.pagination .next {
   border: 1px solid #DADADA;
   background-color: #FFF;
   padding: 8px 14px;
   font-size: 12px;
   border-radius: 4px;
-  display: block;
   margin: 0 0 1.5em;
   overflow: hidden;
 }
+.post-navigation a {
+  display: block;
+}
 .post-navigation a:hover,
-.paging-navigation a:hover {
+.pagination .prev:hover
+.pagination .next:hover {
   color: #FFF;
   background: #DA4453;
   text-decoration: none;
 }
-.paging-navigation {
+.pagination {
   text-transform: uppercase;
+  display: block;
 }
 .post-navigation .nav-previous,
-.paging-navigation .nav-previous {
+.pagination .prev {
   float: left;
 }
 .post-navigation .nav-next,
-.paging-navigation .nav-next  {
+.pagination .next {
   float: right;
   text-align: right;
 }
@@ -1428,6 +1445,9 @@ p.logged-in-as {
 #menu-social li a[href*="github.com"]:hover {
   background-color: #4183C4 !important;
 }
+#menu-social li a[href*="xing.com"]:hover {
+  background-color: #006567 !important;
+}
 #menu-social li a[href*="spotify.com"]:hover {
   background-color: #81b71a !important;
 }
@@ -1441,6 +1461,7 @@ p.logged-in-as {
 }
 
 #menu-social li a[href*="twitter.com"] .fa:before{content:"\f099"}
+#menu-social li a[href*="xing.com"] .fa:before{content:"\f168"}
 #menu-social li a[href*="facebook.com"] .fa:before{content:"\f09a"}
 #menu-social li a[href*="github.com"] .fa:before{content:"\f09b"}
 #menu-social li a[href*="/feed"] .fa:before{content:"\f09e"}
@@ -1458,6 +1479,7 @@ p.logged-in-as {
 #menu-social li a[href*="plus.google.com"] .fa:before{content: "\f0d5"}
 #menu-social li a[href*="linkedin.com"] .fa:before{content: "\f0e1"}
 #menu-social li a[href*="mailto"] .fa:before{content: "\f003"}
+#menu-social li a[href*="telegram.me"] .fa:before{content: "\f2c6"}
 
 @media (max-width: 992px) {
   .site-branding {
@@ -1527,15 +1549,15 @@ button[type=submit],
 }
 
 /* WooCommerce Support */
-.woocommerce-cart .cart-collaterals .cart_totals table td, 
-.woocommerce-cart .cart-collaterals .cart_totals table th { 
+.woocommerce-cart .cart-collaterals .cart_totals table td,
+.woocommerce-cart .cart-collaterals .cart_totals table th {
   padding: 6px;
 }
 
 .woocommerce div.product .woocommerce-tabs .panel {
   padding: 10px 30px 20px;
 }
-.woocommerce .main-content-inner{ 
+.woocommerce .main-content-inner{
   background-color: #fff;
   border: 1px solid #dadada;
   padding: 45px 50px;

@@ -183,19 +183,23 @@ function sparkling_featured_slider() {
         if ($query->have_posts()) :
           while ($query->have_posts()) : $query->the_post();
 
-          echo '<li><a href="'. get_permalink() .'">';
+      		  if(of_get_option( 'sparkling_slider_link_checkbox' ) == 1){
+      			echo '<li><a href="'. get_permalink() .'">';
+      		  }else{
+      			echo '<li>';
+      		  }
             if ( (function_exists( 'has_post_thumbnail' )) && ( has_post_thumbnail() ) ) :
               echo get_the_post_thumbnail();
             endif;
 
-              echo '<div class="flex-caption">';
-                  if ( get_the_title() != '' ) echo '<h2 class="entry-title">'. get_the_title().'</h2>';
-                  if ( get_the_excerpt() != '' ) echo '<div class="excerpt">' . get_the_excerpt() .'</div>';
-              echo '</div>';
-              echo '</a></li>';
-              endwhile;
-            endif;
-
+            echo '<div class="flex-caption">';
+            if ( get_the_title() != '' ) echo '<h2 class="entry-title">'. get_the_title().'</h2>';
+            if ( get_the_excerpt() != '' ) echo '<div class="excerpt">' . get_the_excerpt() .'</div>';
+            echo '</div>';
+            echo '</a></li>';
+          endwhile;
+        endif;
+            wp_reset_postdata();
       echo '</ul>';
     echo ' </div>';
   }
@@ -234,7 +238,7 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
               .woocommerce input.button, .woocommerce #respond input#submit.alt,
               .woocommerce a.button, .woocommerce button.button,
               .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt { background-color: '.of_get_option('element_color').'; border-color: '.of_get_option('element_color').';}';
-        
+
         echo '.site-main [class*="navigation"] a, .more-link, .pagination>li>a, .pagination>li>span { color: '.of_get_option('element_color').'}';
       }
 
@@ -301,7 +305,25 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
       global $typography_options;
       $typography = of_get_option('main_body_typography');
       if ( $typography ) {
-        echo '.entry-content {font-family: ' . $typography_options['faces'][$typography['face']] . '; font-size:' . $typography['size'] . '; font-weight: ' . $typography['style'] . '; color:'.$typography['color'] . ';}';
+        echo '.entry-content {';
+
+        if ( isset( $typography['face'] ) ) {
+          echo 'font-family: ' . $typography_options['faces'][$typography['face']] . ';';
+        }
+
+        if ( isset($typography['size']) ) {
+          echo 'font-size:' . $typography['size'] . ';';
+        }
+
+        if ( isset($typography['style']) ) {
+          echo 'font-weight: ' . $typography['style'] . ';';
+        }
+
+        if ( isset($typography['color']) ) {
+          echo 'color:'.$typography['color'] . ';';
+        }
+
+        echo '}';
       }
       if ( of_get_option('custom_css')) {
         echo html_entity_decode( of_get_option( 'custom_css', 'no entry' ) );
@@ -408,6 +430,32 @@ function sparkling_social(){
 }
 
 /**
+ * Fallback for removed sparkling_post_nav function
+ */
+if (!function_exists('sparkling_post_nav')) {
+  function sparkling_post_nav() {
+    the_post_navigation( array(
+      'next_text' 		=> '<span class="post-title">%title <i class="fa fa-chevron-right"></i></span>',
+      'prev_text' 		=> '<i class="fa fa-chevron-left"></i> <span class="post-title">%title</span>',
+      'in_same_term'  => true,
+    ) );
+    //
+  }
+}
+
+/**
+ * Fallback for removed sparkling_paging_nav function
+ */
+if (!function_exists('sparkling_paging_nav')) {
+  function sparkling_paging_nav() {
+    the_posts_pagination( array(
+        'prev_text' => '<i class="fa fa-chevron-left"></i> ' . __( 'Newer posts', 'sparkling' ),
+        'next_text' => __( 'Older posts', 'sparkling' ) . ' <i class="fa fa-chevron-right"></i>' ,
+    ) );
+  }
+}
+
+/**
  * Adds the URL to the top level navigation menu item
  */
 function  sparkling_add_top_level_menu_url( $atts, $item, $args ){
@@ -437,3 +485,13 @@ if ( !wp_is_mobile() ) { ?>
 <?php }
 }
 add_action('wp_footer', 'sparkling_make_top_level_menu_clickable', 1);
+
+/**
+ * Add a pingback url auto-discovery header for singularly identifiable articles.
+ */
+function _s_pingback_header() {
+	if ( is_singular() && pings_open() ) {
+		echo '<link rel="pingback" href="', bloginfo( 'pingback_url' ), '">';
+	}
+}
+add_action( 'wp_head', '_s_pingback_header' );

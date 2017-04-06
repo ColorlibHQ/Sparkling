@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling\n"
-"POT-Creation-Date: 2015-10-16 20:22+0300\n"
-"PO-Revision-Date: 2015-10-16 20:22+0300\n"
+"POT-Creation-Date: 2016-11-01 22:40+0100\n"
+"PO-Revision-Date: 2016-11-02 00:10+0100\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.8.11\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
@@ -30,9 +30,8 @@ msgstr ""
 "folgenden Links benutzen oder eine neue Suche starten?"
 
 #: 404.php:25
-#, fuzzy
 msgid "Recent Posts"
-msgstr "Zeigt Reiter der beliebtesten und neusten Beiträge & Kommentare"
+msgstr "Neue Posts"
 
 #: 404.php:31
 msgid "Most Used Categories"
@@ -43,72 +42,23 @@ msgstr "Meist genutzte Kategorien"
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Schaue in den Monatsarchiven. %1$s"
 
-#: 404.php:53 archive.php:66 sidebar.php:19
+#: 404.php:53 sidebar.php:19
 msgid "Archives"
 msgstr "Archive"
 
 #: 404.php:58
-#, fuzzy
 msgid "Tags"
-msgstr "Benutzt in P tags"
+msgstr "Tags"
 
-#: archive.php:27
-#, php-format
-msgid "Author: %s"
-msgstr "Autor: %s"
+#: archive.php:39 inc/extras.php:436 index.php:40 search.php:34
+msgid "Newer posts"
+msgstr "Neuere Beiträge"
 
-#: archive.php:30
-#, php-format
-msgid "Day: %s"
-msgstr "Tag: %s"
+#: archive.php:40 inc/extras.php:437 index.php:41 search.php:35
+msgid "Older posts"
+msgstr "Ältere Beiträge"
 
-#: archive.php:33
-#, php-format
-msgid "Month: %s"
-msgstr "Monat: %s"
-
-#: archive.php:36
-#, php-format
-msgid "Year: %s"
-msgstr "Jahr: %s"
-
-#: archive.php:39
-msgid "Asides"
-msgstr "Nebenbemerkungen"
-
-#: archive.php:42
-msgid "Galleries"
-msgstr "Galerien"
-
-#: archive.php:45
-msgid "Images"
-msgstr "Bilder"
-
-#: archive.php:48
-msgid "Videos"
-msgstr "Videos"
-
-#: archive.php:51
-msgid "Quotes"
-msgstr "Zitate"
-
-#: archive.php:54
-msgid "Links"
-msgstr "Links"
-
-#: archive.php:57
-msgid "Statuses"
-msgstr "Status"
-
-#: archive.php:60
-msgid "Audios"
-msgstr "Audio"
-
-#: archive.php:63
-msgid "Chats"
-msgstr "Chats"
-
-#: comments.php:28
+#: comments.php:29
 #, php-format
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
@@ -116,19 +66,19 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "Ein Kommentar zu &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s Kommentare zu &ldquo;%2$s&rdquo;"
 
-#: comments.php:35 comments.php:53
+#: comments.php:38 comments.php:60
 msgid "Comment navigation"
 msgstr "Kommentare navigieren"
 
-#: comments.php:36 comments.php:54
-msgid "&larr; Older Comments"
-msgstr "&larr; ältere Kommentare"
+#: comments.php:41 comments.php:63
+msgid "Older Comments"
+msgstr "Ältere Kommentare"
 
-#: comments.php:37 comments.php:55
-msgid "Newer Comments &rarr;"
-msgstr "Neueste Kommentare &rarr;"
+#: comments.php:42 comments.php:64
+msgid "Newer Comments"
+msgstr "Neuere Kommentare"
 
-#: comments.php:65
+#: comments.php:77
 msgid "Comments are closed."
 msgstr "Kommentare sind deaktiviert."
 
@@ -136,20 +86,20 @@ msgstr "Kommentare sind deaktiviert."
 msgid "Nothing Found"
 msgstr "Nichts gefunden "
 
-#: content-none.php:19
+#: content-none.php:20
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr "Ersten Artikel veröffentlichen? <a href=\"%1$s\">Hier starten</a>."
 
-#: content-none.php:23
+#: content-none.php:24
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
 "Leider war die Suche nicht erfolgreich. Versuche es mit anderen Suchwörtern."
 
-#: content-none.php:28
+#: content-none.php:29
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
@@ -157,13 +107,14 @@ msgstr ""
 "Scheinbar konnten wir das Gewünschte nicht finden. Vielleicht hilft Dir die "
 "Suche."
 
-#: content-page.php:21 content-single.php:35 content.php:49 image.php:79
+#: content-page.php:21 content-single.php:47 content.php:60 image.php:79
 msgid "Pages:"
 msgstr "Seiten:"
 
-#: content-page.php:32 content-single.php:26 content.php:23
-msgid "Edit"
-msgstr "Editiere"
+#: content-page.php:40 content-single.php:31 content.php:28
+#, php-format
+msgid "Edit %s"
+msgstr "Bearbeite %s"
 
 #: content-single.php:19
 msgid ", "
@@ -186,7 +137,7 @@ msgstr "1 Kommentar"
 msgid "% Comments"
 msgstr "% Kommentare"
 
-#: content.php:32 content.php:45
+#: content.php:44 content.php:52
 msgid "Read More"
 msgstr "Weiterlesen"
 
@@ -194,7 +145,7 @@ msgstr "Weiterlesen"
 msgid "Primary Menu"
 msgstr "Hauptmenü"
 
-#: functions.php:70 inc/extras.php:198
+#: functions.php:70 inc/extras.php:136
 msgid "Footer Links"
 msgstr "Fußzeilenmenü"
 
@@ -234,22 +185,21 @@ msgstr "Footer Widget 2"
 msgid "Footer Widget 3"
 msgstr "Footer Widget 3"
 
-#: functions.php:304 options.php:23
+#: functions.php:309
 msgid "Right Sidebar"
 msgstr "Rechte Sidebar"
 
-#: functions.php:304 options.php:23
+#: functions.php:309
 msgid "Left Sidebar"
 msgstr "Linke Sidebar"
 
-#: functions.php:304
-#, fuzzy
+#: functions.php:309
 msgid "No Sidebar"
 msgstr "Keine Seitenleiste"
 
-#: functions.php:304
+#: functions.php:309
 msgid "Full Width"
-msgstr ""
+msgstr "Volle Breite"
 
 #: image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
@@ -260,283 +210,293 @@ msgid "Next <i class=\"fa fa-chevron-right\"></i>"
 msgstr "nächste <i class=\"fa fa-chevron-right\"></i>"
 
 #: inc/customizer.php:29
-#, fuzzy
 msgid "Sparkling Options"
 msgstr "Sparkling Kategorien"
 
 #: inc/customizer.php:30
 msgid "Panel to update sparkling theme options"
-msgstr ""
+msgstr "Panel um Einstellungen des Themes vorzunehmen"
 
 #: inc/customizer.php:36
-#, fuzzy
 msgid "Content Options"
-msgstr "Einstellungen speichern"
+msgstr "Inhaltseinstellungen"
 
 #: inc/customizer.php:47
 msgid "Show post excerpts?"
-msgstr ""
+msgstr "Beitragsauszüge anzeigen?"
 
 #: inc/customizer.php:58
-#, fuzzy
 msgid "Display Comments on Static Pages?"
-msgstr "Wird auf der Startseite angezeigt"
+msgstr "Kommentare auf statischen Seiten anzeigen?"
 
 #: inc/customizer.php:66
-#, fuzzy
 msgid "Slider options"
-msgstr "Slider Optionen"
+msgstr "Slider-Optionen"
 
-#: inc/customizer.php:76 options.php:116
+#: inc/customizer.php:76
 msgid "Check if you want to enable slider"
 msgstr "Anhaken, wenn der Slider angezeigt werden soll"
 
-#: inc/customizer.php:91 options.php:123
+#: inc/customizer.php:87
+msgid "Uncheck to simply show the image in the slider"
+msgstr "Aktivieren, um Image Slider mit Beiträgen zu verlinken."
+
+#: inc/customizer.php:102
 msgid "Slider Category"
 msgstr "Slider Kategorie"
 
-#: inc/customizer.php:94 options.php:124
+#: inc/customizer.php:105
 msgid "Select a category for the featured post slider"
 msgstr "Wähle eine Anzeigekategorie für die Beiträge im Slider"
 
-#: inc/customizer.php:104 options.php:132
+#: inc/customizer.php:115
 msgid "Number of slide items"
 msgstr "Anzahl Slider Bilder"
 
-#: inc/customizer.php:106 options.php:133
+#: inc/customizer.php:117
 msgid "Enter the number of slide items"
 msgstr "Gib die Anzahl der Bilder im Slider an"
 
-#: inc/customizer.php:111
-#, fuzzy
+#: inc/customizer.php:122
 msgid "Layout options"
-msgstr "Layout Optionen"
+msgstr "Layout-Optionen"
 
-#: inc/customizer.php:123 options.php:141
+#: inc/customizer.php:134
 msgid "Website Layout Options"
 msgstr "Website Layout Einstellungen"
 
-#: inc/customizer.php:126
-#, fuzzy
+#: inc/customizer.php:137
 msgid "Choose between different layout options to be used as default"
-msgstr "Wähle ob die linke oder rechte Seitenleiste voreingestellt ist"
+msgstr "Wähle zwischen verschiedenen Layout-Optionen als Standardeinstellung"
 
-#: inc/customizer.php:136
-#, fuzzy
+#: inc/customizer.php:148
+msgid "WooCommerce Page Layout Options"
+msgstr "WooCommerce Seitenlayout Optionen"
+
+#: inc/customizer.php:151
+msgid ""
+"Choose between different layout options to be used as default for all "
+"woocommerce pages"
+msgstr ""
+"Wähle zwischen verschiedenen Layout-Optionen als Standard für die "
+"WooCommerce Seite"
+
+#: inc/customizer.php:162
 msgid "Element Color"
-msgstr "Element Farbe"
+msgstr "Elementfarbe"
 
-#: inc/customizer.php:137 inc/customizer.php:149 inc/customizer.php:203
-#: inc/customizer.php:213 inc/customizer.php:223 inc/customizer.php:233
-#: inc/customizer.php:311 inc/customizer.php:321 inc/customizer.php:338
-#: inc/customizer.php:478 inc/customizer.php:489 options.php:152
-#: options.php:160 options.php:205 options.php:213 options.php:221
-#: options.php:229 options.php:259 options.php:267 options.php:280
-#: options.php:390 options.php:398
+#: inc/customizer.php:163 inc/customizer.php:175 inc/customizer.php:229
+#: inc/customizer.php:239 inc/customizer.php:249 inc/customizer.php:259
+#: inc/customizer.php:337 inc/customizer.php:347 inc/customizer.php:377
+#: inc/customizer.php:517 inc/customizer.php:528
 msgid "Default used if no color is selected"
 msgstr "Standardeinstellung wenn keine Farbe ausgewählt wurde"
 
-#: inc/customizer.php:148 options.php:159
+#: inc/customizer.php:174
 msgid "Element color on hover"
 msgstr "Element Farbe für hover (Maus gleitet über Linkelement)"
 
-#: inc/customizer.php:156 options.php:175
+#: inc/customizer.php:182
 msgid "Action Button"
 msgstr "Aktionsbutton"
 
-#: inc/customizer.php:166 options.php:180
+#: inc/customizer.php:192
 msgid "Call For Action Text"
 msgstr "Aktionsbutton Text"
 
-#: inc/customizer.php:167 options.php:181
+#: inc/customizer.php:193
 msgid "Enter the text for call for action section"
 msgstr "Gib den Text für den Aktionsbutton-Abschnitt ein"
 
-#: inc/customizer.php:178 options.php:188
+#: inc/customizer.php:204
 msgid "Call For Action Button Title"
 msgstr "Aktionsbutton Titel"
 
-#: inc/customizer.php:180 options.php:189
+#: inc/customizer.php:206
 msgid "Enter the title for Call For Action button"
 msgstr "Gib den Titel für den Aktionsbutton ein"
 
-#: inc/customizer.php:190 options.php:196
+#: inc/customizer.php:216
 msgid "CFA button link"
 msgstr "Aktionsbutton Link"
 
-#: inc/customizer.php:192 options.php:197
+#: inc/customizer.php:218
 msgid "Enter the link for Call For Action button"
 msgstr "Gib den Link für den Aktionsbutton ein"
 
-#: inc/customizer.php:202 options.php:204
+#: inc/customizer.php:228
 msgid "Call For Action Text Color"
 msgstr "Aktionsbutton Textfarbe"
 
-#: inc/customizer.php:212 options.php:212
+#: inc/customizer.php:238
 msgid "Call For Action Background Color"
 msgstr "Aktionsbutton Hintergrundfarbe"
 
-#: inc/customizer.php:222 options.php:220
+#: inc/customizer.php:248
 msgid "Call For Action Button Border Color"
 msgstr "Aktionsbutton Rahmenfarbe"
 
-#: inc/customizer.php:232 options.php:228
+#: inc/customizer.php:258
 msgid "Call For Action Button Text Color"
 msgstr "Aktionsbutton Text Farbe"
 
-#: inc/customizer.php:239 options.php:236
+#: inc/customizer.php:265
 msgid "Typography"
 msgstr "Typographie"
 
-#: inc/customizer.php:259 options.php:241
+#: inc/customizer.php:285
 msgid "Main Body Text"
 msgstr "Main Body Text"
 
-#: inc/customizer.php:260
-#, fuzzy
+#: inc/customizer.php:286
 msgid "Used in p tags"
-msgstr "Benutzt in P tags"
+msgstr "Genutzt in p tags"
 
-#: inc/customizer.php:300 options.php:250
+#: inc/customizer.php:326
 msgid "Heading Color"
 msgstr "Überschriftenfarbe"
 
-#: inc/customizer.php:301 options.php:251
+#: inc/customizer.php:327
 msgid "Color for all headings (h1-h6)"
 msgstr "Farbe für alle Überschriften (h1-h6)"
 
-#: inc/customizer.php:310 options.php:258
+#: inc/customizer.php:336
 msgid "Link Color"
 msgstr "Link Farbe"
 
-#: inc/customizer.php:320 options.php:266
+#: inc/customizer.php:346
 msgid "Link:hover Color"
 msgstr "Link:hover Farbe"
 
-#: inc/customizer.php:327 options.php:274
+#: inc/customizer.php:353
 msgid "Header"
-msgstr "Kopf"
+msgstr "Header"
 
-#: inc/customizer.php:337 options.php:279
+#: inc/customizer.php:364
+msgid "Sticky Header"
+msgstr ""
+
+#: inc/customizer.php:365
+msgid "Check to show fixed header"
+msgstr "Aktivieren, um fixierten Header anzuzeigen"
+
+#: inc/customizer.php:376
 msgid "Top nav background color"
 msgstr "Top nav Hintergrund Farbe"
 
-#: inc/customizer.php:347 options.php:287
+#: inc/customizer.php:386
 msgid "Top nav item color"
 msgstr "Top nav Element Farbe"
 
-#: inc/customizer.php:348 options.php:288
+#: inc/customizer.php:387
 msgid "Link color"
 msgstr "Link Farbe"
 
-#: inc/customizer.php:358 options.php:295
+#: inc/customizer.php:397
 msgid "Top nav item hover color"
 msgstr "Top nav Element hover Farbe"
 
-#: inc/customizer.php:359 options.php:296
+#: inc/customizer.php:398
 msgid "Link:hover color"
 msgstr "Link:hover Farbe"
 
-#: inc/customizer.php:369 options.php:303
+#: inc/customizer.php:408
 msgid "Top nav dropdown background color"
 msgstr "Top nav Dropdown Hintergrund Farbe"
 
-#: inc/customizer.php:370 inc/customizer.php:403 options.php:304
-#: options.php:328
+#: inc/customizer.php:409 inc/customizer.php:442
 msgid "Background of dropdown item hover color"
 msgstr "Hintergrund Dropdown Element hover Farbe"
 
-#: inc/customizer.php:380 options.php:311
+#: inc/customizer.php:419
 msgid "Top nav dropdown item color"
 msgstr "Top nav Dropdown Element Farbe"
 
-#: inc/customizer.php:381 options.php:312
+#: inc/customizer.php:420
 msgid "Dropdown item color"
 msgstr "Dropdown Element Farbe"
 
-#: inc/customizer.php:391 options.php:319
+#: inc/customizer.php:430
 msgid "Top nav dropdown item hover color"
 msgstr "Top nav dropdown Eintrag - Hover Farbe"
 
-#: inc/customizer.php:392 options.php:320
+#: inc/customizer.php:431
 msgid "Dropdown item hover color"
 msgstr "Dropdown Eintrag - Hover Farbe"
 
-#: inc/customizer.php:402 options.php:327
+#: inc/customizer.php:441
 msgid "Top nav dropdown item background hover color"
 msgstr "Top nav dropdown Eintrag - Hover Hintergrundfarbe"
 
-#: inc/customizer.php:409 options.php:335
+#: inc/customizer.php:448
 msgid "Footer"
 msgstr "Footer"
 
-#: inc/customizer.php:419 options.php:340
+#: inc/customizer.php:458
 msgid "Footer widget area background color"
 msgstr "Footer Widget Bereich Hintergrund Farbe"
 
-#: inc/customizer.php:429 options.php:347
+#: inc/customizer.php:468
 msgid "Footer background color"
 msgstr "Footer Hintergrund Farbe"
 
-#: inc/customizer.php:439 options.php:354
+#: inc/customizer.php:478
 msgid "Footer text color"
 msgstr "Footer Text Farbe"
 
-#: inc/customizer.php:449 options.php:361
+#: inc/customizer.php:488
 msgid "Footer link color"
 msgstr "Footer Link Farbe"
 
-#: inc/customizer.php:459 options.php:368
+#: inc/customizer.php:498
 msgid "Footer information"
 msgstr "Footer Information"
 
-#: inc/customizer.php:460 options.php:369
+#: inc/customizer.php:499
 msgid "Copyright text in footer"
 msgstr "Copyright Text im Footer"
 
-#: inc/customizer.php:467 options.php:384
+#: inc/customizer.php:506
 msgid "Social"
 msgstr "Social"
 
-#: inc/customizer.php:477 options.php:389
+#: inc/customizer.php:516
 msgid "Social icon color"
 msgstr "Social Icon Farbe"
 
-#: inc/customizer.php:488 options.php:397
+#: inc/customizer.php:527
 msgid "Footer social icon color"
 msgstr "Footer Social Icon Farbe"
 
-#: inc/customizer.php:499 options.php:376
-#, fuzzy
+#: inc/customizer.php:538
 msgid "Footer Social Icons"
-msgstr "Footer Social Icon Farbe"
+msgstr "Footer Social Icons"
 
-#: inc/customizer.php:500
-#, fuzzy
+#: inc/customizer.php:539
 msgid "Check to show social icons in footer"
-msgstr "Footer Social Icon Farbe"
+msgstr "Aktivieren, um Social Icons in der Fußzeile anzuzeigen"
 
-#: inc/customizer.php:507 options.php:542
+#: inc/customizer.php:546
 msgid "Other"
 msgstr "Andere"
 
-#: inc/customizer.php:517 options.php:547
+#: inc/customizer.php:556
 msgid "Custom CSS"
 msgstr "Benutzerdefiniertes CSS"
 
-#: inc/customizer.php:518 options.php:548
+#: inc/customizer.php:557
 msgid "Additional CSS"
 msgstr "Zusätzliches CSS"
 
-#: inc/customizer.php:525 inc/extras.php:383
+#: inc/customizer.php:564 inc/extras.php:340
 msgid "Support and Documentation"
 msgstr "Support und Dokumentation"
 
-#: inc/customizer.php:701 inc/extras.php:389
+#: inc/customizer.php:748 inc/extras.php:346
 msgid "Sparkling Documentation"
 msgstr "Sparkling Dokumentation"
 
-#: inc/customizer.php:702 inc/extras.php:390
+#: inc/customizer.php:749 inc/extras.php:347
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -544,48 +504,42 @@ msgstr ""
 "Der beste Weg uns zu <b>Support Anfragen</b> und <b>Fehler Reports</b> zu "
 "kontaktieren ist via"
 
-#: inc/customizer.php:702 inc/extras.php:390
+#: inc/customizer.php:749 inc/extras.php:347
 msgid "Colorlib support forum"
 msgstr "Colorlib Support Forum"
 
-#: inc/customizer.php:703 inc/extras.php:391
+#: inc/customizer.php:750 inc/extras.php:348
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "Wenn Dir dieses Theme gefällt, dann freue ich mich über:"
 
-#: inc/customizer.php:705 inc/extras.php:393
+#: inc/customizer.php:752 inc/extras.php:350
 msgid "Rate this Theme"
 msgstr "Dieses Theme bewerten"
 
-#: inc/customizer.php:706 inc/extras.php:394
+#: inc/customizer.php:753 inc/extras.php:351
 msgid "Like on Facebook"
 msgstr "Auf Facebook Liken"
 
-#: inc/customizer.php:707 inc/extras.php:395
+#: inc/customizer.php:754 inc/extras.php:352
 msgid "Follow on Twitter"
 msgstr "Auf Twitter folgen"
 
 #: inc/extras.php:61
-#, php-format
-msgid "Page %s"
-msgstr "Seite %s"
-
-#: inc/extras.php:125
-#, fuzzy
 msgid ""
 "This post is password protected. To view it please enter your password below:"
 msgstr ""
 "<p>Dieser Artikel ist mit einem Passwort geschützt. Gib Dein Passwort ein, "
 "um den Artikel zu lesen:</p>"
 
-#: inc/extras.php:126
+#: inc/extras.php:62
 msgid "Password:"
 msgstr "Passwort:"
 
-#: inc/extras.php:129
+#: inc/extras.php:65
 msgid "Submit"
 msgstr "Absenden"
 
-#: inc/extras.php:272
+#: inc/extras.php:216
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Theme von %1$s Powered by %2$s"
@@ -597,29 +551,392 @@ msgid ""
 "if page Template is set as Default Template and Blog Type Templates.)"
 msgstr ""
 "Wähle ein Layout ausschließlich für diese Seite (Beachte: Diese Einstellung "
-"ist nur wirksam, falls das Template der Seite als Standard Template  und "
-"Blog Type Template eingestellt ist.)"
+"ist nur wirksam, falls das Template der Seite als Standard Template und ein "
+"Blog Type Template ist.)"
 
 #: inc/metaboxes.php:21
-#, fuzzy
 msgid "Select layout for this specific Post only"
-msgstr "Wähle ein Layout ausschließlich für diese Seite"
+msgstr "Wähle ein Layout ausschließlich für diesen Beitrag"
 
-#: inc/template-tags.php:23
-msgid "Posts navigation"
-msgstr "Posts Navigation"
+#: inc/metaboxes.php:28
+msgid "Select layout for this specific Product only"
+msgstr "Wähle ein Layout nur für dieses bestimmte Produkt"
 
-#: inc/template-tags.php:27
-msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
-msgstr "<i class=\"fa fa-chevron-left\"></i> ältere Artikel"
+#: inc/navwalker.php:202
+msgid "Add a menu"
+msgstr "Menü hinzufügen"
 
-#: inc/template-tags.php:31
-msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
-msgstr "neuere Artikel <i class=\"fa fa-chevron-right\"></i>"
+#: inc/tgmpa/class-tgm-plugin-activation.php:327
+#: inc/tgmpa/tgm-plugin-activation.php:79
+msgid "Install Required Plugins"
+msgstr "Benötigte Plugins installieren"
 
-#: inc/template-tags.php:56
-msgid "Post navigation"
-msgstr "Post Navigation"
+#: inc/tgmpa/class-tgm-plugin-activation.php:328
+#: inc/tgmpa/tgm-plugin-activation.php:80
+msgid "Install Plugins"
+msgstr "Plugins installieren"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:330
+#: inc/tgmpa/tgm-plugin-activation.php:81
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Installiere Plug-Ins: %s"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:332
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr "Plug-Ins updaten: %s"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:333
+#: inc/tgmpa/tgm-plugin-activation.php:82
+msgid "Something went wrong with the plugin API."
+msgstr "Es gab einen Fehler mit der Plug-In API."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:385
+#: inc/tgmpa/tgm-plugin-activation.php:93
+msgid "Return to Required Plugins Installer"
+msgstr "Zurück zur Installation notwendiger Plug-Ins"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:386
+#: inc/tgmpa/class-tgm-plugin-activation.php:827
+#: inc/tgmpa/class-tgm-plugin-activation.php:2533
+#: inc/tgmpa/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr "Zurück zum Dashboard"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:387
+#: inc/tgmpa/class-tgm-plugin-activation.php:3159
+#: inc/tgmpa/tgm-plugin-activation.php:94
+msgid "Plugin activated successfully."
+msgstr "Plug-In erfolgreich aktiviert."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:388
+#: inc/tgmpa/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "Das folgende Plug-In wurde erfolgreich aktiviert:"
+msgstr[1] "Die folgenden Plug-Ins wurden erfolgreich aktiviert:"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:390
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "Keine Änderung vorgenommen. Plug-In %1$s war bereits aktiv."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:392
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+"Das Plug-In wurde nicht aktiviert. Es ist eine höhere Version von %s "
+"notwendig für dieses Theme. Bitte führen Sie ein Update des Plug-Ins durch."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:394
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Alle Plug-Ins wurden erfolgreich installiert und aktiviert. %1$s"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr "Hinweis Verwerfen"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:396
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+"Es gibt ein oder mehrere notwendige oder empfohlene Plug-Ins zum "
+"installieren, updaten oder aktivieren."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr "Bitte kontaktieren Sie den Administrator dieser Webseite für Hilfe."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+"Das Plug-In muss geupdated werden, um mit Ihrem Theme zu funktionieren."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr "Update notwendig"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:934
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:934
+#: inc/tgmpa/class-tgm-plugin-activation.php:937
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+"Bitte kontaktieren Sie den Plug-In Provider und bitten Sie Ihn das Plug-In "
+"nach WordPress Richtlinien zu erstellen."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:937
+#, fuzzy
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+"Das Remote Plug-In Paket enthält mehr als eine Datei aber die Dateien sind "
+"nicht in einem Ordner gepackt."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:1982
+#, php-format
+msgid "TGMPA v%s"
+msgstr "TGMPA v%s"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr "Notwendig"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr "Empfohlen"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr "WordPress Repository"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr "Externe Quelle"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr "Pre-Packaged"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr "Nicht installiert"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr "Installiert aber nicht aktiv"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr "Aktiv"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr "Notwendiges Update nicht verfügbar"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr "Update notwendig"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr "Update empfohlen"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2388
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2392
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2396
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2400
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr "Installierte Version:"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr "Mindestens benötigte Version:"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr "Verfügbare Version:"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr "Keine Plug-Ins zum installieren, updaten oder aktivieren."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr "Plug-Ins"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr "Quelle"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr "Typ"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr "Version"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr "Status"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2603
+#, fuzzy, php-format
+msgid "Install %2$s"
+msgstr "Installiere %2$s"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2608
+#, fuzzy, php-format
+msgid "Update %2$s"
+msgstr "Update %2$s"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2614
+#, fuzzy, php-format
+msgid "Activate %2$s"
+msgstr "Activate %2$s"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr "Upgrade Nachricht vom Plug-In Hersteller:"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr "Installieren"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr "Updaten"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr "Aktivieren"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+"Es wurden keine Plug-Ins zum installieren ausgewählt. Keine Änderung "
+"vorgenommen."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr "Keine Plug-Ins zum Update ausgewählt. Keine Änderung vorgenommen."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr "Zur Zeit sind keine Plug-Ins zur Installation verfügbar."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr "Zur Zeit sind keine Plug-Ins zum updaten verfügbar."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+"Es wurden keine Plug-Ins zum aktivieren ausgewählt. Keine Änderung "
+"vorgenommen."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr "Zur Zeit sind keine Plug-Ins zum aktivieren verfügbar."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr "Plug-In Aktivierung fehlgeschlagen."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3498
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "Updating Plug-In %1$s (%2$d/%3$d)"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3501
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+"Es ist ein Fehler aufgetreten beim installieren von %1$s: <strong>%2$s</"
+"strong>."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3503
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "Die Installation von %1$s ist fehlgeschlagen."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3507
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"Der Installations- und Aktivierungsprozess ist gestartet. Dieser Prozess "
+"kann eine einige Zeit in Anspruch nehmen, bitte habe Geduld..."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3509
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s wurde erfolgreich installiert und aktiviert."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3509
+#: inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr "Zeige Details"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3509
+#: inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr "Verberge Details"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr "Alle Installationen und Aktivierungen wurden abgeschlossen."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3512
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Installation und Aktivierung von Plug-In %1$s (%2$d/%3$d)"
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3515
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"Der Installationsprozess ist gestartet. Dieser Prozess kann eine einige Zeit "
+"in Anspruch nehmen, bitte habe Geduld..."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3517
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s erfolgreich installiert."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr "Alle Installationen wurden abgeschlossen."
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3520
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Installiere Plug-In %1$s (%2$d/%3$d)"
+
+#: inc/tgmpa/tgm-plugin-activation.php:95
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr "Alle Plug-Ins wurden erfolgreich installiert und aktiviert. %s"
 
 #: inc/widgets/widget-categories.php:11 inc/widgets/widget-categories.php:12
 msgid "Sparkling Categories"
@@ -667,153 +984,7 @@ msgstr "Sparkling Social Widget"
 msgid "Follow us"
 msgstr "Folgen Sie uns"
 
-#: options.php:27
-msgid "One"
-msgstr "eins"
-
-#: options.php:28
-msgid "Two"
-msgstr "Zwei"
-
-#: options.php:29
-msgid "Three"
-msgstr "Drei"
-
-#: options.php:30
-msgid "Four"
-msgstr "Vier"
-
-#: options.php:31
-msgid "Five"
-msgstr "Fünf"
-
-#: options.php:36
-msgid "French Toast"
-msgstr "Französischer Toast"
-
-#: options.php:37
-msgid "Pancake"
-msgstr "Pfannkuchen"
-
-#: options.php:38
-msgid "Omelette"
-msgstr "Omelette"
-
-#: options.php:39
-msgid "Crepe"
-msgstr "Crepe"
-
-#: options.php:40
-msgid "Waffle"
-msgstr "Waffel"
-
-#: options.php:110
-msgid "Main"
-msgstr "Haupt"
-
-#: options.php:115
-msgid "Do You want to display image slider on the Home Page?"
-msgstr "Möchtest Du den Image Slider auf der Startseite anzeigen?"
-
-#: options.php:142
-msgid "Choose between Left and Right sidebar options to be used as default"
-msgstr "Wähle ob die linke oder rechte Seitenleiste voreingestellt ist"
-
-#: options.php:151
-msgid "Element color"
-msgstr "Element Farbe"
-
-#: options.php:167
-msgid "Custom Favicon"
-msgstr "Benutzerdefiniertes Favicon"
-
-#: options.php:168
-msgid ""
-"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
-msgstr "Laden Sie ein 32px x 32px PNG/GIF Bild als Favicon hoch"
-
-#: options.php:242
-msgid "Used in P tags"
-msgstr "Benutzt in P tags"
-
-#: options.php:377
-#, fuzzy
-msgid "Show/Hide social icons in footer"
-msgstr "Footer Social Icon Farbe"
-
-#: options.php:405
-msgid "Add full URL for your social network profiles"
-msgstr "Füge die vollständigen URL's Deiner Social Network Profile hinzu"
-
-#: options.php:406
-msgid "Facebook"
-msgstr "Facebook"
-
-#: options.php:415
-msgid "Twitter"
-msgstr "Twitter"
-
-#: options.php:423
-msgid "Google+"
-msgstr "Google+"
-
-#: options.php:431
-msgid "Youtube"
-msgstr "Youtube"
-
-#: options.php:439
-msgid "Vimeo"
-msgstr "Vimeo"
-
-#: options.php:447
-msgid "LinkedIn"
-msgstr "LinkedIn"
-
-#: options.php:455
-msgid "Pinterest"
-msgstr "Pinterest"
-
-#: options.php:463
-msgid "RSS Feed"
-msgstr "RSS Feed"
-
-#: options.php:471
-msgid "Tumblr"
-msgstr "Tumblr"
-
-#: options.php:479
-msgid "Flickr"
-msgstr "Flickr"
-
-#: options.php:487
-msgid "Instagram"
-msgstr "Instagram"
-
-#: options.php:495
-msgid "Dribbble"
-msgstr "Dribbble"
-
-#: options.php:503
-msgid "Skype"
-msgstr "Skype"
-
-#: options.php:511
-msgid "Foursquare"
-msgstr "Foursquare"
-
-#: options.php:519
-msgid "SoundCloud"
-msgstr "SoundCloud"
-
-#: options.php:527
-msgid "GitHub"
-msgstr ""
-
-#: options.php:535
-msgid "Spotify"
-msgstr ""
-
-#: search.php:16
+#: search.php:17
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Suchergebnisse für: %s"
@@ -841,6 +1012,174 @@ msgstr "Suche"
 #: sidebar.php:26
 msgid "Meta"
 msgstr "Meta"
+
+#~ msgid "Author: %s"
+#~ msgstr "Autor: %s"
+
+#~ msgid "Day: %s"
+#~ msgstr "Tag: %s"
+
+#~ msgid "Month: %s"
+#~ msgstr "Monat: %s"
+
+#~ msgid "Year: %s"
+#~ msgstr "Jahr: %s"
+
+#~ msgid "Asides"
+#~ msgstr "Nebenbemerkungen"
+
+#~ msgid "Galleries"
+#~ msgstr "Galerien"
+
+#~ msgid "Images"
+#~ msgstr "Bilder"
+
+#~ msgid "Videos"
+#~ msgstr "Videos"
+
+#~ msgid "Quotes"
+#~ msgstr "Zitate"
+
+#~ msgid "Links"
+#~ msgstr "Links"
+
+#~ msgid "Statuses"
+#~ msgstr "Status"
+
+#~ msgid "Audios"
+#~ msgstr "Audio"
+
+#~ msgid "Chats"
+#~ msgstr "Chats"
+
+#~ msgid "&larr; Older Comments"
+#~ msgstr "&larr; ältere Kommentare"
+
+#~ msgid "Newer Comments &rarr;"
+#~ msgstr "Neueste Kommentare &rarr;"
+
+#~ msgid "Edit"
+#~ msgstr "Editiere"
+
+#~ msgid "Posts navigation"
+#~ msgstr "Posts Navigation"
+
+#~ msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
+#~ msgstr "<i class=\"fa fa-chevron-left\"></i> ältere Artikel"
+
+#~ msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
+#~ msgstr "neuere Artikel <i class=\"fa fa-chevron-right\"></i>"
+
+#~ msgid "Post navigation"
+#~ msgstr "Post Navigation"
+
+#~ msgid "Page %s"
+#~ msgstr "Seite %s"
+
+#~ msgid "One"
+#~ msgstr "eins"
+
+#~ msgid "Two"
+#~ msgstr "Zwei"
+
+#~ msgid "Three"
+#~ msgstr "Drei"
+
+#~ msgid "Four"
+#~ msgstr "Vier"
+
+#~ msgid "Five"
+#~ msgstr "Fünf"
+
+#~ msgid "French Toast"
+#~ msgstr "Französischer Toast"
+
+#~ msgid "Pancake"
+#~ msgstr "Pfannkuchen"
+
+#~ msgid "Omelette"
+#~ msgstr "Omelette"
+
+#~ msgid "Crepe"
+#~ msgstr "Crepe"
+
+#~ msgid "Waffle"
+#~ msgstr "Waffel"
+
+#~ msgid "Main"
+#~ msgstr "Haupt"
+
+#~ msgid "Do You want to display image slider on the Home Page?"
+#~ msgstr "Möchtest Du den Image Slider auf der Startseite anzeigen?"
+
+#~ msgid "Choose between Left and Right sidebar options to be used as default"
+#~ msgstr "Wähle ob die linke oder rechte Seitenleiste voreingestellt ist"
+
+#~ msgid "Element color"
+#~ msgstr "Element Farbe"
+
+#~ msgid "Custom Favicon"
+#~ msgstr "Benutzerdefiniertes Favicon"
+
+#~ msgid ""
+#~ "Upload a 32px x 32px PNG/GIF image that will represent your websites "
+#~ "favicon"
+#~ msgstr "Laden Sie ein 32px x 32px PNG/GIF Bild als Favicon hoch"
+
+#~ msgid "Used in P tags"
+#~ msgstr "Benutzt in P tags"
+
+#, fuzzy
+#~ msgid "Show/Hide social icons in footer"
+#~ msgstr "Footer Social Icon Farbe"
+
+#~ msgid "Add full URL for your social network profiles"
+#~ msgstr "Füge die vollständigen URL's Deiner Social Network Profile hinzu"
+
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#~ msgid "Twitter"
+#~ msgstr "Twitter"
+
+#~ msgid "Google+"
+#~ msgstr "Google+"
+
+#~ msgid "Youtube"
+#~ msgstr "Youtube"
+
+#~ msgid "Vimeo"
+#~ msgstr "Vimeo"
+
+#~ msgid "LinkedIn"
+#~ msgstr "LinkedIn"
+
+#~ msgid "Pinterest"
+#~ msgstr "Pinterest"
+
+#~ msgid "RSS Feed"
+#~ msgstr "RSS Feed"
+
+#~ msgid "Tumblr"
+#~ msgstr "Tumblr"
+
+#~ msgid "Flickr"
+#~ msgstr "Flickr"
+
+#~ msgid "Instagram"
+#~ msgstr "Instagram"
+
+#~ msgid "Dribbble"
+#~ msgstr "Dribbble"
+
+#~ msgid "Skype"
+#~ msgstr "Skype"
+
+#~ msgid "Foursquare"
+#~ msgstr "Foursquare"
+
+#~ msgid "SoundCloud"
+#~ msgstr "SoundCloud"
 
 #~ msgid "Theme Options"
 #~ msgstr "Theme Optionen"

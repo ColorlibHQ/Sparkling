@@ -78,6 +78,17 @@ function sparkling_customizer( $wp_customize ) {
                     'priority'	=> 5,
                     'type'      => 'checkbox',
             ) );
+						$wp_customize->add_setting( 'sparkling[sparkling_slider_link_checkbox]', array(
+                    'default' => 1,
+                    'type' => 'option',
+                    'sanitize_callback' => 'sparkling_sanitize_checkbox',
+            ) );
+            $wp_customize->add_control( 'sparkling[sparkling_slider_link_checkbox]', array(
+                    'label'	=> esc_html__( 'Uncheck to simply show the image in the slider', 'sparkling' ),
+                    'section'	=> 'sparkling_slider_options',
+                    'priority'	=> 6,
+                    'type'      => 'checkbox',
+            ) );
 
             // Pull all the categories into an array
             global $options_categories;
@@ -126,7 +137,7 @@ function sparkling_customizer( $wp_customize ) {
                  'description' => __('Choose between different layout options to be used as default', 'sparkling'),
                  'choices'    => $site_layout
             ));
-            
+
             if ( class_exists( 'WooCommerce' ) ) {
                 $wp_customize->add_setting('sparkling[woo_site_layout]', array(
                      'default' => 'full-width',
@@ -309,7 +320,7 @@ function sparkling_customizer( $wp_customize ) {
                 'choices'    => $typography_options['styles']
             ));
             $wp_customize->add_setting('sparkling[main_body_typography][color]', array(
-                'default' => $typography_defaults['style'],
+                'default' => '',
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -354,7 +365,7 @@ function sparkling_customizer( $wp_customize ) {
             'priority' => 31,
             'panel' => 'sparkling_main_options'
         ));
-        
+
             $wp_customize->add_setting('sparkling[sticky_header]', array(
                 'default' => 0,
                 'type' => 'option',
@@ -366,7 +377,7 @@ function sparkling_customizer( $wp_customize ) {
                 'section' => 'sparkling_header_options',
                 'type' => 'checkbox',
             ));
-            
+
             $wp_customize->add_setting('sparkling[nav_bg_color]', array(
                 'default' => '',
                 'type'  => 'option',

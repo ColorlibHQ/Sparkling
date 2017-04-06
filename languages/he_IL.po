@@ -1,0 +1,685 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sparkling Theme\n"
+"POT-Creation-Date: 2016-03-18 17:05+0200\n"
+"PO-Revision-Date: 2016-03-19 19:37+0200\n"
+"Last-Translator: \n"
+"Language-Team: colorlib <info@colorlib.com>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
+"esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "אופס! הדף המבוקש לא נמצא."
+
+#: ../404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"זה נראה כאילו שום דבר לא נמצאה במיקום זה. אולי לנסות את אחד הקישורים להלן או "
+"חיפוש?"
+
+#: ../404.php:25
+msgid "Recent Posts"
+msgstr "פוסטים אחרונים"
+
+#: ../404.php:31
+msgid "Most Used Categories"
+msgstr "קטגוריות נפוצות"
+
+#: ../404.php:52
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "נסה לחפש בארכיון החודשי. %1$s"
+
+#: ../404.php:53 ../archive.php:66 ../sidebar.php:19
+msgid "Archives"
+msgstr "ארכיון"
+
+#: ../404.php:58
+msgid "Tags"
+msgstr "תגיות"
+
+#: ../archive.php:27
+#, php-format
+msgid "Author: %s"
+msgstr "מחבר: %s"
+
+#: ../archive.php:30
+#, php-format
+msgid "Day: %s"
+msgstr "יום: %s"
+
+#: ../archive.php:33
+#, php-format
+msgid "Month: %s"
+msgstr "חודש: %s"
+
+#: ../archive.php:36
+#, php-format
+msgid "Year: %s"
+msgstr "שנה: %s"
+
+#: ../archive.php:39
+msgid "Asides"
+msgstr "תוכן נוסף"
+
+#: ../archive.php:42
+msgid "Galleries"
+msgstr "גלריות"
+
+#: ../archive.php:45
+msgid "Images"
+msgstr "תמונות"
+
+#: ../archive.php:48
+msgid "Videos"
+msgstr "סירטונים"
+
+#: ../archive.php:51
+msgid "Quotes"
+msgstr "ציטוטים"
+
+#: ../archive.php:54
+msgid "Links"
+msgstr "קישורים"
+
+#: ../archive.php:57
+msgid "Statuses"
+msgstr "סטטוסים"
+
+#: ../archive.php:60
+msgid "Audios"
+msgstr "הקלטות"
+
+#: ../archive.php:63
+msgid "Chats"
+msgstr "שיחות"
+
+#: ../comments.php:28
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "תגובה אחת על &ldquo;%2$s&rdquo;"
+msgstr[1] "‏%1$s תגובות על &ldquo;%2$s&rdquo;"
+
+#: ../comments.php:35 ../comments.php:53
+msgid "Comment navigation"
+msgstr "תגובות"
+
+#: ../comments.php:36 ../comments.php:54
+msgid "&larr; Older Comments"
+msgstr "‏&larr; תגובות קודמות"
+
+#: ../comments.php:37 ../comments.php:55
+msgid "Newer Comments &rarr;"
+msgstr "תגובות חדשות &rarr;"
+
+#: ../comments.php:65
+msgid "Comments are closed."
+msgstr "חסום לתגובות."
+
+#: ../content-none.php:13
+msgid "Nothing Found"
+msgstr "דבר לא נמצא"
+
+#: ../content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "מוכנ/ה לפרסם את הפוסט הראשון שלך? <a href=\"%1$s\">התחל כאן</a>."
+
+#: ../content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "לא נמצאו תוצאות לחיפוש. נסה מילות חיפוש אחרות."
+
+#: ../content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "נראה שלא ניתן למצוא את מה שאת/ה מבקש. נסה/י להשתמש בחיפוש. "
+
+#: ../content-page.php:21 ../content-single.php:35 ../content.php:48
+#: ../image.php:79
+msgid "Pages:"
+msgstr "דפים: "
+
+#: ../content-page.php:32 ../content-single.php:26 ../content.php:23
+msgid "Edit"
+msgstr "עריכה: "
+
+#: ../content-single.php:19
+msgid ", "
+msgstr ""
+
+#: ../content-single.php:23
+#, php-format
+msgid " %1$s"
+msgstr ""
+
+#: ../content.php:20
+msgid "Leave a comment"
+msgstr "השאר/י תגובה"
+
+#: ../content.php:20
+msgid "1 Comment"
+msgstr "תגובה אחת"
+
+#: ../content.php:20
+msgid "% Comments"
+msgstr "% תגובות"
+
+#: ../content.php:32 ../content.php:40
+msgid "Read More"
+msgstr "קרא/י עוד"
+
+#: ../functions.php:69
+msgid "Primary Menu"
+msgstr "תפריט ראשי"
+
+#: ../functions.php:70 ../inc/extras.php:136
+msgid "Footer Links"
+msgstr "קישורים לתחתית האתר"
+
+#: ../functions.php:108
+msgid "Sidebar"
+msgstr "תפריט צד"
+
+#: ../functions.php:118
+msgid "Homepage Widget 1"
+msgstr "דף הבית: תוסף 1"
+
+#: ../functions.php:119 ../functions.php:129 ../functions.php:139
+msgid "Displays on the Home Page"
+msgstr "הצג בדף הבית"
+
+#: ../functions.php:128
+msgid "Homepage Widget 2"
+msgstr "דף הבית: תוסף 2"
+
+#: ../functions.php:138
+msgid "Homepage Widget 3"
+msgstr "דף הבית: תוסף 3"
+
+#: ../functions.php:148
+msgid "Footer Widget 1"
+msgstr "תחתית האתר: תוסף 1"
+
+#: ../functions.php:149 ../functions.php:159 ../functions.php:169
+msgid "Used for footer widget area"
+msgstr "מופיע בתוספים שבתחתית האתר"
+
+#: ../functions.php:158
+msgid "Footer Widget 2"
+msgstr "תחתית האתר: תוסף 2"
+
+#: ../functions.php:168
+msgid "Footer Widget 3"
+msgstr "תחתית האתר: תוסף 3"
+
+#: ../functions.php:304
+msgid "Right Sidebar"
+msgstr "תפריט צד ימין"
+
+#: ../functions.php:304
+msgid "Left Sidebar"
+msgstr "תפריט צד שמאל"
+
+#: ../functions.php:304
+msgid "No Sidebar"
+msgstr "ללא תפריט צד"
+
+#: ../functions.php:304
+msgid "Full Width"
+msgstr "רוחב מלא"
+
+#: ../image.php:22
+msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
+msgstr "‏<i class=\"fa fa-chevron-left\"></i> הקודם"
+
+#: ../image.php:23
+msgid "Next <i class=\"fa fa-chevron-right\"></i>"
+msgstr "‏<i class=\"fa fa-chevron-right\"></i> הבא"
+
+#: ../inc/customizer.php:29
+msgid "Sparkling Options"
+msgstr "אפשרויות Sparkling"
+
+#: ../inc/customizer.php:30
+msgid "Panel to update sparkling theme options"
+msgstr "אזור לעדכון הגדרות ערכת הנושא Sparkling"
+
+#: ../inc/customizer.php:36
+msgid "Content Options"
+msgstr "אפשרויות תוכן"
+
+#: ../inc/customizer.php:47
+msgid "Show post excerpts?"
+msgstr "הראה פוסט excerpts"
+
+#: ../inc/customizer.php:58
+msgid "Display Comments on Static Pages?"
+msgstr "הצג תגובות בדפים?"
+
+#: ../inc/customizer.php:66
+msgid "Slider options"
+msgstr "אפשרויות תפריט צד"
+
+#: ../inc/customizer.php:76
+msgid "Check if you want to enable slider"
+msgstr "סמן כדי להפעיל את תפריט הצד"
+
+#: ../inc/customizer.php:91
+msgid "Slider Category"
+msgstr "קטגוריה שתופיע בתפריט הצד"
+
+#: ../inc/customizer.php:94
+msgid "Select a category for the featured post slider"
+msgstr "בחר כטגוריה שתופיע בסליידר בראש האתר"
+
+#: ../inc/customizer.php:104
+msgid "Number of slide items"
+msgstr "מספר פוסטים שיופיעו בסליידר"
+
+#: ../inc/customizer.php:106
+msgid "Enter the number of slide items"
+msgstr "הכנס מספר פוסטים"
+
+#: ../inc/customizer.php:111
+msgid "Layout options"
+msgstr "אפשרויות עימוד"
+
+#: ../inc/customizer.php:123
+msgid "Website Layout Options"
+msgstr "אפשרויות עימוד האתר"
+
+#: ../inc/customizer.php:126
+msgid "Choose between different layout options to be used as default"
+msgstr "בחר אפשרות ברירת מחדל לעימוד"
+
+#: ../inc/customizer.php:137
+msgid "WooCommerce Page Layout Options"
+msgstr ""
+
+#: ../inc/customizer.php:140
+msgid ""
+"Choose between different layout options to be used as default for all "
+"woocommerce pages"
+msgstr ""
+
+#: ../inc/customizer.php:151
+msgid "Element Color"
+msgstr "צבע אלמנט"
+
+#: ../inc/customizer.php:152 ../inc/customizer.php:164
+#: ../inc/customizer.php:218 ../inc/customizer.php:228
+#: ../inc/customizer.php:238 ../inc/customizer.php:248
+#: ../inc/customizer.php:326 ../inc/customizer.php:336
+#: ../inc/customizer.php:366 ../inc/customizer.php:506
+#: ../inc/customizer.php:517
+msgid "Default used if no color is selected"
+msgstr "צבע ברירת מחדל"
+
+#: ../inc/customizer.php:163
+msgid "Element color on hover"
+msgstr "צבע כאשר העכבר מצביע"
+
+#: ../inc/customizer.php:171
+msgid "Action Button"
+msgstr "כפתור פעולה"
+
+#: ../inc/customizer.php:181
+msgid "Call For Action Text"
+msgstr "טקסט עבור ״קריאה לפעולה״"
+
+#: ../inc/customizer.php:182
+msgid "Enter the text for call for action section"
+msgstr "הכנס טקסט עבור פיסקת ״קריאה לפעולה״"
+
+#: ../inc/customizer.php:193
+msgid "Call For Action Button Title"
+msgstr "טקסט עבור כפתור קריאה לפעולה"
+
+#: ../inc/customizer.php:195
+msgid "Enter the title for Call For Action button"
+msgstr "הכנס טקסט עבור כפתור קריאה לפעולה"
+
+#: ../inc/customizer.php:205
+msgid "CFA button link"
+msgstr "טקסט עבור כפתור ״קריאה לפעולה״"
+
+#: ../inc/customizer.php:207
+msgid "Enter the link for Call For Action button"
+msgstr "קישור עבור כפתור ״קריאה לפעולה״"
+
+#: ../inc/customizer.php:217
+msgid "Call For Action Text Color"
+msgstr "צבע טקסט ״קריאה לפעולה״"
+
+#: ../inc/customizer.php:227
+msgid "Call For Action Background Color"
+msgstr "רקע כפתור ״קריאה לפעולה״"
+
+#: ../inc/customizer.php:237
+msgid "Call For Action Button Border Color"
+msgstr "מסגרת כפתור ״קריאה לפעולה״"
+
+#: ../inc/customizer.php:247
+msgid "Call For Action Button Text Color"
+msgstr "צבע טקסט כפתור ״קריאה לפעולה״"
+
+#: ../inc/customizer.php:254
+msgid "Typography"
+msgstr "טקסט (גדלים וצבעים)"
+
+#: ../inc/customizer.php:274
+msgid "Main Body Text"
+msgstr "צבע טקסט רגיל"
+
+#: ../inc/customizer.php:275
+msgid "Used in p tags"
+msgstr "יחול על פסקאות (p)"
+
+#: ../inc/customizer.php:315
+msgid "Heading Color"
+msgstr "צבע כותרת"
+
+#: ../inc/customizer.php:316
+msgid "Color for all headings (h1-h6)"
+msgstr "צבע כותרות בטקסט (h1-h6)"
+
+#: ../inc/customizer.php:325
+msgid "Link Color"
+msgstr "צבע קישור"
+
+#: ../inc/customizer.php:335
+msgid "Link:hover Color"
+msgstr "צבע קישור פעיל"
+
+#: ../inc/customizer.php:342
+msgid "Header"
+msgstr "כותרת האתר"
+
+#: ../inc/customizer.php:353
+msgid "Sticky Header"
+msgstr "הצמדת חלק עליון"
+
+#: ../inc/customizer.php:354
+msgid "Check to show fixed header"
+msgstr "סמן כדי להצמיד חלק עליון לראש העמוד"
+
+#: ../inc/customizer.php:365
+msgid "Top nav background color"
+msgstr "רקע חלק עליון"
+
+#: ../inc/customizer.php:375
+msgid "Top nav item color"
+msgstr "צבע טקסטים בחלק העליון"
+
+#: ../inc/customizer.php:376
+msgid "Link color"
+msgstr "צבע קישור"
+
+#: ../inc/customizer.php:386
+msgid "Top nav item hover color"
+msgstr "צבע קישור פעיל בחלק עליון"
+
+#: ../inc/customizer.php:387
+msgid "Link:hover color"
+msgstr "צבע קישור פעיל"
+
+#: ../inc/customizer.php:397
+msgid "Top nav dropdown background color"
+msgstr "רקע רשימות נפתחות בחלק עליון"
+
+#: ../inc/customizer.php:398 ../inc/customizer.php:431
+msgid "Background of dropdown item hover color"
+msgstr "רקע רשימות נפתחות בחלק עליון במצב פעיל"
+
+#: ../inc/customizer.php:408
+msgid "Top nav dropdown item color"
+msgstr "רקע שורה ברשימות נפתחות בחלק עליון"
+
+#: ../inc/customizer.php:409
+msgid "Dropdown item color"
+msgstr "צבע טקסט ברשימות נפתחות"
+
+#: ../inc/customizer.php:419
+msgid "Top nav dropdown item hover color"
+msgstr "צבע טקסט עבור תפריט ראשי"
+
+#: ../inc/customizer.php:420
+msgid "Dropdown item hover color"
+msgstr "צבע טקסט ברשימה נפתחת במצב פעיל"
+
+#: ../inc/customizer.php:430
+msgid "Top nav dropdown item background hover color"
+msgstr "צבע טקסט ברשימה נפתחת במצב פעיל - תפריט ראשי"
+
+#: ../inc/customizer.php:437
+msgid "Footer"
+msgstr "תחתית העמוד"
+
+#: ../inc/customizer.php:447
+msgid "Footer widget area background color"
+msgstr "רקע עבור תוסף לתחתית העמוד"
+
+#: ../inc/customizer.php:457
+msgid "Footer background color"
+msgstr "רקע עבור תחתית העמוד"
+
+#: ../inc/customizer.php:467
+msgid "Footer text color"
+msgstr "צבע טקסט בתחתית העמוד"
+
+#: ../inc/customizer.php:477
+msgid "Footer link color"
+msgstr "צבע קישורים בתחתית העמוד"
+
+#: ../inc/customizer.php:487
+msgid "Footer information"
+msgstr "מידע עבור תחתית העמוד"
+
+#: ../inc/customizer.php:488
+msgid "Copyright text in footer"
+msgstr "זכויות יוצרים - בתחתית העמוד"
+
+#: ../inc/customizer.php:495
+msgid "Social"
+msgstr "קישורים חברתיים"
+
+#: ../inc/customizer.php:505
+msgid "Social icon color"
+msgstr "צבע קישורים חברתיים"
+
+#: ../inc/customizer.php:516
+msgid "Footer social icon color"
+msgstr "צבע קישורים חברתיים שמופיעים בחלק תחתון"
+
+#: ../inc/customizer.php:527
+msgid "Footer Social Icons"
+msgstr "קישורים חברתיים שמופיעים בחלק תחתון"
+
+#: ../inc/customizer.php:528
+msgid "Check to show social icons in footer"
+msgstr "סמן כדי להראות קישורים חברתיים בחלק תחתון"
+
+#: ../inc/customizer.php:535
+msgid "Other"
+msgstr "אחר"
+
+#: ../inc/customizer.php:545
+msgid "Custom CSS"
+msgstr ""
+
+#: ../inc/customizer.php:546
+msgid "Additional CSS"
+msgstr ""
+
+#: ../inc/customizer.php:553 ../inc/extras.php:334
+msgid "Support and Documentation"
+msgstr "עדרה ומסמכים"
+
+#: ../inc/customizer.php:737 ../inc/extras.php:340
+msgid "Sparkling Documentation"
+msgstr "‏Sparkling מסמכים והוראות"
+
+#: ../inc/customizer.php:738 ../inc/extras.php:341
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr ""
+
+#: ../inc/customizer.php:738 ../inc/extras.php:341
+msgid "Colorlib support forum"
+msgstr ""
+
+#: ../inc/customizer.php:739 ../inc/extras.php:342
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr ""
+
+#: ../inc/customizer.php:741 ../inc/extras.php:344
+msgid "Rate this Theme"
+msgstr ""
+
+#: ../inc/customizer.php:742 ../inc/extras.php:345
+msgid "Like on Facebook"
+msgstr "עקוב אחרינו בפייסבוק"
+
+#: ../inc/customizer.php:743 ../inc/extras.php:346
+msgid "Follow on Twitter"
+msgstr "עקוב אחרינו בטוויטר"
+
+#: ../inc/extras.php:61
+msgid ""
+"This post is password protected. To view it please enter your password below:"
+msgstr "פוסט זה מוגן בסיסמא. הכנס סיסמא כדי לצפות בו"
+
+#: ../inc/extras.php:62
+msgid "Password:"
+msgstr "סיסמא: "
+
+#: ../inc/extras.php:65
+msgid "Submit"
+msgstr "שלח"
+
+#: ../inc/metaboxes.php:16
+msgid ""
+"Select layout for this specific Page only ( Note: This setting only reflects "
+"if page Template is set as Default Template and Blog Type Templates.)"
+msgstr ""
+"בחר/י סדר עמוד עבור דף זה (רלוונטי רק אם דף זה הוא ברירת מחדל עבור בלוג)"
+
+#: ../inc/metaboxes.php:21
+msgid "Select layout for this specific Post only"
+msgstr "בחר/י סדר עמוד עבור פוסט זה"
+
+#: ../inc/metaboxes.php:28
+msgid "Select layout for this specific Product only"
+msgstr "בחר/י סדר עמוד עבור מוצר זה"
+
+#: ../inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "פוסטים"
+
+#: ../inc/template-tags.php:31
+msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
+msgstr "פוסטים קודמים <i class=\"fa fa-chevron-left\"></i>"
+
+#: ../inc/template-tags.php:35
+msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
+msgstr "‏<i class=\"fa fa-chevron-right\"></i> פוסטים חדשים "
+
+#: ../inc/template-tags.php:83
+msgid "Post navigation"
+msgstr "פוסטים"
+
+#: ../inc/widgets/widget-categories.php:11
+#: ../inc/widgets/widget-categories.php:12
+msgid "Sparkling Categories"
+msgstr "קטגוריות של Sparkling"
+
+#: ../inc/widgets/widget-categories.php:17
+#: ../inc/widgets/widget-categories.php:76
+msgid "Categories"
+msgstr "כטגוריות"
+
+#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:42
+msgid "Title "
+msgstr "כותרת"
+
+#: ../inc/widgets/widget-categories.php:91
+msgid "Limit Categories "
+msgstr "הגבל קטגוריות"
+
+#: ../inc/widgets/widget-categories.php:104
+msgid "Enable Posts Count"
+msgstr "אפשר ספירת פוסטים"
+
+#: ../inc/widgets/widget-popular-posts.php:11
+#: ../inc/widgets/widget-popular-posts.php:12
+msgid "Sparkling Popular Posts Widget"
+msgstr "תוסף פוסטים פופולריים של Sparkling"
+
+#: ../inc/widgets/widget-popular-posts.php:17
+#: ../inc/widgets/widget-popular-posts.php:94
+msgid "Popular Posts"
+msgstr "פוסטים מבוקשים"
+
+#: ../inc/widgets/widget-popular-posts.php:99
+msgid "Title"
+msgstr "כותרת"
+
+#: ../inc/widgets/widget-popular-posts.php:107
+msgid "Limit Posts Number"
+msgstr "הגבל את מספר הפוסטים"
+
+#: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
+msgid "Sparkling Social Widget"
+msgstr "תוסף חברתי של Sparkling"
+
+#: ../inc/widgets/widget-social.php:18 ../inc/widgets/widget-social.php:40
+msgid "Follow us"
+msgstr "עקוב אחרינו"
+
+#: ../search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "תוצאות חיפוש עבור: %s"
+
+#: ../searchform.php:11
+msgid "Search for:"
+msgstr "חפש אחר: "
+
+#: ../searchform.php:12
+msgctxt "placeholder"
+msgid "Search&hellip;"
+msgstr "חיפוש ועזרה"
+
+#: ../searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr "חפש אחר:"
+
+#: ../searchform.php:14
+msgctxt "submit button"
+msgid "Search"
+msgstr "חפש"
+
+#: ../sidebar.php:26
+msgid "Meta"
+msgstr "נוסף"

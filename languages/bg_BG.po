@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-10-16 20:21+0300\n"
-"PO-Revision-Date: 2015-10-16 20:21+0300\n"
+"POT-Creation-Date: 2016-03-18 11:06+0200\n"
+"PO-Revision-Date: 2016-03-18 11:06+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: Petko Bossakov <petko@bossakov.eu>\n"
 "Language: bg_BG\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
@@ -157,7 +157,7 @@ msgstr ""
 "Изглежда не можем да открием това, което търсиш. Функцията за търсене може "
 "да помогне."
 
-#: ../content-page.php:21 ../content-single.php:35 ../content.php:49
+#: ../content-page.php:21 ../content-single.php:35 ../content.php:48
 #: ../image.php:79
 msgid "Pages:"
 msgstr "Страници:"
@@ -187,7 +187,7 @@ msgstr "1 коментар"
 msgid "% Comments"
 msgstr "% коментара"
 
-#: ../content.php:32 ../content.php:45
+#: ../content.php:32 ../content.php:40
 msgid "Read More"
 msgstr "Повече"
 
@@ -195,7 +195,7 @@ msgstr "Повече"
 msgid "Primary Menu"
 msgstr "Главно меню"
 
-#: ../functions.php:70 ../inc/extras.php:198
+#: ../functions.php:70 ../inc/extras.php:136
 msgid "Footer Links"
 msgstr "Връзки в долната част"
 
@@ -235,11 +235,11 @@ msgstr "Джаджи долна част 2"
 msgid "Footer Widget 3"
 msgstr "Джаджи долна част 3"
 
-#: ../functions.php:304 ../options.php:23
+#: ../functions.php:304
 msgid "Right Sidebar"
 msgstr "Дясна странична колона"
 
-#: ../functions.php:304 ../options.php:23
+#: ../functions.php:304
 msgid "Left Sidebar"
 msgstr "Лява странична колона"
 
@@ -288,23 +288,23 @@ msgstr "Показва се на заглавната страница"
 msgid "Slider options"
 msgstr "Опции на плъзгача"
 
-#: ../inc/customizer.php:76 ../options.php:116
+#: ../inc/customizer.php:76
 msgid "Check if you want to enable slider"
 msgstr "Избери, ако искаш да включиш плъзгащите изображения"
 
-#: ../inc/customizer.php:91 ../options.php:123
+#: ../inc/customizer.php:91
 msgid "Slider Category"
 msgstr "Категория"
 
-#: ../inc/customizer.php:94 ../options.php:124
+#: ../inc/customizer.php:94
 msgid "Select a category for the featured post slider"
 msgstr "Избери категория за избраните статии"
 
-#: ../inc/customizer.php:104 ../options.php:132
+#: ../inc/customizer.php:104
 msgid "Number of slide items"
 msgstr "Брой елементи"
 
-#: ../inc/customizer.php:106 ../options.php:133
+#: ../inc/customizer.php:106
 msgid "Enter the number of slide items"
 msgstr "Въведи броя на плъзгащите се елементи"
 
@@ -313,7 +313,7 @@ msgstr "Въведи броя на плъзгащите се елементи"
 msgid "Layout options"
 msgstr "Настройки на подредбата"
 
-#: ../inc/customizer.php:123 ../options.php:141
+#: ../inc/customizer.php:123
 msgid "Website Layout Options"
 msgstr "Вид на страницата"
 
@@ -323,228 +323,242 @@ msgid "Choose between different layout options to be used as default"
 msgstr ""
 "Избери между лява и дясна странична колона като настройка по подразбиране"
 
-#: ../inc/customizer.php:136
+#: ../inc/customizer.php:137
+msgid "WooCommerce Page Layout Options"
+msgstr ""
+
+#: ../inc/customizer.php:140
+msgid ""
+"Choose between different layout options to be used as default for all "
+"woocommerce pages"
+msgstr ""
+
+#: ../inc/customizer.php:151
 #, fuzzy
 msgid "Element Color"
 msgstr "Цвят на елементите"
 
-#: ../inc/customizer.php:137 ../inc/customizer.php:149
-#: ../inc/customizer.php:203 ../inc/customizer.php:213
-#: ../inc/customizer.php:223 ../inc/customizer.php:233
-#: ../inc/customizer.php:311 ../inc/customizer.php:321
-#: ../inc/customizer.php:338 ../inc/customizer.php:478
-#: ../inc/customizer.php:489 ../options.php:152 ../options.php:160
-#: ../options.php:205 ../options.php:213 ../options.php:221 ../options.php:229
-#: ../options.php:259 ../options.php:267 ../options.php:280 ../options.php:390
-#: ../options.php:398
+#: ../inc/customizer.php:152 ../inc/customizer.php:164
+#: ../inc/customizer.php:218 ../inc/customizer.php:228
+#: ../inc/customizer.php:238 ../inc/customizer.php:248
+#: ../inc/customizer.php:326 ../inc/customizer.php:336
+#: ../inc/customizer.php:366 ../inc/customizer.php:506
+#: ../inc/customizer.php:517
 msgid "Default used if no color is selected"
 msgstr "Ако няма избран цвят, ще се използва цветът по подразбиране"
 
-#: ../inc/customizer.php:148 ../options.php:159
+#: ../inc/customizer.php:163
 msgid "Element color on hover"
 msgstr "Цвят, когато курсорът е отгоре"
 
-#: ../inc/customizer.php:156 ../options.php:175
+#: ../inc/customizer.php:171
 msgid "Action Button"
 msgstr "Call For Action бутон"
 
-#: ../inc/customizer.php:166 ../options.php:180
+#: ../inc/customizer.php:181
 msgid "Call For Action Text"
 msgstr "Call For Action текст"
 
-#: ../inc/customizer.php:167 ../options.php:181
+#: ../inc/customizer.php:182
 msgid "Enter the text for call for action section"
 msgstr "Въведи текст за раздела Call For Action"
 
-#: ../inc/customizer.php:178 ../options.php:188
+#: ../inc/customizer.php:193
 msgid "Call For Action Button Title"
 msgstr "Заглавие на бутона Call For Action"
 
-#: ../inc/customizer.php:180 ../options.php:189
+#: ../inc/customizer.php:195
 msgid "Enter the title for Call For Action button"
 msgstr "Въведи заглавие за бутона Call For Action"
 
-#: ../inc/customizer.php:190 ../options.php:196
+#: ../inc/customizer.php:205
 msgid "CFA button link"
 msgstr "CFA връзка"
 
-#: ../inc/customizer.php:192 ../options.php:197
+#: ../inc/customizer.php:207
 msgid "Enter the link for Call For Action button"
 msgstr "Въведи Интернет адрес за бутона Call For Action"
 
-#: ../inc/customizer.php:202 ../options.php:204
+#: ../inc/customizer.php:217
 msgid "Call For Action Text Color"
 msgstr "Цвят на текста Call For Action"
 
-#: ../inc/customizer.php:212 ../options.php:212
+#: ../inc/customizer.php:227
 msgid "Call For Action Background Color"
 msgstr "Цвят на фона Call For Action"
 
-#: ../inc/customizer.php:222 ../options.php:220
+#: ../inc/customizer.php:237
 msgid "Call For Action Button Border Color"
 msgstr "Цвят на ръба на бутона Call For Action"
 
-#: ../inc/customizer.php:232 ../options.php:228
+#: ../inc/customizer.php:247
 msgid "Call For Action Button Text Color"
 msgstr "Цвят на текста на бутона Call For Action"
 
-#: ../inc/customizer.php:239 ../options.php:236
+#: ../inc/customizer.php:254
 msgid "Typography"
 msgstr "Шрифтове"
 
-#: ../inc/customizer.php:259 ../options.php:241
+#: ../inc/customizer.php:274
 msgid "Main Body Text"
 msgstr "Текст на главната част"
 
-#: ../inc/customizer.php:260
+#: ../inc/customizer.php:275
 #, fuzzy
 msgid "Used in p tags"
 msgstr "Използва се за таговете P"
 
-#: ../inc/customizer.php:300 ../options.php:250
+#: ../inc/customizer.php:315
 msgid "Heading Color"
 msgstr "Цвят на заглавията"
 
-#: ../inc/customizer.php:301 ../options.php:251
+#: ../inc/customizer.php:316
 msgid "Color for all headings (h1-h6)"
 msgstr "Цвят за всичките заглавия (h1-h6)"
 
-#: ../inc/customizer.php:310 ../options.php:258
+#: ../inc/customizer.php:325
 msgid "Link Color"
 msgstr "Цвят на връзките"
 
-#: ../inc/customizer.php:320 ../options.php:266
+#: ../inc/customizer.php:335
 msgid "Link:hover Color"
 msgstr "Цвят на връзките, когато курсорът е отгоре"
 
-#: ../inc/customizer.php:327 ../options.php:274
+#: ../inc/customizer.php:342
 msgid "Header"
 msgstr "Заглавна част"
 
-#: ../inc/customizer.php:337 ../options.php:279
+#: ../inc/customizer.php:353
+msgid "Sticky Header"
+msgstr ""
+
+#: ../inc/customizer.php:354
+msgid "Check to show fixed header"
+msgstr ""
+
+#: ../inc/customizer.php:365
 msgid "Top nav background color"
 msgstr "Фон на горната навигация"
 
-#: ../inc/customizer.php:347 ../options.php:287
+#: ../inc/customizer.php:375
 msgid "Top nav item color"
 msgstr "Цвят за елементите на горната навигация"
 
-#: ../inc/customizer.php:348 ../options.php:288
+#: ../inc/customizer.php:376
 msgid "Link color"
 msgstr "Цвят на връзките"
 
-#: ../inc/customizer.php:358 ../options.php:295
+#: ../inc/customizer.php:386
 msgid "Top nav item hover color"
 msgstr "Цвят за елементите на горната навигация, когато курсорът е отгоре"
 
-#: ../inc/customizer.php:359 ../options.php:296
+#: ../inc/customizer.php:387
 msgid "Link:hover color"
 msgstr "Цвят на връзките, когато курсорът е отгоре"
 
-#: ../inc/customizer.php:369 ../options.php:303
+#: ../inc/customizer.php:397
 msgid "Top nav dropdown background color"
 msgstr "Фон на падащото меню в горната навигация"
 
-#: ../inc/customizer.php:370 ../inc/customizer.php:403 ../options.php:304
-#: ../options.php:328
+#: ../inc/customizer.php:398 ../inc/customizer.php:431
 msgid "Background of dropdown item hover color"
 msgstr "Фон на елементите от падащото меню в горната навигация"
 
-#: ../inc/customizer.php:380 ../options.php:311
+#: ../inc/customizer.php:408
 msgid "Top nav dropdown item color"
 msgstr "Цвят на текста на елементите от падащото меню в горната навигация"
 
-#: ../inc/customizer.php:381 ../options.php:312
+#: ../inc/customizer.php:409
 msgid "Dropdown item color"
 msgstr "Цвят на елементите от падащото меню"
 
-#: ../inc/customizer.php:391 ../options.php:319
+#: ../inc/customizer.php:419
 msgid "Top nav dropdown item hover color"
 msgstr ""
 "Цвят на елементите от падащото меню в горната навигация, когато курсорът е "
 "отгоре"
 
-#: ../inc/customizer.php:392 ../options.php:320
+#: ../inc/customizer.php:420
 msgid "Dropdown item hover color"
 msgstr "Цвят на елементите от падащото меню, когато курсорът е отгоре"
 
-#: ../inc/customizer.php:402 ../options.php:327
+#: ../inc/customizer.php:430
 msgid "Top nav dropdown item background hover color"
 msgstr ""
 "Фон на елементите от падащото меню в горната навигация, когато курсорът е "
 "отгоре"
 
-#: ../inc/customizer.php:409 ../options.php:335
+#: ../inc/customizer.php:437
 msgid "Footer"
 msgstr "Долен колонтитул"
 
-#: ../inc/customizer.php:419 ../options.php:340
+#: ../inc/customizer.php:447
 msgid "Footer widget area background color"
 msgstr "Фон на джаджите в долната част на страницата"
 
-#: ../inc/customizer.php:429 ../options.php:347
+#: ../inc/customizer.php:457
 msgid "Footer background color"
 msgstr "Фон на долната част на страницата"
 
-#: ../inc/customizer.php:439 ../options.php:354
+#: ../inc/customizer.php:467
 msgid "Footer text color"
 msgstr "Цвят на текста в долната част на страницата"
 
-#: ../inc/customizer.php:449 ../options.php:361
+#: ../inc/customizer.php:477
 msgid "Footer link color"
 msgstr "Цвят на връзките в долната част на страницата"
 
-#: ../inc/customizer.php:459 ../options.php:368
+#: ../inc/customizer.php:487
 msgid "Footer information"
 msgstr "Информация в долната част на страницата"
 
-#: ../inc/customizer.php:460 ../options.php:369
+#: ../inc/customizer.php:488
 msgid "Copyright text in footer"
 msgstr "Текст за авторските права в долната част на страницата"
 
-#: ../inc/customizer.php:467 ../options.php:384
+#: ../inc/customizer.php:495
 msgid "Social"
 msgstr "Социални"
 
-#: ../inc/customizer.php:477 ../options.php:389
+#: ../inc/customizer.php:505
 msgid "Social icon color"
 msgstr "Цвят на социалните икони"
 
-#: ../inc/customizer.php:488 ../options.php:397
+#: ../inc/customizer.php:516
 msgid "Footer social icon color"
 msgstr "Цвят на социалните икони в долната част на страницата"
 
-#: ../inc/customizer.php:499 ../options.php:376
+#: ../inc/customizer.php:527
 #, fuzzy
 msgid "Footer Social Icons"
 msgstr "Цвят на социалните икони в долната част на страницата"
 
-#: ../inc/customizer.php:500
+#: ../inc/customizer.php:528
 #, fuzzy
 msgid "Check to show social icons in footer"
 msgstr "Цвят на социалните икони в долната част на страницата"
 
-#: ../inc/customizer.php:507 ../options.php:542
+#: ../inc/customizer.php:535
 msgid "Other"
 msgstr "Други"
 
-#: ../inc/customizer.php:517 ../options.php:547
+#: ../inc/customizer.php:545
 msgid "Custom CSS"
 msgstr "Добавяне на CSS"
 
-#: ../inc/customizer.php:518 ../options.php:548
+#: ../inc/customizer.php:546
 msgid "Additional CSS"
 msgstr "Допълнителен CSS код"
 
-#: ../inc/customizer.php:525 ../inc/extras.php:383
+#: ../inc/customizer.php:553 ../inc/extras.php:334
 msgid "Support and Documentation"
 msgstr "Поддръжка и документация"
 
-#: ../inc/customizer.php:701 ../inc/extras.php:389
+#: ../inc/customizer.php:737 ../inc/extras.php:340
 msgid "Sparkling Documentation"
 msgstr "Документация на Sparkling"
 
-#: ../inc/customizer.php:702 ../inc/extras.php:390
+#: ../inc/customizer.php:738 ../inc/extras.php:341
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -552,32 +566,27 @@ msgstr ""
 "Най-добрият начин да се свържете с нас за <b>поддръжка</b> и <b>докладване "
 "на проблеми</b> е чрез"
 
-#: ../inc/customizer.php:702 ../inc/extras.php:390
+#: ../inc/customizer.php:738 ../inc/extras.php:341
 msgid "Colorlib support forum"
 msgstr "Форум за поддръжка на Colorlib"
 
-#: ../inc/customizer.php:703 ../inc/extras.php:391
+#: ../inc/customizer.php:739 ../inc/extras.php:342
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "Ако харесваш тази тема, ще съм благодарен, ако:"
 
-#: ../inc/customizer.php:705 ../inc/extras.php:393
+#: ../inc/customizer.php:741 ../inc/extras.php:344
 msgid "Rate this Theme"
 msgstr "Гласуваш за тази тема"
 
-#: ../inc/customizer.php:706 ../inc/extras.php:394
+#: ../inc/customizer.php:742 ../inc/extras.php:345
 msgid "Like on Facebook"
 msgstr "Харесаш във Facebook"
 
-#: ../inc/customizer.php:707 ../inc/extras.php:395
+#: ../inc/customizer.php:743 ../inc/extras.php:346
 msgid "Follow on Twitter"
 msgstr "Последваш в Twitter"
 
 #: ../inc/extras.php:61
-#, php-format
-msgid "Page %s"
-msgstr "Страница %s"
-
-#: ../inc/extras.php:125
 #, fuzzy
 msgid ""
 "This post is password protected. To view it please enter your password below:"
@@ -585,15 +594,15 @@ msgstr ""
 "<p>Тази статия е защитена с парола. За да я прочетеш, въведи паролата тук:</"
 "p>"
 
-#: ../inc/extras.php:126
+#: ../inc/extras.php:62
 msgid "Password:"
 msgstr "Парола:"
 
-#: ../inc/extras.php:129
+#: ../inc/extras.php:65
 msgid "Submit"
 msgstr "Изпрати"
 
-#: ../inc/extras.php:272
+#: ../inc/extras.php:210
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Дизайн: %1$s Работи с %2$s"
@@ -613,19 +622,23 @@ msgstr ""
 msgid "Select layout for this specific Post only"
 msgstr "Изберете подреждане само за тази публикация"
 
+#: ../inc/metaboxes.php:28
+msgid "Select layout for this specific Product only"
+msgstr ""
+
 #: ../inc/template-tags.php:23
 msgid "Posts navigation"
 msgstr "Навигация статии"
 
-#: ../inc/template-tags.php:27
+#: ../inc/template-tags.php:31
 msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
 msgstr "<i class=\"fa fa-chevron-left\"></i> По-стари статии"
 
-#: ../inc/template-tags.php:31
+#: ../inc/template-tags.php:35
 msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
 msgstr "По-нови статии <i class=\"fa fa-chevron-right\"></i>"
 
-#: ../inc/template-tags.php:56
+#: ../inc/template-tags.php:83
 msgid "Post navigation"
 msgstr "Навигация статии"
 
@@ -677,153 +690,6 @@ msgstr "Sparkling социална джаджа"
 msgid "Follow us"
 msgstr "Последвай ни"
 
-#: ../options.php:27
-msgid "One"
-msgstr "Една"
-
-#: ../options.php:28
-msgid "Two"
-msgstr "Две"
-
-#: ../options.php:29
-msgid "Three"
-msgstr "Три"
-
-#: ../options.php:30
-msgid "Four"
-msgstr "Четири"
-
-#: ../options.php:31
-msgid "Five"
-msgstr "Пет"
-
-#: ../options.php:36
-msgid "French Toast"
-msgstr "Пържена филийка"
-
-#: ../options.php:37
-msgid "Pancake"
-msgstr "Палачинки"
-
-#: ../options.php:38
-msgid "Omelette"
-msgstr "Омлет"
-
-#: ../options.php:39
-msgid "Crepe"
-msgstr "Crepe"
-
-#: ../options.php:40
-msgid "Waffle"
-msgstr "Гофрета"
-
-#: ../options.php:110
-msgid "Main"
-msgstr "Основни"
-
-#: ../options.php:115
-msgid "Do You want to display image slider on the Home Page?"
-msgstr "Показване на плъзгащи се изображения на главната страница?"
-
-#: ../options.php:142
-msgid "Choose between Left and Right sidebar options to be used as default"
-msgstr ""
-"Избери между лява и дясна странична колона като настройка по подразбиране"
-
-#: ../options.php:151
-msgid "Element color"
-msgstr "Цвят на елемента"
-
-#: ../options.php:167
-msgid "Custom Favicon"
-msgstr "Икона на сайта"
-
-#: ../options.php:168
-msgid ""
-"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
-msgstr "Качи картинка PNG/GIF 32x32px която ще представлява иконата на сайта"
-
-#: ../options.php:242
-msgid "Used in P tags"
-msgstr "Използва се за таговете P"
-
-#: ../options.php:377
-#, fuzzy
-msgid "Show/Hide social icons in footer"
-msgstr "Цвят на социалните икони в долната част на страницата"
-
-#: ../options.php:405
-msgid "Add full URL for your social network profiles"
-msgstr "Добави пълния URL към твоите профили в социалните мрежи"
-
-#: ../options.php:406
-msgid "Facebook"
-msgstr "Facebook"
-
-#: ../options.php:415
-msgid "Twitter"
-msgstr "Twitter"
-
-#: ../options.php:423
-msgid "Google+"
-msgstr "Google+"
-
-#: ../options.php:431
-msgid "Youtube"
-msgstr "Youtube"
-
-#: ../options.php:439
-msgid "Vimeo"
-msgstr "Vimeo"
-
-#: ../options.php:447
-msgid "LinkedIn"
-msgstr "LinkedIn"
-
-#: ../options.php:455
-msgid "Pinterest"
-msgstr "Pinterest"
-
-#: ../options.php:463
-msgid "RSS Feed"
-msgstr "RSS Feed"
-
-#: ../options.php:471
-msgid "Tumblr"
-msgstr "Tumblr"
-
-#: ../options.php:479
-msgid "Flickr"
-msgstr "Flickr"
-
-#: ../options.php:487
-msgid "Instagram"
-msgstr "Instagram"
-
-#: ../options.php:495
-msgid "Dribbble"
-msgstr "Dribbble"
-
-#: ../options.php:503
-msgid "Skype"
-msgstr "Skype"
-
-#: ../options.php:511
-msgid "Foursquare"
-msgstr "Foursquare"
-
-#: ../options.php:519
-msgid "SoundCloud"
-msgstr "SoundCloud"
-
-#: ../options.php:527
-msgid "GitHub"
-msgstr "GitHub"
-
-#: ../options.php:535
-msgid "Spotify"
-msgstr ""
-
 #: ../search.php:16
 #, php-format
 msgid "Search Results for: %s"
@@ -855,6 +721,119 @@ msgstr "Търси"
 #: ../sidebar.php:26
 msgid "Meta"
 msgstr "Мета"
+
+#~ msgid "Page %s"
+#~ msgstr "Страница %s"
+
+#~ msgid "One"
+#~ msgstr "Една"
+
+#~ msgid "Two"
+#~ msgstr "Две"
+
+#~ msgid "Three"
+#~ msgstr "Три"
+
+#~ msgid "Four"
+#~ msgstr "Четири"
+
+#~ msgid "Five"
+#~ msgstr "Пет"
+
+#~ msgid "French Toast"
+#~ msgstr "Пържена филийка"
+
+#~ msgid "Pancake"
+#~ msgstr "Палачинки"
+
+#~ msgid "Omelette"
+#~ msgstr "Омлет"
+
+#~ msgid "Crepe"
+#~ msgstr "Crepe"
+
+#~ msgid "Waffle"
+#~ msgstr "Гофрета"
+
+#~ msgid "Main"
+#~ msgstr "Основни"
+
+#~ msgid "Do You want to display image slider on the Home Page?"
+#~ msgstr "Показване на плъзгащи се изображения на главната страница?"
+
+#~ msgid "Choose between Left and Right sidebar options to be used as default"
+#~ msgstr ""
+#~ "Избери между лява и дясна странична колона като настройка по подразбиране"
+
+#~ msgid "Element color"
+#~ msgstr "Цвят на елемента"
+
+#~ msgid "Custom Favicon"
+#~ msgstr "Икона на сайта"
+
+#~ msgid ""
+#~ "Upload a 32px x 32px PNG/GIF image that will represent your websites "
+#~ "favicon"
+#~ msgstr ""
+#~ "Качи картинка PNG/GIF 32x32px която ще представлява иконата на сайта"
+
+#~ msgid "Used in P tags"
+#~ msgstr "Използва се за таговете P"
+
+#, fuzzy
+#~ msgid "Show/Hide social icons in footer"
+#~ msgstr "Цвят на социалните икони в долната част на страницата"
+
+#~ msgid "Add full URL for your social network profiles"
+#~ msgstr "Добави пълния URL към твоите профили в социалните мрежи"
+
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#~ msgid "Twitter"
+#~ msgstr "Twitter"
+
+#~ msgid "Google+"
+#~ msgstr "Google+"
+
+#~ msgid "Youtube"
+#~ msgstr "Youtube"
+
+#~ msgid "Vimeo"
+#~ msgstr "Vimeo"
+
+#~ msgid "LinkedIn"
+#~ msgstr "LinkedIn"
+
+#~ msgid "Pinterest"
+#~ msgstr "Pinterest"
+
+#~ msgid "RSS Feed"
+#~ msgstr "RSS Feed"
+
+#~ msgid "Tumblr"
+#~ msgstr "Tumblr"
+
+#~ msgid "Flickr"
+#~ msgstr "Flickr"
+
+#~ msgid "Instagram"
+#~ msgstr "Instagram"
+
+#~ msgid "Dribbble"
+#~ msgstr "Dribbble"
+
+#~ msgid "Skype"
+#~ msgstr "Skype"
+
+#~ msgid "Foursquare"
+#~ msgstr "Foursquare"
+
+#~ msgid "SoundCloud"
+#~ msgstr "SoundCloud"
+
+#~ msgid "GitHub"
+#~ msgstr "GitHub"
 
 #~ msgid "Theme Options"
 #~ msgstr "Настройки на темата"

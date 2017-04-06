@@ -7,7 +7,12 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="blog-item-wrap">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
-			 	<?php the_post_thumbnail( 'sparkling-featured', array( 'class' => 'single-featured' )); ?>
+				<?php
+				if ( is_page_template( 'page-fullwidth.php' ) )
+					the_post_thumbnail( 'sparkling-featured-fullwidth', array( 'class' => 'single-featured' ));
+				else
+					the_post_thumbnail( 'sparkling-featured', array( 'class' => 'single-featured' ));
+				?>
 			</a>
 		<div class="post-inner-content">
 			<header class="entry-header page-header">
@@ -20,7 +25,19 @@
 				<span class="comments-link"><i class="fa fa-comment-o"></i><?php comments_popup_link( esc_html__( 'Leave a comment', 'sparkling' ), esc_html__( '1 Comment', 'sparkling' ), esc_html__( '% Comments', 'sparkling' ) ); ?></span>
 				<?php endif; ?>
 
-				<?php edit_post_link( esc_html__( 'Edit', 'sparkling' ), '<i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span>' ); ?>
+				<?php if ( get_edit_post_link() ) : ?>
+					<?php
+						edit_post_link(
+							sprintf(
+								/* translators: %s: Name of current post */
+								esc_html__( 'Edit %s', 'sparkling' ),
+								the_title( '<span class="screen-reader-text">"', '"</span>', false )
+							),
+							'<i class="fa fa-pencil-square-o"></i><span class="edit-link">',
+							'</span>'
+						);
+					?>
+				<?php endif; ?>
 
 				</div><!-- .entry-meta -->
 				<?php endif; ?>
@@ -39,7 +56,7 @@
 					the_excerpt();?>
 					<p><a class="btn btn-default read-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php esc_html_e( 'Read More', 'sparkling' ); ?></a></p>
 				<?php else :
-					the_content();
+					the_content( __( 'Read More', 'sparkling' ) );
 				endif;
 				 ?>
 
