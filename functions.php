@@ -307,7 +307,7 @@ $site_layout = array('side-pull-left' => esc_html__('Right Sidebar', 'sparkling'
 // Typography Options
 global $typography_options;
 $typography_options = array(
-        'sizes' => array( '6px' => '6px','10px' => '10px','12px' => '12px','14px' => '14px','15px' => '15px','16px' => '16px','18'=> '18px','20px' => '20px','24px' => '24px','28px' => '28px','32px' => '32px','36px' => '36px','42px' => '42px','48px' => '48px' ),
+        'sizes' => array( '6px' => '6px','10px' => '10px','12px' => '12px','14px' => '14px','15px' => '15px','16px' => '16px','18px'=> '18px','20px' => '20px','24px' => '24px','28px' => '28px','32px' => '32px','36px' => '36px','42px' => '42px','48px' => '48px' ),
         'faces' => array(
                 'arial'          => 'Arial',
                 'verdana'        => 'Verdana, Geneva',
