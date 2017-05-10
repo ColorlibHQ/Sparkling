@@ -259,7 +259,7 @@ msgstr "<i class=\"fa fa-chevron-left\"></i> Anterior"
 
 #: ../image.php:23
 msgid "Next <i class=\"fa fa-chevron-right\"></i>"
-msgstr "Soguiente <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Siguiente <i class=\"fa fa-chevron-right\"></i>"
 
 #: ../inc/customizer.php:29
 msgid "Sparkling Options"

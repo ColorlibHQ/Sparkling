@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
 "POT-Creation-Date: 2015-10-16 20:23+0300\n"
-"PO-Revision-Date: 2015-10-16 20:23+0300\n"
+"PO-Revision-Date: 2017-05-02 13:51+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
-"Language: es_ES\n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.8.11\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
@@ -26,13 +26,12 @@ msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr ""
-"Sembra che non è stato trovato in questa posizione. Magari prova uno dei "
-"link seguenti o una ricerca?"
+"Sembra che non sia stato trovato nulla in questa posizione. Puoi provare uno "
+"dei link seguenti o una ricerca?"
 
 #: ../404.php:25
-#, fuzzy
 msgid "Recent Posts"
-msgstr "Navigazione post"
+msgstr "Articoli Recenti"
 
 #: ../404.php:31
 msgid "Most Used Categories"
@@ -48,9 +47,8 @@ msgid "Archives"
 msgstr "Archivi"
 
 #: ../404.php:58
-#, fuzzy
 msgid "Tags"
-msgstr "Usado en los tags P"
+msgstr "Tags"
 
 #: ../archive.php:27
 #, php-format
@@ -113,8 +111,8 @@ msgstr "Chat"
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Una opinione su &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s opinioni su &ldquo;%2$s&rdquo;"
 
 #: ../comments.php:35 ../comments.php:53
 msgid "Comment navigation"
@@ -246,13 +244,12 @@ msgid "Left Sidebar"
 msgstr "Colonna laterale sinistra"
 
 #: ../functions.php:304
-#, fuzzy
 msgid "No Sidebar"
-msgstr "Sin barra lateral"
+msgstr "Nessuna colonna laterale"
 
 #: ../functions.php:304
 msgid "Full Width"
-msgstr ""
+msgstr "Intera Larghezza"
 
 #: ../image.php:22
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
@@ -263,32 +260,28 @@ msgid "Next <i class=\"fa fa-chevron-right\"></i>"
 msgstr "Successivo <i class=\"fa fa-chevron-right\"></i>"
 
 #: ../inc/customizer.php:29
-#, fuzzy
 msgid "Sparkling Options"
-msgstr "Categorie Sparkling"
+msgstr "Opzioni Sparkling"
 
 #: ../inc/customizer.php:30
 msgid "Panel to update sparkling theme options"
-msgstr ""
+msgstr "Pannello per l'aggiornamento delle impostazioni del tema sparkling"
 
 #: ../inc/customizer.php:36
-#, fuzzy
 msgid "Content Options"
-msgstr "Opzioni del tema"
+msgstr "Opzioni del contenuto"
 
 #: ../inc/customizer.php:47
 msgid "Show post excerpts?"
-msgstr ""
+msgstr "Mostrare un estratto degli articoli?"
 
 #: ../inc/customizer.php:58
-#, fuzzy
 msgid "Display Comments on Static Pages?"
-msgstr "Mostra sulla prima pagina"
+msgstr "Mostrare Commenti sulle Pagine Statiche?"
 
 #: ../inc/customizer.php:66
-#, fuzzy
 msgid "Slider options"
-msgstr "Opciones del proyector"
+msgstr "Opzioni dello slider"
 
 #: ../inc/customizer.php:76 ../options.php:116
 msgid "Check if you want to enable slider"
@@ -311,25 +304,21 @@ msgid "Enter the number of slide items"
 msgstr "Inserisci il numero di slide"
 
 #: ../inc/customizer.php:111
-#, fuzzy
 msgid "Layout options"
-msgstr "Opciones del Layout"
+msgstr "Opzioni layout"
 
 #: ../inc/customizer.php:123 ../options.php:141
 msgid "Website Layout Options"
 msgstr "Opzioni layout sito web"
 
 #: ../inc/customizer.php:126
-#, fuzzy
 msgid "Choose between different layout options to be used as default"
 msgstr ""
-"Scegli tra colonna laterale sinistra e destra da utilizzare come "
-"impostazione predefinita"
+"Scegli tra le diverse opzioni di layout quella da utilizzare per default"
 
 #: ../inc/customizer.php:136
-#, fuzzy
 msgid "Element Color"
-msgstr "Color del elemento"
+msgstr "Colore dell'elemento"
 
 #: ../inc/customizer.php:137 ../inc/customizer.php:149
 #: ../inc/customizer.php:203 ../inc/customizer.php:213
@@ -400,9 +389,8 @@ msgid "Main Body Text"
 msgstr "Testo del corpo principale"
 
 #: ../inc/customizer.php:260
-#, fuzzy
 msgid "Used in p tags"
-msgstr "Usado en los tags P"
+msgstr "Usato nei tag P"
 
 #: ../inc/customizer.php:300 ../options.php:250
 msgid "Heading Color"
@@ -462,19 +450,16 @@ msgid "Dropdown item color"
 msgstr "Colore voce del menu a tendina"
 
 #: ../inc/customizer.php:391 ../options.php:319
-#, fuzzy
 msgid "Top nav dropdown item hover color"
-msgstr "Color del ítem hover del Top nav"
+msgstr "Colore di hover dei menu a tendina della navigazione principale"
 
 #: ../inc/customizer.php:392 ../options.php:320
-#, fuzzy
 msgid "Dropdown item hover color"
-msgstr "Color del fondo del ítem hover del menú desplegable"
+msgstr "Colore di hover dei menu a tendina"
 
 #: ../inc/customizer.php:402 ../options.php:327
-#, fuzzy
 msgid "Top nav dropdown item background hover color"
-msgstr "Color del fondo del ítem hover del menú desplegable"
+msgstr "Colore di sfondo dei menu a tendina della navigazione principale"
 
 #: ../inc/customizer.php:409 ../options.php:335
 msgid "Footer"
@@ -517,14 +502,12 @@ msgid "Footer social icon color"
 msgstr "Colore icone social nel piè di pagina"
 
 #: ../inc/customizer.php:499 ../options.php:376
-#, fuzzy
 msgid "Footer Social Icons"
-msgstr "Colore icone social nel piè di pagina"
+msgstr "Icone Social nel Piè di Pagina"
 
 #: ../inc/customizer.php:500
-#, fuzzy
 msgid "Check to show social icons in footer"
-msgstr "Colore icone social nel piè di pagina"
+msgstr "Spunta per mostrare le icone social nel piè di pagina"
 
 #: ../inc/customizer.php:507 ../options.php:542
 msgid "Other"
@@ -560,7 +543,7 @@ msgstr "Forum di supporto Colorlib"
 
 #: ../inc/customizer.php:703 ../inc/extras.php:391
 msgid "If you like this theme, I'd appreciate any of the following:"
-msgstr "Se ti piace questo tema, apprezzerei una delle seguenti:"
+msgstr "Se ti piace questo tema, apprezzeremmo una delle seguenti azioni:"
 
 #: ../inc/customizer.php:705 ../inc/extras.php:393
 msgid "Rate this Theme"
@@ -580,12 +563,11 @@ msgid "Page %s"
 msgstr "Pagina %s"
 
 #: ../inc/extras.php:125
-#, fuzzy
 msgid ""
 "This post is password protected. To view it please enter your password below:"
 msgstr ""
-"<p>Questo post è protetto da password. Per leggerlo inserire la password di "
-"seguito:</p>"
+"Questo post è protetto da password. Per vederlo inserire la password di "
+"seguito:"
 
 #: ../inc/extras.php:126
 msgid "Password:"
@@ -598,22 +580,20 @@ msgstr "Invia"
 #: ../inc/extras.php:272
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
-msgstr "Tema per %1$s Disegnato da %2$s"
+msgstr "Theme by %1$s Powered by %2$s"
 
 #: ../inc/metaboxes.php:16
-#, fuzzy
 msgid ""
 "Select layout for this specific Page only ( Note: This setting only reflects "
 "if page Template is set as Default Template and Blog Type Templates.)"
 msgstr ""
-"Selecciona layout solo para esta página específica. (N.B.: esta selección "
-"solo se activa si el modelo de página está definido como Default  o modelos "
-"de Blog)"
+"Seleziona il layout solo per questa Pagina (Nota: questa impostazione si "
+"applica solo se il Template della pagina è impostato su Default Template e "
+"Blog Type.)"
 
 #: ../inc/metaboxes.php:21
-#, fuzzy
 msgid "Select layout for this specific Post only"
-msgstr "Selecciona el layour para este  artículo específico"
+msgstr "Seleziona il layout per questo specifico Articolo"
 
 #: ../inc/template-tags.php:23
 msgid "Posts navigation"
@@ -751,9 +731,8 @@ msgid "Used in P tags"
 msgstr "Usato nei tag P"
 
 #: ../options.php:377
-#, fuzzy
 msgid "Show/Hide social icons in footer"
-msgstr "Colore icone social nel piè di pagina"
+msgstr "Mostra/Nascondi icone social nel piè di pagina"
 
 #: ../options.php:405
 msgid "Add full URL for your social network profiles"
@@ -777,7 +756,7 @@ msgstr "Youtube"
 
 #: ../options.php:439
 msgid "Vimeo"
-msgstr ""
+msgstr "Vimeo"
 
 #: ../options.php:447
 msgid "LinkedIn"
@@ -813,19 +792,19 @@ msgstr "Skype"
 
 #: ../options.php:511
 msgid "Foursquare"
-msgstr ""
+msgstr "Foursquare"
 
 #: ../options.php:519
 msgid "SoundCloud"
-msgstr ""
+msgstr "SoundCloud"
 
 #: ../options.php:527
 msgid "GitHub"
-msgstr ""
+msgstr "GitHub"
 
 #: ../options.php:535
 msgid "Spotify"
-msgstr ""
+msgstr "Spotify"
 
 #: ../search.php:16
 #, php-format
