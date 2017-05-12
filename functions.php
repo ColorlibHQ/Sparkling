@@ -445,6 +445,13 @@ function get_layout_class () {
 
 endif;
 
+// Add epsilon framework
+require get_template_directory() . '/inc/libraries/epsilon-framework/class-epsilon-autoloader.php';
+$epsilon_framework_settings = array(
+    'controls' => array( 'toggle', 'upsell' ), // array of controls to load
+    'sections' => array( 'recommended-actions', 'pro' ), // array of sections to load
+  );
+new Epsilon_Framework( $epsilon_framework_settings );
 
 //Include Welcome Screen
 require get_template_directory() . '/inc/welcome-screen/welcome-page-setup.php';
