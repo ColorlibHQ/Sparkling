@@ -559,21 +559,6 @@ function sparkling_customizer( $wp_customize ) {
                 'type' => 'textarea'
             ));
 
-        $wp_customize->add_section('sparkling_important_links', array(
-            'priority' => 5,
-            'title' => __('Support and Documentation', 'sparkling')
-        ));
-            $wp_customize->add_setting('sparkling[imp_links]', array(
-              'sanitize_callback' => 'esc_url_raw'
-            ));
-            $wp_customize->add_control(
-            new Sparkling_Important_Links(
-            $wp_customize,
-                'sparkling[imp_links]', array(
-                'section' => 'sparkling_important_links',
-                'type' => 'sparkling-important-links'
-            )));
-
 }
 add_action( 'customize_register', 'sparkling_customizer' );
 
@@ -714,49 +699,6 @@ function sparkling_customizer_custom_control_css() {
     </style><?php
 }
 add_action( 'customize_controls_print_styles', 'sparkling_customizer_custom_control_css' );
-
-if ( ! class_exists( 'WP_Customize_Control' ) )
-    return NULL;
-/**
- * Class to create a Sparkling important links
- */
-class Sparkling_Important_Links extends WP_Customize_Control {
-
-   public $type = "sparkling-important-links";
-
-   public function render_content() {?>
-         <!-- Twitter -->
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-        <!-- Facebook -->
-        <div id="fb-root"></div>
-        <script>
-            (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=328285627269392";
-            fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script>
-
-        <div class="inside">
-            <div id="social-share">
-              <div class="fb-like" data-href="<?php echo esc_url( 'https://www.facebook.com/colorlib' ); ?>" data-send="false" data-layout="button_count" data-width="90" data-show-faces="true"></div>
-              <div class="tw-follow" ><a href="https://twitter.com/colorlib" class="twitter-follow-button" data-show-count="false">Follow @colorlib</a></div>
-            </div>
-            <p><b><a href="<?php echo esc_url( 'http://colorlib.com/wp/support/sparkling' ); ?>"><?php esc_html_e('Sparkling Documentation','sparkling'); ?></a></b></p>
-            <p><?php _e('The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via','sparkling') ?> <a href="<?php echo esc_url( 'http://colorlib.com/wp/forums' ); ?>"><?php esc_html_e('Colorlib support forum','sparkling') ?></a>.</p>
-            <p><?php esc_html_e('If you like this theme, I\'d appreciate any of the following:','sparkling') ?></p>
-            <ul>
-              <li><a class="button" href="<?php echo esc_url( 'http://wordpress.org/support/view/theme-reviews/sparkling?filter=5' ); ?>" title="<?php esc_attr_e('Rate this Theme', 'sparkling'); ?>" target="_blank"><?php printf(esc_html__('Rate this Theme','sparkling')); ?></a></li>
-              <li><a class="button" href="<?php echo esc_url( 'http://www.facebook.com/colorlib' ); ?>" title="Like Colorlib on Facebook" target="_blank"><?php printf(esc_html__('Like on Facebook','sparkling')); ?></a></li>
-              <li><a class="button" href="<?php echo esc_url( 'http://twitter.com/colorlib/' ); ?>" title="Follow Colrolib on Twitter" target="_blank"><?php printf(esc_html__('Follow on Twitter','sparkling')); ?></a></li>
-            </ul>
-        </div><?php
-   }
-
-}
 
 /*
  * Custom Scripts
