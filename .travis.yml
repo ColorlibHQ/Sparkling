@@ -1,0 +1,47 @@
+sudo: false
+language: php
+matrix:
+  fast_finish: true
+  include:
+  - php: '5.3'
+  - php: '5.4'
+  - php: '5.6'
+  - php: '7.0'
+  - php: '7.1'
+before_script:
+- export PHPCS_DIR=/tmp/phpcs
+- export SNIFFS_DIR=/tmp/sniffs
+- git clone -b 2.9 --depth 1 https://github.com/squizlabs/PHP_CodeSniffer.git $PHPCS_DIR
+- git clone -b master --depth 1 https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git
+  $SNIFFS_DIR
+- git clone -b master --depth 1 https://github.com/wimg/PHPCompatibility.git $SNIFFS_DIR/PHPCompatibility
+- "$PHPCS_DIR/scripts/phpcs --config-set installed_paths $SNIFFS_DIR"
+- phpenv rehash
+- npm install -g jscs
+- npm install -g jshint
+- wget https://develop.svn.wordpress.org/trunk/.jshintrc
+- npm install -g grunt-cli
+- npm install
+- npm install -g grunt-checktextdomain
+script:
+- mkdir -p build/logs
+- find -L . -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l
+- jshint ./assets/js/*.js
+- jscs ./assets/js/*.js
+- grunt textdomain
+- "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./*.php --standard=./phpcs.ruleset.xml --extensions=php"
+- "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/*.php --standard=./phpcs.ruleset.xml
+  --extensions=php --ignore=./woocommerce/*.php,./node_modules/*.php"
+- "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/**/*.php --standard=./phpcs.ruleset.xml
+  --extensions=php --ignore=./woocommerce/**/*.php,./inc/libraries/class-tgm-plugin-activation.php,./node_modules/**/*.php"
+- "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/**/**/*.php --standard=./phpcs.ruleset.xml
+  --extensions=php --ignore=./woocommerce/**/**/*.php,./node_modules/**/**/*.php"
+- "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/**/**/**/*.php --standard=./phpcs.ruleset.xml
+  --extensions=php --ignore=./node_modules/**/**/**/*.php"
+- "$PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/**/**/**/**/*.php --standard=./phpcs.ruleset.xml
+  --extensions=php --ignore=./node_modules/**/**/**/**/*.php"
+notifications:
+  email: false
+cache:
+  directories:
+  - node_modules

@@ -7,9 +7,13 @@
  * @package sparkling
  */
 ?>
-		</div><!-- close .row -->
-	</div><!-- close .container -->
-</div><!-- close .site-content -->
+	<?php if ( !is_page_template( 'page-templates/template-home.php' ) ): ?>
+
+			</div><!-- close .row -->
+		</div><!-- close .container -->
+	</div><!-- close .site-content -->
+
+	<?php endif ?>
 
 	<div id="footer-area">
 		<div class="container footer-inner">
