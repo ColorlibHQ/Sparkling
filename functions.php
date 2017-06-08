@@ -63,8 +63,6 @@ function sparkling_setup() {
 
   add_image_size( 'sparkling-featured', 750, 410, true );
   add_image_size( 'tab-small', 60, 60 , true); // Small Thumbnail
-  add_image_size( 'sparkling-portfolio', 250, 180 , true);
-  add_image_size( 'sparkling-portfolio-big', 400, 288 , true);
 
   // This theme uses wp_nav_menu() in one location.
   register_nav_menus( array(
@@ -98,8 +96,6 @@ function sparkling_setup() {
    */
   add_theme_support( 'title-tag' );
 
-  add_theme_support( 'customize-selective-refresh-widgets' );
-
 }
 endif; // sparkling_setup
 add_action( 'after_setup_theme', 'sparkling_setup' );
@@ -108,26 +104,6 @@ add_action( 'after_setup_theme', 'sparkling_setup' );
  * Register widgetized area and update sidebar with default widgets.
  */
 function sparkling_widgets_init() {
-
-  register_sidebar( array(
-    'id'            => 'sidebar-home',
-    'name'          => esc_html__( 'Home Page', 'sparkling' ),
-    'description'   => esc_html__( 'This sidebar is used on Homepage page template', 'sparkling' ),
-    'before_widget' => '<div id="%1$s" class="widget %2$s">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h2 class="widget-title">',
-    'after_title'   => '</h2>',
-  ) );
-
-  register_sidebar( array(
-    'name'          => esc_html__( 'Portfolio', 'sparkling' ),
-    'id'            => 'portfolio-sidebar',
-    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-    'after_widget'  => '</aside>',
-    'before_title'  => '<h3 class="widget-title">',
-    'after_title'   => '</h3>',
-  ));
-
   register_sidebar( array(
     'name'          => esc_html__( 'Sidebar', 'sparkling' ),
     'id'            => 'sidebar-1',
@@ -228,10 +204,10 @@ add_filter( 'gallery_style', 'sparkling_remove_gallery_css' );
 function sparkling_scripts() {
 
   // Add Bootstrap default CSS
-  wp_enqueue_style( 'sparkling-bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css' );
+  wp_enqueue_style( 'sparkling-bootstrap', get_template_directory_uri() . '/inc/css/bootstrap.min.css' );
 
   // Add Font Awesome stylesheet
-  wp_enqueue_style( 'sparkling-icons', get_template_directory_uri().'/assets/css/font-awesome.min.css' );
+  wp_enqueue_style( 'sparkling-icons', get_template_directory_uri().'/inc/css/font-awesome.min.css' );
 
   // Add Google Fonts
   wp_register_style( 'sparkling-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700|Roboto+Slab:400,300,700');
@@ -239,55 +215,36 @@ function sparkling_scripts() {
   wp_enqueue_style( 'sparkling-fonts' );
 
   // Add slider CSS only if is front page ans slider is enabled
-  if( ( is_home() || is_front_page() ) && ( of_get_option('sparkling_slider_checkbox') == 1 || is_page_template( 'page-templates/template-home.php' ) ) ) {
-    wp_enqueue_style( 'owl.carousel', get_template_directory_uri() . '/assets/css/owl.carousel.min.css' );
-    wp_enqueue_style( 'owl.carousel.theme', get_template_directory_uri() . '/assets/css/owl.theme.default.css' );
-    wp_enqueue_style( 'flexslider', get_template_directory_uri() . '/assets/css/flexslider.css' );
+  if( ( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1 ) {
+    wp_enqueue_style( 'flexslider-css', get_template_directory_uri().'/inc/css/flexslider.css' );
   }
 
   // Add main theme stylesheet
   wp_enqueue_style( 'sparkling-style', get_stylesheet_uri() );
 
   // Add Modernizr for better HTML5 and CSS3 support
-  wp_enqueue_script('sparkling-modernizr', get_template_directory_uri().'/assets/js/modernizr.min.js', array('jquery') );
+  wp_enqueue_script('sparkling-modernizr', get_template_directory_uri().'/inc/js/modernizr.min.js', array('jquery') );
 
   // Add Bootstrap default JS
-  wp_enqueue_script('sparkling-bootstrapjs', get_template_directory_uri().'/assets/js/bootstrap.min.js', array('jquery') );
+  wp_enqueue_script('sparkling-bootstrapjs', get_template_directory_uri().'/inc/js/bootstrap.min.js', array('jquery') );
 
-  if( ( is_home() || is_front_page() ) && ( of_get_option('sparkling_slider_checkbox') == 1 || is_page_template( 'page-templates/template-home.php' ) ) ) {
+  if( ( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1 ) {
     // Add slider JS only if is front page ans slider is enabled
-    wp_enqueue_script( 'flexslider', get_template_directory_uri() . '/assets/js/flexslider.min.js', array( 'jquery' ), '20160115', true );
+    wp_enqueue_script( 'flexslider-js', get_template_directory_uri() . '/inc/js/flexslider.min.js', array('jquery'), '20140222', true );
     // Flexslider customization
-    wp_enqueue_script( 'flexslider-customization', get_template_directory_uri() . '/assets/js/flexslider-custom.js', array('jquery', 'flexslider'), '20140716', true );
+    wp_enqueue_script( 'flexslider-customization', get_template_directory_uri() . '/inc/js/flexslider-custom.js', array('jquery', 'flexslider-js'), '20140716', true );
   }
 
   // Main theme related functions
-  wp_enqueue_script( 'sparkling-functions', get_template_directory_uri() . '/assets/js/functions.min.js', array('jquery') );
+  wp_enqueue_script( 'sparkling-functions', get_template_directory_uri() . '/inc/js/functions.min.js', array('jquery') );
 
   // This one is for accessibility
-  wp_enqueue_script( 'sparkling-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20140222', true );
+  wp_enqueue_script( 'sparkling-skip-link-focus-fix', get_template_directory_uri() . '/inc/js/skip-link-focus-fix.js', array(), '20140222', true );
 
   // Treaded comments
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );
   }
-
-
-  // FrontPage scripts&style
-  if ( is_page_template( 'page-templates/template-home.php' ) ) {
-    wp_enqueue_script( 'sparkling-parallax', get_template_directory_uri() . '/assets/js/parallax.min.js', array( 'jquery' ), '20160115', true );
-    wp_enqueue_script( 'owl.carousel', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array( 'jquery' ), '20160115', true );
-    wp_enqueue_script( 'sparkling-main-script', get_template_directory_uri() . '/assets/js/sparkling.js', array( 'jquery' ), '20160115', true );
-  }
-
-  if ( is_post_type_archive( 'sparkling_portfolio' ) ) {
-    wp_enqueue_script( 'sparkling-isotope', get_template_directory_uri() . '/assets/js/isotope.pkgd.min.js', array( 'jquery' ), '20160115', true );
-    wp_add_inline_script( 'sparkling-isotope', "jQuery(document).ready(function(){ var grid = jQuery('#portfolio-section').isotope({ itemSelector: '.portfolio-item', layoutMode: 'fitRows' });jQuery('#portfolio-filters li').click(function(){ var filter = jQuery(this).data( 'slug' ); grid.isotope({ filter: filter });jQuery('#portfolio-filters li').removeClass('active');jQuery(this).addClass('active');});});" );
-  }
-
-  
-  
-
 }
 add_action( 'wp_enqueue_scripts', 'sparkling_scripts' );
 
@@ -467,16 +424,16 @@ if ( ! function_exists( 'get_layout_class' ) ) :
 
 function get_layout_class () {
     global $post;
-    if( is_singular() && get_post_meta($post->ID, 'site_layout', true) && !is_singular( array( 'product', 'sparkling_portfolio' ) ) ){
+    if( is_singular() && get_post_meta($post->ID, 'site_layout', true) && !is_singular( array( 'product' ) ) ){
         $layout_class = get_post_meta($post->ID, 'site_layout', true);
-    }elseif( is_post_type_archive( 'sparkling_portfolio' ) && is_singular( 'sparkling_portfolio' ) ){
-        $layout_class = of_get_option( 'portfolio_layout', 'side-pull-left' );
-    }elseif( function_exists ( "is_woocommerce" ) && function_exists ( "is_it_woocommerce_page" ) && is_it_woocommerce_page() && !is_search() ){// Check for WooCommerce
+    }
+    elseif( function_exists ( "is_woocommerce" ) && function_exists ( "is_it_woocommerce_page" ) && is_it_woocommerce_page() && !is_search() ){// Check for WooCommerce
         $page_id = ( is_product() ) ? $post->ID : get_woocommerce_page_id();
 
         if( $page_id && get_post_meta($page_id, 'site_layout', true) ){
             $layout_class = get_post_meta( $page_id, 'site_layout', true);
-        }else{
+        }
+        else{
             $layout_class = of_get_option( 'woo_site_layout', 'full-width' );
         }
     }
@@ -488,15 +445,6 @@ function get_layout_class () {
 
 endif;
 
-// Add epsilon framework
-require get_template_directory() . '/inc/libraries/epsilon-framework/class-epsilon-autoloader.php';
-$epsilon_framework_settings = array(
-    'controls' => array( 'toggle', 'upsell' ), // array of controls to load
-    'sections' => array( 'recommended-actions', 'pro' ), // array of sections to load
-  );
-new Epsilon_Framework( $epsilon_framework_settings );
 
 //Include Welcome Screen
 require get_template_directory() . '/inc/welcome-screen/welcome-page-setup.php';
-
-

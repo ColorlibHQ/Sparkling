@@ -1,10 +1,10 @@
 <?php
 
-if ( ! class_exists( 'Sparkling_Notify_System' ) ) {
+if ( ! class_exists( 'MT_Notify_System' ) ) {
 	/**
-	 * Class Sparkling_Notify_System
+	 * Class MT_Notify_System
 	 */
-	class Sparkling_Notify_System {
+	class MT_Notify_System {
 		/**
 		 * @param $ver
 		 *
@@ -38,22 +38,10 @@ if ( ! class_exists( 'Sparkling_Notify_System' ) ) {
 		 * @return bool
 		 */
 		public static function has_posts() {
-
-			$imported = get_option( 'sparkling_importded_demo' );
-			if ( $imported ) {
-				return true;
-			}
-
-			$count_posts = wp_count_posts('post');
-			if ( $count_posts->publish > 4 ) {
-				add_option( 'sparkling_importded_demo', true );
-				return true;
-			}
-
-			$args  = array( "s" => 'Beautiful Flat Design and Long Shadow Logo Collection' );
+			$args  = array( "s" => 'Donec Vehicula Cursus Ante' );
 			$query = get_posts( $args );
+
 			if ( ! empty( $query ) ) {
-				add_option( 'sparkling_importded_demo', true );
 				return true;
 			}
 
