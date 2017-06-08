@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/MachoThemes/Sparkling.svg?branch=master)](https://travis-ci.org/MachoThemes/Sparkling)
-
 # About Theme
 
 Theme Name: Sparkling<br>

@@ -85,7 +85,7 @@ wp_enqueue_script( 'updates' );
 				continue;
 			}
 
-			if ( Sparkling_Notify_System::has_plugin( $slug ) ) {
+			if ( MT_Notify_System::has_plugin( $slug ) ) {
 				continue;
 			}
 			if ( $nr_recommended_plugins == 0 ) {
