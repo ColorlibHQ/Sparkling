@@ -56,7 +56,7 @@
 					the_excerpt();?>
 					<p><a class="btn btn-default read-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php esc_html_e( 'Read More', 'sparkling' ); ?></a></p>
 				<?php else :
-					the_content( __( 'Read More', 'sparkling' ) );
+					the_content();
 				endif;
 				 ?>
 
