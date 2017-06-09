@@ -2,17 +2,17 @@
 
 Theme Name: Sparkling<br>
 Theme URI: http://colorlib.com/wp/sparkling/<br>
-Version: 2.3.2<br>
-Tested up to: WP 4.6<br>
+Version: 2.3.3<br>
+Tested up to: WP 4.8<br>
 
 Author: Aigars Silkalns<br>
 Author URI: http://colorlib.com/wp/<br>
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl.html
 -------------------------------------------------------
-Sparkling theme, Copyright 2014-2016 colorlib.com
+Sparkling theme, Copyright 2014-2017 colorlib.com
 Sparkling WordPress theme is distributed under the terms of the GNU GPL
-Sparkling is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Sparkling is based on Underscores http://underscores.me/, (C) 2012-2017 Automattic, Inc.
 -------------------------------------------------------
 
 # Credits
@@ -64,9 +64,13 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 # Changelog
 
+## 2.3.3 - 09.06.2017
+
+* Improved Dutch translation by Thom de Jonge
+
 ## 2.3.2 - 11.10.2016
 
-* Removed redundant functions and replaced with ones from WP core. 
+* Removed redundant functions and replaced with ones from WP core.
 
 ## 2.3.1 - 08.07.2016
 
