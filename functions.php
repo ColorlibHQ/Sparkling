@@ -211,7 +211,9 @@ function sparkling_scripts() {
   wp_enqueue_style( 'sparkling-icons', get_template_directory_uri().'/inc/css/font-awesome.min.css' );
 
   // Add Google Fonts
-  wp_register_style( 'sparkling-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700|Roboto+Slab:400,300,700');
+  $typography_options = of_get_option('main_body_typography'); 
+  $font_subset = $typography_options['subset'];
+  wp_register_style( 'sparkling-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700|Roboto+Slab:400,300,700'.( empty($font_subset) ? '' : '&subset='.$font_subset ));
 
   wp_enqueue_style( 'sparkling-fonts' );
 
