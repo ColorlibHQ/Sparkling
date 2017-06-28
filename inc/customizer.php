@@ -39,7 +39,7 @@ function sparkling_customizer( $wp_customize ) {
         ) );
             // add setting for excerpts/full posts toggle
             $wp_customize->add_setting( 'sparkling_excerpts', array(
-                    'default'           => 1,
+                    'default'           => 0,
                     'sanitize_callback' => 'sparkling_sanitize_checkbox',
             ) );
             // add checkbox control for excerpts/full posts toggle
