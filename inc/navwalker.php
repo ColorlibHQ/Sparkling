@@ -81,13 +81,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
                         $atts['rel']    = ! empty( $item->xfn )                ? $item->xfn        : '';
 
                         // If item has_children add atts to a.
-                        if ( $args->has_children && $depth === 0 ) {
-                                $atts['href']                   = '#';
-                                $atts['data-toggle']        = 'dropdown';
-                                $atts['class']                        = 'dropdown-toggle';
-                        } else {
-                                $atts['href'] = ! empty( $item->url ) ? $item->url : '';
-                        }
+                        $atts['href'] = ! empty( $item->url ) ? $item->url : '';
 
                         $atts = apply_filters( 'nav_menu_link_attributes', $atts, $item, $args );
 
@@ -120,7 +114,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 				$item_output .= '<a'. $attributes .'>';
 
                         $item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
-                        $item_output .= ( $args->has_children && 0 === $depth ) ? ' <span class="caret"></span></a>' : '</a>';
+                        $item_output .= ( $args->has_children && 0 === $depth ) ? ' </a><span class="caret sparkling-dropdown"></span>' : '</a>';
                         $item_output .= $args->after;
 
                         $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );

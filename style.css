@@ -874,6 +874,7 @@ button:hover, .button:hover {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li:hover > a,
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
@@ -888,12 +889,42 @@ button:hover, .button:hover {
   color: #fff;
   background-color: #DA4453;
 }
+
+.navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > ul.dropdown-menu {
+  display: none;
+}
+.navbar-default .navbar-nav.sparkling-mobile-menu > li.open > ul.dropdown-menu {
+  display: block;
+}
+.navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > a {
+  color: #777;
+}
+.navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > a,
+.navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > .caret {
+    color: #fff;
+}
+.navbar-default .navbar-nav.sparkling-mobile-menu > li.open > a,
+.navbar-default .navbar-nav.sparkling-mobile-menu > li.open > .caret {
+  color: #DA4453;
+}
+
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
   .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus,
   .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {
     color: #fff;
     background-color: #DA4453;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #DADADA;
+  }
+  .navbar-default .navbar-nav > li:hover > a,
+  .navbar-default .navbar-nav > li:hover > .caret {
+    color: #fff;
+  }
+  .navbar-default .navbar-nav > li.open > a,
+  .navbar-default .navbar-nav > li.open > .caret {
+    color: #DA4453;
   }
 }
 .dropdown-menu {
@@ -906,10 +937,7 @@ button:hover, .button:hover {
 .navbar-default .navbar-nav .open .dropdown-menu > li.active > a {
   color: #fff;
 }
-.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-  color: #DADADA;
-}
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }
@@ -939,9 +967,23 @@ button:hover, .button:hover {
 .navbar-nav > li > .dropdown-menu {
   padding: 0;
 }
+.navbar-nav > li {
+  padding: 15px;
+  color: #F5F7FA;
+}
 .navbar-nav > li > a {
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding: 0;
+  display: inline-block;
+}
+.navbar-nav > li > .caret {
+  margin-left: 10px;
+  -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.navbar-nav > li:hover > .caret {
+  color: #DA4453;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
