@@ -19,6 +19,26 @@ jQuery(document).ready(function(){
     jQuery('#submit, .tagcloud, button[type=submit], .comment-reply-link, .widget_rss ul, .postform, table#wp-calendar').show("fast");
 });
 
+function SparklingIsMobile() {
+    return (
+        ( navigator.userAgent.match( /Android/i ) ) ||
+        ( navigator.userAgent.match( /webOS/i ) ) ||
+        ( navigator.userAgent.match( /iPhone/i ) ) ||
+        ( navigator.userAgent.match( /iPod/i ) ) ||
+        ( navigator.userAgent.match( /iPad/i ) ) ||
+        ( navigator.userAgent.match( /BlackBerry/ ) )
+    );
+}
+
+function generateMobileMenu() {
+    var menu = jQuery( '#masthead .site-navigation-inner .navbar-collapse > ul.nav' );
+    if ( SparklingIsMobile() && jQuery( window ).width() > 767 ) {
+        menu.addClass( 'sparkling-mobile-menu' );
+    } else {
+        menu.removeClass( 'sparkling-mobile-menu' );
+    }
+}
+
 // jQuery powered scroll to top
 jQuery(document).ready(function(){
 
@@ -36,6 +56,15 @@ jQuery(document).ready(function(){
         jQuery("html, body").animate({scrollTop:0},800);
         return false;
     });
+
+    jQuery( '.sparkling-dropdown' ).click( function( evt ) {
+        jQuery( this ).parent().toggleClass( 'open' );
+    });
+    generateMobileMenu();
+    jQuery( window ).resize(function() {
+        generateMobileMenu();
+    });
+
 });
 
 // JQuery Sticy Header
