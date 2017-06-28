@@ -183,7 +183,7 @@ function sparkling_featured_slider() {
         if ($query->have_posts()) :
           while ($query->have_posts()) : $query->the_post();
 
-      		  if(of_get_option( 'sparkling_slider_link_checkbox' ) == 1){
+      		  if(of_get_option( 'sparkling_slider_link_checkbox', 1 ) == 1){
       			echo '<li><a href="'. get_permalink() .'">';
       		  }else{
       			echo '<li>';
@@ -229,7 +229,7 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
       if ( of_get_option('link_hover_color')) {
         echo 'a:hover, a:active, #secondary .widget .post-content a:hover,
         .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover,
-        .woocommerce nav.woocommerce-pagination ul li span.current  {color: '.of_get_option('link_hover_color').';}';
+        .woocommerce nav.woocommerce-pagination ul li span.current, #secondary .widget a:hover  {color: '.of_get_option('link_hover_color').';}';
       }
       if ( of_get_option('element_color')) {
         echo '.btn-default, .label-default, .flex-caption h2, .btn.btn-default.read-more,button,
@@ -264,10 +264,12 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
         echo '.navbar.navbar-default, .navbar-default .navbar-nav .open .dropdown-menu > li > a {background-color: '.of_get_option('nav_bg_color').';}';
       }
       if ( of_get_option('nav_link_color')) {
-        echo '.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { color: '.of_get_option('nav_link_color').';}';
+        echo '.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > .caret, .navbar-default .navbar-nav > li, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { color: '.of_get_option('nav_link_color').';}';
+        echo '@media (max-width: 767px){ .navbar-default .navbar-nav > li:hover > a, .navbar-default .navbar-nav > li:hover > .caret{ color: '.of_get_option('nav_link_color').'!important ;} }';
       }
       if ( of_get_option('nav_item_hover_color')) {
-        echo '.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {color: '.of_get_option('nav_item_hover_color').';}';
+        echo '.navbar-default .navbar-nav > li:hover > a, .navbar-nav > li:hover > .caret, .navbar-default .navbar-nav.sparkling-mobile-menu > li.open > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li.open > .caret, .navbar-default .navbar-nav > li:hover, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {color: '.of_get_option('nav_item_hover_color').';}';
+        echo '@media (max-width: 767px){ .navbar-default .navbar-nav > li.open > a, .navbar-default .navbar-nav > li.open > .caret { color: '.of_get_option('nav_item_hover_color').' !important; } }';
       }
       if ( of_get_option('nav_dropdown_bg_hover') || of_get_option('nav_dropdown_item_hover') ) {
         echo '@media (max-width: 767px) {.navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {background: '.of_get_option('nav_dropdown_bg_hover').'; color:'.of_get_option('nav_dropdown_item_hover').';} }';
