@@ -224,7 +224,7 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
       echo '<style type="text/css">';
 
       if ( of_get_option('link_color')) {
-        echo 'a, #infinite-handle span, #secondary .widget .post-content a {color:' . of_get_option('link_color') . '}';
+        echo 'a, #infinite-handle span, #secondary .widget .post-content a, .entry-meta a {color:' . of_get_option('link_color') . '}';
       }
       if ( of_get_option('link_hover_color')) {
         echo 'a:hover, a:active, #secondary .widget .post-content a:hover,
@@ -258,7 +258,7 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
         echo '.cfa-button {border-color: '.of_get_option('cfa_btn_color').'; color: '.of_get_option('cfa_btn_txt_color').';}';
       }
       if ( of_get_option('heading_color')) {
-        echo 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .entry-title {color: '.of_get_option('heading_color').';}';
+        echo 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .entry-title, .entry-title a {color: '.of_get_option('heading_color').';}';
       }
       if ( of_get_option('nav_bg_color')) {
         echo '.navbar.navbar-default, .navbar-default .navbar-nav .open .dropdown-menu > li > a {background-color: '.of_get_option('nav_bg_color').';}';
@@ -308,6 +308,9 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
       $typography = of_get_option('main_body_typography');
       if ( $typography ) {
         echo '.entry-content {font-family: ' . $typography_options['faces'][$typography['face']] . '; font-size:' . $typography['size'] . '; font-weight: ' . $typography['style'] . '; color:'.$typography['color'] . ';}';
+        if ( isset($typography['color']  ) ) {
+          echo 'body {color:' . $typography['color'] . '}';
+        }
       }
       if ( of_get_option('custom_css')) {
         echo html_entity_decode( of_get_option( 'custom_css', 'no entry' ) );
