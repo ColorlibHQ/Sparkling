@@ -239,7 +239,8 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
               .woocommerce a.button, .woocommerce button.button,
               .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt { background-color: '.of_get_option('element_color').'; border-color: '.of_get_option('element_color').';}';
 
-        echo '.site-main [class*="navigation"] a, .more-link, .pagination>li>a, .pagination>li>span { color: '.of_get_option('element_color').'}';
+        echo '.site-main [class*="navigation"] a, .more-link, .pagination>li>a, .pagination>li>span, .cfa-button { color: '.of_get_option('element_color').'}';
+        echo '.cfa-button {border-color: '.of_get_option('element_color').';}';
       }
 
       if ( of_get_option('element_color_hover')) {
