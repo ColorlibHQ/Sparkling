@@ -583,6 +583,9 @@ object {
 #secondary .widget a {
   color: #C1C0C0;
 }
+#secondary .widget a:hover {
+  color: #DA4453;
+}
 .widget ul ul {
   padding: 10px;
 }
