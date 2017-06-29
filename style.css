@@ -532,6 +532,21 @@ object {
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
+.widget_nav_menu ul li {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0 none;
+}
+.widget_nav_menu ul li a {
+  border-bottom: 1px solid #F2F2F2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+}
+.widget_nav_menu ul.sub-menu a {
+  padding-left: 10px;
+  border-left: 1px solid #F2F2F2;
+}
 .widget ul {
   padding: 0;
   line-height: 18px;
@@ -587,7 +602,10 @@ object {
   color: #DA4453;
 }
 .widget ul ul {
-  padding: 10px;
+  padding: 20px 10px 0 10px;
+}
+.widget ul ul.sub-menu {
+  padding: 0 0 0 10px;
 }
 .widget #social ul li {
     border-bottom: 0;
@@ -1297,8 +1315,9 @@ p.logged-in-as {
   padding: 40px 0 20px 0;
   overflow: hidden;
 }
-#footer-area ul li {
-  border-bottom: 1px solid #444;
+#footer-area ul li,
+#footer-area .widget_nav_menu ul li a {
+  border-color:#444;
 }
 #footer-area .site-info nav ul li {
   border-bottom: none;
