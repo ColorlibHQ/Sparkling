@@ -154,7 +154,7 @@ function sparkling_customizer( $wp_customize ) {
             }
 
             $wp_customize->add_setting('sparkling[element_color]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#DA4453' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -166,7 +166,7 @@ function sparkling_customizer( $wp_customize ) {
             )));
 
             $wp_customize->add_setting('sparkling[element_color_hover]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#363636' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -220,7 +220,7 @@ function sparkling_customizer( $wp_customize ) {
             ));
 
             $wp_customize->add_setting('sparkling[cfa_color]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#DA4453' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -230,7 +230,7 @@ function sparkling_customizer( $wp_customize ) {
                 'section' => 'sparkling_action_options',
             )));
             $wp_customize->add_setting('sparkling[cfa_bg_color]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#FFF' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -240,7 +240,7 @@ function sparkling_customizer( $wp_customize ) {
                 'section' => 'sparkling_action_options',
             )));
             $wp_customize->add_setting('sparkling[cfa_btn_color]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#DA4453' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -250,7 +250,7 @@ function sparkling_customizer( $wp_customize ) {
                 'section' => 'sparkling_action_options',
             )));
             $wp_customize->add_setting('sparkling[cfa_btn_txt_color]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#DA4453' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -309,7 +309,7 @@ function sparkling_customizer( $wp_customize ) {
                 'choices'    => $typography_options['styles']
             ));
             $wp_customize->add_setting('sparkling[main_body_typography][color]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#6B6B6B' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -318,7 +318,7 @@ function sparkling_customizer( $wp_customize ) {
             )));
 
             $wp_customize->add_setting('sparkling[heading_color]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#444' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -328,7 +328,7 @@ function sparkling_customizer( $wp_customize ) {
                 'section' => 'sparkling_typography_options',
             )));
             $wp_customize->add_setting('sparkling[link_color]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#DA4453' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -338,7 +338,7 @@ function sparkling_customizer( $wp_customize ) {
                 'section' => 'sparkling_typography_options',
             )));
             $wp_customize->add_setting('sparkling[link_hover_color]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#DADADA' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -368,7 +368,7 @@ function sparkling_customizer( $wp_customize ) {
             ));
 
             $wp_customize->add_setting('sparkling[nav_bg_color]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#363636' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -378,7 +378,7 @@ function sparkling_customizer( $wp_customize ) {
                 'section' => 'sparkling_header_options',
             )));
             $wp_customize->add_setting('sparkling[nav_link_color]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#F5F7FA' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -389,7 +389,7 @@ function sparkling_customizer( $wp_customize ) {
             )));
 
             $wp_customize->add_setting('sparkling[nav_item_hover_color]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#DA4453' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -400,7 +400,7 @@ function sparkling_customizer( $wp_customize ) {
             )));
 
             $wp_customize->add_setting('sparkling[nav_dropdown_bg]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#FFF' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -411,7 +411,7 @@ function sparkling_customizer( $wp_customize ) {
             )));
 
             $wp_customize->add_setting('sparkling[nav_dropdown_item]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#636467' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -422,7 +422,7 @@ function sparkling_customizer( $wp_customize ) {
             )));
 
             $wp_customize->add_setting('sparkling[nav_dropdown_item_hover]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#FFF' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -433,7 +433,7 @@ function sparkling_customizer( $wp_customize ) {
             )));
 
             $wp_customize->add_setting('sparkling[nav_dropdown_bg_hover]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#DA4453' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -450,7 +450,7 @@ function sparkling_customizer( $wp_customize ) {
             'panel' => 'sparkling_main_options'
         ));
             $wp_customize->add_setting('sparkling[footer_widget_bg_color]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#313233' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -460,7 +460,7 @@ function sparkling_customizer( $wp_customize ) {
             )));
 
             $wp_customize->add_setting('sparkling[footer_bg_color]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#1F1F1F' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -470,7 +470,7 @@ function sparkling_customizer( $wp_customize ) {
             )));
 
             $wp_customize->add_setting('sparkling[footer_text_color]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#999' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -480,7 +480,7 @@ function sparkling_customizer( $wp_customize ) {
             )));
 
             $wp_customize->add_setting('sparkling[footer_link_color]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#DADADA' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -508,7 +508,7 @@ function sparkling_customizer( $wp_customize ) {
             'panel' => 'sparkling_main_options'
         ));
             $wp_customize->add_setting('sparkling[social_color]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#DADADA' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
@@ -519,7 +519,7 @@ function sparkling_customizer( $wp_customize ) {
             )));
 
             $wp_customize->add_setting('sparkling[social_footer_color]', array(
-                'default' => '',
+                'default' => sanitize_hex_color( '#363636' ),
                 'type'  => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_hexcolor'
             ));
