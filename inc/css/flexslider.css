@@ -119,6 +119,9 @@ html[xmlns] .slides {display: block;}
   margin-bottom: 0;
   color: #fff;
 }
+a:hover .flex-caption h2 {
+  background-color: #363636;
+}
 .flex-control-nav  {
   position: absolute;
   display: inline-block;
