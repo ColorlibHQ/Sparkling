@@ -1308,13 +1308,19 @@ p.logged-in-as {
 #footer-area .widget ul li {
   list-style: none;
 }
-.footer-nav.nav > li {
+.footer-nav.nav li {
   position: relative;
   display: inline-block;
 }
+
 .footer-nav.nav {
   float: left;
   margin-bottom: 2px;
+}
+.footer-nav.nav ul {
+  float: left;
+  padding: 0;
+  list-style: none;
 }
 .footer-widget {
   overflow: hidden;
@@ -1335,8 +1341,10 @@ p.logged-in-as {
 .site-info a:hover {
   color: #999;
 }
+#footer-area a:focus,
 #footer-area a:hover {
   color: #fff;
+  background: transparent;
 }
 .site-info {
   color: #999;
