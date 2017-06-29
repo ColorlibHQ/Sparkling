@@ -140,7 +140,7 @@ function sparkling_footer_links() {
     'after'           => '',                                  // after the menu
     'link_before'     => '',                            // before each link
     'link_after'      => '',                             // after each link
-    'depth'           => 0,                                   // limit the depth of the nav
+    'depth'           => 1,                                   // limit the depth of the nav
     'fallback_cb'     => 'sparkling_footer_links_fallback'  // fallback function
   ));
 } /* end sparkling footer link */
