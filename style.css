@@ -606,6 +606,11 @@ object {
   float: right;
 }
 /* Recent Post widgets */
+.popular-posts-wrapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .popular-posts-wrapper .post {
   float: left;
   clear: both;
@@ -1377,6 +1382,16 @@ p.logged-in-as {
   background: #DA4453;
   opacity: .8;
 }
+.footer-widget-area .widget {
+  margin-bottom: 50px;
+}
+.footer-widget-area .widget_calendar table,
+.footer-widget-area .widget ul,
+.footer-widget-area .widget ul > li:last-child,
+.footer-widget-area .popular-posts-wrapper .post:last-child {
+  margin-bottom: 0;
+}
+
 
 @media (max-width: 768px) {
   .site-info, .copyright {
