@@ -308,9 +308,17 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
       global $typography_options;
       $typography = of_get_option('main_body_typography');
       if ( $typography ) {
-        echo '.entry-content {font-family: ' . $typography_options['faces'][$typography['face']] . '; font-size:' . $typography['size'] . '; font-weight: ' . $typography['style'] . '; color:'.$typography['color'] . ';}';
         if ( isset($typography['color']  ) ) {
-          echo 'body {color:' . $typography['color'] . '}';
+          echo 'body, .entry-content {color:' . $typography['color'] . '}';
+        }
+        if ( isset( $typography['face'] ) && isset( $typography_options['faces'][$typography['face']] ) ) {
+          echo '.entry-content {font-family: ' . $typography_options['faces'][$typography['face']] . ';}';
+        }
+        if ( isset($typography['size']  ) ) {
+          echo '.entry-content {font-size:' . $typography['size'] . '}';
+        }
+        if ( isset($typography['style']  ) ) {
+          echo '.entry-content {font-weight:' . $typography['style'] . '}';
         }
       }
       if ( of_get_option('custom_css')) {
