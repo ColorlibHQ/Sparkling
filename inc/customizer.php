@@ -84,7 +84,7 @@ function sparkling_customizer( $wp_customize ) {
                     'sanitize_callback' => 'sparkling_sanitize_checkbox',
             ) );
             $wp_customize->add_control( 'sparkling[sparkling_slider_link_checkbox]', array(
-                    'label'	=> esc_html__( 'Uncheck to simply show the image in the slider', 'sparkling' ),
+                    'label'	=> esc_html__( 'Uncheck this option to remove the link from the slides', 'sparkling' ),
                     'section'	=> 'sparkling_slider_options',
                     'priority'	=> 6,
                     'type'      => 'checkbox',
