@@ -291,7 +291,7 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
         echo '#colophon {background-color: '.of_get_option('footer_bg_color').';}';
       }
       if ( of_get_option('footer_text_color')) {
-        echo '#footer-area, .site-info {color: '.of_get_option('footer_text_color').';}';
+        echo '#footer-area, .site-info, .site-info caption, #footer-area caption {color: '.of_get_option('footer_text_color').';}';
       }
       if ( of_get_option('footer_widget_bg_color')) {
         echo '#footer-area {background-color: '.of_get_option('footer_widget_bg_color').';}';
