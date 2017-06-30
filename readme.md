@@ -16,7 +16,7 @@ Sparkling is based on Underscores http://underscores.me/, (C) 2012-2017 Automatt
 -------------------------------------------------------
 
 # Credits
-Unless otherwise specified, all the theme files, scripts and images are licensed under GPLv2 license
+Unless otherwise specified, all the theme files, scripts and images are licensed under GPLv3 license
 
 Sparkling theme uses:
 * FontAwesome (http://fontawesome.io) licensed under the SIL OFL 1.1 (http://scripts.sil.org/OFL)
@@ -75,6 +75,8 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 * Improved custom colors
 * Fixed the menu on mobile devices
 * Added a 'read more' button when the read more tag is used
+* Added Epsilon Framework
+* Added Welcome Screen
 
 ## 2.3.3 - 09.06.2017
 
