@@ -452,3 +452,6 @@ $epsilon_framework_settings = array(
     'sections' => array( 'recommended-actions', 'pro' ), // array of sections to load
   );
 new Epsilon_Framework( $epsilon_framework_settings );
+
+//Include Welcome Screen
+require get_template_directory() . '/inc/welcome-screen/welcome-page-setup.php';
