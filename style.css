@@ -348,8 +348,10 @@ a.more-link {
   padding: 11px 13px;
   border-radius: 4px;
 }
-.search .btn.btn-default.read-more {
-  float: none;
+.search .entry-summary > p:last-child:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 hr.section-divider {
   border-color: #E8E8E8;
