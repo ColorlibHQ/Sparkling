@@ -1541,7 +1541,8 @@ p.logged-in-as {
 #menu-social li a[href*="mailto"]:hover {
   background-color: #DA4453 !important;
 }
-#menu-social li a[href*="t.me"]:hover {
+#menu-social li a[href*="t.me"]:hover,
+#menu-social li a[href*="telegram.me"]:hover {
   background-color: #0088cc !important;
 }
 #menu-social li, #menu-social ul {
@@ -1570,6 +1571,7 @@ p.logged-in-as {
 #menu-social li a[href*="linkedin.com"] .fa:before{content: "\f0e1"}
 #menu-social li a[href*="mailto"] .fa:before{content: "\f003"}
 #menu-social li a[href*="t.me"] .fa:before{content: "\f2c6"}
+#menu-social li a[href*="telegram.me"] .fa:before{content: "\f2c6"}
 
 @media (max-width: 992px) {
   .site-branding {
