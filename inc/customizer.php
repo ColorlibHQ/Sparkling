@@ -43,23 +43,23 @@ function sparkling_customizer( $wp_customize ) {
                     'sanitize_callback' => 'sparkling_sanitize_checkbox',
             ) );
             // add checkbox control for excerpts/full posts toggle
-            $wp_customize->add_control( 'sparkling_excerpts', array(
+            $wp_customize->add_control( new Epsilon_Control_Toggle( $wp_customize, 'sparkling_excerpts', array(
                     'label'     => esc_html__( 'Show post excerpts?', 'sparkling' ),
                     'section'   => 'sparkling_content_section',
                     'priority'  => 10,
-                    'type'      => 'checkbox'
-            ) );
+                    'type'      => 'epsilon-toggle'
+            ) ) );
 
             $wp_customize->add_setting( 'sparkling_page_comments', array(
                     'default' => 1,
                     'sanitize_callback' => 'sparkling_sanitize_checkbox',
             ) );
-            $wp_customize->add_control( 'sparkling_page_comments', array(
+            $wp_customize->add_control( new Epsilon_Control_Toggle( $wp_customize, 'sparkling_page_comments', array(
                     'label'		=> esc_html__( 'Display Comments on Static Pages?', 'sparkling' ),
                     'section'	=> 'sparkling_content_section',
                     'priority'	=> 20,
-                    'type'      => 'checkbox',
-            ) );
+                    'type'      => 'epsilon-toggle',
+            ) ) );
 
         /* Sparkling Main Options */
         $wp_customize->add_section('sparkling_slider_options', array(
@@ -72,23 +72,23 @@ function sparkling_customizer( $wp_customize ) {
                     'type' => 'option',
                     'sanitize_callback' => 'sparkling_sanitize_checkbox',
             ) );
-            $wp_customize->add_control( 'sparkling[sparkling_slider_checkbox]', array(
-                    'label'	=> esc_html__( 'Check if you want to enable slider', 'sparkling' ),
-                    'section'	=> 'sparkling_slider_options',
-                    'priority'	=> 5,
-                    'type'      => 'checkbox',
+            $wp_customize->add_control( new Epsilon_Control_Toggle( $wp_customize, 'sparkling[sparkling_slider_checkbox]', array(
+                'label'	=> esc_html__( 'Check if you want to enable slider', 'sparkling' ),
+                'section'	=> 'sparkling_slider_options',
+                'priority'	=> 5,
+                'type'      => 'epsilon-toggle',
+            ) ) );
+			$wp_customize->add_setting( 'sparkling[sparkling_slider_link_checkbox]', array(
+                'default' => 1,
+                'type' => 'option',
+                'sanitize_callback' => 'sparkling_sanitize_checkbox',
             ) );
-						$wp_customize->add_setting( 'sparkling[sparkling_slider_link_checkbox]', array(
-                    'default' => 1,
-                    'type' => 'option',
-                    'sanitize_callback' => 'sparkling_sanitize_checkbox',
-            ) );
-            $wp_customize->add_control( 'sparkling[sparkling_slider_link_checkbox]', array(
-                    'label'	=> esc_html__( 'Uncheck this option to remove the link from the slides', 'sparkling' ),
-                    'section'	=> 'sparkling_slider_options',
-                    'priority'	=> 6,
-                    'type'      => 'checkbox',
-            ) );
+            $wp_customize->add_control( new Epsilon_Control_Toggle( $wp_customize, 'sparkling[sparkling_slider_link_checkbox]', array(
+                'label'	=> esc_html__( 'Uncheck this option to remove the link from the slides', 'sparkling' ),
+                'section'	=> 'sparkling_slider_options',
+                'priority'	=> 6,
+                'type'      => 'epsilon-toggle',
+            ) ) );
 
             // Pull all the categories into an array
             global $options_categories;
@@ -360,12 +360,12 @@ function sparkling_customizer( $wp_customize ) {
                 'type' => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_checkbox'
             ));
-            $wp_customize->add_control('sparkling[sticky_header]', array(
+            $wp_customize->add_control( new Epsilon_Control_Toggle( $wp_customize, 'sparkling[sticky_header]', array(
                 'label' => __('Sticky Header', 'sparkling'),
                 'description' => sprintf(__('Check to show fixed header', 'sparkling')),
                 'section' => 'sparkling_header_options',
-                'type' => 'checkbox',
-            ));
+                'type' => 'epsilon-toggle',
+            ) ) );
 
             $wp_customize->add_setting('sparkling[nav_bg_color]', array(
                 'default' => sanitize_hex_color( '#363636' ),
@@ -534,12 +534,12 @@ function sparkling_customizer( $wp_customize ) {
                 'type' => 'option',
                 'sanitize_callback' => 'sparkling_sanitize_checkbox'
             ));
-            $wp_customize->add_control('sparkling[footer_social]', array(
+            $wp_customize->add_control( new Epsilon_Control_Toggle( $wp_customize, 'sparkling[footer_social]', array(
                 'label' => __('Footer Social Icons', 'sparkling'),
                 'description' => sprintf(__('Check to show social icons in footer', 'sparkling')),
                 'section' => 'sparkling_social_options',
-                'type' => 'checkbox',
-            ));
+                'type' => 'epsilon-toggle',
+            ) ) );
 
         /* Sparkling Other Options */
         $wp_customize->add_section('sparkling_other_options', array(
