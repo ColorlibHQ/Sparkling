@@ -40,8 +40,8 @@ function sparkling_welcome_customize_register( $wp_customize ) {
 				$wp_customize,
 				'epsilon-section-pro',
 				array(
-					'title'       => esc_html__( 'Sparkling', 'text-domain' ),
-					'button_text' => esc_html__( 'Documentation', 'text-domain' ),
+					'title'       => esc_html__( 'Sparkling', 'sparkling' ),
+					'button_text' => esc_html__( 'Documentation', 'sparkling' ),
 					'button_url'  => esc_url_raw( 'https://colorlib.com/wp/support/sparkling/' ),
 					'priority'    => 0,
 				)
