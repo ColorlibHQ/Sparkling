@@ -22,7 +22,7 @@ get_header(); ?>
 
 						<div class="row">
 							<div class="col-md-6 not-found-widget">
-								<?php the_widget( 'WP_Widget_Recent_Posts', 'title='.esc_html__( 'Recent Posts', 'sparkling' ) ); ?>
+								<?php the_widget( 'WP_Widget_Recent_Posts', 'title=' . esc_html__( 'Recent Posts', 'sparkling' ) ); ?>
 							</div>
 
 							<div class="col-md-6 not-found-widget">
@@ -50,12 +50,12 @@ get_header(); ?>
 								<?php
 								/* translators: %1$s: smiley */
 								$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'sparkling' ), convert_smilies( ':)' ) ) . '</p>';
-								the_widget( 'WP_Widget_Archives', 'dropdown=1&title='.esc_html__( 'Archives', 'sparkling' ), "after_title=</h2>$archive_content" );
+								the_widget( 'WP_Widget_Archives', 'dropdown=1&title=' . esc_html__( 'Archives', 'sparkling' ), "after_title=</h2>$archive_content" );
 								?>
 							</div>
 
 							<div class="col-md-6 not-found-widget">
-								<?php the_widget( 'WP_Widget_Tag_Cloud', 'title='.esc_html__( 'Tags', 'sparkling' ) ); ?>
+								<?php the_widget( 'WP_Widget_Tag_Cloud', 'title=' . esc_html__( 'Tags', 'sparkling' ) ); ?>
 							</div>
 						</div>
 

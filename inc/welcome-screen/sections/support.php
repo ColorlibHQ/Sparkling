@@ -7,7 +7,7 @@
 			<i><?php esc_html_e( 'We offer excellent support through our advanced ticketing system. Make sure to register your purchase before contacting support!', 'sparkling' ) ?></i>
 		</p>
 		<p><a target="_blank"  class="button button-primary"
-		      href="<?php echo esc_url( 'https://colorlib.com/wp/forums/forum/sparkling/' ); ?>"><?php esc_html_e( 'Contact Support', 'sparkling' ); ?></a>
+			  href="<?php echo esc_url( 'https://colorlib.com/wp/forums/forum/sparkling/' ); ?>"><?php esc_html_e( 'Contact Support', 'sparkling' ); ?></a>
 		</p>
 	</div><!--/.col-->
 

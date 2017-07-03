@@ -44,13 +44,15 @@ if ( ! class_exists( 'Sparkling_Notify_System' ) ) {
 				return true;
 			}
 
-			$count_posts = wp_count_posts('post');
+			$count_posts = wp_count_posts( 'post' );
 			if ( $count_posts->publish > 4 ) {
 				add_option( 'sparkling_importded_demo', true );
 				return true;
 			}
 
-			$args  = array( "s" => 'Beautiful Flat Design and Long Shadow Logo Collection' );
+			$args  = array(
+				's' => 'Beautiful Flat Design and Long Shadow Logo Collection',
+			);
 			$query = get_posts( $args );
 			if ( ! empty( $query ) ) {
 				add_option( 'sparkling_importded_demo', true );
@@ -111,11 +113,11 @@ if ( ! class_exists( 'Sparkling_Notify_System' ) ) {
 			}
 		}
 
-		public static function has_plugin( $slug = NULL ){
+		public static function has_plugin( $slug = null ) {
 
 			$check = array(
 				'installed' => self::check_plugin_is_installed( $slug ),
-				'active'    => self::check_plugin_is_active( $slug )
+				'active'    => self::check_plugin_is_active( $slug ),
 			);
 
 			if ( ! $check['installed'] || ! $check['active'] ) {
@@ -123,10 +125,10 @@ if ( ! class_exists( 'Sparkling_Notify_System' ) ) {
 			}
 
 			return true;
-			
+
 		}
 
-		public static function has_import_plugin( $slug = NULL ) {
+		public static function has_import_plugin( $slug = null ) {
 			$return = self::has_content();
 
 			if ( $return ) {
@@ -134,7 +136,7 @@ if ( ! class_exists( 'Sparkling_Notify_System' ) ) {
 			}
 			$check = array(
 				'installed' => self::check_plugin_is_installed( $slug ),
-				'active'    => self::check_plugin_is_active( $slug )
+				'active'    => self::check_plugin_is_active( $slug ),
 			);
 
 			if ( ! $check['installed'] || ! $check['active'] ) {
@@ -144,11 +146,11 @@ if ( ! class_exists( 'Sparkling_Notify_System' ) ) {
 			return true;
 		}
 
-		public static function has_import_content(){
+		public static function has_import_content() {
 
 			$plugin = self::has_import_plugin( 'wordpress-importer' );
 			$content = self::has_posts();
-			if ( !$plugin || !$content ) {
+			if ( ! $plugin || ! $content ) {
 				return false;
 			}
 
@@ -158,8 +160,14 @@ if ( ! class_exists( 'Sparkling_Notify_System' ) ) {
 
 		public static function has_import_plugins() {
 			$check = array(
-				'wordpress-importer'       => array( 'installed' => false, 'active' => false ),
-				'widget-importer-exporter' => array( 'installed' => false, 'active' => false )
+				'wordpress-importer'       => array(
+					'installed' => false,
+					'active' => false,
+				),
+				'widget-importer-exporter' => array(
+					'installed' => false,
+					'active' => false,
+				),
 			);
 
 			$content = self::has_content();
@@ -181,7 +189,6 @@ if ( ! class_exists( 'Sparkling_Notify_System' ) ) {
 					$return = true;
 					$stop   = true;
 				}
-
 			}
 
 			return $return;
@@ -247,26 +254,26 @@ if ( ! class_exists( 'Sparkling_Notify_System' ) ) {
 
 		}
 
-		public static function create_plugin_requirement_title( $install_text, $activate_text, $plugin_slug ){
+		public static function create_plugin_requirement_title( $install_text, $activate_text, $plugin_slug ) {
 
-			if ( $plugin_slug == '' ) {
+			if ( '' == $plugin_slug ) {
 				return;
 			}
-			if ( $install_text == '' && $activate_text = '' ) {
+			if ( '' == $install_text && '' == $activate_text ) {
 				return;
 			}
-			if ( $install_text == '' &&  $activate_text != '' ) {
+			if ( '' == $install_text &&  '' == $activate_text ) {
 				$install_text = $activate_text;
-			}elseif ( $activate_text == '' &&  $install_text != '' ) {
+			} elseif ( '' == $activate_text &&  '' == $install_text ) {
 				$activate_text = $install_text;
 			}
 
 			$installed = self::check_plugin_is_installed( $plugin_slug );
 			if ( ! $installed ) {
 				return $install_text;
-			}elseif ( ! self::check_plugin_is_active( $plugin_slug ) && $installed ) {
+			} elseif ( ! self::check_plugin_is_active( $plugin_slug ) && $installed ) {
 				return $activate_text;
-			}else{
+			} else {
 				return '';
 			}
 
@@ -281,4 +288,4 @@ if ( ! class_exists( 'Sparkling_Notify_System' ) ) {
 			return get_page_template_slug( $page_id ) == 'page-templates/frontpage-template.php' ? true : false;
 		}
 	}
-}
+}// End if().

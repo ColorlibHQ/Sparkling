@@ -8,10 +8,14 @@
 	<div class="blog-item-wrap">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 				<?php
-				if ( is_page_template( 'page-fullwidth.php' ) )
-					the_post_thumbnail( 'sparkling-featured-fullwidth', array( 'class' => 'single-featured' ));
-				else
-					the_post_thumbnail( 'sparkling-featured', array( 'class' => 'single-featured' ));
+				if ( is_page_template( 'page-fullwidth.php' ) ) {
+					the_post_thumbnail( 'sparkling-featured-fullwidth', array(
+						'class' => 'single-featured',
+					) );
+				} else {                    the_post_thumbnail( 'sparkling-featured', array(
+					'class' => 'single-featured',
+				) );
+				}
 				?>
 			</a>
 		<div class="post-inner-content">
@@ -58,18 +62,18 @@
 				<?php else :
 					the_content( esc_html__( 'Read More', 'sparkling' ) );
 				endif;
-				 ?>
+					?>
 
 				<?php
 					wp_link_pages( array(
-						'before'            => '<div class="page-links">'.esc_html__( 'Pages:', 'sparkling' ),
+						'before'            => '<div class="page-links">' . esc_html__( 'Pages:', 'sparkling' ),
 						'after'             => '</div>',
 						'link_before'       => '<span>',
 						'link_after'        => '</span>',
 						'pagelink'          => '%',
-						'echo'              => 1
-		       		) );
-		    	?>
+						'echo'              => 1,
+					) );
+				?>
 			</div><!-- .entry-content -->
 			<?php endif; ?>
 		</div>

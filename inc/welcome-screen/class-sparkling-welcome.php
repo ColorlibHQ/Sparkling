@@ -21,19 +21,18 @@ class Sparkling_Welcome {
 		/* ajax callback for dismissable required actions */
 		add_action( 'wp_ajax_sparkling_dismiss_required_action', array(
 			$this,
-			'sparkling_dismiss_required_action_callback'
+			'sparkling_dismiss_required_action_callback',
 		) );
 
 		add_action( 'wp_ajax_sparkling_dismiss_recommended_plugins', array(
 			$this,
-			'sparkling_dismiss_recommended_plugins_callback'
+			'sparkling_dismiss_recommended_plugins_callback',
 		) );
 
 		add_action( 'wp_ajax_sparkling_sparkling_set_frontpage', array(
 			$this,
-			'sparkling_set_pages'
+			'sparkling_set_pages',
 		) );
-
 
 		add_action( 'admin_init', array( $this, 'sparkling_activate_plugin' ) );
 		add_action( 'admin_init', array( $this, 'sparkling_deactivate_plugin' ) );
@@ -45,7 +44,7 @@ class Sparkling_Welcome {
 			/**
 			 * Check action
 			 */
-			if ( ! empty( $_GET['action'] ) && $_GET['action'] === 'sparkling_set_frontpage' ) {
+			if ( ! empty( $_GET['action'] ) && 'sparkling_set_frontpage' === $_GET['action'] ) {
 				$about      = get_page_by_title( 'Homepage' );
 				update_option( 'page_on_front', $about->ID );
 				update_option( 'show_on_front', 'page' );
@@ -66,7 +65,7 @@ class Sparkling_Welcome {
 			/**
 			 * Check action
 			 */
-			if ( ! empty( $_GET['action'] ) && ! empty( $_GET['plugin'] ) && $_GET['action'] === 'activate_plugin' ) {
+			if ( ! empty( $_GET['action'] ) && ! empty( $_GET['plugin'] ) && 'activate_plugin' === $_GET['action'] ) {
 				$active_tab = $_GET['tab'];
 				$url        = self_admin_url( 'themes.php?page=sparkling-welcome&tab=' . $active_tab );
 				activate_plugin( $_GET['plugin'], $url );
@@ -79,7 +78,7 @@ class Sparkling_Welcome {
 			/**
 			 * Check action
 			 */
-			if ( ! empty( $_GET['action'] ) && ! empty( $_GET['plugin'] ) && $_GET['action'] === 'deactivate_plugin' ) {
+			if ( ! empty( $_GET['action'] ) && ! empty( $_GET['plugin'] ) && 'deactivate_plugin' === $_GET['action'] ) {
 				$active_tab = $_GET['tab'];
 				$url        = self_admin_url( 'themes.php?page=sparkling-welcome&tab=' . $active_tab );
 				$current    = get_option( 'active_plugins', array() );
@@ -104,7 +103,7 @@ class Sparkling_Welcome {
 
 		add_theme_page( 'About Sparkling', $title, 'edit_theme_options', 'sparkling-welcome', array(
 			$this,
-			'sparkling_welcome_screen'
+			'sparkling_welcome_screen',
 		) );
 	}
 
@@ -129,9 +128,9 @@ class Sparkling_Welcome {
 	public function sparkling_welcome_admin_notice() {
 		?>
 		<div class="updated notice is-dismissible">
-			<p><?php echo sprintf( esc_html__( 'Welcome! Thank you for choosing Sparkling! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s.', 'sparkling' ), '<a href="' . esc_url( admin_url( 'themes.php?page=sparkling-welcome' ) ) . '">', '</a>' ); ?></p>
+			<p><?php echo sprintf( esc_html__( 'Welcome! Thank you for choosing Sparkling! To fully take advantage of the best our theme can offer please make sure you visit our %1$swelcome page%2$s.', 'sparkling' ), '<a href="' . esc_url( admin_url( 'themes.php?page=sparkling-welcome' ) ) . '">', '</a>' ); ?></p>
 			<p><a href="<?php echo esc_url( admin_url( 'themes.php?page=sparkling-welcome' ) ); ?>" class="button"
-			      style="text-decoration: none;"><?php _e( 'Get started with Sparkling', 'sparkling' ); ?></a></p>
+				  style="text-decoration: none;"><?php _e( 'Get started with Sparkling', 'sparkling' ); ?></a></p>
 		</div>
 		<?php
 	}
@@ -147,18 +146,16 @@ class Sparkling_Welcome {
 
 		wp_enqueue_style( 'sparkling-welcome-screen-css', get_template_directory_uri() . '/inc/welcome-screen/css/welcome.css' );
 
-		if ( $screen->base != 'customize' ) {
+		if ( 'customize' != $screen->base ) {
 			wp_enqueue_script( 'sparkling-welcome-screen-js', get_template_directory_uri() . '/inc/welcome-screen/js/welcome.js', array( 'jquery' ), '1.0', true );
 
 			wp_localize_script( 'sparkling-welcome-screen-js', 'sparklingWelcomeScreenObject', array(
 				'nr_actions_required'      => $this->count_actions(),
 				'ajaxurl'                  => admin_url( 'admin-ajax.php' ),
 				'template_directory'       => get_template_directory_uri(),
-				'no_required_actions_text' => __( 'Hooray! There are no required actions for you right now.', 'sparkling' )
+				'no_required_actions_text' => __( 'Hooray! There are no required actions for you right now.', 'sparkling' ),
 			) );
 		}
-		
-
 
 	}
 
@@ -171,9 +168,9 @@ class Sparkling_Welcome {
 		global $sparkling_required_actions;
 		$action_id = ( isset( $_GET['id'] ) ) ? $_GET['id'] : 0;
 		echo $action_id; /* this is needed and it's the id of the dismissable required action */
-		if ( ! empty( $action_id ) ):
+		if ( ! empty( $action_id ) ) :
 			/* if the option exists, update the record for the specified id */
-			if ( get_option( 'sparkling_show_required_actions' ) ):
+			if ( get_option( 'sparkling_show_required_actions' ) ) :
 				$sparkling_show_required_actions = get_option( 'sparkling_show_required_actions' );
 				switch ( $_GET['todo'] ) {
 					case 'add';
@@ -184,14 +181,14 @@ class Sparkling_Welcome {
 						break;
 				}
 				update_option( 'sparkling_show_required_actions', $sparkling_show_required_actions );
-			/* create the new option,with false for the specified id */
-			else:
+				/* create the new option,with false for the specified id */
+			else :
 				$sparkling_show_required_actions_new = array();
-				if ( ! empty( $sparkling_required_actions ) ):
-					foreach ( $sparkling_required_actions as $sparkling_required_action ):
-						if ( $sparkling_required_action['id'] == $action_id ):
+				if ( ! empty( $sparkling_required_actions ) ) :
+					foreach ( $sparkling_required_actions as $sparkling_required_action ) :
+						if ( $sparkling_required_action['id'] == $action_id ) :
 							$sparkling_show_required_actions_new[ $sparkling_required_action['id'] ] = false;
-						else:
+						else :
 							$sparkling_show_required_actions_new[ $sparkling_required_action['id'] ] = true;
 						endif;
 					endforeach;
@@ -205,18 +202,18 @@ class Sparkling_Welcome {
 	public function sparkling_dismiss_recommended_plugins_callback() {
 		$action_id = ( isset( $_GET['id'] ) ) ? $_GET['id'] : 0;
 		echo $action_id; /* this is needed and it's the id of the dismissable required action */
-		if ( ! empty( $action_id ) ):
+		if ( ! empty( $action_id ) ) :
 			/* if the option exists, update the record for the specified id */
 			$sparkling_show_recommended_plugins = get_option( 'sparkling_show_recommended_plugins' );
-				
-				switch ( $_GET['todo'] ) {
-					case 'add';
-						$sparkling_show_recommended_plugins[ $action_id ] = false;
-						break;
-					case 'dismiss';
-						$sparkling_show_recommended_plugins[ $action_id ] = true;
-						break;
-				}
+
+			switch ( $_GET['todo'] ) {
+				case 'add';
+					$sparkling_show_recommended_plugins[ $action_id ] = false;
+					break;
+				case 'dismiss';
+					$sparkling_show_recommended_plugins[ $action_id ] = true;
+					break;
+			}
 				update_option( 'sparkling_show_recommended_plugins', $sparkling_show_recommended_plugins );
 			/* create the new option,with false for the specified id */
 		endif;
@@ -252,14 +249,13 @@ class Sparkling_Welcome {
 			}
 		}
 
-
 		return $i;
 	}
 
 	public function call_plugin_api( $slug ) {
 		include_once( ABSPATH . 'wp-admin/includes/plugin-install.php' );
-
-		if ( false === ( $call_api = get_transient( 'sparkling_plugin_information_transient_' . $slug ) ) ) {
+		$call_api = get_transient( 'sparkling_plugin_information_transient_' . $slug );
+		if ( false === $call_api ) {
 			$call_api = plugins_api( 'plugin_information', array(
 				'slug'   => $slug,
 				'fields' => array(
@@ -277,8 +273,8 @@ class Sparkling_Welcome {
 					'tested'            => false,
 					'requires'          => false,
 					'downloadlink'      => false,
-					'icons'             => true
-				)
+					'icons'             => true,
+				),
 			) );
 			set_transient( 'sparkling_plugin_information_transient_' . $slug, $call_api, 30 * MINUTE_IN_SECONDS );
 		}
@@ -292,10 +288,16 @@ class Sparkling_Welcome {
 
 			$needs = is_plugin_active( $slug . '/' . $slug . '.php' ) ? 'deactivate' : 'activate';
 
-			return array( 'status' => is_plugin_active( $slug . '/' . $slug . '.php' ), 'needs' => $needs );
+			return array(
+				'status' => is_plugin_active( $slug . '/' . $slug . '.php' ),
+				'needs' => $needs,
+			);
 		}
 
-		return array( 'status' => false, 'needs' => 'install' );
+		return array(
+			'status' => false,
+			'needs' => 'install',
+		);
 	}
 
 	public function check_for_icon( $arr ) {
@@ -319,7 +321,7 @@ class Sparkling_Welcome {
 					add_query_arg(
 						array(
 							'action' => 'install-plugin',
-							'plugin' => $slug
+							'plugin' => $slug,
 						),
 						network_admin_url( 'update.php' )
 					),
@@ -328,21 +330,21 @@ class Sparkling_Welcome {
 				break;
 			case 'deactivate':
 				return add_query_arg( array(
-					                      'action'        => 'deactivate',
-					                      'plugin'        => rawurlencode( $slug . '/' . $slug . '.php' ),
-					                      'plugin_status' => 'all',
-					                      'paged'         => '1',
-					                      '_wpnonce'      => wp_create_nonce( 'deactivate-plugin_' . $slug . '/' . $slug . '.php' ),
-				                      ), network_admin_url( 'plugins.php' ) );
+					'action'        => 'deactivate',
+					'plugin'        => rawurlencode( $slug . '/' . $slug . '.php' ),
+					'plugin_status' => 'all',
+					'paged'         => '1',
+					'_wpnonce'      => wp_create_nonce( 'deactivate-plugin_' . $slug . '/' . $slug . '.php' ),
+				), network_admin_url( 'plugins.php' ) );
 				break;
 			case 'activate':
 				return add_query_arg( array(
-					                      'action'        => 'activate',
-					                      'plugin'        => rawurlencode( $slug . '/' . $slug . '.php' ),
-					                      'plugin_status' => 'all',
-					                      'paged'         => '1',
-					                      '_wpnonce'      => wp_create_nonce( 'activate-plugin_' . $slug . '/' . $slug . '.php' ),
-				                      ), network_admin_url( 'plugins.php' ) );
+					'action'        => 'activate',
+					'plugin'        => rawurlencode( $slug . '/' . $slug . '.php' ),
+					'plugin_status' => 'all',
+					'paged'         => '1',
+					'_wpnonce'      => wp_create_nonce( 'activate-plugin_' . $slug . '/' . $slug . '.php' ),
+				), network_admin_url( 'plugins.php' ) );
 				break;
 		}
 	}
@@ -375,14 +377,14 @@ class Sparkling_Welcome {
 
 			<h2 class="nav-tab-wrapper wp-clearfix">
 				<a href="<?php echo admin_url( 'themes.php?page=sparkling-welcome&tab=getting_started' ); ?>"
-				   class="nav-tab <?php echo $active_tab == 'getting_started' ? 'nav-tab-active' : ''; ?>"><?php echo esc_html__( 'Getting Started', 'sparkling' ); ?></a>
+				   class="nav-tab <?php echo 'getting_started' == $active_tab ? 'nav-tab-active' : ''; ?>"><?php echo esc_html__( 'Getting Started', 'sparkling' ); ?></a>
 				<a href="<?php echo admin_url( 'themes.php?page=sparkling-welcome&tab=recommended_actions' ); ?>"
-				   class="nav-tab <?php echo $active_tab == 'recommended_actions' ? 'nav-tab-active' : ''; ?> "><?php echo esc_html__( 'Recommended Actions', 'sparkling' ); ?>
+				   class="nav-tab <?php echo 'recommended_actions' == $active_tab ? 'nav-tab-active' : ''; ?> "><?php echo esc_html__( 'Recommended Actions', 'sparkling' ); ?>
 					<?php echo $action_count > 0 ? '<span class="badge-action-count">' . esc_html( $action_count ) . '</span>' : '' ?></a>
 				<a href="<?php echo admin_url( 'themes.php?page=sparkling-welcome&tab=recommended_plugins' ); ?>"
-				   class="nav-tab <?php echo $active_tab == 'recommended_plugins' ? 'nav-tab-active' : ''; ?> "><?php echo esc_html__( 'Recommended Plugins', 'sparkling' ); ?></a>
+				   class="nav-tab <?php echo 'recommended_plugins' == $active_tab ? 'nav-tab-active' : ''; ?> "><?php echo esc_html__( 'Recommended Plugins', 'sparkling' ); ?></a>
 				<a href="<?php echo admin_url( 'themes.php?page=sparkling-welcome&tab=support' ); ?>"
-				   class="nav-tab <?php echo $active_tab == 'support' ? 'nav-tab-active' : ''; ?> "><?php echo esc_html__( 'Support', 'sparkling' ); ?></a>
+				   class="nav-tab <?php echo 'support' == $active_tab ? 'nav-tab-active' : ''; ?> "><?php echo esc_html__( 'Support', 'sparkling' ); ?></a>
 			</h2>
 
 			<?php
