@@ -35,8 +35,8 @@ before_script:
 script:
 - mkdir -p build/logs
 - find -L . -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l
-- if [[ "$SNIFF" == "1" ]]; then jshint ./layout/js/*.js; fi
-- if [[ "$SNIFF" == "1" ]]; then jscs ./layout/js/*.js; fi
+- if [[ "$SNIFF" == "1" ]]; then jshint ./assets/js/*.js; fi
+- if [[ "$SNIFF" == "1" ]]; then jscs ./assets/js/*.js; fi
 - if [[ "$SNIFF" == "1" ]]; then grunt textdomain; fi
 - if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/scripts/phpcs -p -s -v -n ./*.php --standard=./phpcs.ruleset.xml
   --extensions=php; fi
