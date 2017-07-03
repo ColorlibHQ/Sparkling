@@ -1,0 +1,2 @@
+!function(){var a,b=navigator.userAgent.toLowerCase().indexOf("webkit")>-1,c=navigator.userAgent.toLowerCase().indexOf("opera")>-1,d=navigator.userAgent.toLowerCase().indexOf("msie")>-1;(b||c||d)&&"undefined"!=typeof document.getElementById&&(a=window.addEventListener?"addEventListener":"attachEvent",window[a]("hashchange",function(){var a=document.getElementById(location.hash.substring(1));a&&(/^(?:a|select|input|button|textarea)$/i.test(a.tagName)||(a.tabIndex=-1),a.focus())},!1))}();
+//# sourceMappingURL=skip-link-focus-fix.min.js.map

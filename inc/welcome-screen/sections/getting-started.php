@@ -10,14 +10,14 @@ $count = $this->count_actions();
 	<div class="col">
 		<h3><?php esc_html_e( 'Step 1 - Implement recommended actions', 'sparkling' ); ?></h3>
 		<p><?php esc_html_e( 'We\'ve compiled a list of steps for you, to take make sure the experience you\'ll have using one of our products is very easy to follow.', 'sparkling' ); ?></p>
-		<?php if ( $count == 0 ) { ?>
+		<?php if ( 0 == $count ) { ?>
 			<p><span class="dashicons dashicons-yes"></span>
 				<a href="<?php echo admin_url( 'themes.php?page=sparkling-welcome&tab=recommended_actions' ); ?>"><?php esc_html_e( 'No recommended actions left to perform', 'sparkling' ); ?></a>
 			</p>
 		<?php } else { ?>
 			<p><span class="dashicons dashicons-no-alt"></span> <a href="<?php echo admin_url( 'themes.php?page=sparkling-welcome&tab=recommended_actions' ); ?>"><?php esc_html_e( 'Check recommended actions', 'sparkling' ); ?></a>
 			</p> <?php
-		}; ?>
+}; ?>
 	</div><!--/.col-->
 
 	<div class="col">
@@ -33,7 +33,7 @@ $count = $this->count_actions();
 		<h3><?php esc_html_e( 'Step 3 - Customize everything', 'sparkling' ); ?></h3>
 		<p><?php esc_html_e( 'Using the WordPress Customizer you can easily customize every aspect of the theme.', 'sparkling' ); ?></p>
 		<p><a target="_blank" href="<?php echo esc_url( $customizer_url ); ?>"
-		      class="button button-primary"><?php esc_html_e( 'Go to Customizer', 'sparkling' ); ?></a>
+			  class="button button-primary"><?php esc_html_e( 'Go to Customizer', 'sparkling' ); ?></a>
 		</p>
 	</div><!--/.col-->
 </div><!--/.feature-section-->

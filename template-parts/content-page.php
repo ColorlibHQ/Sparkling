@@ -6,11 +6,15 @@
  */
 ?>
 
-<?php 
-if ( is_page_template( 'page-fullwidth.php' ) )
-	the_post_thumbnail( 'sparkling-featured-fullwidth', array( 'class' => 'single-featured' ));
-else
-	the_post_thumbnail( 'sparkling-featured', array( 'class' => 'single-featured' ));
+<?php
+if ( is_page_template( 'page-fullwidth.php' ) ) {
+	the_post_thumbnail( 'sparkling-featured-fullwidth', array(
+		'class' => 'single-featured',
+	) );
+} else {    the_post_thumbnail( 'sparkling-featured', array(
+	'class' => 'single-featured',
+) );
+}
 ?>
 
 <div class="post-inner-content">
@@ -28,12 +32,12 @@ else
 			) );
 		?>
 
-    <?php
-      // Checks if this is homepage to enable homepage widgets
-      if ( is_front_page() ) :
-        get_sidebar( 'home' );
-      endif;
-    ?>
+	<?php
+	  // Checks if this is homepage to enable homepage widgets
+	if ( is_front_page() ) :
+		get_sidebar( 'home' );
+	  endif;
+	?>
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
