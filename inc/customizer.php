@@ -400,7 +400,7 @@ function sparkling_customizer( $wp_customize ) {
 	)));
 
 	$wp_customize->add_setting('sparkling[nav_dropdown_bg]', array(
-		'default' => sanitize_hex_color( '#FFF' ),
+		'default' => sanitize_hex_color( '#da4453' ),
 		'type'  => 'option',
 		'sanitize_callback' => 'sparkling_sanitize_hexcolor',
 	));
