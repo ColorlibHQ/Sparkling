@@ -97,6 +97,25 @@ if ( ! function_exists( 'sparkling_setup' ) ) :
 		   */
 		  add_theme_support( 'title-tag' );
 
+		  // Backwards compatibility for Custom CSS
+		  $custom_css = of_get_option( 'custom_css' );
+		  if ( $custom_css ) {
+		  	$wp_custom_css_post = wp_get_custom_css_post();
+
+		  	if ( $wp_custom_css_post ) {
+		  		$wp_custom_css = $wp_custom_css_post->post_content . $custom_css;
+		  	}else{
+		  		$wp_custom_css = $custom_css;
+		  	}
+		  	
+		  	wp_update_custom_css_post( $wp_custom_css );
+
+		  	$options = get_option( 'sparkling' );
+		  	unset( $options['custom_css'] );
+		  	update_option( 'sparkling', $options );
+
+		  }
+
 	}
 endif; // sparkling_setup
 add_action( 'after_setup_theme', 'sparkling_setup' );
