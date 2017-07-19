@@ -541,23 +541,6 @@ function sparkling_customizer( $wp_customize ) {
 		'type' => 'epsilon-toggle',
 	) ) );
 
-	/* Sparkling Other Options */
-	$wp_customize->add_section('sparkling_other_options', array(
-		'title' => __( 'Other', 'sparkling' ),
-		'priority' => 31,
-		'panel' => 'sparkling_main_options',
-	));
-	$wp_customize->add_setting('sparkling[custom_css]', array(
-		'default' => '',
-		'type' => 'option',
-		'sanitize_callback' => 'sparkling_sanitize_textarea',
-	));
-	$wp_customize->add_control('sparkling[custom_css]', array(
-		'label' => __( 'Custom CSS', 'sparkling' ),
-		'description' => sprintf( __( 'Additional CSS', 'sparkling' ) ),
-		'section' => 'sparkling_other_options',
-		'type' => 'textarea',
-	));
 }
 add_action( 'customize_register', 'sparkling_customizer' );
 
