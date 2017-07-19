@@ -182,6 +182,12 @@ if ( ! function_exists( 'sparkling_featured_slider' ) ) :
 			$query = new WP_Query( array(
 				'cat' => $slidecat,
 				'posts_per_page' => $count,
+				'meta_query' => array(
+			        array(
+			         'key' => '_thumbnail_id',
+			         'compare' => 'EXISTS'
+			        ),
+			    ),
 			) );
 			if ( $query->have_posts() ) :
 				while ( $query->have_posts() ) : $query->the_post();
