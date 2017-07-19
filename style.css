@@ -911,12 +911,21 @@ button:hover, .button:hover {
   color: #DA4453;
   background-color: transparent;
 }
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus,
-.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+.navbar-default .navbar-nav .dropdown-menu > li:hover,
+.navbar-default .navbar-nav .dropdown-menu > li:focus {
   color: #fff;
+  /*background-color: transparent;*/
   background-color: #DA4453;
+}
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li:hover>a,
+.dropdown-menu>li:hover>.caret {
+  background-color: transparent;
+  color: #fff;
+}
+.dropdown-menu>li>.caret {
+  color: #636467;
 }
 
 .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > ul.dropdown-menu {
@@ -936,26 +945,6 @@ button:hover, .button:hover {
 .navbar-default .navbar-nav.sparkling-mobile-menu > li.open > .caret {
   color: #DA4453;
 }
-
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
-  .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus,
-  .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {
-    color: #fff;
-    background-color: #DA4453;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #DADADA;
-  }
-  .navbar-default .navbar-nav > li:hover > a,
-  .navbar-default .navbar-nav > li:hover > .caret {
-    color: #fff;
-  }
-  .navbar-default .navbar-nav > li.open > a,
-  .navbar-default .navbar-nav > li.open > .caret {
-    color: #DA4453;
-  }
-}
 .dropdown-menu {
   font-size: 13px;
 }
@@ -963,20 +952,72 @@ button:hover, .button:hover {
   color: #DA4453;
   background-color: transparent;
 }
-.navbar-default .navbar-nav .open .dropdown-menu > li.active > a {
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a {
   color: #fff;
 }
+@media (min-width: 769px) {
+  .dropdown-menu .caret {
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+  
+    border-left: 4px dashed;
+    float: right;
+    top: 7px;
+    position: relative;
+  }
+  .dropdown-menu>li>a {
+    display: inline-block;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
+  .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {
+    background-color: transparent;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .dropdown-menu > li.active > .caret,
+  .navbar-default .navbar-nav .dropdown-menu > li.open > a  {
+    color: #da4453;
+  }
+  .navbar-default .navbar-nav > li:hover > a,
+  .navbar-default .navbar-nav > li:hover > .caret,
+  .dropdown-menu>li>.caret {
+    color: #fff;
+  }
+  .navbar-default .navbar-nav li.open > a,
+  .navbar-default .navbar-nav li.open > .caret {
+    color: #DA4453;
+  }
+  .site-navigation-inner .dropdown-menu > .active,
+  .navbar-default .navbar-nav .dropdown-menu > li:hover,
+  .navbar-default .navbar-nav .dropdown-menu > li:focus {
+    background-color: transparent;
+  }
+  .dropdown-menu > li.dropdown.open {
+    padding-bottom: 0;
+  }
+}
+
 @media (min-width: 1024px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }
 }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  /*border-left: 1px solid rgba(0, 0, 0, 0.1);*/
 }
 .dropdown-menu > li > a {
-  padding: 10px 15px;
   color: #636467;
+  padding: 0;
+}
+.dropdown-menu > li {
+  padding: 10px 15px;
 }
 .dropdown-menu,
 .dropdown-menu > .active > a,
@@ -984,14 +1025,21 @@ button:hover, .button:hover {
 .dropdown-menu > .active > a:focus {
   border: none;
 }
-.dropdown-menu>.active>a,
-.dropdown-menu>.active>a:hover,
-.dropdown-menu>.active>a:focus {
+.dropdown-menu > .active {
   background-color: #DA4453;
   color: #fff;
 }
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>.caret {
+  color: #fff;
+  background-color: transparent;
+}
 .dropdown-menu .divider {
   background-color: rgba(0, 0, 0, 0.1);
+}
+.dropdown-menu ul.dropdown-menu {
+    top: -7px;
+    left: 100%;
 }
 .navbar-nav > li > .dropdown-menu {
   padding: 0;

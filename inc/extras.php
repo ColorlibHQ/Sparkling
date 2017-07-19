@@ -114,7 +114,6 @@ if ( ! function_exists( 'sparkling_header_menu' ) ) :
 		  wp_nav_menu(array(
 			  'menu'              => 'primary',
 			  'theme_location'    => 'primary',
-			  'depth'             => 2,
 			  'container'         => 'div',
 			  'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
 			  'menu_class'        => 'nav navbar-nav',
@@ -283,18 +282,22 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
 			echo '.navbar-default .navbar-nav > li:hover > a, .navbar-nav > li:hover > .caret, .navbar-default .navbar-nav.sparkling-mobile-menu > li.open > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li.open > .caret, .navbar-default .navbar-nav > li:hover, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > .caret, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {color: ' . of_get_option( 'nav_item_hover_color' ) . ';}';
 			echo '@media (max-width: 767px){ .navbar-default .navbar-nav > li.open > a, .navbar-default .navbar-nav > li.open > .caret { color: ' . of_get_option( 'nav_item_hover_color' ) . ' !important; } }';
 		}
-		if ( of_get_option( 'nav_dropdown_bg_hover' ) || of_get_option( 'nav_dropdown_item_hover' ) ) {
-			echo '@media (max-width: 767px) {.navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {background: ' . of_get_option( 'nav_dropdown_bg_hover' ) . '; color:' . of_get_option( 'nav_dropdown_item_hover' ) . ';} }';
-		}
 		if ( of_get_option( 'nav_dropdown_bg' ) ) {
 			echo '.dropdown-menu {background-color: ' . of_get_option( 'nav_dropdown_bg' ) . ';}';
 		}
 		if ( of_get_option( 'nav_dropdown_item' ) ) {
-			echo '.navbar-default .navbar-nav .open .dropdown-menu > li > a, .dropdown-menu > li > a { color: ' . of_get_option( 'nav_dropdown_item' ) . ';}';
+			echo '.navbar-default .navbar-nav .open .dropdown-menu > li > a, .dropdown-menu > li > a, .dropdown-menu > li > .caret, .dropdown-menu>li>a:hover, .dropdown-menu>li:hover>a, .dropdown-menu>li:hover>.caret { color: ' . of_get_option( 'nav_dropdown_item' ) . ';}';
 		}
-		if ( of_get_option( 'nav_dropdown_bg_hover' ) || of_get_option( 'nav_dropdown_item_hover' ) ) {
-			echo '.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li.active > a {background-color: ' . of_get_option( 'nav_dropdown_bg_hover' ) . '; color:' . of_get_option( 'nav_dropdown_item_hover' ) . ';}';
+
+		if ( of_get_option( 'nav_dropdown_bg_hover' ) ) {
+			echo '.navbar-default .navbar-nav .dropdown-menu > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:focus, .dropdown-menu > .active {background-color: ' . of_get_option( 'nav_dropdown_bg_hover' ) . ';}';
+			echo '@media (max-width: 767px) {.navbar-default .navbar-nav .dropdown-menu > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:focus, .dropdown-menu > .active {background: transparent;} }';
 		}
+		if ( of_get_option( 'nav_dropdown_item_hover' ) ) {
+			echo '.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>.caret, .dropdown-menu>li>a:focus {color:' . of_get_option( 'nav_dropdown_item_hover' ) . ';}';
+			echo '@media (max-width: 767px) {.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .dropdown-menu > li.active > .caret, .navbar-default .navbar-nav .dropdown-menu > li.open > a, .navbar-default .navbar-nav li.open > a, .navbar-default .navbar-nav li.open > .caret {color:' . of_get_option( 'nav_dropdown_item_hover' ) . ';} }';
+		}
+
 		if ( of_get_option( 'nav_dropdown_item_hover' ) ) {
 			echo '.navbar-default .navbar-nav .current-menu-ancestor a.dropdown-toggle { color: ' . of_get_option( 'nav_dropdown_item_hover' ) . ';}';
 		}
