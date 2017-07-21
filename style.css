@@ -1038,8 +1038,10 @@ button:hover, .button:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 .dropdown-menu ul.dropdown-menu {
-    top: -7px;
+    top: -2px;
     left: 100%;
+    border-radius: 0;
+    padding: 0;
 }
 .navbar-nav > li > .dropdown-menu {
   padding: 0;

@@ -286,7 +286,7 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
 			echo '.dropdown-menu {background-color: ' . of_get_option( 'nav_dropdown_bg' ) . ';}';
 		}
 		if ( of_get_option( 'nav_dropdown_item' ) ) {
-			echo '.navbar-default .navbar-nav .open .dropdown-menu > li > a, .dropdown-menu > li > a, .dropdown-menu > li > .caret, .dropdown-menu>li>a:hover, .dropdown-menu>li:hover>a, .dropdown-menu>li:hover>.caret { color: ' . of_get_option( 'nav_dropdown_item' ) . ';}';
+			echo '.navbar-default .navbar-nav .open .dropdown-menu > li > a, .dropdown-menu > li > a, .dropdown-menu > li > .caret { color: ' . of_get_option( 'nav_dropdown_item' ) . ';}';
 		}
 
 		if ( of_get_option( 'nav_dropdown_bg_hover' ) ) {
@@ -294,7 +294,7 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
 			echo '@media (max-width: 767px) {.navbar-default .navbar-nav .dropdown-menu > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:focus, .dropdown-menu > .active {background: transparent;} }';
 		}
 		if ( of_get_option( 'nav_dropdown_item_hover' ) ) {
-			echo '.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>.caret, .dropdown-menu>li>a:focus {color:' . of_get_option( 'nav_dropdown_item_hover' ) . ';}';
+			echo '.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>.caret, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .dropdown-menu>li:hover>a, .dropdown-menu>li:hover>.caret {color:' . of_get_option( 'nav_dropdown_item_hover' ) . ';}';
 			echo '@media (max-width: 767px) {.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .dropdown-menu > li.active > .caret, .navbar-default .navbar-nav .dropdown-menu > li.open > a, .navbar-default .navbar-nav li.open > a, .navbar-default .navbar-nav li.open > .caret {color:' . of_get_option( 'nav_dropdown_item_hover' ) . ';} }';
 		}
 
