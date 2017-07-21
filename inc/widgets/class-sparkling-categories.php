@@ -40,7 +40,7 @@ class Sparkling_Categories extends WP_Widget {
 
 		<ul><?php
 		if ( '' != $enable_count ) {
-			  $args = array(
+			  $categories_args = array(
 				  'echo' => 0,
 				  'show_count' => 1,
 				  'title_li' => '',
@@ -50,7 +50,7 @@ class Sparkling_Categories extends WP_Widget {
 				  'number' => $limit,
 			  );
 		} else {
-			$args = array(
+			$categories_args = array(
 				'echo' => 0,
 				'show_count' => 0,
 				'title_li' => '',
@@ -60,7 +60,7 @@ class Sparkling_Categories extends WP_Widget {
 				'number' => $limit,
 			);
 		}
-		$variable = wp_list_categories( $args );
+		$variable = wp_list_categories( $categories_args );
 		$variable = str_replace( '(' , '<span>', $variable );
 		$variable = str_replace( ')' , '</span>', $variable );
 		echo $variable; ?></ul>
