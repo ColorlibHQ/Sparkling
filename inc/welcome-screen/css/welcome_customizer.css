@@ -1,0 +1,130 @@
+.sparkling-actions-count {
+    padding: 0 6px;
+    display: inline-block;
+    background-color: #d54e21;
+    color: #fff;
+    font-size: 9px;
+    line-height: 17px;
+    font-weight: 600;
+    margin: 1px 0 0 2px;
+    vertical-align: top;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    z-index: 26;
+}
+
+.button.change-theme {
+    display: none;
+}
+
+div.recomended-actions_container {
+    padding: 0 10px;
+    margin-bottom: 2em;
+}
+.recomended-actions_container p.succes {
+	margin: 1em 0;
+}
+.epsilon-recommeded-actions p.title {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #555d66;
+    font-weight: 600;
+}
+.epsilon-recommeded-actions div.description {
+    font-size: 12px;
+}
+.epsilon-recommeded-actions .custom-action {
+    border-top: 1px solid #fafafa;
+    margin-top: 1em;
+    padding-top: 1em;
+}
+.epsilon-recommeded-actions .custom-action p {
+    margin-top: 0;
+}
+.recomended-actions_container .epsilon-recommeded-actions-container:not(:first-child) {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+.recomended-actions_container .epsilon-recommeded-actions-container:first-child {
+    height: auto;
+    opacity: 1;
+}
+.recomended-actions_container .epsilon-recommeded-actions-container {
+    -webkit-transition: opacity 2s; /* Safari */
+    transition: opacity 2s;
+}
+.recomended-actions_container .hide {
+    display: none;
+}
+.sparkling-actions-count.complete {
+    background-color: #79ba49;
+}
+.recomended-actions_container #demo_content .button {
+    display: block;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.recomended-actions_container .succes a {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+.recomended-actions_container .succes a.social {
+    width: 49%;
+    margin-bottom: 1em;
+    line-height: 20px;
+    padding-top: 4px;
+}
+.recomended-actions_container .succes a.social span,
+.recomended-actions_container .succes a.sparkling-wordpress span {
+    margin-right: 5px;
+}
+.recomended-actions_container .succes a.sparkling-wordpress {
+    line-height: 20px;
+    padding-top: 4px;
+}
+
+/* Upsell */
+.macho-upsell {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+.macho-upsell span.wp-ui-notification {
+    padding: 2px 8px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 5px;
+    display: inline-block;
+}
+.macho-upsell-options li {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.macho-upsell .button {
+    display: block;
+    text-align: center;
+}
+ul.macho-upsell-requirements {
+    font-size: 12px;
+}
+.macho-upsell-requirements li {
+    line-height: 1.75;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+#accordion-section-sparkling_upsell h3.accordion-section-title,
+#customize-controls #accordion-section-sparkling_upsell h3.accordion-section-title:focus,
+#customize-controls #accordion-section-sparkling_upsell:hover h3.accordion-section-title {
+    color: #fff;
+    background: #0073aa;
+    border-left-color: #0073aa;
+}
+#accordion-section-sparkling_upsell h3.accordion-section-title:after,
+#customize-controls #accordion-section-sparkling_upsell h3.accordion-section-title:focus:after,
+#customize-controls #accordion-section-sparkling_upsell:hover h3.accordion-section-title:after {
+    color: #fff;
+}

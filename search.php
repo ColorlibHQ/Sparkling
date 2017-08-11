@@ -26,18 +26,18 @@ get_header(); ?>
 				 * If you want to overload this in a child theme then include a file
 				 * called content-search.php and that will be used instead.
 				 */
-				get_template_part( 'content', 'search' );
+				get_template_part( 'template-parts/content', 'search' );
 
 			endwhile;
 
 			the_posts_pagination( array(
-	        'prev_text' => '<i class="fa fa-chevron-left"></i> ' . __( 'Newer posts', 'sparkling' ),
-	        'next_text' => __( 'Older posts', 'sparkling' ) . ' <i class="fa fa-chevron-right"></i>' ,
-	    ) );
+				'prev_text' => '<i class="fa fa-chevron-left"></i> ' . __( 'Newer posts', 'sparkling' ),
+				'next_text' => __( 'Older posts', 'sparkling' ) . ' <i class="fa fa-chevron-right"></i>',
+			) );
 
 		else :
 
-			get_template_part( 'content', 'none' );
+			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
 
