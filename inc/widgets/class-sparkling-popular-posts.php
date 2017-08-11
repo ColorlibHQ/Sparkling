@@ -6,7 +6,7 @@
  */
 class Sparkling_Popular_Posts extends WP_Widget {
 	function __construct() {
-
+		add_action( 'admin_init', array( $this, 'enqueue' ) );
 		$widget_ops = array(
 			'classname' => 'sparkling-popular-posts',
 			'description' => esc_html__( 'Sparkling Popular Posts Widget', 'sparkling' ),
@@ -14,9 +14,22 @@ class Sparkling_Popular_Posts extends WP_Widget {
 		  parent::__construct( 'sparkling_popular_posts', esc_html__( 'Sparkling Popular Posts Widget','sparkling' ), $widget_ops );
 	}
 
+	public function enqueue() {
+
+		if ( is_admin() ) {
+			wp_enqueue_script( 'sparkling-popular-post-script', get_template_directory_uri() . '/assets/js/widget.js', array( 'jquery' ) );
+			$args = array(
+				'ajaxurl' => admin_url( 'admin-ajax.php' ),
+			);
+			wp_localize_script( 'sparkling-popular-post-script', 'Sparkling', $args );
+		}
+
+	}
+
 	function widget( $args, $instance ) {
 		$title = isset( $instance['title'] ) ? $instance['title'] : esc_html__( 'Popular Posts', 'sparkling' );
 		$limit = isset( $instance['limit'] ) ? $instance['limit'] : 5;
+		$default_image = isset( $instance['default_image'] ) ? $instance['default_image'] : '';
 
 		echo $args['before_widget'];
 		echo $args['before_title'];
@@ -57,11 +70,15 @@ class Sparkling_Popular_Posts extends WP_Widget {
 						  <!-- image -->
 						  <div class="post-image <?php echo get_post_format(); ?>">
 
-								<a href="<?php echo get_permalink(); ?>"><?php
-								if ( get_post_format() != 'quote' ) {
+								<a href="<?php echo get_permalink(); ?>">
+								<?php
+								if ( has_post_thumbnail() ) {
 									echo get_the_post_thumbnail( get_the_ID() , 'tab-small' );
+								}elseif ( $default_image ) {
+									echo wp_get_attachment_image( $default_image, 'tab-small' );
 								}
-									?></a>
+								?>
+								</a>
 
 						  </div> <!-- end post image -->
 
@@ -100,24 +117,54 @@ endif;
 		if ( ! isset( $instance['limit'] ) ) {
 			$instance['limit'] = 5;
 		}
+		if ( ! isset( $instance['default_image'] ) ) {
+			$instance['default_image'] = '';
+		}else{
+			$instance['default_image'] = wp_get_attachment_image_url( $instance['default_image'], 'medium' );
+		}
 
 		?>
 
-	  <p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title', 'sparkling' ) ?></label>
+	  	<p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title', 'sparkling' ) ?></label>
 
-	  <input  type="text" value="<?php echo esc_attr( $instance['title'] ); ?>"
+	  	<input  type="text" value="<?php echo esc_attr( $instance['title'] ); ?>"
 			  name="<?php echo $this->get_field_name( 'title' ); ?>"
 			  id="<?php $this->get_field_id( 'title' ); ?>"
 			  class="widefat" />
-	  </p>
+	  	</p>
 
-	  <p><label for="<?php echo $this->get_field_id( 'limit' ); ?>"><?php esc_html_e( 'Limit Posts Number', 'sparkling' ) ?></label>
+	  	<p><label for="<?php echo $this->get_field_id( 'limit' ); ?>"><?php esc_html_e( 'Limit Posts Number', 'sparkling' ) ?></label>
 
-	  <input  type="text" value="<?php echo esc_attr( $instance['limit'] ); ?>"
+	  	<input  type="text" value="<?php echo esc_attr( $instance['limit'] ); ?>"
 			  name="<?php echo $this->get_field_name( 'limit' ); ?>"
 			  id="<?php $this->get_field_id( 'limit' ); ?>"
 			  class="widefat" />
-	  <p>
+	  	<p>
+	  	<div class="sparkling-media-container media-widget-control">
+	  		<p>
+		  		<label for="<?php echo $this->get_field_id( 'default_image' ); ?>"><?php esc_html_e( 'Default Image', 'sparkling' ) ?></label>
+		  		<input  type="hidden" value="<?php echo esc_attr( $instance['default_image'] ); ?>"
+				  name="<?php echo $this->get_field_name( 'default_image' ); ?>"
+				  id="<?php echo $this->get_field_id( 'default_image' ); ?>"
+				  class="widefat" />
+		  	</p>
+		  	<div class="media-widget-preview">
+				<div class="attachment-media-view">
+					<div class="placeholder" <?php echo $instance['default_image'] ? 'style="display:none;"' : '' ?>><?php echo esc_html__( 'No media selected', 'sparkling' ); ?></div>
+					<?php if ( $instance['default_image'] ): ?>
+						<img src="<?php echo $instance['default_image'] ?>">
+					<?php endif ?>
+				</div>
+			</div>
+			<p class="media-widget-buttons">
+				<button type="button" class="button upload-button">
+					<?php echo esc_html_x( 'Add Media', 'label for button in the media widget', 'sparkling' ); ?>
+				</button>
+				<button type="button" class="button remove-button">
+					<?php echo esc_html_x( 'Remove Media', 'label for button in the media widget; should preferably not be longer than ~13 characters long', 'sparkling' ); ?>
+				</button>
+			</p>
+		</div>
 
 		<?php
 	}
