@@ -1706,3 +1706,11 @@ button[type=submit],
   border: 1px solid #dadada;
   padding: 45px 50px;
 }
+
+/* Video Post */
+.blog-item-wrap .entry-video > iframe {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
