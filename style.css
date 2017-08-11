@@ -1724,3 +1724,10 @@ button[type=submit],
     max-width: 100%;
     width: 100%;
 }
+
+/* Flex Slider */
+.flexslider .flex-control-nav {
+	left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+}
