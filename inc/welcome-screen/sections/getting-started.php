@@ -12,7 +12,7 @@ $count = $this->count_actions();
 		<p><?php esc_html_e( 'We\'ve compiled a list of steps for you, to take make sure the experience you\'ll have using one of our products is very easy to follow.', 'sparkling' ); ?></p>
 		<?php if ( 0 == $count ) { ?>
 			<p><span class="dashicons dashicons-yes"></span>
-				<a href="<?php echo admin_url( 'themes.php?page=sparkling-welcome&tab=recommended_actions' ); ?>"><?php esc_html_e( 'No recommended actions left to perform', 'sparkling' ); ?></a>
+				<?php esc_html_e( 'No recommended actions left to perform', 'sparkling' ); ?>
 			</p>
 		<?php } else { ?>
 			<p><span class="dashicons dashicons-no-alt"></span> <a href="<?php echo admin_url( 'themes.php?page=sparkling-welcome&tab=recommended_actions' ); ?>"><?php esc_html_e( 'Check recommended actions', 'sparkling' ); ?></a>

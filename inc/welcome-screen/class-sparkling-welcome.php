@@ -378,9 +378,6 @@ class Sparkling_Welcome {
 			<h2 class="nav-tab-wrapper wp-clearfix">
 				<a href="<?php echo admin_url( 'themes.php?page=sparkling-welcome&tab=getting_started' ); ?>"
 				   class="nav-tab <?php echo 'getting_started' == $active_tab ? 'nav-tab-active' : ''; ?>"><?php echo esc_html__( 'Getting Started', 'sparkling' ); ?></a>
-				<a href="<?php echo admin_url( 'themes.php?page=sparkling-welcome&tab=recommended_actions' ); ?>"
-				   class="nav-tab <?php echo 'recommended_actions' == $active_tab ? 'nav-tab-active' : ''; ?> "><?php echo esc_html__( 'Recommended Actions', 'sparkling' ); ?>
-					<?php echo $action_count > 0 ? '<span class="badge-action-count">' . esc_html( $action_count ) . '</span>' : '' ?></a>
 				<a href="<?php echo admin_url( 'themes.php?page=sparkling-welcome&tab=recommended_plugins' ); ?>"
 				   class="nav-tab <?php echo 'recommended_plugins' == $active_tab ? 'nav-tab-active' : ''; ?> "><?php echo esc_html__( 'Recommended Plugins', 'sparkling' ); ?></a>
 				<a href="<?php echo admin_url( 'themes.php?page=sparkling-welcome&tab=support' ); ?>"
