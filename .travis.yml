@@ -1,0 +1,75 @@
+sudo: false
+language: php
+dist: precise
+matrix:
+  fast_finish: true
+  include:
+  - php: '5.3'
+  - php: '5.4'
+  - php: '5.5'
+  - php: '5.6'
+  - php: '7.0'
+  - php: '7.1'
+    env: SNIFF=1
+    env: DEPLOY=1
+before_script:
+- export PHPCS_DIR=/tmp/phpcs
+- export SNIFFS_DIR=/tmp/sniffs
+- if [[ "$SNIFF" == "1" ]]; then git clone -b 2.9 --depth 1 https://github.com/squizlabs/PHP_CodeSniffer.git
+  $PHPCS_DIR; fi
+- if [[ "$SNIFF" == "1" ]]; then git clone -b master --depth 1 https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git
+  $SNIFFS_DIR; fi
+- if [[ "$SNIFF" == "1" ]]; then git clone -b master --depth 1 https://github.com/wimg/PHPCompatibility.git
+  $SNIFFS_DIR/PHPCompatibility; fi
+- if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/scripts/phpcs --config-set installed_paths
+  $SNIFFS_DIR; fi
+- if [[ "$SNIFF" == "1" ]]; then phpenv rehash; fi
+- if [[ "$SNIFF" == "1" ]]; then npm install -g jscs; fi
+- if [[ "$SNIFF" == "1" ]]; then npm install -g jshint; fi
+- if [[ "$SNIFF" == "1" ]]; then wget https://develop.svn.wordpress.org/trunk/.jshintrc;
+  fi
+- if [[ "$SNIFF" == "1" ]] || [[ "$DEPLOY" == "1" ]]; then npm install -g grunt-cli;
+  fi
+- if [[ "$SNIFF" == "1" ]] || [[ "$DEPLOY" == "1" ]]; then npm install; fi
+- if [[ "$SNIFF" == "1" ]] || [[ "$DEPLOY" == "1" ]]; then npm install -g grunt-checktextdomain;
+  fi
+script:
+- mkdir -p build/logs
+- find -L . -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l
+- if [[ "$SNIFF" == "1" ]]; then jshint ./assets/js/*.js; fi
+- if [[ "$SNIFF" == "1" ]]; then jscs ./assets/js/*.js; fi
+- if [[ "$SNIFF" == "1" ]]; then grunt textdomain; fi
+- if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/scripts/phpcs -p -s -v -n ./*.php --standard=./phpcs.ruleset.xml
+  --extensions=php; fi
+- if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/*.php --standard=./phpcs.ruleset.xml
+  --extensions=php --ignore=./inc/plugin-activation.php,./node_modules/*.php; fi
+- if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/**/*.php
+  --standard=./phpcs.ruleset.xml --extensions=php --ignore=./node_modules/**/*.php;
+  fi
+- if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/**/**/*.php
+  --standard=./phpcs.ruleset.xml --extensions=php --ignore=./node_modules/**/**/*.php;
+  fi
+- if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/**/**/**/*.php
+  --standard=./phpcs.ruleset.xml --extensions=php --ignore=./node_modules/**/**/**/*.php;
+  fi
+- if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/scripts/phpcs -p -s -v -n ./**/**/**/**/**/*.php
+  --standard=./phpcs.ruleset.xml --extensions=php --ignore=./node_modules/**/**/**/**/*.php;
+  fi
+notifications:
+  email: false
+cache:
+  directories:
+  - node_modules
+after_success:
+- if [[ "$DEPLOY" == "1" ]]; then grunt build-archive; fi
+- if [[ "$DEPLOY" == "1" ]]; then sh set_tags.sh; fi
+deploy:
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: JnQTGwg7Gl+HcAZkm9e2YMT08HgjYWR7jUV8SuBrDhl+Y5IZ0sd3AhS3CVsKRa921WnNRZ4dkFnjSVZVnS7NGVpz8zldyhrpRB+fg0xAyztdo85aOzq2CyVh3lRjr4KT1fUd3CEGjdjeMDh86xeVJ6v8IBddzh7NSZChNn4W2wgiwqjGO1CurOmUOTLK8z47LXBlqYJTLs4ttUkr9MBrZ9U4AjWbySMF9URPPpY2R+la6sOga4/+qmlv6PCjkAE5Bu68JOMgRWB9Dr/7z4p6agwZsDfVUlOjaNvV8P6kw3pVXXGo9Ha3/NgKvMHyhJqKREayrGD4d9C0IpJQEbWW8EuFhjlHpX6t+8NpO7sAkE8lh6IdU1Hb9eYLBntkDqt9JeM+OtyOqMn2sPeKyERO0dwbIIzPKUoEu8lh68npZFiROb7HKrr8+GdMf5SknwVKSHNu3tD36d12MOrkNzsfoH0MstmlqIjk3pmzGlabhs8jv/qmb2jfuLlBUA+uZdCt+wZQQeIaBCy7xtB3rVPe9JTXIt3FTtYuSx2yO20llV4xr1PkjWNYSAiVgMyEBtrmDL96tQlrHFusyAMIm45NBZ9C/FtELYoFPZIgWLMxc2ROLGnWCNi96Gk+wKXJVne/aZ1cr+8C81S3xK+Ay0NnGY3JluenIwa8ZeIlEwEzKQk=
+  file: sparkling.zip
+  on:
+    repo: MachoThemes/Sparkling
+    branch: 'master'
+    condition: "$DEPLOY = 1"
