@@ -1489,6 +1489,9 @@ p.logged-in-as {
   position: relative;
   text-align: center;
 }
+.sparkling-social #menu-social {
+  text-align: left;
+}
 #secondary .widget .social-icons {
   text-align: left;
 }
