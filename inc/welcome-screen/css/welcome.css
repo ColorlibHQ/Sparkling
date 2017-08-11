@@ -1,0 +1,207 @@
+/* ----------------------------------------------------------------------------
+ * Welcome Page CSS
+ * ------------------------------------------------------------------------- */
+
+/* New Logo */
+.wp-badge.epsilon-welcome-logo {
+    color: #fff;
+    background-image: url(../img/logo.png);
+    background-position: center center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+/* proper positioning of the icons */
+.epsilon-wrap i.dashicons {
+    margin-right: 15px;
+    position: relative;
+    top: 3px;
+}
+
+.feature-section.action-required {
+    margin-top: 20px;
+    padding-bottom: 0;
+}
+
+.action-required span.hooray {
+    padding: 10px;
+    display: inline-block;
+}
+
+.action-required span.red {
+    color: #a00;
+}
+
+.sparkling-action-required-box:last-of-type {
+    border-bottom: none;
+}
+
+.sparkling-action-required-box {
+    display: block;
+    border-left: 3px solid #f8800c;
+    padding: 10px 25px 5px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    position: relative;
+}
+.sparkling-required-action-button,
+.sparkling-recommended-plugin-button,
+.sparkling-dismiss-required-action {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: #d54e21;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.about-wrap .sparkling-action-required-box h4 {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.about-wrap .sparkling-action-required-box p {
+    display: block;
+    margin-top: 0;
+    width: 100%;
+    max-width: 100%;
+}
+.epsilon-recommeded-actions {
+    position: relative;
+}
+
+.epsilon-recommeded-actions .sparkling-dismiss-required-action,
+.epsilon-recommeded-actions .sparkling-recommended-plugin-button {
+    top: 0;
+    right: 0;
+}
+.epsilon-recommeded-actions #temp_load {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 0,0,0,.2 );
+    display: flex;
+    align-items: center;
+}
+.epsilon-recommeded-actions #temp_load img {
+    margin: 0 auto;
+}
+
+.badge-action-count {
+    padding: 0 6px;
+    display: inline-block;
+    background-color: #d54e21;
+    color: #fff;
+    font-size: 9px;
+    line-height: 17px;
+    font-weight: 600;
+    margin: 1px 0 0 2px;
+    vertical-align: top;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    z-index: 26;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.wp-submenu .badge-action-count {
+    margin-top: 0;
+}
+
+.plugin_box {
+    height: 315px;
+    margin-top: 15px;
+    text-align: center;
+    background: #FFF;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .1);
+    float: left;
+}
+
+.plugin_box .recommended {
+    background: #d25637;
+    color: #FFF;
+    text-transform: uppercase;
+    height: 28px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    line-height: 28px;
+    font-size: 10px;
+    position: absolute;
+    font-weight: bold;
+}
+
+.plugin_box img {
+    width: 155px;
+    height: 155px;
+    padding-top: 50px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.plugin_box .action_bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 15px;
+    font-weight: 600;
+    height: 18px;
+    margin: 0;
+    padding: 15px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, .1);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background: #fff;
+    background: rgba(255, 255, 255, .65);
+    text-align: left;
+    padding-right: 105px;
+}
+
+.plugin_box .action_bar.active {
+    background: #23282d;
+    color: #FFF;
+}
+
+.plugin_box .action_button {
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    padding: 9px 10px 10px;
+    background: #f6f6f6;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.plugin_box .action_button.active {
+    background: #2c2e2f;
+    bottom: 0;
+    right: -1px;
+    padding: 9px 10px 9px;
+
+}
+
+.about-wrap .three-col .plugin_box.col {
+    width: 29.81%;
+    margin-right: 2%;
+}
+
+.sparkling-welcome-task {
+    display: block;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.sparkling-welcome-task .sparkling-welcome-icon {
+    color: #888;
+}
+.about-wrap.epsilon-wrap img {
+    border: 0 none;
+}
