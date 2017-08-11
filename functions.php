@@ -485,6 +485,16 @@ if ( ! function_exists( 'get_layout_class' ) ) :
 
 endif;
 
+add_action( 'wp_ajax_sparkling_get_attachment_media', 'sparkling_get_attachment_image' );
+function sparkling_get_attachment_image() {
+	$id  = intval( $_POST['attachment_id'] );
+	$response = array();
+	$response['id'] = $id;
+	$response['image'] = wp_get_attachment_image( $id, 'medium' );
+	echo json_encode( $response );
+	die();
+}
+
 // Add epsilon framework
 require get_template_directory() . '/inc/libraries/epsilon-framework/class-epsilon-autoloader.php';
 $epsilon_framework_settings = array(
