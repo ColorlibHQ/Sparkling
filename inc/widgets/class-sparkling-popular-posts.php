@@ -7,6 +7,7 @@
 class Sparkling_Popular_Posts extends WP_Widget {
 	function __construct() {
 		add_action( 'admin_init', array( $this, 'enqueue' ) );
+		add_action( 'customize_controls_enqueue_scripts', array( $this, 'enqueue' ) );
 		$widget_ops = array(
 			'classname' => 'sparkling-popular-posts',
 			'description' => esc_html__( 'Sparkling Popular Posts Widget', 'sparkling' ),
