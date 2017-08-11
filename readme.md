@@ -2,7 +2,7 @@
 
 Theme Name: Sparkling<br>
 Theme URI: http://colorlib.com/wp/sparkling/<br>
-Version: 2.3.3<br>
+Version: 2.3.4<br>
 Tested up to: WP 4.8<br>
 
 Author: Aigars Silkalns<br>
@@ -16,7 +16,7 @@ Sparkling is based on Underscores http://underscores.me/, (C) 2012-2017 Automatt
 -------------------------------------------------------
 
 # Credits
-Unless otherwise specified, all the theme files, scripts and images are licensed under GPLv2 license
+Unless otherwise specified, all the theme files, scripts and images are licensed under GPLv3 license
 
 Sparkling theme uses:
 * FontAwesome (http://fontawesome.io) licensed under the SIL OFL 1.1 (http://scripts.sil.org/OFL)
@@ -63,6 +63,20 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 # Changelog
+
+# 2.3.4
+* Updated font awesome
+* Fixed custom menu styling in the footer
+* Improved widgets' styling
+* Fixed Sparkling popular posts widget clear bug
+* Fixed custom color for the footer text
+* Added defaults for color controls in Customizer
+* Fixed custom typography bug
+* Improved custom colors
+* Fixed the menu on mobile devices
+* Added a 'read more' button when the read more tag is used
+* Added Epsilon Framework
+* Added Welcome Screen
 
 ## 2.3.3 - 09.06.2017
 
