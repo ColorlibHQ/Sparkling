@@ -1390,11 +1390,9 @@ p.logged-in-as {
 }
 
 .footer-nav.nav {
-  float: left;
   margin-bottom: 2px;
 }
 .footer-nav.nav ul {
-  float: left;
   padding: 0;
   list-style: none;
 }
@@ -1463,6 +1461,15 @@ p.logged-in-as {
   margin-bottom: 0;
 }
 
+.site-info .nav ul,
+.site-info .nav li,
+.site-info .nav > li > a {
+  display: inline-block;
+}
+.site-info .nav a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
 
 @media (max-width: 768px) {
   .site-info, .copyright {
