@@ -91,36 +91,6 @@ if ( is_admin() ) {
 	 */
 
 
-	$sparkling_required_actions = array(
-		array(
-			'id'          => 'sparkling-req-ac-install-wp-import-plugin',
-			'title'       => Sparkling_Notify_System::wordpress_importer_title(),
-			'description' => Sparkling_Notify_System::wordpress_importer_description(),
-			'check'       => Sparkling_Notify_System::has_import_plugin( 'wordpress-importer' ),
-			'plugin_slug' => 'wordpress-importer',
-		),
-		array(
-			'id'          => 'sparkling-req-ac-install-wp-import-widget-plugin',
-			'title'       => Sparkling_Notify_System::widget_importer_exporter_title(),
-			'description' => Sparkling_Notify_System::widget_importer_exporter_description(),
-			'check'       => Sparkling_Notify_System::has_import_plugin( 'widget-importer-exporter' ),
-			'plugin_slug' => 'widget-importer-exporter',
-		),
-		array(
-			'id'          => 'sparkling-req-ac-download-data',
-			'title'       => esc_html__( 'Download theme sample data', 'sparkling' ),
-			'description' => esc_html__( 'Head over to our website and download the sample content data.', 'sparkling' ),
-			'help'        => '<a target="_blank"  href="https://www.sparklings.com/sample-data/sparkling-lite-posts.xml">' . __( 'Posts', 'sparkling' ) . '</a>, 
-							   <a target="_blank"  href="https://www.sparklings.com/sample-data/sparkling-widgets.wie">' . __( 'Widgets', 'sparkling' ) . '</a>',
-			'check'       => Sparkling_Notify_System::has_content(),
-		),
-		array(
-			'id'    => 'sparkling-req-ac-install-data',
-			'title' => esc_html__( 'Import Sample Data', 'sparkling' ),
-			'help'  => '<a class="button button-primary" target="_blank"  href="' . self_admin_url( 'admin.php?import=wordpress' ) . '">' . __( 'Import Posts', 'sparkling' ) . '</a> 
-									   <a class="button button-primary" target="_blank"  href="' . self_admin_url( 'tools.php?page=widget-importer-exporter' ) . '">' . __( 'Import Widgets', 'sparkling' ) . '</a>',
-			'check' => Sparkling_Notify_System::has_import_content(),
-		),
-	);
+	$sparkling_required_actions = array();
 	require get_template_directory() . '/inc/welcome-screen/class-sparkling-welcome.php';
 }// End if().
