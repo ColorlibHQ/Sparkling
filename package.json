@@ -2,7 +2,7 @@
   "name": "sparkling",
   "main": "Gruntfile.js",
   "author": "Colorlib",
-  "version": "2.3.3",
+  "version": "2.3.4",
   "repository": "https://github.com/MachoThemes/Sparkling",
   "license": "GPL v3",
   "devDependencies": {
