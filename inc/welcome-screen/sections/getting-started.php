@@ -25,7 +25,7 @@ $count = $this->count_actions();
 		<p><?php esc_html_e( 'Even if you\'re a long-time WordPress user, we still believe you should give our documentation a very quick Read.', 'sparkling' ) ?></p>
 		<p>
 			<a target="_blank"
-			   href="<?php echo esc_url( 'https://sparklings.com/documentation' ); ?>"><?php esc_html_e( 'Full documentation', 'sparkling' ); ?></a>
+			   href="<?php echo esc_url( 'https://colorlib.com/wp/support/sparkling/' ); ?>"><?php esc_html_e( 'Full documentation', 'sparkling' ); ?></a>
 		</p>
 	</div><!--/.col-->
 
