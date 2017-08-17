@@ -20,9 +20,9 @@ function sparkling_welcome_customize_register( $wp_customize ) {
 				$wp_customize,
 				'epsilon_recomended_section',
 				array(
-					'title'                         => esc_html__( 'Recomended Actions', 'sparkling' ),
+					'title'                         => esc_html__( 'Recommended Actions', 'sparkling' ),
 					'social_text'                   => esc_html__( 'We are social :', 'sparkling' ),
-					'plugin_text'                   => esc_html__( 'Recomended Plugins :', 'sparkling' ),
+					'plugin_text'                   => esc_html__( 'Recommended Plugins :', 'sparkling' ),
 					'actions'                       => $sparkling_required_actions,
 					'plugins'                       => $customizer_recommended_plugins,
 					'theme_specific_option'         => $theme_slug . '_show_required_actions',
