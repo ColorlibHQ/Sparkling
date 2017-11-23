@@ -1570,6 +1570,9 @@ p.logged-in-as {
 #menu-social li a[href*="linkedin.com"]:hover {
   background-color: #005987 !important;
 }
+#menu-social li a[href*="slideshare.net"]:hover {
+  background-color: #005987 !important;
+}
 #menu-social li a[href*="vimeo.com"]:hover {
   background-color: #1bb6ec !important;
 }
@@ -1631,6 +1634,7 @@ p.logged-in-as {
 #menu-social li a[href*="pinterest.com"] .fa:before{content: "\f0d2"}
 #menu-social li a[href*="plus.google.com"] .fa:before{content: "\f0d5"}
 #menu-social li a[href*="linkedin.com"] .fa:before{content: "\f0e1"}
+#menu-social li a[href*="slideshare.net"] .fa:before{content: "\f1e7"}
 #menu-social li a[href*="mailto"] .fa:before{content: "\f003"}
 #menu-social li a[href*="t.me"] .fa:before{content: "\f2c6"}
 #menu-social li a[href*="telegram.me"] .fa:before{content: "\f2c6"}
