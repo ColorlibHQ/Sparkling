@@ -265,7 +265,7 @@ function sparkling_scripts() {
 	}
 
 	// Main theme related functions
-	wp_enqueue_script( 'sparkling-functions', get_template_directory_uri() . '/assets/js/functions.min.js', array( 'jquery' ) );
+	wp_enqueue_script( 'sparkling-functions', get_template_directory_uri() . '/assets/js/functions.js', array( 'jquery' ), '20180503', false );
 
 	// This one is for accessibility
 	wp_enqueue_script( 'sparkling-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.min.js', array(), '20140222', true );
