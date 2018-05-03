@@ -1820,6 +1820,10 @@ p.logged-in-as {
     background-color: #005987 !important;
 }
 
+#menu-social li a[href*="slideshare.net"]:hover {
+    background-color: #005987 !important;
+}
+
 #menu-social li a[href*="vimeo.com"]:hover {
     background-color: #1bb6ec !important;
 }
@@ -1953,6 +1957,10 @@ p.logged-in-as {
 
 #menu-social li a[href*="linkedin.com"] .fa:before {
     content: "\f0e1"
+}
+
+#menu-social li a[href*="slideshare.net"] .fa:before {
+    content: "\f1e7"
 }
 
 #menu-social li a[href*="mailto"] .fa:before {
