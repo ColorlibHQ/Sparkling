@@ -249,7 +249,7 @@ function sparkling_scripts() {
 	}
 
 	// Add main theme stylesheet
-	wp_enqueue_style( 'sparkling-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'sparkling-style', get_stylesheet_uri(), null, '2.4.0', 'all' );
 
 	// Add Modernizr for better HTML5 and CSS3 support
 	wp_enqueue_script( 'sparkling-modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr.min.js', array( 'jquery' ) );
@@ -280,7 +280,7 @@ function sparkling_scripts() {
 
 	// Academicons
 	if ( of_get_option( 'academicons' ) == 1 ) {
-		wp_enqueue_style( 'academicons-css', get_template_directory_uri() . '/assets/css/academicons.min.css' );
+		wp_enqueue_style( 'academicons-css', get_template_directory_uri() . '/assets/css/academicons.min.css', null, '1.8.6', 'all' );
 	}
 }
 
