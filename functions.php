@@ -251,9 +251,6 @@ function sparkling_scripts() {
 	// Add main theme stylesheet
 	wp_enqueue_style( 'sparkling-style', get_stylesheet_uri(), null, '2.4.0', 'all' );
 
-	// Add Modernizr for better HTML5 and CSS3 support
-	wp_enqueue_script( 'sparkling-modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr.min.js', array( 'jquery' ) );
-
 	// Add Bootstrap default JS
 	wp_enqueue_script( 'sparkling-bootstrapjs', get_template_directory_uri() . '/assets/js/vendor/bootstrap.min.js', array( 'jquery' ) );
 
@@ -261,7 +258,7 @@ function sparkling_scripts() {
 		// Add slider JS only if is front page ans slider is enabled
 		wp_enqueue_script( 'flexslider-js', get_template_directory_uri() . '/assets/js/vendor/flexslider.min.js', array( 'jquery' ), '20140222', true );
 		// Flexslider customization
-		wp_enqueue_script( 'flexslider-customization', get_template_directory_uri() . '/assets/js/flexslider-custom.min.js', array(
+		wp_enqueue_script( 'flexslider-customization', get_template_directory_uri() . '/assets/js/flexslider-custom.js', array(
 			'jquery',
 			'flexslider-js'
 		), '20140716', true );
