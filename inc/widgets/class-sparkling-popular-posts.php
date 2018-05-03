@@ -87,7 +87,7 @@ class Sparkling_Popular_Posts extends WP_Widget {
 						  <div class="post-content">
 
 							  <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
-							  <span class="date"><?php echo get_the_date( 'd M , Y' ); ?></span>
+							  <span class="date"><?php echo get_the_date( get_option('date_format') ); ?></span>
 
 
 						  </div><!-- end content -->
