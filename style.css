@@ -347,7 +347,7 @@ footer.entry-meta {
     padding-bottom: 0;
 }
 
-.entry-meta .fa {
+.entry-meta {
     font-size: 14px;
     margin-right: 3px;
 }
@@ -483,8 +483,8 @@ body.blog .post-inner-content,
     color: #fff;
 }
 
-.pagination .fa-chevron-left,
-.pagination .fa-chevron-right {
+.pagination-chevron-left,
+.pagination-chevron-right {
     font-size: 12px;
 }
 
@@ -640,7 +640,7 @@ object {
 #secondary .widget_archive ul li:before,
 #secondary .widget_categories ul li:before,
 #secondary .widget_recent_comments ul li:before {
-    font-family: fontawesome;
+    font-family: 'Font Awesome\ 5 Free';
     margin-right: 10px;
 }
 
@@ -1883,96 +1883,306 @@ p.logged-in-as {
     padding-left: 0;
 }
 
-#menu-social li a[href*="twitter.com"] .fa:before {
+#menu-social li a[href*="twitter.com"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
     content: "\f099"
 }
 
-#menu-social li a[href*="xing.com"] .fa:before {
+#menu-social li a[href*="xing.com"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
     content: "\f168"
 }
 
-#menu-social li a[href*="facebook.com"] .fa:before {
-    content: "\f09a"
+#menu-social li a[href*="facebook.com"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
+    content: "\f39e";
+    font-weight: 900;
 }
 
-#menu-social li a[href*="github.com"] .fa:before {
+#menu-social li a[href*="github.com"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
     content: "\f09b"
 }
 
-#menu-social li a[href*="stackoverflow.com"] .fa:before {
+#menu-social li a[href*="stackoverflow.com"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
     content: "\f16c"
 }
 
-#menu-social li a[href*="/feed"] .fa:before {
+#menu-social li a[href*="feed"]:before {
+    font-family: 'Font Awesome\ 5 Free';
     content: "\f09e"
 }
 
-#menu-social li a[href*="dribbble.com"] .fa:before {
+#menu-social li a[href*="dribbble.com"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
     content: "\f17d"
 }
 
-#menu-social li a[href*="skype.com"] .fa:before {
+#menu-social li a[href*="skype.com"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
     content: "\f17e"
 }
 
-#menu-social li a[href*="foursquare.com"] .fa:before {
+#menu-social li a[href*="foursquare.com"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
     content: "\f180"
 }
 
-#menu-social li a[href*="spotify.com"] .fa:before {
+#menu-social li a[href*="spotify.com"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
     content: "\f1bc"
 }
 
-#menu-social li a[href*="soundcloud.com"] .fa:before {
+#menu-social li a[href*="soundcloud.com"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
     content: "\f1be"
 }
 
-#menu-social li a[href*="vimeo.com"] .fa:before {
+#menu-social li a[href*="vimeo.com"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
     content: "\f194"
 }
 
-#menu-social li a[href*="youtube.com"] .fa:before {
+#menu-social li a[href*="youtube.com"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
     content: "\f167"
 }
 
-#menu-social li a[href*="instagram.com"] .fa:before {
+#menu-social li a[href*="instagram.com"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
     content: "\f16d"
 }
 
-#menu-social li a[href*="flickr.com"] .fa:before {
+#menu-social li a[href*="flickr.com"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
     content: "\f16e"
 }
 
-#menu-social li a[href*="tumblr.com"] .fa:before {
+#menu-social li a[href*="tumblr.com"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
     content: "\f173"
 }
 
-#menu-social li a[href*="pinterest.com"] .fa:before {
+#menu-social li a[href*="pinterest.com"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
     content: "\f0d2"
 }
 
-#menu-social li a[href*="plus.google.com"] .fa:before {
+#menu-social li a[href*="plus.google.com"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
     content: "\f0d5"
 }
 
-#menu-social li a[href*="linkedin.com"] .fa:before {
+#menu-social li a[href*="linkedin.com"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
     content: "\f0e1"
 }
 
-#menu-social li a[href*="slideshare.net"] .fa:before {
+#menu-social li a[href*="slideshare.net"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
     content: "\f1e7"
 }
 
-#menu-social li a[href*="mailto"] .fa:before {
-    content: "\f003"
+#menu-social li a[href*="mailto"]:before {
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f0e0"
 }
 
-#menu-social li a[href*="t.me"] .fa:before {
+#menu-social li a[href*="t.me"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
     content: "\f2c6"
 }
 
-#menu-social li a[href*="telegram.me"] .fa:before {
+#menu-social li a[href*="telegram.me"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
     content: "\f2c6"
+}
+
+/* Academicons - @since 2.4.0 */
+#menu-social li a[href*="academia.edu"]:before {
+    font-family: 'Academicons';
+    content: "\e9af";
+}
+
+#menu-social li a[href*="youracclaim.com"]:before {
+    font-family: 'Academicons';
+    content: "\e92e";
+}
+
+#menu-social li a[href*="acm.org"]:before {
+    font-family: 'Academicons';
+    content: "\e93c";
+}
+
+#menu-social li a[href*="dl.acm.org"]:before {
+    font-family: 'Academicons';
+    content: "\e96a";
+}
+
+#menu-social li a[href*="arxiv.org"]:before {
+    font-family: 'Academicons';
+    content: "\e974";
+}
+
+#menu-social li a[href*="biorxiv.org"]:before {
+    font-family: 'Academicons';
+    content: "\e9a2";
+}
+
+#menu-social li a[href*="ceur-ws.org"]:before {
+    font-family: 'Academicons';
+    content: "\e96d";
+}
+
+#menu-social li a[href*="coursera.org"]:before {
+    font-family: 'Academicons';
+    content: "\e95f";
+}
+
+#menu-social li a[href*="coursera.org"]:before {
+    font-family: 'Academicons';
+    content: "\e95f";
+}
+
+#menu-social li a[href*="dataverse.org"]:before {
+    font-family: 'Academicons';
+    content: "\e9f7";
+}
+
+#menu-social li a[href*="dblp.uni-trier.de"]:before {
+    font-family: 'Academicons';
+    content: "\e94f";
+}
+
+#menu-social li a[href*="depsy.org"]:before {
+    font-family: 'Academicons';
+    content: "\e97a";
+}
+
+#menu-social li a[href*="doi.org"]:before {
+    font-family: 'Academicons';
+    content: "\e97e";
+}
+
+#menu-social li a[href*="datadryad.org"]:before {
+    font-family: 'Academicons';
+    content: "\e97c";
+}
+
+#menu-social li a[href*="figshare.com"]:before {
+    font-family: 'Academicons';
+    content: "\e981";
+}
+
+#menu-social li a[href*="scholar.google"]:before {
+    font-family: 'Academicons';
+    content: "\e9d4";
+}
+
+#menu-social li a[href*="ideas.repec.org"]:before {
+    font-family: 'Academicons';
+    content: "\e9ed";
+}
+
+#menu-social li a[href*="ieee.org"]:before {
+    font-family: 'Academicons';
+    content: "\e929";
+}
+
+#menu-social li a[href*="impactstory.org"]:before {
+    font-family: 'Academicons';
+    content: "\e9cf";
+}
+
+#menu-social li a[href*="inspirehep.net"]:before {
+    font-family: 'Academicons';
+    content: "\e9e9";
+}
+
+#menu-social li a[href*="lattes.cnpq.brt"]:before {
+    font-family: 'Academicons';
+    content: "\e9b3";
+}
+
+#menu-social li a[href*="mathoverflow.net"]:before {
+    font-family: 'Academicons';
+    content: "\e9f6";
+}
+
+#menu-social li a[href*="mendeley.com"]:before {
+    font-family: 'Academicons';
+    content: "\e9f0";
+}
+
+#menu-social li a[href*="openaccessweek.org"]:before {
+    font-family: 'Academicons';
+    content: "\e939";
+}
+
+#menu-social li a[href*="orcid.org"]:before {
+    font-family: 'Academicons';
+    content: "\e9d9";
+}
+
+#menu-social li a[href*="osf.io"]:before {
+    font-family: 'Academicons';
+    content: "\e9ef";
+}
+
+#menu-social li a[href*="overleaf.com"]:before {
+    font-family: 'Academicons';
+    content: "\e914";
+}
+
+#menu-social li a[href*="philpapers.org"]:before {
+    font-family: 'Academicons';
+    content: "\e98a";
+}
+
+#menu-social li a[href*="piazza.com"]:before {
+    font-family: 'Academicons';
+    content: "\e99a";
+}
+
+#menu-social li a[href*="publons.com"]:before {
+    font-family: 'Academicons';
+    content: "\e937";
+}
+
+#menu-social li a[href*="ncbi.nlm.nih.gov"]:before {
+    font-family: 'Academicons';
+    content: "\e99f";
+}
+
+#menu-social li a[href*="researchgate.net"]:before {
+    font-family: 'Academicons';
+    content: "\e95e";
+}
+
+#menu-social li a[href*="esearcherid.com"]:before {
+    font-family: 'Academicons';
+    content: "\e91a";
+}
+
+#menu-social li a[href*="scirate.com"]:before {
+    font-family: 'Academicons';
+    content: "\e98e";
+}
+
+#menu-social li a[href*="semanticscholar.org"]:before {
+    font-family: 'Academicons';
+    content: "\e96e";
+}
+
+#menu-social li a[href*="springer.com"]:before {
+    font-family: 'Academicons';
+    content: "\e928";
+}
+
+#menu-social li a[href*="zotero.org"]:before {
+    font-family: 'Academicons';
+    content: "\e962";
 }
 
 @media (max-width: 992px) {
