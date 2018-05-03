@@ -64,6 +64,9 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 # Changelog
 
+# 2.3.5
+* Added Colorlib Login Customizer as recommended plugin
+
 # 2.3.4
 * Updated font awesome
 * Fixed custom menu styling in the footer

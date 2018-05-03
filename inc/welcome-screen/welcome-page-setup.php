@@ -75,9 +75,12 @@ if ( is_admin() ) {
 	global $sparkling_required_actions, $sparkling_recommended_plugins;
 	$sparkling_recommended_plugins = array(
 		'fancybox-for-wordpress'    => array(
-			'recommended' => true,
+			'recommended' => false,
 		),
 		'simple-custom-post-order'  => array(
+			'recommended' => true,
+		),
+		'colorlib-login-customizer'  => array(
 			'recommended' => true,
 		),
 	);
