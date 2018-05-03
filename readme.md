@@ -67,6 +67,7 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 # 2.3.5
 * Added Colorlib Login Customizer as recommended plugin
 * Updated FontAwesome to v5.1.1
+* Updated FlexSlider to 2.7.0
 * Added Academicons ( https://jpswalsh.github.io/academicons/ )
 * Full changelog can be seen here: https://github.com/puikinsh/Sparkling/milestone/1?closed=1
 
