@@ -1792,6 +1792,156 @@ p.logged-in-as {
     background-color: #4265b9 !important;
 }
 
+#menu-social li a[href*="docker.com"]:hover {
+    background-color: #0D397F !important;
+}
+
+#menu-social li a[href*="academia.edu"]:hover {
+    background-color: #FFF !important;
+    color: #000 !important;
+}
+
+#menu-social li a[href*="youracclaim.com"]:hover {
+    background-color: #2B6C97 !important;
+}
+
+#menu-social li a[href*="youracclaim.com"]:hover {
+    background-color: #2B6C97 !important;
+}
+
+#menu-social li a[href*="acm.org"]:hover {
+    background-color: #42A6D5 !important;
+}
+
+#menu-social li a[href*="arxiv.org"]:hover {
+    background-color: #68645B !important;
+}
+
+#menu-social li a[href*="biorxiv.org"]:hover {
+    background-color: #B92B3D !important;
+}
+
+#menu-social li a[href*="ceur-ws.org"]:hover {
+    background-color: #F5F4EF !important;
+}
+
+#menu-social li a[href*="coursera.org"]:hover {
+    background-color: #508DD6 !important;
+}
+
+#menu-social li a[href*="dataverse.org"]:hover {
+    background-color: #C25B37 !important;
+}
+
+#menu-social li a[href*="dblp.uni-trier.de"]:hover {
+    background-color: #12539B !important;
+}
+
+#menu-social li a[href*="depsy.org"]:hover {
+    background-color: #2BB0E9 !important;
+}
+
+#menu-social li a[href*="doi.org"]:hover {
+    background-color: #F8B248 !important;
+}
+
+#menu-social li a[href*="datadryad.org"]:hover {
+    background-color: #44822C !important;
+}
+
+#menu-social li a[href*="figshare.com"]:hover {
+    background-color: #556470 !important;
+}
+
+#menu-social li a[href*="scholar.google"]:hover {
+    background-color: #4A8BEE !important;
+}
+
+#menu-social li a[href*="ideas.repec.org"]:hover {
+    background-color: #F61729 !important;
+}
+
+#menu-social li a[href*="ieee.org"]:hover {
+    background-color: #166895 !important;
+}
+
+#menu-social li a[href*="impactstory.org"]:hover {
+    background-color: #F9362A !important;
+}
+
+#menu-social li a[href*="inspirehep.net"]:hover {
+    background-color: #6B9CC8 !important;
+}
+
+#menu-social li a[href*="lattes.cnpq.brt"]:hover {
+    background-color: #135C95 !important;
+}
+
+#menu-social li a[href*="mathoverflow.net"]:hover {
+    background-color: #DE8341 !important;
+}
+
+#menu-social li a[href*="mendeley.com"]:hover {
+    background-color: #FFF !important;
+    color: #000 !important;
+}
+
+#menu-social li a[href*="openaccessweek.org"]:hover {
+    background-color: #F17E3C !important;
+}
+
+#menu-social li a[href*="orcid.org"]:hover {
+    background-color: #A8CA50 !important;
+}
+
+#menu-social li a[href*="osf.io"]:hover {
+    background-color: #3FBAEB !important;
+}
+
+#menu-social li a[href*="overleaf.com"]:hover {
+    background-color: #4D8F4A !important;
+}
+
+#menu-social li a[href*="philpapers.org"]:hover {
+    background-color: #1650A3 !important;
+}
+
+#menu-social li a[href*="piazza.com"]:hover {
+    background-color: #407DA8 !important;
+}
+
+#menu-social li a[href*="publons.com"]:hover {
+    background-color: #386895 !important;
+}
+
+#menu-social li a[href*="ncbi.nlm.nih.gov"]:hover {
+    background-color: #D5D5D5 !important;
+}
+
+#menu-social li a[href*="researchgate.net"]:hover {
+    background-color: #30CABB !important;
+}
+
+#menu-social li a[href*="researcherid.com"]:hover {
+    background-color: #EA7B32 !important;
+}
+
+#menu-social li a[href*="scirate.com"]:hover {
+    background-color: #3299F3 !important;
+}
+
+#menu-social li a[href*="semanticscholar.org"]:hover {
+    background-color: #FBD669 !important;
+}
+
+#menu-social li a[href*="springer.com"]:hover {
+    background-color: #EA7D33 !important;
+}
+
+#menu-social li a[href*="zotero.org"]:hover {
+    background-color: #C82E3E !important;
+}
+
 #menu-social li a[href*="twitter.com"]:hover {
     background-color: #55ACEE !important;
 }
@@ -1999,6 +2149,11 @@ p.logged-in-as {
     content: "\f2c6"
 }
 
+#menu-social li a[href*="docker.com"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
+    content: "\f395"
+}
+
 /* Academicons - @since 2.4.0 */
 #menu-social li a[href*="academia.edu"]:before {
     font-family: 'Academicons';
@@ -2015,11 +2170,6 @@ p.logged-in-as {
     content: "\e93c";
 }
 
-#menu-social li a[href*="dl.acm.org"]:before {
-    font-family: 'Academicons';
-    content: "\e96a";
-}
-
 #menu-social li a[href*="arxiv.org"]:before {
     font-family: 'Academicons';
     content: "\e974";
@@ -2033,11 +2183,6 @@ p.logged-in-as {
 #menu-social li a[href*="ceur-ws.org"]:before {
     font-family: 'Academicons';
     content: "\e96d";
-}
-
-#menu-social li a[href*="coursera.org"]:before {
-    font-family: 'Academicons';
-    content: "\e95f";
 }
 
 #menu-social li a[href*="coursera.org"]:before {
@@ -2160,7 +2305,7 @@ p.logged-in-as {
     content: "\e95e";
 }
 
-#menu-social li a[href*="esearcherid.com"]:before {
+#menu-social li a[href*="researcherid.com"]:before {
     font-family: 'Academicons';
     content: "\e91a";
 }
