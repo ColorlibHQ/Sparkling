@@ -2170,6 +2170,11 @@ p.logged-in-as {
     content: "\e93c";
 }
 
+#menu-social li a[href*="dl.acm.org"]:before {
+    font-family: 'Academicons';
+    content: "\e96a";
+}
+
 #menu-social li a[href*="arxiv.org"]:before {
     font-family: 'Academicons';
     content: "\e974";
