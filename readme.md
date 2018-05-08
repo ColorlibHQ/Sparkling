@@ -64,7 +64,10 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 # Changelog
 
-# 2.3.5
+# 2.4.1
+* Fixed a bug with FontAwesome 5 & RSS feed icon
+
+# 2.4.0
 * Added Colorlib Login Customizer as recommended plugin
 * Updated FontAwesome to v5.1.1
 * Updated FlexSlider to 2.7.0
