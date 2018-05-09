@@ -249,7 +249,7 @@ function sparkling_scripts() {
 	}
 
 	// Add main theme stylesheet
-	wp_enqueue_style( 'sparkling-style', get_stylesheet_uri(), null, '2.4.0', 'all' );
+	wp_enqueue_style( 'sparkling-style', get_stylesheet_uri(), null, '2.4.2', 'all' );
 
 	// Add Bootstrap default JS
 	wp_enqueue_script( 'sparkling-bootstrapjs', get_template_directory_uri() . '/assets/js/vendor/bootstrap.min.js', array( 'jquery' ) );
