@@ -41,19 +41,23 @@ if ( ! function_exists( 'sparkling_posted_on' ) ) :
 		}
 		*/
 
-		$time_string = sprintf( $time_string,
+		$time_string = sprintf(
+			$time_string,
 			esc_attr( get_the_date( 'c' ) ),
 			esc_html( get_the_date() ),
 			esc_attr( get_the_modified_date( 'c' ) ),
 			esc_html( get_the_modified_date() )
 		);
 
-			printf( '<span class="posted-on"><i class="fa fa-calendar"></i> %1$s</span><span class="byline"> <i class="fa fa-user"></i> %2$s</span>',
-				sprintf( '<a href="%1$s" rel="bookmark">%2$s</a>',
+			printf(
+				'<span class="posted-on"><i class="fa fa-calendar-alt"></i> %1$s</span><span class="byline"> <i class="fa fa-user"></i> %2$s</span>',
+				sprintf(
+					'<a href="%1$s" rel="bookmark">%2$s</a>',
 					esc_url( get_permalink() ),
 					$time_string
 				),
-				sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s">%2$s</a></span>',
+				sprintf(
+					'<span class="author vcard"><a class="url fn n" href="%1$s">%2$s</a></span>',
 					esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 					esc_html( get_the_author() )
 				)
@@ -70,12 +74,14 @@ function sparkling_categorized_blog() {
 	$all_the_cool_cats = get_transient( 'sparkling_categories' );
 	if ( false === $all_the_cool_cats ) {
 		// Create an array of all the categories that are attached to posts.
-		$all_the_cool_cats = get_categories( array(
-			'fields'     => 'ids',
-			'hide_empty' => 1,
-			// We only need to know if there is more than one category.
-			'number'     => 2,
-		) );
+		$all_the_cool_cats = get_categories(
+			array(
+				'fields'     => 'ids',
+				'hide_empty' => 1,
+				// We only need to know if there is more than one category.
+				'number'     => 2,
+			)
+		);
 		// Count the number of categories that are attached to the posts.
 		$all_the_cool_cats = count( $all_the_cool_cats );
 		set_transient( 'sparkling_categories', $all_the_cool_cats );
@@ -99,4 +105,4 @@ function sparkling_category_transient_flusher() {
 	delete_transient( 'sparkling_categories' );
 }
 add_action( 'edit_category', 'sparkling_category_transient_flusher' );
-add_action( 'save_post',     'sparkling_category_transient_flusher' );
+add_action( 'save_post', 'sparkling_category_transient_flusher' );

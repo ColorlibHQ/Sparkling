@@ -20,7 +20,7 @@ class WP_Bootstrap_Navwalker extends Walker_Nav_Menu {
 	 * @param int $depth Depth of page. Used for padding.
 	 */
 	public function start_lvl( &$output, $depth = 0, $args = array() ) {
-		$indent = str_repeat( "\t", $depth );
+		$indent  = str_repeat( "\t", $depth );
 		$output .= "\n$indent<ul role=\"menu\" class=\" dropdown-menu\">\n";
 	}
 
@@ -91,7 +91,7 @@ class WP_Bootstrap_Navwalker extends Walker_Nav_Menu {
 			$attributes = '';
 			foreach ( $atts as $attr => $value ) {
 				if ( ! empty( $value ) ) {
-					$value      = ( 'href' === $attr ) ? esc_url( $value ) : esc_attr( $value );
+					$value       = ( 'href' === $attr ) ? esc_url( $value ) : esc_attr( $value );
 					$attributes .= ' ' . $attr . '="' . $value . '"';
 				}
 			}
@@ -99,11 +99,11 @@ class WP_Bootstrap_Navwalker extends Walker_Nav_Menu {
 			$item_output = $args->before;
 
 			/*
-             * Glyphicons
-             * ===========
-             * Since the the menu item is NOT a Divider or Header we check the see
-             * if there is a value in the attr_title property. If the attr_title
-             * property is NOT null we apply it as the class name for the glyphicon.
+			 * Glyphicons
+			 * ===========
+			 * Since the the menu item is NOT a Divider or Header we check the see
+			 * if there is a value in the attr_title property. If the attr_title
+			 * property is NOT null we apply it as the class name for the glyphicon.
 			 */
 			if ( ! empty( $item->attr_title ) ) {
 				if ( strpos( $item->attr_title, 'glyphicon-' ) !== false ) {
@@ -119,7 +119,6 @@ class WP_Bootstrap_Navwalker extends Walker_Nav_Menu {
 
 			$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
 			$item_output .= ( $args->has_children ) ? '</a><span class="caret sparkling-dropdown"></span>' : '</a>';
-
 
 			$item_output .= $args->after;
 
