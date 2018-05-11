@@ -9,10 +9,10 @@ class Sparkling_Popular_Posts extends WP_Widget {
 		add_action( 'admin_init', array( $this, 'enqueue' ) );
 		add_action( 'customize_controls_enqueue_scripts', array( $this, 'enqueue' ) );
 		$widget_ops = array(
-			'classname' => 'sparkling-popular-posts',
+			'classname'   => 'sparkling-popular-posts',
 			'description' => esc_html__( 'Sparkling Popular Posts Widget', 'sparkling' ),
 		);
-		  parent::__construct( 'sparkling_popular_posts', esc_html__( 'Sparkling Popular Posts Widget','sparkling' ), $widget_ops );
+		  parent::__construct( 'sparkling_popular_posts', esc_html__( 'Sparkling Popular Posts Widget', 'sparkling' ), $widget_ops );
 	}
 
 	public function enqueue() {
@@ -28,8 +28,8 @@ class Sparkling_Popular_Posts extends WP_Widget {
 	}
 
 	function widget( $args, $instance ) {
-		$title = isset( $instance['title'] ) ? $instance['title'] : esc_html__( 'Popular Posts', 'sparkling' );
-		$limit = isset( $instance['limit'] ) ? $instance['limit'] : 5;
+		$title         = isset( $instance['title'] ) ? $instance['title'] : esc_html__( 'Popular Posts', 'sparkling' );
+		$limit         = isset( $instance['limit'] ) ? $instance['limit'] : 5;
 		$default_image = isset( $instance['default_image'] ) ? $instance['default_image'] : '';
 
 		echo $args['before_widget'];
@@ -48,9 +48,9 @@ class Sparkling_Popular_Posts extends WP_Widget {
 				<?php
 
 				  $featured_args = array(
-					  'posts_per_page' => $limit,
-					  'orderby' => 'comment_count',
-					  'order' => 'DESC',
+					  'posts_per_page'      => $limit,
+					  'orderby'             => 'comment_count',
+					  'order'               => 'DESC',
 					  'ignore_sticky_posts' => 1,
 				  );
 
@@ -59,11 +59,13 @@ class Sparkling_Popular_Posts extends WP_Widget {
 				  /**
 				   * Check if zilla likes plugin exists
 				   */
-				if ( $featured_query->have_posts() ) : while ( $featured_query->have_posts() ) : $featured_query->the_post();
+				if ( $featured_query->have_posts() ) :
+					while ( $featured_query->have_posts() ) :
+						$featured_query->the_post();
 
-					?>
+										?>
 
-					<?php if ( get_the_content() != '' ) : ?>
+										<?php if ( get_the_content() != '' ) : ?>
 
 						<!-- post -->
 						<div class="post">
@@ -74,8 +76,8 @@ class Sparkling_Popular_Posts extends WP_Widget {
 								<a href="<?php echo get_permalink(); ?>">
 								<?php
 								if ( has_post_thumbnail() ) {
-									echo get_the_post_thumbnail( get_the_ID() , 'tab-small' );
-								}elseif ( $default_image ) {
+									echo get_the_post_thumbnail( get_the_ID(), 'tab-small' );
+								} elseif ( $default_image ) {
 									echo wp_get_attachment_image( $default_image, 'tab-small' );
 								}
 								?>
@@ -87,7 +89,7 @@ class Sparkling_Popular_Posts extends WP_Widget {
 						  <div class="post-content">
 
 							  <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
-							  <span class="date"><?php echo get_the_date( get_option('date_format') ); ?></span>
+							  <span class="date"><?php echo get_the_date( get_option( 'date_format' ) ); ?></span>
 
 
 						  </div><!-- end content -->
@@ -95,7 +97,7 @@ class Sparkling_Popular_Posts extends WP_Widget {
 
 						<?php endif; ?>
 
-					<?php
+										<?php
 
 				  endwhile;
 endif;
@@ -120,40 +122,40 @@ endif;
 		}
 		if ( ! isset( $instance['default_image'] ) ) {
 			$instance['default_image'] = '';
-		}else{
+		} else {
 			$instance['default_image'] = wp_get_attachment_image_url( $instance['default_image'], 'medium' );
 		}
 
 		?>
 
-	  	<p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title', 'sparkling' ) ?></label>
+		  <p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title', 'sparkling' ); ?></label>
 
-	  	<input  type="text" value="<?php echo esc_attr( $instance['title'] ); ?>"
+		  <input  type="text" value="<?php echo esc_attr( $instance['title'] ); ?>"
 			  name="<?php echo $this->get_field_name( 'title' ); ?>"
 			  id="<?php $this->get_field_id( 'title' ); ?>"
 			  class="widefat" />
-	  	</p>
+		  </p>
 
-	  	<p><label for="<?php echo $this->get_field_id( 'limit' ); ?>"><?php esc_html_e( 'Limit Posts Number', 'sparkling' ) ?></label>
+		  <p><label for="<?php echo $this->get_field_id( 'limit' ); ?>"><?php esc_html_e( 'Limit Posts Number', 'sparkling' ); ?></label>
 
-	  	<input  type="text" value="<?php echo esc_attr( $instance['limit'] ); ?>"
+		  <input  type="text" value="<?php echo esc_attr( $instance['limit'] ); ?>"
 			  name="<?php echo $this->get_field_name( 'limit' ); ?>"
 			  id="<?php $this->get_field_id( 'limit' ); ?>"
 			  class="widefat" />
-	  	<p>
-	  	<div class="sparkling-media-container media-widget-control">
-	  		<p>
-		  		<label for="<?php echo $this->get_field_id( 'default_image' ); ?>"><?php esc_html_e( 'Default Image', 'sparkling' ) ?></label>
-		  		<input  type="hidden" value="<?php echo esc_attr( $instance['default_image'] ); ?>"
+		  <p>
+		  <div class="sparkling-media-container media-widget-control">
+			  <p>
+				  <label for="<?php echo $this->get_field_id( 'default_image' ); ?>"><?php esc_html_e( 'Default Image', 'sparkling' ); ?></label>
+				  <input  type="hidden" value="<?php echo esc_attr( $instance['default_image'] ); ?>"
 				  name="<?php echo $this->get_field_name( 'default_image' ); ?>"
 				  id="<?php echo $this->get_field_id( 'default_image' ); ?>"
 				  class="widefat" />
-		  	</p>
-		  	<div class="media-widget-preview">
+			  </p>
+			  <div class="media-widget-preview">
 				<div class="attachment-media-view">
-					<div class="placeholder" <?php echo $instance['default_image'] ? 'style="display:none;"' : '' ?>><?php echo esc_html__( 'No media selected', 'sparkling' ); ?></div>
-					<?php if ( $instance['default_image'] ): ?>
-						<img src="<?php echo $instance['default_image'] ?>">
+					<div class="placeholder" <?php echo $instance['default_image'] ? 'style="display:none;"' : ''; ?>><?php echo esc_html__( 'No media selected', 'sparkling' ); ?></div>
+					<?php if ( $instance['default_image'] ) : ?>
+						<img src="<?php echo $instance['default_image']; ?>">
 					<?php endif ?>
 				</div>
 			</div>

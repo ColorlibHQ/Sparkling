@@ -13,8 +13,8 @@ wp_enqueue_script( 'updates' );
 	global $sparkling_required_actions, $sparkling_recommended_plugins;
 	if ( ! empty( $sparkling_required_actions ) ) :
 		/* sparkling_show_required_actions is an array of true/false for each required action that was dismissed */
-		$nr_actions_required = 0;
-		$nr_action_dismissed = 0;
+		$nr_actions_required             = 0;
+		$nr_action_dismissed             = 0;
 		$sparkling_show_required_actions = get_option( 'sparkling_show_required_actions' );
 		foreach ( $sparkling_required_actions as $sparkling_required_action_key => $sparkling_required_action_value ) :
 			$hidden = false;
@@ -38,13 +38,24 @@ wp_enqueue_script( 'updates' );
 					<span data-action="add" class="dashicons dashicons-hidden sparkling-required-action-button"
 						  id="<?php echo esc_attr( $sparkling_required_action_value['id'] ); ?>"></span>
 				<?php endif; ?>
-				<h3><?php if ( ! empty( $sparkling_required_action_value['title'] ) ) : echo $sparkling_required_action_value['title'];
-endif; ?></h3>
+				<h3>
+				<?php
+				if ( ! empty( $sparkling_required_action_value['title'] ) ) :
+					echo $sparkling_required_action_value['title'];
+endif;
+?>
+</h3>
 				<p>
-					<?php if ( ! empty( $sparkling_required_action_value['description'] ) ) : echo $sparkling_required_action_value['description'];
-endif; ?>
-					<?php if ( ! empty( $sparkling_required_action_value['help'] ) ) : echo '<br/>' . $sparkling_required_action_value['help'];
-endif; ?>
+					<?php
+					if ( ! empty( $sparkling_required_action_value['description'] ) ) :
+						echo $sparkling_required_action_value['description'];
+endif;
+?>
+					<?php
+					if ( ! empty( $sparkling_required_action_value['help'] ) ) :
+						echo '<br/>' . $sparkling_required_action_value['help'];
+endif;
+?>
 				</p>
 				<?php
 				if ( ! empty( $sparkling_required_action_value['plugin_slug'] ) ) {
@@ -66,10 +77,10 @@ endif; ?>
 							break;
 					}
 					?>
-					<p class="plugin-card-<?php echo esc_attr( $sparkling_required_action_value['plugin_slug'] ) ?> action_button <?php echo ( 'install' !== $active['needs'] && $active['status'] ) ? 'active' : '' ?>">
-						<a data-slug="<?php echo esc_attr( $sparkling_required_action_value['plugin_slug'] ) ?>"
+					<p class="plugin-card-<?php echo esc_attr( $sparkling_required_action_value['plugin_slug'] ); ?> action_button <?php echo ( 'install' !== $active['needs'] && $active['status'] ) ? 'active' : ''; ?>">
+						<a data-slug="<?php echo esc_attr( $sparkling_required_action_value['plugin_slug'] ); ?>"
 						   class="<?php echo $class; ?>"
-						   href="<?php echo esc_url( $url ) ?>"> <?php echo $label ?> </a>
+						   href="<?php echo esc_url( $url ); ?>"> <?php echo $label; ?> </a>
 					</p>
 					<?php
 				};
@@ -98,19 +109,21 @@ endif; ?>
 			$nr_recommended_plugins ++;
 			echo '<div class="sparkling-action-required-box">';
 
-			if ( isset( $sparkling_show_recommended_plugins[ $slug ] ) && $sparkling_show_recommended_plugins[ $slug ] ) : ?>
+			if ( isset( $sparkling_show_recommended_plugins[ $slug ] ) && $sparkling_show_recommended_plugins[ $slug ] ) :
+			?>
 				<span data-action="add" class="dashicons dashicons-hidden sparkling-recommended-plugin-button"
 					  id="<?php echo esc_attr( $slug ); ?>"></span>
 			<?php else : ?>
 				<span data-action="dismiss" class="dashicons dashicons-visibility sparkling-recommended-plugin-button"
 					  id="<?php echo esc_attr( $slug ); ?>"></span>
-			<?php endif;
+			<?php
+			endif;
 
 			$active = $this->check_active( $slug );
 			$url    = $this->create_action_link( $active['needs'], $slug );
 			$info   = $this->call_plugin_api( $slug );
 			$label  = '';
-			$class = '';
+			$class  = '';
 switch ( $active['needs'] ) {
 	case 'install':
 		$class = 'install-now button';
@@ -126,14 +139,14 @@ switch ( $active['needs'] ) {
 		break;
 }
 			?>
-			<h3><?php echo $label . ': ' . $info->name ?></h3>
+			<h3><?php echo $label . ': ' . $info->name; ?></h3>
 			<p>
-				<?php echo $info->short_description ?>
+				<?php echo $info->short_description; ?>
 			</p>
-			<p class="plugin-card-<?php echo esc_attr( $slug ) ?> action_button <?php echo ( 'install' !== $active['needs'] && $active['status'] ) ? 'active' : '' ?>">
-				<a data-slug="<?php echo esc_attr( $slug ) ?>"
+			<p class="plugin-card-<?php echo esc_attr( $slug ); ?> action_button <?php echo ( 'install' !== $active['needs'] && $active['status'] ) ? 'active' : ''; ?>">
+				<a data-slug="<?php echo esc_attr( $slug ); ?>"
 				   class="<?php echo $class; ?>"
-				   href="<?php echo esc_url( $url ) ?>"> <?php echo $label ?> </a>
+				   href="<?php echo esc_url( $url ); ?>"> <?php echo $label; ?> </a>
 			</p>
 			<?php
 

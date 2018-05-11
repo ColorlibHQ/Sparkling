@@ -60,10 +60,12 @@ function sparkling_welcome_scripts_for_customizer() {
 	wp_add_inline_script( 'plugin-install', 'var pagenow = "customizer";' );
 	wp_enqueue_script( 'sparkling-welcome-screen-customizer-js', get_template_directory_uri() . '/inc/welcome-screen/js/welcome_customizer.js', array( 'customize-controls' ), '1.0', true );
 
-	wp_localize_script( 'sparkling-welcome-screen-customizer-js', 'sparklingWelcomeScreenObject', array(
-		'ajaxurl'            => admin_url( 'admin-ajax.php' ),
-		'template_directory' => get_template_directory_uri(),
-	) );
+	wp_localize_script(
+		'sparkling-welcome-screen-customizer-js', 'sparklingWelcomeScreenObject', array(
+			'ajaxurl'            => admin_url( 'admin-ajax.php' ),
+			'template_directory' => get_template_directory_uri(),
+		)
+	);
 
 }
 
@@ -77,10 +79,10 @@ if ( is_admin() ) {
 		'colorlib-login-customizer' => array(
 			'recommended' => true,
 		),
-		'fancybox-for-wordpress'   => array(
+		'fancybox-for-wordpress'    => array(
 			'recommended' => false,
 		),
-		'simple-custom-post-order' => array(
+		'simple-custom-post-order'  => array(
 			'recommended' => true,
 		),
 
