@@ -8,12 +8,17 @@
 
 <?php
 if ( is_page_template( 'page-fullwidth.php' ) ) {
-	the_post_thumbnail( 'sparkling-featured-fullwidth', array(
-		'class' => 'single-featured',
-	) );
-} else {    the_post_thumbnail( 'sparkling-featured', array(
-	'class' => 'single-featured',
-) );
+	the_post_thumbnail(
+		'sparkling-featured-fullwidth', array(
+			'class' => 'single-featured',
+		)
+	);
+} else {
+	the_post_thumbnail(
+		'sparkling-featured', array(
+			'class' => 'single-featured',
+		)
+	);
 }
 ?>
 
@@ -26,10 +31,12 @@ if ( is_page_template( 'page-fullwidth.php' ) ) {
 	<div class="entry-content">
 		<?php
 			the_content();
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'sparkling' ),
-				'after'  => '</div>',
-			) );
+			wp_link_pages(
+				array(
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'sparkling' ),
+					'after'  => '</div>',
+				)
+			);
 		?>
 
 	<?php
@@ -49,7 +56,7 @@ if ( is_page_template( 'page-fullwidth.php' ) ) {
 						esc_html__( 'Edit %s', 'sparkling' ),
 						the_title( '<span class="screen-reader-text">"', '"</span>', false )
 					),
-					'<i class="fa fa-pencil-square-o"></i><span class="edit-link">',
+					'<i class="fa fa-edit"></i><span class="edit-link">',
 					'</span>'
 				);
 			?>

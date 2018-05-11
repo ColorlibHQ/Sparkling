@@ -8,7 +8,10 @@
 get_header();
 ?>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php
+			while ( have_posts() ) :
+				the_post();
+?>
 				<div class="post-inner-content">
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<header class="entry-header">
@@ -33,14 +36,18 @@ get_header();
 										 * Grab the IDs of all the image attachments in a gallery so we can get the URL of the next adjacent image in a gallery,
 										 * or the first image (if we're looking at the last image in a gallery), or, in a gallery of one, just the link to that image file
 										 */
-										$attachments = array_values( get_children( array(
-											'post_parent'    => $post->post_parent,
-											'post_status'    => 'inherit',
-											'post_type'      => 'attachment',
-											'post_mime_type' => 'image',
-											'order'          => 'ASC',
-											'orderby'        => 'menu_order ID',
-										) ) );
+										$attachments = array_values(
+											get_children(
+												array(
+													'post_parent' => $post->post_parent,
+													'post_status' => 'inherit',
+													'post_type' => 'attachment',
+													'post_mime_type' => 'image',
+													'order'   => 'ASC',
+													'orderby' => 'menu_order ID',
+												)
+											)
+										);
 									foreach ( $attachments as $k => $attachment ) {
 										if ( $attachment->ID == $post->ID ) {
 											break;
@@ -61,10 +68,12 @@ get_header();
 									}
 									?>
 
-									<a href="<?php echo $next_attachment_url; ?>" title="<?php the_title_attribute(); ?>" rel="attachment"><?php
-										$attachment_size = apply_filters( 'sparkling_attachment_size', array( 1200, 1200 ) ); // Filterable image size.
-										echo wp_get_attachment_image( $post->ID, $attachment_size );
-									?></a>
+									<a href="<?php echo $next_attachment_url; ?>" title="<?php the_title_attribute(); ?>" rel="attachment">
+														<?php
+														$attachment_size = apply_filters( 'sparkling_attachment_size', array( 1200, 1200 ) ); // Filterable image size.
+														echo wp_get_attachment_image( $post->ID, $attachment_size );
+									?>
+									</a>
 								</div><!-- .attachment -->
 
 								<?php if ( ! empty( $post->post_excerpt ) ) : ?>
@@ -76,10 +85,12 @@ get_header();
 
 							<?php the_content(); ?>
 							<?php
-								wp_link_pages( array(
-									'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'sparkling' ),
-									'after'  => '</div>',
-								) );
+								wp_link_pages(
+									array(
+										'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'sparkling' ),
+										'after'  => '</div>',
+									)
+								);
 							?>
 
 						</div><!-- .entry-content -->

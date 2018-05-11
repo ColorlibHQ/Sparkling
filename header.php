@@ -7,7 +7,8 @@
  * @package sparkling
  */
 
-if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'], 'MSIE' ) !== false) ) { header( 'X-UA-Compatible: IE=edge,chrome=1' );
+if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ( strpos( $_SERVER['HTTP_USER_AGENT'], 'MSIE' ) !== false ) ) {
+	header( 'X-UA-Compatible: IE=edge,chrome=1' );
 } ?>
 <!doctype html>
 <!--[if !IE]>
@@ -35,7 +36,12 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 <div id="page" class="hfeed site">
 
 	<header id="masthead" class="site-header" role="banner">
-		<nav class="navbar navbar-default <?php if ( of_get_option( 'sticky_header' ) ) { echo 'navbar-fixed-top';} ?>" role="navigation">
+		<nav class="navbar navbar-default 
+		<?php
+		if ( of_get_option( 'sticky_header' ) ) {
+			echo 'navbar-fixed-top';}
+?>
+" role="navigation">
 			<div class="container">
 				<div class="row">
 					<div class="site-navigation-inner col-sm-12">
@@ -52,11 +58,13 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 																	<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
 																		<?php if ( is_home() ) { ?>
 																		<h1 class="site-name hide-site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-																	<?php }
+																	<?php
+}
 } else {
-	echo is_home() ?  '<h1 class="site-name">' : '<p class="site-name">'; ?>
+	echo is_home() ? '<h1 class="site-name">' : '<p class="site-name">';
+	?>
 																		<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-																<?php echo is_home() ?  '</h1>' : '</p>'; ?>
+																<?php echo is_home() ? '</h1>' : '</p>'; ?>
 															<?php } ?>
 														</div><!-- end of #logo -->
 						</div>

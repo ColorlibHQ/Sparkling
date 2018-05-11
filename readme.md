@@ -64,6 +64,9 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 # Changelog
 
+# 2.4.3
+* Fixed a few more bugs with FA5 & missing icons
+
 # 2.4.1
 * Fixed a bug with FontAwesome 5 & RSS feed icon
 

@@ -15,7 +15,8 @@
 					$archives_args = array(
 						'type' => 'monthly',
 					);
-					wp_get_archives( $archives_args ); ?>
+					wp_get_archives( $archives_args );
+					?>
 				</ul>
 			</aside>
 
