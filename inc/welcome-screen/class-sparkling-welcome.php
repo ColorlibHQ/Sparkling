@@ -19,20 +19,26 @@ class Sparkling_Welcome {
 		add_action( 'admin_enqueue_scripts', array( $this, 'sparkling_welcome_style_and_scripts' ) );
 
 		/* ajax callback for dismissable required actions */
-		add_action( 'wp_ajax_sparkling_dismiss_required_action', array(
-			$this,
-			'sparkling_dismiss_required_action_callback',
-		) );
+		add_action(
+			'wp_ajax_sparkling_dismiss_required_action', array(
+				$this,
+				'sparkling_dismiss_required_action_callback',
+			)
+		);
 
-		add_action( 'wp_ajax_sparkling_dismiss_recommended_plugins', array(
-			$this,
-			'sparkling_dismiss_recommended_plugins_callback',
-		) );
+		add_action(
+			'wp_ajax_sparkling_dismiss_recommended_plugins', array(
+				$this,
+				'sparkling_dismiss_recommended_plugins_callback',
+			)
+		);
 
-		add_action( 'wp_ajax_sparkling_sparkling_set_frontpage', array(
-			$this,
-			'sparkling_set_pages',
-		) );
+		add_action(
+			'wp_ajax_sparkling_sparkling_set_frontpage', array(
+				$this,
+				'sparkling_set_pages',
+			)
+		);
 
 		add_action( 'admin_init', array( $this, 'sparkling_activate_plugin' ) );
 		add_action( 'admin_init', array( $this, 'sparkling_deactivate_plugin' ) );
@@ -45,7 +51,7 @@ class Sparkling_Welcome {
 			 * Check action
 			 */
 			if ( ! empty( $_GET['action'] ) && 'sparkling_set_frontpage' === $_GET['action'] ) {
-				$about      = get_page_by_title( 'Homepage' );
+				$about = get_page_by_title( 'Homepage' );
 				update_option( 'page_on_front', $about->ID );
 				update_option( 'show_on_front', 'page' );
 
@@ -101,10 +107,12 @@ class Sparkling_Welcome {
 		$action_count = $this->count_actions();
 		$title        = $action_count > 0 ? 'About Sparkling <span class="badge-action-count">' . esc_html( $action_count ) . '</span>' : 'About Sparkling';
 
-		add_theme_page( 'About Sparkling', $title, 'edit_theme_options', 'sparkling-welcome', array(
-			$this,
-			'sparkling_welcome_screen',
-		) );
+		add_theme_page(
+			'About Sparkling', $title, 'edit_theme_options', 'sparkling-welcome', array(
+				$this,
+				'sparkling_welcome_screen',
+			)
+		);
 	}
 
 	/**
@@ -149,12 +157,14 @@ class Sparkling_Welcome {
 		if ( 'customize' != $screen->base ) {
 			wp_enqueue_script( 'sparkling-welcome-screen-js', get_template_directory_uri() . '/inc/welcome-screen/js/welcome.js', array( 'jquery' ), '1.0', true );
 
-			wp_localize_script( 'sparkling-welcome-screen-js', 'sparklingWelcomeScreenObject', array(
-				'nr_actions_required'      => $this->count_actions(),
-				'ajaxurl'                  => admin_url( 'admin-ajax.php' ),
-				'template_directory'       => get_template_directory_uri(),
-				'no_required_actions_text' => __( 'Hooray! There are no required actions for you right now.', 'sparkling' ),
-			) );
+			wp_localize_script(
+				'sparkling-welcome-screen-js', 'sparklingWelcomeScreenObject', array(
+					'nr_actions_required'      => $this->count_actions(),
+					'ajaxurl'                  => admin_url( 'admin-ajax.php' ),
+					'template_directory'       => get_template_directory_uri(),
+					'no_required_actions_text' => __( 'Hooray! There are no required actions for you right now.', 'sparkling' ),
+				)
+			);
 		}
 
 	}
@@ -256,26 +266,28 @@ class Sparkling_Welcome {
 		include_once( ABSPATH . 'wp-admin/includes/plugin-install.php' );
 		$call_api = get_transient( 'sparkling_plugin_information_transient_' . $slug );
 		if ( false === $call_api ) {
-			$call_api = plugins_api( 'plugin_information', array(
-				'slug'   => $slug,
-				'fields' => array(
-					'downloaded'        => false,
-					'rating'            => false,
-					'description'       => false,
-					'short_description' => true,
-					'donate_link'       => false,
-					'tags'              => false,
-					'sections'          => true,
-					'homepage'          => true,
-					'added'             => false,
-					'last_updated'      => false,
-					'compatibility'     => false,
-					'tested'            => false,
-					'requires'          => false,
-					'downloadlink'      => false,
-					'icons'             => true,
-				),
-			) );
+			$call_api = plugins_api(
+				'plugin_information', array(
+					'slug'   => $slug,
+					'fields' => array(
+						'downloaded'        => false,
+						'rating'            => false,
+						'description'       => false,
+						'short_description' => true,
+						'donate_link'       => false,
+						'tags'              => false,
+						'sections'          => true,
+						'homepage'          => true,
+						'added'             => false,
+						'last_updated'      => false,
+						'compatibility'     => false,
+						'tested'            => false,
+						'requires'          => false,
+						'downloadlink'      => false,
+						'icons'             => true,
+					),
+				)
+			);
 			set_transient( 'sparkling_plugin_information_transient_' . $slug, $call_api, 30 * MINUTE_IN_SECONDS );
 		}
 
@@ -290,13 +302,13 @@ class Sparkling_Welcome {
 
 			return array(
 				'status' => is_plugin_active( $slug . '/' . $slug . '.php' ),
-				'needs' => $needs,
+				'needs'  => $needs,
 			);
 		}
 
 		return array(
 			'status' => false,
-			'needs' => 'install',
+			'needs'  => 'install',
 		);
 	}
 
@@ -329,22 +341,26 @@ class Sparkling_Welcome {
 				);
 				break;
 			case 'deactivate':
-				return add_query_arg( array(
-					'action'        => 'deactivate',
-					'plugin'        => rawurlencode( $slug . '/' . $slug . '.php' ),
-					'plugin_status' => 'all',
-					'paged'         => '1',
-					'_wpnonce'      => wp_create_nonce( 'deactivate-plugin_' . $slug . '/' . $slug . '.php' ),
-				), network_admin_url( 'plugins.php' ) );
+				return add_query_arg(
+					array(
+						'action'        => 'deactivate',
+						'plugin'        => rawurlencode( $slug . '/' . $slug . '.php' ),
+						'plugin_status' => 'all',
+						'paged'         => '1',
+						'_wpnonce'      => wp_create_nonce( 'deactivate-plugin_' . $slug . '/' . $slug . '.php' ),
+					), network_admin_url( 'plugins.php' )
+				);
 				break;
 			case 'activate':
-				return add_query_arg( array(
-					'action'        => 'activate',
-					'plugin'        => rawurlencode( $slug . '/' . $slug . '.php' ),
-					'plugin_status' => 'all',
-					'paged'         => '1',
-					'_wpnonce'      => wp_create_nonce( 'activate-plugin_' . $slug . '/' . $slug . '.php' ),
-				), network_admin_url( 'plugins.php' ) );
+				return add_query_arg(
+					array(
+						'action'        => 'activate',
+						'plugin'        => rawurlencode( $slug . '/' . $slug . '.php' ),
+						'plugin_status' => 'all',
+						'paged'         => '1',
+						'_wpnonce'      => wp_create_nonce( 'activate-plugin_' . $slug . '/' . $slug . '.php' ),
+					), network_admin_url( 'plugins.php' )
+				);
 				break;
 		}
 	}
@@ -359,7 +375,7 @@ class Sparkling_Welcome {
 		require_once( ABSPATH . 'wp-admin/admin.php' );
 		require_once( ABSPATH . 'wp-admin/admin-header.php' );
 
-		$sparkling      = wp_get_theme();
+		$sparkling    = wp_get_theme();
 		$active_tab   = isset( $_GET['tab'] ) ? $_GET['tab'] : 'getting_started';
 		$action_count = $this->count_actions();
 

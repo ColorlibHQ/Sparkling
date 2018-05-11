@@ -24,17 +24,21 @@
  *
  */
 function sparkling_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'sparkling_custom_header_args', array(
-		'default-image'          => '',
-		'default-text-color'     => 'dadada',
-		'width'                  => 300,
-		'height'                 => 76,
-		'flex-height'                        => true,
-		'flex-width'                         => true,
-		'wp-head-callback'       => 'sparkling_header_style',
-		'admin-head-callback'    => 'sparkling_admin_header_style',
-		'admin-preview-callback' => 'sparkling_admin_header_image',
-	) ) );
+	add_theme_support(
+		'custom-header', apply_filters(
+			'sparkling_custom_header_args', array(
+				'default-image'          => '',
+				'default-text-color'     => 'dadada',
+				'width'                  => 300,
+				'height'                 => 76,
+				'flex-height'            => true,
+				'flex-width'             => true,
+				'wp-head-callback'       => 'sparkling_header_style',
+				'admin-head-callback'    => 'sparkling_admin_header_style',
+				'admin-preview-callback' => 'sparkling_admin_header_image',
+			)
+		)
+	);
 }
 add_action( 'after_setup_theme', 'sparkling_custom_header_setup' );
 

@@ -117,15 +117,17 @@ if ( ! function_exists( 'sparkling_header_menu' ) ) :
 	 */
 	function sparkling_header_menu() {
 		// display the WordPress Custom Menu if available
-		wp_nav_menu( array(
-			'menu'            => 'primary',
-			'theme_location'  => 'primary',
-			'container'       => 'div',
-			'container_class' => 'collapse navbar-collapse navbar-ex1-collapse',
-			'menu_class'      => 'nav navbar-nav',
-			'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-			'walker'          => new WP_Bootstrap_Navwalker(),
-		) );
+		wp_nav_menu(
+			array(
+				'menu'            => 'primary',
+				'theme_location'  => 'primary',
+				'container'       => 'div',
+				'container_class' => 'collapse navbar-collapse navbar-ex1-collapse',
+				'menu_class'      => 'nav navbar-nav',
+				'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+				'walker'          => new WP_Bootstrap_Navwalker(),
+			)
+		);
 	} /* end header menu */
 endif;
 
@@ -135,18 +137,20 @@ if ( ! function_exists( 'sparkling_footer_links' ) ) :
 	 */
 	function sparkling_footer_links() {
 		// display the WordPress Custom Menu if available
-		wp_nav_menu( array(
-			'container'       => '',                              // remove nav container
-			'container_class' => 'footer-links clearfix',   // class of container (should you choose to use it)
-			'menu'            => esc_html__( 'Footer Links', 'sparkling' ),   // nav name
-			'menu_class'      => 'nav footer-nav clearfix',      // adding custom nav class
-			'theme_location'  => 'footer-links',             // where it's located in the theme
-			'before'          => '',                                 // before the menu
-			'after'           => '',                                  // after the menu
-			'link_before'     => '',                            // before each link
-			'link_after'      => '',                             // after each link
-			'fallback_cb'     => 'sparkling_footer_links_fallback',// fallback function
-		) );
+		wp_nav_menu(
+			array(
+				'container'       => '',                              // remove nav container
+				'container_class' => 'footer-links clearfix',   // class of container (should you choose to use it)
+				'menu'            => esc_html__( 'Footer Links', 'sparkling' ),   // nav name
+				'menu_class'      => 'nav footer-nav clearfix',      // adding custom nav class
+				'theme_location'  => 'footer-links',             // where it's located in the theme
+				'before'          => '',                                 // before the menu
+				'after'           => '',                                  // after the menu
+				'link_before'     => '',                            // before each link
+				'link_after'      => '',                             // after each link
+				'fallback_cb'     => 'sparkling_footer_links_fallback', // fallback function
+			)
+		);
 	} /* end sparkling footer link */
 endif;
 
@@ -183,18 +187,21 @@ if ( ! function_exists( 'sparkling_featured_slider' ) ) :
 			$count    = of_get_option( 'sparkling_slide_number' );
 			$slidecat = of_get_option( 'sparkling_slide_categories' );
 
-			$query = new WP_Query( array(
-				'cat'            => $slidecat,
-				'posts_per_page' => $count,
-				'meta_query'     => array(
-					array(
-						'key'     => '_thumbnail_id',
-						'compare' => 'EXISTS'
+			$query = new WP_Query(
+				array(
+					'cat'            => $slidecat,
+					'posts_per_page' => $count,
+					'meta_query'     => array(
+						array(
+							'key'     => '_thumbnail_id',
+							'compare' => 'EXISTS',
+						),
 					),
-				),
-			) );
+				)
+			);
 			if ( $query->have_posts() ) :
-				while ( $query->have_posts() ) : $query->the_post();
+				while ( $query->have_posts() ) :
+					$query->the_post();
 
 					if ( of_get_option( 'sparkling_slider_link_checkbox', 1 ) == 1 ) {
 						echo '<li><a href="' . get_permalink() . '">';
@@ -365,62 +372,63 @@ add_action( 'optionsframework_after', 'sparkling_options_display_sidebar' );
 
 function sparkling_options_display_sidebar() {
 	?>
-    <!-- Twitter -->
-    <script>!function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'
-        if (!d.getElementById(id)) {
-          js = d.createElement(s)
-          js.id = id
-          js.src = p + '://platform.twitter.com/widgets.js'
-          fjs.parentNode.insertBefore(js, fjs)
-        }
-      }(document, 'script', 'twitter-wjs')</script>
+	<!-- Twitter -->
+	<script>!function (d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'
+		if (!d.getElementById(id)) {
+		  js = d.createElement(s)
+		  js.id = id
+		  js.src = p + '://platform.twitter.com/widgets.js'
+		  fjs.parentNode.insertBefore(js, fjs)
+		}
+	  }(document, 'script', 'twitter-wjs')</script>
 
-    <!-- Facebook -->
-    <div id="fb-root"></div>
-    <div id="fb-root"></div>
-    <script>(function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0]
-        if (d.getElementById(id)) return
-        js = d.createElement(s)
-        js.id = id
-        js.src = '//connect.facebook.net/en_US/all.js#xfbml=1&appId=328285627269392'
-        fjs.parentNode.insertBefore(js, fjs)
-      }(document, 'script', 'facebook-jssdk'))</script>
+	<!-- Facebook -->
+	<div id="fb-root"></div>
+	<div id="fb-root"></div>
+	<script>(function (d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0]
+		if (d.getElementById(id)) return
+		js = d.createElement(s)
+		js.id = id
+		js.src = '//connect.facebook.net/en_US/all.js#xfbml=1&appId=328285627269392'
+		fjs.parentNode.insertBefore(js, fjs)
+	  }(document, 'script', 'facebook-jssdk'))</script>
 
-    <div id="optionsframework-sidebar" class="metabox-holder">
-        <div id="optionsframework" class="postbox">
-            <h3><?php esc_html_e( 'Support and Documentation', 'sparkling' ) ?></h3>
-            <div class="inside">
-                <div id="social-share">
-                    <div class="fb-like" data-href="<?php echo esc_url( 'https://www.facebook.com/colorlib' ); ?>"
-                         data-send="false" data-layout="button_count" data-width="90" data-show-faces="true"></div>
-                    <div class="tw-follow"><a href="https://twitter.com/colorlib" class="twitter-follow-button"
-                                              data-show-count="false">Follow @colorlib</a></div>
-                </div>
-                <p>
-                    <b><a href="<?php echo esc_url( 'http://colorlib.com/wp/support/sparkling' ); ?>"><?php esc_html_e( 'Sparkling Documentation', 'sparkling' ); ?></a></b>
-                </p>
-                <p><?php _e( 'The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via', 'sparkling' ) ?>
-                    <a href="<?php echo esc_url( 'http://colorlib.com/wp/forums' ); ?>"><?php esc_html_e( 'Colorlib support forum', 'sparkling' ) ?></a>.
-                </p>
-                <p><?php esc_html_e( 'If you like this theme, I\'d appreciate any of the following:', 'sparkling' ) ?></p>
-                <ul>
-                    <li><a class="button"
-                           href="<?php echo esc_url( 'http://wordpress.org/support/view/theme-reviews/sparkling?filter=5' ); ?>"
-                           title="<?php esc_attr_e( 'Rate this Theme', 'sparkling' ); ?>"
-                           target="_blank"><?php printf( esc_html__( 'Rate this Theme', 'sparkling' ) ); ?></a></li>
-                    <li><a class="button" href="<?php echo esc_url( 'http://www.facebook.com/colorlib' ); ?>"
-                           title="Like Colorlib on Facebook"
-                           target="_blank"><?php printf( esc_html__( 'Like on Facebook', 'sparkling' ) ); ?></a></li>
-                    <li><a class="button" href="<?php echo esc_url( 'http://twitter.com/colorlib/' ); ?>"
-                           title="Follow Colrolib on Twitter"
-                           target="_blank"><?php printf( esc_html__( 'Follow on Twitter', 'sparkling' ) ); ?></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-<?php }
+	<div id="optionsframework-sidebar" class="metabox-holder">
+		<div id="optionsframework" class="postbox">
+			<h3><?php esc_html_e( 'Support and Documentation', 'sparkling' ); ?></h3>
+			<div class="inside">
+				<div id="social-share">
+					<div class="fb-like" data-href="<?php echo esc_url( 'https://www.facebook.com/colorlib' ); ?>"
+						 data-send="false" data-layout="button_count" data-width="90" data-show-faces="true"></div>
+					<div class="tw-follow"><a href="https://twitter.com/colorlib" class="twitter-follow-button"
+											  data-show-count="false">Follow @colorlib</a></div>
+				</div>
+				<p>
+					<b><a href="<?php echo esc_url( 'http://colorlib.com/wp/support/sparkling' ); ?>"><?php esc_html_e( 'Sparkling Documentation', 'sparkling' ); ?></a></b>
+				</p>
+				<p><?php _e( 'The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via', 'sparkling' ); ?>
+					<a href="<?php echo esc_url( 'http://colorlib.com/wp/forums' ); ?>"><?php esc_html_e( 'Colorlib support forum', 'sparkling' ); ?></a>.
+				</p>
+				<p><?php esc_html_e( 'If you like this theme, I\'d appreciate any of the following:', 'sparkling' ); ?></p>
+				<ul>
+					<li><a class="button"
+						   href="<?php echo esc_url( 'http://wordpress.org/support/view/theme-reviews/sparkling?filter=5' ); ?>"
+						   title="<?php esc_attr_e( 'Rate this Theme', 'sparkling' ); ?>"
+						   target="_blank"><?php printf( esc_html__( 'Rate this Theme', 'sparkling' ) ); ?></a></li>
+					<li><a class="button" href="<?php echo esc_url( 'http://www.facebook.com/colorlib' ); ?>"
+						   title="Like Colorlib on Facebook"
+						   target="_blank"><?php printf( esc_html__( 'Like on Facebook', 'sparkling' ) ); ?></a></li>
+					<li><a class="button" href="<?php echo esc_url( 'http://twitter.com/colorlib/' ); ?>"
+						   title="Follow Colrolib on Twitter"
+						   target="_blank"><?php printf( esc_html__( 'Follow on Twitter', 'sparkling' ) ); ?></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<?php
+}
 
 /**
  * Add Bootstrap thumbnail styling to images with captions
@@ -448,11 +456,11 @@ function sparkling_caption( $output, $attr, $content ) {
 	}
 
 	// Set up the attributes for the caption <figure>
-	$attributes = ( ! empty( $attr['id'] ) ? ' id="' . esc_attr( $attr['id'] ) . '"' : '' );
+	$attributes  = ( ! empty( $attr['id'] ) ? ' id="' . esc_attr( $attr['id'] ) . '"' : '' );
 	$attributes .= ' class="thumbnail wp-caption ' . esc_attr( $attr['align'] ) . '"';
 	$attributes .= ' style="width: ' . ( esc_attr( $attr['width'] ) + 10 ) . 'px"';
 
-	$output = '<figure' . $attributes . '>';
+	$output  = '<figure' . $attributes . '>';
 	$output .= do_shortcode( $content );
 	$output .= '<figcaption class="caption wp-caption-text">' . $attr['caption'] . '</figcaption>';
 	$output .= '</figure>';
@@ -487,11 +495,13 @@ function sparkling_social() {
  */
 if ( ! function_exists( 'sparkling_post_nav' ) ) {
 	function sparkling_post_nav() {
-		the_post_navigation( array(
-			'next_text'    => '<span class="post-title">%title <i class="fa fa-chevron-right"></i></span>',
-			'prev_text'    => '<i class="fa fa-chevron-left"></i> <span class="post-title">%title</span>',
-			'in_same_term' => true,
-		) );
+		the_post_navigation(
+			array(
+				'next_text'    => '<span class="post-title">%title <i class="fa fa-chevron-right"></i></span>',
+				'prev_text'    => '<i class="fa fa-chevron-left"></i> <span class="post-title">%title</span>',
+				'in_same_term' => true,
+			)
+		);
 		//
 	}
 }
@@ -501,10 +511,12 @@ if ( ! function_exists( 'sparkling_post_nav' ) ) {
  */
 if ( ! function_exists( 'sparkling_paging_nav' ) ) {
 	function sparkling_paging_nav() {
-		the_posts_pagination( array(
-			'prev_text' => '<i class="fa fa-chevron-left"></i> ' . __( 'Newer posts', 'sparkling' ),
-			'next_text' => __( 'Older posts', 'sparkling' ) . ' <i class="fa fa-chevron-right"></i>',
-		) );
+		the_posts_pagination(
+			array(
+				'prev_text' => '<i class="fa fa-chevron-left"></i> ' . __( 'Newer posts', 'sparkling' ),
+				'next_text' => __( 'Older posts', 'sparkling' ) . ' <i class="fa fa-chevron-right"></i>',
+			)
+		);
 	}
 }
 
@@ -525,19 +537,21 @@ add_filter( 'nav_menu_link_attributes', 'sparkling_add_top_level_menu_url', 99, 
  * Makes the top level navigation menu item clickable
  */
 function sparkling_make_top_level_menu_clickable() {
-	if ( ! wp_is_mobile() ) { ?>
-        <script type="text/javascript">
-          jQuery(document).ready(function ($) {
-            if ($(window).width() >= 767) {
-              $('.navbar-nav > li.menu-item > a').click(function () {
-                if ($(this).attr('target') !== '_blank') {
-                  window.location = $(this).attr('href')
-                }
-              })
-            }
-          })
-        </script>
-	<?php }
+	if ( ! wp_is_mobile() ) {
+	?>
+		<script type="text/javascript">
+		  jQuery(document).ready(function ($) {
+			if ($(window).width() >= 767) {
+			  $('.navbar-nav > li.menu-item > a').click(function () {
+				if ($(this).attr('target') !== '_blank') {
+				  window.location = $(this).attr('href')
+				}
+			  })
+			}
+		  })
+		</script>
+	<?php
+	}
 }
 
 add_action( 'wp_footer', 'sparkling_make_top_level_menu_clickable', 1 );

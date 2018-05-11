@@ -13,7 +13,8 @@
 		 <main id="main" class="site-main" role="main">
 
 			<?php
-			if ( have_posts() ) : ?>
+			if ( have_posts() ) :
+			?>
 
 				<header class="page-header">
 					<?php
@@ -24,7 +25,8 @@
 
 				<?php
 				/* Start the Loop */
-				while ( have_posts() ) : the_post();
+				while ( have_posts() ) :
+					the_post();
 
 					/*
 					* Include the Post-Format-specific template for the content.
@@ -35,16 +37,19 @@
 
 				endwhile;
 
-				the_posts_pagination( array(
-					'prev_text' => '<i class="fa fa-chevron-left"></i> ' . __( 'Newer posts', 'sparkling' ),
-					'next_text' => __( 'Older posts', 'sparkling' ) . ' <i class="fa fa-chevron-right"></i>',
-				) );
+				the_posts_pagination(
+					array(
+						'prev_text' => '<i class="fa fa-chevron-left"></i> ' . __( 'Newer posts', 'sparkling' ),
+						'next_text' => __( 'Older posts', 'sparkling' ) . ' <i class="fa fa-chevron-right"></i>',
+					)
+				);
 
 		 else :
 
 				get_template_part( 'template-parts/content', 'none' );
 
-		 endif; ?>
+		 endif;
+			?>
 
 		 </main><!-- #main -->
 	 </div><!-- #primary -->
