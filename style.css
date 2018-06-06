@@ -2013,6 +2013,10 @@ p.logged-in-as {
     background-color: #4183C4 !important;
 }
 
+#menu-social li a[href*="gitlab.com"]:hover {
+    background-color: #fc9403 !important;
+}
+
 #menu-social li a[href*="stackoverflow.com"]:hover {
     background-color: #F48024 !important;
 }
@@ -2059,6 +2063,11 @@ p.logged-in-as {
 #menu-social li a[href*="github.com"]:before {
     font-family: 'Font Awesome\ 5 Brands';
     content: "\f09b"
+}
+
+#menu-social li a[href*="gitlab.com"]:before {
+    font-family: 'Font Awesome\ 5 Brands';
+    content: "\f296"
 }
 
 #menu-social li a[href*="stackoverflow.com"]:before {
