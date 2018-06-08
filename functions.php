@@ -243,6 +243,33 @@ function sparkling_remove_gallery_css( $css ) {
 
 add_filter( 'gallery_style', 'sparkling_remove_gallery_css' );
 
+
+function sparkling_archive_pages_title($title) {
+	if (is_tag()) {
+		$template = of_get_option('tag_title');
+		if (empty($template)) {
+			return single_tag_title('Tag: ', false);
+		}
+		else {
+			return sprintf($template, single_tag_title('', false));
+		}
+	}
+	elseif (is_category()) {
+		$template = of_get_option('category_title');
+		if (empty($template)) {
+			return single_cat_title('Category: ', false);
+		}
+		else {
+			return sprintf($template, single_cat_title('', false));
+		}
+	}
+	else {
+		return $title;
+	}
+}
+
+add_filter('get_the_archive_title', 'sparkling_archive_pages_title');
+
 /**
  * Enqueue scripts and styles.
  */
