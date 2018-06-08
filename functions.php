@@ -248,7 +248,7 @@ function sparkling_archive_pages_title($title) {
 	if (is_tag()) {
 		$template = of_get_option('tag_title');
 		if (empty($template)) {
-			return single_tag_title('Tag: ', false);
+			return $title;
 		}
 		else {
 			return sprintf($template, single_tag_title('', false));
@@ -257,10 +257,46 @@ function sparkling_archive_pages_title($title) {
 	elseif (is_category()) {
 		$template = of_get_option('category_title');
 		if (empty($template)) {
-			return single_cat_title('Category: ', false);
+			return $title;
 		}
 		else {
 			return sprintf($template, single_cat_title('', false));
+		}
+	}
+	elseif (is_author()) {
+		$template = of_get_option('author_title');
+		if (empty($template)) {
+			return $title;
+		}
+		else {
+			return sprintf($template, get_the_author());
+		}
+	}
+	elseif (is_year()) {
+		$template = of_get_option('year_title');
+		if (empty($template)) {
+			return $title;
+		}
+		else {
+			return sprintf($template, get_the_date(_x('Y', 'yearly archives date format')));
+		}
+	}
+	elseif (is_month()) {
+		$template = of_get_option('month_title');
+		if (empty($template)) {
+			return $title;
+		}
+		else {
+			return sprintf($template, get_the_date(_x('F Y', 'monthly archives date format')));
+		}
+	}
+	elseif (is_day()) {
+		$template = of_get_option('day_title');
+		if (empty($template)) {
+			return $title;
+		}
+		else {
+			return sprintf($template, get_the_date(_x('F j, Y', 'daily archives date format')));
 		}
 	}
 	else {
