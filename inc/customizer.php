@@ -815,6 +815,116 @@ function sparkling_customizer( $wp_customize ) {
 		)
 	);
 
+	/* Archive pages settings */
+	$wp_customize->add_section(
+			'sparkling_archive_section', array(
+			'title'    => esc_html__( 'Archive Pages', 'sparkling' ),
+			'priority' => 50,
+			'panel'    => 'sparkling_main_options',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'sparkling[tag_title]', array(
+			'default'           => '',
+			'type'              => 'option',
+			'sanitize_callback' => 'esc_html',
+		)
+	);
+
+	$wp_customize->add_control(
+		'sparkling[tag_title]', array(
+			'label'       => __( 'Tag Page Title', 'sparkling' ),
+			'section'     => 'sparkling_archive_section',
+			'description' => __( 'The headline for your tag pages. You can use %s as a placeholder for the tag. Leave empty for default.', 'sparkling' ),
+			'type'        => 'text',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'sparkling[category_title]', array(
+			'default'           => '',
+			'type'              => 'option',
+			'sanitize_callback' => 'esc_html',
+		)
+	);
+
+	$wp_customize->add_control(
+		'sparkling[category_title]', array(
+			'label'       => __( 'Category Page Title', 'sparkling' ),
+			'section'     => 'sparkling_archive_section',
+			'description' => __( 'The headline for your category pages. You can use %s as a placeholder for the category. Leave empty for default.', 'sparkling' ),
+			'type'        => 'text',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'sparkling[author_title]', array(
+			'default'           => '',
+			'type'              => 'option',
+			'sanitize_callback' => 'esc_html',
+		)
+	);
+
+	$wp_customize->add_control(
+		'sparkling[author_title]', array(
+			'label'       => __( 'Author Page Title', 'sparkling' ),
+			'section'     => 'sparkling_archive_section',
+			'description' => __( 'The headline for your author pages. You can use %s as a placeholder for the author\'s name. Leave empty for default.', 'sparkling' ),
+			'type'        => 'text',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'sparkling[year_title]', array(
+			'default'           => '',
+			'type'              => 'option',
+			'sanitize_callback' => 'esc_html',
+		)
+	);
+
+	$wp_customize->add_control(
+		'sparkling[year_title]', array(
+			'label'       => __( 'Year Page Title', 'sparkling' ),
+			'section'     => 'sparkling_archive_section',
+			'description' => __( 'The headline for your year pages. You can use %s as a placeholder for the year. Leave empty for default.', 'sparkling' ),
+			'type'        => 'text',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'sparkling[month_title]', array(
+			'default'           => '',
+			'type'              => 'option',
+			'sanitize_callback' => 'esc_html',
+		)
+	);
+
+	$wp_customize->add_control(
+		'sparkling[month_title]', array(
+			'label'       => __( 'Month Page Title', 'sparkling' ),
+			'section'     => 'sparkling_archive_section',
+			'description' => __( 'The headline for your month pages. You can use %s as a placeholder for the month. Leave empty for default.', 'sparkling' ),
+			'type'        => 'text',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'sparkling[day_title]', array(
+			'default'           => '',
+			'type'              => 'option',
+			'sanitize_callback' => 'esc_html',
+		)
+	);
+
+	$wp_customize->add_control(
+		'sparkling[day_title]', array(
+			'label'       => __( 'Day Page Title', 'sparkling' ),
+			'section'     => 'sparkling_archive_section',
+			'description' => __( 'The headline for your day pages. You can use %s as a placeholder for the day. Leave empty for default.', 'sparkling' ),
+			'type'        => 'text',
+		)
+	);
 }
 
 add_action( 'customize_register', 'sparkling_customizer' );
