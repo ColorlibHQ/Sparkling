@@ -83,7 +83,7 @@ function sparkling_customizer( $wp_customize ) {
 	/* Sparkling Main Options */
 	$wp_customize->add_section(
 		'sparkling_slider_options', array(
-			'title'    => __( 'Slider options', 'sparkling' ),
+			'title'    => __( 'Slider Options', 'sparkling' ),
 			'priority' => 31,
 			'panel'    => 'sparkling_main_options',
 		)
@@ -161,7 +161,7 @@ function sparkling_customizer( $wp_customize ) {
 
 	$wp_customize->add_section(
 		'sparkling_layout_options', array(
-			'title'    => __( 'Layout options', 'sparkling' ),
+			'title'    => __( 'Layout Options', 'sparkling' ),
 			'priority' => 31,
 			'panel'    => 'sparkling_main_options',
 		)
@@ -446,7 +446,7 @@ function sparkling_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		'sparkling[main_body_typography][subset]', array(
-			'label'       => __( 'Font susbet', 'sparkling' ),
+			'label'       => __( 'Font Subset', 'sparkling' ),
 			'section'     => 'sparkling_typography_options',
 			'description' => __( 'Enter the Google fonts subset', 'sparkling' ),
 			'type'        => 'text',
