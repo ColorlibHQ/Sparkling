@@ -815,6 +815,48 @@ function sparkling_customizer( $wp_customize ) {
 		)
 	);
 
+	/* Archive pages settings */
+	$wp_customize->add_section(
+			'sparkling_archive_section', array(
+			'title'    => esc_html__( 'Archive Pages', 'sparkling' ),
+			'priority' => 50,
+			'panel'    => 'sparkling_main_options',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'sparkling[tag_title]', array(
+			'default'           => 'Tag: %s',
+			'type'              => 'option',
+			'sanitize_callback' => 'esc_html',
+		)
+	);
+
+	$wp_customize->add_control(
+		'sparkling[tag_title]', array(
+			'label'       => __( 'Tag Page Title', 'sparkling' ),
+			'section'     => 'sparkling_archive_section',
+			'description' => __( 'Enter the Tag page title', 'sparkling' ),
+			'type'        => 'text',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'sparkling[category_title]', array(
+			'default'           => 'Category: %s',
+			'type'              => 'option',
+			'sanitize_callback' => 'esc_html',
+		)
+	);
+
+	$wp_customize->add_control(
+		'sparkling[category_title]', array(
+			'label'       => __( 'Category Title', 'sparkling' ),
+			'section'     => 'sparkling_archive_section',
+			'description' => __( 'Enter the Category page title', 'sparkling' ),
+			'type'        => 'text',
+		)
+	);
 }
 
 add_action( 'customize_register', 'sparkling_customizer' );
