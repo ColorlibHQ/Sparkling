@@ -2,15 +2,15 @@
 
 Theme Name: Sparkling<br>
 Theme URI: http://colorlib.com/wp/sparkling/<br>
-Version: 2.3.4<br>
-Tested up to: WP 4.8<br>
+Version: 2.4.4<br>
+Tested up to: WP 4.9<br>
 
 Author: Aigars Silkalns<br>
 Author URI: http://colorlib.com/wp/<br>
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl.html
 -------------------------------------------------------
-Sparkling theme, Copyright 2014-2017 colorlib.com
+Sparkling theme, Copyright 2014-2018 colorlib.com
 Sparkling WordPress theme is distributed under the terms of the GNU GPL
 Sparkling is based on Underscores http://underscores.me/, (C) 2012-2017 Automattic, Inc.
 -------------------------------------------------------
@@ -63,6 +63,9 @@ Afterwards you can continue theme setup and customization via WordPress Dashboar
 Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 # Changelog
+
+# 2.4.4
+* Removed subject tags, can't keep more than 3 as per w.org rules
 
 # 2.4.3
 * Fixed a few more bugs with FA5 & missing icons
