@@ -25,6 +25,14 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ( strpos( $_SERVER['HTTP_USER_AGENT
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="<?php echo of_get_option( 'nav_bg_color' ); ?>">
+<meta property="og:site_name" content="<?php bloginfo( 'name' ) ?>" />
+<meta property="og:title" content="<?php bloginfo( 'name' ); wp_title() ?>" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="<?= site_url() ?>" />
+<meta property="article:author" content="<?php the_author() ?>" />
+<?php if ( get_header_image() != '' || has_header_image() ) { ?>
+<meta property="og:image" content="<?php header_image() ?>" />
+<?php } ?>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <?php wp_head(); ?>
