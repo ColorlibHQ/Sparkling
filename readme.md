@@ -8,21 +8,21 @@ Tested up to: WP 4.9<br>
 Author: Aigars Silkalns<br>
 Author URI: http://colorlib.com/wp/<br>
 License: GNU General Public License v3.0
-License URI: http://www.gnu.org/licenses/gpl.html
+License URI: https://www.gnu.org/licenses/gpl.html
 -------------------------------------------------------
 Sparkling theme, Copyright 2014-2018 colorlib.com
 Sparkling WordPress theme is distributed under the terms of the GNU GPL
-Sparkling is based on Underscores http://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Sparkling is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 -------------------------------------------------------
 
 # Credits
 Unless otherwise specified, all the theme files, scripts and images are licensed under GPLv3 license
 
 Sparkling theme uses:
-* FontAwesome (http://fontawesome.io) licensed under the SIL OFL 1.1 (http://scripts.sil.org/OFL)
-* Bootstrap (http://getbootstrap.com/) licensed under MIT license (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-* WP-Bootstrap-NavWalker licensed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
-* FlexSlider by WooThemes licensed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
+* FontAwesome (https://fontawesome.com) licensed under the SIL OFL 1.1 (http://scripts.sil.org/OFL)
+* Bootstrap (https://getbootstrap.com/) licensed under MIT license (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+* WP-Bootstrap-NavWalker licensed under the GPLv2 license (https://www.gnu.org/licenses/gpl-2.0.html)
+* FlexSlider by WooThemes licensed under the GPLv2 license (https://www.gnu.org/licenses/gpl-2.0.html)
 * Unless otherwise specified, all images are created by Colorlib
 
 # Description
