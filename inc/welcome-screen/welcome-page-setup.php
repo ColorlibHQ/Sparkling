@@ -85,6 +85,12 @@ if ( is_admin() ) {
 		'simple-custom-post-order'  => array(
 			'recommended' => true,
 		),
+        'colorlib-404-customizer' => array(
+            'recommended' => true,
+        ),
+        'colorlib-coming-soon-maintenance' => array(
+            'recommended' => true,
+        ),
 
 	);
 	/*
