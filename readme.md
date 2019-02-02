@@ -81,6 +81,7 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 * Updated FontAwesome to v5.1.1
 * Updated FlexSlider to 2.7.0
 * Added Academicons ( https://jpswalsh.github.io/academicons/ )
+* Removed Modernizr.js from distribution
 * Full changelog can be seen here: https://github.com/puikinsh/Sparkling/milestone/1?closed=1
 
 # 2.3.4
