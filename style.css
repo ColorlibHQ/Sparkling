@@ -1149,6 +1149,14 @@ button:hover, .button:hover {
     .dropdown-menu > li.dropdown.open {
         padding-bottom: 0;
     }
+
+    .navbar-nav > li > .caret {
+        float:right;
+        position: relative;
+        top:18px;
+        height:10px;
+        width:10px;
+    }
 }
 
 @media (min-width: 1024px) {
