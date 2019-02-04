@@ -1111,6 +1111,10 @@ button:hover, .button:hover {
 }
 
 @media (max-width: 767px) {
+    .navbar-default {
+        z-index:99999;
+    }
+
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover {
