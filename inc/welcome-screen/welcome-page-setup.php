@@ -76,6 +76,9 @@ require get_template_directory() . '/inc/welcome-screen/class-sparkling-notify-s
 if ( is_admin() ) {
 	global $sparkling_required_actions, $sparkling_recommended_plugins;
 	$sparkling_recommended_plugins = array(
+		'kali-forms' => array(
+			'recommended' => true,
+		),
 		'colorlib-login-customizer' => array(
 			'recommended' => true,
 		),
