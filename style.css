@@ -366,7 +366,8 @@ footer.entry-meta {
     color: #444;
 }
 
-.entry-title a:hover {
+.entry-title a:hover,
+.entry-title a:focus {
     color: #DA4453;
 }
 
@@ -492,7 +493,8 @@ body.blog .post-inner-content,
     color: #DA4453;
 }
 
-.pagination li:hover a {
+.pagination li:hover a,
+.pagination li:focus-within a {
     color: #DA4453;
 }
 
@@ -546,7 +548,8 @@ body.blog .post-inner-content,
     margin: auto;
 }
 
-.single-featured:hover {
+.single-featured:hover,
+.single-featured:focus-within {
     opacity: 0.8;
 }
 
@@ -679,7 +682,8 @@ object {
     color: #C1C0C0;
 }
 
-#secondary .widget a:hover {
+#secondary .widget a:hover,
+#secondary .widget a:focus {
     color: #DA4453;
 }
 
@@ -745,7 +749,8 @@ object {
     transition: opacity 0.5s;
 }
 
-.popular-posts-wrapper .post .post-image img:hover {
+.popular-posts-wrapper .post .post-image img:hover,
+.popular-posts-wrapper .post .post-image img:focus-within {
     opacity: 0.6 !important;
 }
 
@@ -761,7 +766,8 @@ object {
     color: #DA4453;
 }
 
-#secondary .widget .post-content a:hover {
+#secondary .widget .post-content a:hover,
+#secondary .widget .post-content a:focus {
     color: #DADADA;
 }
 
@@ -786,7 +792,8 @@ object {
     font-size: 12px !important;
 }
 
-.tagcloud a:hover {
+.tagcloud a:hover,
+.tagcloud a:focus {
     background-color: #DA4453;
     border-color: #DA4453;
 }
@@ -807,16 +814,35 @@ a.more-link {
 }
 
 .btn-default:hover,
+.btn-default:focus,
 .label-default[href]:hover,
 .label-default[href]:focus,
-.btn-default:hover, .btn-default:focus,
+.btn-default:hover,
+.btn-default:focus,
 .btn-default:active,
 .btn-default.active,
 #image-navigation .nav-previous a:hover,
-#image-navigation .nav-next a:hover, .woocommerce #respond input#submit:hover,
-.woocommerce #respond input#submit.alt:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover,
-.woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover,
-a.more-link:hover {
+#image-navigation .nav-previous a:focus,
+#image-navigation .nav-next a:hover,
+#image-navigation .nav-next a:focus,
+.woocommerce #respond input#submit:hover,
+.woocommerce #respond input#submit:focus,
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce #respond input#submit.alt:focus,
+.woocommerce a.button:hover,
+.woocommerce a.button:focus,
+.woocommerce button.button:hover,
+.woocommerce button.button:focus,
+.woocommerce input.button:hover,
+.woocommerce input.button:focus,
+.woocommerce a.button.alt:hover,
+.woocommerce a.button.alt:focus,
+.woocommerce button.button.alt:hover,
+.woocommerce button.button.alt:focus,
+.woocommerce input.button.alt:hover,
+.woocommerce input.button.alt:focus,
+a.more-link:hover,
+a.more-link:focus {
     background-color: #363636;
     border-color: #363636;
     color: #FFF;
@@ -848,7 +874,10 @@ button, .button {
     transition: background-color 0.3s linear;
 }
 
-button:hover, .button:hover {
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
     background-color: #363636;
 }
 
@@ -887,7 +916,8 @@ button:hover, .button:hover {
     transition: all 0.5s;
 }
 
-#infinite-handle span:hover {
+#infinite-handle span:hover,
+#infinite-handle span:focus-within {
     background-color: #DA4453;
     color: #fff;
 }
@@ -954,8 +984,11 @@ button:hover, .button:hover {
 }
 
 .post-navigation a:hover,
-.pagination .prev:hover
-.pagination .next:hover {
+.post-navigation a:focus,
+.pagination .prev:hover,
+.pagination .prev:focus,
+.pagination .next:hover,
+.pagination .next:focus {
     color: #FFF;
     background: #DA4453;
     text-decoration: none;
@@ -1031,8 +1064,9 @@ button:hover, .button:hover {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li:hover > a,
 .navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li:hover > a,
+.navbar-default .navbar-nav > li:focus-within > a,
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
@@ -1041,7 +1075,7 @@ button:hover, .button:hover {
 }
 
 .navbar-default .navbar-nav .dropdown-menu > li:hover,
-.navbar-default .navbar-nav .dropdown-menu > li:focus {
+.navbar-default .navbar-nav .dropdown-menu > li:focus-within {
     color: #fff;
     /*background-color: transparent;*/
     background-color: #DA4453;
@@ -1050,7 +1084,9 @@ button:hover, .button:hover {
 .dropdown-menu > li > a:focus,
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li:hover > a,
-.dropdown-menu > li:hover > .caret {
+.dropdown-menu > li:focus-within > a,
+.dropdown-menu > li:hover > .caret,
+.dropdown-menu > li:focus-within > .caret {
     background-color: transparent;
     color: #fff;
 }
@@ -1067,12 +1103,15 @@ button:hover, .button:hover {
     display: block;
 }
 
-.navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > a {
+.navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > a,
+.navbar-default .navbar-nav.sparkling-mobile-menu > li:focus-within > a {
     color: #777;
 }
 
 .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > a,
-.navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > .caret {
+.navbar-default .navbar-nav.sparkling-mobile-menu > li:focus-within > a,
+.navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > .caret,
+.navbar-default .navbar-nav.sparkling-mobile-menu > li:focus-within > .caret {
     color: #fff;
 }
 
@@ -1098,8 +1137,7 @@ button:hover, .button:hover {
     .dropdown-menu .caret {
         border-top: 4px solid transparent;
         border-bottom: 4px solid transparent;
-
-        border-left: 4px dashed;
+        border-left: 4px solid;
         float: right;
         top: 7px;
         position: relative;
@@ -1133,8 +1171,10 @@ button:hover, .button:hover {
         color: #da4453;
     }
 
-    .navbar-default .navbar-nav > li:hover > a,
-    .navbar-default .navbar-nav > li:hover > .caret,
+	.navbar-default .navbar-nav > li:hover > a,
+	.navbar-default .navbar-nav > li:focus-within > a,
+	.navbar-default .navbar-nav > li:hover > .caret,
+	.navbar-default .navbar-nav > li:focus-within > .caret,
     .dropdown-menu > li > .caret {
         color: #fff;
     }
@@ -1146,7 +1186,7 @@ button:hover, .button:hover {
 
     .site-navigation-inner .dropdown-menu > .active,
     .navbar-default .navbar-nav .dropdown-menu > li:hover,
-    .navbar-default .navbar-nav .dropdown-menu > li:focus {
+    .navbar-default .navbar-nav .dropdown-menu > li:focus-within {
         background-color: transparent;
     }
 
@@ -1164,7 +1204,8 @@ button:hover, .button:hover {
 }
 
 @media (min-width: 1024px) {
-    ul.nav li.dropdown:hover > ul.dropdown-menu {
+	ul.nav li.dropdown:hover > ul.dropdown-menu,
+	ul.nav li.dropdown:focus-within > ul.dropdown-menu {
         display: block;
     }
 }
@@ -1194,7 +1235,9 @@ button:hover, .button:hover {
     color: #fff;
 }
 
-.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > .caret {
     color: #fff;
     background-color: transparent;
@@ -1239,7 +1282,11 @@ button:hover, .button:hover {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: transparent;
+    background-color: #363636;
+}
+
+.navbar-default .navbar-toggle:focus span {
+    background: #fff;
 }
 
 .nav.navbar-nav {
@@ -1272,7 +1319,8 @@ button:hover, .button:hover {
 }
 
 .navigation .wp-pagenavi-pagination span.current,
-.navigation .wp-pagenavi-pagination a:hover {
+.navigation .wp-pagenavi-pagination a:hover,
+.navigation .wp-pagenavi-pagination a:focus {
     background-color: #DA4453;
     border-color: #DA4453;
     color: #FFF;
@@ -1283,7 +1331,7 @@ button:hover, .button:hover {
 .pagination > li > span,
 .pagination > li > a:focus,
 .pagination > li > a:hover,
-.pagination > li > span:focus,
+.pagination > li > span:focus-within,
 .pagination > li > span:hover {
     color: #DA4453;
 }
@@ -1436,7 +1484,9 @@ p.logged-in-as {
 }
 
 #image-navigation .nav-previous a:hover,
-#image-navigation .nav-next a:hover {
+#image-navigation .nav-previous a:focus,
+#image-navigation .nav-next a:hover,
+#image-navigation .nav-next a:focus {
     background-color: #DA4453;
     color: #fff;
 }
@@ -1567,7 +1617,8 @@ p.logged-in-as {
     width: 100%;
 }
 
-.gallery-item:hover .gallery-caption {
+.gallery-item:hover .gallery-caption,
+.gallery-item:focus-within .gallery-caption {
     opacity: 1;
 }
 
@@ -1649,7 +1700,8 @@ p.logged-in-as {
     color: #777;
 }
 
-.site-info a:hover {
+.site-info a:hover,
+.site-info a:focus {
     color: #999;
 }
 
@@ -1664,7 +1716,8 @@ p.logged-in-as {
     font-size: 12px;
 }
 
-.footer-nav.nav > li > a:hover {
+.footer-nav.nav > li > a:hover,
+.footer-nav.nav > li > a:focus {
     background-color: transparent;
 }
 
@@ -1689,7 +1742,8 @@ p.logged-in-as {
     transition: background-color 0.3s linear;
 }
 
-.scroll-to-top:hover {
+.scroll-to-top:hover,
+.scroll-to-top:focus {
     background: #DA4453;
     opacity: .8;
 }
@@ -1803,250 +1857,312 @@ p.logged-in-as {
     display: none;
 }
 
-#menu-social li a[href*="facebook.com"]:hover {
+#menu-social li a[href*="facebook.com"]:hover,
+#menu-social li a[href*="facebook.com"]:focus {
     background-color: #4265b9 !important;
 }
 
-#menu-social li a[href*="docker.com"]:hover {
+#menu-social li a[href*="docker.com"]:hover,
+#menu-social li a[href*="docker.com"]:focus {
     background-color: #0D397F !important;
 }
 
-#menu-social li a[href*="academia.edu"]:hover {
+#menu-social li a[href*="academia.edu"]:hover,
+#menu-social li a[href*="academia.edu"]:focus {
     background-color: #FFF !important;
     color: #000 !important;
 }
 
-#menu-social li a[href*="youracclaim.com"]:hover {
+#menu-social li a[href*="youracclaim.com"]:hover,
+#menu-social li a[href*="youracclaim.com"]:focus {
     background-color: #2B6C97 !important;
 }
 
-#menu-social li a[href*="youracclaim.com"]:hover {
+#menu-social li a[href*="youracclaim.com"]:hover,
+#menu-social li a[href*="youracclaim.com"]:focus {
     background-color: #2B6C97 !important;
 }
 
-#menu-social li a[href*="acm.org"]:hover {
+#menu-social li a[href*="acm.org"]:hover,
+#menu-social li a[href*="acm.org"]:focus {
     background-color: #42A6D5 !important;
 }
 
-#menu-social li a[href*="dl.acm.org"]:hover {
+#menu-social li a[href*="dl.acm.org"]:hover,
+#menu-social li a[href*="dl.acm.org"]:focus {
     background-color: #AEC85C !important;
 }
 
-#menu-social li a[href*="arxiv.org"]:hover {
+#menu-social li a[href*="arxiv.org"]:hover,
+#menu-social li a[href*="arxiv.org"]:focus {
     background-color: #68645B !important;
 }
 
-#menu-social li a[href*="biorxiv.org"]:hover {
+#menu-social li a[href*="biorxiv.org"]:hover,
+#menu-social li a[href*="biorxiv.org"]:focus {
     background-color: #B92B3D !important;
 }
 
-#menu-social li a[href*="ceur-ws.org"]:hover {
+#menu-social li a[href*="ceur-ws.org"]:hover,
+#menu-social li a[href*="ceur-ws.org"]:focus {
     background-color: #F5F4EF !important;
 }
 
-#menu-social li a[href*="coursera.org"]:hover {
+#menu-social li a[href*="coursera.org"]:hover,
+#menu-social li a[href*="coursera.org"]:focus {
     background-color: #508DD6 !important;
 }
 
-#menu-social li a[href*="dataverse.org"]:hover {
+#menu-social li a[href*="dataverse.org"]:hover,
+#menu-social li a[href*="dataverse.org"]:focus {
     background-color: #C25B37 !important;
 }
 
-#menu-social li a[href*="dblp.uni-trier.de"]:hover {
+#menu-social li a[href*="dblp.uni-trier.de"]:hover,
+#menu-social li a[href*="dblp.uni-trier.de"]:focus {
     background-color: #12539B !important;
 }
 
-#menu-social li a[href*="depsy.org"]:hover {
+#menu-social li a[href*="depsy.org"]:hover,
+#menu-social li a[href*="depsy.org"]:focus {
     background-color: #2BB0E9 !important;
 }
 
-#menu-social li a[href*="doi.org"]:hover {
+#menu-social li a[href*="doi.org"]:hover,
+#menu-social li a[href*="doi.org"]:focus {
     background-color: #F8B248 !important;
 }
 
-#menu-social li a[href*="datadryad.org"]:hover {
+#menu-social li a[href*="datadryad.org"]:hover,
+#menu-social li a[href*="datadryad.org"]:focus {
     background-color: #44822C !important;
 }
 
-#menu-social li a[href*="figshare.com"]:hover {
+#menu-social li a[href*="figshare.com"]:hover,
+#menu-social li a[href*="figshare.com"]:focus {
     background-color: #556470 !important;
 }
 
-#menu-social li a[href*="scholar.google"]:hover {
+#menu-social li a[href*="scholar.google"]:hover,
+#menu-social li a[href*="scholar.google"]:focus {
     background-color: #4A8BEE !important;
 }
 
-#menu-social li a[href*="ideas.repec.org"]:hover {
+#menu-social li a[href*="ideas.repec.org"]:hover,
+#menu-social li a[href*="ideas.repec.org"]:focus {
     background-color: #F61729 !important;
 }
 
-#menu-social li a[href*="ieee.org"]:hover {
+#menu-social li a[href*="ieee.org"]:hover,
+#menu-social li a[href*="ieee.org"]:focus {
     background-color: #166895 !important;
 }
 
-#menu-social li a[href*="impactstory.org"]:hover {
+#menu-social li a[href*="impactstory.org"]:hover,
+#menu-social li a[href*="impactstory.org"]:focus {
     background-color: #F9362A !important;
 }
 
-#menu-social li a[href*="inspirehep.net"]:hover {
+#menu-social li a[href*="inspirehep.net"]:hover,
+#menu-social li a[href*="inspirehep.net"]:focus {
     background-color: #6B9CC8 !important;
 }
 
-#menu-social li a[href*="lattes.cnpq.brt"]:hover {
+#menu-social li a[href*="lattes.cnpq.brt"]:hover,
+#menu-social li a[href*="lattes.cnpq.brt"]:focus {
     background-color: #135C95 !important;
 }
 
-#menu-social li a[href*="mathoverflow.net"]:hover {
+#menu-social li a[href*="mathoverflow.net"]:hover,
+#menu-social li a[href*="mathoverflow.net"]:focus {
     background-color: #DE8341 !important;
 }
 
-#menu-social li a[href*="mendeley.com"]:hover {
+#menu-social li a[href*="mendeley.com"]:hover,
+#menu-social li a[href*="mendeley.com"]:focus {
     background-color: #FFF !important;
     color: #000 !important;
 }
 
-#menu-social li a[href*="openaccessweek.org"]:hover {
+#menu-social li a[href*="openaccessweek.org"]:hover,
+#menu-social li a[href*="openaccessweek.org"]:focus {
     background-color: #F17E3C !important;
 }
 
-#menu-social li a[href*="orcid.org"]:hover {
+#menu-social li a[href*="orcid.org"]:hover,
+#menu-social li a[href*="orcid.org"]:focus {
     background-color: #A8CA50 !important;
 }
 
-#menu-social li a[href*="osf.io"]:hover {
+#menu-social li a[href*="osf.io"]:hover,
+#menu-social li a[href*="osf.io"]:focus {
     background-color: #3FBAEB !important;
 }
 
-#menu-social li a[href*="overleaf.com"]:hover {
+#menu-social li a[href*="overleaf.com"]:hover,
+#menu-social li a[href*="overleaf.com"]:focus {
     background-color: #4D8F4A !important;
 }
 
-#menu-social li a[href*="philpapers.org"]:hover {
+#menu-social li a[href*="philpapers.org"]:hover,
+#menu-social li a[href*="philpapers.org"]:focus {
     background-color: #1650A3 !important;
 }
 
-#menu-social li a[href*="piazza.com"]:hover {
+#menu-social li a[href*="piazza.com"]:hover,
+#menu-social li a[href*="piazza.com"]:focus {
     background-color: #407DA8 !important;
 }
 
-#menu-social li a[href*="publons.com"]:hover {
+#menu-social li a[href*="publons.com"]:hover,
+#menu-social li a[href*="publons.com"]:focus {
     background-color: #386895 !important;
 }
 
-#menu-social li a[href*="ncbi.nlm.nih.gov"]:hover {
+#menu-social li a[href*="ncbi.nlm.nih.gov"]:hover,
+#menu-social li a[href*="ncbi.nlm.nih.gov"]:focus {
     background-color: #D5D5D5 !important;
 }
 
-#menu-social li a[href*="researchgate.net"]:hover {
+#menu-social li a[href*="researchgate.net"]:hover,
+#menu-social li a[href*="researchgate.net"]:focus {
     background-color: #30CABB !important;
 }
 
-#menu-social li a[href*="researcherid.com"]:hover {
+#menu-social li a[href*="researcherid.com"]:hover,
+#menu-social li a[href*="researcherid.com"]:focus {
     background-color: #EA7B32 !important;
 }
 
-#menu-social li a[href*="scirate.com"]:hover {
+#menu-social li a[href*="scirate.com"]:hover,
+#menu-social li a[href*="scirate.com"]:focus {
     background-color: #3299F3 !important;
 }
 
-#menu-social li a[href*="semanticscholar.org"]:hover {
+#menu-social li a[href*="semanticscholar.org"]:hover,
+#menu-social li a[href*="semanticscholar.org"]:focus {
     background-color: #FBD669 !important;
 }
 
-#menu-social li a[href*="springer.com"]:hover {
+#menu-social li a[href*="springer.com"]:hover,
+#menu-social li a[href*="springer.com"]:focus {
     background-color: #EA7D33 !important;
 }
 
-#menu-social li a[href*="zotero.org"]:hover {
+#menu-social li a[href*="zotero.org"]:hover,
+#menu-social li a[href*="zotero.org"]:focus {
     background-color: #C82E3E !important;
 }
 
-#menu-social li a[href*="twitter.com"]:hover {
+#menu-social li a[href*="twitter.com"]:hover,
+#menu-social li a[href*="twitter.com"]:focus {
     background-color: #55ACEE !important;
 }
 
-#menu-social li a[href*="dribbble.com"]:hover {
+#menu-social li a[href*="dribbble.com"]:hover,
+#menu-social li a[href*="dribbble.com"]:focus {
     background-color: #ea4c89 !important;
 }
 
-#menu-social li a[href*="flickr.com"]:hover {
+#menu-social li a[href*="flickr.com"]:hover,
+#menu-social li a[href*="flickr.com"]:focus {
     background-color: #ff0084 !important;
 }
 
-#menu-social li a[href*="plus.google.com"]:hover {
+#menu-social li a[href*="plus.google.com"]:hover,
+#menu-social li a[href*="plus.google.com"]:focus {
     background-color: #d62408 !important;
 }
 
-#menu-social li a[href*="skype.com"]:hover {
+#menu-social li a[href*="skype.com"]:hover,
+#menu-social li a[href*="skype.com"]:focus {
     background-color: #0bbff2 !important;
 }
 
-#menu-social li a[href*="pinterest.com"]:hover {
+#menu-social li a[href*="pinterest.com"]:hover,
+#menu-social li a[href*="pinterest.com"]:focus {
     background-color: #c31e26 !important;
 }
 
-#menu-social li a[href*="linkedin.com"]:hover {
+#menu-social li a[href*="linkedin.com"]:hover,
+#menu-social li a[href*="linkedin.com"]:focus {
     background-color: #005987 !important;
 }
 
-#menu-social li a[href*="slideshare.net"]:hover {
+#menu-social li a[href*="slideshare.net"]:hover,
+#menu-social li a[href*="slideshare.net"]:focus {
     background-color: #005987 !important;
 }
 
-#menu-social li a[href*="vimeo.com"]:hover {
+#menu-social li a[href*="vimeo.com"]:hover,
+#menu-social li a[href*="vimeo.com"]:focus {
     background-color: #1bb6ec !important;
 }
 
-#menu-social li a[href*="tumblr.com"]:hover {
+#menu-social li a[href*="tumblr.com"]:hover,
+#menu-social li a[href*="tumblr.com"]:focus {
     background-color: #35506b !important;
 }
 
-#menu-social li a[href*="youtube.com"]:hover {
+#menu-social li a[href*="youtube.com"]:hover,
+#menu-social li a[href*="youtube.com"]:focus {
     background-color: #df3333 !important;
 }
 
-#menu-social li a[href*="instagram.com"]:hover {
+#menu-social li a[href*="instagram.com"]:hover,
+#menu-social li a[href*="instagram.com"]:focus {
     background-color: #F95B60 !important;
 }
 
-#menu-social li a[href*="/feed"]:hover {
+#menu-social li a[href*="/feed"]:hover,
+#menu-social li a[href*="/feed"]:focus {
     background-color: #f39c12 !important;
 }
 
-#menu-social li a[href*="foursquare.com"]:hover {
+#menu-social li a[href*="foursquare.com"]:hover,
+#menu-social li a[href*="foursquare.com"]:focus {
     background-color: #2398C9 !important;
 }
 
-#menu-social li a[href*="soundcloud.com"]:hover {
+#menu-social li a[href*="soundcloud.com"]:hover,
+#menu-social li a[href*="soundcloud.com"]:focus {
     background-color: #F50 !important;
 }
 
-#menu-social li a[href*="github.com"]:hover {
+#menu-social li a[href*="github.com"]:hover,
+#menu-social li a[href*="github.com"]:focus {
     background-color: #4183C4 !important;
 }
 
-#menu-social li a[href*="gitlab.com"]:hover {
+#menu-social li a[href*="gitlab.com"]:hover,
+#menu-social li a[href*="gitlab.com"]:focus {
     background-color: #fc9403 !important;
 }
 
-#menu-social li a[href*="stackoverflow.com"]:hover {
+#menu-social li a[href*="stackoverflow.com"]:hover,
+#menu-social li a[href*="stackoverflow.com"]:focus {
     background-color: #F48024 !important;
 }
 
-#menu-social li a[href*="xing.com"]:hover {
+#menu-social li a[href*="xing.com"]:hover,
+#menu-social li a[href*="xing.com"]:focus {
     background-color: #006567 !important;
 }
 
-#menu-social li a[href*="spotify.com"]:hover {
+#menu-social li a[href*="spotify.com"]:hover,
+#menu-social li a[href*="spotify.com"]:focus {
     background-color: #81b71a !important;
 }
 
-#menu-social li a[href*="mailto"]:hover {
+#menu-social li a[href*="mailto"]:hover,
+#menu-social li a[href*="mailto"]:focus {
     background-color: #DA4453 !important;
 }
 
 #menu-social li a[href*="t.me"]:hover,
-#menu-social li a[href*="telegram.me"]:hover {
+#menu-social li a[href*="t.me"]:focus,
+#menu-social li a[href*="telegram.me"]:hover,
+#menu-social li a[href*="telegram.me"]:focus {
     background-color: #0088cc !important;
 }
 
@@ -2401,7 +2517,8 @@ p.logged-in-as {
     color: #DA4453;
 }
 
-.cfa-button:hover {
+.cfa-button:hover,
+.cfa-button:focus {
     background-color: #DA4453;
     color: #fff;
 }

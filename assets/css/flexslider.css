@@ -147,20 +147,30 @@ html[xmlns] .slides {
     text-align: right;
 }
 
-.flexslider:hover .flex-prev {
+.flexslider:hover .flex-prev,
+.flexslider:focus-within .flex-prev {
     opacity: 0.7;
     left: 0px;
     text-align: center;
 }
 
-.flexslider:hover .flex-next {
+.flexslider:hover .flex-next,
+.flexslider:focus-within .flex-next {
     opacity: 0.7;
     right: 0px;
     text-align: center;
 }
 
-.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+.flex-next:hover,
+.flex-next:focus,
+.flex-prev:hover,
+.flex-prev:focus {
     opacity: 1;
+}
+
+.flex-next:focus:before,
+.flex-prev:focus:before {
+	color: #363636;
 }
 
 .flex-direction-nav .flex-disabled {
