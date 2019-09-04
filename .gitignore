@@ -1,4 +1,5 @@
 node_modules/*
 .idea/*
 sparkling.zip
-.gitignore
+package-lock.json
+package-lock.json
