@@ -331,7 +331,7 @@ msgstr ""
 #: ../inc/customizer.php:151
 #, fuzzy
 msgid "Element Color"
-msgstr "رنگ اِلِمان و دگمه‌ها"
+msgstr "رنگ اِلِمان و دکمه‌ها"
 
 #: ../inc/customizer.php:152 ../inc/customizer.php:164 ../inc/customizer.php:218
 #: ../inc/customizer.php:228 ../inc/customizer.php:238 ../inc/customizer.php:248
@@ -423,11 +423,11 @@ msgstr "سربرگ"
 
 #: ../inc/customizer.php:353
 msgid "Sticky Header"
-msgstr ""
+msgstr "سربرگ چسبان"
 
 #: ../inc/customizer.php:354
 msgid "Check to show fixed header"
-msgstr ""
+msgstr "چک کردن نمایش سربرگ ثابت"
 
 #: ../inc/customizer.php:365
 msgid "Top nav background color"
@@ -463,7 +463,7 @@ msgstr "رنگ مورد کرکره منو بالا"
 
 #: ../inc/customizer.php:409
 msgid "Dropdown item color"
-msgstr "رنگ مورد کرکره"
+msgstr "رنگ مورد کرکره ای"
 
 #: ../inc/customizer.php:419
 msgid "Top nav dropdown item hover color"
