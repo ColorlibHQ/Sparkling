@@ -632,7 +632,7 @@ msgstr "دسته بندی Sparkling"
 
 #: ../inc/widgets/widget-categories.php:17 ../inc/widgets/widget-categories.php:76
 msgid "Categories"
-msgstr "دسته بندی"
+msgstr "دسته بندی ها"
 
 #: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:42
 msgid "Title "
