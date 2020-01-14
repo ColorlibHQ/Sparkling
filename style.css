@@ -1844,6 +1844,10 @@ p.logged-in-as {
     background-color: #12539B !important;
 }
 
+#menu-social li a[href*="dblp.org"]:hover {
+    background-color: #12539B !important;
+}
+
 #menu-social li a[href*="depsy.org"]:hover {
     background-color: #2BB0E9 !important;
 }
@@ -2218,6 +2222,11 @@ p.logged-in-as {
 }
 
 #menu-social li a[href*="dblp.uni-trier.de"]:before {
+    font-family: 'Academicons';
+    content: "\e94f";
+}
+
+#menu-social li a[href*="dblp.org"]:before {
     font-family: 'Academicons';
     content: "\e94f";
 }
