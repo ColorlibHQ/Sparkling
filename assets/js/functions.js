@@ -42,7 +42,7 @@ function generateMobileMenu () {
 jQuery(document).ready(function () {
 
   //Check to see if the window is top if not then display button
-  jQuery(window).scroll(function () {
+  jQuery(window).on('scroll', function () {
     if (jQuery(this).scrollTop() > 100) {
       jQuery('.scroll-to-top').fadeIn()
     } else {
@@ -51,12 +51,12 @@ jQuery(document).ready(function () {
   })
 
   //Click event to scroll to top
-  jQuery('.scroll-to-top').click(function () {
+  jQuery('.scroll-to-top').on('click', function () {
     jQuery('html, body').animate({scrollTop: 0}, 800)
     return false
   })
 
-  jQuery('.sparkling-dropdown').click(function (evt) {
+  jQuery('.sparkling-dropdown').on('click', function (evt) {
 
     jQuery(this).parent().toggleClass('open')
   })

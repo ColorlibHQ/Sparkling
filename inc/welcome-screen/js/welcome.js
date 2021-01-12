@@ -9,7 +9,7 @@ jQuery(document).ready(function () {
 
 
     /* Dismiss required actions */
-    jQuery(".sparkling-required-action-button").click(function () {
+    jQuery(".sparkling-required-action-button").on('click', function () {
 
         var id = jQuery(this).attr('id'),
             action = jQuery(this).attr('data-action');
@@ -33,7 +33,7 @@ jQuery(document).ready(function () {
     });
     
     /* Dismiss recommended plugins */
-    jQuery(".sparkling-recommended-plugin-button").click(function () {
+    jQuery(".sparkling-recommended-plugin-button").on('click', function () {
 
         var id = jQuery(this).attr('id'),
             action = jQuery(this).attr('data-action');
@@ -58,7 +58,7 @@ jQuery(document).ready(function () {
 
 
     // Add automatic frontpage
-    jQuery('#set_page_automatic').click(function(evt){
+    jQuery('#set_page_automatic').on('click', function(evt){
         evt.preventDefault();
         var parent = jQuery(this).parent().parent();
         var container = jQuery(this).parent().parent().parent();

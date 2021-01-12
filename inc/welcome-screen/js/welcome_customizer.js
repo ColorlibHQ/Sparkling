@@ -16,7 +16,7 @@
 
 jQuery(document).ready(function(){
 
-	jQuery(".sparkling-dismiss-required-action").click(function () {
+	jQuery(".sparkling-dismiss-required-action").on('click', function () {
 
         var id = jQuery(this).attr('id'),
             action = jQuery(this).attr('data-action');
@@ -52,7 +52,7 @@ jQuery(document).ready(function(){
         });
     });
 
-    jQuery(".sparkling-recommended-plugin-button").click(function () {
+    jQuery(".sparkling-recommended-plugin-button").on('click', function () {
 
         var id = jQuery(this).attr('id'),
             action = jQuery(this).attr('data-action');
@@ -81,7 +81,7 @@ jQuery(document).ready(function(){
         });
     });
 
-    jQuery('#set_page_automatic').click(function(evt){
+    jQuery('#set_page_automatic').on('click', function(evt){
     	evt.preventDefault();
     	var parent = jQuery(this).parent().parent();
     	var container = jQuery(this).parent().parent().parent();

@@ -48,7 +48,7 @@ jQuery( document ).ready(function() {
                     jQuery( mediaControl.container ).find( '.attachment-media-view' ).append( response.image );
                 }
                 jQuery( mediaControl.container ).find( '.attachment-media-view .placeholder' ).hide();
-                selector.val( response.id ).change();
+                selector.val( response.id ).trigger('change');
             }, 'json' );
 
         },
