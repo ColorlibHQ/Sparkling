@@ -80,6 +80,7 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ( strpos( $_SERVER['HTTP_USER_AGENT
 		<div class="top-section">
 			<?php sparkling_featured_slider(); ?>
 			<?php sparkling_call_for_action(); ?>
+			<?php do_action( 'sparkling_in_top_section_header' ); ?>
 		</div>
 
 		<div class="container main-content-area">
