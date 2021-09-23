@@ -1777,7 +1777,7 @@ p.logged-in-as {
 
 .scroll-to-top:hover,
 .scroll-to-top:focus {
-  background: #da4453;
+  background: #da4453 !important;
   opacity: 0.8;
 }
 
