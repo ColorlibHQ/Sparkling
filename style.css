@@ -275,6 +275,13 @@ textarea {
   z-index: 100000; /* Above WP toolbar */
 }
 
+/* Adding more container size */
+@media (min-width: 1900px) {
+  .container {
+    width: 1370px;
+  }
+}
+
 /* Clearing floats */
 .clear:before,
 .clear:after,
