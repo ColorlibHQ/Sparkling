@@ -2,8 +2,10 @@
 
 Theme Name: Sparkling<br>
 Theme URI: http://colorlib.com/wp/sparkling/<br>
-Version: 2.4.8<br>
-Tested up to: WP 5.2<br>
+Version: 3.0<br>
+Tested up to: WP 5.8.1<br>
+Requires PHP: 5.4.0<br>
+Tested up to: PHP 8.0.10<br>
 
 Author: Aigars Silkalns<br>
 Author URI: http://colorlib.com/wp/<br>
@@ -67,17 +69,11 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 # Changelog
 
-<<<<<<< HEAD:readme.md
+# 3.0
 
-# 2.4.5
-
-- Added 2 more recommended plugins
-
-# 2.4.4
-
-- Removed subject tags, can't keep more than 3 as per w.org rules
-
-=======
+- Added PHP 8 support
+- Merge WpChill fork
+- Fixed some bugs
 
 # 2.4.8
 
@@ -94,8 +90,6 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 # 2.4.4
 
 - Removed subject tags, can't keep more than 3 as per w.org rules
-
-> > > > > > > pull-237:readme.txt
 
 # 2.4.3
 

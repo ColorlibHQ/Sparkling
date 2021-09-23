@@ -1,7 +1,7 @@
 {
   "name": "sparkling",
   "main": "Gruntfile.js",
-  "version": "2.4.4",
+  "version": "3.0",
   "homepage": "https://www.colorlib.com",
   "author": "Colorlib",
   "license": "GPL v3",
