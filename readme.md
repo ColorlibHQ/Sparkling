@@ -14,7 +14,7 @@ License URI: https://www.gnu.org/licenses/gpl.html
 
 ---
 
-Sparkling theme, Copyright 2014-2018 colorlib.com
+Sparkling theme, Copyright 2014-2021 colorlib.com
 Sparkling WordPress theme is distributed under the terms of the GNU GPL
 Sparkling is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 
