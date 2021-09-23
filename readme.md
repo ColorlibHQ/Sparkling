@@ -69,37 +69,37 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 
 # Changelog
 
-# 3.0
+## 3.0
 
 - Added PHP 8 support
 - Merge WpChill fork
 - Fixed some bugs
 
-# 2.4.8
+## 2.4.8
 
 - Compatibility with jQuery 3.0
 
-# 2.4.6
+## 2.4.6
 
 - Improved accesibility with keyboard navigation
 
-# 2.4.5
+## 2.4.5
 
 - Added 2 more recommended plugins
 
-# 2.4.4
+## 2.4.4
 
 - Removed subject tags, can't keep more than 3 as per w.org rules
 
-# 2.4.3
+## 2.4.3
 
 - Fixed a few more bugs with FA5 & missing icons
 
-# 2.4.1
+## 2.4.1
 
 - Fixed a bug with FontAwesome 5 & RSS feed icon
 
-# 2.4.0
+## 2.4.0
 
 - Added Colorlib Login Customizer as recommended plugin
 - Updated FontAwesome to v5.1.1
@@ -108,7 +108,7 @@ Theme documentation is available on http://colorlib.com/wp/support/sparkling
 - Removed Modernizr.js from distribution
 - Full changelog can be seen here: https://github.com/puikinsh/Sparkling/milestone/1?closed=1
 
-# 2.3.4
+## 2.3.4
 
 - Updated font awesome
 - Fixed custom menu styling in the footer
