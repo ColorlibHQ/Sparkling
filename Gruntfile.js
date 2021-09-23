@@ -1,15 +1,15 @@
 'use strict';
 
-module.exports = function( grunt ) {
+module.exports = function (grunt) {
   // load all tasks
-  require( 'load-grunt-tasks' )( grunt, { scope: 'devDependencies' } );
+  require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
 
-  grunt.config.init( {
-    pkg: grunt.file.readJSON( 'package.json' ),
+  grunt.config.init({
+    pkg: grunt.file.readJSON('package.json'),
 
     dirs: {
       css: 'assets/css',
-      js: 'assets/js'
+      js: 'assets/js',
     },
 
     makepot: {
@@ -19,43 +19,40 @@ module.exports = function( grunt ) {
           potFilename: '<%= pkg.name %>.pot',
           potHeaders: {
             poedit: true,
-            'x-poedit-keywordslist': true
+            'x-poedit-keywordslist': true,
           },
-          processPot: function( pot, options ) {
-            pot.headers[ 'report-msgid-bugs-to' ] = 'https://www.colorlib.com/';
-            pot.headers[ 'language-team' ] = 'Colorlib <office@colorlib.com>';
-            pot.headers[ 'last-translator' ] = 'Colorlib <office@colorlib.com>';
-            pot.headers[ 'language-team' ] = 'Colorlib <office@colorlib.com>';
+          processPot: function (pot, options) {
+            pot.headers['report-msgid-bugs-to'] = 'https://www.colorlib.com/';
+            pot.headers['language-team'] = 'Colorlib <office@colorlib.com>';
+            pot.headers['last-translator'] = 'Colorlib <office@colorlib.com>';
+            pot.headers['language-team'] = 'Colorlib <office@colorlib.com>';
             return pot;
           },
           updateTimestamp: true,
-          type: 'wp-theme'
-
-        }
-      }
+          type: 'wp-theme',
+        },
+      },
     },
 
     addtextdomain: {
       target: {
         options: {
           updateDomains: true,
-          textdomain: '<%= pkg.name %>'
+          textdomain: '<%= pkg.name %>',
         },
         files: {
-          src: [
-            '*.php',
-            '!node_modules/**'
-          ]
-        }
-      }
+          src: ['*.php', '!node_modules/**'],
+        },
+      },
     },
 
     checktextdomain: {
       standard: {
         options: {
-          text_domain: [ 'shapely', 'epsilon-framework' ], //Specify allowed domain(s)
+          text_domain: ['sparkling', 'epsilon-framework'], //Specify allowed domain(s)
           create_report_file: 'true',
-          keywords: [ //List keyword specifications
+          keywords: [
+            //List keyword specifications
             '__:1,2d',
             '_e:1,2d',
             '_x:1,2c,3d',
@@ -69,103 +66,78 @@ module.exports = function( grunt ) {
             '_n:1,2,4d',
             '_nx:1,2,4c,5d',
             '_n_noop:1,2,3d',
-            '_nx_noop:1,2,3c,4d'
-          ]
+            '_nx_noop:1,2,3c,4d',
+          ],
         },
         files: [
           {
-            src: [
-              '**/*.php',
-              '!**/node_modules/**',
-            ], //all php
-            expand: true
-          } ]
-      }
+            src: ['**/*.php', '!**/node_modules/**'], //all php
+            expand: true,
+          },
+        ],
+      },
     },
 
     clean: {
       init: {
-        src: [ 'build/' ]
+        src: ['build/'],
       },
       build: {
-        src: [
-          'build/*',
-          '!build/<%= pkg.name %>.zip'
-        ]
+        src: ['build/*', '!build/<%= pkg.name %>.zip'],
       },
     },
 
     copy: {
       build: {
         expand: true,
-        src: [
-          '**',
-          '!node_modules/**',
-          '!build/**',
-          '!readme.md',
-          '!README.md',
-          '!phpcs.ruleset.xml',
-          '!Gruntfile.js',
-          '!package.json',
-          '!set_tags.sh',
-          '!shapely.zip',
-          '!nbproject/**' ],
-        dest: 'build/'
-      }
+        src: ['**', '!node_modules/**', '!build/**', '!readme.md', '!README.md', '!phpcs.ruleset.xml', '!Gruntfile.js', '!package.json', '!package-lock.json', '!set_tags.sh', '!sparkling.zip', '!nbproject/**'],
+        dest: 'build/',
+      },
     },
 
     compress: {
       build: {
         options: {
           pretty: true,
-          archive: '<%= pkg.name %>.zip'
+          archive: '<%= pkg.name %>.zip',
         },
         expand: true,
         cwd: 'build/',
-        src: [ '**/*' ],
-        dest: '<%= pkg.name %>/'
-      }
+        src: ['**/*'],
+        dest: '<%= pkg.name %>/',
+      },
     },
 
     imagemin: {
       jpg: {
         options: {
-          progressive: true
-        }
+          progressive: true,
+        },
       },
       png: {
         options: {
-          optimizationLevel: 7
-        }
+          optimizationLevel: 7,
+        },
       },
       dynamic: {
         files: [
           {
             expand: true,
             cwd: 'assets/img/',
-            src: [ '**/*.{png,jpg,gif}' ],
-            dest: 'assets/img/'
-          } ]
-      }
+            src: ['**/*.{png,jpg,gif}'],
+            dest: 'assets/img/',
+          },
+        ],
+      },
     },
-
-  } );
+  });
 
   // Check Missing Text Domain Strings
-  grunt.registerTask( 'textdomain', [
-    'checktextdomain'
-  ] );
+  grunt.registerTask('textdomain', ['checktextdomain']);
 
   // Minify Images
-  grunt.registerTask( 'minimg', [
-    'imagemin:dynamic'
-  ] );
+  grunt.registerTask('minimg', ['imagemin:dynamic']);
 
   // Build task
-  grunt.registerTask( 'build-archive', [
-    'clean:init',
-    'copy',
-    'compress:build',
-    'clean:init'
-  ] );
+  grunt.registerTask('build-archive', ['clean:init', 'copy', 'compress:build', 'clean:init']);
 };

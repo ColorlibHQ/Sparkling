@@ -32,11 +32,12 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ( strpos( $_SERVER['HTTP_USER_AGENT
 </head>
 
 <body <?php body_class(); ?>>
+	<?php wp_body_open(); ?>
 <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 <div id="page" class="hfeed site">
 
 	<header id="masthead" class="site-header" role="banner">
-		<nav class="navbar navbar-default 
+		<nav class="navbar navbar-default
 		<?php
 		if ( of_get_option( 'sticky_header' ) ) {
 			echo 'navbar-fixed-top';}
@@ -46,12 +47,7 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ( strpos( $_SERVER['HTTP_USER_AGENT
 				<div class="row">
 					<div class="site-navigation-inner col-sm-12">
 						<div class="navbar-header">
-							<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
+
 
 														<div id="logo">
 															<?php if ( get_header_image() != '' ) { ?>
@@ -67,8 +63,21 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ( strpos( $_SERVER['HTTP_USER_AGENT
 																<?php echo is_home() ? '</h1>' : '</p>'; ?>
 															<?php } ?>
 														</div><!-- end of #logo -->
+
+							<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
 						</div>
+
+
+
 						<?php sparkling_header_menu(); // main navigation ?>
+
+
+
 					</div>
 				</div>
 			</div>
