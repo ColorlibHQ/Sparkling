@@ -1239,7 +1239,7 @@ button:focus,
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 753px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu,
   ul.nav li.dropdown:focus-within > ul.dropdown-menu {
     display: block;
