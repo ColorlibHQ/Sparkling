@@ -118,7 +118,7 @@ class WP_Bootstrap_Navwalker extends Walker_Nav_Menu {
 			}
 
 			$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
-			$item_output .= ( $args->has_children ) ? '</a><span class="caret sparkling-dropdown"></span>' : '</a>';
+			$item_output .= ( $args->has_children ) ? '</a><a class="sparkling-dropdown caret" href="#"></a>' : '</a>';
 
 			$item_output .= $args->after;
 
