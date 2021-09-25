@@ -62,7 +62,7 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../comments.php:38 ../comments.php:60
+#: ../comments.php:70
 msgid "Comment navigation"
 msgstr ""
 
