@@ -24,6 +24,7 @@
 						'href' => array(),
 					),
 				);
+				/* translators: %1$s: URL of the new post screen */
 				printf( wp_kses( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'sparkling' ), $wp_kses_args ), esc_url( admin_url( 'post-new.php' ) ) );
 
 			?>

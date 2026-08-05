@@ -18,9 +18,11 @@ class Sparkling_Popular_Posts extends WP_Widget {
 	public function enqueue() {
 
 		if ( is_admin() ) {
-			wp_enqueue_script( 'sparkling-popular-post-script', get_template_directory_uri() . '/assets/js/widget.js', array( 'jquery' ) );
+			wp_enqueue_media();
+			wp_enqueue_script( 'sparkling-popular-post-script', get_template_directory_uri() . '/assets/js/widget.js', array( 'jquery' ), SPARKLING_VERSION, true );
 			$args = array(
 				'ajaxurl' => admin_url( 'admin-ajax.php' ),
+				'nonce'   => wp_create_nonce( 'sparkling_widget_nonce' ),
 			);
 			wp_localize_script( 'sparkling-popular-post-script', 'Sparkling', $args );
 		}
@@ -34,7 +36,7 @@ class Sparkling_Popular_Posts extends WP_Widget {
 
 		echo $args['before_widget'];
 		echo $args['before_title'];
-		echo $title;
+		echo esc_html( $title );
 		echo $args['after_title'];
 
 		/**
@@ -48,10 +50,12 @@ class Sparkling_Popular_Posts extends WP_Widget {
 				<?php
 
 				  $featured_args = array(
-					  'posts_per_page'      => $limit,
+					  'posts_per_page'      => absint( $limit ) ? absint( $limit ) : 5,
 					  'orderby'             => 'comment_count',
 					  'order'               => 'DESC',
 					  'ignore_sticky_posts' => 1,
+					  'no_found_rows'       => true,
+					  'post_status'         => 'publish',
 				  );
 
 				  $featured_query = new WP_Query( $featured_args );
@@ -71,9 +75,9 @@ class Sparkling_Popular_Posts extends WP_Widget {
 						<div class="post">
 
 						  <!-- image -->
-						  <div class="post-image <?php echo get_post_format(); ?>">
+						  <div class="post-image <?php echo esc_attr( get_post_format() ); ?>">
 
-								<a href="<?php echo get_permalink(); ?>">
+								<a href="<?php echo esc_url( get_permalink() ); ?>">
 								<?php
 								if ( has_post_thumbnail() ) {
 									echo get_the_post_thumbnail( get_the_ID(), 'tab-small' );
@@ -88,8 +92,8 @@ class Sparkling_Popular_Posts extends WP_Widget {
 						  <!-- content -->
 						  <div class="post-content">
 
-							  <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
-							  <span class="date"><?php echo get_the_date( get_option( 'date_format' ) ); ?></span>
+							  <a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html( get_the_title() ); ?></a>
+							  <span class="date"><?php echo esc_html( get_the_date( get_option( 'date_format' ) ) ); ?></span>
 
 
 						  </div><!-- end content -->
@@ -101,7 +105,9 @@ class Sparkling_Popular_Posts extends WP_Widget {
 
 				  endwhile;
 endif;
-				wp_reset_query();
+				// wp_reset_query() also resets the main query; this loop only used a
+				// secondary WP_Query, so wp_reset_postdata() is the correct pairing.
+				wp_reset_postdata();
 
 					?>
 
@@ -112,6 +118,20 @@ endif;
 		echo $args['after_widget'];
 	}
 
+	/**
+	 * Sanitize widget settings before they are saved.
+	 */
+	public function update( $new_instance, $old_instance ) {
+		$instance          = $old_instance;
+		$instance['title'] = isset( $new_instance['title'] ) ? sanitize_text_field( $new_instance['title'] ) : '';
+		$instance['limit'] = isset( $new_instance['limit'] ) ? absint( $new_instance['limit'] ) : 5;
+
+		// The form posts back an attachment ID; store it as one.
+		$instance['default_image'] = isset( $new_instance['default_image'] ) ? absint( $new_instance['default_image'] ) : '';
+
+		return $instance;
+	}
+
 	function form( $instance ) {
 
 		if ( ! isset( $instance['title'] ) ) {
@@ -120,42 +140,46 @@ endif;
 		if ( ! isset( $instance['limit'] ) ) {
 			$instance['limit'] = 5;
 		}
-		if ( ! isset( $instance['default_image'] ) ) {
-			$instance['default_image'] = '';
-		} else {
-			$instance['default_image'] = wp_get_attachment_image_url( $instance['default_image'], 'medium' );
-		}
+		/*
+		 * The stored value is an attachment ID. This used to be overwritten with
+		 * the attachment URL for the preview, which meant the hidden field posted a
+		 * URL back and the saved setting stopped being an ID -- so widget() could no
+		 * longer resolve the fallback image. Keep the ID in the field and resolve
+		 * the preview URL separately.
+		 */
+		$default_image_id  = isset( $instance['default_image'] ) ? absint( $instance['default_image'] ) : 0;
+		$default_image_url = $default_image_id ? wp_get_attachment_image_url( $default_image_id, 'medium' ) : '';
 
 		?>
 
-		  <p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title', 'sparkling' ); ?></label>
+		  <p><label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title', 'sparkling' ); ?></label>
 
 		  <input  type="text" value="<?php echo esc_attr( $instance['title'] ); ?>"
-			  name="<?php echo $this->get_field_name( 'title' ); ?>"
-			  id="<?php $this->get_field_id( 'title' ); ?>"
+			  name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>"
+			  id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"
 			  class="widefat" />
 		  </p>
 
-		  <p><label for="<?php echo $this->get_field_id( 'limit' ); ?>"><?php esc_html_e( 'Limit Posts Number', 'sparkling' ); ?></label>
+		  <p><label for="<?php echo esc_attr( $this->get_field_id( 'limit' ) ); ?>"><?php esc_html_e( 'Limit Posts Number', 'sparkling' ); ?></label>
 
 		  <input  type="text" value="<?php echo esc_attr( $instance['limit'] ); ?>"
-			  name="<?php echo $this->get_field_name( 'limit' ); ?>"
-			  id="<?php $this->get_field_id( 'limit' ); ?>"
+			  name="<?php echo esc_attr( $this->get_field_name( 'limit' ) ); ?>"
+			  id="<?php echo esc_attr( $this->get_field_id( 'limit' ) ); ?>"
 			  class="widefat" />
 		  <p>
 		  <div class="sparkling-media-container media-widget-control">
 			  <p>
-				  <label for="<?php echo $this->get_field_id( 'default_image' ); ?>"><?php esc_html_e( 'Default Image', 'sparkling' ); ?></label>
-				  <input  type="hidden" value="<?php echo esc_attr( $instance['default_image'] ); ?>"
-				  name="<?php echo $this->get_field_name( 'default_image' ); ?>"
-				  id="<?php echo $this->get_field_id( 'default_image' ); ?>"
+				  <label for="<?php echo esc_attr( $this->get_field_id( 'default_image' ) ); ?>"><?php esc_html_e( 'Default Image', 'sparkling' ); ?></label>
+				  <input  type="hidden" value="<?php echo esc_attr( $default_image_id ? $default_image_id : '' ); ?>"
+				  name="<?php echo esc_attr( $this->get_field_name( 'default_image' ) ); ?>"
+				  id="<?php echo esc_attr( $this->get_field_id( 'default_image' ) ); ?>"
 				  class="widefat" />
 			  </p>
 			  <div class="media-widget-preview">
 				<div class="attachment-media-view">
-					<div class="placeholder" <?php echo $instance['default_image'] ? 'style="display:none;"' : ''; ?>><?php echo esc_html__( 'No media selected', 'sparkling' ); ?></div>
-					<?php if ( $instance['default_image'] ) : ?>
-						<img src="<?php echo $instance['default_image']; ?>">
+					<div class="placeholder" <?php echo $default_image_url ? 'style="display:none;"' : ''; ?>><?php echo esc_html__( 'No media selected', 'sparkling' ); ?></div>
+					<?php if ( $default_image_url ) : ?>
+						<img src="<?php echo esc_url( $default_image_url ); ?>" alt="">
 					<?php endif ?>
 				</div>
 			</div>

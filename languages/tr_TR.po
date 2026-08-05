@@ -1,28 +1,66 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-10-31 09:06+0300\n"
+"Report-Msgid-Bugs-To: https://colorlib.com/wp/support/\n"
+"POT-Creation-Date: 2026-08-05T12:17:17+00:00\n"
 "PO-Revision-Date: 2015-11-01 14:08+0300\n"
+"Last-Translator: Selman Kandeniz <skandeniz@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
+"Language: tr_TR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.6\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
-"esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-KeywordsList: "
+"_e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"Last-Translator: Selman Kandeniz <skandeniz@gmail.com>\n"
-"Language: tr_TR\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
-#: ../404.php:15
+#. Theme Name of the theme
+#: style.css
+#, fuzzy
+#| msgid "Sparkling Options"
+msgid "Sparkling"
+msgstr "Sparkling Ayarları"
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://colorlib.com/wp/themes/sparkling"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid ""
+"Sparkling is a clean, minimal and fully responsive WordPress theme suited to "
+"blogs, news, magazines, business, portfolio and shop sites. It ships a full-"
+"width front page slider, a call-to-action bar, social icon menu, author bio, "
+"popular posts and enhanced category widgets, and four sidebar layouts you "
+"can set globally or per post. Dozens of Customizer options cover colours, "
+"typography, header, footer and layout, with a live preview. Built on "
+"Bootstrap 3, the front end runs on plain JavaScript with no jQuery "
+"dependency of its own. Sparkling is translation ready and ships with over "
+"twenty translations, is WooCommerce ready, and works with bbPress, Contact "
+"Form 7 and Jetpack."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Colorlib"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://colorlib.com/"
+msgstr ""
+
+#: 404.php:15
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "Amanın! Sayfa bulunamadı."
 
-#: ../404.php:19
+#: 404.php:19
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
@@ -30,118 +68,970 @@ msgstr ""
 "Görünen o ki, bu adreste bir şey bulunamadı. Belki aşağıdaki linklerden "
 "birini denemek ya da arama yapmak isteyebilirsiniz?"
 
-#: ../404.php:25
+#: 404.php:25
 msgid "Recent Posts"
 msgstr "Son Yazılar"
 
-#: ../404.php:31
+#: 404.php:31
 msgid "Most Used Categories"
 msgstr "En Çok Kullanılan Kategoriler"
 
-#: ../404.php:52
+#. translators: %1$s: smiley
+#: 404.php:54
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Aylık arşivlere bakmayı deneyin. %1$s"
 
-#: ../404.php:53 ../archive.php:66 ../sidebar.php:19
+#: 404.php:55 sidebar.php:12
 msgid "Archives"
 msgstr "Arşivler"
 
-#: ../404.php:58
+#: 404.php:60
 msgid "Tags"
 msgstr "Etiketler"
 
-#: ../archive.php:27
-#, php-format
-msgid "Author: %s"
-msgstr "Yazar: %s"
+#: archive.php:42 inc/extras.php:605 index.php:46 search.php:40
+#, fuzzy
+#| msgid "Recent Posts"
+msgid "Newer posts"
+msgstr "Son Yazılar"
 
-#: ../archive.php:30
-#, php-format
-msgid "Day: %s"
-msgstr "Gün: %s"
+#: archive.php:43 inc/extras.php:606 index.php:47 search.php:41
+#, fuzzy
+#| msgid "Slider options"
+msgid "Older posts"
+msgstr "Manşet ayarları"
 
-#: ../archive.php:33
-#, php-format
-msgid "Month: %s"
-msgstr "Ay: %s"
-
-#: ../archive.php:36
-#, php-format
-msgid "Year: %s"
-msgstr "Yıl: %s"
-
-#: ../archive.php:39
-msgid "Asides"
-msgstr "Yan yorumlar"
-
-#: ../archive.php:42
-msgid "Galleries"
-msgstr "Galeriler"
-
-#: ../archive.php:45
-msgid "Images"
-msgstr "Resimler"
-
-#: ../archive.php:48
-msgid "Videos"
-msgstr "Videolar"
-
-#: ../archive.php:51
-msgid "Quotes"
-msgstr "Alıntılar"
-
-#: ../archive.php:54
-msgid "Links"
-msgstr "Bağlantılar"
-
-#: ../archive.php:57
-msgid "Statuses"
-msgstr "Durumlar"
-
-#: ../archive.php:60
-msgid "Audios"
-msgstr "Sesler"
-
-#: ../archive.php:63
-msgid "Chats"
-msgstr "Sohbetler"
-
-#: ../comments.php:28
-#, php-format
+#. translators: %s: post title
+#: comments.php:38
+#, fuzzy, php-format
+#| msgctxt "comments title"
+#| msgid "One thought on &ldquo;%2$s&rdquo;"
+#| msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgid "One thought to &ldquo;%s&rdquo;"
+msgstr "&ldquo;%2$s&rdquo; hakkında %1$s yorum"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:42
+#, fuzzy, php-format
+#| msgctxt "comments title"
+#| msgid "One thought on &ldquo;%2$s&rdquo;"
+#| msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgctxt "comments title"
+msgid "%1$s thought to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts to &ldquo;%2$s&rdquo;"
 msgstr[0] "&ldquo;%2$s&rdquo; hakkında %1$s yorum"
 
-#: ../comments.php:35 ../comments.php:53
+#: comments.php:58 comments.php:82
 msgid "Comment navigation"
 msgstr "Yorum dolaşımı"
 
-#: ../comments.php:36 ../comments.php:54
-msgid "&larr; Older Comments"
+#: comments.php:61 comments.php:85
+#, fuzzy
+#| msgid "&larr; Older Comments"
+msgid "Older Comments"
 msgstr "&larr; Daha eski yorumlar"
 
-#: ../comments.php:37 ../comments.php:55
-msgid "Newer Comments &rarr;"
+#: comments.php:62 comments.php:86
+#, fuzzy
+#| msgid "Newer Comments &rarr;"
+msgid "Newer Comments"
 msgstr "Daha yeni yorumlar &rarr;"
 
-#: ../comments.php:65
+#: comments.php:100
 msgid "Comments are closed."
 msgstr "Yorumlar kapalı."
 
-#: ../content-none.php:13
+#: functions.php:84
+msgid "Primary Menu"
+msgstr "Birincil Menü"
+
+#: functions.php:85 inc/extras.php:144
+msgid "Footer Links"
+msgstr "Alt Kısım Bağlantıları"
+
+#: functions.php:168
+msgid "Sidebar"
+msgstr "Yan Menü"
+
+#: functions.php:180
+msgid "Homepage Widget 1"
+msgstr "Ana Sayfa Bileşeni 1"
+
+#: functions.php:181 functions.php:193 functions.php:205
+msgid "Displays on the Home Page"
+msgstr "Ana sayfada görünür"
+
+#: functions.php:192
+msgid "Homepage Widget 2"
+msgstr "Ana Sayfa Bileşeni 2"
+
+#: functions.php:204
+msgid "Homepage Widget 3"
+msgstr "Ana Sayfa Bileşeni 3"
+
+#: functions.php:216
+msgid "Footer Widget 1"
+msgstr "Alt Kısım Bileşeni 1"
+
+#: functions.php:217 functions.php:229 functions.php:241
+msgid "Used for footer widget area"
+msgstr "Sayfa altı bileşen alanı için kullanılır"
+
+#: functions.php:228
+msgid "Footer Widget 2"
+msgstr "Alt Kısım Bileşeni 2"
+
+#: functions.php:240
+msgid "Footer Widget 3"
+msgstr "Alt Kısım Bileşeni 3"
+
+#: functions.php:303
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: functions.php:310
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: functions.php:317
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: functions.php:472
+#, fuzzy
+#| msgid "Social"
+msgctxt "nav menu location"
+msgid "Social Menu"
+msgstr "Sosyal"
+
+#: functions.php:503
+msgid "Right Sidebar"
+msgstr "Sağ Yan Menü"
+
+#: functions.php:504
+msgid "Left Sidebar"
+msgstr "Sol Yan Menü"
+
+#: functions.php:505
+msgid "No Sidebar"
+msgstr "Yan menü yok"
+
+#: functions.php:506
+msgid "Full Width"
+msgstr "Tam genişlikli şablon"
+
+#: functions.php:692 inc/welcome-screen/class-sparkling-welcome.php:113
+#: inc/welcome-screen/class-sparkling-welcome.php:253
+#: inc/welcome-screen/class-sparkling-welcome.php:294
+msgid "You are not allowed to do that."
+msgstr ""
+
+#: functions.php:700
+msgid "Invalid attachment."
+msgstr ""
+
+#: image.php:25
+msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
+msgstr "<i class=\"fa fa-chevron-left\"></i> Önceki"
+
+#: image.php:26
+msgid "Next <i class=\"fa fa-chevron-right\"></i>"
+msgstr "Sonraki <i class=\"fa fa-chevron-right\"></i>"
+
+#: image.php:90 template-parts/content-page.php:36
+#: template-parts/content-single.php:51 template-parts/content-video.php:84
+#: template-parts/content.php:77
+msgid "Pages:"
+msgstr "Sayfalar"
+
+#: inc/class-wp-bootstrap-navwalker.php:206
+msgid "Add a menu"
+msgstr ""
+
+#: inc/customizer.php:40
+msgid "Sparkling Options"
+msgstr "Sparkling Ayarları"
+
+#: inc/customizer.php:41
+msgid "Panel to update sparkling theme options"
+msgstr ""
+
+#: inc/customizer.php:51
+msgid "Content Options"
+msgstr "İçerik ayarları"
+
+#: inc/customizer.php:67
+msgid "Show post excerpts?"
+msgstr ""
+
+#: inc/customizer.php:84
+msgid "Display Comments on Static Pages?"
+msgstr "Sayfalarda yorumlar gösterilsin mi?"
+
+#: inc/customizer.php:95
+#, fuzzy
+#| msgid "Slider options"
+msgid "Slider Options"
+msgstr "Manşet ayarları"
+
+#: inc/customizer.php:110
+msgid "Check if you want to enable slider"
+msgstr "Manşete etkinleştirmek istiyorsanız işaretleyin"
+
+#: inc/customizer.php:127
+msgid "Uncheck this option to remove the link from the slides"
+msgstr ""
+
+#: inc/customizer.php:147
+msgid "Slider Category"
+msgstr "Manşet Kategorisi"
+
+#: inc/customizer.php:150
+msgid "Select a category for the featured post slider"
+msgstr "Öne çıkarılmış manşet yazısı için kategori seçin"
+
+#: inc/customizer.php:164
+msgid "Number of slide items"
+msgstr "Slayt nesnesi sayısı"
+
+#: inc/customizer.php:166
+msgid "Enter the number of slide items"
+msgstr "Slayt nesnesi sayısını girin"
+
+#: inc/customizer.php:173
+#, fuzzy
+#| msgid "Layout options"
+msgid "Layout Options"
+msgstr "Düzen ayarları"
+
+#: inc/customizer.php:189
+msgid "Website Layout Options"
+msgstr "Web site düzen ayarları"
+
+#: inc/customizer.php:192
+msgid "Choose between different layout options to be used as default"
+msgstr "Varsayılan olarak kullanılmak üzere düzen seçin"
+
+#: inc/customizer.php:207
+#, fuzzy
+#| msgid "Website Layout Options"
+msgid "WooCommerce Page Layout Options"
+msgstr "Web site düzen ayarları"
+
+#: inc/customizer.php:210
+#, fuzzy
+#| msgid "Choose between different layout options to be used as default"
+msgid ""
+"Choose between different layout options to be used as default for all "
+"woocommerce pages"
+msgstr "Varsayılan olarak kullanılmak üzere düzen seçin"
+
+#: inc/customizer.php:226
+msgid "Element Color"
+msgstr "Element Rengi"
+
+#: inc/customizer.php:227 inc/customizer.php:245 inc/customizer.php:319
+#: inc/customizer.php:335 inc/customizer.php:351 inc/customizer.php:367
+#: inc/customizer.php:492 inc/customizer.php:508 inc/customizer.php:552
+#: inc/customizer.php:766 inc/customizer.php:783
+msgid "Default used if no color is selected"
+msgstr "Renk seçilmediyse varsayılan renk kullanılır"
+
+#: inc/customizer.php:244
+msgid "Element color on hover"
+msgstr "Vurgulanmış element rengi"
+
+#: inc/customizer.php:255
+msgid "Action Button"
+msgstr ""
+
+#: inc/customizer.php:269
+msgid "Call For Action Text"
+msgstr ""
+
+#: inc/customizer.php:270
+msgid "Enter the text for call for action section"
+msgstr ""
+
+#: inc/customizer.php:285
+msgid "Call For Action Button Title"
+msgstr ""
+
+#: inc/customizer.php:287
+msgid "Enter the title for Call For Action button"
+msgstr ""
+
+#: inc/customizer.php:301
+msgid "CFA button link"
+msgstr ""
+
+#: inc/customizer.php:303
+msgid "Enter the link for Call For Action button"
+msgstr ""
+
+#: inc/customizer.php:318
+msgid "Call For Action Text Color"
+msgstr ""
+
+#: inc/customizer.php:334
+msgid "Call For Action Background Color"
+msgstr ""
+
+#: inc/customizer.php:350
+msgid "Call For Action Button Border Color"
+msgstr ""
+
+#: inc/customizer.php:366
+msgid "Call For Action Button Text Color"
+msgstr ""
+
+#: inc/customizer.php:376
+msgid "Typography"
+msgstr "Tipografi"
+
+#: inc/customizer.php:400
+msgid "Main Body Text"
+msgstr "Ana gövde metni"
+
+#: inc/customizer.php:401
+msgid "Used in p tags"
+msgstr "p etiketlerinde kullanılır"
+
+#: inc/customizer.php:458
+msgid "Font Subset"
+msgstr ""
+
+#: inc/customizer.php:460
+msgid "Enter the Google fonts subset"
+msgstr ""
+
+#: inc/customizer.php:475
+msgid "Heading Color"
+msgstr "Başlık Rengi"
+
+#: inc/customizer.php:476
+msgid "Color for all headings (h1-h6)"
+msgstr "Bütün başlıklar (h1-h6) için renk"
+
+#: inc/customizer.php:491
+msgid "Link Color"
+msgstr "Bağlantı rengi"
+
+#: inc/customizer.php:507
+msgid "Link:hover Color"
+msgstr "Bağlantı vurgulanmış rengi"
+
+#: inc/customizer.php:517
+msgid "Header"
+msgstr "Üst Kısım"
+
+#: inc/customizer.php:533
+#, fuzzy
+#| msgid "Header"
+msgid "Sticky Header"
+msgstr "Üst Kısım"
+
+#: inc/customizer.php:534
+msgid "Check to show fixed header"
+msgstr ""
+
+#: inc/customizer.php:551
+msgid "Top nav background color"
+msgstr ""
+
+#: inc/customizer.php:567
+msgid "Top nav item color"
+msgstr ""
+
+#: inc/customizer.php:568
+msgid "Link color"
+msgstr ""
+
+#: inc/customizer.php:584
+msgid "Top nav item hover color"
+msgstr ""
+
+#: inc/customizer.php:585
+msgid "Link:hover color"
+msgstr ""
+
+#: inc/customizer.php:601
+msgid "Top nav dropdown background color"
+msgstr ""
+
+#: inc/customizer.php:602 inc/customizer.php:653
+msgid "Background of dropdown item hover color"
+msgstr ""
+
+#: inc/customizer.php:618
+msgid "Top nav dropdown item color"
+msgstr ""
+
+#: inc/customizer.php:619
+msgid "Dropdown item color"
+msgstr ""
+
+#: inc/customizer.php:635
+msgid "Top nav dropdown item hover color"
+msgstr ""
+
+#: inc/customizer.php:636
+msgid "Dropdown item hover color"
+msgstr ""
+
+#: inc/customizer.php:652
+msgid "Top nav dropdown item background hover color"
+msgstr ""
+
+#: inc/customizer.php:662
+msgid "Footer"
+msgstr "Alt Kısım"
+
+#: inc/customizer.php:677
+msgid "Footer widget area background color"
+msgstr "Alt kısım bileşen alanı arka plan rengi"
+
+#: inc/customizer.php:693
+msgid "Footer background color"
+msgstr "Alt kısım arka plan rengi"
+
+#: inc/customizer.php:709
+msgid "Footer text color"
+msgstr "Alt kısım yazı rengi"
+
+#: inc/customizer.php:725
+msgid "Footer link color"
+msgstr "Alt kısım bağlantı rengi"
+
+#: inc/customizer.php:740
+msgid "Footer information"
+msgstr "Alt kısım bilgisi"
+
+#: inc/customizer.php:741
+msgid "Copyright text in footer"
+msgstr "Alt kısımdaki copyright yazısı"
+
+#: inc/customizer.php:750
+msgid "Social"
+msgstr "Sosyal"
+
+#: inc/customizer.php:765
+msgid "Social icon color"
+msgstr "Sosyal ikon rengi"
+
+#: inc/customizer.php:782
+msgid "Footer social icon color"
+msgstr "Alt kısım sosyal ikon rengi"
+
+#: inc/customizer.php:799
+msgid "Footer Social Icons"
+msgstr "Alt Kısım Sosyal İkonları"
+
+#: inc/customizer.php:800
+msgid "Check to show social icons in footer"
+msgstr "Alt kısımda sosyal ikonları göster"
+
+#: inc/customizer.php:819
+msgid "Enable Academicons"
+msgstr ""
+
+#: inc/customizer.php:820
+msgid "Toggle this to ON to enable the usage of Academicons"
+msgstr ""
+
+#: inc/customizer.php:830
+#, fuzzy
+#| msgid "Archives"
+msgid "Archive Pages"
+msgstr "Arşivler"
+
+#: inc/customizer.php:846
+msgid "Tag Page Title"
+msgstr ""
+
+#. translators: %s: tag name
+#: inc/customizer.php:849
+#, php-format
+msgid ""
+"The headline for your tag pages. You can use %s as a placeholder for the "
+"tag. Leave empty for default."
+msgstr ""
+
+#: inc/customizer.php:864
+#, fuzzy
+#| msgid "Categories"
+msgid "Category Page Title"
+msgstr "Kategoriler"
+
+#. translators: %s: category name
+#: inc/customizer.php:867
+#, php-format
+msgid ""
+"The headline for your category pages. You can use %s as a placeholder for "
+"the category. Leave empty for default."
+msgstr ""
+
+#: inc/customizer.php:882
+msgid "Author Page Title"
+msgstr ""
+
+#. translators: %s: author name
+#: inc/customizer.php:885
+#, php-format
+msgid ""
+"The headline for your author pages. You can use %s as a placeholder for the "
+"author's name. Leave empty for default."
+msgstr ""
+
+#: inc/customizer.php:900
+msgid "Year Page Title"
+msgstr ""
+
+#. translators: %s: year
+#: inc/customizer.php:903
+#, php-format
+msgid ""
+"The headline for your year pages. You can use %s as a placeholder for the "
+"year. Leave empty for default."
+msgstr ""
+
+#: inc/customizer.php:918
+msgid "Month Page Title"
+msgstr ""
+
+#. translators: %s: month
+#: inc/customizer.php:921
+#, php-format
+msgid ""
+"The headline for your month pages. You can use %s as a placeholder for the "
+"month. Leave empty for default."
+msgstr ""
+
+#: inc/customizer.php:936
+msgid "Day Page Title"
+msgstr ""
+
+#. translators: %s: day
+#: inc/customizer.php:939
+#, php-format
+msgid ""
+"The headline for your day pages. You can use %s as a placeholder for the "
+"day. Leave empty for default."
+msgstr ""
+
+#: inc/extras.php:66
+msgid ""
+"This post is password protected. To view it please enter your password below:"
+msgstr "Bu yazı parola korumalıdır. Görüntülemek için lütfen parolayı giriniz:"
+
+#: inc/extras.php:67
+msgid "Password:"
+msgstr "Parola:"
+
+#: inc/extras.php:70
+msgid "Submit"
+msgstr "Gönder"
+
+#. translators: 1: Colorlib link, 2: WordPress link
+#: inc/extras.php:284
+#, php-format
+msgid "Theme by %1$s Powered by %2$s"
+msgstr "%1$s tarafından tasarlanmış, %2$s ile güçlendirilmiştir."
+
+#: inc/extras.php:489
+msgid "Support and Documentation"
+msgstr "Destek ve Dökümantasyon"
+
+#: inc/extras.php:498
+msgid "Sparkling Documentation"
+msgstr "Sparkling Dökümantasyonu"
+
+#: inc/extras.php:500
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr ""
+
+#: inc/extras.php:501
+msgid "Colorlib support forum"
+msgstr "Colorlib destek forumu"
+
+#: inc/extras.php:503
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr ""
+"Bizimle temas kurmanın en iyi yolu <b>destek soruları</b> ve <b>hata "
+"raporları</b> ile"
+
+#: inc/extras.php:507 inc/extras.php:508
+msgid "Rate this Theme"
+msgstr "Temayı değerlendirin"
+
+#: inc/extras.php:511
+msgid "Like on Facebook"
+msgstr "Facebook'da beğenin"
+
+#: inc/extras.php:514
+msgid "Follow on Twitter"
+msgstr "Twitter'da takip edin"
+
+#: inc/metaboxes.php:16
+msgid ""
+"Select layout for this specific Page only ( Note: This setting only reflects "
+"if page Template is set as Default Template and Blog Type Templates.)"
+msgstr "Sadece bu sayfa için düzen seçin"
+
+#: inc/metaboxes.php:22
+msgid "Select layout for this specific Post only"
+msgstr "Sadece bu yazı için düzen seçin"
+
+#: inc/metaboxes.php:30
+#, fuzzy
+#| msgid "Select layout for this specific Post only"
+msgid "Select layout for this specific Product only"
+msgstr "Sadece bu yazı için düzen seçin"
+
+#: inc/metaboxes.php:67
+msgid "Default"
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:122
+msgid "No page titled \"Homepage\" was found."
+msgstr ""
+
+#. translators: 1: opening anchor tag, 2: closing anchor tag
+#: inc/welcome-screen/class-sparkling-welcome.php:188
+#, php-format
+msgid ""
+"Welcome! Thank you for choosing Sparkling! To fully take advantage of the "
+"best our theme can offer please make sure you visit our %1$swelcome page%2$s."
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:190
+msgid "Get started with Sparkling"
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:237
+#: inc/welcome-screen/sections/actions-required.php:157
+msgid "Hooray! There are no required actions for you right now."
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:485
+msgid "You are not allowed to access this page."
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:500
+msgid "Welcome to Sparkling! - Version "
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:503
+msgid ""
+"Sparkling is now installed and ready to use! Get ready to build something "
+"beautiful. We hope you enjoy it! We want to make sure you have the best "
+"experience using Sparkling and that is why we gathered here all the "
+"necessary information for you. We hope you will enjoy using Sparkling, as "
+"much as we enjoy creating great products."
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:510
+msgid "Getting Started"
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:512
+msgid "Recommended Plugins"
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:514
+#: inc/welcome-screen/sections/support.php:25
+msgid "Changelog"
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:516
+msgid "Support"
+msgstr ""
+
+#: inc/welcome-screen/sections/actions-required.php:65
+#: inc/welcome-screen/sections/actions-required.php:127
+#, fuzzy
+#| msgid "Instagram"
+msgid "Install"
+msgstr "Instagram"
+
+#: inc/welcome-screen/sections/actions-required.php:69
+#: inc/welcome-screen/sections/actions-required.php:131
+#: inc/welcome-screen/sections/recommended-plugins.php:55
+msgid "Activate"
+msgstr ""
+
+#: inc/welcome-screen/sections/actions-required.php:73
+#: inc/welcome-screen/sections/actions-required.php:135
+#: inc/welcome-screen/sections/recommended-plugins.php:59
+msgid "Deactivate"
+msgstr ""
+
+#: inc/welcome-screen/sections/actions-required.php:103
+msgid ""
+"Hooray! There are no required actions for you right now. But you can make "
+"your theme more powerful with next actions: "
+msgstr ""
+
+#: inc/welcome-screen/sections/changelog.php:21
+msgid "The changelog file could not be found."
+msgstr ""
+
+#: inc/welcome-screen/sections/changelog.php:29
+msgid "The changelog file could not be read."
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:19
+msgid "Step 1 - Implement recommended actions"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:20
+msgid ""
+"We've compiled a list of steps for you, to take make sure the experience "
+"you'll have using one of our products is very easy to follow."
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:23
+msgid "No recommended actions left to perform"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:26
+msgid "Check recommended actions"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:34
+#, fuzzy
+#| msgid "Support and Documentation"
+msgid "Step 2 - Check our documentation"
+msgstr "Destek ve Dökümantasyon"
+
+#: inc/welcome-screen/sections/getting-started.php:35
+msgid ""
+"Even if you're a long-time WordPress user, we still believe you should give "
+"our documentation a very quick Read."
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:38
+#, fuzzy
+#| msgid "Support and Documentation"
+msgid "Full documentation"
+msgstr "Destek ve Dökümantasyon"
+
+#: inc/welcome-screen/sections/getting-started.php:43
+msgid "Step 3 - Customize everything"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:44
+msgid ""
+"Using the WordPress Customizer you can easily customize every aspect of the "
+"theme."
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:46
+msgid "Go to Customizer"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:25
+msgid "Recommended plugins list"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:51
+msgid "Install Now"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:89
+msgid "Active"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:98
+msgid "More Details"
+msgstr ""
+
+#. translators: %s: plugin author name
+#: inc/welcome-screen/sections/recommended-plugins.php:108
+#, php-format
+msgid "By %s"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:115
+msgid "Version:"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:120
+msgid "Installed and active"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:122
+msgid "Installed, not active"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:124
+msgid "Not installed"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:5
+#: inc/welcome-screen/sections/support.php:10
+msgid "Contact Support"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:7
+msgid ""
+"We offer excellent support through our advanced ticketing system. Make sure "
+"to register your purchase before contacting support!"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:15
+#, fuzzy
+#| msgid "Sparkling Documentation"
+msgid "Documentation"
+msgstr "Sparkling Dökümantasyonu"
+
+#: inc/welcome-screen/sections/support.php:17
+msgid ""
+"This is the place to go to reference different aspects of the theme. Our "
+"online documentation is an incredible resource for learning the ins and outs "
+"of using Sparkling."
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:20
+#, fuzzy
+#| msgid "Support and Documentation"
+msgid "See our full documentation"
+msgstr "Destek ve Dökümantasyon"
+
+#: inc/welcome-screen/sections/support.php:27
+msgid ""
+"Want to get the gist on the latest theme changes? Just consult our changelog "
+"below to get a taste of the recent fixes and features implemented."
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:30
+msgid "See changelog"
+msgstr ""
+
+#: inc/widgets/class-sparkling-categories.php:13
+#: inc/widgets/class-sparkling-categories.php:15
+msgid "Sparkling Categories"
+msgstr "Sparkling Kategoriler Bileşeni"
+
+#: inc/widgets/class-sparkling-categories.php:19
+#: inc/widgets/class-sparkling-categories.php:95
+msgid "Categories"
+msgstr "Kategoriler"
+
+#: inc/widgets/class-sparkling-categories.php:106
+#: inc/widgets/class-sparkling-social-widget.php:58
+msgid "Title "
+msgstr "Başlık"
+
+#: inc/widgets/class-sparkling-categories.php:114
+msgid "Limit Categories "
+msgstr "Gösterilecek kategori sayısı"
+
+#: inc/widgets/class-sparkling-categories.php:131
+msgid "Enable Posts Count"
+msgstr "Yazı sayacını etkinleştir"
+
+#: inc/widgets/class-sparkling-popular-posts.php:13
+#: inc/widgets/class-sparkling-popular-posts.php:15
+msgid "Sparkling Popular Posts Widget"
+msgstr "Sparkling Popüler Yazılar Bileşeni"
+
+#: inc/widgets/class-sparkling-popular-posts.php:33
+#: inc/widgets/class-sparkling-popular-posts.php:138
+msgid "Popular Posts"
+msgstr "Popüler Yazılar"
+
+#: inc/widgets/class-sparkling-popular-posts.php:155
+msgid "Title"
+msgstr "Başlık"
+
+#: inc/widgets/class-sparkling-popular-posts.php:163
+msgid "Limit Posts Number"
+msgstr "Gösterilecek yazı sayısı"
+
+#: inc/widgets/class-sparkling-popular-posts.php:172
+msgid "Default Image"
+msgstr ""
+
+#: inc/widgets/class-sparkling-popular-posts.php:180
+msgid "No media selected"
+msgstr ""
+
+#: inc/widgets/class-sparkling-popular-posts.php:188
+msgctxt "label for button in the media widget"
+msgid "Add Media"
+msgstr ""
+
+#: inc/widgets/class-sparkling-popular-posts.php:191
+msgctxt ""
+"label for button in the media widget; should preferably not be longer than "
+"~13 characters long"
+msgid "Remove Media"
+msgstr ""
+
+#: inc/widgets/class-sparkling-social-widget.php:13
+#: inc/widgets/class-sparkling-social-widget.php:15
+msgid "Sparkling Social Widget"
+msgstr "Sparkling Sosyal Bileşeni"
+
+#: inc/widgets/class-sparkling-social-widget.php:20
+#: inc/widgets/class-sparkling-social-widget.php:54
+msgid "Follow us"
+msgstr "Bizi takip edin"
+
+#. Template Name of the theme
+msgid "Full-width(no sidebar)"
+msgstr ""
+
+#. translators: %s: search query
+#: search.php:20
+#, php-format
+msgid "Search Results for: %s"
+msgstr "%s için arama sonuçları"
+
+#: searchform.php:11
+msgid "Search for:"
+msgstr "Arama yap:"
+
+#: searchform.php:12
+msgctxt "placeholder"
+msgid "Search&hellip;"
+msgstr "Ara&nbsp;&hellip;"
+
+#: searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr "Arama:"
+
+#: searchform.php:14
+msgctxt "submit button"
+msgid "Search"
+msgstr "Ara"
+
+#: sidebar.php:24
+msgid "Meta"
+msgstr "Meta"
+
+#: template-parts/content-none.php:12
 msgid "Nothing Found"
 msgstr "Hiçbir şey bulunamadı"
 
-#: ../content-none.php:19
+#. translators: %1$s: URL of the new post screen
+#: template-parts/content-none.php:28
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 "İlk yazını yayımlamaya hazır mısın? <a href=\"%1$s\">Buradan başla</a>."
 
-#: ../content-none.php:23
+#: template-parts/content-none.php:35
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
@@ -149,7 +1039,7 @@ msgstr ""
 "Üzgünüz, arama terimlerinizle hiçbir şey eşleşmedi. Lütfen farklı anahtar "
 "kelimeler kullanarak tekrar deneyiniz."
 
-#: ../content-none.php:28
+#: template-parts/content-none.php:41
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
@@ -157,672 +1047,214 @@ msgstr ""
 "Görünen o ki, istediğinizi bulamadık. Muhtemelen arama yapmak yardımcı "
 "olabilir."
 
-#: ../content-page.php:21 ../content-single.php:35 ../content.php:49
-#: ../image.php:79
-msgid "Pages:"
-msgstr "Sayfalar"
-
-#: ../content-page.php:32 ../content-single.php:26 ../content.php:23
-msgid "Edit"
+#. translators: %s: Name of current post
+#: template-parts/content-page.php:56 template-parts/content-single.php:34
+#: template-parts/content-video.php:49 template-parts/content.php:42
+#, fuzzy, php-format
+#| msgid "Edit"
+msgid "Edit %s"
 msgstr "Düzenle"
 
-#: ../content-single.php:19
+#. translators: used between list items, there is a space after the comma
+#: template-parts/content-single.php:22
 msgid ", "
 msgstr ", "
 
-#: ../content-single.php:23
-#, php-format
-msgid " %1$s"
-msgstr " %1$s"
-
-#: ../content.php:20
+#: template-parts/content-video.php:41 template-parts/content.php:34
 msgid "Leave a comment"
 msgstr "Yorum yapın"
 
-#: ../content.php:20
+#: template-parts/content-video.php:41 template-parts/content.php:34
 msgid "1 Comment"
 msgstr "1 Yorum"
 
-#: ../content.php:20
+#: template-parts/content-video.php:41 template-parts/content.php:34
 msgid "% Comments"
 msgstr "% Yorum"
 
-#: ../content.php:32 ../content.php:45
+#: template-parts/content-video.php:65 template-parts/content-video.php:74
+#: template-parts/content-video.php:77 template-parts/content.php:58
+#: template-parts/content.php:67 template-parts/content.php:70
 msgid "Read More"
 msgstr "Devamını Oku"
 
-#: ../functions.php:69
-msgid "Primary Menu"
-msgstr "Birincil Menü"
-
-#: ../functions.php:70 ../inc/extras.php:198
-msgid "Footer Links"
-msgstr "Alt Kısım Bağlantıları"
-
-#: ../functions.php:108
-msgid "Sidebar"
-msgstr "Yan Menü"
-
-#: ../functions.php:118
-msgid "Homepage Widget 1"
-msgstr "Ana Sayfa Bileşeni 1"
-
-#: ../functions.php:119 ../functions.php:129 ../functions.php:139
-msgid "Displays on the Home Page"
-msgstr "Ana sayfada görünür"
-
-#: ../functions.php:128
-msgid "Homepage Widget 2"
-msgstr "Ana Sayfa Bileşeni 2"
-
-#: ../functions.php:138
-msgid "Homepage Widget 3"
-msgstr "Ana Sayfa Bileşeni 3"
-
-#: ../functions.php:148
-msgid "Footer Widget 1"
-msgstr "Alt Kısım Bileşeni 1"
-
-#: ../functions.php:149 ../functions.php:159 ../functions.php:169
-msgid "Used for footer widget area"
-msgstr "Sayfa altı bileşen alanı için kullanılır"
-
-#: ../functions.php:158
-msgid "Footer Widget 2"
-msgstr "Alt Kısım Bileşeni 2"
-
-#: ../functions.php:168
-msgid "Footer Widget 3"
-msgstr "Alt Kısım Bileşeni 3"
-
-#: ../functions.php:304 ../options.php:23
-msgid "Right Sidebar"
-msgstr "Sağ Yan Menü"
-
-#: ../functions.php:304 ../options.php:23
-msgid "Left Sidebar"
-msgstr "Sol Yan Menü"
-
-#: ../functions.php:304
-msgid "No Sidebar"
-msgstr "Yan menü yok"
-
-#: ../functions.php:304
-msgid "Full Width"
-msgstr "Tam genişlikli şablon"
-
-#: ../image.php:22
-msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
-msgstr "<i class=\"fa fa-chevron-left\"></i> Önceki"
-
-#: ../image.php:23
-msgid "Next <i class=\"fa fa-chevron-right\"></i>"
-msgstr "Sonraki <i class=\"fa fa-chevron-right\"></i>"
-
-#: ../inc/customizer.php:29
-msgid "Sparkling Options"
-msgstr "Sparkling Ayarları"
-
-#: ../inc/customizer.php:30
-msgid "Panel to update sparkling theme options"
-msgstr ""
-
-#: ../inc/customizer.php:36
-msgid "Content Options"
-msgstr "İçerik ayarları"
-
-#: ../inc/customizer.php:47
-msgid "Show post excerpts?"
-msgstr ""
-
-#: ../inc/customizer.php:58
-msgid "Display Comments on Static Pages?"
-msgstr "Sayfalarda yorumlar gösterilsin mi?"
-
-#: ../inc/customizer.php:66
-msgid "Slider options"
-msgstr "Manşet ayarları"
-
-#: ../inc/customizer.php:76 ../options.php:116
-msgid "Check if you want to enable slider"
-msgstr "Manşete etkinleştirmek istiyorsanız işaretleyin"
-
-#: ../inc/customizer.php:91 ../options.php:123
-msgid "Slider Category"
-msgstr "Manşet Kategorisi"
-
-#: ../inc/customizer.php:94 ../options.php:124
-msgid "Select a category for the featured post slider"
-msgstr "Öne çıkarılmış manşet yazısı için kategori seçin"
-
-#: ../inc/customizer.php:104 ../options.php:132
-msgid "Number of slide items"
-msgstr "Slayt nesnesi sayısı"
-
-#: ../inc/customizer.php:106 ../options.php:133
-msgid "Enter the number of slide items"
-msgstr "Slayt nesnesi sayısını girin"
-
-#: ../inc/customizer.php:111
-msgid "Layout options"
-msgstr "Düzen ayarları"
-
-#: ../inc/customizer.php:123 ../options.php:141
-msgid "Website Layout Options"
-msgstr "Web site düzen ayarları"
-
-#: ../inc/customizer.php:126
-msgid "Choose between different layout options to be used as default"
-msgstr "Varsayılan olarak kullanılmak üzere düzen seçin"
-
-#: ../inc/customizer.php:136
-msgid "Element Color"
-msgstr "Element Rengi"
-
-#: ../inc/customizer.php:137 ../inc/customizer.php:149
-#: ../inc/customizer.php:203 ../inc/customizer.php:213
-#: ../inc/customizer.php:223 ../inc/customizer.php:233
-#: ../inc/customizer.php:311 ../inc/customizer.php:321
-#: ../inc/customizer.php:338 ../inc/customizer.php:478
-#: ../inc/customizer.php:489 ../options.php:152 ../options.php:160
-#: ../options.php:205 ../options.php:213 ../options.php:221 ../options.php:229
-#: ../options.php:259 ../options.php:267 ../options.php:280 ../options.php:390
-#: ../options.php:398
-msgid "Default used if no color is selected"
-msgstr "Renk seçilmediyse varsayılan renk kullanılır"
-
-#: ../inc/customizer.php:148 ../options.php:159
-msgid "Element color on hover"
-msgstr "Vurgulanmış element rengi"
-
-#: ../inc/customizer.php:156 ../options.php:175
-msgid "Action Button"
-msgstr ""
-
-#: ../inc/customizer.php:166 ../options.php:180
-msgid "Call For Action Text"
-msgstr ""
-
-#: ../inc/customizer.php:167 ../options.php:181
-msgid "Enter the text for call for action section"
-msgstr ""
-
-#: ../inc/customizer.php:178 ../options.php:188
-msgid "Call For Action Button Title"
-msgstr ""
-
-#: ../inc/customizer.php:180 ../options.php:189
-msgid "Enter the title for Call For Action button"
-msgstr ""
-
-#: ../inc/customizer.php:190 ../options.php:196
-msgid "CFA button link"
-msgstr ""
-
-#: ../inc/customizer.php:192 ../options.php:197
-msgid "Enter the link for Call For Action button"
-msgstr ""
-
-#: ../inc/customizer.php:202 ../options.php:204
-msgid "Call For Action Text Color"
-msgstr ""
-
-#: ../inc/customizer.php:212 ../options.php:212
-msgid "Call For Action Background Color"
-msgstr ""
-
-#: ../inc/customizer.php:222 ../options.php:220
-msgid "Call For Action Button Border Color"
-msgstr ""
-
-#: ../inc/customizer.php:232 ../options.php:228
-msgid "Call For Action Button Text Color"
-msgstr ""
-
-#: ../inc/customizer.php:239 ../options.php:236
-msgid "Typography"
-msgstr "Tipografi"
-
-#: ../inc/customizer.php:259 ../options.php:241
-msgid "Main Body Text"
-msgstr "Ana gövde metni"
-
-#: ../inc/customizer.php:260
-msgid "Used in p tags"
-msgstr "p etiketlerinde kullanılır"
-
-#: ../inc/customizer.php:300 ../options.php:250
-msgid "Heading Color"
-msgstr "Başlık Rengi"
-
-#: ../inc/customizer.php:301 ../options.php:251
-msgid "Color for all headings (h1-h6)"
-msgstr "Bütün başlıklar (h1-h6) için renk"
-
-#: ../inc/customizer.php:310 ../options.php:258
-msgid "Link Color"
-msgstr "Bağlantı rengi"
-
-#: ../inc/customizer.php:320 ../options.php:266
-msgid "Link:hover Color"
-msgstr "Bağlantı vurgulanmış rengi"
-
-#: ../inc/customizer.php:327 ../options.php:274
-msgid "Header"
-msgstr "Üst Kısım"
-
-#: ../inc/customizer.php:337 ../options.php:279
-msgid "Top nav background color"
-msgstr ""
-
-#: ../inc/customizer.php:347 ../options.php:287
-msgid "Top nav item color"
-msgstr ""
-
-#: ../inc/customizer.php:348 ../options.php:288
-msgid "Link color"
-msgstr ""
-
-#: ../inc/customizer.php:358 ../options.php:295
-msgid "Top nav item hover color"
-msgstr ""
-
-#: ../inc/customizer.php:359 ../options.php:296
-msgid "Link:hover color"
-msgstr ""
-
-#: ../inc/customizer.php:369 ../options.php:303
-msgid "Top nav dropdown background color"
-msgstr ""
-
-#: ../inc/customizer.php:370 ../inc/customizer.php:403 ../options.php:304
-#: ../options.php:328
-msgid "Background of dropdown item hover color"
-msgstr ""
-
-#: ../inc/customizer.php:380 ../options.php:311
-msgid "Top nav dropdown item color"
-msgstr ""
-
-#: ../inc/customizer.php:381 ../options.php:312
-msgid "Dropdown item color"
-msgstr ""
-
-#: ../inc/customizer.php:391 ../options.php:319
-msgid "Top nav dropdown item hover color"
-msgstr ""
-
-#: ../inc/customizer.php:392 ../options.php:320
-msgid "Dropdown item hover color"
-msgstr ""
-
-#: ../inc/customizer.php:402 ../options.php:327
-msgid "Top nav dropdown item background hover color"
-msgstr ""
-
-#: ../inc/customizer.php:409 ../options.php:335
-msgid "Footer"
-msgstr "Alt Kısım"
-
-#: ../inc/customizer.php:419 ../options.php:340
-msgid "Footer widget area background color"
-msgstr "Alt kısım bileşen alanı arka plan rengi"
-
-#: ../inc/customizer.php:429 ../options.php:347
-msgid "Footer background color"
-msgstr "Alt kısım arka plan rengi"
-
-#: ../inc/customizer.php:439 ../options.php:354
-msgid "Footer text color"
-msgstr "Alt kısım yazı rengi"
-
-#: ../inc/customizer.php:449 ../options.php:361
-msgid "Footer link color"
-msgstr "Alt kısım bağlantı rengi"
-
-#: ../inc/customizer.php:459 ../options.php:368
-msgid "Footer information"
-msgstr "Alt kısım bilgisi"
-
-#: ../inc/customizer.php:460 ../options.php:369
-msgid "Copyright text in footer"
-msgstr "Alt kısımdaki copyright yazısı"
-
-#: ../inc/customizer.php:467 ../options.php:384
-msgid "Social"
-msgstr "Sosyal"
-
-#: ../inc/customizer.php:477 ../options.php:389
-msgid "Social icon color"
-msgstr "Sosyal ikon rengi"
-
-#: ../inc/customizer.php:488 ../options.php:397
-msgid "Footer social icon color"
-msgstr "Alt kısım sosyal ikon rengi"
-
-#: ../inc/customizer.php:499 ../options.php:376
-msgid "Footer Social Icons"
-msgstr "Alt Kısım Sosyal İkonları"
-
-#: ../inc/customizer.php:500
-msgid "Check to show social icons in footer"
-msgstr "Alt kısımda sosyal ikonları göster"
-
-#: ../inc/customizer.php:507 ../options.php:542
-msgid "Other"
-msgstr "Diğer"
-
-#: ../inc/customizer.php:517 ../options.php:547
-msgid "Custom CSS"
-msgstr "İsteğe Bağlı CSS"
-
-#: ../inc/customizer.php:518 ../options.php:548
-msgid "Additional CSS"
-msgstr "Fazladan CSS"
-
-#: ../inc/customizer.php:525 ../inc/extras.php:383
-msgid "Support and Documentation"
-msgstr "Destek ve Dökümantasyon"
-
-#: ../inc/customizer.php:701 ../inc/extras.php:389
-msgid "Sparkling Documentation"
-msgstr "Sparkling Dökümantasyonu"
-
-#: ../inc/customizer.php:702 ../inc/extras.php:390
-msgid ""
-"The best way to contact us with <b>support questions</b> and <b>bug reports</"
-"b> is via"
-msgstr ""
-
-#: ../inc/customizer.php:702 ../inc/extras.php:390
-msgid "Colorlib support forum"
-msgstr "Colorlib destek forumu"
-
-#: ../inc/customizer.php:703 ../inc/extras.php:391
-msgid "If you like this theme, I'd appreciate any of the following:"
-msgstr ""
-"Bizimle temas kurmanın en iyi yolu <b>destek soruları</b> ve <b>hata "
-"raporları</b> ile"
-
-#: ../inc/customizer.php:705 ../inc/extras.php:393
-msgid "Rate this Theme"
-msgstr "Temayı değerlendirin"
-
-#: ../inc/customizer.php:706 ../inc/extras.php:394
-msgid "Like on Facebook"
-msgstr "Facebook'da beğenin"
-
-#: ../inc/customizer.php:707 ../inc/extras.php:395
-msgid "Follow on Twitter"
-msgstr "Twitter'da takip edin"
-
-#: ../inc/extras.php:61
 #, php-format
-msgid "Page %s"
-msgstr "Sayfa %s"
+#~ msgid "Author: %s"
+#~ msgstr "Yazar: %s"
 
-#: ../inc/extras.php:125
-msgid ""
-"This post is password protected. To view it please enter your password below:"
-msgstr "Bu yazı parola korumalıdır. Görüntülemek için lütfen parolayı giriniz:"
-
-#: ../inc/extras.php:126
-msgid "Password:"
-msgstr "Parola:"
-
-#: ../inc/extras.php:129
-msgid "Submit"
-msgstr "Gönder"
-
-#: ../inc/extras.php:272
 #, php-format
-msgid "Theme by %1$s Powered by %2$s"
-msgstr "%1$s tarafından tasarlanmış, %2$s ile güçlendirilmiştir."
+#~ msgid "Day: %s"
+#~ msgstr "Gün: %s"
 
-#: ../inc/metaboxes.php:16
-msgid ""
-"Select layout for this specific Page only ( Note: This setting only reflects "
-"if page Template is set as Default Template and Blog Type Templates.)"
-msgstr "Sadece bu sayfa için düzen seçin"
-
-#: ../inc/metaboxes.php:21
-msgid "Select layout for this specific Post only"
-msgstr "Sadece bu yazı için düzen seçin"
-
-#: ../inc/template-tags.php:23
-msgid "Posts navigation"
-msgstr "Yazı dolaşımı"
-
-#: ../inc/template-tags.php:27
-msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
-msgstr "<i class=\"fa fa-chevron-left\"></i> Daha eski yazılar"
-
-#: ../inc/template-tags.php:31
-msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
-msgstr "Daha yeni yazılar <i class=\"fa fa-chevron-right\"></i>"
-
-#: ../inc/template-tags.php:56
-msgid "Post navigation"
-msgstr "Yazı dolaşımı"
-
-#: ../inc/widgets/widget-categories.php:11
-#: ../inc/widgets/widget-categories.php:12
-msgid "Sparkling Categories"
-msgstr "Sparkling Kategoriler Bileşeni"
-
-#: ../inc/widgets/widget-categories.php:17
-#: ../inc/widgets/widget-categories.php:76
-msgid "Categories"
-msgstr "Kategoriler"
-
-#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:42
-msgid "Title "
-msgstr "Başlık"
-
-#: ../inc/widgets/widget-categories.php:91
-msgid "Limit Categories "
-msgstr "Gösterilecek kategori sayısı"
-
-#: ../inc/widgets/widget-categories.php:104
-msgid "Enable Posts Count"
-msgstr "Yazı sayacını etkinleştir"
-
-#: ../inc/widgets/widget-popular-posts.php:11
-#: ../inc/widgets/widget-popular-posts.php:12
-msgid "Sparkling Popular Posts Widget"
-msgstr "Sparkling Popüler Yazılar Bileşeni"
-
-#: ../inc/widgets/widget-popular-posts.php:17
-#: ../inc/widgets/widget-popular-posts.php:94
-msgid "Popular Posts"
-msgstr "Popüler Yazılar"
-
-#: ../inc/widgets/widget-popular-posts.php:99
-msgid "Title"
-msgstr "Başlık"
-
-#: ../inc/widgets/widget-popular-posts.php:107
-msgid "Limit Posts Number"
-msgstr "Gösterilecek yazı sayısı"
-
-#: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
-msgid "Sparkling Social Widget"
-msgstr "Sparkling Sosyal Bileşeni"
-
-#: ../inc/widgets/widget-social.php:18 ../inc/widgets/widget-social.php:40
-msgid "Follow us"
-msgstr "Bizi takip edin"
-
-#: ../options.php:27
-msgid "One"
-msgstr "Bir"
-
-#: ../options.php:28
-msgid "Two"
-msgstr "İki"
-
-#: ../options.php:29
-msgid "Three"
-msgstr "Üç"
-
-#: ../options.php:30
-msgid "Four"
-msgstr "Dört"
-
-#: ../options.php:31
-msgid "Five"
-msgstr "Beş"
-
-#: ../options.php:36
-msgid "French Toast"
-msgstr "Yumurtalı ekmek"
-
-#: ../options.php:37
-msgid "Pancake"
-msgstr "Pankek"
-
-#: ../options.php:38
-msgid "Omelette"
-msgstr "Omlet"
-
-#: ../options.php:39
-msgid "Crepe"
-msgstr "Krep"
-
-#: ../options.php:40
-msgid "Waffle"
-msgstr "Waffle"
-
-#: ../options.php:110
-msgid "Main"
-msgstr "Ana"
-
-#: ../options.php:115
-msgid "Do You want to display image slider on the Home Page?"
-msgstr "Ana sayfadaki manşette resim görünmesini ister misiniz?"
-
-#: ../options.php:142
-msgid "Choose between Left and Right sidebar options to be used as default"
-msgstr ""
-"Varsayılan olarak kullanılması için sağ veya sol arasında seçim yapmalısınız"
-
-#: ../options.php:151
-msgid "Element color"
-msgstr "Eleman rengi"
-
-#: ../options.php:167
-msgid "Custom Favicon"
-msgstr "Özel Favicon"
-
-#: ../options.php:168
-msgid ""
-"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
-msgstr "Web site faviconunu temsil edecek 32x32 px PNG/GIF görsel yükle"
-
-#: ../options.php:242
-msgid "Used in P tags"
-msgstr "P etiketinde kullanılır"
-
-#: ../options.php:377
-msgid "Show/Hide social icons in footer"
-msgstr "Sosyal medya ikonlarını alt kısımda Göster/Gizle"
-
-#: ../options.php:405
-msgid "Add full URL for your social network profiles"
-msgstr "Sosyal ağ profilleri için tam adres ekle"
-
-#: ../options.php:406
-msgid "Facebook"
-msgstr "Facebook"
-
-#: ../options.php:415
-msgid "Twitter"
-msgstr "Twitter"
-
-#: ../options.php:423
-msgid "Google+"
-msgstr "Google+"
-
-#: ../options.php:431
-msgid "Youtube"
-msgstr "Youtube"
-
-#: ../options.php:439
-msgid "Vimeo"
-msgstr "Vimeo"
-
-#: ../options.php:447
-msgid "LinkedIn"
-msgstr "LinkedIn"
-
-#: ../options.php:455
-msgid "Pinterest"
-msgstr "Pinterest"
-
-#: ../options.php:463
-msgid "RSS Feed"
-msgstr "RSS Beslemesi"
-
-#: ../options.php:471
-msgid "Tumblr"
-msgstr "Tumblr"
-
-#: ../options.php:479
-msgid "Flickr"
-msgstr "Flickr"
-
-#: ../options.php:487
-msgid "Instagram"
-msgstr "Instagram"
-
-#: ../options.php:495
-msgid "Dribbble"
-msgstr "Dribbble"
-
-#: ../options.php:503
-msgid "Skype"
-msgstr "Skype"
-
-#: ../options.php:511
-msgid "Foursquare"
-msgstr "Foursquare"
-
-#: ../options.php:519
-msgid "SoundCloud"
-msgstr "SoundCloud"
-
-#: ../options.php:527
-msgid "GitHub"
-msgstr "GitHub"
-
-#: ../options.php:535
-msgid "Spotify"
-msgstr "Spotify"
-
-#: ../search.php:16
 #, php-format
-msgid "Search Results for: %s"
-msgstr "%s için arama sonuçları"
+#~ msgid "Month: %s"
+#~ msgstr "Ay: %s"
 
-#: ../searchform.php:11
-msgid "Search for:"
-msgstr "Arama yap:"
+#, php-format
+#~ msgid "Year: %s"
+#~ msgstr "Yıl: %s"
 
-#: ../searchform.php:12
-msgctxt "placeholder"
-msgid "Search&hellip;"
-msgstr "Ara&nbsp;&hellip;"
+#~ msgid "Asides"
+#~ msgstr "Yan yorumlar"
 
-#: ../searchform.php:12
-msgctxt "label"
-msgid "Search for:"
-msgstr "Arama:"
+#~ msgid "Galleries"
+#~ msgstr "Galeriler"
 
-#: ../searchform.php:14
-msgctxt "submit button"
-msgid "Search"
-msgstr "Ara"
+#~ msgid "Images"
+#~ msgstr "Resimler"
 
-#: ../sidebar.php:26
-msgid "Meta"
-msgstr "Meta"
+#~ msgid "Videos"
+#~ msgstr "Videolar"
+
+#~ msgid "Quotes"
+#~ msgstr "Alıntılar"
+
+#~ msgid "Links"
+#~ msgstr "Bağlantılar"
+
+#~ msgid "Statuses"
+#~ msgstr "Durumlar"
+
+#~ msgid "Audios"
+#~ msgstr "Sesler"
+
+#~ msgid "Chats"
+#~ msgstr "Sohbetler"
+
+#, php-format
+#~ msgid " %1$s"
+#~ msgstr " %1$s"
+
+#~ msgid "Other"
+#~ msgstr "Diğer"
+
+#~ msgid "Custom CSS"
+#~ msgstr "İsteğe Bağlı CSS"
+
+#~ msgid "Additional CSS"
+#~ msgstr "Fazladan CSS"
+
+#, php-format
+#~ msgid "Page %s"
+#~ msgstr "Sayfa %s"
+
+#~ msgid "Posts navigation"
+#~ msgstr "Yazı dolaşımı"
+
+#~ msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
+#~ msgstr "<i class=\"fa fa-chevron-left\"></i> Daha eski yazılar"
+
+#~ msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
+#~ msgstr "Daha yeni yazılar <i class=\"fa fa-chevron-right\"></i>"
+
+#~ msgid "Post navigation"
+#~ msgstr "Yazı dolaşımı"
+
+#~ msgid "One"
+#~ msgstr "Bir"
+
+#~ msgid "Two"
+#~ msgstr "İki"
+
+#~ msgid "Three"
+#~ msgstr "Üç"
+
+#~ msgid "Four"
+#~ msgstr "Dört"
+
+#~ msgid "Five"
+#~ msgstr "Beş"
+
+#~ msgid "French Toast"
+#~ msgstr "Yumurtalı ekmek"
+
+#~ msgid "Pancake"
+#~ msgstr "Pankek"
+
+#~ msgid "Omelette"
+#~ msgstr "Omlet"
+
+#~ msgid "Crepe"
+#~ msgstr "Krep"
+
+#~ msgid "Waffle"
+#~ msgstr "Waffle"
+
+#~ msgid "Main"
+#~ msgstr "Ana"
+
+#~ msgid "Do You want to display image slider on the Home Page?"
+#~ msgstr "Ana sayfadaki manşette resim görünmesini ister misiniz?"
+
+#~ msgid "Choose between Left and Right sidebar options to be used as default"
+#~ msgstr ""
+#~ "Varsayılan olarak kullanılması için sağ veya sol arasında seçim "
+#~ "yapmalısınız"
+
+#~ msgid "Element color"
+#~ msgstr "Eleman rengi"
+
+#~ msgid "Custom Favicon"
+#~ msgstr "Özel Favicon"
+
+#~ msgid ""
+#~ "Upload a 32px x 32px PNG/GIF image that will represent your websites "
+#~ "favicon"
+#~ msgstr "Web site faviconunu temsil edecek 32x32 px PNG/GIF görsel yükle"
+
+#~ msgid "Used in P tags"
+#~ msgstr "P etiketinde kullanılır"
+
+#~ msgid "Show/Hide social icons in footer"
+#~ msgstr "Sosyal medya ikonlarını alt kısımda Göster/Gizle"
+
+#~ msgid "Add full URL for your social network profiles"
+#~ msgstr "Sosyal ağ profilleri için tam adres ekle"
+
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#~ msgid "Twitter"
+#~ msgstr "Twitter"
+
+#~ msgid "Google+"
+#~ msgstr "Google+"
+
+#~ msgid "Youtube"
+#~ msgstr "Youtube"
+
+#~ msgid "Vimeo"
+#~ msgstr "Vimeo"
+
+#~ msgid "LinkedIn"
+#~ msgstr "LinkedIn"
+
+#~ msgid "Pinterest"
+#~ msgstr "Pinterest"
+
+#~ msgid "RSS Feed"
+#~ msgstr "RSS Beslemesi"
+
+#~ msgid "Tumblr"
+#~ msgstr "Tumblr"
+
+#~ msgid "Flickr"
+#~ msgstr "Flickr"
+
+#~ msgid "Dribbble"
+#~ msgstr "Dribbble"
+
+#~ msgid "Skype"
+#~ msgstr "Skype"
+
+#~ msgid "Foursquare"
+#~ msgstr "Foursquare"
+
+#~ msgid "SoundCloud"
+#~ msgstr "SoundCloud"
+
+#~ msgid "GitHub"
+#~ msgstr "GitHub"
+
+#~ msgid "Spotify"
+#~ msgstr "Spotify"

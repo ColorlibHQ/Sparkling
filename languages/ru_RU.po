@@ -1,7 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2015-10-16 20:24+0300\n"
+"Report-Msgid-Bugs-To: https://colorlib.com/wp/support/\n"
+"POT-Creation-Date: 2026-08-05T12:17:17+00:00\n"
 "PO-Revision-Date: 2015-10-16 20:24+0300\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
@@ -12,16 +13,52 @@ msgstr ""
 "X-Generator: Poedit 1.8.5\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
-"esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-KeywordsList: "
+"_e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
-#: ../404.php:15
+#. Theme Name of the theme
+#: style.css
+#, fuzzy
+msgid "Sparkling"
+msgstr "(Sparkling) Категории"
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://colorlib.com/wp/themes/sparkling"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid ""
+"Sparkling is a clean, minimal and fully responsive WordPress theme suited to "
+"blogs, news, magazines, business, portfolio and shop sites. It ships a full-"
+"width front page slider, a call-to-action bar, social icon menu, author bio, "
+"popular posts and enhanced category widgets, and four sidebar layouts you "
+"can set globally or per post. Dozens of Customizer options cover colours, "
+"typography, header, footer and layout, with a live preview. Built on "
+"Bootstrap 3, the front end runs on plain JavaScript with no jQuery "
+"dependency of its own. Sparkling is translation ready and ships with over "
+"twenty translations, is WooCommerce ready, and works with bbPress, Contact "
+"Form 7 and Jetpack."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Colorlib"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://colorlib.com/"
+msgstr ""
+
+#: 404.php:15
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "Ой! К сожалению нет такой страницы."
 
-#: ../404.php:19
+#: 404.php:19
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
@@ -29,556 +66,573 @@ msgstr ""
 "Ничего не найдено. Попробуйте перейти по другой ссылке или воспользуйтесь "
 "поиском?"
 
-#: ../404.php:25
+#: 404.php:25
 #, fuzzy
 msgid "Recent Posts"
 msgstr "Навигация по записям"
 
-#: ../404.php:31
+#: 404.php:31
 msgid "Most Used Categories"
 msgstr "Самые популярные категории"
 
-#: ../404.php:52
+#. translators: %1$s: smiley
+#: 404.php:54
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Поищите в архивах %1$s"
 
-#: ../404.php:53 ../archive.php:66 ../sidebar.php:19
+#: 404.php:55 sidebar.php:12
 msgid "Archives"
 msgstr "Архивы"
 
-#: ../404.php:58
+#: 404.php:60
 #, fuzzy
 msgid "Tags"
 msgstr "Используемый в тегах <p> (абзац)"
 
-#: ../archive.php:27
-#, php-format
-msgid "Author: %s"
-msgstr "Автор: %s"
+#: archive.php:42 inc/extras.php:605 index.php:46 search.php:40
+#, fuzzy
+msgid "Newer posts"
+msgstr "Навигация по записям"
 
-#: ../archive.php:30
-#, php-format
-msgid "Day: %s"
-msgstr "День: %s"
+#: archive.php:43 inc/extras.php:606 index.php:47 search.php:41
+#, fuzzy
+msgid "Older posts"
+msgstr "Опции слайдера"
 
-#: ../archive.php:33
-#, php-format
-msgid "Month: %s"
-msgstr "Месяц: %s"
-
-#: ../archive.php:36
-#, php-format
-msgid "Year: %s"
-msgstr "Год: %s"
-
-#: ../archive.php:39
-msgid "Asides"
-msgstr "Боковые панели"
-
-#: ../archive.php:42
-msgid "Galleries"
-msgstr "Галереи"
-
-#: ../archive.php:45
-msgid "Images"
-msgstr "Фото"
-
-#: ../archive.php:48
-msgid "Videos"
-msgstr "Видео"
-
-#: ../archive.php:51
-msgid "Quotes"
-msgstr "Цитаты"
-
-#: ../archive.php:54
-msgid "Links"
-msgstr "Ссылки"
-
-#: ../archive.php:57
-msgid "Statuses"
-msgstr "Статусы"
-
-#: ../archive.php:60
-msgid "Audios"
-msgstr "Аудио"
-
-#: ../archive.php:63
-msgid "Chats"
-msgstr "Чаты"
-
-#: ../comments.php:28
-#, php-format
+#. translators: %s: post title
+#: comments.php:38
+#, fuzzy, php-format
+#| msgctxt "comments title"
+#| msgid "One thought on &ldquo;%2$s&rdquo;"
+#| msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgid "One thought to &ldquo;%s&rdquo;"
+msgstr "Комментарий &ldquo;%2$s&rdquo;"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:42
+#, fuzzy, php-format
+#| msgctxt "comments title"
+#| msgid "One thought on &ldquo;%2$s&rdquo;"
+#| msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgctxt "comments title"
+msgid "%1$s thought to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts to &ldquo;%2$s&rdquo;"
 msgstr[0] "Комментарий &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s Комментарии &ldquo;%2$s&rdquo;"
 
-#: ../comments.php:35 ../comments.php:53
+#: comments.php:58 comments.php:82
 msgid "Comment navigation"
 msgstr "Навигация по комментариям"
 
-#: ../comments.php:36 ../comments.php:54
-msgid "&larr; Older Comments"
+#: comments.php:61 comments.php:85
+#, fuzzy
+#| msgid "&larr; Older Comments"
+msgid "Older Comments"
 msgstr "&larr; Предыдущие комментарии"
 
-#: ../comments.php:37 ../comments.php:55
-msgid "Newer Comments &rarr;"
+#: comments.php:62 comments.php:86
+#, fuzzy
+#| msgid "Newer Comments &rarr;"
+msgid "Newer Comments"
 msgstr "Новые комментарии &rarr;"
 
-#: ../comments.php:65
+#: comments.php:100
 msgid "Comments are closed."
 msgstr "Комментарии закрыты"
 
-#: ../content-none.php:13
-msgid "Nothing Found"
-msgstr "Ничего не найдено"
-
-#: ../content-none.php:19
-#, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Готовы опубликовать свою первую запись? <a href=\"%1$s\">Начнем</a>."
-
-#: ../content-none.php:23
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr ""
-"Ни один результат не соответствует Вашему запросу. Пожалуйста, повторите "
-"поиск, используя другие ключевые слова."
-
-#: ../content-none.php:28
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-"Похоже, мы не можем найти запрашиваемую Вами информацию. Попробуйте найти "
-"через \"Поиск\"."
-
-#: ../content-page.php:21 ../content-single.php:35 ../content.php:49
-#: ../image.php:79
-msgid "Pages:"
-msgstr "Страницы:"
-
-#: ../content-page.php:32 ../content-single.php:26 ../content.php:23
-msgid "Edit"
-msgstr "Правка"
-
-#: ../content-single.php:19
-msgid ", "
-msgstr ","
-
-#: ../content-single.php:23
-#, php-format
-msgid " %1$s"
-msgstr " %1$s"
-
-#: ../content.php:20
-msgid "Leave a comment"
-msgstr "Оставить комментарий"
-
-#: ../content.php:20
-msgid "1 Comment"
-msgstr "1 комментарий"
-
-#: ../content.php:20
-msgid "% Comments"
-msgstr "% комментарии"
-
-#: ../content.php:32 ../content.php:45
-msgid "Read More"
-msgstr "Подробнее"
-
-#: ../functions.php:69
+#: functions.php:84
 msgid "Primary Menu"
 msgstr "Основное меню"
 
-#: ../functions.php:70 ../inc/extras.php:198
+#: functions.php:85 inc/extras.php:144
 msgid "Footer Links"
 msgstr "Ссылки нижнего колонтитула"
 
-#: ../functions.php:108
+#: functions.php:168
 msgid "Sidebar"
 msgstr "Боковая панель"
 
-#: ../functions.php:118
+#: functions.php:180
 msgid "Homepage Widget 1"
 msgstr "1ый виджет на Главной странице"
 
-#: ../functions.php:119 ../functions.php:129 ../functions.php:139
+#: functions.php:181 functions.php:193 functions.php:205
 msgid "Displays on the Home Page"
 msgstr "Отображается на Главной странице"
 
-#: ../functions.php:128
+#: functions.php:192
 msgid "Homepage Widget 2"
 msgstr "2ой виджет на Главной странице"
 
-#: ../functions.php:138
+#: functions.php:204
 msgid "Homepage Widget 3"
 msgstr "3ий виджет на Главной странице"
 
-#: ../functions.php:148
+#: functions.php:216
 msgid "Footer Widget 1"
 msgstr "1ый виджет нижнего колонтитула"
 
-#: ../functions.php:149 ../functions.php:159 ../functions.php:169
+#: functions.php:217 functions.php:229 functions.php:241
 msgid "Used for footer widget area"
 msgstr "Использовано для области виджета футера"
 
-#: ../functions.php:158
+#: functions.php:228
 msgid "Footer Widget 2"
 msgstr "2ой виджет нижнего колонтитула"
 
-#: ../functions.php:168
+#: functions.php:240
 msgid "Footer Widget 3"
 msgstr "3ий виджет нижнего колонтитула"
 
-#: ../functions.php:304 ../options.php:23
+#: functions.php:303
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: functions.php:310
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: functions.php:317
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: functions.php:472
+#, fuzzy
+#| msgid "Social"
+msgctxt "nav menu location"
+msgid "Social Menu"
+msgstr "Соц. сети"
+
+#: functions.php:503
 msgid "Right Sidebar"
 msgstr "Справа"
 
-#: ../functions.php:304 ../options.php:23
+#: functions.php:504
 msgid "Left Sidebar"
 msgstr "Слева"
 
-#: ../functions.php:304
+#: functions.php:505
 #, fuzzy
 msgid "No Sidebar"
 msgstr "Без сайдбара"
 
-#: ../functions.php:304
+#: functions.php:506
 msgid "Full Width"
 msgstr ""
 
-#: ../image.php:22
+#: functions.php:692 inc/welcome-screen/class-sparkling-welcome.php:113
+#: inc/welcome-screen/class-sparkling-welcome.php:253
+#: inc/welcome-screen/class-sparkling-welcome.php:294
+msgid "You are not allowed to do that."
+msgstr ""
+
+#: functions.php:700
+msgid "Invalid attachment."
+msgstr ""
+
+#: image.php:25
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
 msgstr "<i class=\"fa fa-chevron-left\"></i> Предыдущий"
 
-#: ../image.php:23
+#: image.php:26
 msgid "Next <i class=\"fa fa-chevron-right\"></i>"
 msgstr "Следующий <i class=\"fa fa-chevron-right\"></i>"
 
-#: ../inc/customizer.php:29
+#: image.php:90 template-parts/content-page.php:36
+#: template-parts/content-single.php:51 template-parts/content-video.php:84
+#: template-parts/content.php:77
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: inc/class-wp-bootstrap-navwalker.php:206
+msgid "Add a menu"
+msgstr ""
+
+#: inc/customizer.php:40
 #, fuzzy
 msgid "Sparkling Options"
 msgstr "(Sparkling) Категории"
 
-#: ../inc/customizer.php:30
+#: inc/customizer.php:41
 msgid "Panel to update sparkling theme options"
 msgstr ""
 
-#: ../inc/customizer.php:36
+#: inc/customizer.php:51
 #, fuzzy
 msgid "Content Options"
 msgstr "Опции темы"
 
-#: ../inc/customizer.php:47
+#: inc/customizer.php:67
 msgid "Show post excerpts?"
 msgstr ""
 
-#: ../inc/customizer.php:58
+#: inc/customizer.php:84
 #, fuzzy
 msgid "Display Comments on Static Pages?"
 msgstr "Отображается на Главной странице"
 
-#: ../inc/customizer.php:66
+#: inc/customizer.php:95
 #, fuzzy
-msgid "Slider options"
+msgid "Slider Options"
 msgstr "Опции слайдера"
 
-#: ../inc/customizer.php:76 ../options.php:116
+#: inc/customizer.php:110
 msgid "Check if you want to enable slider"
 msgstr "Включить слайдер"
 
-#: ../inc/customizer.php:91 ../options.php:123
+#: inc/customizer.php:127
+msgid "Uncheck this option to remove the link from the slides"
+msgstr ""
+
+#: inc/customizer.php:147
 msgid "Slider Category"
 msgstr "Категория для слайдера"
 
-#: ../inc/customizer.php:94 ../options.php:124
+#: inc/customizer.php:150
 msgid "Select a category for the featured post slider"
 msgstr "Выберите самую интересную категорию записей для слайдера"
 
-#: ../inc/customizer.php:104 ../options.php:132
+#: inc/customizer.php:164
 msgid "Number of slide items"
 msgstr "Количество слайдов"
 
-#: ../inc/customizer.php:106 ../options.php:133
+#: inc/customizer.php:166
 msgid "Enter the number of slide items"
 msgstr "Введите количество слайдов"
 
-#: ../inc/customizer.php:111
+#: inc/customizer.php:173
 #, fuzzy
-msgid "Layout options"
+msgid "Layout Options"
 msgstr "Опции разметки"
 
-#: ../inc/customizer.php:123 ../options.php:141
+#: inc/customizer.php:189
 msgid "Website Layout Options"
 msgstr "Варианты разметки сайта"
 
-#: ../inc/customizer.php:126
+#: inc/customizer.php:192
 #, fuzzy
 msgid "Choose between different layout options to be used as default"
 msgstr "Выберите, где по умолчанию будет боковая панель: Слева или Справа?"
 
-#: ../inc/customizer.php:136
+#: inc/customizer.php:207
+#, fuzzy
+#| msgid "Website Layout Options"
+msgid "WooCommerce Page Layout Options"
+msgstr "Варианты разметки сайта"
+
+#: inc/customizer.php:210
+#, fuzzy
+msgid ""
+"Choose between different layout options to be used as default for all "
+"woocommerce pages"
+msgstr "Выберите, где по умолчанию будет боковая панель: Слева или Справа?"
+
+#: inc/customizer.php:226
 #, fuzzy
 msgid "Element Color"
 msgstr "Цвет элементов"
 
-#: ../inc/customizer.php:137 ../inc/customizer.php:149
-#: ../inc/customizer.php:203 ../inc/customizer.php:213
-#: ../inc/customizer.php:223 ../inc/customizer.php:233
-#: ../inc/customizer.php:311 ../inc/customizer.php:321
-#: ../inc/customizer.php:338 ../inc/customizer.php:478
-#: ../inc/customizer.php:489 ../options.php:152 ../options.php:160
-#: ../options.php:205 ../options.php:213 ../options.php:221 ../options.php:229
-#: ../options.php:259 ../options.php:267 ../options.php:280 ../options.php:390
-#: ../options.php:398
+#: inc/customizer.php:227 inc/customizer.php:245 inc/customizer.php:319
+#: inc/customizer.php:335 inc/customizer.php:351 inc/customizer.php:367
+#: inc/customizer.php:492 inc/customizer.php:508 inc/customizer.php:552
+#: inc/customizer.php:766 inc/customizer.php:783
 msgid "Default used if no color is selected"
 msgstr "Если не выберите свой цвет, будет использовано стандартное значение"
 
-#: ../inc/customizer.php:148 ../options.php:159
+#: inc/customizer.php:244
 msgid "Element color on hover"
 msgstr "Цвет элемента при наведении"
 
-#: ../inc/customizer.php:156 ../options.php:175
+#: inc/customizer.php:255
 msgid "Action Button"
 msgstr "Call for Action"
 
-#: ../inc/customizer.php:166 ../options.php:180
+#: inc/customizer.php:269
 msgid "Call For Action Text"
 msgstr "Текст Call for Action"
 
-#: ../inc/customizer.php:167 ../options.php:181
+#: inc/customizer.php:270
 msgid "Enter the text for call for action section"
 msgstr "Введите текст для секции Call for Action"
 
-#: ../inc/customizer.php:178 ../options.php:188
+#: inc/customizer.php:285
 msgid "Call For Action Button Title"
 msgstr "Текст кнопки Call for Action"
 
-#: ../inc/customizer.php:180 ../options.php:189
+#: inc/customizer.php:287
 msgid "Enter the title for Call For Action button"
 msgstr "Введите текст кнопки Call for Action"
 
-#: ../inc/customizer.php:190 ../options.php:196
+#: inc/customizer.php:301
 msgid "CFA button link"
 msgstr "Ссылка кнопки Call for Action"
 
-#: ../inc/customizer.php:192 ../options.php:197
+#: inc/customizer.php:303
 msgid "Enter the link for Call For Action button"
 msgstr "Введите адрес ссылки кнопки Call for Action"
 
-#: ../inc/customizer.php:202 ../options.php:204
+#: inc/customizer.php:318
 msgid "Call For Action Text Color"
 msgstr "Цвет текста Call for Action"
 
-#: ../inc/customizer.php:212 ../options.php:212
+#: inc/customizer.php:334
 msgid "Call For Action Background Color"
 msgstr "Цвет фона Call for Action"
 
-#: ../inc/customizer.php:222 ../options.php:220
+#: inc/customizer.php:350
 msgid "Call For Action Button Border Color"
 msgstr "Цвет границы кнопки Call for Action"
 
-#: ../inc/customizer.php:232 ../options.php:228
+#: inc/customizer.php:366
 msgid "Call For Action Button Text Color"
 msgstr "Цвет текста кнопки Call for Action"
 
-#: ../inc/customizer.php:239 ../options.php:236
+#: inc/customizer.php:376
 msgid "Typography"
 msgstr "Типографика"
 
-#: ../inc/customizer.php:259 ../options.php:241
+#: inc/customizer.php:400
 msgid "Main Body Text"
 msgstr "Основной шрифт"
 
-#: ../inc/customizer.php:260
+#: inc/customizer.php:401
 #, fuzzy
 msgid "Used in p tags"
 msgstr "Используемый в тегах <p> (абзац)"
 
-#: ../inc/customizer.php:300 ../options.php:250
+#: inc/customizer.php:458
+msgid "Font Subset"
+msgstr ""
+
+#: inc/customizer.php:460
+msgid "Enter the Google fonts subset"
+msgstr ""
+
+#: inc/customizer.php:475
 msgid "Heading Color"
 msgstr "Цвет заголовков"
 
-#: ../inc/customizer.php:301 ../options.php:251
+#: inc/customizer.php:476
 msgid "Color for all headings (h1-h6)"
 msgstr "Цвет для всех заголовков (h1-h6)"
 
-#: ../inc/customizer.php:310 ../options.php:258
+#: inc/customizer.php:491
 msgid "Link Color"
 msgstr "Цвет ссылок"
 
-#: ../inc/customizer.php:320 ../options.php:266
+#: inc/customizer.php:507
 msgid "Link:hover Color"
 msgstr "Цвет ссылки при наведении"
 
-#: ../inc/customizer.php:327 ../options.php:274
+#: inc/customizer.php:517
 msgid "Header"
 msgstr "Верхний колонтитул"
 
-#: ../inc/customizer.php:337 ../options.php:279
+#: inc/customizer.php:533
+#, fuzzy
+#| msgid "Header"
+msgid "Sticky Header"
+msgstr "Верхний колонтитул"
+
+#: inc/customizer.php:534
+msgid "Check to show fixed header"
+msgstr ""
+
+#: inc/customizer.php:551
 msgid "Top nav background color"
 msgstr "Цвет фона верхнего меню"
 
-#: ../inc/customizer.php:347 ../options.php:287
+#: inc/customizer.php:567
 msgid "Top nav item color"
 msgstr "Цвет текста элемента списка верхнего меню"
 
-#: ../inc/customizer.php:348 ../options.php:288
+#: inc/customizer.php:568
 msgid "Link color"
 msgstr "Цвет ссылки"
 
-#: ../inc/customizer.php:358 ../options.php:295
+#: inc/customizer.php:584
 msgid "Top nav item hover color"
 msgstr "Цвет текста элемента списка верхнего меню при наведении"
 
-#: ../inc/customizer.php:359 ../options.php:296
+#: inc/customizer.php:585
 msgid "Link:hover color"
 msgstr "Цвет ссылки при наведении"
 
-#: ../inc/customizer.php:369 ../options.php:303
+#: inc/customizer.php:601
 msgid "Top nav dropdown background color"
 msgstr "Цвет фона выпадающего меню второго уровня"
 
-#: ../inc/customizer.php:370 ../inc/customizer.php:403 ../options.php:304
-#: ../options.php:328
+#: inc/customizer.php:602 inc/customizer.php:653
 msgid "Background of dropdown item hover color"
 msgstr "Цвет фона элемента при наведении в выпадающем меню второго уровня"
 
-#: ../inc/customizer.php:380 ../options.php:311
+#: inc/customizer.php:618
 msgid "Top nav dropdown item color"
 msgstr "Цвет элемента в выпадающем меню второго уровня"
 
-#: ../inc/customizer.php:381 ../options.php:312
+#: inc/customizer.php:619
 msgid "Dropdown item color"
 msgstr "Цвет элемента"
 
-#: ../inc/customizer.php:391 ../options.php:319
+#: inc/customizer.php:635
 #, fuzzy
 msgid "Top nav dropdown item hover color"
 msgstr "Цвет текста элемента списка верхнего меню при наведении"
 
-#: ../inc/customizer.php:392 ../options.php:320
+#: inc/customizer.php:636
 #, fuzzy
 msgid "Dropdown item hover color"
 msgstr "Цвет фона элемента при наведении в выпадающем меню второго уровня"
 
-#: ../inc/customizer.php:402 ../options.php:327
+#: inc/customizer.php:652
 #, fuzzy
 msgid "Top nav dropdown item background hover color"
 msgstr "Цвет фона элемента при наведении в выпадающем меню второго уровня"
 
-#: ../inc/customizer.php:409 ../options.php:335
+#: inc/customizer.php:662
 msgid "Footer"
 msgstr "Нижний колонтитул"
 
-#: ../inc/customizer.php:419 ../options.php:340
+#: inc/customizer.php:677
 msgid "Footer widget area background color"
 msgstr "Цвет фона области виджетов нижнего колонтитула"
 
-#: ../inc/customizer.php:429 ../options.php:347
+#: inc/customizer.php:693
 msgid "Footer background color"
 msgstr "Цвет фона нижнего колонтитула"
 
-#: ../inc/customizer.php:439 ../options.php:354
+#: inc/customizer.php:709
 msgid "Footer text color"
 msgstr "Цвет текста нижнего колонтитула"
 
-#: ../inc/customizer.php:449 ../options.php:361
+#: inc/customizer.php:725
 msgid "Footer link color"
 msgstr "Цвет ссылок нижнего колонтитула"
 
-#: ../inc/customizer.php:459 ../options.php:368
+#: inc/customizer.php:740
 msgid "Footer information"
 msgstr "Информация в нижнем колонтитуле"
 
-#: ../inc/customizer.php:460 ../options.php:369
+#: inc/customizer.php:741
 msgid "Copyright text in footer"
 msgstr "Текст об авторских правах в нижнем колонтитуле"
 
-#: ../inc/customizer.php:467 ../options.php:384
+#: inc/customizer.php:750
 msgid "Social"
 msgstr "Соц. сети"
 
-#: ../inc/customizer.php:477 ../options.php:389
+#: inc/customizer.php:765
 msgid "Social icon color"
 msgstr "Цвет иконки соц. сетей"
 
-#: ../inc/customizer.php:488 ../options.php:397
+#: inc/customizer.php:782
 msgid "Footer social icon color"
 msgstr "Цвет иконки соц. сетей в нижнем колонтитуле"
 
-#: ../inc/customizer.php:499 ../options.php:376
+#: inc/customizer.php:799
 #, fuzzy
 msgid "Footer Social Icons"
 msgstr "Цвет иконки соц. сетей в нижнем колонтитуле"
 
-#: ../inc/customizer.php:500
+#: inc/customizer.php:800
 #, fuzzy
 msgid "Check to show social icons in footer"
 msgstr "Цвет иконки соц. сетей в нижнем колонтитуле"
 
-#: ../inc/customizer.php:507 ../options.php:542
-msgid "Other"
-msgstr "Другие"
-
-#: ../inc/customizer.php:517 ../options.php:547
-msgid "Custom CSS"
-msgstr "Пользовательский CSS"
-
-#: ../inc/customizer.php:518 ../options.php:548
-msgid "Additional CSS"
-msgstr "Дополнительный CSS"
-
-#: ../inc/customizer.php:525 ../inc/extras.php:383
-msgid "Support and Documentation"
-msgstr "Поддержка и Документация"
-
-#: ../inc/customizer.php:701 ../inc/extras.php:389
-msgid "Sparkling Documentation"
-msgstr "Документация Sparkling"
-
-#: ../inc/customizer.php:702 ../inc/extras.php:390
-msgid ""
-"The best way to contact us with <b>support questions</b> and <b>bug reports</"
-"b> is via"
+#: inc/customizer.php:819
+msgid "Enable Academicons"
 msgstr ""
-"Чтобы связаться с нами по вопросам <b>технической поддержки</b> и <b>отчетов "
-"об ошибках</b>, используйте"
 
-#: ../inc/customizer.php:702 ../inc/extras.php:390
-msgid "Colorlib support forum"
-msgstr "Форум поддержки Colorlib"
-
-#: ../inc/customizer.php:703 ../inc/extras.php:391
-msgid "If you like this theme, I'd appreciate any of the following:"
+#: inc/customizer.php:820
+msgid "Toggle this to ON to enable the usage of Academicons"
 msgstr ""
-"Если вам понравилась эта тема, я был бы благодарен за любой из следующих "
-"вариантов:"
 
-#: ../inc/customizer.php:705 ../inc/extras.php:393
-msgid "Rate this Theme"
-msgstr "Оценить эту тему"
+#: inc/customizer.php:830
+#, fuzzy
+#| msgid "Archives"
+msgid "Archive Pages"
+msgstr "Архивы"
 
-#: ../inc/customizer.php:706 ../inc/extras.php:394
-msgid "Like on Facebook"
-msgstr "Поставить лайк на Facebook"
+#: inc/customizer.php:846
+msgid "Tag Page Title"
+msgstr ""
 
-#: ../inc/customizer.php:707 ../inc/extras.php:395
-msgid "Follow on Twitter"
-msgstr "Читать Twitter"
-
-#: ../inc/extras.php:61
+#. translators: %s: tag name
+#: inc/customizer.php:849
 #, php-format
-msgid "Page %s"
-msgstr "Страница %s"
+msgid ""
+"The headline for your tag pages. You can use %s as a placeholder for the "
+"tag. Leave empty for default."
+msgstr ""
 
-#: ../inc/extras.php:125
+#: inc/customizer.php:864
+#, fuzzy
+#| msgid "Categories"
+msgid "Category Page Title"
+msgstr "Категории"
+
+#. translators: %s: category name
+#: inc/customizer.php:867
+#, php-format
+msgid ""
+"The headline for your category pages. You can use %s as a placeholder for "
+"the category. Leave empty for default."
+msgstr ""
+
+#: inc/customizer.php:882
+msgid "Author Page Title"
+msgstr ""
+
+#. translators: %s: author name
+#: inc/customizer.php:885
+#, php-format
+msgid ""
+"The headline for your author pages. You can use %s as a placeholder for the "
+"author's name. Leave empty for default."
+msgstr ""
+
+#: inc/customizer.php:900
+msgid "Year Page Title"
+msgstr ""
+
+#. translators: %s: year
+#: inc/customizer.php:903
+#, php-format
+msgid ""
+"The headline for your year pages. You can use %s as a placeholder for the "
+"year. Leave empty for default."
+msgstr ""
+
+#: inc/customizer.php:918
+msgid "Month Page Title"
+msgstr ""
+
+#. translators: %s: month
+#: inc/customizer.php:921
+#, php-format
+msgid ""
+"The headline for your month pages. You can use %s as a placeholder for the "
+"month. Leave empty for default."
+msgstr ""
+
+#: inc/customizer.php:936
+msgid "Day Page Title"
+msgstr ""
+
+#. translators: %s: day
+#: inc/customizer.php:939
+#, php-format
+msgid ""
+"The headline for your day pages. You can use %s as a placeholder for the "
+"day. Leave empty for default."
+msgstr ""
+
+#: inc/extras.php:66
 #, fuzzy
 msgid ""
 "This post is password protected. To view it please enter your password below:"
@@ -586,20 +640,59 @@ msgstr ""
 "<p>Эта запись защищена паролем. Чтобы просмотреть эту запись, пожалуйста, "
 "введите пароль:</p>"
 
-#: ../inc/extras.php:126
+#: inc/extras.php:67
 msgid "Password:"
 msgstr "Пароль:"
 
-#: ../inc/extras.php:129
+#: inc/extras.php:70
 msgid "Submit"
 msgstr "Отправить"
 
-#: ../inc/extras.php:272
+#. translators: 1: Colorlib link, 2: WordPress link
+#: inc/extras.php:284
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Тема от %1$s. Работает на %2$s"
 
-#: ../inc/metaboxes.php:16
+#: inc/extras.php:489
+msgid "Support and Documentation"
+msgstr "Поддержка и Документация"
+
+#: inc/extras.php:498
+msgid "Sparkling Documentation"
+msgstr "Документация Sparkling"
+
+#: inc/extras.php:500
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr ""
+"Чтобы связаться с нами по вопросам <b>технической поддержки</b> и <b>отчетов "
+"об ошибках</b>, используйте"
+
+#: inc/extras.php:501
+msgid "Colorlib support forum"
+msgstr "Форум поддержки Colorlib"
+
+#: inc/extras.php:503
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr ""
+"Если вам понравилась эта тема, я был бы благодарен за любой из следующих "
+"вариантов:"
+
+#: inc/extras.php:507 inc/extras.php:508
+msgid "Rate this Theme"
+msgstr "Оценить эту тему"
+
+#: inc/extras.php:511
+msgid "Like on Facebook"
+msgstr "Поставить лайк на Facebook"
+
+#: inc/extras.php:514
+msgid "Follow on Twitter"
+msgstr "Читать Twitter"
+
+#: inc/metaboxes.php:16
 #, fuzzy
 msgid ""
 "Select layout for this specific Page only ( Note: This setting only reflects "
@@ -608,234 +701,325 @@ msgstr ""
 "Задать разметку для этой страницы (Эта опция работает только если у страницы "
 "стоит шаблон По Умолчанию  или Шаблон Блога) "
 
-#: ../inc/metaboxes.php:21
+#: inc/metaboxes.php:22
 #, fuzzy
 msgid "Select layout for this specific Post only"
 msgstr "Задать разметку для этого поста"
 
-#: ../inc/template-tags.php:23
-msgid "Posts navigation"
-msgstr "Навигация по записям"
+#: inc/metaboxes.php:30
+#, fuzzy
+msgid "Select layout for this specific Product only"
+msgstr "Задать разметку для этого поста"
 
-#: ../inc/template-tags.php:27
-msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
-msgstr "<i class=\"fa fa-chevron-left\"></i> Показать еще"
+#: inc/metaboxes.php:67
+msgid "Default"
+msgstr ""
 
-#: ../inc/template-tags.php:31
-msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
-msgstr "Новые записи <i class=\"fa fa-chevron-right\"></i>"
+#: inc/welcome-screen/class-sparkling-welcome.php:122
+msgid "No page titled \"Homepage\" was found."
+msgstr ""
 
-#: ../inc/template-tags.php:56
-msgid "Post navigation"
-msgstr "Навигация записей"
+#. translators: 1: opening anchor tag, 2: closing anchor tag
+#: inc/welcome-screen/class-sparkling-welcome.php:188
+#, php-format
+msgid ""
+"Welcome! Thank you for choosing Sparkling! To fully take advantage of the "
+"best our theme can offer please make sure you visit our %1$swelcome page%2$s."
+msgstr ""
 
-#: ../inc/widgets/widget-categories.php:11
-#: ../inc/widgets/widget-categories.php:12
+#: inc/welcome-screen/class-sparkling-welcome.php:190
+msgid "Get started with Sparkling"
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:237
+#: inc/welcome-screen/sections/actions-required.php:157
+msgid "Hooray! There are no required actions for you right now."
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:485
+msgid "You are not allowed to access this page."
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:500
+msgid "Welcome to Sparkling! - Version "
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:503
+msgid ""
+"Sparkling is now installed and ready to use! Get ready to build something "
+"beautiful. We hope you enjoy it! We want to make sure you have the best "
+"experience using Sparkling and that is why we gathered here all the "
+"necessary information for you. We hope you will enjoy using Sparkling, as "
+"much as we enjoy creating great products."
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:510
+msgid "Getting Started"
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:512
+msgid "Recommended Plugins"
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:514
+#: inc/welcome-screen/sections/support.php:25
+msgid "Changelog"
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:516
+msgid "Support"
+msgstr ""
+
+#: inc/welcome-screen/sections/actions-required.php:65
+#: inc/welcome-screen/sections/actions-required.php:127
+#, fuzzy
+#| msgid "Instagram"
+msgid "Install"
+msgstr "Instagram"
+
+#: inc/welcome-screen/sections/actions-required.php:69
+#: inc/welcome-screen/sections/actions-required.php:131
+#: inc/welcome-screen/sections/recommended-plugins.php:55
+msgid "Activate"
+msgstr ""
+
+#: inc/welcome-screen/sections/actions-required.php:73
+#: inc/welcome-screen/sections/actions-required.php:135
+#: inc/welcome-screen/sections/recommended-plugins.php:59
+msgid "Deactivate"
+msgstr ""
+
+#: inc/welcome-screen/sections/actions-required.php:103
+msgid ""
+"Hooray! There are no required actions for you right now. But you can make "
+"your theme more powerful with next actions: "
+msgstr ""
+
+#: inc/welcome-screen/sections/changelog.php:21
+msgid "The changelog file could not be found."
+msgstr ""
+
+#: inc/welcome-screen/sections/changelog.php:29
+msgid "The changelog file could not be read."
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:19
+msgid "Step 1 - Implement recommended actions"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:20
+msgid ""
+"We've compiled a list of steps for you, to take make sure the experience "
+"you'll have using one of our products is very easy to follow."
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:23
+msgid "No recommended actions left to perform"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:26
+msgid "Check recommended actions"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:34
+#, fuzzy
+#| msgid "Support and Documentation"
+msgid "Step 2 - Check our documentation"
+msgstr "Поддержка и Документация"
+
+#: inc/welcome-screen/sections/getting-started.php:35
+msgid ""
+"Even if you're a long-time WordPress user, we still believe you should give "
+"our documentation a very quick Read."
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:38
+#, fuzzy
+#| msgid "Support and Documentation"
+msgid "Full documentation"
+msgstr "Поддержка и Документация"
+
+#: inc/welcome-screen/sections/getting-started.php:43
+msgid "Step 3 - Customize everything"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:44
+msgid ""
+"Using the WordPress Customizer you can easily customize every aspect of the "
+"theme."
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:46
+msgid "Go to Customizer"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:25
+msgid "Recommended plugins list"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:51
+msgid "Install Now"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:89
+msgid "Active"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:98
+msgid "More Details"
+msgstr ""
+
+#. translators: %s: plugin author name
+#: inc/welcome-screen/sections/recommended-plugins.php:108
+#, php-format
+msgid "By %s"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:115
+msgid "Version:"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:120
+msgid "Installed and active"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:122
+msgid "Installed, not active"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:124
+msgid "Not installed"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:5
+#: inc/welcome-screen/sections/support.php:10
+msgid "Contact Support"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:7
+msgid ""
+"We offer excellent support through our advanced ticketing system. Make sure "
+"to register your purchase before contacting support!"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:15
+#, fuzzy
+#| msgid "Sparkling Documentation"
+msgid "Documentation"
+msgstr "Документация Sparkling"
+
+#: inc/welcome-screen/sections/support.php:17
+msgid ""
+"This is the place to go to reference different aspects of the theme. Our "
+"online documentation is an incredible resource for learning the ins and outs "
+"of using Sparkling."
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:20
+#, fuzzy
+#| msgid "Support and Documentation"
+msgid "See our full documentation"
+msgstr "Поддержка и Документация"
+
+#: inc/welcome-screen/sections/support.php:27
+msgid ""
+"Want to get the gist on the latest theme changes? Just consult our changelog "
+"below to get a taste of the recent fixes and features implemented."
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:30
+msgid "See changelog"
+msgstr ""
+
+#: inc/widgets/class-sparkling-categories.php:13
+#: inc/widgets/class-sparkling-categories.php:15
 msgid "Sparkling Categories"
 msgstr "(Sparkling) Категории"
 
-#: ../inc/widgets/widget-categories.php:17
-#: ../inc/widgets/widget-categories.php:76
+#: inc/widgets/class-sparkling-categories.php:19
+#: inc/widgets/class-sparkling-categories.php:95
 msgid "Categories"
 msgstr "Категории"
 
-#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:42
+#: inc/widgets/class-sparkling-categories.php:106
+#: inc/widgets/class-sparkling-social-widget.php:58
 msgid "Title "
 msgstr "Название"
 
-#: ../inc/widgets/widget-categories.php:91
+#: inc/widgets/class-sparkling-categories.php:114
 msgid "Limit Categories "
 msgstr "Лимит категорий"
 
-#: ../inc/widgets/widget-categories.php:104
+#: inc/widgets/class-sparkling-categories.php:131
 msgid "Enable Posts Count"
 msgstr "Включить счётчик записей"
 
-#: ../inc/widgets/widget-popular-posts.php:11
-#: ../inc/widgets/widget-popular-posts.php:12
+#: inc/widgets/class-sparkling-popular-posts.php:13
+#: inc/widgets/class-sparkling-popular-posts.php:15
 msgid "Sparkling Popular Posts Widget"
 msgstr "(Sparkling) Популярные записи"
 
-#: ../inc/widgets/widget-popular-posts.php:17
-#: ../inc/widgets/widget-popular-posts.php:94
+#: inc/widgets/class-sparkling-popular-posts.php:33
+#: inc/widgets/class-sparkling-popular-posts.php:138
 msgid "Popular Posts"
 msgstr "Популярные записи"
 
-#: ../inc/widgets/widget-popular-posts.php:99
+#: inc/widgets/class-sparkling-popular-posts.php:155
 msgid "Title"
 msgstr "Название"
 
-#: ../inc/widgets/widget-popular-posts.php:107
+#: inc/widgets/class-sparkling-popular-posts.php:163
 msgid "Limit Posts Number"
 msgstr "Ограничить количество записей"
 
-#: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
+#: inc/widgets/class-sparkling-popular-posts.php:172
+msgid "Default Image"
+msgstr ""
+
+#: inc/widgets/class-sparkling-popular-posts.php:180
+msgid "No media selected"
+msgstr ""
+
+#: inc/widgets/class-sparkling-popular-posts.php:188
+msgctxt "label for button in the media widget"
+msgid "Add Media"
+msgstr ""
+
+#: inc/widgets/class-sparkling-popular-posts.php:191
+#, fuzzy
+#| msgid "Remove"
+msgctxt ""
+"label for button in the media widget; should preferably not be longer than "
+"~13 characters long"
+msgid "Remove Media"
+msgstr "Удалить"
+
+#: inc/widgets/class-sparkling-social-widget.php:13
+#: inc/widgets/class-sparkling-social-widget.php:15
 msgid "Sparkling Social Widget"
 msgstr "(Sparkling) Соц. сети"
 
-#: ../inc/widgets/widget-social.php:18 ../inc/widgets/widget-social.php:40
+#: inc/widgets/class-sparkling-social-widget.php:20
+#: inc/widgets/class-sparkling-social-widget.php:54
 msgid "Follow us"
 msgstr "Присоединяйтесь к нам"
 
-#: ../options.php:27
-msgid "One"
-msgstr "Один"
-
-#: ../options.php:28
-msgid "Two"
-msgstr "Два"
-
-#: ../options.php:29
-msgid "Three"
-msgstr "Три"
-
-#: ../options.php:30
-msgid "Four"
-msgstr "Четыре"
-
-#: ../options.php:31
-msgid "Five"
-msgstr "Пять"
-
-#: ../options.php:36
-msgid "French Toast"
-msgstr "Французский тост"
-
-#: ../options.php:37
-msgid "Pancake"
-msgstr "Блин"
-
-#: ../options.php:38
-msgid "Omelette"
-msgstr "Омлет"
-
-#: ../options.php:39
-msgid "Crepe"
-msgstr "Креп"
-
-#: ../options.php:40
-msgid "Waffle"
-msgstr "Вафли"
-
-#: ../options.php:110
-msgid "Main"
-msgstr "Главная"
-
-#: ../options.php:115
-msgid "Do You want to display image slider on the Home Page?"
-msgstr "Хотите ли Вы, чтобы на главной страницу отображался слайдер?"
-
-#: ../options.php:142
-msgid "Choose between Left and Right sidebar options to be used as default"
-msgstr "Выберите, где по умолчанию будет боковая панель: Слева или Справа?"
-
-#: ../options.php:151
-msgid "Element color"
-msgstr "Цвет элемента"
-
-#: ../options.php:167
-msgid "Custom Favicon"
-msgstr "Своя Favicon"
-
-#: ../options.php:168
-msgid ""
-"Upload a 32px x 32px PNG/GIF image that will represent your websites favicon"
-msgstr ""
-"Загрузите PNG/GIF изображение размером 32px х 32px, которая будет символом "
-"Вашего сайта"
-
-#: ../options.php:242
-msgid "Used in P tags"
-msgstr "Используемый в тегах <p> (абзац)"
-
-#: ../options.php:377
-#, fuzzy
-msgid "Show/Hide social icons in footer"
-msgstr "Цвет иконки соц. сетей в нижнем колонтитуле"
-
-#: ../options.php:405
-msgid "Add full URL for your social network profiles"
-msgstr "Добавьте полные URL профилей Вашего бренда в соц. сетях "
-
-#: ../options.php:406
-msgid "Facebook"
-msgstr "Facebook"
-
-#: ../options.php:415
-msgid "Twitter"
-msgstr "Twitter"
-
-#: ../options.php:423
-msgid "Google+"
-msgstr "Google+"
-
-#: ../options.php:431
-msgid "Youtube"
-msgstr "Youtube"
-
-#: ../options.php:439
-msgid "Vimeo"
+#. Template Name of the theme
+msgid "Full-width(no sidebar)"
 msgstr ""
 
-#: ../options.php:447
-msgid "LinkedIn"
-msgstr "LinkedIn"
-
-#: ../options.php:455
-msgid "Pinterest"
-msgstr "Pinterest"
-
-#: ../options.php:463
-msgid "RSS Feed"
-msgstr "RSS"
-
-#: ../options.php:471
-msgid "Tumblr"
-msgstr "Tumblr"
-
-#: ../options.php:479
-msgid "Flickr"
-msgstr "Flickr"
-
-#: ../options.php:487
-msgid "Instagram"
-msgstr "Instagram"
-
-#: ../options.php:495
-msgid "Dribbble"
-msgstr "Dribble"
-
-#: ../options.php:503
-msgid "Skype"
-msgstr "Skype"
-
-#: ../options.php:511
-msgid "Foursquare"
-msgstr ""
-
-#: ../options.php:519
-msgid "SoundCloud"
-msgstr ""
-
-#: ../options.php:527
-msgid "GitHub"
-msgstr ""
-
-#: ../options.php:535
-msgid "Spotify"
-msgstr ""
-
-#: ../search.php:16
+#. translators: %s: search query
+#: search.php:20
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Результаты поиска по: %s"
 
-#: ../searchform.php:11
+#: searchform.php:11
 #, fuzzy
 msgid "Search for:"
 msgstr "Результаты поиска по: %s"
 
-#: ../searchform.php:12
+#: searchform.php:12
 #, fuzzy
 msgctxt "placeholder"
 msgid "Search&hellip;"
@@ -843,21 +1027,246 @@ msgstr ""
 "Ничего не найдено. Попробуйте перейти по другой ссылке или воспользуйтесь "
 "поиском?"
 
-#: ../searchform.php:12
+#: searchform.php:12
 #, fuzzy
 msgctxt "label"
 msgid "Search for:"
 msgstr "Результаты поиска по: %s"
 
-#: ../searchform.php:14
+#: searchform.php:14
 #, fuzzy
 msgctxt "submit button"
 msgid "Search"
 msgstr "Поиск"
 
-#: ../sidebar.php:26
+#: sidebar.php:24
 msgid "Meta"
 msgstr "Мета"
+
+#: template-parts/content-none.php:12
+msgid "Nothing Found"
+msgstr "Ничего не найдено"
+
+#. translators: %1$s: URL of the new post screen
+#: template-parts/content-none.php:28
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Готовы опубликовать свою первую запись? <a href=\"%1$s\">Начнем</a>."
+
+#: template-parts/content-none.php:35
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Ни один результат не соответствует Вашему запросу. Пожалуйста, повторите "
+"поиск, используя другие ключевые слова."
+
+#: template-parts/content-none.php:41
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Похоже, мы не можем найти запрашиваемую Вами информацию. Попробуйте найти "
+"через \"Поиск\"."
+
+#. translators: %s: Name of current post
+#: template-parts/content-page.php:56 template-parts/content-single.php:34
+#: template-parts/content-video.php:49 template-parts/content.php:42
+#, fuzzy, php-format
+#| msgid "Edit"
+msgid "Edit %s"
+msgstr "Правка"
+
+#. translators: used between list items, there is a space after the comma
+#: template-parts/content-single.php:22
+msgid ", "
+msgstr ","
+
+#: template-parts/content-video.php:41 template-parts/content.php:34
+msgid "Leave a comment"
+msgstr "Оставить комментарий"
+
+#: template-parts/content-video.php:41 template-parts/content.php:34
+msgid "1 Comment"
+msgstr "1 комментарий"
+
+#: template-parts/content-video.php:41 template-parts/content.php:34
+msgid "% Comments"
+msgstr "% комментарии"
+
+#: template-parts/content-video.php:65 template-parts/content-video.php:74
+#: template-parts/content-video.php:77 template-parts/content.php:58
+#: template-parts/content.php:67 template-parts/content.php:70
+msgid "Read More"
+msgstr "Подробнее"
+
+#, php-format
+#~ msgid "Author: %s"
+#~ msgstr "Автор: %s"
+
+#, php-format
+#~ msgid "Day: %s"
+#~ msgstr "День: %s"
+
+#, php-format
+#~ msgid "Month: %s"
+#~ msgstr "Месяц: %s"
+
+#, php-format
+#~ msgid "Year: %s"
+#~ msgstr "Год: %s"
+
+#~ msgid "Asides"
+#~ msgstr "Боковые панели"
+
+#~ msgid "Galleries"
+#~ msgstr "Галереи"
+
+#~ msgid "Images"
+#~ msgstr "Фото"
+
+#~ msgid "Videos"
+#~ msgstr "Видео"
+
+#~ msgid "Quotes"
+#~ msgstr "Цитаты"
+
+#~ msgid "Links"
+#~ msgstr "Ссылки"
+
+#~ msgid "Statuses"
+#~ msgstr "Статусы"
+
+#~ msgid "Audios"
+#~ msgstr "Аудио"
+
+#~ msgid "Chats"
+#~ msgstr "Чаты"
+
+#, php-format
+#~ msgid " %1$s"
+#~ msgstr " %1$s"
+
+#~ msgid "Other"
+#~ msgstr "Другие"
+
+#~ msgid "Custom CSS"
+#~ msgstr "Пользовательский CSS"
+
+#~ msgid "Additional CSS"
+#~ msgstr "Дополнительный CSS"
+
+#, php-format
+#~ msgid "Page %s"
+#~ msgstr "Страница %s"
+
+#~ msgid "Posts navigation"
+#~ msgstr "Навигация по записям"
+
+#~ msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
+#~ msgstr "<i class=\"fa fa-chevron-left\"></i> Показать еще"
+
+#~ msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
+#~ msgstr "Новые записи <i class=\"fa fa-chevron-right\"></i>"
+
+#~ msgid "Post navigation"
+#~ msgstr "Навигация записей"
+
+#~ msgid "One"
+#~ msgstr "Один"
+
+#~ msgid "Two"
+#~ msgstr "Два"
+
+#~ msgid "Three"
+#~ msgstr "Три"
+
+#~ msgid "Four"
+#~ msgstr "Четыре"
+
+#~ msgid "Five"
+#~ msgstr "Пять"
+
+#~ msgid "French Toast"
+#~ msgstr "Французский тост"
+
+#~ msgid "Pancake"
+#~ msgstr "Блин"
+
+#~ msgid "Omelette"
+#~ msgstr "Омлет"
+
+#~ msgid "Crepe"
+#~ msgstr "Креп"
+
+#~ msgid "Waffle"
+#~ msgstr "Вафли"
+
+#~ msgid "Main"
+#~ msgstr "Главная"
+
+#~ msgid "Do You want to display image slider on the Home Page?"
+#~ msgstr "Хотите ли Вы, чтобы на главной страницу отображался слайдер?"
+
+#~ msgid "Choose between Left and Right sidebar options to be used as default"
+#~ msgstr "Выберите, где по умолчанию будет боковая панель: Слева или Справа?"
+
+#~ msgid "Element color"
+#~ msgstr "Цвет элемента"
+
+#~ msgid "Custom Favicon"
+#~ msgstr "Своя Favicon"
+
+#~ msgid ""
+#~ "Upload a 32px x 32px PNG/GIF image that will represent your websites "
+#~ "favicon"
+#~ msgstr ""
+#~ "Загрузите PNG/GIF изображение размером 32px х 32px, которая будет "
+#~ "символом Вашего сайта"
+
+#~ msgid "Used in P tags"
+#~ msgstr "Используемый в тегах <p> (абзац)"
+
+#, fuzzy
+#~ msgid "Show/Hide social icons in footer"
+#~ msgstr "Цвет иконки соц. сетей в нижнем колонтитуле"
+
+#~ msgid "Add full URL for your social network profiles"
+#~ msgstr "Добавьте полные URL профилей Вашего бренда в соц. сетях "
+
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#~ msgid "Twitter"
+#~ msgstr "Twitter"
+
+#~ msgid "Google+"
+#~ msgstr "Google+"
+
+#~ msgid "Youtube"
+#~ msgstr "Youtube"
+
+#~ msgid "LinkedIn"
+#~ msgstr "LinkedIn"
+
+#~ msgid "Pinterest"
+#~ msgstr "Pinterest"
+
+#~ msgid "RSS Feed"
+#~ msgstr "RSS"
+
+#~ msgid "Tumblr"
+#~ msgstr "Tumblr"
+
+#~ msgid "Flickr"
+#~ msgstr "Flickr"
+
+#~ msgid "Dribbble"
+#~ msgstr "Dribble"
+
+#~ msgid "Skype"
+#~ msgstr "Skype"
 
 #~ msgid "Theme Options"
 #~ msgstr "Опции темы"
@@ -876,9 +1285,6 @@ msgstr "Мета"
 
 #~ msgid "Upload"
 #~ msgstr "Загрузить"
-
-#~ msgid "Remove"
-#~ msgstr "Удалить"
 
 #~ msgid "Upgrade your version of WordPress for full media support."
 #~ msgstr "Обновите версию WordPress для полной поддержки Медиа."

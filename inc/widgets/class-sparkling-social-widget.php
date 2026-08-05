@@ -21,7 +21,7 @@ class Sparkling_Social_Widget extends WP_Widget {
 
 		echo $args['before_widget'];
 		echo $args['before_title'];
-		echo $title;
+		echo esc_html( $title );
 		echo $args['after_title'];
 
 		/**
@@ -39,17 +39,27 @@ class Sparkling_Social_Widget extends WP_Widget {
 		echo $args['after_widget'];
 	}
 
+	/**
+	 * Sanitize widget settings before they are saved.
+	 */
+	public function update( $new_instance, $old_instance ) {
+		$instance          = $old_instance;
+		$instance['title'] = isset( $new_instance['title'] ) ? sanitize_text_field( $new_instance['title'] ) : '';
+
+		return $instance;
+	}
+
 	function form( $instance ) {
 		if ( ! isset( $instance['title'] ) ) {
 			$instance['title'] = esc_html__( 'Follow us', 'sparkling' );
 		}
 		?>
 
-	  <p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title ', 'sparkling' ); ?></label>
+	  <p><label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title ', 'sparkling' ); ?></label>
 
 	  <input type="text" value="<?php echo esc_attr( $instance['title'] ); ?>"
-						  name="<?php echo $this->get_field_name( 'title' ); ?>"
-						  id="<?php $this->get_field_id( 'title' ); ?>"
+						  name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>"
+						  id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"
 						  class="widefat" />
 	  </p><?php
 	}

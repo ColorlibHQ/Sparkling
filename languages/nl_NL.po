@@ -1,7 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2017-05-26 19:46+0000\n"
+"Report-Msgid-Bugs-To: https://colorlib.com/wp/support/\n"
+"POT-Creation-Date: 2026-08-05T12:17:17+00:00\n"
 "PO-Revision-Date: 2017-05-26 20:05+0000\n"
 "Last-Translator: Nieuw Organiseren <info@nieuworganiseren.nl>\n"
 "Language-Team: Dutch\n"
@@ -12,419 +13,53 @@ msgstr ""
 "X-Generator: Loco - https://localise.biz/\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
-"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x:1,"
-"2c;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-KeywordsList: "
+"_e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
-"Report-Msgid-Bugs-To: "
 
-#: ../archive.php:39 ../inc/extras.php:430 ../index.php:40 ../search.php:34
-msgid "Newer posts"
-msgstr "Nieuwere berichten"
+#. Theme Name of the theme
+#: style.css
+#, fuzzy
+#| msgid "Sparkling Options"
+msgid "Sparkling"
+msgstr "Sparkling Opties"
 
-#: ../archive.php:40 ../inc/extras.php:431 ../index.php:41 ../search.php:35
-msgid "Older posts"
-msgstr "Oudere berichten"
+#. Theme URI of the theme
+#: style.css
+msgid "https://colorlib.com/wp/themes/sparkling"
+msgstr ""
 
-#: ../comments.php:41 ../comments.php:63
-msgid "Older Comments"
-msgstr "Oudere reacties"
-
-#: ../comments.php:42 ../comments.php:64
-msgid "Newer Comments"
-msgstr "Nieuwere reacties"
-
-#: ../content-page.php:40 ../content-single.php:31 ../content.php:28
-#, php-format
-msgid "Edit %s"
-msgstr "Pas %s aan"
-
-#: ../inc/navwalker.php:202
-msgid "Add a menu"
-msgstr "Een menu toevoegen"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:327
-#: ../inc/tgmpa/tgm-plugin-activation.php:79
-msgid "Install Required Plugins"
-msgstr "Installeer Vereiste Plug-ins"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:328
-#: ../inc/tgmpa/tgm-plugin-activation.php:80
-msgid "Install Plugins"
-msgstr "Installeer Plug-ins"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:330
-#: ../inc/tgmpa/tgm-plugin-activation.php:81
-#, php-format
-msgid "Installing Plugin: %s"
-msgstr "Plug-in installeren: %s"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:332
-#, php-format
-msgid "Updating Plugin: %s"
-msgstr "Plug-in updaten: %s"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:333
-#: ../inc/tgmpa/tgm-plugin-activation.php:82
-msgid "Something went wrong with the plugin API."
-msgstr "Er is iets fout gegaan met de plug-in API."
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:385
-#: ../inc/tgmpa/tgm-plugin-activation.php:93
-msgid "Return to Required Plugins Installer"
-msgstr "Ga terug naar de Vereiste Plug-in Installer"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:386
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:827
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2533
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3580
-msgid "Return to the Dashboard"
-msgstr "Ga terug naar het Dashboard"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:387
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3159
-#: ../inc/tgmpa/tgm-plugin-activation.php:94
-msgid "Plugin activated successfully."
-msgstr "Plug-in succesvol geactiveerd."
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:388
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2952
-msgid "The following plugin was activated successfully:"
-msgid_plural "The following plugins were activated successfully:"
-msgstr[0] "De volgende plug-in is succesvol geactiveerd:"
-msgstr[1] "De volgende plug-ins zijn succesvol geactiveerd:"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:390
-#, php-format
-msgid "No action taken. Plugin %1$s was already active."
-msgstr "Geen actie ondernomen. Plug-in %1$s was al actief."
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:392
-#, php-format
+#. Description of the theme
+#: style.css
 msgid ""
-"Plugin not activated. A higher version of %s is needed for this theme. "
-"Please update the plugin."
+"Sparkling is a clean, minimal and fully responsive WordPress theme suited to "
+"blogs, news, magazines, business, portfolio and shop sites. It ships a full-"
+"width front page slider, a call-to-action bar, social icon menu, author bio, "
+"popular posts and enhanced category widgets, and four sidebar layouts you "
+"can set globally or per post. Dozens of Customizer options cover colours, "
+"typography, header, footer and layout, with a live preview. Built on "
+"Bootstrap 3, the front end runs on plain JavaScript with no jQuery "
+"dependency of its own. Sparkling is translation ready and ships with over "
+"twenty translations, is WooCommerce ready, and works with bbPress, Contact "
+"Form 7 and Jetpack."
 msgstr ""
-"Plug-in niet geactiveerd. Voor dit thema is een hogere versie van %s nodig. "
-"Update de plug-in alsjeblieft."
 
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:394
-#, php-format
-msgid "All plugins installed and activated successfully. %1$s"
-msgstr "Alle plugins zijn succesvol geïnstalleerd en geactiveerd. %1$s"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:395
-msgid "Dismiss this notice"
-msgstr "Verwerp deze aankondiging"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:396
-msgid ""
-"There are one or more required or recommended plugins to install, update or "
-"activate."
+#. Author of the theme
+#: style.css
+msgid "Colorlib"
 msgstr ""
-"Er zijn een of meer vereiste of aanbevolen plug-ins om te installeren, bij "
-"te werken of te activeren."
 
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:397
-msgid "Please contact the administrator of this site for help."
-msgstr "Neem contact op met de beheerder van deze site voor hulp."
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:522
-msgid "This plugin needs to be updated to be compatible with your theme."
+#. Author URI of the theme
+#: style.css
+msgid "https://colorlib.com/"
 msgstr ""
-"Deze plug-in moet worden bijgewerkt om compatibel te zijn met uw thema."
 
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:523
-msgid "Update Required"
-msgstr "Update Vereist"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:934
-msgid ""
-"The remote plugin package does not contain a folder with the desired slug "
-"and renaming did not work."
-msgstr ""
-"Het externe plug-in pakket bevat geen map met de gewenste slug en de naam "
-"veranderen werkte niet."
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:934
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:937
-msgid ""
-"Please contact the plugin provider and ask them to package their plugin "
-"according to the WordPress guidelines."
-msgstr ""
-"Neem contact op met de plug-in provider en vraag hen om hun plug-in in "
-"overeenstemming te brengen met de WordPress-richtlijnen."
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:937
-msgid ""
-"The remote plugin package consists of more than one file, but the files are "
-"not packaged in a folder."
-msgstr ""
-"Het externe plug-in pakket bestaat uit meer dan een bestand, maar de "
-"bestanden zijn niet verpakt in een map."
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:1982
-#, php-format
-msgid "TGMPA v%s"
-msgstr "TGMPA v%s"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2273
-msgid "Required"
-msgstr "Vereist"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2276
-msgid "Recommended"
-msgstr "Aanbevolen"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2292
-msgid "WordPress Repository"
-msgstr "WordPress Repository"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2295
-msgid "External Source"
-msgstr "Externe Bron"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2298
-msgid "Pre-Packaged"
-msgstr "Voorverpakt"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2315
-msgid "Not Installed"
-msgstr "Niet Geïnstalleerd"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2319
-msgid "Installed But Not Activated"
-msgstr "Geïnstalleerd, maar niet geactiveerd"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2321
-msgid "Active"
-msgstr "Actief"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2327
-msgid "Required Update not Available"
-msgstr "Vereiste Update niet Beschikbaar"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2330
-msgid "Requires Update"
-msgstr "Vereist een Update"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2333
-msgid "Update recommended"
-msgstr "Update aanbevolen"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2388
-#, php-format
-msgctxt "plugins"
-msgid "All <span class=\"count\">(%s)</span>"
-msgid_plural "All <span class=\"count\">(%s)</span>"
-msgstr[0] "Alle <span class=\"count\">(%s)</span>"
-msgstr[1] "Alle <span class=\"count\">(%s)</span>"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2392
-#, php-format
-msgid "To Install <span class=\"count\">(%s)</span>"
-msgid_plural "To Install <span class=\"count\">(%s)</span>"
-msgstr[0] "Te Installeren <span class=\"count\">(%s)</span>"
-msgstr[1] "Te Installeren <span class=\"count\">(%s)</span>"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2396
-#, php-format
-msgid "Update Available <span class=\"count\">(%s)</span>"
-msgid_plural "Update Available <span class=\"count\">(%s)</span>"
-msgstr[0] "Update Beschikbaar <span class=\"count\">(%s)</span>"
-msgstr[1] "Update Beschikbaar <span class=\"count\">(%s)</span>"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2400
-#, php-format
-msgid "To Activate <span class=\"count\">(%s)</span>"
-msgid_plural "To Activate <span class=\"count\">(%s)</span>"
-msgstr[0] "Te Activeren <span class=\"count\">(%s)</span>"
-msgstr[1] "Te Activeren <span class=\"count\">(%s)</span>"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2490
-msgid "Installed version:"
-msgstr "Geïnstalleerde versie:"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2498
-msgid "Minimum required version:"
-msgstr "Minimale vereiste versie:"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2510
-msgid "Available version:"
-msgstr "Beschikbare versie:"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2533
-msgid "No plugins to install, update or activate."
-msgstr "Geen plugins om te installeren, bij te werken of te activeren."
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2547
-msgid "Plugin"
-msgstr "Plug-in"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2548
-msgid "Source"
-msgstr "Bron"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2549
-msgid "Type"
-msgstr "Type"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2553
-msgid "Version"
-msgstr "Versie"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2554
-msgid "Status"
-msgstr "Status"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2603
-#, php-format
-msgid "Install %2$s"
-msgstr "Installeer %2$s"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2608
-#, php-format
-msgid "Update %2$s"
-msgstr "Update %2$s"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2614
-#, php-format
-msgid "Activate %2$s"
-msgstr "Activeer %2$s"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2684
-msgid "Upgrade message from the plugin author:"
-msgstr "Upgrade bericht van de plug-in auteur:"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2717
-msgid "Install"
-msgstr "Installeer"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2723
-msgid "Update"
-msgstr "Update"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2726
-msgid "Activate"
-msgstr "Activeer"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2757
-msgid "No plugins were selected to be installed. No action taken."
-msgstr ""
-"Er zijn geen plug-ins geselecteerd die geïnstalleerd moeten worden. Geen "
-"actie ondernomen."
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2759
-msgid "No plugins were selected to be updated. No action taken."
-msgstr ""
-"Er zijn geen plug-ins geselecteerd die bijgewerkt moeten worden. Geen actie "
-"ondernomen."
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2800
-msgid "No plugins are available to be installed at this time."
-msgstr "Er kunnen momenteel geen plug-ins worden geïnstalleerd."
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2802
-msgid "No plugins are available to be updated at this time."
-msgstr ""
-"Er zijn op dit moment geen plug-ins beschikbaar om bijgewerkt te worden."
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2908
-msgid "No plugins were selected to be activated. No action taken."
-msgstr ""
-"Er zijn geen plug-ins geselecteerd die geactiveerd moeten worden. Geen actie "
-"ondernomen."
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:2934
-msgid "No plugins are available to be activated at this time."
-msgstr ""
-"Er zijn momenteel geen plug-ins beschikbaar die geactiveerd kunnen worden."
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3158
-msgid "Plugin activation failed."
-msgstr "Plug-in activering mislukt."
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3498
-#, php-format
-msgid "Updating Plugin %1$s (%2$d/%3$d)"
-msgstr "Bijwerken van Plug-in %1$s (%2$d/%3$d)"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3501
-#, php-format
-msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
-msgstr ""
-"Er is een fout opgetreden tijdens het installeren van %1$s: <strong>"
-"%2$s</strong>."
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3503
-#, php-format
-msgid "The installation of %1$s failed."
-msgstr "De installatie van %1$s is mislukt."
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3507
-msgid ""
-"The installation and activation process is starting. This process may take a "
-"while on some hosts, so please be patient."
-msgstr ""
-"Het installatie- en activeringsproces begint. Dit proces kan even duren op "
-"sommige hosts, dus wees geduldig"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3509
-#, php-format
-msgid "%1$s installed and activated successfully."
-msgstr "%1$s is met succes geïnstalleerd en geactiveerd."
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3509
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3517
-msgid "Show Details"
-msgstr "Details Tonen"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3509
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3517
-msgid "Hide Details"
-msgstr "Details Verbergen"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3510
-msgid "All installations and activations have been completed."
-msgstr "Alle installaties en activaties zijn voltooid."
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3512
-#, php-format
-msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
-msgstr "Installeren en Activeren van Plug-in %1$s (%2$d/%3$d)"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3515
-msgid ""
-"The installation process is starting. This process may take a while on some "
-"hosts, so please be patient."
-msgstr ""
-"Het installatieproces begint. Dit proces kan even duren op sommige hosts, "
-"dus wees geduldig."
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3517
-#, php-format
-msgid "%1$s installed successfully."
-msgstr "%1$s is succesvol geïnstalleerd"
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3518
-msgid "All installations have been completed."
-msgstr "Alle installaties zijn voltooid."
-
-#: ../inc/tgmpa/class-tgm-plugin-activation.php:3520
-#, php-format
-msgid "Installing Plugin %1$s (%2$d/%3$d)"
-msgstr "Installeren van Plug-in %1$s (%2$d/%3$d)"
-
-#: ../inc/tgmpa/tgm-plugin-activation.php:95
-#, php-format
-msgid "All plugins installed and activated successfully. %s"
-msgstr "Alle plugins zijn succesvol geïnstalleerd en geactiveerd. %s"
-
-#: ../404.php:15
+#: 404.php:15
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "Oeps! Deze pagina kon niet gevonden worden."
 
-#: ../404.php:19
+#: 404.php:19
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
@@ -432,230 +67,255 @@ msgstr ""
 "Het lijkt er dat er niks is gevonden. Probeer één van onderstaande links of "
 "de zoekfunctie."
 
-#: ../404.php:25
+#: 404.php:25
 msgid "Recent Posts"
 msgstr "Recente Berichten"
 
-#: ../404.php:31
+#: 404.php:31
 msgid "Most Used Categories"
 msgstr "Meest gebruikte categorieên"
 
-#: ../404.php:52
+#. translators: %1$s: smiley
+#: 404.php:54
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Probeer eens te kijken in de maandelijkse archieven. %1$s"
 
-#: ../404.php:53 ../sidebar.php:19
+#: 404.php:55 sidebar.php:12
 msgid "Archives"
 msgstr "Archieven"
 
-#: ../404.php:58
+#: 404.php:60
 msgid "Tags"
 msgstr "Tags"
 
-#: ../comments.php:29
-#, php-format
+#: archive.php:42 inc/extras.php:605 index.php:46 search.php:40
+msgid "Newer posts"
+msgstr "Nieuwere berichten"
+
+#: archive.php:43 inc/extras.php:606 index.php:47 search.php:41
+msgid "Older posts"
+msgstr "Oudere berichten"
+
+#. translators: %s: post title
+#: comments.php:38
+#, fuzzy, php-format
+#| msgctxt "comments title"
+#| msgid "One thought on &ldquo;%2$s&rdquo;"
+#| msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgid "One thought to &ldquo;%s&rdquo;"
+msgstr "Een gedachte over &ldquo;%2$s&rdquo;"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:42
+#, fuzzy, php-format
+#| msgctxt "comments title"
+#| msgid "One thought on &ldquo;%2$s&rdquo;"
+#| msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgctxt "comments title"
+msgid "%1$s thought to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts to &ldquo;%2$s&rdquo;"
 msgstr[0] "Een gedachte over &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s gedachten over &ldquo;%2$s&rdquo;"
 
-#: ../comments.php:38 ../comments.php:60
+#: comments.php:58 comments.php:82
 msgid "Comment navigation"
 msgstr "Reactie navigatie"
 
-#: ../comments.php:77
+#: comments.php:61 comments.php:85
+msgid "Older Comments"
+msgstr "Oudere reacties"
+
+#: comments.php:62 comments.php:86
+msgid "Newer Comments"
+msgstr "Nieuwere reacties"
+
+#: comments.php:100
 msgid "Comments are closed."
 msgstr "Reacties zijn gesloten."
 
-#: ../content-none.php:13
-msgid "Nothing Found"
-msgstr "Niks gevonden"
-
-#: ../content-none.php:20
-#, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-"Klaar om je eerste bericht te plaatsen? <a href=\"%1$s\">Begin hier</a>."
-
-#: ../content-none.php:24
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr ""
-"Sorry, we hebben niks kunnen vinden met deze zoekterm. Probeer het nog eens."
-
-#: ../content-none.php:29
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-"Het lijkt er op dat we niet kunnen vinden waar je naar zocht. Probeer de "
-"zoekfunctie eens."
-
-#: ../content-page.php:21 ../content-single.php:47 ../content.php:60
-#: ../image.php:79
-msgid "Pages:"
-msgstr "Pagina&rsquo;s"
-
-#: ../content-single.php:19
-msgid ", "
-msgstr ", "
-
-#: ../content-single.php:23
-#, php-format
-msgid " %1$s"
-msgstr " %1$s"
-
-#: ../content.php:20
-msgid "Leave a comment"
-msgstr "Reageer"
-
-#: ../content.php:20
-msgid "1 Comment"
-msgstr "1 Reactie"
-
-#: ../content.php:20
-msgid "% Comments"
-msgstr "% Reacties"
-
-#: ../content.php:44 ../content.php:52
-msgid "Read More"
-msgstr "Lees meer"
-
-#: ../functions.php:69
+#: functions.php:84
 msgid "Primary Menu"
 msgstr "Hoofdmenu"
 
-#: ../functions.php:70 ../inc/extras.php:136
+#: functions.php:85 inc/extras.php:144
 msgid "Footer Links"
 msgstr "Footer Links"
 
-#: ../functions.php:108
+#: functions.php:168
 msgid "Sidebar"
 msgstr "Sidebar"
 
-#: ../functions.php:118
+#: functions.php:180
 msgid "Homepage Widget 1"
 msgstr "Voorpagina Widget 1"
 
-#: ../functions.php:119 ../functions.php:129 ../functions.php:139
+#: functions.php:181 functions.php:193 functions.php:205
 msgid "Displays on the Home Page"
 msgstr "Weergeven op de Voorpagina"
 
-#: ../functions.php:128
+#: functions.php:192
 msgid "Homepage Widget 2"
 msgstr "Voorpagina Widget 2"
 
-#: ../functions.php:138
+#: functions.php:204
 msgid "Homepage Widget 3"
 msgstr "Voorpagina Widget 3"
 
-#: ../functions.php:148
+#: functions.php:216
 msgid "Footer Widget 1"
 msgstr "Footer Widget 1"
 
-#: ../functions.php:149 ../functions.php:159 ../functions.php:169
+#: functions.php:217 functions.php:229 functions.php:241
 msgid "Used for footer widget area"
 msgstr "Gebruikt voor footer widget area"
 
-#: ../functions.php:158
+#: functions.php:228
 msgid "Footer Widget 2"
 msgstr "Footer Widget 2"
 
-#: ../functions.php:168
+#: functions.php:240
 msgid "Footer Widget 3"
 msgstr "Footer Widget 3"
 
-#: ../functions.php:309
+#: functions.php:303
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: functions.php:310
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: functions.php:317
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: functions.php:472
+#, fuzzy
+#| msgid "Social"
+msgctxt "nav menu location"
+msgid "Social Menu"
+msgstr "Social"
+
+#: functions.php:503
 msgid "Right Sidebar"
 msgstr "Sidebar Rechts"
 
-#: ../functions.php:309
+#: functions.php:504
 msgid "Left Sidebar"
 msgstr "Sidebar Links"
 
-#: ../functions.php:309
+#: functions.php:505
 msgid "No Sidebar"
 msgstr "Geen zijbalk"
 
-#: ../functions.php:309
+#: functions.php:506
 msgid "Full Width"
 msgstr "Volle Breedte"
 
-#: ../image.php:22
+#: functions.php:692 inc/welcome-screen/class-sparkling-welcome.php:113
+#: inc/welcome-screen/class-sparkling-welcome.php:253
+#: inc/welcome-screen/class-sparkling-welcome.php:294
+msgid "You are not allowed to do that."
+msgstr ""
+
+#: functions.php:700
+msgid "Invalid attachment."
+msgstr ""
+
+#: image.php:25
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
 msgstr "<i class=\"fa fa-chevron-left\"></i> Vorige"
 
-#: ../image.php:23
+#: image.php:26
 msgid "Next <i class=\"fa fa-chevron-right\"></i>"
 msgstr "Volgende <i class=\"fa fa-chevron-right\"></i>"
 
-#: ../inc/customizer.php:29
+#: image.php:90 template-parts/content-page.php:36
+#: template-parts/content-single.php:51 template-parts/content-video.php:84
+#: template-parts/content.php:77
+msgid "Pages:"
+msgstr "Pagina&rsquo;s"
+
+#: inc/class-wp-bootstrap-navwalker.php:206
+msgid "Add a menu"
+msgstr "Een menu toevoegen"
+
+#: inc/customizer.php:40
 msgid "Sparkling Options"
 msgstr "Sparkling Opties"
 
-#: ../inc/customizer.php:30
+#: inc/customizer.php:41
 msgid "Panel to update sparkling theme options"
 msgstr "Paneel om Sparkling thema opties bij te werken"
 
-#: ../inc/customizer.php:36
+#: inc/customizer.php:51
 msgid "Content Options"
 msgstr "Content Opties"
 
-#: ../inc/customizer.php:47
+#: inc/customizer.php:67
 msgid "Show post excerpts?"
 msgstr "Toon post uittreksels?"
 
-#: ../inc/customizer.php:58
+#: inc/customizer.php:84
 msgid "Display Comments on Static Pages?"
 msgstr "Comments weergeven op Statische Pagina?"
 
-#: ../inc/customizer.php:66
-msgid "Slider options"
+#: inc/customizer.php:95
+#, fuzzy
+#| msgid "Slider options"
+msgid "Slider Options"
 msgstr "Slider opties"
 
-#: ../inc/customizer.php:76
+#: inc/customizer.php:110
 msgid "Check if you want to enable slider"
 msgstr "Vink aan om te activeren"
 
-#: ../inc/customizer.php:91
+#: inc/customizer.php:127
+msgid "Uncheck this option to remove the link from the slides"
+msgstr ""
+
+#: inc/customizer.php:147
 msgid "Slider Category"
 msgstr "Slider Categorie"
 
-#: ../inc/customizer.php:94
+#: inc/customizer.php:150
 msgid "Select a category for the featured post slider"
 msgstr "Selecteer een categorie voor de uitgelichte berichten"
 
-#: ../inc/customizer.php:104
+#: inc/customizer.php:164
 msgid "Number of slide items"
 msgstr "Aantal uitgelichte berichten"
 
-#: ../inc/customizer.php:106
+#: inc/customizer.php:166
 msgid "Enter the number of slide items"
 msgstr "Voor het aantal uitgelichte berichten in"
 
-#: ../inc/customizer.php:111
-msgid "Layout options"
+#: inc/customizer.php:173
+#, fuzzy
+#| msgid "Layout options"
+msgid "Layout Options"
 msgstr "Lay-out opties"
 
-#: ../inc/customizer.php:123
+#: inc/customizer.php:189
 msgid "Website Layout Options"
 msgstr "Website Layout Opties"
 
-#: ../inc/customizer.php:126
+#: inc/customizer.php:192
 msgid "Choose between different layout options to be used as default"
 msgstr ""
 "Kies welke van de verschillende lay-out opties als standaard dient te worden "
 "gebruikt"
 
-#: ../inc/customizer.php:137
+#: inc/customizer.php:207
 msgid "WooCommerce Page Layout Options"
 msgstr "WooCommerce Pagina Lay-out Opties"
 
-#: ../inc/customizer.php:140
+#: inc/customizer.php:210
 msgid ""
 "Choose between different layout options to be used as default for all "
 "woocommerce pages"
@@ -663,357 +323,1039 @@ msgstr ""
 "Kies tussen verschillende lay-out opties die als standaard voor alle "
 "woocommerce pagina's dienen te worden gebruikt"
 
-#: ../inc/customizer.php:151
+#: inc/customizer.php:226
 msgid "Element Color"
 msgstr "Element Kleur"
 
-#: ../inc/customizer.php:152 ../inc/customizer.php:164
-#: ../inc/customizer.php:218 ../inc/customizer.php:228
-#: ../inc/customizer.php:238 ../inc/customizer.php:248
-#: ../inc/customizer.php:326 ../inc/customizer.php:336
-#: ../inc/customizer.php:366 ../inc/customizer.php:506
-#: ../inc/customizer.php:517
+#: inc/customizer.php:227 inc/customizer.php:245 inc/customizer.php:319
+#: inc/customizer.php:335 inc/customizer.php:351 inc/customizer.php:367
+#: inc/customizer.php:492 inc/customizer.php:508 inc/customizer.php:552
+#: inc/customizer.php:766 inc/customizer.php:783
 msgid "Default used if no color is selected"
 msgstr "Standaard gebruikt indien geen kleur gekozen"
 
-#: ../inc/customizer.php:163
+#: inc/customizer.php:244
 msgid "Element color on hover"
 msgstr "Element kleur bij hover"
 
-#: ../inc/customizer.php:171
+#: inc/customizer.php:255
 msgid "Action Button"
 msgstr "Actie Button"
 
-#: ../inc/customizer.php:181
+#: inc/customizer.php:269
 msgid "Call For Action Text"
 msgstr "Tekst voor het actie veld"
 
-#: ../inc/customizer.php:182
+#: inc/customizer.php:270
 msgid "Enter the text for call for action section"
 msgstr "Voer de tekst in die je wilt weergeven"
 
-#: ../inc/customizer.php:193
+#: inc/customizer.php:285
 msgid "Call For Action Button Title"
 msgstr "Actie knop Titel"
 
-#: ../inc/customizer.php:195
+#: inc/customizer.php:287
 msgid "Enter the title for Call For Action button"
 msgstr "Voer de Titel in voor de actie knop"
 
-#: ../inc/customizer.php:205
+#: inc/customizer.php:301
 msgid "CFA button link"
 msgstr "Link voor de actie knop"
 
-#: ../inc/customizer.php:207
+#: inc/customizer.php:303
 msgid "Enter the link for Call For Action button"
 msgstr "Voer de link in voor de actie knop"
 
-#: ../inc/customizer.php:217
+#: inc/customizer.php:318
 msgid "Call For Action Text Color"
 msgstr "Actie veld tekst kleur"
 
-#: ../inc/customizer.php:227
+#: inc/customizer.php:334
 msgid "Call For Action Background Color"
 msgstr "Actie knop achtergrond kleur"
 
-#: ../inc/customizer.php:237
+#: inc/customizer.php:350
 msgid "Call For Action Button Border Color"
 msgstr "Actie knop rand kleur"
 
-#: ../inc/customizer.php:247
+#: inc/customizer.php:366
 msgid "Call For Action Button Text Color"
 msgstr "Actie knop kleur"
 
-#: ../inc/customizer.php:254
+#: inc/customizer.php:376
 msgid "Typography"
 msgstr "Opmaak"
 
-#: ../inc/customizer.php:274
+#: inc/customizer.php:400
 msgid "Main Body Text"
 msgstr "Hoofd tekst"
 
-#: ../inc/customizer.php:275
+#: inc/customizer.php:401
 msgid "Used in p tags"
 msgstr "Gebruikt in p tags"
 
-#: ../inc/customizer.php:315
+#: inc/customizer.php:458
+msgid "Font Subset"
+msgstr ""
+
+#: inc/customizer.php:460
+msgid "Enter the Google fonts subset"
+msgstr ""
+
+#: inc/customizer.php:475
 msgid "Heading Color"
 msgstr "Titel kleur"
 
-#: ../inc/customizer.php:316
+#: inc/customizer.php:476
 msgid "Color for all headings (h1-h6)"
 msgstr "Kleur voor alle titels (h1-h6)"
 
-#: ../inc/customizer.php:325
+#: inc/customizer.php:491
 msgid "Link Color"
 msgstr "Link kleur"
 
-#: ../inc/customizer.php:335
+#: inc/customizer.php:507
 msgid "Link:hover Color"
 msgstr "Link:hover kleur"
 
-#: ../inc/customizer.php:342
+#: inc/customizer.php:517
 msgid "Header"
 msgstr "Header"
 
-#: ../inc/customizer.php:353
+#: inc/customizer.php:533
 msgid "Sticky Header"
 msgstr "Sticky Header"
 
-#: ../inc/customizer.php:354
+#: inc/customizer.php:534
 msgid "Check to show fixed header"
 msgstr "Kruis aan om vaste header te tonen"
 
-#: ../inc/customizer.php:365
+#: inc/customizer.php:551
 msgid "Top nav background color"
 msgstr "Top navigatie achtergrond kleur"
 
-#: ../inc/customizer.php:375
+#: inc/customizer.php:567
 msgid "Top nav item color"
 msgstr "Top navigatie tekst kleur"
 
-#: ../inc/customizer.php:376
+#: inc/customizer.php:568
 msgid "Link color"
 msgstr "Link kleur"
 
-#: ../inc/customizer.php:386
+#: inc/customizer.php:584
 msgid "Top nav item hover color"
 msgstr "Top naviatie tekst hover kleur"
 
-#: ../inc/customizer.php:387
+#: inc/customizer.php:585
 msgid "Link:hover color"
 msgstr "Link:hover kleur"
 
-#: ../inc/customizer.php:397
+#: inc/customizer.php:601
 msgid "Top nav dropdown background color"
 msgstr "Top navigatie dropdown achtergrond kleur"
 
-#: ../inc/customizer.php:398 ../inc/customizer.php:431
+#: inc/customizer.php:602 inc/customizer.php:653
 msgid "Background of dropdown item hover color"
 msgstr "Top navigatie dropdown tekst hover kleur"
 
-#: ../inc/customizer.php:408
+#: inc/customizer.php:618
 msgid "Top nav dropdown item color"
 msgstr "Top navigatie dropdown tekst kleur"
 
-#: ../inc/customizer.php:409
+#: inc/customizer.php:619
 msgid "Dropdown item color"
 msgstr "Dropdown tekst kleur"
 
-#: ../inc/customizer.php:419
+#: inc/customizer.php:635
 msgid "Top nav dropdown item hover color"
 msgstr "Top navigatie dropdown item hover kleur"
 
-#: ../inc/customizer.php:420
+#: inc/customizer.php:636
 msgid "Dropdown item hover color"
 msgstr "Top navigatie dropdown hover kleur"
 
-#: ../inc/customizer.php:430
+#: inc/customizer.php:652
 msgid "Top nav dropdown item background hover color"
 msgstr "Top navigatie dropdown item achtergrond hover kleur"
 
-#: ../inc/customizer.php:437
+#: inc/customizer.php:662
 msgid "Footer"
 msgstr "Footer"
 
-#: ../inc/customizer.php:447
+#: inc/customizer.php:677
 msgid "Footer widget area background color"
 msgstr "Footer widget achtergrond kleur"
 
-#: ../inc/customizer.php:457
+#: inc/customizer.php:693
 msgid "Footer background color"
 msgstr "Footer achtergrond kleur"
 
-#: ../inc/customizer.php:467
+#: inc/customizer.php:709
 msgid "Footer text color"
 msgstr "Footer tekst kleur"
 
-#: ../inc/customizer.php:477
+#: inc/customizer.php:725
 msgid "Footer link color"
 msgstr "Footer link kleur"
 
-#: ../inc/customizer.php:487
+#: inc/customizer.php:740
 msgid "Footer information"
 msgstr "Footer informatie"
 
-#: ../inc/customizer.php:488
+#: inc/customizer.php:741
 msgid "Copyright text in footer"
 msgstr "Copyright tekst in de footer"
 
-#: ../inc/customizer.php:495
+#: inc/customizer.php:750
 msgid "Social"
 msgstr "Social"
 
-#: ../inc/customizer.php:505
+#: inc/customizer.php:765
 msgid "Social icon color"
 msgstr "Social icoon kleur"
 
-#: ../inc/customizer.php:516
+#: inc/customizer.php:782
 msgid "Footer social icon color"
 msgstr "Footer social icoon kleur"
 
-#: ../inc/customizer.php:527
+#: inc/customizer.php:799
 msgid "Footer Social Icons"
 msgstr "Footer social Iconen"
 
-#: ../inc/customizer.php:528
+#: inc/customizer.php:800
 msgid "Check to show social icons in footer"
 msgstr "Kruis aan om social iconen te tonen in de footer"
 
-#: ../inc/customizer.php:535
-msgid "Other"
-msgstr "Overige"
-
-#: ../inc/customizer.php:545
-msgid "Custom CSS"
-msgstr "Aangepaste CSS"
-
-#: ../inc/customizer.php:546
-msgid "Additional CSS"
-msgstr "Extra CSS"
-
-#: ../inc/customizer.php:553 ../inc/extras.php:334
-msgid "Support and Documentation"
-msgstr "Support en Documentatie"
-
-#: ../inc/customizer.php:737 ../inc/extras.php:340
-msgid "Sparkling Documentation"
-msgstr "Sparkling Documentatie"
-
-#: ../inc/customizer.php:738 ../inc/extras.php:341
-msgid ""
-"The best way to contact us with <b>support questions</b> and <b>bug "
-"reports</b> is via"
+#: inc/customizer.php:819
+msgid "Enable Academicons"
 msgstr ""
-"De beste manier om ons te contacteren voor <b>support vragen</b> en <b>bug "
-"meldingen</b> is via"
 
-#: ../inc/customizer.php:738 ../inc/extras.php:341
-msgid "Colorlib support forum"
-msgstr "Colorlib support forum"
+#: inc/customizer.php:820
+msgid "Toggle this to ON to enable the usage of Academicons"
+msgstr ""
 
-#: ../inc/customizer.php:739 ../inc/extras.php:342
-msgid "If you like this theme, I'd appreciate any of the following:"
-msgstr "Als je dit thema leuk vind dan waardeer het volgende:"
+#: inc/customizer.php:830
+#, fuzzy
+#| msgid "Archives"
+msgid "Archive Pages"
+msgstr "Archieven"
 
-#: ../inc/customizer.php:741 ../inc/extras.php:344
-msgid "Rate this Theme"
-msgstr "Waardeer dit Thema"
+#: inc/customizer.php:846
+msgid "Tag Page Title"
+msgstr ""
 
-#: ../inc/customizer.php:742 ../inc/extras.php:345
-msgid "Like on Facebook"
-msgstr "Like ons op Facebook"
+#. translators: %s: tag name
+#: inc/customizer.php:849
+#, php-format
+msgid ""
+"The headline for your tag pages. You can use %s as a placeholder for the "
+"tag. Leave empty for default."
+msgstr ""
 
-#: ../inc/customizer.php:743 ../inc/extras.php:346
-msgid "Follow on Twitter"
-msgstr "Volg ons op Twitter"
+#: inc/customizer.php:864
+#, fuzzy
+#| msgid "Categories"
+msgid "Category Page Title"
+msgstr "Categoriën"
 
-#: ../inc/extras.php:61
+#. translators: %s: category name
+#: inc/customizer.php:867
+#, php-format
+msgid ""
+"The headline for your category pages. You can use %s as a placeholder for "
+"the category. Leave empty for default."
+msgstr ""
+
+#: inc/customizer.php:882
+msgid "Author Page Title"
+msgstr ""
+
+#. translators: %s: author name
+#: inc/customizer.php:885
+#, php-format
+msgid ""
+"The headline for your author pages. You can use %s as a placeholder for the "
+"author's name. Leave empty for default."
+msgstr ""
+
+#: inc/customizer.php:900
+msgid "Year Page Title"
+msgstr ""
+
+#. translators: %s: year
+#: inc/customizer.php:903
+#, php-format
+msgid ""
+"The headline for your year pages. You can use %s as a placeholder for the "
+"year. Leave empty for default."
+msgstr ""
+
+#: inc/customizer.php:918
+msgid "Month Page Title"
+msgstr ""
+
+#. translators: %s: month
+#: inc/customizer.php:921
+#, php-format
+msgid ""
+"The headline for your month pages. You can use %s as a placeholder for the "
+"month. Leave empty for default."
+msgstr ""
+
+#: inc/customizer.php:936
+msgid "Day Page Title"
+msgstr ""
+
+#. translators: %s: day
+#: inc/customizer.php:939
+#, php-format
+msgid ""
+"The headline for your day pages. You can use %s as a placeholder for the "
+"day. Leave empty for default."
+msgstr ""
+
+#: inc/extras.php:66
 msgid ""
 "This post is password protected. To view it please enter your password below:"
 msgstr ""
 "Dit bericht is beveiligd met een wachtwoord. Vul hieronder uw wachtwoord in "
 "om het bericht te bekijken:"
 
-#: ../inc/extras.php:62
+#: inc/extras.php:67
 msgid "Password:"
 msgstr "Wachtwoord:"
 
-#: ../inc/extras.php:65
+#: inc/extras.php:70
 msgid "Submit"
 msgstr "Toevoegen"
 
-#: ../inc/extras.php:210
+#. translators: 1: Colorlib link, 2: WordPress link
+#: inc/extras.php:284
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr "Thema van %1$s, draait op %2$s"
 
-#: ../inc/metaboxes.php:16
+#: inc/extras.php:489
+msgid "Support and Documentation"
+msgstr "Support en Documentatie"
+
+#: inc/extras.php:498
+msgid "Sparkling Documentation"
+msgstr "Sparkling Documentatie"
+
+#: inc/extras.php:500
+msgid ""
+"The best way to contact us with <b>support questions</b> and <b>bug reports</"
+"b> is via"
+msgstr ""
+"De beste manier om ons te contacteren voor <b>support vragen</b> en <b>bug "
+"meldingen</b> is via"
+
+#: inc/extras.php:501
+msgid "Colorlib support forum"
+msgstr "Colorlib support forum"
+
+#: inc/extras.php:503
+msgid "If you like this theme, I'd appreciate any of the following:"
+msgstr "Als je dit thema leuk vind dan waardeer het volgende:"
+
+#: inc/extras.php:507 inc/extras.php:508
+msgid "Rate this Theme"
+msgstr "Waardeer dit Thema"
+
+#: inc/extras.php:511
+msgid "Like on Facebook"
+msgstr "Like ons op Facebook"
+
+#: inc/extras.php:514
+msgid "Follow on Twitter"
+msgstr "Volg ons op Twitter"
+
+#: inc/metaboxes.php:16
 msgid ""
 "Select layout for this specific Page only ( Note: This setting only reflects "
 "if page Template is set as Default Template and Blog Type Templates.)"
 msgstr "Selecteer de lay-out voor deze specifieke Pagina"
 
-#: ../inc/metaboxes.php:21
+#: inc/metaboxes.php:22
 msgid "Select layout for this specific Post only"
 msgstr "Selecteer lay-out voor deze specifieke Post"
 
-#: ../inc/metaboxes.php:28
+#: inc/metaboxes.php:30
 msgid "Select layout for this specific Product only"
 msgstr "Selecteer alleen lay-out voor dit specifieke Product"
 
-#: ../inc/widgets/widget-categories.php:11
-#: ../inc/widgets/widget-categories.php:12
+#: inc/metaboxes.php:67
+msgid "Default"
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:122
+msgid "No page titled \"Homepage\" was found."
+msgstr ""
+
+#. translators: 1: opening anchor tag, 2: closing anchor tag
+#: inc/welcome-screen/class-sparkling-welcome.php:188
+#, php-format
+msgid ""
+"Welcome! Thank you for choosing Sparkling! To fully take advantage of the "
+"best our theme can offer please make sure you visit our %1$swelcome page%2$s."
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:190
+msgid "Get started with Sparkling"
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:237
+#: inc/welcome-screen/sections/actions-required.php:157
+msgid "Hooray! There are no required actions for you right now."
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:485
+msgid "You are not allowed to access this page."
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:500
+msgid "Welcome to Sparkling! - Version "
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:503
+msgid ""
+"Sparkling is now installed and ready to use! Get ready to build something "
+"beautiful. We hope you enjoy it! We want to make sure you have the best "
+"experience using Sparkling and that is why we gathered here all the "
+"necessary information for you. We hope you will enjoy using Sparkling, as "
+"much as we enjoy creating great products."
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:510
+msgid "Getting Started"
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:512
+#, fuzzy
+#| msgid "Recommended"
+msgid "Recommended Plugins"
+msgstr "Aanbevolen"
+
+#: inc/welcome-screen/class-sparkling-welcome.php:514
+#: inc/welcome-screen/sections/support.php:25
+msgid "Changelog"
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:516
+msgid "Support"
+msgstr ""
+
+#: inc/welcome-screen/sections/actions-required.php:65
+#: inc/welcome-screen/sections/actions-required.php:127
+msgid "Install"
+msgstr "Installeer"
+
+#: inc/welcome-screen/sections/actions-required.php:69
+#: inc/welcome-screen/sections/actions-required.php:131
+#: inc/welcome-screen/sections/recommended-plugins.php:55
+msgid "Activate"
+msgstr "Activeer"
+
+#: inc/welcome-screen/sections/actions-required.php:73
+#: inc/welcome-screen/sections/actions-required.php:135
+#: inc/welcome-screen/sections/recommended-plugins.php:59
+#, fuzzy
+#| msgid "Activate"
+msgid "Deactivate"
+msgstr "Activeer"
+
+#: inc/welcome-screen/sections/actions-required.php:103
+msgid ""
+"Hooray! There are no required actions for you right now. But you can make "
+"your theme more powerful with next actions: "
+msgstr ""
+
+#: inc/welcome-screen/sections/changelog.php:21
+msgid "The changelog file could not be found."
+msgstr ""
+
+#: inc/welcome-screen/sections/changelog.php:29
+msgid "The changelog file could not be read."
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:19
+msgid "Step 1 - Implement recommended actions"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:20
+msgid ""
+"We've compiled a list of steps for you, to take make sure the experience "
+"you'll have using one of our products is very easy to follow."
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:23
+msgid "No recommended actions left to perform"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:26
+#, fuzzy
+#| msgid "Update recommended"
+msgid "Check recommended actions"
+msgstr "Update aanbevolen"
+
+#: inc/welcome-screen/sections/getting-started.php:34
+#, fuzzy
+#| msgid "Support and Documentation"
+msgid "Step 2 - Check our documentation"
+msgstr "Support en Documentatie"
+
+#: inc/welcome-screen/sections/getting-started.php:35
+msgid ""
+"Even if you're a long-time WordPress user, we still believe you should give "
+"our documentation a very quick Read."
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:38
+#, fuzzy
+#| msgid "Support and Documentation"
+msgid "Full documentation"
+msgstr "Support en Documentatie"
+
+#: inc/welcome-screen/sections/getting-started.php:43
+msgid "Step 3 - Customize everything"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:44
+msgid ""
+"Using the WordPress Customizer you can easily customize every aspect of the "
+"theme."
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:46
+msgid "Go to Customizer"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:25
+#, fuzzy
+#| msgid "Recommended"
+msgid "Recommended plugins list"
+msgstr "Aanbevolen"
+
+#: inc/welcome-screen/sections/recommended-plugins.php:51
+#, fuzzy
+#| msgid "Install"
+msgid "Install Now"
+msgstr "Installeer"
+
+#: inc/welcome-screen/sections/recommended-plugins.php:89
+msgid "Active"
+msgstr "Actief"
+
+#: inc/welcome-screen/sections/recommended-plugins.php:98
+#, fuzzy
+#| msgid "Hide Details"
+msgid "More Details"
+msgstr "Details Verbergen"
+
+#. translators: %s: plugin author name
+#: inc/welcome-screen/sections/recommended-plugins.php:108
+#, php-format
+msgid "By %s"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:115
+#, fuzzy
+#| msgid "Version"
+msgid "Version:"
+msgstr "Versie"
+
+#: inc/welcome-screen/sections/recommended-plugins.php:120
+#, fuzzy
+#| msgid "Installed But Not Activated"
+msgid "Installed and active"
+msgstr "Geïnstalleerd, maar niet geactiveerd"
+
+#: inc/welcome-screen/sections/recommended-plugins.php:122
+#, fuzzy
+#| msgid "Installed But Not Activated"
+msgid "Installed, not active"
+msgstr "Geïnstalleerd, maar niet geactiveerd"
+
+#: inc/welcome-screen/sections/recommended-plugins.php:124
+#, fuzzy
+#| msgid "Not Installed"
+msgid "Not installed"
+msgstr "Niet Geïnstalleerd"
+
+#: inc/welcome-screen/sections/support.php:5
+#: inc/welcome-screen/sections/support.php:10
+msgid "Contact Support"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:7
+msgid ""
+"We offer excellent support through our advanced ticketing system. Make sure "
+"to register your purchase before contacting support!"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:15
+#, fuzzy
+#| msgid "Sparkling Documentation"
+msgid "Documentation"
+msgstr "Sparkling Documentatie"
+
+#: inc/welcome-screen/sections/support.php:17
+msgid ""
+"This is the place to go to reference different aspects of the theme. Our "
+"online documentation is an incredible resource for learning the ins and outs "
+"of using Sparkling."
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:20
+#, fuzzy
+#| msgid "Support and Documentation"
+msgid "See our full documentation"
+msgstr "Support en Documentatie"
+
+#: inc/welcome-screen/sections/support.php:27
+msgid ""
+"Want to get the gist on the latest theme changes? Just consult our changelog "
+"below to get a taste of the recent fixes and features implemented."
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:30
+msgid "See changelog"
+msgstr ""
+
+#: inc/widgets/class-sparkling-categories.php:13
+#: inc/widgets/class-sparkling-categories.php:15
 msgid "Sparkling Categories"
 msgstr "Sparkling Categoriën"
 
-#: ../inc/widgets/widget-categories.php:17
-#: ../inc/widgets/widget-categories.php:76
+#: inc/widgets/class-sparkling-categories.php:19
+#: inc/widgets/class-sparkling-categories.php:95
 msgid "Categories"
 msgstr "Categoriën"
 
-#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:42
+#: inc/widgets/class-sparkling-categories.php:106
+#: inc/widgets/class-sparkling-social-widget.php:58
 msgid "Title "
 msgstr "Titel"
 
-#: ../inc/widgets/widget-categories.php:91
+#: inc/widgets/class-sparkling-categories.php:114
 msgid "Limit Categories "
 msgstr "Limiteer Categoriën"
 
-#: ../inc/widgets/widget-categories.php:104
+#: inc/widgets/class-sparkling-categories.php:131
 msgid "Enable Posts Count"
 msgstr "Schakel Berichten teller in"
 
-#: ../inc/widgets/widget-popular-posts.php:11
-#: ../inc/widgets/widget-popular-posts.php:12
+#: inc/widgets/class-sparkling-popular-posts.php:13
+#: inc/widgets/class-sparkling-popular-posts.php:15
 msgid "Sparkling Popular Posts Widget"
 msgstr "Sparkling Populaire Berichten Widget"
 
-#: ../inc/widgets/widget-popular-posts.php:17
-#: ../inc/widgets/widget-popular-posts.php:94
+#: inc/widgets/class-sparkling-popular-posts.php:33
+#: inc/widgets/class-sparkling-popular-posts.php:138
 msgid "Popular Posts"
 msgstr "Populaire Berichten"
 
-#: ../inc/widgets/widget-popular-posts.php:99
+#: inc/widgets/class-sparkling-popular-posts.php:155
 msgid "Title"
 msgstr "Titel"
 
-#: ../inc/widgets/widget-popular-posts.php:107
+#: inc/widgets/class-sparkling-popular-posts.php:163
 msgid "Limit Posts Number"
 msgstr "Limiteer Berichten Aantal"
 
-#: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
+#: inc/widgets/class-sparkling-popular-posts.php:172
+msgid "Default Image"
+msgstr ""
+
+#: inc/widgets/class-sparkling-popular-posts.php:180
+msgid "No media selected"
+msgstr ""
+
+#: inc/widgets/class-sparkling-popular-posts.php:188
+msgctxt "label for button in the media widget"
+msgid "Add Media"
+msgstr ""
+
+#: inc/widgets/class-sparkling-popular-posts.php:191
+msgctxt ""
+"label for button in the media widget; should preferably not be longer than "
+"~13 characters long"
+msgid "Remove Media"
+msgstr ""
+
+#: inc/widgets/class-sparkling-social-widget.php:13
+#: inc/widgets/class-sparkling-social-widget.php:15
 msgid "Sparkling Social Widget"
 msgstr "Sparkling Social Widget"
 
-#: ../inc/widgets/widget-social.php:18 ../inc/widgets/widget-social.php:40
+#: inc/widgets/class-sparkling-social-widget.php:20
+#: inc/widgets/class-sparkling-social-widget.php:54
 msgid "Follow us"
 msgstr "Volg Ons"
 
-#: ../search.php:17
+#. Template Name of the theme
+msgid "Full-width(no sidebar)"
+msgstr ""
+
+#. translators: %s: search query
+#: search.php:20
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Zoek resultaten voor: %s"
 
-#: ../searchform.php:11
+#: searchform.php:11
 msgid "Search for:"
 msgstr "Zoeken naar..."
 
-#: ../searchform.php:12
+#: searchform.php:12
 msgctxt "placeholder"
 msgid "Search&hellip;"
 msgstr "Zoeken..."
 
-#: ../searchform.php:12
+#: searchform.php:12
 msgctxt "label"
 msgid "Search for:"
 msgstr "Zoeken naar:"
 
-#: ../searchform.php:14
+#: searchform.php:14
 msgctxt "submit button"
 msgid "Search"
 msgstr "Zoeken"
 
-#: ../sidebar.php:26
+#: sidebar.php:24
 msgid "Meta"
 msgstr "Meta"
+
+#: template-parts/content-none.php:12
+msgid "Nothing Found"
+msgstr "Niks gevonden"
+
+#. translators: %1$s: URL of the new post screen
+#: template-parts/content-none.php:28
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Klaar om je eerste bericht te plaatsen? <a href=\"%1$s\">Begin hier</a>."
+
+#: template-parts/content-none.php:35
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Sorry, we hebben niks kunnen vinden met deze zoekterm. Probeer het nog eens."
+
+#: template-parts/content-none.php:41
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Het lijkt er op dat we niet kunnen vinden waar je naar zocht. Probeer de "
+"zoekfunctie eens."
+
+#. translators: %s: Name of current post
+#: template-parts/content-page.php:56 template-parts/content-single.php:34
+#: template-parts/content-video.php:49 template-parts/content.php:42
+#, php-format
+msgid "Edit %s"
+msgstr "Pas %s aan"
+
+#. translators: used between list items, there is a space after the comma
+#: template-parts/content-single.php:22
+msgid ", "
+msgstr ", "
+
+#: template-parts/content-video.php:41 template-parts/content.php:34
+msgid "Leave a comment"
+msgstr "Reageer"
+
+#: template-parts/content-video.php:41 template-parts/content.php:34
+msgid "1 Comment"
+msgstr "1 Reactie"
+
+#: template-parts/content-video.php:41 template-parts/content.php:34
+msgid "% Comments"
+msgstr "% Reacties"
+
+#: template-parts/content-video.php:65 template-parts/content-video.php:74
+#: template-parts/content-video.php:77 template-parts/content.php:58
+#: template-parts/content.php:67 template-parts/content.php:70
+msgid "Read More"
+msgstr "Lees meer"
+
+#~ msgid "Install Required Plugins"
+#~ msgstr "Installeer Vereiste Plug-ins"
+
+#~ msgid "Install Plugins"
+#~ msgstr "Installeer Plug-ins"
+
+#, php-format
+#~ msgid "Installing Plugin: %s"
+#~ msgstr "Plug-in installeren: %s"
+
+#, php-format
+#~ msgid "Updating Plugin: %s"
+#~ msgstr "Plug-in updaten: %s"
+
+#~ msgid "Something went wrong with the plugin API."
+#~ msgstr "Er is iets fout gegaan met de plug-in API."
+
+#~ msgid "Return to Required Plugins Installer"
+#~ msgstr "Ga terug naar de Vereiste Plug-in Installer"
+
+#~ msgid "Return to the Dashboard"
+#~ msgstr "Ga terug naar het Dashboard"
+
+#~ msgid "Plugin activated successfully."
+#~ msgstr "Plug-in succesvol geactiveerd."
+
+#~ msgid "The following plugin was activated successfully:"
+#~ msgid_plural "The following plugins were activated successfully:"
+#~ msgstr[0] "De volgende plug-in is succesvol geactiveerd:"
+#~ msgstr[1] "De volgende plug-ins zijn succesvol geactiveerd:"
+
+#, php-format
+#~ msgid "No action taken. Plugin %1$s was already active."
+#~ msgstr "Geen actie ondernomen. Plug-in %1$s was al actief."
+
+#, php-format
+#~ msgid ""
+#~ "Plugin not activated. A higher version of %s is needed for this theme. "
+#~ "Please update the plugin."
+#~ msgstr ""
+#~ "Plug-in niet geactiveerd. Voor dit thema is een hogere versie van %s "
+#~ "nodig. Update de plug-in alsjeblieft."
+
+#, php-format
+#~ msgid "All plugins installed and activated successfully. %1$s"
+#~ msgstr "Alle plugins zijn succesvol geïnstalleerd en geactiveerd. %1$s"
+
+#~ msgid "Dismiss this notice"
+#~ msgstr "Verwerp deze aankondiging"
+
+#~ msgid ""
+#~ "There are one or more required or recommended plugins to install, update "
+#~ "or activate."
+#~ msgstr ""
+#~ "Er zijn een of meer vereiste of aanbevolen plug-ins om te installeren, "
+#~ "bij te werken of te activeren."
+
+#~ msgid "Please contact the administrator of this site for help."
+#~ msgstr "Neem contact op met de beheerder van deze site voor hulp."
+
+#~ msgid "This plugin needs to be updated to be compatible with your theme."
+#~ msgstr ""
+#~ "Deze plug-in moet worden bijgewerkt om compatibel te zijn met uw thema."
+
+#~ msgid "Update Required"
+#~ msgstr "Update Vereist"
+
+#~ msgid ""
+#~ "The remote plugin package does not contain a folder with the desired slug "
+#~ "and renaming did not work."
+#~ msgstr ""
+#~ "Het externe plug-in pakket bevat geen map met de gewenste slug en de naam "
+#~ "veranderen werkte niet."
+
+#~ msgid ""
+#~ "Please contact the plugin provider and ask them to package their plugin "
+#~ "according to the WordPress guidelines."
+#~ msgstr ""
+#~ "Neem contact op met de plug-in provider en vraag hen om hun plug-in in "
+#~ "overeenstemming te brengen met de WordPress-richtlijnen."
+
+#~ msgid ""
+#~ "The remote plugin package consists of more than one file, but the files "
+#~ "are not packaged in a folder."
+#~ msgstr ""
+#~ "Het externe plug-in pakket bestaat uit meer dan een bestand, maar de "
+#~ "bestanden zijn niet verpakt in een map."
+
+#, php-format
+#~ msgid "TGMPA v%s"
+#~ msgstr "TGMPA v%s"
+
+#~ msgid "Required"
+#~ msgstr "Vereist"
+
+#~ msgid "WordPress Repository"
+#~ msgstr "WordPress Repository"
+
+#~ msgid "External Source"
+#~ msgstr "Externe Bron"
+
+#~ msgid "Pre-Packaged"
+#~ msgstr "Voorverpakt"
+
+#~ msgid "Required Update not Available"
+#~ msgstr "Vereiste Update niet Beschikbaar"
+
+#~ msgid "Requires Update"
+#~ msgstr "Vereist een Update"
+
+#, php-format
+#~ msgctxt "plugins"
+#~ msgid "All <span class=\"count\">(%s)</span>"
+#~ msgid_plural "All <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Alle <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "Alle <span class=\"count\">(%s)</span>"
+
+#, php-format
+#~ msgid "To Install <span class=\"count\">(%s)</span>"
+#~ msgid_plural "To Install <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Te Installeren <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "Te Installeren <span class=\"count\">(%s)</span>"
+
+#, php-format
+#~ msgid "Update Available <span class=\"count\">(%s)</span>"
+#~ msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Update Beschikbaar <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "Update Beschikbaar <span class=\"count\">(%s)</span>"
+
+#, php-format
+#~ msgid "To Activate <span class=\"count\">(%s)</span>"
+#~ msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Te Activeren <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "Te Activeren <span class=\"count\">(%s)</span>"
+
+#~ msgid "Installed version:"
+#~ msgstr "Geïnstalleerde versie:"
+
+#~ msgid "Minimum required version:"
+#~ msgstr "Minimale vereiste versie:"
+
+#~ msgid "Available version:"
+#~ msgstr "Beschikbare versie:"
+
+#~ msgid "No plugins to install, update or activate."
+#~ msgstr "Geen plugins om te installeren, bij te werken of te activeren."
+
+#~ msgid "Plugin"
+#~ msgstr "Plug-in"
+
+#~ msgid "Source"
+#~ msgstr "Bron"
+
+#~ msgid "Type"
+#~ msgstr "Type"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#, php-format
+#~ msgid "Install %2$s"
+#~ msgstr "Installeer %2$s"
+
+#, php-format
+#~ msgid "Update %2$s"
+#~ msgstr "Update %2$s"
+
+#, php-format
+#~ msgid "Activate %2$s"
+#~ msgstr "Activeer %2$s"
+
+#~ msgid "Upgrade message from the plugin author:"
+#~ msgstr "Upgrade bericht van de plug-in auteur:"
+
+#~ msgid "Update"
+#~ msgstr "Update"
+
+#~ msgid "No plugins were selected to be installed. No action taken."
+#~ msgstr ""
+#~ "Er zijn geen plug-ins geselecteerd die geïnstalleerd moeten worden. Geen "
+#~ "actie ondernomen."
+
+#~ msgid "No plugins were selected to be updated. No action taken."
+#~ msgstr ""
+#~ "Er zijn geen plug-ins geselecteerd die bijgewerkt moeten worden. Geen "
+#~ "actie ondernomen."
+
+#~ msgid "No plugins are available to be installed at this time."
+#~ msgstr "Er kunnen momenteel geen plug-ins worden geïnstalleerd."
+
+#~ msgid "No plugins are available to be updated at this time."
+#~ msgstr ""
+#~ "Er zijn op dit moment geen plug-ins beschikbaar om bijgewerkt te worden."
+
+#~ msgid "No plugins were selected to be activated. No action taken."
+#~ msgstr ""
+#~ "Er zijn geen plug-ins geselecteerd die geactiveerd moeten worden. Geen "
+#~ "actie ondernomen."
+
+#~ msgid "No plugins are available to be activated at this time."
+#~ msgstr ""
+#~ "Er zijn momenteel geen plug-ins beschikbaar die geactiveerd kunnen worden."
+
+#~ msgid "Plugin activation failed."
+#~ msgstr "Plug-in activering mislukt."
+
+#, php-format
+#~ msgid "Updating Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "Bijwerken van Plug-in %1$s (%2$d/%3$d)"
+
+#, php-format
+#~ msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+#~ msgstr ""
+#~ "Er is een fout opgetreden tijdens het installeren van %1$s: <strong>%2$s</"
+#~ "strong>."
+
+#, php-format
+#~ msgid "The installation of %1$s failed."
+#~ msgstr "De installatie van %1$s is mislukt."
+
+#~ msgid ""
+#~ "The installation and activation process is starting. This process may "
+#~ "take a while on some hosts, so please be patient."
+#~ msgstr ""
+#~ "Het installatie- en activeringsproces begint. Dit proces kan even duren "
+#~ "op sommige hosts, dus wees geduldig"
+
+#, php-format
+#~ msgid "%1$s installed and activated successfully."
+#~ msgstr "%1$s is met succes geïnstalleerd en geactiveerd."
+
+#~ msgid "Show Details"
+#~ msgstr "Details Tonen"
+
+#~ msgid "All installations and activations have been completed."
+#~ msgstr "Alle installaties en activaties zijn voltooid."
+
+#, php-format
+#~ msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "Installeren en Activeren van Plug-in %1$s (%2$d/%3$d)"
+
+#~ msgid ""
+#~ "The installation process is starting. This process may take a while on "
+#~ "some hosts, so please be patient."
+#~ msgstr ""
+#~ "Het installatieproces begint. Dit proces kan even duren op sommige hosts, "
+#~ "dus wees geduldig."
+
+#, php-format
+#~ msgid "%1$s installed successfully."
+#~ msgstr "%1$s is succesvol geïnstalleerd"
+
+#~ msgid "All installations have been completed."
+#~ msgstr "Alle installaties zijn voltooid."
+
+#, php-format
+#~ msgid "Installing Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "Installeren van Plug-in %1$s (%2$d/%3$d)"
+
+#, php-format
+#~ msgid "All plugins installed and activated successfully. %s"
+#~ msgstr "Alle plugins zijn succesvol geïnstalleerd en geactiveerd. %s"
+
+#, php-format
+#~ msgid " %1$s"
+#~ msgstr " %1$s"
+
+#~ msgid "Other"
+#~ msgstr "Overige"
+
+#~ msgid "Custom CSS"
+#~ msgstr "Aangepaste CSS"
+
+#~ msgid "Additional CSS"
+#~ msgstr "Extra CSS"

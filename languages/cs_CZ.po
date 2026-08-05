@@ -1,7 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sparkling Theme\n"
-"POT-Creation-Date: 2016-03-18 11:06+0200\n"
+"Report-Msgid-Bugs-To: https://colorlib.com/wp/support/\n"
+"POT-Creation-Date: 2026-08-05T12:17:17+00:00\n"
 "PO-Revision-Date: 2016-03-18 11:06+0200\n"
 "Last-Translator: Aigars Silkalns <a.silkalns@gmail.com>\n"
 "Language-Team: colorlib <info@colorlib.com>\n"
@@ -12,543 +13,644 @@ msgstr ""
 "X-Generator: Poedit 1.8.7\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_html__;esc_html_e;"
-"esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
+"X-Poedit-KeywordsList: "
+"_e;__;esc_attr__;esc_html__;esc_html_e;esc_attr_x:1,2c;_nx:4c,1,2;_n:1,2\n"
 "_nx: 4c,1,2;_n:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
-#: ../404.php:15
+#. Theme Name of the theme
+#: style.css
+#, fuzzy
+msgid "Sparkling"
+msgstr "Rubriky šablony"
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://colorlib.com/wp/themes/sparkling"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid ""
+"Sparkling is a clean, minimal and fully responsive WordPress theme suited to "
+"blogs, news, magazines, business, portfolio and shop sites. It ships a full-"
+"width front page slider, a call-to-action bar, social icon menu, author bio, "
+"popular posts and enhanced category widgets, and four sidebar layouts you "
+"can set globally or per post. Dozens of Customizer options cover colours, "
+"typography, header, footer and layout, with a live preview. Built on "
+"Bootstrap 3, the front end runs on plain JavaScript with no jQuery "
+"dependency of its own. Sparkling is translation ready and ships with over "
+"twenty translations, is WooCommerce ready, and works with bbPress, Contact "
+"Form 7 and Jetpack."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Colorlib"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://colorlib.com/"
+msgstr ""
+
+#: 404.php:15
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "Jejda! Stránka nenalezena!"
 
-#: ../404.php:19
+#: 404.php:19
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr "Nenalezeno! Zkuste odkazy dole nebo vyhledávání."
 
-#: ../404.php:25
+#: 404.php:25
 msgid "Recent Posts"
 msgstr "Poslední příspěvky"
 
-#: ../404.php:31
+#: 404.php:31
 msgid "Most Used Categories"
 msgstr "Nejčastěji používané kategorie"
 
-#: ../404.php:52
+#. translators: %1$s: smiley
+#: 404.php:54
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Zkuste se podívat v měsíčním archivu: %1$s"
 
-#: ../404.php:53 ../archive.php:66 ../sidebar.php:19
+#: 404.php:55 sidebar.php:12
 msgid "Archives"
 msgstr "Archiv"
 
-#: ../404.php:58
+#: 404.php:60
 msgid "Tags"
 msgstr "Štítky"
 
-#: ../archive.php:27
-#, php-format
-msgid "Author: %s"
-msgstr "Autor: %s"
+#: archive.php:42 inc/extras.php:605 index.php:46 search.php:40
+#, fuzzy
+#| msgid "Recent Posts"
+msgid "Newer posts"
+msgstr "Poslední příspěvky"
 
-#: ../archive.php:30
-#, php-format
-msgid "Day: %s"
-msgstr "Dnů: %s"
+#: archive.php:43 inc/extras.php:606 index.php:47 search.php:41
+#, fuzzy
+msgid "Older posts"
+msgstr "Rubrika ve slideru"
 
-#: ../archive.php:33
-#, php-format
-msgid "Month: %s"
-msgstr "Měsíc: %s"
-
-#: ../archive.php:36
-#, php-format
-msgid "Year: %s"
-msgstr "Rok: %s"
-
-#: ../archive.php:39
-msgid "Asides"
-msgstr ""
-
-#: ../archive.php:42
-msgid "Galleries"
-msgstr "Galerie"
-
-#: ../archive.php:45
-msgid "Images"
-msgstr "Obrázky"
-
-#: ../archive.php:48
-msgid "Videos"
-msgstr "Videa"
-
-#: ../archive.php:51
-msgid "Quotes"
-msgstr "Citace"
-
-#: ../archive.php:54
-msgid "Links"
-msgstr "Odkazy"
-
-#: ../archive.php:57
-msgid "Statuses"
-msgstr "Statusy"
-
-#: ../archive.php:60
-msgid "Audios"
-msgstr "Audio"
-
-#: ../archive.php:63
-msgid "Chats"
-msgstr "Chat"
-
-#: ../comments.php:28
-#, php-format
+#. translators: %s: post title
+#: comments.php:38
+#, fuzzy, php-format
+#| msgctxt "comments title"
+#| msgid "One thought on &ldquo;%2$s&rdquo;"
+#| msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgid "One thought to &ldquo;%s&rdquo;"
+msgstr "1 komentář"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:42
+#, fuzzy, php-format
+#| msgctxt "comments title"
+#| msgid "One thought on &ldquo;%2$s&rdquo;"
+#| msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgctxt "comments title"
+msgid "%1$s thought to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts to &ldquo;%2$s&rdquo;"
 msgstr[0] "1 komentář"
 msgstr[1] "Komentářů: %1$s"
 
-#: ../comments.php:35 ../comments.php:53
+#: comments.php:58 comments.php:82
 msgid "Comment navigation"
 msgstr "Komentáře"
 
-#: ../comments.php:36 ../comments.php:54
-msgid "&larr; Older Comments"
+#: comments.php:61 comments.php:85
+#, fuzzy
+#| msgid "&larr; Older Comments"
+msgid "Older Comments"
 msgstr "Starší komentáře"
 
-#: ../comments.php:37 ../comments.php:55
-msgid "Newer Comments &rarr;"
+#: comments.php:62 comments.php:86
+#, fuzzy
+#| msgid "Newer Comments &rarr;"
+msgid "Newer Comments"
 msgstr "Novější komentáře"
 
-#: ../comments.php:65
+#: comments.php:100
 msgid "Comments are closed."
 msgstr "Komentáře jsou uzavřeny."
 
-#: ../content-none.php:13
-msgid "Nothing Found"
-msgstr "Nenalezeno"
-
-#: ../content-none.php:19
-#, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-"Chcete publikovat svůj první příspěvek? <a href=\"%1$s\">Začněte zde</a>."
-
-#: ../content-none.php:23
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr "Omlouváme se, ale nic jsme nenalezli. Zkuste změnit klíčová slova."
-
-#: ../content-none.php:28
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr "Zdá se, že to nelze najít. Zkuste vyhledávání."
-
-#: ../content-page.php:21 ../content-single.php:35 ../content.php:48
-#: ../image.php:79
-msgid "Pages:"
-msgstr "Stránky:"
-
-#: ../content-page.php:32 ../content-single.php:26 ../content.php:23
-msgid "Edit"
-msgstr "Upravit"
-
-#: ../content-single.php:19
-msgid ", "
-msgstr ", "
-
-#: ../content-single.php:23
-#, php-format
-msgid " %1$s"
-msgstr " %1$s"
-
-#: ../content.php:20
-msgid "Leave a comment"
-msgstr "Napište komentář"
-
-#: ../content.php:20
-msgid "1 Comment"
-msgstr "1 komentář"
-
-#: ../content.php:20
-msgid "% Comments"
-msgstr "Komentářů: %"
-
-#: ../content.php:32 ../content.php:40
-msgid "Read More"
-msgstr "Celý článek"
-
-#: ../functions.php:69
+#: functions.php:84
 msgid "Primary Menu"
 msgstr "Hlavní menu"
 
-#: ../functions.php:70 ../inc/extras.php:136
+#: functions.php:85 inc/extras.php:144
 msgid "Footer Links"
 msgstr "Menu v zápatí"
 
-#: ../functions.php:108
+#: functions.php:168
 msgid "Sidebar"
 msgstr "Postranní menu"
 
-#: ../functions.php:118
+#: functions.php:180
 msgid "Homepage Widget 1"
 msgstr "Úvodní stránka widget 1"
 
-#: ../functions.php:119 ../functions.php:129 ../functions.php:139
+#: functions.php:181 functions.php:193 functions.php:205
 msgid "Displays on the Home Page"
 msgstr "Zobrazí se na úvodní stránce"
 
-#: ../functions.php:128
+#: functions.php:192
 msgid "Homepage Widget 2"
 msgstr "Úvodní stránka widget 2"
 
-#: ../functions.php:138
+#: functions.php:204
 msgid "Homepage Widget 3"
 msgstr "Úvodní stránka widget 3"
 
-#: ../functions.php:148
+#: functions.php:216
 msgid "Footer Widget 1"
 msgstr "Zápatí widget 1"
 
-#: ../functions.php:149 ../functions.php:159 ../functions.php:169
+#: functions.php:217 functions.php:229 functions.php:241
 msgid "Used for footer widget area"
 msgstr "Zobrazí se v zápatí"
 
-#: ../functions.php:158
+#: functions.php:228
 msgid "Footer Widget 2"
 msgstr "Zápatí widget 2"
 
-#: ../functions.php:168
+#: functions.php:240
 msgid "Footer Widget 3"
 msgstr "Zápatí widget 3"
 
-#: ../functions.php:304
+#: functions.php:303
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: functions.php:310
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: functions.php:317
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: functions.php:472
+#, fuzzy
+#| msgid "Social"
+msgctxt "nav menu location"
+msgid "Social Menu"
+msgstr "Sociální sítě"
+
+#: functions.php:503
 msgid "Right Sidebar"
 msgstr "Pravé postranní menu"
 
-#: ../functions.php:304
+#: functions.php:504
 msgid "Left Sidebar"
 msgstr "Levé postranní menu"
 
-#: ../functions.php:304
+#: functions.php:505
 #, fuzzy
 msgid "No Sidebar"
 msgstr "Postranní menu"
 
-#: ../functions.php:304
+#: functions.php:506
 msgid "Full Width"
 msgstr ""
 
-#: ../image.php:22
+#: functions.php:692 inc/welcome-screen/class-sparkling-welcome.php:113
+#: inc/welcome-screen/class-sparkling-welcome.php:253
+#: inc/welcome-screen/class-sparkling-welcome.php:294
+msgid "You are not allowed to do that."
+msgstr ""
+
+#: functions.php:700
+msgid "Invalid attachment."
+msgstr ""
+
+#: image.php:25
 msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
 msgstr "<i class=\"fa fa-chevron-left\"></i> Předchozí"
 
-#: ../image.php:23
+#: image.php:26
 msgid "Next <i class=\"fa fa-chevron-right\"></i>"
 msgstr "Další <i class=\"fa fa-chevron-right\"></i>"
 
-#: ../inc/customizer.php:29
+#: image.php:90 template-parts/content-page.php:36
+#: template-parts/content-single.php:51 template-parts/content-video.php:84
+#: template-parts/content.php:77
+msgid "Pages:"
+msgstr "Stránky:"
+
+#: inc/class-wp-bootstrap-navwalker.php:206
+msgid "Add a menu"
+msgstr ""
+
+#: inc/customizer.php:40
 #, fuzzy
 msgid "Sparkling Options"
 msgstr "Rubriky šablony"
 
-#: ../inc/customizer.php:30
+#: inc/customizer.php:41
 msgid "Panel to update sparkling theme options"
 msgstr ""
 
-#: ../inc/customizer.php:36
+#: inc/customizer.php:51
 #, fuzzy
 msgid "Content Options"
 msgstr "Možnosti šablony"
 
-#: ../inc/customizer.php:47
+#: inc/customizer.php:67
 msgid "Show post excerpts?"
 msgstr ""
 
-#: ../inc/customizer.php:58
+#: inc/customizer.php:84
 #, fuzzy
 msgid "Display Comments on Static Pages?"
 msgstr "Zobrazí se na úvodní stránce"
 
-#: ../inc/customizer.php:66
+#: inc/customizer.php:95
 #, fuzzy
-msgid "Slider options"
+msgid "Slider Options"
 msgstr "Rubrika ve slideru"
 
-#: ../inc/customizer.php:76
+#: inc/customizer.php:110
 msgid "Check if you want to enable slider"
 msgstr "Zaškrtněte, pokud chcete aktivovat slider"
 
-#: ../inc/customizer.php:91
+#: inc/customizer.php:127
+msgid "Uncheck this option to remove the link from the slides"
+msgstr ""
+
+#: inc/customizer.php:147
 msgid "Slider Category"
 msgstr "Rubrika ve slideru"
 
-#: ../inc/customizer.php:94
+#: inc/customizer.php:150
 msgid "Select a category for the featured post slider"
 msgstr "vyberte rubriku, která se zobrazí ve slideru"
 
-#: ../inc/customizer.php:104
+#: inc/customizer.php:164
 msgid "Number of slide items"
 msgstr "Počet položek ve slideru"
 
-#: ../inc/customizer.php:106
+#: inc/customizer.php:166
 msgid "Enter the number of slide items"
 msgstr "Napište počet"
 
-#: ../inc/customizer.php:111
+#: inc/customizer.php:173
 #, fuzzy
-msgid "Layout options"
+msgid "Layout Options"
 msgstr "Vzhled stránky"
 
-#: ../inc/customizer.php:123
+#: inc/customizer.php:189
 msgid "Website Layout Options"
 msgstr "Vzhled stránky"
 
-#: ../inc/customizer.php:126
+#: inc/customizer.php:192
 #, fuzzy
 msgid "Choose between different layout options to be used as default"
 msgstr "Zvolte, kde chcete mít postranní menu"
 
-#: ../inc/customizer.php:137
+#: inc/customizer.php:207
 msgid "WooCommerce Page Layout Options"
 msgstr ""
 
-#: ../inc/customizer.php:140
+#: inc/customizer.php:210
 msgid ""
 "Choose between different layout options to be used as default for all "
 "woocommerce pages"
 msgstr ""
 
-#: ../inc/customizer.php:151
+#: inc/customizer.php:226
 #, fuzzy
 msgid "Element Color"
 msgstr "Barva tlačítek"
 
-#: ../inc/customizer.php:152 ../inc/customizer.php:164
-#: ../inc/customizer.php:218 ../inc/customizer.php:228
-#: ../inc/customizer.php:238 ../inc/customizer.php:248
-#: ../inc/customizer.php:326 ../inc/customizer.php:336
-#: ../inc/customizer.php:366 ../inc/customizer.php:506
-#: ../inc/customizer.php:517
+#: inc/customizer.php:227 inc/customizer.php:245 inc/customizer.php:319
+#: inc/customizer.php:335 inc/customizer.php:351 inc/customizer.php:367
+#: inc/customizer.php:492 inc/customizer.php:508 inc/customizer.php:552
+#: inc/customizer.php:766 inc/customizer.php:783
 msgid "Default used if no color is selected"
 msgstr "Pokud není nic vybráno, zobrazí se defaultní barva"
 
-#: ../inc/customizer.php:163
+#: inc/customizer.php:244
 msgid "Element color on hover"
 msgstr "Barva tlačítka po najetí myši"
 
-#: ../inc/customizer.php:171
+#: inc/customizer.php:255
 msgid "Action Button"
 msgstr "Akční tlačítko"
 
-#: ../inc/customizer.php:181
+#: inc/customizer.php:269
 msgid "Call For Action Text"
 msgstr "Text pro akční tlačítko"
 
-#: ../inc/customizer.php:182
+#: inc/customizer.php:270
 msgid "Enter the text for call for action section"
 msgstr "Napište text, který se zobrazí v akční sekci"
 
-#: ../inc/customizer.php:193
+#: inc/customizer.php:285
 msgid "Call For Action Button Title"
 msgstr "Název akčního tlačítka"
 
-#: ../inc/customizer.php:195
+#: inc/customizer.php:287
 msgid "Enter the title for Call For Action button"
 msgstr "Vložte název akčního tlačítka"
 
-#: ../inc/customizer.php:205
+#: inc/customizer.php:301
 msgid "CFA button link"
 msgstr "Odkaz akčního tlačítka"
 
-#: ../inc/customizer.php:207
+#: inc/customizer.php:303
 msgid "Enter the link for Call For Action button"
 msgstr "Vložte odkaz pro akční tlačítko"
 
-#: ../inc/customizer.php:217
+#: inc/customizer.php:318
 msgid "Call For Action Text Color"
 msgstr "Barva akčního textu"
 
-#: ../inc/customizer.php:227
+#: inc/customizer.php:334
 msgid "Call For Action Background Color"
 msgstr "Barva pozadí akčního textu"
 
-#: ../inc/customizer.php:237
+#: inc/customizer.php:350
 msgid "Call For Action Button Border Color"
 msgstr "Barva ohraničení akčního tlačítka"
 
-#: ../inc/customizer.php:247
+#: inc/customizer.php:366
 msgid "Call For Action Button Text Color"
 msgstr "Barva písma akčního tlačítka"
 
-#: ../inc/customizer.php:254
+#: inc/customizer.php:376
 msgid "Typography"
 msgstr "Typografie"
 
-#: ../inc/customizer.php:274
+#: inc/customizer.php:400
 msgid "Main Body Text"
 msgstr "Hlavní text webu"
 
-#: ../inc/customizer.php:275
+#: inc/customizer.php:401
 #, fuzzy
 msgid "Used in p tags"
 msgstr "Text v P tagu"
 
-#: ../inc/customizer.php:315
+#: inc/customizer.php:458
+msgid "Font Subset"
+msgstr ""
+
+#: inc/customizer.php:460
+msgid "Enter the Google fonts subset"
+msgstr ""
+
+#: inc/customizer.php:475
 msgid "Heading Color"
 msgstr "Barva nadpisů"
 
-#: ../inc/customizer.php:316
+#: inc/customizer.php:476
 msgid "Color for all headings (h1-h6)"
 msgstr "Pro všechny nadpisy (h1-h6)"
 
-#: ../inc/customizer.php:325
+#: inc/customizer.php:491
 msgid "Link Color"
 msgstr "Barva odkazu"
 
-#: ../inc/customizer.php:335
+#: inc/customizer.php:507
 msgid "Link:hover Color"
 msgstr "Barva aktivního odkazu"
 
-#: ../inc/customizer.php:342
+#: inc/customizer.php:517
 msgid "Header"
 msgstr "Záhlaví"
 
-#: ../inc/customizer.php:353
+#: inc/customizer.php:533
 msgid "Sticky Header"
 msgstr ""
 
-#: ../inc/customizer.php:354
+#: inc/customizer.php:534
 msgid "Check to show fixed header"
 msgstr ""
 
-#: ../inc/customizer.php:365
+#: inc/customizer.php:551
 msgid "Top nav background color"
 msgstr "Barva pozadí horního menu"
 
-#: ../inc/customizer.php:375
+#: inc/customizer.php:567
 msgid "Top nav item color"
 msgstr "Barva textu v horním menu"
 
-#: ../inc/customizer.php:376
+#: inc/customizer.php:568
 msgid "Link color"
 msgstr "Barva odkazu"
 
-#: ../inc/customizer.php:386
+#: inc/customizer.php:584
 msgid "Top nav item hover color"
 msgstr "Barva aktivní položky v horním menu"
 
-#: ../inc/customizer.php:387
+#: inc/customizer.php:585
 msgid "Link:hover color"
 msgstr "Barva aktivního odkazu"
 
-#: ../inc/customizer.php:397
+#: inc/customizer.php:601
 msgid "Top nav dropdown background color"
 msgstr "Barva pozadí submenu"
 
-#: ../inc/customizer.php:398 ../inc/customizer.php:431
+#: inc/customizer.php:602 inc/customizer.php:653
 msgid "Background of dropdown item hover color"
 msgstr "Barva v pozadí aktivního textu v submenu"
 
-#: ../inc/customizer.php:408
+#: inc/customizer.php:618
 msgid "Top nav dropdown item color"
 msgstr "Barva textu v submenu horního menu"
 
-#: ../inc/customizer.php:409
+#: inc/customizer.php:619
 msgid "Dropdown item color"
 msgstr "Barva textu v submenu"
 
-#: ../inc/customizer.php:419
+#: inc/customizer.php:635
 msgid "Top nav dropdown item hover color"
 msgstr "Barva aktivního textu v submenu horního menu"
 
-#: ../inc/customizer.php:420
+#: inc/customizer.php:636
 msgid "Dropdown item hover color"
 msgstr "Barva aktivního textu v submenu"
 
-#: ../inc/customizer.php:430
+#: inc/customizer.php:652
 msgid "Top nav dropdown item background hover color"
 msgstr "Barva aktivního pozadí submenu v horním menu"
 
-#: ../inc/customizer.php:437
+#: inc/customizer.php:662
 msgid "Footer"
 msgstr "Zápatí"
 
-#: ../inc/customizer.php:447
+#: inc/customizer.php:677
 msgid "Footer widget area background color"
 msgstr "Barva pozadí widgetů v zápatí"
 
-#: ../inc/customizer.php:457
+#: inc/customizer.php:693
 msgid "Footer background color"
 msgstr "Barva pozadí v zápatí"
 
-#: ../inc/customizer.php:467
+#: inc/customizer.php:709
 msgid "Footer text color"
 msgstr "Barva textu v zápatí"
 
-#: ../inc/customizer.php:477
+#: inc/customizer.php:725
 msgid "Footer link color"
 msgstr "Barva odkazu v zápatí"
 
-#: ../inc/customizer.php:487
+#: inc/customizer.php:740
 msgid "Footer information"
 msgstr "Text v zápatí"
 
-#: ../inc/customizer.php:488
+#: inc/customizer.php:741
 msgid "Copyright text in footer"
 msgstr "Text autorských práv v zápatí webu"
 
-#: ../inc/customizer.php:495
+#: inc/customizer.php:750
 msgid "Social"
 msgstr "Sociální sítě"
 
-#: ../inc/customizer.php:505
+#: inc/customizer.php:765
 msgid "Social icon color"
 msgstr "Barva ikonky sociální sítě"
 
-#: ../inc/customizer.php:516
+#: inc/customizer.php:782
 msgid "Footer social icon color"
 msgstr "Barva ikonky sociální sítě v zápatí"
 
-#: ../inc/customizer.php:527
+#: inc/customizer.php:799
 #, fuzzy
 msgid "Footer Social Icons"
 msgstr "Barva ikonky sociální sítě v zápatí"
 
-#: ../inc/customizer.php:528
+#: inc/customizer.php:800
 #, fuzzy
 msgid "Check to show social icons in footer"
 msgstr "Barva ikonky sociální sítě v zápatí"
 
-#: ../inc/customizer.php:535
-msgid "Other"
-msgstr "Ostatní"
+#: inc/customizer.php:819
+msgid "Enable Academicons"
+msgstr ""
 
-#: ../inc/customizer.php:545
-msgid "Custom CSS"
-msgstr "Vlastní CSS"
+#: inc/customizer.php:820
+msgid "Toggle this to ON to enable the usage of Academicons"
+msgstr ""
 
-#: ../inc/customizer.php:546
-msgid "Additional CSS"
-msgstr "Doplňkové CSS"
+#: inc/customizer.php:830
+#, fuzzy
+#| msgid "Archives"
+msgid "Archive Pages"
+msgstr "Archiv"
 
-#: ../inc/customizer.php:553 ../inc/extras.php:334
+#: inc/customizer.php:846
+msgid "Tag Page Title"
+msgstr ""
+
+#. translators: %s: tag name
+#: inc/customizer.php:849
+#, php-format
+msgid ""
+"The headline for your tag pages. You can use %s as a placeholder for the "
+"tag. Leave empty for default."
+msgstr ""
+
+#: inc/customizer.php:864
+#, fuzzy
+#| msgid "Categories"
+msgid "Category Page Title"
+msgstr "Rubriky"
+
+#. translators: %s: category name
+#: inc/customizer.php:867
+#, php-format
+msgid ""
+"The headline for your category pages. You can use %s as a placeholder for "
+"the category. Leave empty for default."
+msgstr ""
+
+#: inc/customizer.php:882
+msgid "Author Page Title"
+msgstr ""
+
+#. translators: %s: author name
+#: inc/customizer.php:885
+#, php-format
+msgid ""
+"The headline for your author pages. You can use %s as a placeholder for the "
+"author's name. Leave empty for default."
+msgstr ""
+
+#: inc/customizer.php:900
+msgid "Year Page Title"
+msgstr ""
+
+#. translators: %s: year
+#: inc/customizer.php:903
+#, php-format
+msgid ""
+"The headline for your year pages. You can use %s as a placeholder for the "
+"year. Leave empty for default."
+msgstr ""
+
+#: inc/customizer.php:918
+msgid "Month Page Title"
+msgstr ""
+
+#. translators: %s: month
+#: inc/customizer.php:921
+#, php-format
+msgid ""
+"The headline for your month pages. You can use %s as a placeholder for the "
+"month. Leave empty for default."
+msgstr ""
+
+#: inc/customizer.php:936
+msgid "Day Page Title"
+msgstr ""
+
+#. translators: %s: day
+#: inc/customizer.php:939
+#, php-format
+msgid ""
+"The headline for your day pages. You can use %s as a placeholder for the "
+"day. Leave empty for default."
+msgstr ""
+
+#: inc/extras.php:66
+#, fuzzy
+msgid ""
+"This post is password protected. To view it please enter your password below:"
+msgstr "<p>Tento příspěvek je chráněn heslem. Napište prosím heslo:</p>"
+
+#: inc/extras.php:67
+msgid "Password:"
+msgstr "Heslo:"
+
+#: inc/extras.php:70
+msgid "Submit"
+msgstr "Odeslat"
+
+#. translators: 1: Colorlib link, 2: WordPress link
+#: inc/extras.php:284
+#, php-format
+msgid "Theme by %1$s Powered by %2$s"
+msgstr "Šablonu %1$s pohání %2$s"
+
+#: inc/extras.php:489
 msgid "Support and Documentation"
 msgstr "Podpora a dokumentace"
 
-#: ../inc/customizer.php:737 ../inc/extras.php:340
+#: inc/extras.php:498
 msgid "Sparkling Documentation"
 msgstr "Dokumentace k šabloně"
 
-#: ../inc/customizer.php:738 ../inc/extras.php:341
+#: inc/extras.php:500
 msgid ""
 "The best way to contact us with <b>support questions</b> and <b>bug reports</"
 "b> is via"
@@ -556,154 +658,489 @@ msgstr ""
 "Nejlepší způsob, jak nás kontaktovat s <b>dotazy</b> nebo <b>nahlásit chybu</"
 "b> je přes"
 
-#: ../inc/customizer.php:738 ../inc/extras.php:341
+#: inc/extras.php:501
 msgid "Colorlib support forum"
 msgstr "Colorlib forum podpory"
 
-#: ../inc/customizer.php:739 ../inc/extras.php:342
+#: inc/extras.php:503
 msgid "If you like this theme, I'd appreciate any of the following:"
 msgstr "Pokud se vám šablona líbí, využijte prosím tyto možnosti:"
 
-#: ../inc/customizer.php:741 ../inc/extras.php:344
+#: inc/extras.php:507 inc/extras.php:508
 msgid "Rate this Theme"
 msgstr "Ohodnotit šablonu"
 
-#: ../inc/customizer.php:742 ../inc/extras.php:345
+#: inc/extras.php:511
 msgid "Like on Facebook"
 msgstr "Sledovat nás na Facebooku"
 
-#: ../inc/customizer.php:743 ../inc/extras.php:346
+#: inc/extras.php:514
 msgid "Follow on Twitter"
 msgstr "Sledovat nás na Twitteru"
 
-#: ../inc/extras.php:61
-#, fuzzy
-msgid ""
-"This post is password protected. To view it please enter your password below:"
-msgstr "<p>Tento příspěvek je chráněn heslem. Napište prosím heslo:</p>"
-
-#: ../inc/extras.php:62
-msgid "Password:"
-msgstr "Heslo:"
-
-#: ../inc/extras.php:65
-msgid "Submit"
-msgstr "Odeslat"
-
-#: ../inc/extras.php:210
-#, php-format
-msgid "Theme by %1$s Powered by %2$s"
-msgstr "Šablonu %1$s pohání %2$s"
-
-#: ../inc/metaboxes.php:16
+#: inc/metaboxes.php:16
 msgid ""
 "Select layout for this specific Page only ( Note: This setting only reflects "
 "if page Template is set as Default Template and Blog Type Templates.)"
 msgstr ""
 
-#: ../inc/metaboxes.php:21
+#: inc/metaboxes.php:22
 msgid "Select layout for this specific Post only"
 msgstr ""
 
-#: ../inc/metaboxes.php:28
+#: inc/metaboxes.php:30
 msgid "Select layout for this specific Product only"
 msgstr ""
 
-#: ../inc/template-tags.php:23
-msgid "Posts navigation"
-msgstr "Příspěvky"
+#: inc/metaboxes.php:67
+msgid "Default"
+msgstr ""
 
-#: ../inc/template-tags.php:31
-msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
-msgstr "<i class=\"fa fa-chevron-left\"></i> Starší příspěvky"
+#: inc/welcome-screen/class-sparkling-welcome.php:122
+msgid "No page titled \"Homepage\" was found."
+msgstr ""
 
-#: ../inc/template-tags.php:35
-msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
-msgstr "Novější příspěvky <i class=\"fa fa-chevron-right\"></i>"
+#. translators: 1: opening anchor tag, 2: closing anchor tag
+#: inc/welcome-screen/class-sparkling-welcome.php:188
+#, php-format
+msgid ""
+"Welcome! Thank you for choosing Sparkling! To fully take advantage of the "
+"best our theme can offer please make sure you visit our %1$swelcome page%2$s."
+msgstr ""
 
-#: ../inc/template-tags.php:83
-msgid "Post navigation"
-msgstr "Příspěvky"
+#: inc/welcome-screen/class-sparkling-welcome.php:190
+msgid "Get started with Sparkling"
+msgstr ""
 
-#: ../inc/widgets/widget-categories.php:11
-#: ../inc/widgets/widget-categories.php:12
+#: inc/welcome-screen/class-sparkling-welcome.php:237
+#: inc/welcome-screen/sections/actions-required.php:157
+msgid "Hooray! There are no required actions for you right now."
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:485
+msgid "You are not allowed to access this page."
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:500
+msgid "Welcome to Sparkling! - Version "
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:503
+msgid ""
+"Sparkling is now installed and ready to use! Get ready to build something "
+"beautiful. We hope you enjoy it! We want to make sure you have the best "
+"experience using Sparkling and that is why we gathered here all the "
+"necessary information for you. We hope you will enjoy using Sparkling, as "
+"much as we enjoy creating great products."
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:510
+msgid "Getting Started"
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:512
+msgid "Recommended Plugins"
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:514
+#: inc/welcome-screen/sections/support.php:25
+msgid "Changelog"
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:516
+msgid "Support"
+msgstr ""
+
+#: inc/welcome-screen/sections/actions-required.php:65
+#: inc/welcome-screen/sections/actions-required.php:127
+#, fuzzy
+#| msgid "Instagram"
+msgid "Install"
+msgstr "Instagram"
+
+#: inc/welcome-screen/sections/actions-required.php:69
+#: inc/welcome-screen/sections/actions-required.php:131
+#: inc/welcome-screen/sections/recommended-plugins.php:55
+msgid "Activate"
+msgstr ""
+
+#: inc/welcome-screen/sections/actions-required.php:73
+#: inc/welcome-screen/sections/actions-required.php:135
+#: inc/welcome-screen/sections/recommended-plugins.php:59
+msgid "Deactivate"
+msgstr ""
+
+#: inc/welcome-screen/sections/actions-required.php:103
+msgid ""
+"Hooray! There are no required actions for you right now. But you can make "
+"your theme more powerful with next actions: "
+msgstr ""
+
+#: inc/welcome-screen/sections/changelog.php:21
+msgid "The changelog file could not be found."
+msgstr ""
+
+#: inc/welcome-screen/sections/changelog.php:29
+msgid "The changelog file could not be read."
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:19
+msgid "Step 1 - Implement recommended actions"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:20
+msgid ""
+"We've compiled a list of steps for you, to take make sure the experience "
+"you'll have using one of our products is very easy to follow."
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:23
+msgid "No recommended actions left to perform"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:26
+msgid "Check recommended actions"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:34
+#, fuzzy
+#| msgid "Support and Documentation"
+msgid "Step 2 - Check our documentation"
+msgstr "Podpora a dokumentace"
+
+#: inc/welcome-screen/sections/getting-started.php:35
+msgid ""
+"Even if you're a long-time WordPress user, we still believe you should give "
+"our documentation a very quick Read."
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:38
+#, fuzzy
+#| msgid "Support and Documentation"
+msgid "Full documentation"
+msgstr "Podpora a dokumentace"
+
+#: inc/welcome-screen/sections/getting-started.php:43
+msgid "Step 3 - Customize everything"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:44
+msgid ""
+"Using the WordPress Customizer you can easily customize every aspect of the "
+"theme."
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:46
+msgid "Go to Customizer"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:25
+msgid "Recommended plugins list"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:51
+msgid "Install Now"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:89
+msgid "Active"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:98
+msgid "More Details"
+msgstr ""
+
+#. translators: %s: plugin author name
+#: inc/welcome-screen/sections/recommended-plugins.php:108
+#, php-format
+msgid "By %s"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:115
+msgid "Version:"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:120
+msgid "Installed and active"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:122
+msgid "Installed, not active"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:124
+msgid "Not installed"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:5
+#: inc/welcome-screen/sections/support.php:10
+msgid "Contact Support"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:7
+msgid ""
+"We offer excellent support through our advanced ticketing system. Make sure "
+"to register your purchase before contacting support!"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:15
+#, fuzzy
+#| msgid "Sparkling Documentation"
+msgid "Documentation"
+msgstr "Dokumentace k šabloně"
+
+#: inc/welcome-screen/sections/support.php:17
+msgid ""
+"This is the place to go to reference different aspects of the theme. Our "
+"online documentation is an incredible resource for learning the ins and outs "
+"of using Sparkling."
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:20
+#, fuzzy
+#| msgid "Support and Documentation"
+msgid "See our full documentation"
+msgstr "Podpora a dokumentace"
+
+#: inc/welcome-screen/sections/support.php:27
+msgid ""
+"Want to get the gist on the latest theme changes? Just consult our changelog "
+"below to get a taste of the recent fixes and features implemented."
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:30
+msgid "See changelog"
+msgstr ""
+
+#: inc/widgets/class-sparkling-categories.php:13
+#: inc/widgets/class-sparkling-categories.php:15
 msgid "Sparkling Categories"
 msgstr "Rubriky šablony"
 
-#: ../inc/widgets/widget-categories.php:17
-#: ../inc/widgets/widget-categories.php:76
+#: inc/widgets/class-sparkling-categories.php:19
+#: inc/widgets/class-sparkling-categories.php:95
 msgid "Categories"
 msgstr "Rubriky"
 
-#: ../inc/widgets/widget-categories.php:83 ../inc/widgets/widget-social.php:42
+#: inc/widgets/class-sparkling-categories.php:106
+#: inc/widgets/class-sparkling-social-widget.php:58
 msgid "Title "
 msgstr "Název"
 
-#: ../inc/widgets/widget-categories.php:91
+#: inc/widgets/class-sparkling-categories.php:114
 msgid "Limit Categories "
 msgstr "Maximální počet rubrik"
 
-#: ../inc/widgets/widget-categories.php:104
+#: inc/widgets/class-sparkling-categories.php:131
 msgid "Enable Posts Count"
 msgstr "Zobrazit počet příspěvků"
 
-#: ../inc/widgets/widget-popular-posts.php:11
-#: ../inc/widgets/widget-popular-posts.php:12
+#: inc/widgets/class-sparkling-popular-posts.php:13
+#: inc/widgets/class-sparkling-popular-posts.php:15
 msgid "Sparkling Popular Posts Widget"
 msgstr "Oblíbené příspěvky - widget šablony"
 
-#: ../inc/widgets/widget-popular-posts.php:17
-#: ../inc/widgets/widget-popular-posts.php:94
+#: inc/widgets/class-sparkling-popular-posts.php:33
+#: inc/widgets/class-sparkling-popular-posts.php:138
 msgid "Popular Posts"
 msgstr "Oblíbené příspěvky"
 
-#: ../inc/widgets/widget-popular-posts.php:99
+#: inc/widgets/class-sparkling-popular-posts.php:155
 msgid "Title"
 msgstr "Název"
 
-#: ../inc/widgets/widget-popular-posts.php:107
+#: inc/widgets/class-sparkling-popular-posts.php:163
 msgid "Limit Posts Number"
 msgstr "Maximální počet příspěvků"
 
-#: ../inc/widgets/widget-social.php:11 ../inc/widgets/widget-social.php:12
+#: inc/widgets/class-sparkling-popular-posts.php:172
+msgid "Default Image"
+msgstr ""
+
+#: inc/widgets/class-sparkling-popular-posts.php:180
+msgid "No media selected"
+msgstr ""
+
+#: inc/widgets/class-sparkling-popular-posts.php:188
+msgctxt "label for button in the media widget"
+msgid "Add Media"
+msgstr ""
+
+#: inc/widgets/class-sparkling-popular-posts.php:191
+#, fuzzy
+#| msgid "Remove"
+msgctxt ""
+"label for button in the media widget; should preferably not be longer than "
+"~13 characters long"
+msgid "Remove Media"
+msgstr "Odstranit"
+
+#: inc/widgets/class-sparkling-social-widget.php:13
+#: inc/widgets/class-sparkling-social-widget.php:15
 msgid "Sparkling Social Widget"
 msgstr "Sociální widget šablony"
 
-#: ../inc/widgets/widget-social.php:18 ../inc/widgets/widget-social.php:40
+#: inc/widgets/class-sparkling-social-widget.php:20
+#: inc/widgets/class-sparkling-social-widget.php:54
 msgid "Follow us"
 msgstr "Sledujte nás na"
 
-#: ../search.php:16
+#. Template Name of the theme
+msgid "Full-width(no sidebar)"
+msgstr ""
+
+#. translators: %s: search query
+#: search.php:20
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Výsledky hledání: %s"
 
-#: ../searchform.php:11
+#: searchform.php:11
 #, fuzzy
 msgid "Search for:"
 msgstr "Hledat..."
 
-#: ../searchform.php:12
+#: searchform.php:12
 #, fuzzy
 msgctxt "placeholder"
 msgid "Search&hellip;"
 msgstr "Hledat..."
 
-#: ../searchform.php:12
+#: searchform.php:12
 #, fuzzy
 msgctxt "label"
 msgid "Search for:"
 msgstr "Hledat..."
 
-#: ../searchform.php:14
+#: searchform.php:14
 #, fuzzy
 msgctxt "submit button"
 msgid "Search"
 msgstr "Hledat..."
 
-#: ../sidebar.php:26
+#: sidebar.php:24
 msgid "Meta"
 msgstr "Meta"
+
+#: template-parts/content-none.php:12
+msgid "Nothing Found"
+msgstr "Nenalezeno"
+
+#. translators: %1$s: URL of the new post screen
+#: template-parts/content-none.php:28
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Chcete publikovat svůj první příspěvek? <a href=\"%1$s\">Začněte zde</a>."
+
+#: template-parts/content-none.php:35
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "Omlouváme se, ale nic jsme nenalezli. Zkuste změnit klíčová slova."
+
+#: template-parts/content-none.php:41
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Zdá se, že to nelze najít. Zkuste vyhledávání."
+
+#. translators: %s: Name of current post
+#: template-parts/content-page.php:56 template-parts/content-single.php:34
+#: template-parts/content-video.php:49 template-parts/content.php:42
+#, fuzzy, php-format
+#| msgid "Edit"
+msgid "Edit %s"
+msgstr "Upravit"
+
+#. translators: used between list items, there is a space after the comma
+#: template-parts/content-single.php:22
+msgid ", "
+msgstr ", "
+
+#: template-parts/content-video.php:41 template-parts/content.php:34
+msgid "Leave a comment"
+msgstr "Napište komentář"
+
+#: template-parts/content-video.php:41 template-parts/content.php:34
+msgid "1 Comment"
+msgstr "1 komentář"
+
+#: template-parts/content-video.php:41 template-parts/content.php:34
+msgid "% Comments"
+msgstr "Komentářů: %"
+
+#: template-parts/content-video.php:65 template-parts/content-video.php:74
+#: template-parts/content-video.php:77 template-parts/content.php:58
+#: template-parts/content.php:67 template-parts/content.php:70
+msgid "Read More"
+msgstr "Celý článek"
+
+#, php-format
+#~ msgid "Author: %s"
+#~ msgstr "Autor: %s"
+
+#, php-format
+#~ msgid "Day: %s"
+#~ msgstr "Dnů: %s"
+
+#, php-format
+#~ msgid "Month: %s"
+#~ msgstr "Měsíc: %s"
+
+#, php-format
+#~ msgid "Year: %s"
+#~ msgstr "Rok: %s"
+
+#~ msgid "Galleries"
+#~ msgstr "Galerie"
+
+#~ msgid "Images"
+#~ msgstr "Obrázky"
+
+#~ msgid "Videos"
+#~ msgstr "Videa"
+
+#~ msgid "Quotes"
+#~ msgstr "Citace"
+
+#~ msgid "Links"
+#~ msgstr "Odkazy"
+
+#~ msgid "Statuses"
+#~ msgstr "Statusy"
+
+#~ msgid "Audios"
+#~ msgstr "Audio"
+
+#~ msgid "Chats"
+#~ msgstr "Chat"
+
+#, php-format
+#~ msgid " %1$s"
+#~ msgstr " %1$s"
+
+#~ msgid "Other"
+#~ msgstr "Ostatní"
+
+#~ msgid "Custom CSS"
+#~ msgstr "Vlastní CSS"
+
+#~ msgid "Additional CSS"
+#~ msgstr "Doplňkové CSS"
+
+#~ msgid "Posts navigation"
+#~ msgstr "Příspěvky"
+
+#~ msgid "<i class=\"fa fa-chevron-left\"></i> Older posts"
+#~ msgstr "<i class=\"fa fa-chevron-left\"></i> Starší příspěvky"
+
+#~ msgid "Newer posts <i class=\"fa fa-chevron-right\"></i>"
+#~ msgstr "Novější příspěvky <i class=\"fa fa-chevron-right\"></i>"
+
+#~ msgid "Post navigation"
+#~ msgstr "Příspěvky"
 
 #~ msgid "Page %s"
 #~ msgstr "Stránka %s"
@@ -798,9 +1235,6 @@ msgstr "Meta"
 #~ msgid "Flickr"
 #~ msgstr "Flickr"
 
-#~ msgid "Instagram"
-#~ msgstr "Instagram"
-
 #~ msgid "Dribbble"
 #~ msgstr "Dribble"
 
@@ -833,9 +1267,6 @@ msgstr "Meta"
 
 #~ msgid "Upload"
 #~ msgstr "Nahrát"
-
-#~ msgid "Remove"
-#~ msgstr "Odstranit"
 
 #~ msgid "Upgrade your version of WordPress for full media support."
 #~ msgstr "Aktualizujte svůj WordPress. Získáte tak plnou podporu."

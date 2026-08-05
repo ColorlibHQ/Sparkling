@@ -23,7 +23,7 @@
 				if ( $categories_list && sparkling_categorized_blog() ) :
 				?>
 				<span class="cat-links"><i class="fa fa-folder-open"></i>
-				<?php printf( esc_html__( ' %1$s', 'sparkling' ), $categories_list ); ?>
+				<?php echo ' ' . wp_kses_post( $categories_list ); ?>
 				</span>
 				<?php endif; // End if categories ?>
 				<?php if ( get_edit_post_link() ) : ?>
@@ -68,7 +68,7 @@
 				<?php
 				  $tags = get_the_tags( get_the_ID() );
 				foreach ( $tags as $tag ) {
-					echo '<a href="' . get_tag_link( $tag->term_id ) . '">' . $tag->name . '</a> ';
+					echo '<a href="' . esc_url( get_tag_link( $tag->term_id ) ) . '">' . esc_html( $tag->name ) . '</a> ';
 				}
 				?>
 
@@ -93,9 +93,9 @@
 		<!-- user bio -->
 		<div class="author-bio-content">
 
-		  <h4 class="author-name"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php echo get_the_author_meta( 'display_name' ); ?></a></h4>
+		  <h4 class="author-name"><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php echo esc_html( get_the_author_meta( 'display_name' ) ); ?></a></h4>
 		  <p class="author-description">
-				<?php echo get_the_author_meta( 'description' ); ?>
+				<?php echo wp_kses_post( get_the_author_meta( 'description' ) ); ?>
 		  </p>
 
 		</div><!-- end .author-bio-content -->

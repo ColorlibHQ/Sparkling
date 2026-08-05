@@ -2,9 +2,6 @@
 /**
  * Actions required
  */
-wp_enqueue_style( 'plugin-install' );
-wp_enqueue_script( 'plugin-install' );
-wp_enqueue_script( 'updates' );
 ?>
 
 <div class="feature-section action-required demo-import-boxed" id="plugin-filter">
@@ -41,19 +38,19 @@ wp_enqueue_script( 'updates' );
 				<h3>
 				<?php
 				if ( ! empty( $sparkling_required_action_value['title'] ) ) :
-					echo $sparkling_required_action_value['title'];
+					echo wp_kses_post( $sparkling_required_action_value['title'] );
 endif;
 ?>
 </h3>
 				<p>
 					<?php
 					if ( ! empty( $sparkling_required_action_value['description'] ) ) :
-						echo $sparkling_required_action_value['description'];
+						echo wp_kses_post( $sparkling_required_action_value['description'] );
 endif;
 ?>
 					<?php
 					if ( ! empty( $sparkling_required_action_value['help'] ) ) :
-						echo '<br/>' . $sparkling_required_action_value['help'];
+						echo '<br/>' . wp_kses_post( $sparkling_required_action_value['help'] );
 endif;
 ?>
 				</p>
@@ -79,8 +76,8 @@ endif;
 					?>
 					<p class="plugin-card-<?php echo esc_attr( $sparkling_required_action_value['plugin_slug'] ); ?> action_button <?php echo ( 'install' !== $active['needs'] && $active['status'] ) ? 'active' : ''; ?>">
 						<a data-slug="<?php echo esc_attr( $sparkling_required_action_value['plugin_slug'] ); ?>"
-						   class="<?php echo $class; ?>"
-						   href="<?php echo esc_url( $url ); ?>"> <?php echo $label; ?> </a>
+						   class="<?php echo esc_attr( $class ); ?>"
+						   href="<?php echo esc_url( $url ); ?>"> <?php echo esc_html( $label ); ?> </a>
 					</p>
 					<?php
 				};
@@ -103,7 +100,7 @@ endif;
 				continue;
 			}
 			if ( 0 == $nr_recommended_plugins ) {
-				echo '<h3 class="hooray">' . __( 'Hooray! There are no required actions for you right now. But you can make your theme more powerful with next actions: ', 'sparkling' ) . '</h3>';
+				echo '<h3 class="hooray">' . esc_html__( 'Hooray! There are no required actions for you right now. But you can make your theme more powerful with next actions: ', 'sparkling' ) . '</h3>';
 			}
 
 			$nr_recommended_plugins ++;
@@ -139,14 +136,14 @@ switch ( $active['needs'] ) {
 		break;
 }
 			?>
-			<h3><?php echo $label . ': ' . $info->name; ?></h3>
+			<h3><?php echo esc_html( $label . ': ' . $info->name ); ?></h3>
 			<p>
-				<?php echo $info->short_description; ?>
+				<?php echo wp_kses_post( $info->short_description ); ?>
 			</p>
 			<p class="plugin-card-<?php echo esc_attr( $slug ); ?> action_button <?php echo ( 'install' !== $active['needs'] && $active['status'] ) ? 'active' : ''; ?>">
 				<a data-slug="<?php echo esc_attr( $slug ); ?>"
-				   class="<?php echo $class; ?>"
-				   href="<?php echo esc_url( $url ); ?>"> <?php echo $label; ?> </a>
+				   class="<?php echo esc_attr( $class ); ?>"
+				   href="<?php echo esc_url( $url ); ?>"> <?php echo esc_html( $label ); ?> </a>
 			</p>
 			<?php
 
@@ -157,7 +154,7 @@ switch ( $active['needs'] ) {
 	endif;
 
 	if ( 0 == $nr_recommended_plugins && 0 == $nr_actions_required ) {
-		echo '<span class="hooray">' . __( 'Hooray! There are no required actions for you right now.', 'sparkling' ) . '</span>';
+		echo '<span class="hooray">' . esc_html__( 'Hooray! There are no required actions for you right now.', 'sparkling' ) . '</span>';
 	}
 
 	?>
