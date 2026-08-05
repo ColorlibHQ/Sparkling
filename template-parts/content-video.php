@@ -14,7 +14,7 @@
 		if ( ! empty( $video ) ) {
 			foreach ( $video as $video_html ) {
 				echo '<div class="entry-video">';
-					echo $video_html;
+					echo wp_kses_post( $video_html );
 				echo '</div>';
 			}
 		} elseif ( has_post_thumbnail() ) {
@@ -24,7 +24,7 @@
 			$title_args     = array(
 				'echo' => false,
 			);
-			echo '<a href="' . get_the_permalink() . '" title="' . the_title_attribute( $title_args ) . '" >';
+			echo '<a href="' . esc_url( get_the_permalink() ) . '" title="' . the_title_attribute( $title_args ) . '" >';
 			the_post_thumbnail( 'sparkling-featured-fullwidth', $thumbnail_args );
 			echo '</a>';
 		}

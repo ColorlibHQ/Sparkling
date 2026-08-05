@@ -1,0 +1,81 @@
+### 2.6.3
+* Welcome screen: fixed the Recommended Plugins tab, which 2.6.2 broke. Core styles .plugin-card for a plain .wrap page, but the tab rendered inside .about-wrap, and about.css restyles p, h3 and img for everything inside it and loads after list-tables.css. Core's flex layout for the card grid is also scoped to the .plugin-install-php body class, which only exists on plugin-install.php. Together those collapsed #the-list to zero height and inflated cards to ~1950px tall. The plugin tabs now close .about-wrap after the tab navigation and render in a plain .wrap, and the page borrows core's plugin-install-php body class, so the card grid, equal-height cards and responsive columns all come from core. Verified at 900-1920px: 2 columns up to 1440, 3 columns from 1680, no overlap, no ragged rows, card heights 294-387px. Still no theme CSS for this tab.
+
+### 2.6.2
+Welcome screen: rebuilt the Recommended Plugins tab on core's own markup.
+
+* The plugin cards were hand-rolled with ~80 lines of custom CSS: a fixed 315px height, absolutely positioned bars, a padding-right hack to clear the button, and text-overflow:ellipsis. Plugin names were truncated, the dark "Active:" bar overflowed the card, and the action button sat on top of it.
+* The tab now renders core's plugin-card markup -- the same structure wp-admin uses on Plugins > Add New -- so the grid, buttons, icon placement and responsive behaviour all come from core's plugin-install stylesheet. Active plugins use core's disabled "Active" button instead of a custom dark bar, and each card gains a description, author, "More Details" link and a version/status footer.
+* Deleted the 80 lines of CSS this replaced (welcome.css: 206 -> 124 lines). The tab now ships no theme CSS at all.
+* Core's plugin-install assets are enqueued on admin_enqueue_scripts instead of inside the section template, which ran after the head was printed and only landed via late styles.
+* welcome.css was loading on every admin screen; it is now scoped to the welcome page.
+* The tab no longer breaks when wordpress.org is unreachable: plugins_api() returning WP_Error was previously dereferenced directly.
+
+### 2.6.1
+Fixes found by testing against a real site (30 posts, 19 pages, Jetpack and five other plugins) on nginx + MySQL + PHP 8.5.3.
+
+* Front page slider: fixed a regression introduced in 2.5.0. Swapping the slider's image size to the fixed 1140px 'sparkling-featured-fullwidth' made slides narrower than the viewport on wide screens, and flexslider.css renders slide images at their natural width, so they were centred with blank gaps either side. The slider now requests 'full' (which is what 2.4.11 effectively served) and style.css restores the width:100% fill that flexslider.css declares and then overrides with width:auto further down. Slides now fill the slider from 375px to 1920px, and srcset still serves an appropriately sized candidate.
+* Front page slider: with the slider enabled but no post in the chosen category carrying a featured image, the theme printed an empty <div class="flexslider"><ul class="slides"></ul></div> that FlexSlider could not initialise. The markup is now only emitted when there is at least one slide.
+
+### 2.6.0
+Removes the bundled Epsilon framework in favour of WordPress-native Customizer APIs.
+
+* Deleted inc/libraries/epsilon-framework (38 files, 436K). The theme used exactly one thing from it: a checkbox control, seven times. The "recommended actions" and "pro" sections it also loaded were registered but never instantiated.
+* Its AJAX layer registered handlers with no nonce and no capability check, including a dispatcher that invoked static methods named in $_POST. Practical impact was limited (narrow class allowlist, return value discarded), but any logged-in user could reach it, and count() on a non-array $_POST value was a PHP 8 fatal. That surface is now gone entirely.
+* Replaced Epsilon_Control_Toggle with Sparkling_Customize_Toggle_Control, a self-contained WP_Customize_Control. The control is presentation only -- values are stored and sanitised by the WP_Customize_Setting it attaches to -- so no saved setting changes. Verified: the Customizer renders pixel-identically, and toggling a setting round-trips to the same stored values as before (1 / '').
+* Epsilon_Control_Toggle remains as a deprecated alias so child themes that registered their own controls with it keep working. Verified against a simulated child theme.
+* Ported the on/off switch and tooltip styles into assets/css/customizer.css, loaded only on the Customizer controls screen, and added a visible keyboard focus state the original switch lacked.
+* Fixed a latent fatal in sparkling_customize_register(): get_setting() returns null for an unregistered setting, and assigning ->transport on null is fatal on PHP 8. Each setting is now checked first.
+
+### 2.5.0
+Compatibility, security and maintenance release. Verified against WordPress 7.0.2 on PHP 8.5.
+
+Security
+* Fixed an unauthenticated site configuration change. sparkling_set_pages() was hooked to admin_init with no capability or nonce check. admin-ajax.php fires admin_init before its authentication branch, so any anonymous request to admin-ajax.php?action=sparkling_set_frontpage could switch show_on_front. It is now an authenticated wp_ajax_ handler requiring manage_options and a nonce.
+* Removed sparkling_activate_plugin() and sparkling_deactivate_plugin(). Both acted on query parameters without verifying a nonce, making them CSRF-exploitable against an administrator. Nothing in the theme linked to them; the recommended-plugins tab uses core's own nonced URLs.
+* Added nonce and capability checks to the welcome screen's AJAX dismiss handlers, which also echoed $_GET['id'] unescaped (reflected XSS).
+* Added a nonce and capability check to the sparkling_get_attachment_media AJAX endpoint.
+* sparkling_sanitize_hexcolor() returned its raw input when validation failed, so arbitrary text could be stored and printed into the theme's inline <style> block. Invalid values are now rejected, and every colour is re-validated at output time.
+* Removed html_entity_decode() from the legacy custom CSS output, which could turn escaped markup back into a live </style><script> break-out.
+* Escaped tag names, author display names, author bios and post titles in the single post and comment templates. These render user-supplied data, so a contributor could previously store markup that executed for every visitor.
+* Escaped plugin API fields, action labels and admin URLs throughout the welcome screen; sanitized and whitelisted the welcome screen's tab parameter.
+* The post layout metabox now validates the submitted layout against the theme's own list before saving, and guards its $_POST reads.
+* Widgets now sanitize their settings on save via update() methods.
+
+PHP 8.5
+* Replaced four "case 'x';" statements, which PHP 8.5 deprecates in favour of "case 'x':".
+* Replaced the deprecated get_page_by_title() with WP_Query and guarded the null dereferences that followed it.
+* Fixed undefined array key reads on $_POST, $_GET and widget instances.
+* Guarded wp_get_attachment_image_src() returning false before indexing it.
+* Replaced wp_reset_query() with wp_reset_postdata() in the Popular Posts widget.
+* PHPCompatibilityWP at testVersion 8.5 reports 0 errors and 0 warnings.
+
+WordPress 7.0
+* Fixed the "_load_textdomain_just_in_time was called incorrectly" notice that fired on every request. Translated globals are now populated on init instead of while functions.php is parsed.
+* Removed a get_categories() call that ran at file-parse time, adding a term query to every request including REST, cron and AJAX. It now runs only in the admin and Customizer, where it is actually read.
+* Added support for customize-selective-refresh-widgets, responsive-embeds, wp-block-styles, align-wide, and the html5 style, script and navigation-widgets features.
+* Added an editor stylesheet so the block editor matches the front end.
+
+Bootstrap
+* The theme shipped Bootstrap 3.3.7 CSS alongside Bootstrap 4.0.0 JavaScript while every template emits Bootstrap 3 markup. Both are now stock Bootstrap 3.4.1. Bootstrap 4.0.0 was also affected by CVE-2019-8331 (XSS via tooltip and popover data-template), fixed in 3.4.1.
+* The mobile menu previously opened only by coincidence: Bootstrap 4's JavaScript adds a .show class, and Bootstrap 3's unrelated .show utility (display:block !important) happened to reveal it, so the collapse animation never ran. It now uses the correct .collapse.in mechanism.
+
+Fixes
+* The front page slider printed a stray </a> for every slide when slide links were disabled, producing invalid markup.
+* The slider requested the image size 'activello-slider', which belongs to a different theme and was never registered here, so it silently served full-size originals. It now uses sparkling-featured-fullwidth.
+* Widget form fields printed no id attribute because the get_field_id() calls were missing echo, breaking every <label for> association.
+* The Popular Posts widget overwrote its stored attachment ID with an attachment URL when rendering its form, so the saved fallback image stopped resolving after the first save.
+* The welcome screen's changelog tab read a changelog.txt that was missing from the package and printed its contents unescaped.
+
+Performance
+* Bootstrap's JavaScript and the theme's own script moved to the footer; nothing theme-owned blocks rendering any more.
+* assets/js/functions.js was rewritten without jQuery and no longer declares a jQuery dependency. Behaviour is unchanged, including the scroll-to-top easing, and it now honours prefers-reduced-motion.
+* Every asset is versioned from the theme version. bootstrap.min.css and bootstrap.min.js previously had no version at all, so WordPress stamped its own version, leaking it and defeating cache busting; style.css was pinned to a stale hardcoded 2.4.2.
+* Google Fonts now load over https with display=swap and preconnect hints.
+* The slider and Popular Posts queries skip found-rows counting.
+
+Housekeeping
+* Removed Internet Explorer conditional comments and the X-UA-Compatible header.
+
+### 2.4.11
+* Tested up to WordPress 6.8.

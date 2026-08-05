@@ -29,12 +29,12 @@
 						<?php sparkling_footer_links(); ?>
 					</nav>
 					<div class="copyright col-md-6">
-						<?php echo of_get_option( 'custom_footer_text', 'sparkling' ); ?>
+						<?php echo wp_kses_post( of_get_option( 'custom_footer_text', '' ) ); ?>
 						<?php sparkling_footer_info(); ?>
 					</div>
 				</div>
 			</div><!-- .site-info -->
-			<a class="scroll-to-top" href="#" role="button"><i class="fa fa-angle-up"></i></a><!-- .scroll-to-top -->
+			<div class="scroll-to-top"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
 		</footer><!-- #colophon -->
 	</div>
 </div><!-- #page -->

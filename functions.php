@@ -6,6 +6,17 @@
  */
 
 /**
+ * Theme version, used to cache-bust every asset the theme enqueues.
+ *
+ * Read from style.css so it can never drift from the version WordPress reports.
+ */
+if ( ! defined( 'SPARKLING_VERSION' ) ) {
+	$sparkling_theme = wp_get_theme( get_template() );
+	define( 'SPARKLING_VERSION', $sparkling_theme->get( 'Version' ) ? $sparkling_theme->get( 'Version' ) : '2.5.0' );
+	unset( $sparkling_theme );
+}
+
+/**
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) ) {
@@ -96,8 +107,26 @@ if ( ! function_exists( 'sparkling_setup' ) ) :
 				'comment-form',
 				'gallery',
 				'caption',
+				'style',
+				'script',
+				'navigation-widgets',
 			)
 		);
+
+		// Let widgets be edited live in the Customizer without a full refresh.
+		add_theme_support( 'customize-selective-refresh-widgets' );
+
+		/*
+		 * Block editor support. The theme predates the block editor, so without
+		 * these, embeds overflowed their container and block markup rendered
+		 * unstyled on the front end.
+		 */
+		add_theme_support( 'responsive-embeds' );
+		add_theme_support( 'wp-block-styles' );
+		add_theme_support( 'align-wide' );
+
+		// Match the editor's content width and typography to the theme's.
+		add_editor_style( 'assets/css/editor-style.css' );
 
 		/*
 		 * Let WordPress manage the document title.
@@ -299,50 +328,69 @@ add_filter( 'get_the_archive_title', 'sparkling_archive_pages_title' );
  */
 function sparkling_scripts() {
 
+	$template_uri = get_template_directory_uri();
+
+	// Whether the front page slider is showing; used to gate its CSS and JS.
+	$sparkling_slider_active = ( is_home() || is_front_page() ) && 1 == of_get_option( 'sparkling_slider_checkbox' );
+
 	// Add Bootstrap default CSS
-	wp_enqueue_style( 'sparkling-bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css' );
+	wp_enqueue_style( 'sparkling-bootstrap', $template_uri . '/assets/css/bootstrap.min.css', array(), '3.4.1' );
 
 	// Add Font Awesome stylesheet
-	wp_enqueue_style( 'sparkling-icons', get_template_directory_uri() . '/assets/css/fontawesome-all.min.css', null, '5.1.1.', 'all' );
+	wp_enqueue_style( 'sparkling-icons', $template_uri . '/assets/css/fontawesome-all.min.css', array(), '5.1.1', 'all' );
 
-	// Add Google Fonts
-	$font = of_get_option( 'main_body_typography' );
-	if ( isset( $font['subset'] ) ) {
-		wp_register_style( 'sparkling-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700|Roboto+Slab:400,300,700&subset=' . $font['subset'] );
-	} else {
-		wp_register_style( 'sparkling-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700|Roboto+Slab:400,300,700' );
+
+	if ( apply_filters( 'sparkling_allow_google_fonts', true ) ) {
+
+		// Add Google Fonts
+		$font       = of_get_option( 'main_body_typography' );
+		$fonts_url  = 'https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700%7CRoboto+Slab:400,300,700';
+		$fonts_url .= '&display=swap';
+
+		if ( is_array( $font ) && ! empty( $font['subset'] ) ) {
+			$fonts_url .= '&subset=' . rawurlencode( $font['subset'] );
+		}
+
+		wp_register_style( 'sparkling-fonts', $fonts_url, array(), null );
+		wp_enqueue_style( 'sparkling-fonts' );
+
 	}
 
-	wp_enqueue_style( 'sparkling-fonts' );
 
 	// Add slider CSS only if is front page ans slider is enabled
-	if ( ( is_home() || is_front_page() ) && of_get_option( 'sparkling_slider_checkbox' ) == 1 ) {
-		wp_enqueue_style( 'flexslider-css', get_template_directory_uri() . '/assets/css/flexslider.css' );
+	if ( $sparkling_slider_active ) {
+		wp_enqueue_style( 'flexslider-css', $template_uri . '/assets/css/flexslider.css', array(), SPARKLING_VERSION );
 	}
 
 	// Add main theme stylesheet
-	wp_enqueue_style( 'sparkling-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ), 'all' );
+	wp_enqueue_style( 'sparkling-style', get_stylesheet_uri(), array(), SPARKLING_VERSION, 'all' );
 
-	// Add Bootstrap default JS
-	wp_enqueue_script( 'sparkling-bootstrapjs', get_template_directory_uri() . '/assets/js/vendor/bootstrap.min.js', array( 'jquery' ) );
+	/*
+	 * Bootstrap's own JS still needs jQuery, but it belongs in the footer: it binds
+	 * its data-api handlers on ready, so nothing is lost by not blocking the head.
+	 */
+	wp_enqueue_script( 'sparkling-bootstrapjs', $template_uri . '/assets/js/vendor/bootstrap.min.js', array( 'jquery' ), '3.4.1', true );
 
-	if ( ( is_home() || is_front_page() ) && of_get_option( 'sparkling_slider_checkbox' ) == 1 ) {
+	if ( $sparkling_slider_active ) {
 		// Add slider JS only if is front page ans slider is enabled
-		wp_enqueue_script( 'flexslider-js', get_template_directory_uri() . '/assets/js/vendor/flexslider.min.js', array( 'jquery' ), '20140222', true );
+		wp_enqueue_script( 'flexslider-js', $template_uri . '/assets/js/vendor/flexslider.min.js', array( 'jquery' ), '2.7.0', true );
 		// Flexslider customization
 		wp_enqueue_script(
-			'flexslider-customization', get_template_directory_uri() . '/assets/js/flexslider-custom.js', array(
+			'flexslider-customization', $template_uri . '/assets/js/flexslider-custom.js', array(
 				'jquery',
 				'flexslider-js',
-			), '20140716', true
+			), SPARKLING_VERSION, true
 		);
 	}
 
-	// Main theme related functions
-	wp_enqueue_script( 'sparkling-functions', get_template_directory_uri() . '/assets/js/functions.js', array( 'jquery' ), '20180503', false );
+	/*
+	 * Main theme related functions. Rewritten in plain DOM APIs, so it no longer
+	 * declares a jQuery dependency and no longer needs to block rendering.
+	 */
+	wp_enqueue_script( 'sparkling-functions', $template_uri . '/assets/js/functions.js', array(), SPARKLING_VERSION, true );
 
 	// This one is for accessibility
-	wp_enqueue_script( 'sparkling-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.min.js', array(), '20140222', true );
+	wp_enqueue_script( 'sparkling-skip-link-focus-fix', $template_uri . '/assets/js/skip-link-focus-fix.min.js', array(), SPARKLING_VERSION, true );
 
 	// Treaded comments
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -350,12 +398,35 @@ function sparkling_scripts() {
 	}
 
 	// Academicons
-	if ( of_get_option( 'academicons' ) == 1 ) {
-		wp_enqueue_style( 'academicons-css', get_template_directory_uri() . '/assets/css/academicons.min.css', null, '1.8.6', 'all' );
+	if ( 1 == of_get_option( 'academicons' ) ) {
+		wp_enqueue_style( 'academicons-css', $template_uri . '/assets/css/academicons.min.css', array(), '1.8.6', 'all' );
 	}
 }
 
 add_action( 'wp_enqueue_scripts', 'sparkling_scripts' );
+
+/**
+ * Warm up the Google Fonts connections so the stylesheet is not a cold round trip.
+ *
+ * @param array  $hints         Existing hints for this relation type.
+ * @param string $relation_type Relation type being filtered.
+ * @return array
+ */
+function sparkling_resource_hints( $hints, $relation_type ) {
+	if ( 'preconnect' === $relation_type && wp_style_is( 'sparkling-fonts', 'enqueued' ) ) {
+		$hints[] = array(
+			'href' => 'https://fonts.googleapis.com',
+		);
+		$hints[] = array(
+			'href'        => 'https://fonts.gstatic.com',
+			'crossorigin' => 'anonymous',
+		);
+	}
+
+	return $hints;
+}
+
+add_filter( 'wp_resource_hints', 'sparkling_resource_hints', 10, 2 );
 
 /**
  * Implement the Custom Header feature.
@@ -401,21 +472,53 @@ function register_social_menu() {
 	register_nav_menu( 'social-menu', _x( 'Social Menu', 'nav menu location', 'sparkling' ) );
 }
 
-/* Globals variables */
-global $options_categories;
-$options_categories     = array();
-$options_categories_obj = get_categories();
-foreach ( $options_categories_obj as $category ) {
-	$options_categories[ $category->cat_ID ] = $category->cat_name;
+/*
+ * Globals variables.
+ *
+ * These are populated on `init` rather than while functions.php is being parsed.
+ * Two reasons:
+ *
+ * 1. $site_layout calls esc_html__(), and WordPress 6.7+ emits a
+ *    "_load_textdomain_just_in_time was called incorrectly" notice for any
+ *    translation requested before `init`. At parse time that notice fired on
+ *    every single request, front end and admin alike.
+ * 2. $options_categories ran get_categories() at parse time, adding a term query
+ *    to every request -- including REST, cron and AJAX -- when the list is only
+ *    ever read by the Customizer's slider-category dropdown.
+ *
+ * The globals themselves are kept (rather than replaced with accessors) so child
+ * themes that reference them keep working.
+ */
+global $options_categories, $site_layout;
+$options_categories = array();
+$site_layout        = array();
+
+/**
+ * Populate the theme's global option arrays once translations are available.
+ */
+function sparkling_init_globals() {
+	global $options_categories, $site_layout;
+
+	$site_layout = array(
+		'side-pull-left'  => esc_html__( 'Right Sidebar', 'sparkling' ),
+		'side-pull-right' => esc_html__( 'Left Sidebar', 'sparkling' ),
+		'no-sidebar'      => esc_html__( 'No Sidebar', 'sparkling' ),
+		'full-width'      => esc_html__( 'Full Width', 'sparkling' ),
+	);
+
+	// Only the Customizer and the post metabox read this, so skip the query elsewhere.
+	if ( ! is_admin() && ! is_customize_preview() ) {
+		return;
+	}
+
+	$options_categories = array();
+
+	foreach ( get_categories( array( 'hide_empty' => 0 ) ) as $category ) {
+		$options_categories[ $category->cat_ID ] = $category->cat_name;
+	}
 }
 
-global $site_layout;
-$site_layout = array(
-	'side-pull-left'  => esc_html__( 'Right Sidebar', 'sparkling' ),
-	'side-pull-right' => esc_html__( 'Left Sidebar', 'sparkling' ),
-	'no-sidebar'      => esc_html__( 'No Sidebar', 'sparkling' ),
-	'full-width'      => esc_html__( 'Full Width', 'sparkling' ),
-);
+add_action( 'init', 'sparkling_init_globals' );
 
 // Typography Options
 global $typography_options;
@@ -578,13 +681,31 @@ if ( ! function_exists( 'get_layout_class' ) ) :
 endif;
 
 add_action( 'wp_ajax_sparkling_get_attachment_media', 'sparkling_get_attachment_image' );
+/**
+ * AJAX: return the medium-size markup for an attachment.
+ *
+ * Used by the Popular Posts widget's media picker, so it is restricted to users
+ * who can edit theme options and requires a valid nonce.
+ */
 function sparkling_get_attachment_image() {
-	$id                = intval( $_POST['attachment_id'] );
-	$response          = array();
-	$response['id']    = $id;
-	$response['image'] = wp_get_attachment_image( $id, 'medium' );
-	echo json_encode( $response );
-	die();
+	if ( ! current_user_can( 'edit_theme_options' ) ) {
+		wp_send_json_error( esc_html__( 'You are not allowed to do that.', 'sparkling' ), 403 );
+	}
+
+	check_ajax_referer( 'sparkling_widget_nonce', 'nonce' );
+
+	$id = isset( $_POST['attachment_id'] ) ? absint( wp_unslash( $_POST['attachment_id'] ) ) : 0;
+
+	if ( ! $id || 'attachment' !== get_post_type( $id ) ) {
+		wp_send_json_error( esc_html__( 'Invalid attachment.', 'sparkling' ), 400 );
+	}
+
+	wp_send_json_success(
+		array(
+			'id'    => $id,
+			'image' => wp_get_attachment_image( $id, 'medium' ),
+		)
+	);
 }
 
 if ( ! function_exists( 'wp_body_open' ) ) {
@@ -593,13 +714,19 @@ if ( ! function_exists( 'wp_body_open' ) ) {
     }
 }
 
-// Add epsilon framework
-require get_template_directory() . '/inc/libraries/epsilon-framework/class-epsilon-autoloader.php';
-$epsilon_framework_settings = array(
-	'controls' => array( 'toggle' ), // array of controls to load
-	'sections' => array( 'recommended-actions', 'pro' ), // array of sections to load
-);
-new Epsilon_Framework( $epsilon_framework_settings );
+/*
+ * Customizer toggle control.
+ *
+ * This replaces the bundled Epsilon framework, which was removed in 2.6.0. The
+ * theme only ever used one thing from it -- a checkbox control, seven times.
+ * The "recommended actions" and "pro" sections it also loaded were registered
+ * but never instantiated, and its AJAX layer dispatched static method calls from
+ * $_POST with no nonce or capability check.
+ *
+ * The control is presentation only, so every saved setting is untouched by the
+ * swap. Epsilon_Control_Toggle survives as a deprecated alias for child themes.
+ */
+require get_template_directory() . '/inc/class-sparkling-customize-toggle-control.php';
 
 //Include Welcome Screen
 require get_template_directory() . '/inc/welcome-screen/welcome-page-setup.php';

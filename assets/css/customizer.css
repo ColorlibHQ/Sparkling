@@ -1,0 +1,143 @@
+/*
+Customizer control styles for Sparkling.
+
+Ported out of the bundled Epsilon framework when it was removed in 2.6.0, so the
+on/off toggles and their help tooltips keep the exact appearance they had.
+Loaded only on the Customizer controls screen.
+*/
+
+.wp-admin .checkbox_switch {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.customize-control-title.onoffswitch_label {
+	width: 71%;
+}
+
+.onoffswitch_label {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 21px;
+	margin-top: -1px;
+}
+
+.onoffswitch {
+	position: relative;
+	width: 52px;
+	display: inline-block;
+	float: right;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.onoffswitch-checkbox {
+	display: none !important;
+}
+
+.onoffswitch-label {
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+	height: 22px;
+	padding: 0;
+	line-height: 19px;
+	transition: background-color 0.2s ease-in;
+	border-radius: 30px;
+	background-color: #c4c4c4;
+	box-shadow: inset 0 2px 1px rgba(0, 0, 0, .11);
+}
+
+.onoffswitch-label:before {
+	content: "";
+	display: block;
+	width: 18px;
+	height: 18px;
+	margin: 0;
+	position: absolute;
+	top: 2px;
+	bottom: 0;
+	right: 32px;
+	background-color: #fff;
+	box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+	border-radius: 10px;
+	transition: all 0.2s ease-in 0s;
+}
+
+.onoffswitch-label:after {
+	content: "OFF";
+	display: block;
+	color: #fff;
+	position: absolute;
+	top: 2px;
+	bottom: 2px;
+	right: 6px;
+	font-size: 11px;
+	font-family: Arial, sans-serif;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+	background-color: #3caf0e;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label,
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+	border-color: #3caf0e;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+	right: 2px;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label:after {
+	content: "ON";
+	display: block;
+	color: #fff;
+	position: absolute;
+	top: 2px;
+	bottom: 2px;
+	right: 27px;
+	font-size: 11px;
+	font-family: Arial, sans-serif;
+}
+
+/* Keyboard focus, which the original switch styling did not surface at all. */
+.onoffswitch-checkbox:focus + .onoffswitch-label {
+	outline: 2px solid #2271b1;
+	outline-offset: 2px;
+}
+
+.mte-tooltip {
+	width: 150px;
+	position: absolute;
+	background: #55aad3;
+	color: #eee;
+	font-size: 12px;
+	min-height: 50px;
+	border-radius: 5px;
+	left: -75px; /* half of its width */
+	bottom: 25px;
+	z-index: 10;
+	display: none;
+	padding: 12px;
+	line-height: 1.5;
+	font-family: Arial, sans-serif;
+}
+
+.accordion-section-content > li:nth-of-type(2) .mte-tooltip {
+	bottom: initial;
+	top: 25px;
+}
+
+.dashicons.dashicons-editor-help {
+	cursor: pointer;
+	color: #55aad3;
+}
+
+.dashicons.dashicons-editor-help:hover > .mte-tooltip,
+.dashicons.dashicons-editor-help:focus > .mte-tooltip {
+	display: block;
+}

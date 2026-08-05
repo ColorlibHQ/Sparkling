@@ -22,11 +22,13 @@ class Sparkling_Categories extends WP_Widget {
 			$enable_count = $instance['enable_count'] ? $instance['enable_count'] : 'checked';
 		}
 
-		$limit = ( $instance['limit'] ) ? $instance['limit'] : 4;
+		// $instance['limit'] is unset until the widget is first saved, which raised
+		// an "Undefined array key" warning on PHP 8.
+		$limit = ! empty( $instance['limit'] ) ? absint( $instance['limit'] ) : 4;
 
 		echo $args['before_widget'];
 		echo $args['before_title'];
-		echo $title;
+		echo esc_html( $title );
 		echo $args['after_title'];
 
 		/**
@@ -76,6 +78,18 @@ class Sparkling_Categories extends WP_Widget {
 	}
 
 
+	/**
+	 * Sanitize widget settings before they are saved.
+	 */
+	public function update( $new_instance, $old_instance ) {
+		$instance                 = $old_instance;
+		$instance['title']        = isset( $new_instance['title'] ) ? sanitize_text_field( $new_instance['title'] ) : '';
+		$instance['limit']        = isset( $new_instance['limit'] ) ? absint( $new_instance['limit'] ) : 4;
+		$instance['enable_count'] = ! empty( $new_instance['enable_count'] ) ? 1 : '';
+
+		return $instance;
+	}
+
 	function form( $instance ) {
 		if ( ! isset( $instance['title'] ) ) {
 			$instance['title'] = esc_html__( 'Categories', 'sparkling' );
@@ -89,26 +103,26 @@ class Sparkling_Categories extends WP_Widget {
 
 		?>
 
-	  <p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title ', 'sparkling' ); ?></label>
+	  <p><label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title ', 'sparkling' ); ?></label>
 
 		<input  type="text" value="<?php echo esc_attr( $instance['title'] ); ?>"
-				name="<?php echo $this->get_field_name( 'title' ); ?>"
-				id="<?php $this->get_field_id( 'title' ); ?>"
+				name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>"
+				id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"
 				class="widefat" />
 	  </p>
 
-	  <p><label for="<?php echo $this->get_field_id( 'limit' ); ?>"> <?php esc_html_e( 'Limit Categories ', 'sparkling' ); ?></label>
+	  <p><label for="<?php echo esc_attr( $this->get_field_id( 'limit' ) ); ?>"> <?php esc_html_e( 'Limit Categories ', 'sparkling' ); ?></label>
 
 		<input  type="text" value="<?php echo esc_attr( $instance['limit'] ); ?>"
-				name="<?php echo $this->get_field_name( 'limit' ); ?>"
-				id="<?php $this->get_field_id( 'limit' ); ?>"
+				name="<?php echo esc_attr( $this->get_field_name( 'limit' ) ); ?>"
+				id="<?php echo esc_attr( $this->get_field_id( 'limit' ) ); ?>"
 				class="widefat" />
 	  </p>
 
 	  <p><label>
 		<input  type="checkbox"
-				name="<?php echo $this->get_field_name( 'enable_count' ); ?>"
-				id="<?php $this->get_field_id( 'enable_count' ); ?>" 
+				name="<?php echo esc_attr( $this->get_field_name( 'enable_count' ) ); ?>"
+				id="<?php echo esc_attr( $this->get_field_id( 'enable_count' ) ); ?>" 
 												<?php
 												if ( '' != $instance['enable_count'] ) {
 													echo 'checked=checked ';}

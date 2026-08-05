@@ -11,9 +11,18 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function sparkling_customize_register( $wp_customize ) {
-	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
-	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+	/*
+	 * get_setting() returns null when a setting is not registered -- for example if
+	 * a plugin has removed it. Assigning to ->transport on null is a fatal on PHP 8,
+	 * so check each one before touching it.
+	 */
+	foreach ( array( 'blogname', 'blogdescription', 'header_textcolor' ) as $sparkling_setting_id ) {
+		$sparkling_setting = $wp_customize->get_setting( $sparkling_setting_id );
+
+		if ( $sparkling_setting instanceof WP_Customize_Setting ) {
+			$sparkling_setting->transport = 'postMessage';
+		}
+	}
 }
 
 add_action( 'customize_register', 'sparkling_customize_register' );
@@ -53,12 +62,12 @@ function sparkling_customizer( $wp_customize ) {
 	);
 	// add checkbox control for excerpts/full posts toggle
 	$wp_customize->add_control(
-		new Epsilon_Control_Toggle(
+		new Sparkling_Customize_Toggle_Control(
 			$wp_customize, 'sparkling_excerpts', array(
 				'label'    => esc_html__( 'Show post excerpts?', 'sparkling' ),
 				'section'  => 'sparkling_content_section',
 				'priority' => 10,
-				'type'     => 'epsilon-toggle',
+				'type'     => 'sparkling-toggle',
 			)
 		)
 	);
@@ -70,12 +79,12 @@ function sparkling_customizer( $wp_customize ) {
 		)
 	);
 	$wp_customize->add_control(
-		new Epsilon_Control_Toggle(
+		new Sparkling_Customize_Toggle_Control(
 			$wp_customize, 'sparkling_page_comments', array(
 				'label'    => esc_html__( 'Display Comments on Static Pages?', 'sparkling' ),
 				'section'  => 'sparkling_content_section',
 				'priority' => 20,
-				'type'     => 'epsilon-toggle',
+				'type'     => 'sparkling-toggle',
 			)
 		)
 	);
@@ -96,12 +105,12 @@ function sparkling_customizer( $wp_customize ) {
 		)
 	);
 	$wp_customize->add_control(
-		new Epsilon_Control_Toggle(
+		new Sparkling_Customize_Toggle_Control(
 			$wp_customize, 'sparkling[sparkling_slider_checkbox]', array(
 				'label'    => esc_html__( 'Check if you want to enable slider', 'sparkling' ),
 				'section'  => 'sparkling_slider_options',
 				'priority' => 5,
-				'type'     => 'epsilon-toggle',
+				'type'     => 'sparkling-toggle',
 			)
 		)
 	);
@@ -113,12 +122,12 @@ function sparkling_customizer( $wp_customize ) {
 		)
 	);
 	$wp_customize->add_control(
-		new Epsilon_Control_Toggle(
+		new Sparkling_Customize_Toggle_Control(
 			$wp_customize, 'sparkling[sparkling_slider_link_checkbox]', array(
 				'label'    => esc_html__( 'Uncheck this option to remove the link from the slides', 'sparkling' ),
 				'section'  => 'sparkling_slider_options',
 				'priority' => 6,
-				'type'     => 'epsilon-toggle',
+				'type'     => 'sparkling-toggle',
 			)
 		)
 	);
@@ -519,12 +528,12 @@ function sparkling_customizer( $wp_customize ) {
 		)
 	);
 	$wp_customize->add_control(
-		new Epsilon_Control_Toggle(
+		new Sparkling_Customize_Toggle_Control(
 			$wp_customize, 'sparkling[sticky_header]', array(
 				'label'       => __( 'Sticky Header', 'sparkling' ),
 				'description' => sprintf( __( 'Check to show fixed header', 'sparkling' ) ),
 				'section'     => 'sparkling_header_options',
-				'type'        => 'epsilon-toggle',
+				'type'        => 'sparkling-toggle',
 			)
 		)
 	);
@@ -785,12 +794,12 @@ function sparkling_customizer( $wp_customize ) {
 		)
 	);
 	$wp_customize->add_control(
-		new Epsilon_Control_Toggle(
+		new Sparkling_Customize_Toggle_Control(
 			$wp_customize, 'sparkling[footer_social]', array(
 				'label'       => __( 'Footer Social Icons', 'sparkling' ),
 				'description' => sprintf( __( 'Check to show social icons in footer', 'sparkling' ) ),
 				'section'     => 'sparkling_social_options',
-				'type'        => 'epsilon-toggle',
+				'type'        => 'sparkling-toggle',
 			)
 		)
 	);
@@ -805,12 +814,12 @@ function sparkling_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_control(
-		new Epsilon_Control_Toggle(
+		new Sparkling_Customize_Toggle_Control(
 			$wp_customize, 'sparkling[academicons]', array(
 				'label'       => __( 'Enable Academicons', 'sparkling' ),
 				'description' => sprintf( __( 'Toggle this to ON to enable the usage of Academicons', 'sparkling' ) ),
 				'section'     => 'sparkling_social_options',
-				'type'        => 'epsilon-toggle',
+				'type'        => 'sparkling-toggle',
 			)
 		)
 	);
@@ -836,6 +845,7 @@ function sparkling_customizer( $wp_customize ) {
 		'sparkling[tag_title]', array(
 			'label'       => __( 'Tag Page Title', 'sparkling' ),
 			'section'     => 'sparkling_archive_section',
+			/* translators: %s: tag name */
 			'description' => __( 'The headline for your tag pages. You can use %s as a placeholder for the tag. Leave empty for default.', 'sparkling' ),
 			'type'        => 'text',
 		)
@@ -853,6 +863,7 @@ function sparkling_customizer( $wp_customize ) {
 		'sparkling[category_title]', array(
 			'label'       => __( 'Category Page Title', 'sparkling' ),
 			'section'     => 'sparkling_archive_section',
+			/* translators: %s: category name */
 			'description' => __( 'The headline for your category pages. You can use %s as a placeholder for the category. Leave empty for default.', 'sparkling' ),
 			'type'        => 'text',
 		)
@@ -870,6 +881,7 @@ function sparkling_customizer( $wp_customize ) {
 		'sparkling[author_title]', array(
 			'label'       => __( 'Author Page Title', 'sparkling' ),
 			'section'     => 'sparkling_archive_section',
+			/* translators: %s: author name */
 			'description' => __( 'The headline for your author pages. You can use %s as a placeholder for the author\'s name. Leave empty for default.', 'sparkling' ),
 			'type'        => 'text',
 		)
@@ -887,6 +899,7 @@ function sparkling_customizer( $wp_customize ) {
 		'sparkling[year_title]', array(
 			'label'       => __( 'Year Page Title', 'sparkling' ),
 			'section'     => 'sparkling_archive_section',
+			/* translators: %s: year */
 			'description' => __( 'The headline for your year pages. You can use %s as a placeholder for the year. Leave empty for default.', 'sparkling' ),
 			'type'        => 'text',
 		)
@@ -904,6 +917,7 @@ function sparkling_customizer( $wp_customize ) {
 		'sparkling[month_title]', array(
 			'label'       => __( 'Month Page Title', 'sparkling' ),
 			'section'     => 'sparkling_archive_section',
+			/* translators: %s: month */
 			'description' => __( 'The headline for your month pages. You can use %s as a placeholder for the month. Leave empty for default.', 'sparkling' ),
 			'type'        => 'text',
 		)
@@ -921,6 +935,7 @@ function sparkling_customizer( $wp_customize ) {
 		'sparkling[day_title]', array(
 			'label'       => __( 'Day Page Title', 'sparkling' ),
 			'section'     => 'sparkling_archive_section',
+			/* translators: %s: day */
 			'description' => __( 'The headline for your day pages. You can use %s as a placeholder for the day. Leave empty for default.', 'sparkling' ),
 			'type'        => 'text',
 		)
@@ -951,7 +966,12 @@ function sparkling_sanitize_hexcolor( $color ) {
 		return '#' . $unhashed;
 	}
 
-	return $color;
+	/*
+	 * Previously this returned $color unchanged when validation failed, which
+	 * meant arbitrary text could be stored and later echoed straight into the
+	 * <style> block emitted by get_sparkling_theme_options(). Reject instead.
+	 */
+	return '';
 }
 
 /**
@@ -1057,10 +1077,22 @@ function sparkling_sanitize_typo_style( $input ) {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function sparkling_customize_preview_js() {
-	wp_enqueue_script( 'sparkling_customizer', get_template_directory_uri() . '/assets/js/customizer.js', array( 'customize-preview' ), '20140317', true );
+	wp_enqueue_script( 'sparkling_customizer', get_template_directory_uri() . '/assets/js/customizer.js', array( 'customize-preview' ), SPARKLING_VERSION, true );
 }
 
 add_action( 'customize_preview_init', 'sparkling_customize_preview_js' );
+
+/**
+ * Styles for the theme's own Customizer controls.
+ *
+ * Carries the on/off switch and tooltip rules that used to come from the bundled
+ * Epsilon framework's stylesheet, so the controls look unchanged after its removal.
+ */
+function sparkling_customize_controls_css() {
+	wp_enqueue_style( 'sparkling-customizer-controls', get_template_directory_uri() . '/assets/css/customizer.css', array(), SPARKLING_VERSION );
+}
+
+add_action( 'customize_controls_enqueue_scripts', 'sparkling_customize_controls_css' );
 
 /**
  * Add CSS for custom controls

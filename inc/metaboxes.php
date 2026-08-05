@@ -44,8 +44,15 @@ global $site_layout;
 /**
  * Displays metabox to for sidebar layout
  */
-function sparkling_sidebar_layout() {
-	global $site_layout, $post;
+function sparkling_sidebar_layout( $post ) {
+	global $site_layout;
+
+	$post_id = ( $post instanceof WP_Post ) ? $post->ID : get_the_ID();
+
+	if ( ! $post_id ) {
+		return;
+	}
+
 	// Use nonce for verification
 	wp_nonce_field( basename( __FILE__ ), 'custom_meta_box_nonce' ); ?>
 
@@ -54,14 +61,14 @@ function sparkling_sidebar_layout() {
 			<tr>
 				<label class="description">
 				<?php
-					$layout = get_post_meta( $post->ID, 'site_layout', true );
+					$layout = get_post_meta( $post_id, 'site_layout', true );
 					?>
 					<select name="site_layout" id="site_layout">
-						<option value="">Default</option>
+						<option value=""><?php esc_html_e( 'Default', 'sparkling' ); ?></option>
 						<?php
-						foreach ( $site_layout as $key => $val ) {
+						foreach ( (array) $site_layout as $key => $val ) {
 						?>
-						<option value="<?php echo $key; ?>" <?php selected( $layout, $key ); ?> ><?php echo $val; ?></option>
+						<option value="<?php echo esc_attr( $key ); ?>" <?php selected( $layout, $key ); ?> ><?php echo esc_html( $val ); ?></option>
 													<?php
 						}
 						?>
@@ -82,10 +89,11 @@ add_action( 'save_post', 'sparkling_save_custom_meta' );
  * @hooked to save_post hook
  */
 function sparkling_save_custom_meta( $post_id ) {
-	global $site_layout, $post;
+	global $site_layout;
 
 	// Verify the nonce before proceeding.
-	if ( ! isset( $_POST['custom_meta_box_nonce'] ) || ! wp_verify_nonce( $_POST['custom_meta_box_nonce'], basename( __FILE__ ) ) ) {
+	if ( ! isset( $_POST['custom_meta_box_nonce'] )
+		|| ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['custom_meta_box_nonce'] ) ), basename( __FILE__ ) ) ) {
 		return;
 	}
 
@@ -94,7 +102,9 @@ function sparkling_save_custom_meta( $post_id ) {
 		return;
 	}
 
-	if ( 'page' == $_POST['post_type'] ) {
+	$post_type = isset( $_POST['post_type'] ) ? sanitize_key( wp_unslash( $_POST['post_type'] ) ) : '';
+
+	if ( 'page' === $post_type ) {
 		if ( ! current_user_can( 'edit_page', $post_id ) ) {
 			return $post_id;
 		}
@@ -102,8 +112,11 @@ function sparkling_save_custom_meta( $post_id ) {
 		return $post_id;
 	}
 
-	if ( $_POST['site_layout'] ) {
-		update_post_meta( $post_id, 'site_layout', $_POST['site_layout'] );
+	$layout = isset( $_POST['site_layout'] ) ? sanitize_key( wp_unslash( $_POST['site_layout'] ) ) : '';
+
+	// Only ever store a layout the theme actually offers.
+	if ( $layout && is_array( $site_layout ) && array_key_exists( $layout, $site_layout ) ) {
+		update_post_meta( $post_id, 'site_layout', $layout );
 	} else {
 		delete_post_meta( $post_id, 'site_layout' );
 	}

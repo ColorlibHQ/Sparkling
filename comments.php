@@ -27,17 +27,29 @@ if ( post_password_required() ) {
 		<h2 class="comments-title">
 			<?php
 			$comments_number = get_comments_number();
-			printf(
+			if ( '1' === $comments_number ) {
+				/*
+				 * Escape only the post title. The translated literal carries
+				 * intentional &ldquo;/&rdquo; entities, so running esc_html() over it
+				 * would double-escape them -- and rewriting the string to dodge that
+				 * would change the msgid for no benefit.
+				 */
+				/* translators: %s: post title */
+				printf( _x( 'One thought to &ldquo;%s&rdquo;', 'comments title', 'sparkling' ), esc_html( get_the_title() ) );
+			} else {
+				printf(
+					/* translators: 1: number of comments, 2: post title */
 					_nx(
-						'One thought on &ldquo;%2$s&rdquo;',
-						'%1$s thoughts on &ldquo;%2$s&rdquo;',
+						'%1$s thought to &ldquo;%2$s&rdquo;',
+						'%1$s thoughts to &ldquo;%2$s&rdquo;',
 						$comments_number,
 						'comments title',
 						'sparkling'
 					),
-					number_format_i18n( $comments_number ),
-					get_the_title()
+					esc_html( number_format_i18n( $comments_number ) ),
+					esc_html( get_the_title() )
 				);
+			}
 			?>
 		</h2>
 
