@@ -323,7 +323,7 @@ a:hover .flex-caption h2 {
   user-select: none; /* Likely future */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .flex-caption {
     display: none;
   }
