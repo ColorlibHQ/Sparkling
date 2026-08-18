@@ -1,403 +1,161 @@
-# About Theme
+# Sparkling — Free Responsive WordPress Blog & Business Theme
 
-Theme Name: Sparkling<br>
-Theme URI: http://colorlib.com/wp/sparkling/<br>
-Version: 3.0<br>
-Tested up to: WP 5.8.1<br>
-Requires PHP: 5.4.0<br>
-Tested up to: PHP 8.0.10<br>
+[![Version](https://img.shields.io/badge/version-2.6.4-blue.svg)](https://github.com/ColorlibHQ/Sparkling/releases)
+[![WordPress](https://img.shields.io/badge/WordPress-6.0%20–%207.0-21759b.svg)](https://wordpress.org/themes/sparkling/)
+[![PHP](https://img.shields.io/badge/PHP-7.4%20–%208.5-777bb4.svg)](https://www.php.net/)
+[![License](https://img.shields.io/badge/license-GPL--2.0--or--later-green.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
+[![Downloads](https://img.shields.io/wordpress/theme/dt/sparkling.svg)](https://wordpress.org/themes/sparkling/)
 
-Author: Aigars Silkalns<br>
-Author URI: http://colorlib.com/wp/<br>
-License: GNU General Public License v3.0
-License URI: https://www.gnu.org/licenses/gpl.html
+**Sparkling** is a free, clean, fully responsive **WordPress theme** built on Bootstrap 3, suited to blogs,
+news and magazine sites, business and portfolio sites, and WooCommerce shops. It ships a full-width slider,
+four sidebar layouts, dozens of live Customizer options, and translations in over twenty languages.
 
----
+[**Live demo**](https://colorlibhub.com/sparkling/) · [**Download from WordPress.org**](https://wordpress.org/themes/sparkling/) · [**Documentation**](https://colorlib.com/wp/support/sparkling/) · [**Support forum**](https://colorlib.com/wp/forums/)
 
-Sparkling theme, Copyright 2014-2021 colorlib.com
-Sparkling WordPress theme is distributed under the terms of the GNU GPL
-Sparkling is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+![Sparkling WordPress theme screenshot](screenshot.png)
 
 ---
 
-# Credits
+## Contents
+
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Features](#features)
+- [Customizer options](#customizer-options)
+- [WooCommerce](#woocommerce)
+- [Translations](#translations)
+- [Child themes](#child-themes)
+- [Development](#development)
+- [Changelog](#changelog)
+- [Credits and licensing](#credits-and-licensing)
 
-Unless otherwise specified, all the theme files, scripts and images are licensed under GPLv3 license
+## Requirements
 
-Sparkling theme uses:
+| | |
+|---|---|
+| WordPress | 6.0 or newer (tested to 7.0) |
+| PHP | 7.4 or newer (tested to 8.5) |
+| Browsers | All current evergreen browsers. Internet Explorer is no longer supported. |
 
-- FontAwesome (https://fontawesome.com) licensed under the SIL OFL 1.1 (http://scripts.sil.org/OFL)
-- Bootstrap (https://getbootstrap.com/) licensed under MIT license (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-- WP-Bootstrap-NavWalker licensed under the GPLv2 license (https://www.gnu.org/licenses/gpl-2.0.html)
-- FlexSlider by WooThemes licensed under the GPLv2 license (https://www.gnu.org/licenses/gpl-2.0.html)
-- Unless otherwise specified, all images are created by Colorlib
+## Installation
 
-# Description
+**From your dashboard** — go to **Appearance → Themes → Add New**, search for *Sparkling*, then click
+**Install** and **Activate**.
 
-Sparkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, portfolio, design, art, photography, personal, ecommerce and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options based on WordPress Customizer to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready, compatible with WPML and is available in Spanish, French, Dutch, Polish, Russian, German, Brazilian Portuguese, Portuguese (Portugal), Persian (Iranian language), Romanian, Turkish, Bulgarian, Japanese, Lithuanian, Czech, Ukrainian, Traditional Chinese, Simplified Chinese, Indonesian, Estonian, Spanish (Argentina) and Italian. Sparkling is a free WordPress theme with premium functionality and design. Theme is ecommerce ready thanks to its WooCommerce integration. Now theme is optimized to work with bbPress, Contact Form 7, Jetpack, WooCommerce and other popular free and premium plugins. Lately we introduced a sticky/fixed navigation that you can enable or disable via WordPress Customizer.
+**From a zip** — download the latest release, then **Appearance → Themes → Add New → Upload Theme**,
+choose the zip and click **Install Now**.
 
-For questions, comments or bug reports, visit Colorlib support forum (http://colorlib.com/wp/forums).
+**Manually** — unzip into `wp-content/themes/` so the theme lives at `wp-content/themes/sparkling/`,
+then activate it under **Appearance → Themes**.
 
-# Installation
+After activating, open **Appearance → Customize** to configure the theme, or **Appearance → About Sparkling**
+for a guided setup.
 
-You can install the theme through the WordPress installer under "Themes" > "Install themes" by searching for "Sparkling".
+## Features
 
-Alternatively you can download the file, unzip it and move the unzipped contents to the "wp-content/themes" folder of your WordPress installation. You will then be able to activate the theme.
+- **Fully responsive** Bootstrap 3.4.1 layout, mobile and tablet friendly
+- **Front page slider** — full width, pulls from any category, with captions and touch support
+- **Four sidebar layouts** — right, left, none, or full width, set globally or per post, page and product
+- **Live Customizer options** for colours, typography, header, footer and layout
+- **Call-to-action bar** on the front page
+- **Custom widgets** — social icons, popular posts, and an enhanced categories widget
+- **Post formats** — aside, image, video, quote and link
+- **Sticky navigation**, optional
+- **Author bio box**, threaded comments and Gravatar support
+- **Translation ready**, WPML compatible, with 20+ bundled translations
+- **WooCommerce ready**
+- **No jQuery dependency** in the theme's own JavaScript
+- **Block editor support** — responsive embeds, block styles, wide blocks and an editor stylesheet
+- **Accessibility touches** — skip link, visible keyboard focus, `prefers-reduced-motion` support
 
-Afterwards you can continue theme setup and customization via WordPress Dashboard - Appearance - Theme Options. For detailed theme documentation, please visit http://colorlib.com/wp/support/sparkling
+## Customizer options
 
-# Theme Features
+All settings live under **Appearance → Customize → Sparkling Options**:
 
-- Bootstrap 3 integration
-- Responsive design
-- Unlimited color variations
-- SEO friendly
-- WordPress Theme Customizer support
-- Image centric approach
-- Internationalized & localization
-- Drop-down Menu
-- Cross-browser compatibility
-- Threaded Comments
-- Gravatar ready
-- Featured slider
-- Font Awesome icons
-- WooCommerce support
+| Section | What it controls |
+|---|---|
+| Content | Post excerpts, comments on static pages |
+| Slider | On/off, source category, number of slides, slide links |
+| Layout | Sidebar position, element colours, WooCommerce page layout |
+| Call to action | Text, button label, link, colours |
+| Typography | Body font family, size, weight and colour |
+| Header | Background, link and hover colours, sticky navigation |
+| Footer | Background, text and link colours, social icons, custom footer text |
+| Social | Social icon menu, Academicons for academic profiles |
+| Archive | Custom titles for tag, category, author and date archives |
 
-# Documentation
+## WooCommerce
 
-Theme documentation is available on http://colorlib.com/wp/support/sparkling
+Sparkling supports WooCommerce out of the box — shop, product, cart, checkout and account pages all
+inherit the theme's styling, and product galleries get zoom, lightbox and slider support.
 
-# Changelog
+WooCommerce pages have their own layout setting under **Layout Options**, and individual products can
+override it from the layout box in the editor sidebar.
 
-## 3.0
+The theme overrides no WooCommerce templates, so it stays compatible as WooCommerce updates.
 
-- Added PHP 8 support
-- Merge WpChill fork
-- Fixed some bugs
+## Translations
 
-## 2.4.8
+Sparkling ships `.po`/`.mo` catalogues for 20+ locales in [`languages/`](languages/), plus an up-to-date
+`sparkling.pot` for new translations.
 
-- Compatibility with jQuery 3.0
+Translations are also managed on
+[translate.wordpress.org](https://translate.wordpress.org/projects/wp-themes/sparkling/), and language
+packs from there take precedence over the bundled files.
 
-## 2.4.6
+## Child themes
 
-- Improved accesibility with keyboard navigation
+Sparkling is built to be extended. Template functions are wrapped in `function_exists()` so a child theme
+can redefine them, and the theme exposes filters such as `sparkling_allow_google_fonts` and
+`sparkling_custom_background_args`.
 
-## 2.4.5
+If you override template files in a child theme, note that the wrapper markup is split across three files:
+`header.php` opens the page containers, `sidebar.php` closes `.main-content-inner` before emitting
+`#secondary`, and `footer.php` closes the rest. A template that skips `get_sidebar()` must close
+`.main-content-inner` itself — see `page-fullwidth.php`.
 
-- Added 2 more recommended plugins
+## Development
 
-## 2.4.4
+The theme ships ready to run; there is no build step required to use it.
 
-- Removed subject tags, can't keep more than 3 as per w.org rules
+```bash
+git clone https://github.com/ColorlibHQ/Sparkling.git
+# symlink or copy into wp-content/themes/sparkling
+```
 
-## 2.4.3
+`style.css` and the files in `assets/css/` are edited directly. Minified assets are committed alongside
+their sources and must be regenerated by hand when the source changes:
 
-- Fixed a few more bugs with FA5 & missing icons
+```bash
+npx terser assets/js/widget.js -c -m -o assets/js/widget.min.js
+```
 
-## 2.4.1
+Bug reports and pull requests are welcome on the [issue tracker](https://github.com/ColorlibHQ/Sparkling/issues).
 
-- Fixed a bug with FontAwesome 5 & RSS feed icon
+## Changelog
 
-## 2.4.0
+The full version history, from 1.0 in April 2014 to the current release, is in
+[`changelog.txt`](changelog.txt). It is also rendered in the WordPress dashboard under
+**Appearance → About Sparkling → Changelog**.
 
-- Added Colorlib Login Customizer as recommended plugin
-- Updated FontAwesome to v5.1.1
-- Updated FlexSlider to 2.7.0
-- Added Academicons ( https://jpswalsh.github.io/academicons/ )
-- Removed Modernizr.js from distribution
-- Full changelog can be seen here: https://github.com/puikinsh/Sparkling/milestone/1?closed=1
+## Credits and licensing
 
-## 2.3.4
+Sparkling, Copyright 2014–2026 [Colorlib](https://colorlib.com/).
+Distributed under the **GNU General Public License v2 or later** —
+see [gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html).
 
-- Updated font awesome
-- Fixed custom menu styling in the footer
-- Improved widgets' styling
-- Fixed Sparkling popular posts widget clear bug
-- Fixed custom color for the footer text
-- Added defaults for color controls in Customizer
-- Fixed custom typography bug
-- Improved custom colors
-- Fixed the menu on mobile devices
-- Added a 'read more' button when the read more tag is used
-- Added Epsilon Framework
-- Added Welcome Screen
+Sparkling is based on [Underscores](https://underscores.me/), (C) 2012–2015 Automattic, Inc.,
+licensed GPLv2 or later.
 
-## 2.3.3 - 09.06.2017
+Bundled third-party resources:
 
-- Improved Dutch translation by Thom de Jonge
+| Resource | Version | License |
+|---|---|---|
+| [Bootstrap](https://getbootstrap.com/) | 3.4.1 | MIT |
+| [FlexSlider](https://github.com/woocommerce/FlexSlider) | 2.7.0 | GPLv2 |
+| [Font Awesome Free](https://fontawesome.com/license) | 5.1.1 | Icons CC BY 4.0, Fonts SIL OFL 1.1, Code MIT |
+| [Academicons](https://jpswalsh.github.io/academicons/) | 1.8.6 | Fonts SIL OFL 1.1, Code MIT |
+| [WP Bootstrap Navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker) | — | GPLv2 or later |
 
-## 2.3.2 - 11.10.2016
-
-- Removed redundant functions and replaced with ones from WP core.
-
-## 2.3.1 - 08.07.2016
-
-- Hungarian translation thanks to Varga Szabolcs
-
-## 2.3.0 - 30.06.2016
-
-- Added TGMPA & Kiwi Social Share Plugin
-- Updated theme tags
-- Fixed deprecated constructor notice for widgets
-- Updated language files thanks to Vaidas Elksnys
-- Other fixes and improvements.
-
-## 2.2.3 - 18.03.2016
-
-- Fixed problem when top menu items set to open on new tab.
-- Fixed problems with font reset
-- Fixed problem with one extra post for recent post widget
-- Added missing border for posts when no featured image is used.
-- Added new social media icons.
-
-## 2.2.2 - 18.01.2016
-
-- Updated Spanish translation
-- Fixed problems with excerpts
-- Fixed dribbble icon
-- Updated FontAwesome icons
-
-## 2.2.1 - 11.12.2015
-
-- Fixed error with WooCommerce
-
-## 2.2.0 - 09.12.2015
-
-- Added WooCommerce support
-- Removed legacy code
-- Improved layout manager
-- Added options for sticky/fixed navigation.
-
-## 2.1.1 - 17.11.2015
-
-- Removed redundant function
-
-## 2.1.0 - 27.10.2015
-
-- Added WP-PageNavi support
-- Fixed option for comment section on static pages
-- Fixed problem with French translation
-
-## 2.0.1 - 27.10.2015
-
-- Added callback function for old Social Icons.
-- Removed wp_title callback
-- Updated Font Awesome icon library
-- Simplified social icons
-- Added support for "mailto". Email icon.
-
-## 2.0 - 16.10.2015
-
-- Removed Options Frameowrk in favor to WordPress Theme Customizer. Be careful with this update as it might break things.
-- Added layout selecotr for individual posts/pages.
-- Other code cleanups and improvements.
-
-## 1.9.4 - 29.07.2015
-
-- Added Estonian translation thanks to Kristjan Variksoo
-
-## 1.9.3 - 14.07.2015
-
-- Improved menu color customization options
-- Prepared theme for WordPress 4.3 update.
-
-## 1.9.2 - 15.06.2015
-
-- Fixed minor bug with attachment pages.
-- Fixed minor bug with navigation submenu color on mobile devices.
-- Other menu styling improvements
-- Added Simplified Chinese thanks to KagurazakaKotori
-
-## 1.9.1 - 05.06.2015
-
-- Fixed two minor bugs in custom theme widgets
-
-## 1.9.0 - 21.05.2015
-
-- Introduced option to change full content vs excerpt for blog page.
-- New option to disable comments on static pages via Customizer
-- Removed redundant search form override
-- Added Spotify icon
-- Updated FontAwesome library to 4.3
-- Added Indonesian translation
-
-## 1.8.5 - 21.05.2015
-
-- Properly escaped all translation strings
-- Updated translation files
-
-## 1.8.3 - 04.05.2015
-
-- Added Czech translation
-- Added Ukrainian translation thanks to Vladyslav
-- Added Traditional Chinese thanks to ShuChun
-
-## 1.8.2 - 23.04.2015
-
-- Fixed overlapping CSS selectors when using tag called "navigation".
-- Improved coding for author box below post content
-- Author box is now visible only if there is a author bio/description to show.
-
-## 1.8.1 - 16.04.2015
-
-- Removed accidentally added string from header.php
-
-## 1.8.0 - 04.04.2015
-
-- Updated Options Framework
-- Improved theme translation support
-- Added support for WPML multilingual plugin
-- Other code tweaks and cleanups
-- Added Lithuanian translation
-
-## 1.7.12 - 23.03.2015
-
-- Updated Bootstrap framework to 3.3.4
-- Fixed comment layout on mobile when multiple levels of comments are present
-
-## 1.7.11 - 20.03.2015
-
-- Added Japanese translation
-
-## 1.7.10 - 16.03.2015
-
-- Added Bulgarian translation thanks to @pbosakov
-
-## 1.7.9 - 02.03.2015
-
-- Added Turkish translation thanks to Ender İskender
-
-## 1.7.8 - 11.02.2015
-
-- Improved favicon functionality. Now loaded in WordPress dashboard and frontend.
-
-## 1.7.7 - 23.01.2015
-
-- Fixed minor problems with newly introduced title-tag
-
-## 1.7.6 - 23.01.2015
-
-- Theme now uses "title-tag" that was introduced with WordPress 4.1
-- Updated Bootstrap to 3.3.2
-
-## 1.7.5 - 14.01.2015
-
-- Removed front-page.php template. Instead you can use full-width or regular page template on frontpage
-- Small code cleanup
-- Updated Bootstrap classes for full-width template
-- Updated Russian translation
-
-## 1.7.1 - 15.11.2014
-
-- Updated Bootstrap to v3.3.1
-
-## 1.7.0 - 30.10.2014
-
-- Updated Bootstrap to 3.3.0
-- Updated Font Awesome icons to 4.2.0
-
-## 1.6.3 - 29.10.2014
-
-- Improved Child Theme support
-- Addded GitHub Icon
-
-## 1.6.2 - 23.08.2014
-
-- Added Romanian translation thanks to Bogdan Patru
-
-## 1.6.1 - 31.07.2014
-
-- Added Skype URI support for icons
-- Added Persian language thanks to Robert Nicjoo
-- Added Portuguese (Portugal) translation thanks to Vasco Cruz
-
-## 1.6.0 - 16.07.2014
-
-- Added Portuguese translation thanks to Lucas Mandelli
-- Updated Bootstrap to 3.2
-- Added more flexibility to slider functions via functions.min.js file.
-- Fixed problems with IE 10 & 11
-- Updated modernizer
-- Added bbPress support
-- Improved theme responsiveness
-
-## 1.5.1 - 26.06.2014
-
-- Updated German translations
-- Added another German translation with more polite form thanks to Steffen Lober
-
-## 1.5.0 - 26.05.2014
-
-- Improved Child Theme support
-- Recreated Social Icons
-- Added SoundCloud and Vimeo icons
-- Recreated default WordPress gallery support
-- Improved code consistency in extra.php file
-- Several other code improvement for main theme functions
-- Recreated logic behind color in Theme Options. Now these settings provides with more flexibility.
-- Added German translations thanks to Bernd Schray
-
-## 1.4.2 - 24.05.2014
-
-- Fixed problem with mobile navigation
-- Improved customization options for Navigation bar
-- Defined default social icon color.
-
-## 1.4.1 - 19.05.2014
-
-- Added Russian translation thanks to Evgeny Able
-- Improved Child Theme support
-- Updated Dutch translation
-
-## 1.4.0 - 18.05.2014
-
-- Fixed next/previos button placement on mobile devices.
-- Improved full-width page layout.
-- Added Polish translation thanks to jerry1333 (http://www.jerry1333.net/)
-- Added Dutch translation thanks to Niels Hoogenhout (http://nielshoogenhout.nl/)
-- Updated Options Framework to 1.8.0
-- Updated FontAwesome to 4.1
-
-## 1.3.0 - 12.05.2014
-
-- Added foursquare icon in Sparkling social widget and footer.
-- Added Italian translation thanks to Achille D'Aniello
-- Added French translation thanks to Antoine Lorence
-- Updated translations files
-- Updated 404 error page (404.php)
-- Improved WordPress default galleries
-- Added different content width for full-width pages.
-
-## 1.2.1 - 06.05.2014
-
-- Fixed a tiny bug when comments are closed for single posts.
-
-## 1.2.0 - 29.04.2014
-
-- Added Spanish translation thanks to Hugo (http://hartodebuscar.blogspot.com/)
-- Moved some functions from jQuery to PHP to avoid conflicts with plugins and other JavaScript based scripts.
-- Improved main theme JavaScript compatibility with other plugins and scripts.
-- Added Modernizr for better HTML5 and CSS3 support
-
-## 1.1 - 25.04.2014
-
-- Removed all traces from Underscore template that weren't replaced already. Theme is still based on Underscore but removed some strings to avoid confusion.
-
-## 1.0.4 - 17.04.2014
-
-- Changed Author URI.
-- Added right heading tag for default widgets
-
-## 1.0.1 - 02.04.2014
-
-- Social network urls are now properly escaped using "esc_url"
-- Added licensing information for images in theme screenshot
-- Updated screenshot
-- Improved wp_register_style for Google fonts to be compatible with SSL
-- Removed do_shortcodes from extras.php which falls under plugin territory
-- Fixed missing .js error.
-
-## 1.0 - 01.04.2014
-
-Initial release
+Unless otherwise noted, all images are created by Colorlib and distributed under the same license
+as the theme.
