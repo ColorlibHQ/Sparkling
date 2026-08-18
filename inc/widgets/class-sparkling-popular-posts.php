@@ -6,7 +6,7 @@
  */
 class Sparkling_Popular_Posts extends WP_Widget {
 	function __construct() {
-		add_action( 'admin_init', array( $this, 'enqueue' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue' ) );
 		add_action( 'customize_controls_enqueue_scripts', array( $this, 'enqueue' ) );
 		$widget_ops = array(
 			'classname'   => 'sparkling-popular-posts',
@@ -15,9 +15,29 @@ class Sparkling_Popular_Posts extends WP_Widget {
 		  parent::__construct( 'sparkling_popular_posts', esc_html__( 'Sparkling Popular Posts Widget', 'sparkling' ), $widget_ops );
 	}
 
-	public function enqueue() {
+	/**
+	 * Enqueue the widget's media picker, but only where the widget form renders.
+	 *
+	 * This used to run on admin_init, which fires on every admin screen. That
+	 * mattered because wp_enqueue_media() is one-shot -- core guards it with
+	 * `if ( did_action( 'wp_enqueue_media' ) ) { return; }` -- so calling it
+	 * here with no arguments won the race against
+	 * edit-form-advanced.php's `wp_enqueue_media( array( 'post' => $post->ID ) )`.
+	 * The post edit screen was then left with the default
+	 * `'post' => array( 'id' => 0 )`, so wp.media had no update-post_{id} nonce
+	 * and setting a featured image failed with a 403.
+	 *
+	 * Scoped to the widgets screen and the Customizer, where this widget's form
+	 * is actually shown. See https://github.com/ColorlibHQ/Sparkling/issues/272
+	 *
+	 * @param string $hook Current admin page, passed by admin_enqueue_scripts.
+	 */
+	public function enqueue( $hook = '' ) {
 
-		if ( is_admin() ) {
+		$on_widgets   = ( 'widgets.php' === $hook );
+		$on_customize = ( 'customize.php' === $hook || 'customize_controls_enqueue_scripts' === current_action() );
+
+		if ( $on_widgets || $on_customize ) {
 			wp_enqueue_media();
 			wp_enqueue_script( 'sparkling-popular-post-script', get_template_directory_uri() . '/assets/js/widget.js', array( 'jquery' ), SPARKLING_VERSION, true );
 			$args = array(
