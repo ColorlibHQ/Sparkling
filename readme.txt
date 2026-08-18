@@ -94,6 +94,8 @@ Screenshot image
 = 2.6.4 =
 * Fixed the featured image failing with a 403 Forbidden on the post edit screen (issue #272). The Popular Posts widget enqueued its media picker on admin_init, which fires on every admin screen. wp_enqueue_media() only runs once per request -- core guards it with did_action() -- so that call won the race against the post editor's own wp_enqueue_media( array( 'post' => $post->ID ) ), leaving wp.media with no post context and therefore no update-post_{id} nonce. The enqueue now runs on admin_enqueue_scripts, scoped to the widgets screen and the Customizer, which are the only places this widget's form is rendered.
 
+* Fixed the sidebar dropping below the content at exactly 992px, and the slider caption disappearing at exactly 768px (issue #267). Three media queries used Bootstrap 3's breakpoint values as max-width instead of one pixel below them, so at exactly 768px and 992px both the mobile rule and Bootstrap's grid rule applied. The theme's rule won on specificity and unfloated the content, dropping the sidebar. Boundaries are now 767/768 and 991/992 with no overlap and no gap, in both style.css and assets/css/flexslider.css.
+
 = 2.6.3 =
 * Welcome screen: Recommended Plugins now renders WordPress core's own plugin-card markup, so its grid, buttons and
   responsive columns come from core instead of ~80 lines of theme CSS. Fixed a collapsed container and oversized

@@ -962,7 +962,7 @@ button:focus,
     margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .pull-right {
         float: none !important;
     }
@@ -1146,7 +1146,7 @@ button:focus,
     color: #fff;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .dropdown-menu .caret {
         border-top: 4px solid transparent;
         border-bottom: 4px solid transparent;
@@ -1783,7 +1783,7 @@ p.logged-in-as {
     text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .site-info, .copyright {
         text-align: center;
     }
@@ -2493,7 +2493,7 @@ p.logged-in-as {
     content: "\e962";
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .site-branding {
         text-align: center;
     }
