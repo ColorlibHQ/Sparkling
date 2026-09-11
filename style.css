@@ -656,7 +656,7 @@ object {
 #secondary .widget_archive ul li:before,
 #secondary .widget_categories ul li:before,
 #secondary .widget_recent_comments ul li:before {
-    font-family: 'Font Awesome\ 5 Free';
+    font-family: "Font Awesome 7 Free";
     margin-right: 10px;
 }
 
@@ -2186,130 +2186,152 @@ p.logged-in-as {
 }
 
 #menu-social li a[href*="twitter.com"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f099"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f099";
+    font-weight: 400;
 }
 
 #menu-social li a[href*="xing.com"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f168"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f168";
+    font-weight: 400;
 }
 
 #menu-social li a[href*="facebook.com"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
+    font-family: "Font Awesome 7 Brands";
     content: "\f39e";
     font-weight: 900;
 }
 
 #menu-social li a[href*="github.com"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f09b"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f09b";
+    font-weight: 400;
 }
 
 #menu-social li a[href*="gitlab.com"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f296"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f296";
+    font-weight: 400;
 }
 
 #menu-social li a[href*="stackoverflow.com"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f16c"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f16c";
+    font-weight: 400;
 }
 
 #menu-social li a[href*="/feed"]:before {
-    font-family: 'Font Awesome\ 5 Free';
+    font-family: "Font Awesome 7 Free";
     content: "\f09e";
     font-weight: 900;
 }
 
 #menu-social li a[href*="dribbble.com"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f17d"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f17d";
+    font-weight: 400;
 }
 
 #menu-social li a[href*="skype.com"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f17e"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f17e";
+    font-weight: 400;
 }
 
 #menu-social li a[href*="foursquare.com"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f180"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f180";
+    font-weight: 400;
 }
 
 #menu-social li a[href*="spotify.com"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f1bc"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f1bc";
+    font-weight: 400;
 }
 
 #menu-social li a[href*="soundcloud.com"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f1be"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f1be";
+    font-weight: 400;
 }
 
 #menu-social li a[href*="vimeo.com"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f194"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f194";
+    font-weight: 400;
 }
 
 #menu-social li a[href*="youtube.com"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f167"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f167";
+    font-weight: 400;
 }
 
 #menu-social li a[href*="instagram.com"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f16d"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f16d";
+    font-weight: 400;
 }
 
 #menu-social li a[href*="flickr.com"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f16e"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f16e";
+    font-weight: 400;
 }
 
 #menu-social li a[href*="tumblr.com"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f173"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f173";
+    font-weight: 400;
 }
 
 #menu-social li a[href*="pinterest.com"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f0d2"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f0d2";
+    font-weight: 400;
 }
 
 #menu-social li a[href*="plus.google.com"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f0d5"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f0d5";
+    font-weight: 400;
 }
 
 #menu-social li a[href*="linkedin.com"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f0e1"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f0e1";
+    font-weight: 400;
 }
 
 #menu-social li a[href*="slideshare.net"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f1e7"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f1e7";
+    font-weight: 400;
 }
 
 #menu-social li a[href*="mailto"]:before {
-    font-family: 'Font Awesome\ 5 Free';
+    font-family: "Font Awesome 7 Free";
     content: "\f0e0"
 }
 
 #menu-social li a[href*="t.me"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f2c6"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f2c6";
+    font-weight: 400;
 }
 
 #menu-social li a[href*="telegram.me"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f2c6"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f2c6";
+    font-weight: 400;
 }
 
 #menu-social li a[href*="docker.com"]:before {
-    font-family: 'Font Awesome\ 5 Brands';
-    content: "\f395"
+    font-family: "Font Awesome 7 Brands";
+    content: "\f395";
+    font-weight: 400;
 }
 
 /* Academicons - @since 2.4.0 */

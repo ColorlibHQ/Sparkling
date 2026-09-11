@@ -11,7 +11,7 @@
 	  <label class="screen-reader-text" for="s"><?php esc_html_e( 'Search for:', 'sparkling' ); ?></label>
 	<input type="text" class="form-control search-query" placeholder="<?php echo esc_attr_x( 'Search&hellip;', 'placeholder', 'sparkling' ); ?>" value="<?php echo get_search_query(); ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label', 'sparkling' ); ?>" />
 	<span class="input-group-btn">
-	  <button type="submit" class="btn btn-default" name="submit" id="searchsubmit" value="<?php echo esc_attr_x( 'Search', 'submit button', 'sparkling' ); ?>"><span class="glyphicon glyphicon-search"></span></button>
+	  <button type="submit" class="btn btn-default" name="submit" id="searchsubmit" value="<?php echo esc_attr_x( 'Search', 'submit button', 'sparkling' ); ?>"><span class="fa-solid fa-magnifying-glass"></span></button>
 	</span>
   </div>
 </form>

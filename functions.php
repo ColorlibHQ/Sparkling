@@ -337,7 +337,17 @@ function sparkling_scripts() {
 	wp_enqueue_style( 'sparkling-bootstrap', $template_uri . '/assets/css/bootstrap.min.css', array(), '3.4.1' );
 
 	// Add Font Awesome stylesheet
-	wp_enqueue_style( 'sparkling-icons', $template_uri . '/assets/css/fontawesome-all.min.css', array(), '5.1.1', 'all' );
+	/*
+	 * Font Awesome 7, self-hosted and split by style: the core file carries the icon
+	 * name map, each style file adds one @font-face. No v4 or v5 shim is loaded --
+	 * the theme's markup uses native names -- and only woff2 ships, which every
+	 * browser able to run a current WordPress supports. The theme renders no outline
+	 * icons, so the regular face is not bundled.
+	 */
+	$fa_uri = $template_uri . '/assets/css/fontawesome/';
+	wp_enqueue_style( 'sparkling-icons', $fa_uri . 'fontawesome.min.css', array(), '7.3.1', 'all' );
+	wp_enqueue_style( 'sparkling-icons-solid', $fa_uri . 'solid.min.css', array( 'sparkling-icons' ), '7.3.1', 'all' );
+	wp_enqueue_style( 'sparkling-icons-brands', $fa_uri . 'brands.min.css', array( 'sparkling-icons' ), '7.3.1', 'all' );
 
 
 	if ( apply_filters( 'sparkling_allow_google_fonts', true ) ) {
