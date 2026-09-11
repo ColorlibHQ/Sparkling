@@ -373,7 +373,7 @@ function sparkling_scripts() {
 
 	if ( $sparkling_slider_active ) {
 		// Add slider JS only if is front page ans slider is enabled
-		wp_enqueue_script( 'flexslider-js', $template_uri . '/assets/js/vendor/flexslider.min.js', array( 'jquery' ), '2.7.0', true );
+		wp_enqueue_script( 'flexslider-js', $template_uri . '/assets/js/vendor/flexslider.min.js', array( 'jquery' ), '2.7.2', true );
 		// Flexslider customization
 		wp_enqueue_script(
 			'flexslider-customization', $template_uri . '/assets/js/flexslider-custom.js', array(
