@@ -1,6 +1,6 @@
 # Sparkling — Free Responsive WordPress Blog & Business Theme
 
-[![Version](https://img.shields.io/badge/version-2.6.8-blue.svg)](https://github.com/ColorlibHQ/Sparkling/releases)
+[![Version](https://img.shields.io/badge/version-2.6.9-blue.svg)](https://github.com/ColorlibHQ/Sparkling/releases)
 [![WordPress](https://img.shields.io/badge/WordPress-6.0%20–%207.0-21759b.svg)](https://wordpress.org/themes/sparkling/)
 [![PHP](https://img.shields.io/badge/PHP-7.4%20–%208.5-777bb4.svg)](https://www.php.net/)
 [![License](https://img.shields.io/badge/license-GPL--2.0--or--later-green.svg)](https://www.gnu.org/licenses/gpl-2.0.html)

@@ -1,3 +1,6 @@
+### 2.6.9
+* Removed five development dotfiles from the distributed package -- .jscsrc, .jshintrc, .jshintignore, .standard.json and .travis.yml. WordPress.org rejects an upload containing files its automated review cannot read. They stay in the repository, where they belong; grunt's own copy task never shipped them, and they are now export-ignored so GitHub's "Download ZIP" does not either.
+
 ### 2.6.8
 * Corrected the capitalisation of "WordPress" in 5 obsolete translation strings. WordPress.org's automated theme scan reports any spelling of WordPress other than that exact form as a required fix, and it reads .po files.
 
