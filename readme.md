@@ -1,6 +1,6 @@
 # Sparkling — Free Responsive WordPress Blog & Business Theme
 
-[![Version](https://img.shields.io/badge/version-2.6.5-blue.svg)](https://github.com/ColorlibHQ/Sparkling/releases)
+[![Version](https://img.shields.io/badge/version-2.6.6-blue.svg)](https://github.com/ColorlibHQ/Sparkling/releases)
 [![WordPress](https://img.shields.io/badge/WordPress-6.0%20–%207.0-21759b.svg)](https://wordpress.org/themes/sparkling/)
 [![PHP](https://img.shields.io/badge/PHP-7.4%20–%208.5-777bb4.svg)](https://www.php.net/)
 [![License](https://img.shields.io/badge/license-GPL--2.0--or--later-green.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
@@ -153,7 +153,7 @@ Bundled third-party resources:
 |---|---|---|
 | [Bootstrap](https://getbootstrap.com/) | 3.4.1 | MIT |
 | [FlexSlider](https://github.com/woocommerce/FlexSlider) | 2.7.2 | GPLv2 |
-| [Font Awesome Free](https://fontawesome.com/license) | 5.0.11 | Icons CC BY 4.0, Fonts SIL OFL 1.1, Code MIT |
+| [Font Awesome Free](https://fontawesome.com/license) | 7.3.1 | Icons CC BY 4.0, Fonts SIL OFL 1.1, Code MIT |
 | [Academicons](https://jpswalsh.github.io/academicons/) | 1.8.6 | Fonts SIL OFL 1.1, Code MIT |
 | [WP Bootstrap Navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker) | — | GPLv2 or later |
 

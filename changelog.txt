@@ -1,3 +1,9 @@
+### 2.6.6
+* Replaced the bundled Font Awesome 5.0.11 -- not the 5.1.1 the enqueue declared -- with a self-hosted Font Awesome 7.3.1. Only woff2 is shipped: the eot, svg, ttf and woff copies could never be downloaded, because a browser takes the first format it supports from the @font-face src list. The svg copies alone were 1,056 KB. Bundled icon fonts drop from 1,828 KB to 332 KB.
+* No v4 or v5 compatibility shim is loaded. Every icon class the templates render is a native Font Awesome 7 name, verified against the bundled name map. The stylesheets load split by style -- the core name map, solid and brands -- rather than all.min.css, which also carries v4 and v5 @font-face blocks the theme has no use for. The theme renders no outline icons, so the regular face is not bundled.
+* The social menu sets codepoints directly and named the Font Awesome 5 families, which the 7 stylesheets do not declare, so every one of those icons would have vanished. All 23 brand rules and 3 solid rules now name the Font Awesome 7 families, with the brand rules stating weight 400 rather than inheriting it. Every codepoint was checked against the family its rule names.
+* The search button used a Bootstrap glyphicon, which pulled Bootstrap's icon font on every page carrying a search form. It uses Font Awesome, which is already loaded.
+
 ### 2.6.5
 Security release. Two bundled libraries were older than the versions the theme declared, and both of the missing releases were the ones that fixed a cross-site scripting defect.
 

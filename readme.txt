@@ -4,7 +4,7 @@ Contributors: colorlib
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 2.6.5
+Stable tag: 2.6.6
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, news, e-commerce, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, editor-style, featured-images, footer-widgets, full-width-template, post-formats, sticky-post, theme-options, block-styles, wide-blocks
@@ -90,6 +90,11 @@ Screenshot image
     Copyright Colorlib, distributed under the same license as the theme.
 
 == Changelog ==
+
+= 2.6.6 =
+* Replaced Font Awesome 5.0.11 with a self-hosted Font Awesome 7.3.1, woff2 only and with no v4/v5 shim. Bundled icon fonts drop from 1,828 KB to 332 KB.
+* The social menu named the Font Awesome 5 families, which Font Awesome 7 does not declare; every one of those icons would have disappeared. All 26 rules now name the Font Awesome 7 families.
+* The search button no longer uses a Bootstrap glyphicon, so Bootstrap's icon font is not requested.
 
 = 2.6.5 =
 * Security: Bootstrap's JavaScript was still 3.3.7 while the theme declared 3.4.1, so CVE-2019-8331 (cross-site scripting through the data-template attribute of tooltips and popovers) was never actually fixed -- only the stylesheet had been replaced. Both Bootstrap files are now stock 3.4.1.
