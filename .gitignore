@@ -2,3 +2,6 @@ node_modules/*
 .idea/*
 sparkling.zip
 .gitignore
+
+# macOS
+.DS_Store
