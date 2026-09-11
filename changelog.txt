@@ -1,3 +1,6 @@
+### 2.6.8
+* Corrected the capitalisation of "WordPress" in 5 obsolete translation strings. WordPress.org's automated theme scan reports any spelling of WordPress other than that exact form as a required fix, and it reads .po files.
+
 ### 2.6.7
 * Fixed the Font Awesome webfonts returning 404. The stylesheets reference url(../webfonts/...), which resolves next to the stylesheet, and the fonts had been placed a directory too high -- so no icon rendered at all.
 * The bundled Font Awesome is now subsetted to the glyphs the theme renders, loaded by default, with the complete build still shipped for sites that need it: add_filter( 'sparkling_full_fontawesome', '__return_true' ). Measured on WordPress 7.1 and PHP 8.5, median of three Lighthouse runs: performance 86 to 93, First Contentful Paint 1.05s faster, font payload 210 KB to 97 KB.

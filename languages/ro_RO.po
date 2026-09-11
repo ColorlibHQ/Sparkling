@@ -1280,7 +1280,7 @@ msgstr "Citește mai mult"
 #~ msgstr "Încarcă"
 
 #~ msgid "Upgrade your version of WordPress for full media support."
-#~ msgstr "Actualizează versiunea Wordpress pentru suport media îmbunătățit."
+#~ msgstr "Actualizează versiunea WordPress pentru suport media îmbunătățit."
 
 #~ msgid "View File"
 #~ msgstr "Vezi fișier"

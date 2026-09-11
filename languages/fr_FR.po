@@ -1288,7 +1288,7 @@ msgstr "Lire la suite"
 
 #~ msgid "Upgrade your version of WordPress for full media support."
 #~ msgstr ""
-#~ "Mettez à niveau votre version de Wordpress pour un support complet des "
+#~ "Mettez à niveau votre version de WordPress pour un support complet des "
 #~ "Médias"
 
 #~ msgid "View File"
