@@ -1,3 +1,7 @@
+### 2.6.7
+* Fixed the Font Awesome webfonts returning 404. The stylesheets reference url(../webfonts/...), which resolves next to the stylesheet, and the fonts had been placed a directory too high -- so no icon rendered at all.
+* The bundled Font Awesome is now subsetted to the glyphs the theme renders, loaded by default, with the complete build still shipped for sites that need it: add_filter( 'sparkling_full_fontawesome', '__return_true' ). Measured on WordPress 7.1 and PHP 8.5, median of three Lighthouse runs: performance 86 to 93, First Contentful Paint 1.05s faster, font payload 210 KB to 97 KB.
+
 ### 2.6.6
 * Replaced the bundled Font Awesome 5.0.11 -- not the 5.1.1 the enqueue declared -- with a self-hosted Font Awesome 7.3.1. Only woff2 is shipped: the eot, svg, ttf and woff copies could never be downloaded, because a browser takes the first format it supports from the @font-face src list. The svg copies alone were 1,056 KB. Bundled icon fonts drop from 1,828 KB to 332 KB.
 * No v4 or v5 compatibility shim is loaded. Every icon class the templates render is a native Font Awesome 7 name, verified against the bundled name map. The stylesheets load split by style -- the core name map, solid and brands -- rather than all.min.css, which also carries v4 and v5 @font-face blocks the theme has no use for. The theme renders no outline icons, so the regular face is not bundled.
