@@ -1,0 +1,7 @@
+# Files that exist for the repository, not for the shipped theme. Without these,
+# GitHub's "Download ZIP" (which is git archive) hands users the repo scaffolding.
+/.gitattributes  export-ignore
+/.gitignore      export-ignore
+/.github/        export-ignore
+/CLAUDE.md       export-ignore
+/README.md       export-ignore
