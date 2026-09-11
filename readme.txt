@@ -4,7 +4,7 @@ Contributors: colorlib
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 2.6.4
+Stable tag: 2.6.5
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, news, e-commerce, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, editor-style, featured-images, footer-widgets, full-width-template, post-formats, sticky-post, theme-options, block-styles, wide-blocks
@@ -90,6 +90,10 @@ Screenshot image
     Copyright Colorlib, distributed under the same license as the theme.
 
 == Changelog ==
+
+= 2.6.5 =
+* Security: Bootstrap's JavaScript was still 3.3.7 while the theme declared 3.4.1, so CVE-2019-8331 (cross-site scripting through the data-template attribute of tooltips and popovers) was never actually fixed -- only the stylesheet had been replaced. Both Bootstrap files are now stock 3.4.1.
+* Security: FlexSlider moves to 2.7.2. 2.7.0 built its thumbnail navigation by concatenating data-thumb-alt, which comes from the attachment's alt text, into an HTML string.
 
 = 2.6.4 =
 * Fixed the featured image failing with a 403 Forbidden on the post edit screen (issue #272). The Popular Posts widget enqueued its media picker on admin_init, which fires on every admin screen. wp_enqueue_media() only runs once per request -- core guards it with did_action() -- so that call won the race against the post editor's own wp_enqueue_media( array( 'post' => $post->ID ) ), leaving wp.media with no post context and therefore no update-post_{id} nonce. The enqueue now runs on admin_enqueue_scripts, scoped to the widgets screen and the Customizer, which are the only places this widget's form is rendered.

@@ -1,3 +1,10 @@
+### 2.6.5
+Security release. Two bundled libraries were older than the versions the theme declared, and both of the missing releases were the ones that fixed a cross-site scripting defect.
+
+* Bootstrap's JavaScript was 3.3.7, not the 3.4.1 the enqueue and this changelog both claimed. 2.5.0 replaced the stylesheet and left assets/js/vendor/bootstrap.min.js untouched, so the theme still carried CVE-2019-8331: tooltips and popovers rendered the data-template attribute without sanitising it. 3.4.1 is the release that added the element and attribute allow-list, and because the defect is in the JavaScript, upgrading the stylesheet alone never addressed it. Both the minified and unminified files are now stock 3.4.1 and contain the sanitiser.
+* FlexSlider moves from 2.7.0 to 2.7.2. 2.7.0 assembled the thumbnail control-nav by concatenating data-thumb, data-thumb-alt and data-thumb-captions into an HTML string, so those attribute values were parsed as markup; data-thumb-alt is populated from the attachment's alt text, which is not under the theme's control. 2.7.2 builds the same nodes with jQuery attribute setters.
+* Both replacements were checked against the upstream releases first and were stock, so no theme-specific changes were lost. The readme's third-party table now lists the versions actually bundled.
+
 ### 2.6.4
 * Fixed the featured image failing with a 403 Forbidden on the post edit screen (issue #272). The Popular Posts widget enqueued its media picker on admin_init, which fires on every admin screen. wp_enqueue_media() only runs once per request -- core guards it with did_action() -- so that call won the race against the post editor's own wp_enqueue_media( array( 'post' => $post->ID ) ), leaving wp.media with no post context and therefore no update-post_{id} nonce. The enqueue now runs on admin_enqueue_scripts, scoped to the widgets screen and the Customizer, which are the only places this widget's form is rendered.
 
