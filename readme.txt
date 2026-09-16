@@ -4,7 +4,7 @@ Contributors: colorlib
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 2.6.9
+Stable tag: 2.6.10
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, news, e-commerce, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, editor-style, featured-images, footer-widgets, full-width-template, post-formats, sticky-post, theme-options, block-styles, wide-blocks
@@ -90,6 +90,12 @@ Screenshot image
     Copyright Colorlib, distributed under the same license as the theme.
 
 == Changelog ==
+
+= 2.6.10 =
+* Fixed the Customizer failing to open with "Class Epsilon_Section_Recommended_Actions not found". The 2.6.x packages shipped an outdated inc/welcome-screen/welcome-page-setup.php that still used classes removed with the Epsilon framework.
+* Restored Appearance > About Sparkling, which the same outdated file never registered.
+* The About page now shows the Sparkling version, not the child theme's, and the header text colour is escaped again.
+* The bundled Font Awesome subset was missing the rules that bind an icon class to a font face, so .fa-brands resolved to a face containing no brand glyphs and .fa-regular drew the solid variant.
 
 = 2.6.6 =
 * Replaced Font Awesome 5.0.11 with a self-hosted Font Awesome 7.3.1, woff2 only and with no v4/v5 shim. Bundled icon fonts drop from 1,828 KB to 332 KB.

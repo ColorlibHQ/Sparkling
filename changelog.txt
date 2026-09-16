@@ -1,3 +1,11 @@
+### 2.6.10
+* Fixed the Customizer failing to open on every site running Sparkling 2.6.x, with "Class Epsilon_Section_Recommended_Actions not found". The 2.6.0 release removed the bundled Epsilon framework, and the repository's copy of inc/welcome-screen/welcome-page-setup.php was rewritten to match -- but the published 2.6.x packages shipped an older version of that file, which still constructed two of the removed classes on every customize_register. Its two Customizer sections are now native WP_Customize_Section links: one to the recommended plugins, one to the documentation.
+* Restored Appearance > About Sparkling. The same stale file never called new Sparkling_Welcome(), and the class was otherwise only instantiated inside the About page's own tab templates -- so the page could never register itself, and its address returned "Sorry, you are not allowed to access this page".
+* The About page now reports the Sparkling version rather than the child theme's.
+* Restored the escaping of the header text colour in inc/custom-header.php, which the same stale files had reverted.
+* The bundled Font Awesome subset was missing the rules that bind an icon class to a font face, so .fa-brands resolved to a face containing no brand glyphs and .fa-regular drew the solid variant. Those rules are back.
+* Removed two sourceMappingURL comments pointing at .map files the package does not ship.
+
 ### 2.6.9
 * Removed five development dotfiles from the distributed package -- .jscsrc, .jshintrc, .jshintignore, .standard.json and .travis.yml. WordPress.org rejects an upload containing files its automated review cannot read. They stay in the repository, where they belong; grunt's own copy task never shipped them, and they are now export-ignored so GitHub's "Download ZIP" does not either.
 
