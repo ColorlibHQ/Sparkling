@@ -485,7 +485,7 @@ class Sparkling_Welcome {
             wp_die( esc_html__( 'You are not allowed to access this page.', 'sparkling' ) );
         }
 
-        $sparkling  = wp_get_theme();
+        $sparkling  = wp_get_theme( get_template() ); // the parent: a child theme would report its own version
         $allowed    = array( 'getting_started', 'recommended_actions', 'recommended_plugins', 'changelog', 'support' );
         $active_tab = isset( $_GET['tab'] ) ? sanitize_key( wp_unslash( $_GET['tab'] ) ) : 'getting_started';
 

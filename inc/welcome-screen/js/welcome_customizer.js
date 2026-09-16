@@ -1,4 +1,14 @@
 (function (api) {
+  // Sections that are a link rather than a panel of controls (see
+  // inc/class-sparkling-customize-link-section.php). Core hides any section
+  // with no active controls, so without this they are printed and never shown.
+  api.sectionConstructor['sparkling-link'] = api.Section.extend({
+    attachEvents: function () {},
+    isContextuallyActive: function () {
+      return true;
+    },
+  });
+
   // Extends our custom "sparkling-pro-section" section.
   api.sectionConstructor['sparkling-recomended-section'] = api.Section.extend({
     // No events for this type of section.
