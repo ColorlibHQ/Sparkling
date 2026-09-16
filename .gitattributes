@@ -12,3 +12,6 @@
 /README.md       export-ignore
 /Gruntfile.js    export-ignore
 *.map            export-ignore
+/package.json       export-ignore
+/phpcs.ruleset.xml  export-ignore
+/set_tags.sh        export-ignore
