@@ -76,12 +76,34 @@ for cps, mp in ((used_solid | used_regular, core_map), (used_brands, brand_map))
         if c in rev: defs.append(','.join(f'.fa-{n}' for n in sorted(rev[c])) + '{--fa:"\\%s"}' % c)
 FACE = ('@font-face{font-family:"%s";font-style:normal;font-weight:%s;font-display:block;'
         'src:url(%s.woff2) format("woff2")}')
+
+HEADER = re.match(r'/\*!.*?\*/', (fa / 'solid.min.css').read_text(), re.S).group(0)
+
+def style_rules(sheet):
+    """Everything a style stylesheet declares except its @font-face.
+
+    These carry the :root custom properties and the .fa-solid / .fa-regular /
+    .fa-brands rules that bind a class to a family and weight. Leave them out
+    and .fa-brands falls back to the Free face, where no brand glyph exists,
+    and .fa-regular loses --fa-style:400 and quietly draws the solid variant.
+    brands.min.css also carries the full 572-name brand map, which the subset
+    emits for itself below, so that goes too.
+    """
+    css = (fa / sheet).read_text()
+    css = re.sub(r'@font-face\{[^}]*\}', '', css)
+    css = re.sub(r'((?:\.fa-[a-z0-9-]+,?)+)\{--fa:"[^"]*"\}', '', css)
+    return css.replace(HEADER, '').strip()
+
 ff = []
-if used_solid:   ff.append(FACE % ('Font Awesome 7 Free', '900', 'fa-solid-900'))
-if used_regular: ff.append(FACE % ('Font Awesome 7 Free', '400', 'fa-regular-400'))
+if used_solid:
+    ff.append(style_rules('solid.min.css'))
+    ff.append(FACE % ('Font Awesome 7 Free', '900', 'fa-solid-900'))
+if used_regular:
+    ff.append(style_rules('regular.min.css'))
+    ff.append(FACE % ('Font Awesome 7 Free', '400', 'fa-regular-400'))
 if used_brands:
+    ff.append(style_rules('brands.min.css'))
     ff.append(FACE % ('Font Awesome 7 Brands', '400', 'fa-brands-400'))
-    ff.append('.fa-brands,.fab{--fa-family:var(--fa-family-brands);--fa-style:400}')
 banner = ("/*!\n * Font Awesome 7.3.1 subset for this theme, built by .github/build-icon-subset.py\n"
           " * Contains only the glyphs the theme renders. Load the complete Font Awesome with:\n"
           " *   add_filter( '%s_full_fontawesome', '__return_true' );\n"
