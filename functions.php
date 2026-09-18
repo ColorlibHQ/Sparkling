@@ -752,3 +752,14 @@ require get_template_directory() . '/inc/class-sparkling-customize-toggle-contro
 
 //Include Welcome Screen
 require get_template_directory() . '/inc/welcome-screen/welcome-page-setup.php';
+
+
+/**
+ * Editor and markup support this theme predates.
+ */
+if ( ! function_exists( 'sparkling_modern_supports' ) ) {
+	function sparkling_modern_supports() {
+		add_theme_support( 'editor-styles' );
+	}
+	add_action( 'after_setup_theme', 'sparkling_modern_supports', 20 );
+}
