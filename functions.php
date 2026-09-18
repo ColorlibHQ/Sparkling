@@ -365,13 +365,9 @@ function sparkling_scripts() {
 	if ( apply_filters( 'sparkling_allow_google_fonts', true ) ) {
 
 		// Add Google Fonts
-		$font       = of_get_option( 'main_body_typography' );
-		$fonts_url  = 'https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700%7CRoboto+Slab:400,300,700';
-		$fonts_url .= '&display=swap';
-
-		if ( is_array( $font ) && ! empty( $font['subset'] ) ) {
-			$fonts_url .= '&subset=' . rawurlencode( $font['subset'] );
-		}
+		// The families are bundled under assets/fonts/google, so no
+		// request goes to Google for them.
+		$fonts_url = get_template_directory_uri() . '/assets/css/google-fonts.css';
 
 		wp_register_style( 'sparkling-fonts', $fonts_url, array(), null );
 		wp_enqueue_style( 'sparkling-fonts' );
@@ -426,29 +422,6 @@ function sparkling_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'sparkling_scripts' );
-
-/**
- * Warm up the Google Fonts connections so the stylesheet is not a cold round trip.
- *
- * @param array  $hints         Existing hints for this relation type.
- * @param string $relation_type Relation type being filtered.
- * @return array
- */
-function sparkling_resource_hints( $hints, $relation_type ) {
-	if ( 'preconnect' === $relation_type && wp_style_is( 'sparkling-fonts', 'enqueued' ) ) {
-		$hints[] = array(
-			'href' => 'https://fonts.googleapis.com',
-		);
-		$hints[] = array(
-			'href'        => 'https://fonts.gstatic.com',
-			'crossorigin' => 'anonymous',
-		);
-	}
-
-	return $hints;
-}
-
-add_filter( 'wp_resource_hints', 'sparkling_resource_hints', 10, 2 );
 
 /**
  * Implement the Custom Header feature.
