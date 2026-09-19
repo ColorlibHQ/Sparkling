@@ -38,7 +38,7 @@
 				<?php if ( 'post' == get_post_type() ) : ?>
 				<div class="entry-meta">
 					<?php sparkling_posted_on(); ?><?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-				<span class="comments-link"><i class="fa fa-comments"></i><?php comments_popup_link( esc_html__( 'Leave a comment', 'sparkling' ), esc_html__( '1 Comment', 'sparkling' ), esc_html__( '% Comments', 'sparkling' ) ); ?></span>
+				<span class="comments-link"><i class="fa-solid fa-comments"></i><?php comments_popup_link( esc_html__( 'Leave a comment', 'sparkling' ), esc_html__( '1 Comment', 'sparkling' ), esc_html__( '% Comments', 'sparkling' ) ); ?></span>
 				<?php endif; ?>
 
 				<?php if ( get_edit_post_link() ) : ?>
@@ -49,7 +49,7 @@
 								esc_html__( 'Edit %s', 'sparkling' ),
 								the_title( '<span class="screen-reader-text">"', '"</span>', false )
 							),
-							'<i class="fa fa-edit"></i><span class="edit-link">',
+							'<i class="fa-regular fa-edit"></i><span class="edit-link">',
 							'</span>'
 						);
 					?>

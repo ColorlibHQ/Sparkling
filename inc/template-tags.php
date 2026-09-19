@@ -50,7 +50,7 @@ if ( ! function_exists( 'sparkling_posted_on' ) ) :
 		);
 
 			printf(
-				'<span class="posted-on"><i class="fa fa-calendar-alt"></i> %1$s</span><span class="byline"> <i class="fa fa-user"></i> %2$s</span>',
+				'<span class="posted-on"><i class="fa-solid fa-calendar-alt"></i> %1$s</span><span class="byline"> <i class="fa-solid fa-user"></i> %2$s</span>',
 				sprintf(
 					'<a href="%1$s" rel="bookmark">%2$s</a>',
 					esc_url( get_permalink() ),

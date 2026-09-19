@@ -586,8 +586,8 @@ if ( ! function_exists( 'sparkling_post_nav' ) ) {
 	function sparkling_post_nav() {
 		the_post_navigation(
 			array(
-				'next_text'    => '<span class="post-title">%title <i class="fa fa-chevron-right"></i></span>',
-				'prev_text'    => '<i class="fa fa-chevron-left"></i> <span class="post-title">%title</span>',
+				'next_text'    => '<span class="post-title">%title <i class="fa-solid fa-chevron-right"></i></span>',
+				'prev_text'    => '<i class="fa-solid fa-chevron-left"></i> <span class="post-title">%title</span>',
 				'in_same_term' => true,
 			)
 		);
@@ -602,8 +602,8 @@ if ( ! function_exists( 'sparkling_paging_nav' ) ) {
 	function sparkling_paging_nav() {
 		the_posts_pagination(
 			array(
-				'prev_text' => '<i class="fa fa-chevron-left"></i> ' . __( 'Newer posts', 'sparkling' ),
-				'next_text' => __( 'Older posts', 'sparkling' ) . ' <i class="fa fa-chevron-right"></i>',
+				'prev_text' => '<i class="fa-solid fa-chevron-left"></i> ' . __( 'Newer posts', 'sparkling' ),
+				'next_text' => __( 'Older posts', 'sparkling' ) . ' <i class="fa-solid fa-chevron-right"></i>',
 			)
 		);
 	}

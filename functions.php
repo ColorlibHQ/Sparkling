@@ -334,7 +334,7 @@ function sparkling_scripts() {
 	$sparkling_slider_active = ( is_home() || is_front_page() ) && 1 == of_get_option( 'sparkling_slider_checkbox' );
 
 	// Add Bootstrap default CSS
-	wp_enqueue_style( 'sparkling-bootstrap', $template_uri . '/assets/css/bootstrap.min.css', array(), '3.4.1' );
+	wp_enqueue_style( 'sparkling-bootstrap', $template_uri . '/assets/css/bootstrap.min.css', array(), '5.3.8-4' );
 
 	// Add Font Awesome stylesheet
 	/*
@@ -354,11 +354,11 @@ function sparkling_scripts() {
 	 *     add_filter( 'sparkling_full_fontawesome', '__return_true' );
 	 */
 	if ( apply_filters( 'sparkling_full_fontawesome', false ) ) {
-		wp_enqueue_style( 'sparkling-icons', $fa_uri . 'fontawesome.min.css', array(), '7.3.1', 'all' );
+		wp_enqueue_style( 'sparkling-icons', $fa_uri . 'fontawesome.min.css', array(), '7.3.1-1', 'all' );
 		wp_enqueue_style( 'sparkling-icons-solid', $fa_uri . 'solid.min.css', array( 'sparkling-icons' ), '7.3.1', 'all' );
 		wp_enqueue_style( 'sparkling-icons-brands', $fa_uri . 'brands.min.css', array( 'sparkling-icons' ), '7.3.1', 'all' );
 	} else {
-		wp_enqueue_style( 'sparkling-icons', $fa_uri . 'subset/fontawesome-subset.min.css', array(), '7.3.1', 'all' );
+		wp_enqueue_style( 'sparkling-icons', $fa_uri . 'subset/fontawesome-subset.min.css', array(), '7.3.1-1', 'all' );
 	}
 
 
@@ -377,7 +377,7 @@ function sparkling_scripts() {
 
 	// Add slider CSS only if is front page ans slider is enabled
 	if ( $sparkling_slider_active ) {
-		wp_enqueue_style( 'flexslider-css', $template_uri . '/assets/css/flexslider.css', array(), SPARKLING_VERSION );
+		wp_enqueue_style( 'sparkling-flexslider-css', $template_uri . '/assets/css/flexslider.css', array(), SPARKLING_VERSION );
 	}
 
 	// Add main theme stylesheet
@@ -387,16 +387,16 @@ function sparkling_scripts() {
 	 * Bootstrap's own JS still needs jQuery, but it belongs in the footer: it binds
 	 * its data-api handlers on ready, so nothing is lost by not blocking the head.
 	 */
-	wp_enqueue_script( 'sparkling-bootstrapjs', $template_uri . '/assets/js/vendor/bootstrap.min.js', array( 'jquery' ), '3.4.1', true );
+	wp_enqueue_script( 'sparkling-bootstrapjs', $template_uri . '/assets/js/vendor/bootstrap.min.js', array( 'jquery' ), '5.3.8-4', true );
 
 	if ( $sparkling_slider_active ) {
 		// Add slider JS only if is front page ans slider is enabled
-		wp_enqueue_script( 'flexslider-js', $template_uri . '/assets/js/vendor/flexslider.min.js', array( 'jquery' ), '2.7.2', true );
+		wp_enqueue_script( 'sparkling-flexslider-js', $template_uri . '/assets/js/vendor/flexslider.min.js', array( 'jquery' ), '2.7.2', true );
 		// Flexslider customization
 		wp_enqueue_script(
-			'flexslider-customization', $template_uri . '/assets/js/flexslider-custom.js', array(
+			'sparkling-flexslider-customization', $template_uri . '/assets/js/flexslider-custom.js', array(
 				'jquery',
-				'flexslider-js',
+				'sparkling-flexslider-js',
 			), SPARKLING_VERSION, true
 		);
 	}
@@ -417,7 +417,7 @@ function sparkling_scripts() {
 
 	// Academicons
 	if ( 1 == of_get_option( 'academicons' ) ) {
-		wp_enqueue_style( 'academicons-css', $template_uri . '/assets/css/academicons.min.css', array(), '1.8.6', 'all' );
+		wp_enqueue_style( 'sparkling-academicons-css', $template_uri . '/assets/css/academicons.min.css', array(), '1.8.6', 'all' );
 	}
 }
 

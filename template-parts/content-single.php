@@ -22,7 +22,7 @@
 					$categories_list = get_the_category_list( esc_html__( ', ', 'sparkling' ) );
 				if ( $categories_list && sparkling_categorized_blog() ) :
 				?>
-				<span class="cat-links"><i class="fa fa-folder-open"></i>
+				<span class="cat-links"><i class="fa-solid fa-folder-open"></i>
 				<?php echo ' ' . wp_kses_post( $categories_list ); ?>
 				</span>
 				<?php endif; // End if categories ?>
@@ -34,7 +34,7 @@
 								esc_html__( 'Edit %s', 'sparkling' ),
 								the_title( '<span class="screen-reader-text">"', '"</span>', false )
 							),
-							'<i class="fa fa-edit"></i><span class="edit-link">',
+							'<i class="fa-regular fa-edit"></i><span class="edit-link">',
 							'</span>'
 						);
 					?>
