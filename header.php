@@ -25,7 +25,7 @@
 
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
-<a class="visually-hidden visually-hidden-focusable" href="#content">Skip to main content</a>
+<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 <div id="page" class="hfeed site">
 
 	<header id="masthead" class="site-header" role="banner">
@@ -56,8 +56,8 @@
 															<?php } ?>
 														</div><!-- end of #logo -->
 
-							<button type="button" class="btn navbar-toggle" data-bs-toggle="collapse" data-bs-target=".navbar-ex1-collapse">
-								<span class="visually-hidden">Toggle navigation</span>
+							<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>

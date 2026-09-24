@@ -334,7 +334,7 @@ function sparkling_scripts() {
 	$sparkling_slider_active = ( is_home() || is_front_page() ) && 1 == of_get_option( 'sparkling_slider_checkbox' );
 
 	// Add Bootstrap default CSS
-	wp_enqueue_style( 'sparkling-bootstrap', $template_uri . '/assets/css/bootstrap.min.css', array(), '5.3.8-4' );
+	wp_enqueue_style( 'sparkling-bootstrap', $template_uri . '/assets/css/bootstrap.min.css', array(), '3.4.1-1' );
 
 	// Add Font Awesome stylesheet
 	/*
@@ -387,7 +387,7 @@ function sparkling_scripts() {
 	 * Bootstrap's own JS still needs jQuery, but it belongs in the footer: it binds
 	 * its data-api handlers on ready, so nothing is lost by not blocking the head.
 	 */
-	wp_enqueue_script( 'sparkling-bootstrapjs', $template_uri . '/assets/js/vendor/bootstrap.min.js', array( 'jquery' ), '5.3.8-4', true );
+	wp_enqueue_script( 'sparkling-bootstrapjs', $template_uri . '/assets/js/vendor/bootstrap.min.js', array( 'jquery' ), '3.4.1-1', true );
 
 	if ( $sparkling_slider_active ) {
 		// Add slider JS only if is front page ans slider is enabled
