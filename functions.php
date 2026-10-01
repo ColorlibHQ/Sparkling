@@ -347,13 +347,13 @@ function sparkling_scripts() {
 	$fa_uri = $template_uri . '/assets/css/fontawesome/';
 	/*
 	 * The bundled Font Awesome is subsetted to the glyphs this theme renders, a few
-	 * kilobytes rather than a few hundred. A site that uses Font Awesome classes in
-	 * its own content -- a widget, a page builder, a child theme -- can load the
-	 * complete set instead:
-	 *
-	 *     add_filter( 'sparkling_full_fontawesome', '__return_true' );
+	 * kilobytes rather than a few hundred. Menus carrying icons outside that subset
+	 * are detected automatically; the "Font Awesome icons" setting under Content
+	 * Options covers icons the scan cannot see -- a widget, post content, a page
+	 * builder -- and the sparkling_full_fontawesome filter overrides both.
+	 * See inc/fontawesome.php.
 	 */
-	if ( apply_filters( 'sparkling_full_fontawesome', false ) ) {
+	if ( sparkling_fontawesome_use_full_set() ) {
 		wp_enqueue_style( 'sparkling-icons', $fa_uri . 'fontawesome.min.css', array(), '7.3.1-1', 'all' );
 		wp_enqueue_style( 'sparkling-icons-solid', $fa_uri . 'solid.min.css', array( 'sparkling-icons' ), '7.3.1', 'all' );
 		wp_enqueue_style( 'sparkling-icons-brands', $fa_uri . 'brands.min.css', array( 'sparkling-icons' ), '7.3.1', 'all' );
@@ -442,6 +442,11 @@ require get_template_directory() . '/inc/extras.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Font Awesome loading strategy.
+ */
+require get_template_directory() . '/inc/fontawesome.php';
 
 /**
  * Metabox additions.

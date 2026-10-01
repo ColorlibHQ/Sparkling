@@ -89,6 +89,30 @@ function sparkling_customizer( $wp_customize ) {
 		)
 	);
 
+	// Which Font Awesome library to load; see inc/fontawesome.php.
+	$wp_customize->add_setting(
+		'sparkling[fontawesome_library]', array(
+			'default'           => 'auto',
+			'type'              => 'option',
+			'capability'        => 'edit_theme_options',
+			'sanitize_callback' => 'sparkling_sanitize_fontawesome_library',
+		)
+	);
+	$wp_customize->add_control(
+		'sparkling[fontawesome_library]', array(
+			'label'       => esc_html__( 'Font Awesome icons', 'sparkling' ),
+			'section'     => 'sparkling_content_section',
+			'priority'    => 30,
+			'type'        => 'select',
+			'description' => esc_html__( 'The theme bundles only the icons it displays itself, which keeps pages small. Icons you add to your menus are detected automatically. Choose "Always load the complete library" if you use Font Awesome icons in a widget, in post content or in a page builder and they are not showing.', 'sparkling' ),
+			'choices'     => array(
+				'auto'   => esc_html__( 'Automatic (recommended)', 'sparkling' ),
+				'full'   => esc_html__( 'Always load the complete library', 'sparkling' ),
+				'subset' => esc_html__( 'Only the icons the theme uses', 'sparkling' ),
+			),
+		)
+	);
+
 	/* Sparkling Main Options */
 	$wp_customize->add_section(
 		'sparkling_slider_options', array(
@@ -954,6 +978,18 @@ function sparkling_sanitize_checkbox( $input ) {
 	} else {
 		return '';
 	}
+}
+
+/**
+ * Adds sanitization callback function: Font Awesome library choice
+ * @package Sparkling
+ */
+function sparkling_sanitize_fontawesome_library( $input ) {
+	if ( in_array( $input, array( 'auto', 'full', 'subset' ), true ) ) {
+		return $input;
+	}
+
+	return 'auto';
 }
 
 /**
