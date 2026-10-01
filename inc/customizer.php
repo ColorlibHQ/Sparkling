@@ -39,7 +39,7 @@ function sparkling_customizer( $wp_customize ) {
 			'capability'     => 'edit_theme_options',
 			'theme_supports' => '',
 			'title'          => __( 'Sparkling Options', 'sparkling' ),
-			'description'    => __( 'Panel to update sparkling theme options', 'sparkling' ),
+			'description'    => __( 'Layout, colors, typography and other options for the Sparkling theme.', 'sparkling' ),
 			// Include html tags such as <p>.
 			'priority'       => 10,
 		// Mixed with top-level-section hierarchy.
@@ -69,7 +69,7 @@ function sparkling_customizer( $wp_customize ) {
 			$wp_customize,
 			'sparkling_excerpts',
 			array(
-				'label'    => esc_html__( 'Show post excerpts?', 'sparkling' ),
+				'label'    => esc_html__( 'Show excerpts instead of full posts on the blog', 'sparkling' ),
 				'section'  => 'sparkling_content_section',
 				'priority' => 10,
 				'type'     => 'sparkling-toggle',
@@ -89,7 +89,7 @@ function sparkling_customizer( $wp_customize ) {
 			$wp_customize,
 			'sparkling_page_comments',
 			array(
-				'label'    => esc_html__( 'Display Comments on Static Pages?', 'sparkling' ),
+				'label'    => esc_html__( 'Show comments on pages', 'sparkling' ),
 				'section'  => 'sparkling_content_section',
 				'priority' => 20,
 				'type'     => 'sparkling-toggle',
@@ -145,7 +145,7 @@ function sparkling_customizer( $wp_customize ) {
 			$wp_customize,
 			'sparkling[sparkling_slider_checkbox]',
 			array(
-				'label'    => esc_html__( 'Check if you want to enable slider', 'sparkling' ),
+				'label'    => esc_html__( 'Show the slider on the front page', 'sparkling' ),
 				'section'  => 'sparkling_slider_options',
 				'priority' => 5,
 				'type'     => 'sparkling-toggle',
@@ -165,7 +165,7 @@ function sparkling_customizer( $wp_customize ) {
 			$wp_customize,
 			'sparkling[sparkling_slider_link_checkbox]',
 			array(
-				'label'           => esc_html__( 'Uncheck this option to remove the link from the slides', 'sparkling' ),
+				'label'           => esc_html__( 'Link each slide to its post', 'sparkling' ),
 				'section'         => 'sparkling_slider_options',
 				'active_callback' => 'sparkling_slider_is_enabled',
 				'priority'        => 6,
@@ -192,7 +192,7 @@ function sparkling_customizer( $wp_customize ) {
 			'section'         => 'sparkling_slider_options',
 			'active_callback' => 'sparkling_slider_is_enabled',
 			'type'            => 'select',
-			'description'     => __( 'Select a category for the featured post slider', 'sparkling' ),
+			'description'     => __( 'The slider shows posts from this category that have a featured image.', 'sparkling' ),
 			/*
 			 * The default, '', is "every category" -- which is what the slider
 			 * shows -- but it was not one of the choices, so the control showed
@@ -218,7 +218,7 @@ function sparkling_customizer( $wp_customize ) {
 			'label'           => __( 'Number of slide items', 'sparkling' ),
 			'section'         => 'sparkling_slider_options',
 			'active_callback' => 'sparkling_slider_is_enabled',
-			'description'     => __( 'Enter the number of slide items', 'sparkling' ),
+			'description'     => __( 'How many posts the slider shows.', 'sparkling' ),
 			'type'            => 'number',
 			'input_attrs'     => array(
 				'min'  => 1,
@@ -252,7 +252,7 @@ function sparkling_customizer( $wp_customize ) {
 			'label'       => __( 'Website Layout Options', 'sparkling' ),
 			'section'     => 'sparkling_layout_options',
 			'type'        => 'select',
-			'description' => __( 'Choose between different layout options to be used as default', 'sparkling' ),
+			'description' => __( 'The default sidebar layout. Each post and page can override it.', 'sparkling' ),
 			'choices'     => $site_layout,
 		)
 	);
@@ -272,7 +272,7 @@ function sparkling_customizer( $wp_customize ) {
 				'label'       => __( 'WooCommerce Page Layout Options', 'sparkling' ),
 				'section'     => 'sparkling_layout_options',
 				'type'        => 'select',
-				'description' => __( 'Choose between different layout options to be used as default for all woocommerce pages', 'sparkling' ),
+				'description' => __( 'The sidebar layout of the shop, product, cart, checkout and account pages.', 'sparkling' ),
 				'choices'     => $site_layout,
 			)
 		);
@@ -292,7 +292,7 @@ function sparkling_customizer( $wp_customize ) {
 			'sparkling[element_color]',
 			array(
 				'label'       => __( 'Element Color', 'sparkling' ),
-				'description' => __( 'Default used if no color is selected', 'sparkling' ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_layout_options',
 				'settings'    => 'sparkling[element_color]',
 			)
@@ -313,7 +313,7 @@ function sparkling_customizer( $wp_customize ) {
 			'sparkling[element_color_hover]',
 			array(
 				'label'       => __( 'Element color on hover', 'sparkling' ),
-				'description' => __( 'Default used if no color is selected', 'sparkling' ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_layout_options',
 				'settings'    => 'sparkling[element_color_hover]',
 			)
@@ -341,7 +341,7 @@ function sparkling_customizer( $wp_customize ) {
 		'sparkling[w2f_cfa_text]',
 		array(
 			'label'       => __( 'Call For Action Text', 'sparkling' ),
-			'description' => sprintf( __( 'Enter the text for call for action section', 'sparkling' ) ),
+			'description' => __( 'Shown in a bar under the slider on the front page. Leave empty to hide the bar.', 'sparkling' ),
 			'section'     => 'sparkling_action_options',
 			'type'        => 'textarea',
 		)
@@ -377,7 +377,7 @@ function sparkling_customizer( $wp_customize ) {
 		'sparkling[w2f_cfa_link]',
 		array(
 			'type'        => 'url',
-			'label'       => __( 'CFA button link', 'sparkling' ),
+			'label'       => __( 'Call For Action Button Link', 'sparkling' ),
 			'section'     => 'sparkling_action_options',
 			'description' => __( 'Enter the link for Call For Action button', 'sparkling' ),
 			'type'        => 'text',
@@ -398,7 +398,7 @@ function sparkling_customizer( $wp_customize ) {
 			'sparkling[cfa_color]',
 			array(
 				'label'       => __( 'Call For Action Text Color', 'sparkling' ),
-				'description' => __( 'Default used if no color is selected', 'sparkling' ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_action_options',
 			)
 		)
@@ -417,7 +417,7 @@ function sparkling_customizer( $wp_customize ) {
 			'sparkling[cfa_bg_color]',
 			array(
 				'label'       => __( 'Call For Action Background Color', 'sparkling' ),
-				'description' => __( 'Default used if no color is selected', 'sparkling' ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_action_options',
 			)
 		)
@@ -436,7 +436,7 @@ function sparkling_customizer( $wp_customize ) {
 			'sparkling[cfa_btn_color]',
 			array(
 				'label'       => __( 'Call For Action Button Border Color', 'sparkling' ),
-				'description' => __( 'Default used if no color is selected', 'sparkling' ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_action_options',
 			)
 		)
@@ -455,7 +455,7 @@ function sparkling_customizer( $wp_customize ) {
 			'sparkling[cfa_btn_txt_color]',
 			array(
 				'label'       => __( 'Call For Action Button Text Color', 'sparkling' ),
-				'description' => __( 'Default used if no color is selected', 'sparkling' ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_action_options',
 			)
 		)
@@ -486,8 +486,8 @@ function sparkling_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'sparkling[main_body_typography][size]',
 		array(
-			'label'       => __( 'Main Body Text', 'sparkling' ),
-			'description' => __( 'Used in p tags', 'sparkling' ),
+			'label'       => __( 'Body font size', 'sparkling' ),
+			'description' => __( 'Size, font, weight and color of post and page text.', 'sparkling' ),
 			'section'     => 'sparkling_typography_options',
 			'type'        => 'select',
 			'choices'     => $typography_options['sizes'],
@@ -504,6 +504,7 @@ function sparkling_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'sparkling[main_body_typography][face]',
 		array(
+			'label'   => __( 'Body font', 'sparkling' ),
 			'section' => 'sparkling_typography_options',
 			'type'    => 'select',
 			'choices' => $typography_options['faces'],
@@ -520,6 +521,7 @@ function sparkling_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'sparkling[main_body_typography][style]',
 		array(
+			'label'   => __( 'Body font weight', 'sparkling' ),
 			'section' => 'sparkling_typography_options',
 			'type'    => 'select',
 			'choices' => $typography_options['styles'],
@@ -538,6 +540,7 @@ function sparkling_customizer( $wp_customize ) {
 			$wp_customize,
 			'sparkling[main_body_typography][color]',
 			array(
+				'label'   => __( 'Body text color', 'sparkling' ),
 				'section' => 'sparkling_typography_options',
 			)
 		)
@@ -581,7 +584,7 @@ function sparkling_customizer( $wp_customize ) {
 			'sparkling[link_color]',
 			array(
 				'label'       => __( 'Link Color', 'sparkling' ),
-				'description' => __( 'Default used if no color is selected', 'sparkling' ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_typography_options',
 			)
 		)
@@ -600,7 +603,7 @@ function sparkling_customizer( $wp_customize ) {
 			'sparkling[link_hover_color]',
 			array(
 				'label'       => __( 'Link:hover Color', 'sparkling' ),
-				'description' => __( 'Default used if no color is selected', 'sparkling' ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_typography_options',
 			)
 		)
@@ -630,7 +633,7 @@ function sparkling_customizer( $wp_customize ) {
 			'sparkling[sticky_header]',
 			array(
 				'label'       => __( 'Sticky Header', 'sparkling' ),
-				'description' => sprintf( __( 'Check to show fixed header', 'sparkling' ) ),
+				'description' => __( 'Keep the header at the top of the window while scrolling.', 'sparkling' ),
 				'section'     => 'sparkling_header_options',
 				'type'        => 'sparkling-toggle',
 			)
@@ -651,7 +654,7 @@ function sparkling_customizer( $wp_customize ) {
 			'sparkling[nav_bg_color]',
 			array(
 				'label'       => __( 'Top nav background color', 'sparkling' ),
-				'description' => __( 'Default used if no color is selected', 'sparkling' ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_header_options',
 			)
 		)
@@ -710,7 +713,7 @@ function sparkling_customizer( $wp_customize ) {
 			'sparkling[nav_dropdown_bg]',
 			array(
 				'label'       => __( 'Top nav dropdown background color', 'sparkling' ),
-				'description' => __( 'Background of dropdown item hover color', 'sparkling' ),
+				'description' => __( 'Background of the dropdown menus', 'sparkling' ),
 				'section'     => 'sparkling_header_options',
 			)
 		)
@@ -770,7 +773,7 @@ function sparkling_customizer( $wp_customize ) {
 			'sparkling[nav_dropdown_bg_hover]',
 			array(
 				'label'       => __( 'Top nav dropdown item background hover color', 'sparkling' ),
-				'description' => __( 'Background of dropdown item hover color', 'sparkling' ),
+				'description' => __( 'Background of a dropdown item on hover', 'sparkling' ),
 				'section'     => 'sparkling_header_options',
 			)
 		)
@@ -873,7 +876,7 @@ function sparkling_customizer( $wp_customize ) {
 		'sparkling[custom_footer_text]',
 		array(
 			'label'       => __( 'Footer information', 'sparkling' ),
-			'description' => sprintf( __( 'Copyright text in footer', 'sparkling' ) ),
+			'description' => __( 'Copyright text in footer', 'sparkling' ),
 			'section'     => 'sparkling_footer_options',
 			'type'        => 'textarea',
 		)
@@ -902,7 +905,7 @@ function sparkling_customizer( $wp_customize ) {
 			'sparkling[social_color]',
 			array(
 				'label'       => __( 'Social icon color', 'sparkling' ),
-				'description' => sprintf( __( 'Default used if no color is selected', 'sparkling' ) ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_social_options',
 			)
 		)
@@ -922,7 +925,7 @@ function sparkling_customizer( $wp_customize ) {
 			'sparkling[social_footer_color]',
 			array(
 				'label'       => __( 'Footer social icon color', 'sparkling' ),
-				'description' => sprintf( __( 'Default used if no color is selected', 'sparkling' ) ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_social_options',
 			)
 		)
@@ -942,7 +945,7 @@ function sparkling_customizer( $wp_customize ) {
 			'sparkling[footer_social]',
 			array(
 				'label'       => __( 'Footer Social Icons', 'sparkling' ),
-				'description' => sprintf( __( 'Check to show social icons in footer', 'sparkling' ) ),
+				'description' => __( 'Show the Social menu as icons in the footer.', 'sparkling' ),
 				'section'     => 'sparkling_social_options',
 				'type'        => 'sparkling-toggle',
 			)
@@ -965,7 +968,7 @@ function sparkling_customizer( $wp_customize ) {
 			'sparkling[academicons]',
 			array(
 				'label'       => __( 'Enable Academicons', 'sparkling' ),
-				'description' => sprintf( __( 'Toggle this to ON to enable the usage of Academicons', 'sparkling' ) ),
+				'description' => __( 'Load the Academicons font, for links to academic profiles in the Social menu.', 'sparkling' ),
 				'section'     => 'sparkling_social_options',
 				'type'        => 'sparkling-toggle',
 			)
