@@ -45,9 +45,9 @@ const args = [
   '--package-name=Sparkling',
   '--exclude=node_modules,vendor,build,tools,src,.github,assets/js/vendor',
   '--headers=' + JSON.stringify({
-    'Report-Msgid-Bugs-To': 'https://www.colorlib.com/',
-    'Last-Translator': 'Colorlib <office@colorlib.com>',
-    'Language-Team': 'Colorlib <office@colorlib.com>',
+    'Report-Msgid-Bugs-To': 'https://colorlib.com/wp/support/',
+    'Last-Translator': 'Colorlib <info@colorlib.com>',
+    'Language-Team': 'Colorlib <info@colorlib.com>',
   }),
   '--allow-root',
 ];
