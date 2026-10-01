@@ -147,6 +147,31 @@ if ( ! function_exists( 'sparkling_social_icons' ) ) :
 	}
 endif;
 
+if ( ! function_exists( 'sparkling_navwalker_is_icon_class' ) ) :
+	/**
+	 * Whether a menu item's Title Attribute is an icon class list.
+	 *
+	 * The walker prints such a value as an icon before the label, which is how
+	 * sites add Font Awesome or glyphicon icons to menu items. Anything else
+	 * typed there is a tooltip.
+	 *
+	 * @param string $value Title Attribute.
+	 *
+	 * @return bool
+	 */
+	function sparkling_navwalker_is_icon_class( $value ) {
+		$tokens = preg_split( '/\s+/', trim( (string) $value ) );
+
+		foreach ( $tokens as $token ) {
+			if ( ! preg_match( '/^(glyphicon(-[\w-]+)?|fa[srbl]?|fa-[\w-]+)$/', $token ) ) {
+				return false;
+			}
+		}
+
+		return '' !== $tokens[0];
+	}
+endif;
+
 if ( ! function_exists( 'sparkling_header_menu' ) ) :
 	/**
 	 * Header menu (should you choose to use one)
@@ -161,8 +186,8 @@ if ( ! function_exists( 'sparkling_header_menu' ) ) :
 				'container_id'    => 'sparkling-navbar',
 				'container_class' => 'collapse navbar-collapse navbar-ex1-collapse',
 				'menu_class'      => 'nav navbar-nav',
-				'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-				'walker'          => new WP_Bootstrap_Navwalker(),
+				'fallback_cb'     => 'Sparkling_Bootstrap_Navwalker::fallback',
+				'walker'          => new Sparkling_Bootstrap_Navwalker(),
 			)
 		);
 	} /* end header menu */

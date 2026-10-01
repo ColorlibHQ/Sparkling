@@ -472,7 +472,7 @@ require get_template_directory() . '/inc/jetpack.php';
 /**
  * Load custom nav walker
  */
-require get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
+require get_template_directory() . '/inc/class-sparkling-bootstrap-navwalker.php';
 
 /**
  * Register Social Icon menu
