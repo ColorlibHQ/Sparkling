@@ -4,7 +4,7 @@ Contributors: colorlib
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 2.6.10
+Stable tag: 2.6.11
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, news, e-commerce, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, editor-style, featured-images, footer-widgets, full-width-template, post-formats, sticky-post, theme-options, block-styles, wide-blocks
@@ -90,6 +90,10 @@ Screenshot image
     Copyright Colorlib, distributed under the same license as the theme.
 
 == Changelog ==
+
+= 2.6.11 =
+* Font Awesome icons added to a menu by hand disappeared on update to 2.6.7 or later, which subsetted the bundled Font Awesome to the glyphs the theme draws itself. The theme now detects the icons used in your menus and loads the complete library when one of them needs it, so those menus recover on their own.
+* Added "Font Awesome icons" under Content Options in the Customizer, for icons the menu scan cannot see -- a widget, post content, a page builder. The sparkling_full_fontawesome filter still overrides it.
 
 = 2.6.10 =
 * Fixed the Customizer failing to open with "Class Epsilon_Section_Recommended_Actions not found". The 2.6.x packages shipped an outdated inc/welcome-screen/welcome-page-setup.php that still used classes removed with the Epsilon framework.
