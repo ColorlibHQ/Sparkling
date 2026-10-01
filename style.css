@@ -1841,12 +1841,12 @@ p.logged-in-as {
     color: #fff;
 }
 
-.social-icons, #menu-social {
+.social-icons, :is(#menu-social, .menu-social) {
     position: relative;
     text-align: center;
 }
 
-.sparkling-social #menu-social {
+.sparkling-social :is(#menu-social, .menu-social) {
     text-align: left;
 }
 
@@ -1872,7 +1872,7 @@ p.logged-in-as {
     transition: background-color 0.5s;
 }
 
-#menu-social li {
+:is(#menu-social, .menu-social) li {
     border: none;
     display: inline-block;
     margin: 0;
@@ -1908,651 +1908,651 @@ p.logged-in-as {
     margin-right: 7px;
 }
 
-#menu-social li a span {
+:is(#menu-social, .menu-social) li a span {
     display: none;
 }
 
-#menu-social li a[href*="facebook.com"]:hover,
-#menu-social li a[href*="facebook.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="facebook.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="facebook.com"]:focus {
     background-color: #4265b9 !important;
 }
 
-#menu-social li a[href*="docker.com"]:hover,
-#menu-social li a[href*="docker.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="docker.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="docker.com"]:focus {
     background-color: #0D397F !important;
 }
 
-#menu-social li a[href*="academia.edu"]:hover,
-#menu-social li a[href*="academia.edu"]:focus {
+:is(#menu-social, .menu-social) li a[href*="academia.edu"]:hover,
+:is(#menu-social, .menu-social) li a[href*="academia.edu"]:focus {
     background-color: #FFF !important;
     color: #000 !important;
 }
 
-#menu-social li a[href*="youracclaim.com"]:hover,
-#menu-social li a[href*="youracclaim.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="youracclaim.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="youracclaim.com"]:focus {
     background-color: #2B6C97 !important;
 }
 
-#menu-social li a[href*="youracclaim.com"]:hover,
-#menu-social li a[href*="youracclaim.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="youracclaim.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="youracclaim.com"]:focus {
     background-color: #2B6C97 !important;
 }
 
-#menu-social li a[href*="acm.org"]:hover,
-#menu-social li a[href*="acm.org"]:focus {
+:is(#menu-social, .menu-social) li a[href*="acm.org"]:hover,
+:is(#menu-social, .menu-social) li a[href*="acm.org"]:focus {
     background-color: #42A6D5 !important;
 }
 
-#menu-social li a[href*="dl.acm.org"]:hover,
-#menu-social li a[href*="dl.acm.org"]:focus {
+:is(#menu-social, .menu-social) li a[href*="dl.acm.org"]:hover,
+:is(#menu-social, .menu-social) li a[href*="dl.acm.org"]:focus {
     background-color: #AEC85C !important;
 }
 
-#menu-social li a[href*="arxiv.org"]:hover,
-#menu-social li a[href*="arxiv.org"]:focus {
+:is(#menu-social, .menu-social) li a[href*="arxiv.org"]:hover,
+:is(#menu-social, .menu-social) li a[href*="arxiv.org"]:focus {
     background-color: #68645B !important;
 }
 
-#menu-social li a[href*="biorxiv.org"]:hover,
-#menu-social li a[href*="biorxiv.org"]:focus {
+:is(#menu-social, .menu-social) li a[href*="biorxiv.org"]:hover,
+:is(#menu-social, .menu-social) li a[href*="biorxiv.org"]:focus {
     background-color: #B92B3D !important;
 }
 
-#menu-social li a[href*="ceur-ws.org"]:hover,
-#menu-social li a[href*="ceur-ws.org"]:focus {
+:is(#menu-social, .menu-social) li a[href*="ceur-ws.org"]:hover,
+:is(#menu-social, .menu-social) li a[href*="ceur-ws.org"]:focus {
     background-color: #F5F4EF !important;
 }
 
-#menu-social li a[href*="coursera.org"]:hover,
-#menu-social li a[href*="coursera.org"]:focus {
+:is(#menu-social, .menu-social) li a[href*="coursera.org"]:hover,
+:is(#menu-social, .menu-social) li a[href*="coursera.org"]:focus {
     background-color: #508DD6 !important;
 }
 
-#menu-social li a[href*="dataverse.org"]:hover,
-#menu-social li a[href*="dataverse.org"]:focus {
+:is(#menu-social, .menu-social) li a[href*="dataverse.org"]:hover,
+:is(#menu-social, .menu-social) li a[href*="dataverse.org"]:focus {
     background-color: #C25B37 !important;
 }
 
-#menu-social li a[href*="dblp.uni-trier.de"]:hover,
-#menu-social li a[href*="dblp.uni-trier.de"]:focus {
+:is(#menu-social, .menu-social) li a[href*="dblp.uni-trier.de"]:hover,
+:is(#menu-social, .menu-social) li a[href*="dblp.uni-trier.de"]:focus {
     background-color: #12539B !important;
 }
 
-#menu-social li a[href*="depsy.org"]:hover,
-#menu-social li a[href*="depsy.org"]:focus {
+:is(#menu-social, .menu-social) li a[href*="depsy.org"]:hover,
+:is(#menu-social, .menu-social) li a[href*="depsy.org"]:focus {
     background-color: #2BB0E9 !important;
 }
 
-#menu-social li a[href*="doi.org"]:hover,
-#menu-social li a[href*="doi.org"]:focus {
+:is(#menu-social, .menu-social) li a[href*="doi.org"]:hover,
+:is(#menu-social, .menu-social) li a[href*="doi.org"]:focus {
     background-color: #F8B248 !important;
 }
 
-#menu-social li a[href*="datadryad.org"]:hover,
-#menu-social li a[href*="datadryad.org"]:focus {
+:is(#menu-social, .menu-social) li a[href*="datadryad.org"]:hover,
+:is(#menu-social, .menu-social) li a[href*="datadryad.org"]:focus {
     background-color: #44822C !important;
 }
 
-#menu-social li a[href*="figshare.com"]:hover,
-#menu-social li a[href*="figshare.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="figshare.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="figshare.com"]:focus {
     background-color: #556470 !important;
 }
 
-#menu-social li a[href*="scholar.google"]:hover,
-#menu-social li a[href*="scholar.google"]:focus {
+:is(#menu-social, .menu-social) li a[href*="scholar.google"]:hover,
+:is(#menu-social, .menu-social) li a[href*="scholar.google"]:focus {
     background-color: #4A8BEE !important;
 }
 
-#menu-social li a[href*="ideas.repec.org"]:hover,
-#menu-social li a[href*="ideas.repec.org"]:focus {
+:is(#menu-social, .menu-social) li a[href*="ideas.repec.org"]:hover,
+:is(#menu-social, .menu-social) li a[href*="ideas.repec.org"]:focus {
     background-color: #F61729 !important;
 }
 
-#menu-social li a[href*="ieee.org"]:hover,
-#menu-social li a[href*="ieee.org"]:focus {
+:is(#menu-social, .menu-social) li a[href*="ieee.org"]:hover,
+:is(#menu-social, .menu-social) li a[href*="ieee.org"]:focus {
     background-color: #166895 !important;
 }
 
-#menu-social li a[href*="impactstory.org"]:hover,
-#menu-social li a[href*="impactstory.org"]:focus {
+:is(#menu-social, .menu-social) li a[href*="impactstory.org"]:hover,
+:is(#menu-social, .menu-social) li a[href*="impactstory.org"]:focus {
     background-color: #F9362A !important;
 }
 
-#menu-social li a[href*="inspirehep.net"]:hover,
-#menu-social li a[href*="inspirehep.net"]:focus {
+:is(#menu-social, .menu-social) li a[href*="inspirehep.net"]:hover,
+:is(#menu-social, .menu-social) li a[href*="inspirehep.net"]:focus {
     background-color: #6B9CC8 !important;
 }
 
-#menu-social li a[href*="lattes.cnpq.brt"]:hover,
-#menu-social li a[href*="lattes.cnpq.brt"]:focus {
+:is(#menu-social, .menu-social) li a[href*="lattes.cnpq.brt"]:hover,
+:is(#menu-social, .menu-social) li a[href*="lattes.cnpq.brt"]:focus {
     background-color: #135C95 !important;
 }
 
-#menu-social li a[href*="mathoverflow.net"]:hover,
-#menu-social li a[href*="mathoverflow.net"]:focus {
+:is(#menu-social, .menu-social) li a[href*="mathoverflow.net"]:hover,
+:is(#menu-social, .menu-social) li a[href*="mathoverflow.net"]:focus {
     background-color: #DE8341 !important;
 }
 
-#menu-social li a[href*="mendeley.com"]:hover,
-#menu-social li a[href*="mendeley.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="mendeley.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="mendeley.com"]:focus {
     background-color: #FFF !important;
     color: #000 !important;
 }
 
-#menu-social li a[href*="openaccessweek.org"]:hover,
-#menu-social li a[href*="openaccessweek.org"]:focus {
+:is(#menu-social, .menu-social) li a[href*="openaccessweek.org"]:hover,
+:is(#menu-social, .menu-social) li a[href*="openaccessweek.org"]:focus {
     background-color: #F17E3C !important;
 }
 
-#menu-social li a[href*="orcid.org"]:hover,
-#menu-social li a[href*="orcid.org"]:focus {
+:is(#menu-social, .menu-social) li a[href*="orcid.org"]:hover,
+:is(#menu-social, .menu-social) li a[href*="orcid.org"]:focus {
     background-color: #A8CA50 !important;
 }
 
-#menu-social li a[href*="osf.io"]:hover,
-#menu-social li a[href*="osf.io"]:focus {
+:is(#menu-social, .menu-social) li a[href*="osf.io"]:hover,
+:is(#menu-social, .menu-social) li a[href*="osf.io"]:focus {
     background-color: #3FBAEB !important;
 }
 
-#menu-social li a[href*="overleaf.com"]:hover,
-#menu-social li a[href*="overleaf.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="overleaf.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="overleaf.com"]:focus {
     background-color: #4D8F4A !important;
 }
 
-#menu-social li a[href*="philpapers.org"]:hover,
-#menu-social li a[href*="philpapers.org"]:focus {
+:is(#menu-social, .menu-social) li a[href*="philpapers.org"]:hover,
+:is(#menu-social, .menu-social) li a[href*="philpapers.org"]:focus {
     background-color: #1650A3 !important;
 }
 
-#menu-social li a[href*="piazza.com"]:hover,
-#menu-social li a[href*="piazza.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="piazza.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="piazza.com"]:focus {
     background-color: #407DA8 !important;
 }
 
-#menu-social li a[href*="publons.com"]:hover,
-#menu-social li a[href*="publons.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="publons.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="publons.com"]:focus {
     background-color: #386895 !important;
 }
 
-#menu-social li a[href*="ncbi.nlm.nih.gov"]:hover,
-#menu-social li a[href*="ncbi.nlm.nih.gov"]:focus {
+:is(#menu-social, .menu-social) li a[href*="ncbi.nlm.nih.gov"]:hover,
+:is(#menu-social, .menu-social) li a[href*="ncbi.nlm.nih.gov"]:focus {
     background-color: #D5D5D5 !important;
 }
 
-#menu-social li a[href*="researchgate.net"]:hover,
-#menu-social li a[href*="researchgate.net"]:focus {
+:is(#menu-social, .menu-social) li a[href*="researchgate.net"]:hover,
+:is(#menu-social, .menu-social) li a[href*="researchgate.net"]:focus {
     background-color: #30CABB !important;
 }
 
-#menu-social li a[href*="researcherid.com"]:hover,
-#menu-social li a[href*="researcherid.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="researcherid.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="researcherid.com"]:focus {
     background-color: #EA7B32 !important;
 }
 
-#menu-social li a[href*="scirate.com"]:hover,
-#menu-social li a[href*="scirate.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="scirate.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="scirate.com"]:focus {
     background-color: #3299F3 !important;
 }
 
-#menu-social li a[href*="semanticscholar.org"]:hover,
-#menu-social li a[href*="semanticscholar.org"]:focus {
+:is(#menu-social, .menu-social) li a[href*="semanticscholar.org"]:hover,
+:is(#menu-social, .menu-social) li a[href*="semanticscholar.org"]:focus {
     background-color: #FBD669 !important;
 }
 
-#menu-social li a[href*="springer.com"]:hover,
-#menu-social li a[href*="springer.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="springer.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="springer.com"]:focus {
     background-color: #EA7D33 !important;
 }
 
-#menu-social li a[href*="zotero.org"]:hover,
-#menu-social li a[href*="zotero.org"]:focus {
+:is(#menu-social, .menu-social) li a[href*="zotero.org"]:hover,
+:is(#menu-social, .menu-social) li a[href*="zotero.org"]:focus {
     background-color: #C82E3E !important;
 }
 
-#menu-social li a[href*="twitter.com"]:hover,
-#menu-social li a[href*="twitter.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="twitter.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="twitter.com"]:focus {
     background-color: #55ACEE !important;
 }
 
-#menu-social li a[href*="dribbble.com"]:hover,
-#menu-social li a[href*="dribbble.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="dribbble.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="dribbble.com"]:focus {
     background-color: #ea4c89 !important;
 }
 
-#menu-social li a[href*="flickr.com"]:hover,
-#menu-social li a[href*="flickr.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="flickr.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="flickr.com"]:focus {
     background-color: #ff0084 !important;
 }
 
-#menu-social li a[href*="plus.google.com"]:hover,
-#menu-social li a[href*="plus.google.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="plus.google.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="plus.google.com"]:focus {
     background-color: #d62408 !important;
 }
 
-#menu-social li a[href*="skype.com"]:hover,
-#menu-social li a[href*="skype.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="skype.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="skype.com"]:focus {
     background-color: #0bbff2 !important;
 }
 
-#menu-social li a[href*="pinterest.com"]:hover,
-#menu-social li a[href*="pinterest.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="pinterest.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="pinterest.com"]:focus {
     background-color: #c31e26 !important;
 }
 
-#menu-social li a[href*="linkedin.com"]:hover,
-#menu-social li a[href*="linkedin.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="linkedin.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="linkedin.com"]:focus {
     background-color: #005987 !important;
 }
 
-#menu-social li a[href*="slideshare.net"]:hover,
-#menu-social li a[href*="slideshare.net"]:focus {
+:is(#menu-social, .menu-social) li a[href*="slideshare.net"]:hover,
+:is(#menu-social, .menu-social) li a[href*="slideshare.net"]:focus {
     background-color: #005987 !important;
 }
 
-#menu-social li a[href*="vimeo.com"]:hover,
-#menu-social li a[href*="vimeo.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="vimeo.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="vimeo.com"]:focus {
     background-color: #1bb6ec !important;
 }
 
-#menu-social li a[href*="tumblr.com"]:hover,
-#menu-social li a[href*="tumblr.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="tumblr.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="tumblr.com"]:focus {
     background-color: #35506b !important;
 }
 
-#menu-social li a[href*="youtube.com"]:hover,
-#menu-social li a[href*="youtube.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="youtube.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="youtube.com"]:focus {
     background-color: #df3333 !important;
 }
 
-#menu-social li a[href*="instagram.com"]:hover,
-#menu-social li a[href*="instagram.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="instagram.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="instagram.com"]:focus {
     background-color: #F95B60 !important;
 }
 
-#menu-social li a[href*="/feed"]:hover,
-#menu-social li a[href*="/feed"]:focus {
+:is(#menu-social, .menu-social) li a[href*="/feed"]:hover,
+:is(#menu-social, .menu-social) li a[href*="/feed"]:focus {
     background-color: #f39c12 !important;
 }
 
-#menu-social li a[href*="foursquare.com"]:hover,
-#menu-social li a[href*="foursquare.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="foursquare.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="foursquare.com"]:focus {
     background-color: #2398C9 !important;
 }
 
-#menu-social li a[href*="soundcloud.com"]:hover,
-#menu-social li a[href*="soundcloud.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="soundcloud.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="soundcloud.com"]:focus {
     background-color: #F50 !important;
 }
 
-#menu-social li a[href*="github.com"]:hover,
-#menu-social li a[href*="github.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="github.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="github.com"]:focus {
     background-color: #4183C4 !important;
 }
 
-#menu-social li a[href*="gitlab.com"]:hover,
-#menu-social li a[href*="gitlab.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="gitlab.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="gitlab.com"]:focus {
     background-color: #fc9403 !important;
 }
 
-#menu-social li a[href*="stackoverflow.com"]:hover,
-#menu-social li a[href*="stackoverflow.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="stackoverflow.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="stackoverflow.com"]:focus {
     background-color: #F48024 !important;
 }
 
-#menu-social li a[href*="xing.com"]:hover,
-#menu-social li a[href*="xing.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="xing.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="xing.com"]:focus {
     background-color: #006567 !important;
 }
 
-#menu-social li a[href*="spotify.com"]:hover,
-#menu-social li a[href*="spotify.com"]:focus {
+:is(#menu-social, .menu-social) li a[href*="spotify.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="spotify.com"]:focus {
     background-color: #81b71a !important;
 }
 
-#menu-social li a[href*="mailto"]:hover,
-#menu-social li a[href*="mailto"]:focus {
+:is(#menu-social, .menu-social) li a[href*="mailto"]:hover,
+:is(#menu-social, .menu-social) li a[href*="mailto"]:focus {
     background-color: #DA4453 !important;
 }
 
-#menu-social li a[href*="t.me"]:hover,
-#menu-social li a[href*="t.me"]:focus,
-#menu-social li a[href*="telegram.me"]:hover,
-#menu-social li a[href*="telegram.me"]:focus {
+:is(#menu-social, .menu-social) li a[href*="t.me"]:hover,
+:is(#menu-social, .menu-social) li a[href*="t.me"]:focus,
+:is(#menu-social, .menu-social) li a[href*="telegram.me"]:hover,
+:is(#menu-social, .menu-social) li a[href*="telegram.me"]:focus {
     background-color: #0088cc !important;
 }
 
-#menu-social li, #menu-social ul {
+:is(#menu-social, .menu-social) li, :is(#menu-social, .menu-social) ul {
     border: 0 !important;
     list-style: none;
     padding-left: 0;
 }
 
-#menu-social li a[href*="twitter.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="twitter.com"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f099";
     font-weight: 400;
 }
 
-#menu-social li a[href*="xing.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="xing.com"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f168";
     font-weight: 400;
 }
 
-#menu-social li a[href*="facebook.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="facebook.com"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f39e";
     font-weight: 900;
 }
 
-#menu-social li a[href*="github.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="github.com"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f09b";
     font-weight: 400;
 }
 
-#menu-social li a[href*="gitlab.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="gitlab.com"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f296";
     font-weight: 400;
 }
 
-#menu-social li a[href*="stackoverflow.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="stackoverflow.com"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f16c";
     font-weight: 400;
 }
 
-#menu-social li a[href*="/feed"]:before {
+:is(#menu-social, .menu-social) li a[href*="/feed"]:before {
     font-family: "Font Awesome 7 Free";
     content: "\f09e";
     font-weight: 900;
 }
 
-#menu-social li a[href*="dribbble.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="dribbble.com"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f17d";
     font-weight: 400;
 }
 
-#menu-social li a[href*="skype.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="skype.com"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f17e";
     font-weight: 400;
 }
 
-#menu-social li a[href*="foursquare.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="foursquare.com"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f180";
     font-weight: 400;
 }
 
-#menu-social li a[href*="spotify.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="spotify.com"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f1bc";
     font-weight: 400;
 }
 
-#menu-social li a[href*="soundcloud.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="soundcloud.com"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f1be";
     font-weight: 400;
 }
 
-#menu-social li a[href*="vimeo.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="vimeo.com"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f194";
     font-weight: 400;
 }
 
-#menu-social li a[href*="youtube.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="youtube.com"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f167";
     font-weight: 400;
 }
 
-#menu-social li a[href*="instagram.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="instagram.com"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f16d";
     font-weight: 400;
 }
 
-#menu-social li a[href*="flickr.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="flickr.com"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f16e";
     font-weight: 400;
 }
 
-#menu-social li a[href*="tumblr.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="tumblr.com"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f173";
     font-weight: 400;
 }
 
-#menu-social li a[href*="pinterest.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="pinterest.com"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f0d2";
     font-weight: 400;
 }
 
-#menu-social li a[href*="plus.google.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="plus.google.com"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f0d5";
     font-weight: 400;
 }
 
-#menu-social li a[href*="linkedin.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="linkedin.com"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f0e1";
     font-weight: 400;
 }
 
-#menu-social li a[href*="slideshare.net"]:before {
+:is(#menu-social, .menu-social) li a[href*="slideshare.net"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f1e7";
     font-weight: 400;
 }
 
-#menu-social li a[href*="mailto"]:before {
+:is(#menu-social, .menu-social) li a[href*="mailto"]:before {
     font-family: "Font Awesome 7 Free";
     content: "\f0e0"
 }
 
-#menu-social li a[href*="t.me"]:before {
+:is(#menu-social, .menu-social) li a[href*="t.me"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f2c6";
     font-weight: 400;
 }
 
-#menu-social li a[href*="telegram.me"]:before {
+:is(#menu-social, .menu-social) li a[href*="telegram.me"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f2c6";
     font-weight: 400;
 }
 
-#menu-social li a[href*="docker.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="docker.com"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f395";
     font-weight: 400;
 }
 
 /* Academicons - @since 2.4.0 */
-#menu-social li a[href*="academia.edu"]:before {
+:is(#menu-social, .menu-social) li a[href*="academia.edu"]:before {
     font-family: 'Academicons';
     content: "\e9af";
 }
 
-#menu-social li a[href*="youracclaim.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="youracclaim.com"]:before {
     font-family: 'Academicons';
     content: "\e92e";
 }
 
-#menu-social li a[href*="acm.org"]:before {
+:is(#menu-social, .menu-social) li a[href*="acm.org"]:before {
     font-family: 'Academicons';
     content: "\e93c";
 }
 
-#menu-social li a[href*="dl.acm.org"]:before {
+:is(#menu-social, .menu-social) li a[href*="dl.acm.org"]:before {
     font-family: 'Academicons';
     content: "\e96a";
 }
 
-#menu-social li a[href*="arxiv.org"]:before {
+:is(#menu-social, .menu-social) li a[href*="arxiv.org"]:before {
     font-family: 'Academicons';
     content: "\e974";
 }
 
-#menu-social li a[href*="biorxiv.org"]:before {
+:is(#menu-social, .menu-social) li a[href*="biorxiv.org"]:before {
     font-family: 'Academicons';
     content: "\e9a2";
 }
 
-#menu-social li a[href*="ceur-ws.org"]:before {
+:is(#menu-social, .menu-social) li a[href*="ceur-ws.org"]:before {
     font-family: 'Academicons';
     content: "\e96d";
 }
 
-#menu-social li a[href*="coursera.org"]:before {
+:is(#menu-social, .menu-social) li a[href*="coursera.org"]:before {
     font-family: 'Academicons';
     content: "\e95f";
 }
 
-#menu-social li a[href*="dataverse.org"]:before {
+:is(#menu-social, .menu-social) li a[href*="dataverse.org"]:before {
     font-family: 'Academicons';
     content: "\e9f7";
 }
 
-#menu-social li a[href*="dblp.uni-trier.de"]:before {
+:is(#menu-social, .menu-social) li a[href*="dblp.uni-trier.de"]:before {
     font-family: 'Academicons';
     content: "\e94f";
 }
 
-#menu-social li a[href*="depsy.org"]:before {
+:is(#menu-social, .menu-social) li a[href*="depsy.org"]:before {
     font-family: 'Academicons';
     content: "\e97a";
 }
 
-#menu-social li a[href*="doi.org"]:before {
+:is(#menu-social, .menu-social) li a[href*="doi.org"]:before {
     font-family: 'Academicons';
     content: "\e97e";
 }
 
-#menu-social li a[href*="datadryad.org"]:before {
+:is(#menu-social, .menu-social) li a[href*="datadryad.org"]:before {
     font-family: 'Academicons';
     content: "\e97c";
 }
 
-#menu-social li a[href*="figshare.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="figshare.com"]:before {
     font-family: 'Academicons';
     content: "\e981";
 }
 
-#menu-social li a[href*="scholar.google"]:before {
+:is(#menu-social, .menu-social) li a[href*="scholar.google"]:before {
     font-family: 'Academicons';
     content: "\e9d4";
 }
 
-#menu-social li a[href*="ideas.repec.org"]:before {
+:is(#menu-social, .menu-social) li a[href*="ideas.repec.org"]:before {
     font-family: 'Academicons';
     content: "\e9ed";
 }
 
-#menu-social li a[href*="ieee.org"]:before {
+:is(#menu-social, .menu-social) li a[href*="ieee.org"]:before {
     font-family: 'Academicons';
     content: "\e929";
 }
 
-#menu-social li a[href*="impactstory.org"]:before {
+:is(#menu-social, .menu-social) li a[href*="impactstory.org"]:before {
     font-family: 'Academicons';
     content: "\e9cf";
 }
 
-#menu-social li a[href*="inspirehep.net"]:before {
+:is(#menu-social, .menu-social) li a[href*="inspirehep.net"]:before {
     font-family: 'Academicons';
     content: "\e9e9";
 }
 
-#menu-social li a[href*="lattes.cnpq.brt"]:before {
+:is(#menu-social, .menu-social) li a[href*="lattes.cnpq.brt"]:before {
     font-family: 'Academicons';
     content: "\e9b3";
 }
 
-#menu-social li a[href*="mathoverflow.net"]:before {
+:is(#menu-social, .menu-social) li a[href*="mathoverflow.net"]:before {
     font-family: 'Academicons';
     content: "\e9f6";
 }
 
-#menu-social li a[href*="mendeley.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="mendeley.com"]:before {
     font-family: 'Academicons';
     content: "\e9f0";
 }
 
-#menu-social li a[href*="openaccessweek.org"]:before {
+:is(#menu-social, .menu-social) li a[href*="openaccessweek.org"]:before {
     font-family: 'Academicons';
     content: "\e939";
 }
 
-#menu-social li a[href*="orcid.org"]:before {
+:is(#menu-social, .menu-social) li a[href*="orcid.org"]:before {
     font-family: 'Academicons';
     content: "\e9d9";
 }
 
-#menu-social li a[href*="osf.io"]:before {
+:is(#menu-social, .menu-social) li a[href*="osf.io"]:before {
     font-family: 'Academicons';
     content: "\e9ef";
 }
 
-#menu-social li a[href*="overleaf.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="overleaf.com"]:before {
     font-family: 'Academicons';
     content: "\e914";
 }
 
-#menu-social li a[href*="philpapers.org"]:before {
+:is(#menu-social, .menu-social) li a[href*="philpapers.org"]:before {
     font-family: 'Academicons';
     content: "\e98a";
 }
 
-#menu-social li a[href*="piazza.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="piazza.com"]:before {
     font-family: 'Academicons';
     content: "\e99a";
 }
 
-#menu-social li a[href*="publons.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="publons.com"]:before {
     font-family: 'Academicons';
     content: "\e937";
 }
 
-#menu-social li a[href*="ncbi.nlm.nih.gov"]:before {
+:is(#menu-social, .menu-social) li a[href*="ncbi.nlm.nih.gov"]:before {
     font-family: 'Academicons';
     content: "\e99f";
 }
 
-#menu-social li a[href*="researchgate.net"]:before {
+:is(#menu-social, .menu-social) li a[href*="researchgate.net"]:before {
     font-family: 'Academicons';
     content: "\e95e";
 }
 
-#menu-social li a[href*="researcherid.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="researcherid.com"]:before {
     font-family: 'Academicons';
     content: "\e91a";
 }
 
-#menu-social li a[href*="scirate.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="scirate.com"]:before {
     font-family: 'Academicons';
     content: "\e98e";
 }
 
-#menu-social li a[href*="semanticscholar.org"]:before {
+:is(#menu-social, .menu-social) li a[href*="semanticscholar.org"]:before {
     font-family: 'Academicons';
     content: "\e96e";
 }
 
-#menu-social li a[href*="springer.com"]:before {
+:is(#menu-social, .menu-social) li a[href*="springer.com"]:before {
     font-family: 'Academicons';
     content: "\e928";
 }
 
-#menu-social li a[href*="zotero.org"]:before {
+:is(#menu-social, .menu-social) li a[href*="zotero.org"]:before {
     font-family: 'Academicons';
     content: "\e962";
 }

@@ -114,19 +114,33 @@ if ( ! function_exists( 'sparkling_social_icons' ) ) :
 	 * @package sparkling
 	 */
 	function sparkling_social_icons() {
+		static $sparkling_instance = 0;
+
 		if ( has_nav_menu( 'social-menu' ) ) {
+			++$sparkling_instance;
+
+			/*
+			 * The menu can print several times on one page -- the footer and the
+			 * Sparkling Social widget, in any number of widget areas -- and every
+			 * copy used to carry id="menu-social". The first keeps that id for
+			 * child themes that style it; the rest are numbered. The stylesheet
+			 * matches the .menu-social class at the same specificity.
+			 */
+			$sparkling_suffix = 1 === $sparkling_instance ? '' : '-' . $sparkling_instance;
+
 			wp_nav_menu(
 				array(
-					'theme_location'  => 'social-menu',
-					'container'       => 'nav',
-					'container_id'    => 'menu-social',
-					'container_class' => 'social-icons',
-					'menu_id'         => 'menu-social-items',
-					'menu_class'      => 'social-menu',
-					'depth'           => 1,
-					'fallback_cb'     => '',
-					'link_before'     => '<i class="social_icon"><span>',
-					'link_after'      => '</span></i>',
+					'theme_location'       => 'social-menu',
+					'container'            => 'nav',
+					'container_id'         => 'menu-social' . $sparkling_suffix,
+					'container_class'      => 'social-icons menu-social',
+					'container_aria_label' => __( 'Social links', 'sparkling' ),
+					'menu_id'              => 'menu-social-items' . $sparkling_suffix,
+					'menu_class'           => 'social-menu',
+					'depth'                => 1,
+					'fallback_cb'          => '',
+					'link_before'          => '<i class="social_icon"><span>',
+					'link_after'           => '</span></i>',
 				)
 			);
 		}
