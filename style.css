@@ -688,7 +688,10 @@ object {
     clear: both;
 }
 
-#secondary .widget > h3 {
+#secondary .widget > h3,
+#secondary .widget_block > .wp-block-heading:first-child,
+#secondary .widget_block > .wp-block-group > .wp-block-heading:first-child,
+#secondary .widget_block > .wp-block-group > .wp-block-group__inner-container > .wp-block-heading:first-child {
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 25px;
@@ -1521,6 +1524,17 @@ p.logged-in-as {
     color: #C7254E;
 }
 
+/* The consent checkbox and its label share a line, as in core's own styles. */
+.comment-respond .comment-form-cookies-consent label {
+    display: inline;
+    margin-left: 0.5em;
+}
+
+/* "Reply to Alice" and "Cancel reply" ran together with no space. */
+.comment-reply-title small {
+    margin-left: 0.75em;
+}
+
 #submit {
     font-size: 12px;
 }
@@ -1733,7 +1747,10 @@ p.logged-in-as {
     border-bottom: none;
 }
 
-.widgettitle {
+.widgettitle,
+.widget_block > .wp-block-heading:first-child,
+.widget_block > .wp-block-group > .wp-block-heading:first-child,
+.widget_block > .wp-block-group > .wp-block-group__inner-container > .wp-block-heading:first-child {
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 25px;
@@ -2635,6 +2652,14 @@ p.logged-in-as {
         padding: 10px 16px;
         margin-top: 10px;
     }
+}
+
+/*
+ * The calendar gets Bootstrap's .table-striped (assets/js/functions.js); its
+ * near-white stripes left the footer's light text unreadable on them.
+ */
+#footer-area .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 /* =Elements when no javaScript is present
