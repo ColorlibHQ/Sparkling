@@ -133,8 +133,9 @@ function sparkling_fontawesome_scan_menus() {
 	}
 
 	// Only now is it worth reading the complete library to tell an icon name
-	// from a utility or unrelated class.
-	$complete = sparkling_fontawesome_icon_names( array( 'fontawesome.min.css', 'brands.min.css' ) );
+	// from a utility or unrelated class. all.min.css is the file the complete
+	// set loads, so it is also the authority on what that set can draw.
+	$complete = sparkling_fontawesome_icon_names( array( 'all.min.css' ) );
 
 	foreach ( $missing as $class ) {
 		if ( isset( $complete[ $class ] ) ) {
@@ -190,7 +191,8 @@ function sparkling_fontawesome_menu_icon_classes() {
  * An icon is a rule that declares the `--fa` custom property holding its
  * glyph; utility classes such as `.fa-fw` declare other properties and are
  * skipped. Selectors are read as a group so aliases -- `.fa-edit` alongside
- * `.fa-pen-to-square` -- are all collected.
+ * `.fa-pen-to-square` -- are all collected, and the version 4 compatibility
+ * layer's `.fa.fa-glass` form counts too, since the complete set draws it.
  *
  * @param array $files Stylesheet paths relative to the Font Awesome directory.
  * @return array Map of icon name to true, for O(1) lookup.
@@ -224,7 +226,7 @@ function sparkling_fontawesome_icon_names( $files ) {
 			}
 
 			foreach ( explode( ',', $rule[1] ) as $selector ) {
-				if ( preg_match( '/^\s*\.(fa-[a-z0-9-]+)\s*$/', $selector, $name ) ) {
+				if ( preg_match( '/^\s*(?:\.fa)?\.(fa-[a-z0-9-]+)\s*$/', $selector, $name ) ) {
 					$names[ $name[1] ] = true;
 				}
 			}

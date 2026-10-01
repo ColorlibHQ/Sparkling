@@ -338,29 +338,23 @@ function sparkling_scripts() {
 
 	// Add Font Awesome stylesheet
 	/*
-	 * Font Awesome 7, self-hosted and split by style: the core file carries the icon
-	 * name map, each style file adds one @font-face. No v4 or v5 shim is loaded --
-	 * the theme's markup uses native names -- and only woff2 ships, which every
-	 * browser able to run a current WordPress supports. The theme renders no outline
-	 * icons, so the regular face is not bundled.
+	 * Font Awesome 7, self-hosted, woff2 only. By default only the subset loads:
+	 * the glyphs this theme renders, a few kilobytes rather than a few hundred.
+	 * Menus carrying icons outside that subset are detected automatically; the
+	 * "Font Awesome icons" setting under Content Options covers icons the scan
+	 * cannot see -- a widget, post content, a page builder -- and the
+	 * sparkling_full_fontawesome filter overrides both. See inc/fontawesome.php.
+	 *
+	 * The complete set is one file, all.min.css, which also carries the version 4
+	 * compatibility layer. fontawesome.min.css, solid.min.css and brands.min.css
+	 * are only the inputs .github/build-icon-subset.py builds the subset from.
 	 */
 	$fa_uri = $template_uri . '/assets/css/fontawesome/';
-	/*
-	 * The bundled Font Awesome is subsetted to the glyphs this theme renders, a few
-	 * kilobytes rather than a few hundred. Menus carrying icons outside that subset
-	 * are detected automatically; the "Font Awesome icons" setting under Content
-	 * Options covers icons the scan cannot see -- a widget, post content, a page
-	 * builder -- and the sparkling_full_fontawesome filter overrides both.
-	 * See inc/fontawesome.php.
-	 */
 	if ( sparkling_fontawesome_use_full_set() ) {
-		wp_enqueue_style( 'sparkling-icons', $fa_uri . 'fontawesome.min.css', array(), '7.3.1-1', 'all' );
-		wp_enqueue_style( 'sparkling-icons-solid', $fa_uri . 'solid.min.css', array( 'sparkling-icons' ), '7.3.1', 'all' );
-		wp_enqueue_style( 'sparkling-icons-brands', $fa_uri . 'brands.min.css', array( 'sparkling-icons' ), '7.3.1', 'all' );
+		wp_enqueue_style( 'sparkling-icons', $fa_uri . 'all.min.css', array(), '7.3.1-2', 'all' );
 	} else {
-		wp_enqueue_style( 'sparkling-icons', $fa_uri . 'subset/fontawesome-subset.min.css', array(), '7.3.1-1', 'all' );
+		wp_enqueue_style( 'sparkling-icons', $fa_uri . 'subset/fontawesome-subset.min.css', array(), '7.3.1-2', 'all' );
 	}
-
 
 	if ( apply_filters( 'sparkling_allow_google_fonts', true ) ) {
 
