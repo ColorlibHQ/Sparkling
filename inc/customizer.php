@@ -380,7 +380,6 @@ function sparkling_customizer( $wp_customize ) {
 			'label'       => __( 'Call For Action Button Link', 'sparkling' ),
 			'section'     => 'sparkling_action_options',
 			'description' => __( 'Enter the link for Call For Action button', 'sparkling' ),
-			'type'        => 'text',
 		)
 	);
 
@@ -1129,7 +1128,8 @@ endif;
  * Sanitize checkbox for WordPress customizer
  */
 function sparkling_sanitize_checkbox( $input ) {
-	if ( 1 == $input ) {
+	// The Customizer posts true; older saves hold 1 or '1'.
+	if ( in_array( $input, array( true, 1, '1' ), true ) ) {
 		return 1;
 	} else {
 		return '';

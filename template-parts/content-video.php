@@ -31,9 +31,9 @@
 
 				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
-				<?php if ( 'post' == get_post_type() ) : ?>
+				<?php if ( 'post' === get_post_type() ) : ?>
 				<div class="entry-meta">
-					<?php sparkling_posted_on(); ?><?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
+					<?php sparkling_posted_on(); ?><?php if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) : ?>
 				<span class="comments-link"><i class="fa-solid fa-comments" aria-hidden="true"></i><?php comments_popup_link( esc_html__( 'Leave a comment', 'sparkling' ), esc_html__( '1 Comment', 'sparkling' ), esc_html__( '% Comments', 'sparkling' ) ); ?></span>
 				<?php endif; ?>
 
@@ -64,7 +64,7 @@
 			<div class="entry-content">
 
 				<?php
-				if ( get_theme_mod( 'sparkling_excerpts' ) == 1 ) :
+				if ( get_theme_mod( 'sparkling_excerpts' ) ) :
 					the_excerpt();
 					?>
 					<p><a class="btn btn-default read-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php esc_html_e( 'Read More', 'sparkling' ); ?></a></p>

@@ -6,7 +6,7 @@
  */
 class Sparkling_Social_Widget extends WP_Widget {
 
-	function __construct() {
+	public function __construct() {
 
 						$widget_ops = array(
 							'classname'   => 'sparkling-social',
@@ -50,7 +50,7 @@ class Sparkling_Social_Widget extends WP_Widget {
 		return $instance;
 	}
 
-	function form( $instance ) {
+	public function form( $instance ) {
 		if ( ! isset( $instance['title'] ) ) {
 			$instance['title'] = esc_html__( 'Follow us', 'sparkling' );
 		}

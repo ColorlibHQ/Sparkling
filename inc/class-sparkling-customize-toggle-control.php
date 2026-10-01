@@ -76,7 +76,6 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 	 * @deprecated 2.6.0 Use Sparkling_Customize_Toggle_Control instead.
 	 */
 	if ( ! class_exists( 'Epsilon_Control_Toggle' ) ) {
-		class Epsilon_Control_Toggle extends Sparkling_Customize_Toggle_Control {
-		}
+		class_alias( 'Sparkling_Customize_Toggle_Control', 'Epsilon_Control_Toggle' );
 	}
 }

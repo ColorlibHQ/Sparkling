@@ -129,7 +129,7 @@ $sparkling_can_activate = current_user_can( 'activate_plugins' );
 				</div>
 			</div>
 			<?php
-		}// End foreach().
+		}
 		?>
 	</div>
 </div>

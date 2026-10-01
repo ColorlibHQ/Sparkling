@@ -5,7 +5,7 @@
  * Sparkling Theme
  */
 class Sparkling_Popular_Posts extends WP_Widget {
-	function __construct() {
+	public function __construct() {
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue' ) );
 		add_action( 'customize_controls_enqueue_scripts', array( $this, 'enqueue' ) );
 		$widget_ops = array(
@@ -145,7 +145,7 @@ class Sparkling_Popular_Posts extends WP_Widget {
 		return $instance;
 	}
 
-	function form( $instance ) {
+	public function form( $instance ) {
 
 		if ( ! isset( $instance['title'] ) ) {
 			$instance['title'] = esc_html__( 'Popular Posts', 'sparkling' );

@@ -74,7 +74,7 @@ get_header();
 										// The image is the link's only content, so it needs a text
 										// alternative even when none was entered in the library.
 										$sparkling_alt = get_post_meta( get_the_ID(), '_wp_attachment_image_alt', true );
-										echo wp_get_attachment_image( get_the_ID(), $sparkling_attachment_size, false, '' === trim( (string) $sparkling_alt ) ? array( 'alt' => get_the_title() ) : array() );
+										echo wp_get_attachment_image( get_the_ID(), $sparkling_attachment_size, false, ( '' === trim( (string) $sparkling_alt ) ) ? array( 'alt' => get_the_title() ) : array() );
 										?>
 									</a>
 								</div><!-- .attachment -->

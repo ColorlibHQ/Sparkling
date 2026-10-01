@@ -222,7 +222,7 @@ if ( ! function_exists( 'sparkling_call_for_action' ) ) :
 	 * Call for action text and button displayed above content
 	 */
 	function sparkling_call_for_action() {
-		if ( is_front_page() && of_get_option( 'w2f_cfa_text' ) != '' ) {
+		if ( is_front_page() && '' !== (string) of_get_option( 'w2f_cfa_text' ) ) {
 			echo '<div class="cfa">';
 			echo '<div class="container">';
 			echo '<div class="col-sm-8">';
@@ -242,7 +242,7 @@ if ( ! function_exists( 'sparkling_featured_slider' ) ) :
 	 * Featured image slider, displayed on front page for static page and blog
 	 */
 	function sparkling_featured_slider() {
-		if ( is_front_page() && of_get_option( 'sparkling_slider_checkbox' ) == 1 ) {
+		if ( is_front_page() && of_get_option( 'sparkling_slider_checkbox' ) ) {
 
 			$count    = absint( of_get_option( 'sparkling_slide_number' ) );
 			$slidecat = of_get_option( 'sparkling_slide_categories' );
@@ -279,7 +279,7 @@ if ( ! function_exists( 'sparkling_featured_slider' ) ) :
 					// it and close the same tag we opened. Previously '</a>' was
 					// printed unconditionally, leaving a stray closing tag whenever
 					// slide links were switched off.
-					$sparkling_slide_linked = ( 1 == of_get_option( 'sparkling_slider_link_checkbox', 1 ) );
+					$sparkling_slide_linked = (bool) of_get_option( 'sparkling_slider_link_checkbox', 1 );
 
 					if ( $sparkling_slide_linked ) {
 						echo '<li><a href="' . esc_url( get_permalink() ) . '">';
@@ -319,10 +319,10 @@ if ( ! function_exists( 'sparkling_featured_slider' ) ) :
 					endif;
 
 					echo '<div class="flex-caption">';
-					if ( get_the_title() != '' ) {
+					if ( '' !== get_the_title() ) {
 						echo '<h2 class="entry-title">' . esc_html( get_the_title() ) . '</h2>';
 					}
-					if ( get_the_excerpt() != '' ) {
+					if ( '' !== get_the_excerpt() ) {
 						echo '<div class="excerpt">' . esc_html( get_the_excerpt() ) . '</div>';
 					}
 					echo '</div>';
@@ -333,7 +333,7 @@ if ( ! function_exists( 'sparkling_featured_slider' ) ) :
 				echo ' </div>';
 			endif;
 			wp_reset_postdata();
-		}// End if().
+		}
 	}
 endif;
 
@@ -370,12 +370,12 @@ if ( ! function_exists( 'sparkling_css_color' ) ) {
 			return '';
 		}
 
-		// #rgb / #rrggbb
+		// Hex: #rgb or #rrggbb.
 		if ( preg_match( '/^#(?:[0-9a-f]{3}|[0-9a-f]{6})$/i', $value ) ) {
 			return $value;
 		}
 
-		// rgb() / rgba()
+		// The rgb() and rgba() functions.
 		if ( preg_match( '/^rgba?\(\s*\d{1,3}\s*,\s*\d{1,3}\s*,\s*\d{1,3}\s*(?:,\s*(?:0|1|0?\.\d+)\s*)?\)$/', $value ) ) {
 			return $value;
 		}
@@ -393,101 +393,100 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
 	/**
 	 * Get information from Theme Options and add it into wp_head
 	 */
-	function get_sparkling_theme_options() {
-
-		echo '<style type="text/css">';
+	function get_sparkling_theme_options() { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- Public since 1.x; pluggable for child themes.
+		$css = '';
 
 		if ( sparkling_css_color( 'link_color' ) ) {
-			echo 'a, #infinite-handle span, #secondary .widget .post-content a, .entry-meta a {color:' . sparkling_css_color( 'link_color' ) . '}';
+			$css .= 'a, #infinite-handle span, #secondary .widget .post-content a, .entry-meta a {color:' . sparkling_css_color( 'link_color' ) . '}';
 		}
 		if ( sparkling_css_color( 'link_hover_color' ) ) {
-			echo 'a:hover, a:focus, a:active, #secondary .widget .post-content a:hover, #secondary .widget .post-content a:focus, .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current, #secondary .widget a:hover, #secondary .widget a:focus {color: ' . sparkling_css_color( 'link_hover_color' ) . ';}';
+			$css .= 'a:hover, a:focus, a:active, #secondary .widget .post-content a:hover, #secondary .widget .post-content a:focus, .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current, #secondary .widget a:hover, #secondary .widget a:focus {color: ' . sparkling_css_color( 'link_hover_color' ) . ';}';
 		}
 		if ( sparkling_css_color( 'element_color' ) ) {
-			echo '.btn-default, .label-default, .flex-caption h2, .btn.btn-default.read-more,button,
+			$css .= '.btn-default, .label-default, .flex-caption h2, .btn.btn-default.read-more,button,
               .navigation .wp-pagenavi-pagination span.current,.navigation .wp-pagenavi-pagination a:hover,
               .woocommerce a.button, .woocommerce button.button,
               .woocommerce input.button, .woocommerce #respond input#submit.alt,
               .woocommerce a.button, .woocommerce button.button,
               .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt { background-color: ' . sparkling_css_color( 'element_color' ) . '; border-color: ' . sparkling_css_color( 'element_color' ) . ';}';
 
-			echo '.site-main [class*="navigation"] a, .more-link, .pagination>li>a, .pagination>li>span, .cfa-button { color: ' . sparkling_css_color( 'element_color' ) . '}';
-			echo '.cfa-button {border-color: ' . sparkling_css_color( 'element_color' ) . ';}';
+			$css .= '.site-main [class*="navigation"] a, .more-link, .pagination>li>a, .pagination>li>span, .cfa-button { color: ' . sparkling_css_color( 'element_color' ) . '}';
+			$css .= '.cfa-button {border-color: ' . sparkling_css_color( 'element_color' ) . ';}';
 		}
 
 		if ( sparkling_css_color( 'element_color_hover' ) ) {
-			echo '.btn-default:hover, .btn-default:focus,.label-default[href]:hover, .label-default[href]:focus, .tagcloud a:hover, .tagcloud a:focus, button, .main-content [class*="navigation"] a:hover, .main-content [class*="navigation"] a:focus, #infinite-handle span:hover, #infinite-handle span:focus-within, .btn.btn-default.read-more:hover, .btn.btn-default.read-more:focus, .btn-default:hover, .btn-default:focus, .scroll-to-top:hover, .scroll-to-top:focus, .btn-default:active, .btn-default.active, .site-main [class*="navigation"] a:hover, .site-main [class*="navigation"] a:focus, .more-link:hover, .more-link:focus, #image-navigation .nav-previous a:hover, #image-navigation .nav-previous a:focus, #image-navigation .nav-next a:hover, #image-navigation .nav-next a:focus, .cfa-button:hover, .cfa-button:focus, .woocommerce a.button:hover, .woocommerce a.button:focus, .woocommerce button.button:hover, .woocommerce button.button:focus, .woocommerce input.button:hover, .woocommerce input.button:focus, .woocommerce #respond input#submit.alt:hover, .woocommerce #respond input#submit.alt:focus, .woocommerce a.button:hover, .woocommerce a.button:focus, .woocommerce button.button:hover, .woocommerce button.button:focus, .woocommerce input.button:hover, .woocommerce input.button:focus, .woocommerce a.button.alt:hover, .woocommerce a.button.alt:focus, .woocommerce button.button.alt:hover, .woocommerce button.button.alt:focus, .woocommerce input.button.alt:hover, .woocommerce input.button.alt:focus, a:hover .flex-caption h2 { background-color: ' . sparkling_css_color( 'element_color_hover' ) . '; border-color: ' . sparkling_css_color( 'element_color_hover' ) . '; }';
+			$css .= '.btn-default:hover, .btn-default:focus,.label-default[href]:hover, .label-default[href]:focus, .tagcloud a:hover, .tagcloud a:focus, button, .main-content [class*="navigation"] a:hover, .main-content [class*="navigation"] a:focus, #infinite-handle span:hover, #infinite-handle span:focus-within, .btn.btn-default.read-more:hover, .btn.btn-default.read-more:focus, .btn-default:hover, .btn-default:focus, .scroll-to-top:hover, .scroll-to-top:focus, .btn-default:active, .btn-default.active, .site-main [class*="navigation"] a:hover, .site-main [class*="navigation"] a:focus, .more-link:hover, .more-link:focus, #image-navigation .nav-previous a:hover, #image-navigation .nav-previous a:focus, #image-navigation .nav-next a:hover, #image-navigation .nav-next a:focus, .cfa-button:hover, .cfa-button:focus, .woocommerce a.button:hover, .woocommerce a.button:focus, .woocommerce button.button:hover, .woocommerce button.button:focus, .woocommerce input.button:hover, .woocommerce input.button:focus, .woocommerce #respond input#submit.alt:hover, .woocommerce #respond input#submit.alt:focus, .woocommerce a.button:hover, .woocommerce a.button:focus, .woocommerce button.button:hover, .woocommerce button.button:focus, .woocommerce input.button:hover, .woocommerce input.button:focus, .woocommerce a.button.alt:hover, .woocommerce a.button.alt:focus, .woocommerce button.button.alt:hover, .woocommerce button.button.alt:focus, .woocommerce input.button.alt:hover, .woocommerce input.button.alt:focus, a:hover .flex-caption h2 { background-color: ' . sparkling_css_color( 'element_color_hover' ) . '; border-color: ' . sparkling_css_color( 'element_color_hover' ) . '; }';
 		}
 		if ( sparkling_css_color( 'element_color_hover' ) ) {
-			echo '.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus-within, .pagination>li>span:hover {color: ' . sparkling_css_color( 'element_color_hover' ) . ';}';
+			$css .= '.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus-within, .pagination>li>span:hover {color: ' . sparkling_css_color( 'element_color_hover' ) . ';}';
 		}
 		if ( sparkling_css_color( 'cfa_bg_color' ) ) {
-			echo '.cfa { background-color: ' . sparkling_css_color( 'cfa_bg_color' ) . '; } .cfa-button:hover a {color: ' . sparkling_css_color( 'cfa_bg_color' ) . ';}';
+			$css .= '.cfa { background-color: ' . sparkling_css_color( 'cfa_bg_color' ) . '; } .cfa-button:hover a {color: ' . sparkling_css_color( 'cfa_bg_color' ) . ';}';
 		}
 		if ( sparkling_css_color( 'cfa_color' ) ) {
-			echo '.cfa-text { color: ' . sparkling_css_color( 'cfa_color' ) . ';}';
+			$css .= '.cfa-text { color: ' . sparkling_css_color( 'cfa_color' ) . ';}';
 		}
 		// Each declaration only when its colour is set: with one of the two empty
 		// this printed "border-color: ;", an invalid declaration.
 		if ( sparkling_css_color( 'cfa_btn_color' ) ) {
-			echo '.cfa-button {border-color: ' . sparkling_css_color( 'cfa_btn_color' ) . ';}';
+			$css .= '.cfa-button {border-color: ' . sparkling_css_color( 'cfa_btn_color' ) . ';}';
 		}
 		if ( sparkling_css_color( 'cfa_btn_txt_color' ) ) {
-			echo '.cfa-button {color: ' . sparkling_css_color( 'cfa_btn_txt_color' ) . ';}';
+			$css .= '.cfa-button {color: ' . sparkling_css_color( 'cfa_btn_txt_color' ) . ';}';
 		}
 		if ( sparkling_css_color( 'heading_color' ) ) {
-			echo 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .entry-title, .entry-title a {color: ' . sparkling_css_color( 'heading_color' ) . ';}';
+			$css .= 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .entry-title, .entry-title a {color: ' . sparkling_css_color( 'heading_color' ) . ';}';
 		}
 		if ( sparkling_css_color( 'nav_bg_color' ) ) {
-			echo '.navbar.navbar-default {background-color: ' . sparkling_css_color( 'nav_bg_color' ) . ';}';
+			$css .= '.navbar.navbar-default {background-color: ' . sparkling_css_color( 'nav_bg_color' ) . ';}';
 			// Only where submenus open inside the bar. From 768px they open as
 			// white dropdowns, where this painted a dark block behind each link.
-			echo '@media (max-width: 767px) { .navbar-default .navbar-nav .open .dropdown-menu > li > a {background-color: ' . sparkling_css_color( 'nav_bg_color' ) . ';} }';
+			$css .= '@media (max-width: 767px) { .navbar-default .navbar-nav .open .dropdown-menu > li > a {background-color: ' . sparkling_css_color( 'nav_bg_color' ) . ';} }';
 		}
 		if ( sparkling_css_color( 'nav_link_color' ) ) {
-			echo '.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > .caret, .navbar-default .navbar-nav > li, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus { color: ' . sparkling_css_color( 'nav_link_color' ) . ';}';
-			echo '@media (max-width: 767px){ .navbar-default .navbar-nav > li:hover > a, .navbar-default .navbar-nav > li:hover > .caret{ color: ' . sparkling_css_color( 'nav_link_color' ) . '!important ;} }';
+			$css .= '.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > .caret, .navbar-default .navbar-nav > li, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus { color: ' . sparkling_css_color( 'nav_link_color' ) . ';}';
+			$css .= '@media (max-width: 767px){ .navbar-default .navbar-nav > li:hover > a, .navbar-default .navbar-nav > li:hover > .caret{ color: ' . sparkling_css_color( 'nav_link_color' ) . '!important ;} }';
 		}
 		if ( sparkling_css_color( 'nav_item_hover_color' ) ) {
-			echo '.navbar-default .navbar-nav > li:hover > a, .navbar-default .navbar-nav > li:focus-within > a, .navbar-nav > li:hover > .caret, .navbar-nav > li:focus-within > .caret, .navbar-default .navbar-nav.sparkling-mobile-menu > li.open > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li.open > .caret, .navbar-default .navbar-nav > li:hover, .navbar-default .navbar-nav > li:focus-within, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > .caret, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {color: ' . sparkling_css_color( 'nav_item_hover_color' ) . ';}';
-			echo '@media (max-width: 767px){ .navbar-default .navbar-nav > li.open > a, .navbar-default .navbar-nav > li.open > .caret { color: ' . sparkling_css_color( 'nav_item_hover_color' ) . ' !important; } }';
+			$css .= '.navbar-default .navbar-nav > li:hover > a, .navbar-default .navbar-nav > li:focus-within > a, .navbar-nav > li:hover > .caret, .navbar-nav > li:focus-within > .caret, .navbar-default .navbar-nav.sparkling-mobile-menu > li.open > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li.open > .caret, .navbar-default .navbar-nav > li:hover, .navbar-default .navbar-nav > li:focus-within, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > .caret, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {color: ' . sparkling_css_color( 'nav_item_hover_color' ) . ';}';
+			$css .= '@media (max-width: 767px){ .navbar-default .navbar-nav > li.open > a, .navbar-default .navbar-nav > li.open > .caret { color: ' . sparkling_css_color( 'nav_item_hover_color' ) . ' !important; } }';
 		}
 		if ( sparkling_css_color( 'nav_dropdown_bg' ) ) {
-			echo '.dropdown-menu {background-color: ' . sparkling_css_color( 'nav_dropdown_bg' ) . ';}';
+			$css .= '.dropdown-menu {background-color: ' . sparkling_css_color( 'nav_dropdown_bg' ) . ';}';
 		}
 		if ( sparkling_css_color( 'nav_dropdown_item' ) ) {
-			echo '.navbar-default .navbar-nav .open .dropdown-menu > li > a, .dropdown-menu > li > a, .dropdown-menu > li > .caret { color: ' . sparkling_css_color( 'nav_dropdown_item' ) . ';}';
+			$css .= '.navbar-default .navbar-nav .open .dropdown-menu > li > a, .dropdown-menu > li > a, .dropdown-menu > li > .caret { color: ' . sparkling_css_color( 'nav_dropdown_item' ) . ';}';
 		}
 
 		if ( sparkling_css_color( 'nav_dropdown_bg_hover' ) ) {
-			echo '.navbar-default .navbar-nav .dropdown-menu > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:focus-within, .dropdown-menu > .active {background-color: ' . sparkling_css_color( 'nav_dropdown_bg_hover' ) . ';}';
-			echo '@media (max-width: 767px) {.navbar-default .navbar-nav .dropdown-menu > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:focus, .dropdown-menu > .active {background: transparent;} }';
+			$css .= '.navbar-default .navbar-nav .dropdown-menu > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:focus-within, .dropdown-menu > .active {background-color: ' . sparkling_css_color( 'nav_dropdown_bg_hover' ) . ';}';
+			$css .= '@media (max-width: 767px) {.navbar-default .navbar-nav .dropdown-menu > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:focus, .dropdown-menu > .active {background: transparent;} }';
 		}
 		if ( sparkling_css_color( 'nav_dropdown_item_hover' ) ) {
-			echo '.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>.caret, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .dropdown-menu>li:hover>a, .dropdown-menu>li:hover>.caret {color:' . sparkling_css_color( 'nav_dropdown_item_hover' ) . ';}';
-			echo '@media (max-width: 767px) {.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .dropdown-menu > li.active > .caret, .navbar-default .navbar-nav .dropdown-menu > li.open > a, .navbar-default .navbar-nav li.open > a, .navbar-default .navbar-nav li.open > .caret {color:' . sparkling_css_color( 'nav_dropdown_item_hover' ) . ';} }';
+			$css .= '.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>.caret, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .dropdown-menu>li:hover>a, .dropdown-menu>li:hover>.caret {color:' . sparkling_css_color( 'nav_dropdown_item_hover' ) . ';}';
+			$css .= '@media (max-width: 767px) {.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .dropdown-menu > li.active > .caret, .navbar-default .navbar-nav .dropdown-menu > li.open > a, .navbar-default .navbar-nav li.open > a, .navbar-default .navbar-nav li.open > .caret {color:' . sparkling_css_color( 'nav_dropdown_item_hover' ) . ';} }';
 		}
 
 		if ( sparkling_css_color( 'nav_dropdown_item_hover' ) ) {
-			echo '.navbar-default .navbar-nav .current-menu-ancestor a.dropdown-toggle { color: ' . sparkling_css_color( 'nav_dropdown_item_hover' ) . ';}';
+			$css .= '.navbar-default .navbar-nav .current-menu-ancestor a.dropdown-toggle { color: ' . sparkling_css_color( 'nav_dropdown_item_hover' ) . ';}';
 		}
 		if ( sparkling_css_color( 'footer_bg_color' ) ) {
-			echo '#colophon {background-color: ' . sparkling_css_color( 'footer_bg_color' ) . ';}';
+			$css .= '#colophon {background-color: ' . sparkling_css_color( 'footer_bg_color' ) . ';}';
 		}
 		if ( sparkling_css_color( 'footer_text_color' ) ) {
-			echo '#footer-area, .site-info, .site-info caption, #footer-area caption {color: ' . sparkling_css_color( 'footer_text_color' ) . ';}';
+			$css .= '#footer-area, .site-info, .site-info caption, #footer-area caption {color: ' . sparkling_css_color( 'footer_text_color' ) . ';}';
 		}
 		if ( sparkling_css_color( 'footer_widget_bg_color' ) ) {
-			echo '#footer-area {background-color: ' . sparkling_css_color( 'footer_widget_bg_color' ) . ';}';
+			$css .= '#footer-area {background-color: ' . sparkling_css_color( 'footer_widget_bg_color' ) . ';}';
 		}
 		if ( sparkling_css_color( 'footer_link_color' ) ) {
-			echo '.site-info a, #footer-area a {color: ' . sparkling_css_color( 'footer_link_color' ) . ';}';
+			$css .= '.site-info a, #footer-area a {color: ' . sparkling_css_color( 'footer_link_color' ) . ';}';
 		}
 		if ( sparkling_css_color( 'social_color' ) ) {
-			echo '.social-icons li a {background-color: ' . sparkling_css_color( 'social_color' ) . ' !important ;}';
+			$css .= '.social-icons li a {background-color: ' . sparkling_css_color( 'social_color' ) . ' !important ;}';
 		}
 		if ( sparkling_css_color( 'social_footer_color' ) ) {
-			echo '#footer-area .social-icons li a {background-color: ' . sparkling_css_color( 'social_footer_color' ) . ' !important ;}';
+			$css .= '#footer-area .social-icons li a {background-color: ' . sparkling_css_color( 'social_footer_color' ) . ' !important ;}';
 		}
 		global $typography_options;
 		$typography = of_get_option( 'main_body_typography' );
@@ -495,16 +494,16 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
 			// Each value is checked against the whitelist it was chosen from, so a
 			// hand-edited option cannot inject arbitrary text into the stylesheet.
 			if ( isset( $typography['color'] ) && preg_match( '/^#(?:[0-9a-f]{3}|[0-9a-f]{6})$/i', trim( $typography['color'] ) ) ) {
-				echo 'body, .entry-content {color:' . esc_attr( trim( $typography['color'] ) ) . '}';
+				$css .= 'body, .entry-content {color:' . esc_attr( trim( $typography['color'] ) ) . '}';
 			}
 			if ( isset( $typography['face'] ) && isset( $typography_options['faces'][ $typography['face'] ] ) ) {
-				echo '.entry-content {font-family: ' . esc_attr( $typography_options['faces'][ $typography['face'] ] ) . ';}';
+				$css .= '.entry-content {font-family: ' . esc_attr( $typography_options['faces'][ $typography['face'] ] ) . ';}';
 			}
 			if ( isset( $typography['size'] ) && isset( $typography_options['sizes'][ $typography['size'] ] ) ) {
-				echo '.entry-content {font-size:' . esc_attr( $typography_options['sizes'][ $typography['size'] ] ) . '}';
+				$css .= '.entry-content {font-size:' . esc_attr( $typography_options['sizes'][ $typography['size'] ] ) . '}';
 			}
 			if ( isset( $typography['style'] ) && isset( $typography_options['styles'][ $typography['style'] ] ) ) {
-				echo '.entry-content {font-weight:' . esc_attr( $typography['style'] ) . '}';
+				$css .= '.entry-content {font-weight:' . esc_attr( $typography['style'] ) . '}';
 			}
 		}
 		$sparkling_custom_css = of_get_option( 'custom_css' );
@@ -518,11 +517,21 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
 			 * "</style><script>" back into live markup. Strip tags instead so the
 			 * value cannot break out of the <style> element.
 			 */
-			echo wp_strip_all_tags( $sparkling_custom_css );
+			$css .= wp_strip_all_tags( $sparkling_custom_css );
 		}
-		echo '</style>';
+
+		// Nothing to print on a site using the default colours.
+		if ( '' === $css ) {
+			return;
+		}
+
+		/*
+		 * Every value above is a colour validated by sparkling_css_color(), a
+		 * value from a whitelist, or legacy CSS with its tags stripped.
+		 */
+		echo '<style id="sparkling-theme-options">' . $css . '</style>' . "\n"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- See above.
 	}
-}// End if().
+}
 add_action( 'wp_head', 'get_sparkling_theme_options', 10 );
 
 /**

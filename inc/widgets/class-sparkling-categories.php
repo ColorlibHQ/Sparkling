@@ -6,7 +6,7 @@
  */
 class Sparkling_Categories extends WP_Widget {
 
-	function __construct() {
+	public function __construct() {
 
 		$widget_ops = array(
 			'classname'   => 'sparkling-cats',
@@ -83,7 +83,7 @@ class Sparkling_Categories extends WP_Widget {
 		return $instance;
 	}
 
-	function form( $instance ) {
+	public function form( $instance ) {
 		if ( ! isset( $instance['title'] ) ) {
 			$instance['title'] = esc_html__( 'Categories', 'sparkling' );
 		}
@@ -115,11 +115,8 @@ class Sparkling_Categories extends WP_Widget {
 		<p><label>
 		<input  type="checkbox"
 				name="<?php echo esc_attr( $this->get_field_name( 'enable_count' ) ); ?>"
-				id="<?php echo esc_attr( $this->get_field_id( 'enable_count' ) ); ?>" 
-												<?php
-												if ( '' != $instance['enable_count'] ) {
-													echo 'checked=checked ';}
-												?>
+				id="<?php echo esc_attr( $this->get_field_id( 'enable_count' ) ); ?>"
+				<?php checked( ! empty( $instance['enable_count'] ) ); ?>
 		/>
 			<?php esc_html_e( 'Enable Posts Count', 'sparkling' ); ?></label>
 		</p>
