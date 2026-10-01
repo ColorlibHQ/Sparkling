@@ -36,7 +36,7 @@ function sparkling_welcome_customize_register( $wp_customize ) {
 			$wp_customize,
 			'sparkling_recommended_actions',
 			array(
-				'title'    => esc_html__( 'Recommended Actions & Plugins', 'sparkling' ),
+				'title'    => esc_html__( 'Recommended Plugins', 'sparkling' ),
 				'url'      => admin_url( 'themes.php?page=sparkling-welcome&tab=recommended_plugins' ),
 				'priority' => 0,
 			)
