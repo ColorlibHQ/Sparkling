@@ -1,7 +1,23 @@
-node_modules/*
-.idea/*
-sparkling.zip
-.gitignore
+# Dependencies. Anchored: unanchored, "vendor/" also matched assets/js/vendor/,
+# which is how the theme's own Bootstrap and FlexSlider scripts once went
+# untracked and every git-based build shipped without them.
+/node_modules/
+/vendor/
 
-# macOS
+# Build output
+/build/
+/sparkling.zip
+
+# Editors / OS
+.idea/
+.vscode/
 .DS_Store
+*.swp
+
+# Generated
+.sass-cache/
+*.map
+.phpcs-cache
+
+# package-lock.json and composer.lock are committed so `npm ci` and
+# `composer install` reproduce the exact toolchain that was tested.
