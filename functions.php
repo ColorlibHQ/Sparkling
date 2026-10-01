@@ -378,14 +378,20 @@ function sparkling_scripts() {
 	wp_enqueue_style( 'sparkling-style', get_stylesheet_uri(), array(), SPARKLING_VERSION, 'all' );
 
 	/*
+	 * Restores the jQuery APIs that jQuery 4.0 removed and Bootstrap 3 and
+	 * FlexSlider still call. A guarded no-op on jQuery 3.x.
+	 */
+	wp_register_script( 'sparkling-jquery-compat', $template_uri . '/assets/js/jquery-compat.js', array( 'jquery' ), SPARKLING_VERSION, true );
+
+	/*
 	 * Bootstrap's own JS still needs jQuery, but it belongs in the footer: it binds
 	 * its data-api handlers on ready, so nothing is lost by not blocking the head.
 	 */
-	wp_enqueue_script( 'sparkling-bootstrapjs', $template_uri . '/assets/js/vendor/bootstrap.min.js', array( 'jquery' ), '3.4.1-1', true );
+	wp_enqueue_script( 'sparkling-bootstrapjs', $template_uri . '/assets/js/vendor/bootstrap.min.js', array( 'jquery', 'sparkling-jquery-compat' ), '3.4.1-sparkling.1', true );
 
 	if ( $sparkling_slider_active ) {
-		// Add slider JS only if is front page ans slider is enabled
-		wp_enqueue_script( 'sparkling-flexslider-js', $template_uri . '/assets/js/vendor/flexslider.min.js', array( 'jquery' ), '2.7.2', true );
+		// Add slider JS only if is front page and slider is enabled
+		wp_enqueue_script( 'sparkling-flexslider-js', $template_uri . '/assets/js/vendor/flexslider.min.js', array( 'jquery', 'sparkling-jquery-compat' ), '2.7.2', true );
 		// Flexslider customization
 		wp_enqueue_script(
 			'sparkling-flexslider-customization',
