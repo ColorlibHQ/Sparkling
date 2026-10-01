@@ -23,8 +23,8 @@ get_header(); ?>
 
 			the_post_navigation(
 				array(
-					'next_text' => '<span class="post-title">%title <i class="fa-solid fa-chevron-right"></i></span>',
-					'prev_text' => '<i class="fa-solid fa-chevron-left"></i> <span class="post-title">%title</span>',
+					'next_text' => '<span class="post-title">%title <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></span>',
+					'prev_text' => '<i class="fa-solid fa-chevron-left" aria-hidden="true"></i> <span class="post-title">%title</span>',
 				)
 			);
 

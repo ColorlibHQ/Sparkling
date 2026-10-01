@@ -58,7 +58,7 @@ if ( is_page_template( 'page-fullwidth.php' ) ) {
 						esc_html__( 'Edit %s', 'sparkling' ),
 						the_title( '<span class="screen-reader-text">"', '"</span>', false )
 					),
-					'<i class="fa-regular fa-edit"></i><span class="edit-link">',
+					'<i class="fa-solid fa-pen-to-square" aria-hidden="true"></i><span class="edit-link">',
 					'</span>'
 				);
 			?>

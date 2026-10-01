@@ -22,7 +22,7 @@
 					$categories_list = get_the_category_list( esc_html__( ', ', 'sparkling' ) );
 				if ( $categories_list && sparkling_categorized_blog() ) :
 					?>
-				<span class="cat-links"><i class="fa-solid fa-folder-open"></i>
+				<span class="cat-links"><i class="fa-solid fa-folder-open" aria-hidden="true"></i>
 					<?php echo ' ' . wp_kses_post( $categories_list ); ?>
 				</span>
 				<?php endif; // End if categories ?>
@@ -34,7 +34,7 @@
 								esc_html__( 'Edit %s', 'sparkling' ),
 								the_title( '<span class="screen-reader-text">"', '"</span>', false )
 							),
-							'<i class="fa-regular fa-edit"></i><span class="edit-link">',
+							'<i class="fa-solid fa-pen-to-square" aria-hidden="true"></i><span class="edit-link">',
 							'</span>'
 						);
 					?>
@@ -66,9 +66,8 @@
 			<div class="tagcloud">
 
 				<?php
-					$tags = get_the_tags( get_the_ID() );
-				foreach ( $tags as $tag ) {
-					echo '<a href="' . esc_url( get_tag_link( $tag->term_id ) ) . '">' . esc_html( $tag->name ) . '</a> ';
+				foreach ( get_the_tags( get_the_ID() ) as $sparkling_tag ) {
+					echo '<a href="' . esc_url( get_tag_link( $sparkling_tag->term_id ) ) . '">' . esc_html( $sparkling_tag->name ) . '</a> ';
 				}
 				?>
 

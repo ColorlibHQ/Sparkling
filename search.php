@@ -39,8 +39,8 @@ get_header(); ?>
 
 			the_posts_pagination(
 				array(
-					'prev_text' => '<i class="fa-solid fa-chevron-left"></i> ' . __( 'Newer posts', 'sparkling' ),
-					'next_text' => __( 'Older posts', 'sparkling' ) . ' <i class="fa-solid fa-chevron-right"></i>',
+					'prev_text' => '<i class="fa-solid fa-chevron-left" aria-hidden="true"></i> ' . __( 'Newer posts', 'sparkling' ),
+					'next_text' => __( 'Older posts', 'sparkling' ) . ' <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>',
 				)
 			);
 
