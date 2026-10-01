@@ -145,6 +145,11 @@ input[type="search"] {
     box-sizing: content-box;
 }
 
+/* Bootstrap fields size themselves as border-box, search fields included. */
+input[type="search"].form-control {
+    box-sizing: border-box;
+}
+
 input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
     -webkit-appearance: none;
 }

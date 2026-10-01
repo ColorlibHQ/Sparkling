@@ -53,29 +53,51 @@ function sparkling_title( $title ) {
 }
 
 /**
- * Password protected post form using Boostrap classes
+ * Password protected post form using Bootstrap classes.
+ *
+ * Kept under its original name so child themes that remove the filter still
+ * can. It used to discard core's form entirely, which lost the redirect back
+ * to the post and the "Invalid password" message WordPress 6.8 added, and it
+ * pre-filled the password field with the current search query, posted to a
+ * URL built from the siteurl option instead of site_url(), and reused the
+ * search form's id="searchsubmit".
+ *
+ * @param string  $output           Core's form markup (unused).
+ * @param WP_Post $post             Post being displayed. WordPress 5.8+.
+ * @param string  $invalid_password Error message after a wrong password. WordPress 6.8+.
+ *
+ * @return string
  */
-add_filter( 'the_password_form', 'custom_password_form' );
+function custom_password_form( $output = '', $post = null, $invalid_password = '' ) { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- Public name since 1.0; child themes remove_filter() it.
+	$post     = get_post( $post );
+	$field_id = 'pwbox-' . ( empty( $post->ID ) ? wp_rand() : $post->ID );
+	$error    = '';
+	$describe = '';
 
-function custom_password_form() {
-	global $post;
-	$label = 'pwbox-' . ( empty( $post->ID ) ? rand() : $post->ID );
-	$o     = '<form class="protected-post-form" action="' . get_option( 'siteurl' ) . '/wp-login.php?action=postpass" method="post">
-  <div class="row">
-    <div class="col-lg-10">
-        <p>' . esc_html__( 'This post is password protected. To view it please enter your password below:', 'sparkling' ) . '</p>
-        <label for="' . $label . '">' . esc_html__( 'Password:', 'sparkling' ) . ' </label>
-      <div class="input-group">
-        <input class="form-control" value="' . get_search_query() . '" name="post_password" id="' . $label . '" type="password">
-        <span class="input-group-btn"><button type="submit" class="btn btn-default" name="submit" id="searchsubmit" value="' . esc_attr__( 'Submit', 'sparkling' ) . '">' . esc_html__( 'Submit', 'sparkling' ) . '</button>
-        </span>
-      </div>
-    </div>
-  </div>
-</form>';
+	if ( '' !== (string) $invalid_password ) {
+		$error    = '<div class="alert alert-danger post-password-form-invalid-password" role="alert"><p id="error-' . esc_attr( $field_id ) . '">' . esc_html( $invalid_password ) . '</p></div>';
+		$describe = ' aria-describedby="error-' . esc_attr( $field_id ) . '"';
+	}
 
-	return $o;
+	$redirect = empty( $post->ID ) ? '' : '<input type="hidden" name="redirect_to" value="' . esc_attr( get_permalink( $post->ID ) ) . '" />';
+
+	/*
+	 * One line, with every inline element already inside a block, like core's
+	 * own form: this is returned in place of the post content, so the_content's
+	 * wpautop() runs over it and would otherwise add <p> and <br> tags.
+	 */
+	return '<form class="protected-post-form post-password-form" action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">'
+		. '<div class="row"><div class="col-lg-10">'
+		. $error
+		. '<p>' . esc_html__( 'This post is password protected. To view it please enter your password below:', 'sparkling' ) . '</p>'
+		. '<p><label for="' . esc_attr( $field_id ) . '">' . esc_html__( 'Password:', 'sparkling' ) . ' </label>' . $redirect . '</p>'
+		. '<div class="input-group">'
+		. '<input class="form-control" name="post_password" id="' . esc_attr( $field_id ) . '" type="password" spellcheck="false" required' . $describe . ' />'
+		. '<span class="input-group-btn"><button type="submit" class="btn btn-default">' . esc_html__( 'Submit', 'sparkling' ) . '</button></span>'
+		. '</div>'
+		. '</div></div></form>';
 }
+add_filter( 'the_password_form', 'custom_password_form', 10, 3 );
 
 // Add Bootstrap classes for table
 add_filter( 'the_content', 'sparkling_add_custom_table_class' );
