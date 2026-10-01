@@ -414,7 +414,10 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
 			echo 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .entry-title, .entry-title a {color: ' . sparkling_css_color( 'heading_color' ) . ';}';
 		}
 		if ( sparkling_css_color( 'nav_bg_color' ) ) {
-			echo '.navbar.navbar-default, .navbar-default .navbar-nav .open .dropdown-menu > li > a {background-color: ' . sparkling_css_color( 'nav_bg_color' ) . ';}';
+			echo '.navbar.navbar-default {background-color: ' . sparkling_css_color( 'nav_bg_color' ) . ';}';
+			// Only where submenus open inside the bar. From 768px they open as
+			// white dropdowns, where this painted a dark block behind each link.
+			echo '@media (max-width: 767px) { .navbar-default .navbar-nav .open .dropdown-menu > li > a {background-color: ' . sparkling_css_color( 'nav_bg_color' ) . ';} }';
 		}
 		if ( sparkling_css_color( 'nav_link_color' ) ) {
 			echo '.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > .caret, .navbar-default .navbar-nav > li, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus { color: ' . sparkling_css_color( 'nav_link_color' ) . ';}';

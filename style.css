@@ -1167,6 +1167,24 @@ button:focus,
         position: relative;
     }
 
+    /*
+     * The submenu arrow of a dropdown item sits at the item's right edge. As
+     * a float after the link it wrapped under the item -- outside the
+     * dropdown, for the last one -- whenever the link filled the width.
+     */
+    .dropdown-menu > li.dropdown {
+        position: relative;
+        padding-right: 30px;
+    }
+
+    .dropdown-menu > li.dropdown > .caret {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        float: none;
+        margin-top: -4px;
+    }
+
     .dropdown-menu > li > a {
         display: inline-block;
     }
