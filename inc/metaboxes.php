@@ -62,12 +62,12 @@ function sparkling_sidebar_layout( $post ) {
 				<label class="description">
 				<?php
 					$layout = get_post_meta( $post_id, 'site_layout', true );
-					?>
+				?>
 					<select name="site_layout" id="site_layout">
 						<option value=""><?php esc_html_e( 'Default', 'sparkling' ); ?></option>
 						<?php
 						foreach ( (array) $site_layout as $key => $val ) {
-						?>
+							?>
 						<option value="<?php echo esc_attr( $key ); ?>" <?php selected( $layout, $key ); ?> ><?php echo esc_html( $val ); ?></option>
 													<?php
 						}

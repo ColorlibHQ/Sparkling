@@ -25,8 +25,10 @@
  */
 function sparkling_custom_header_setup() {
 	add_theme_support(
-		'custom-header', apply_filters(
-			'sparkling_custom_header_args', array(
+		'custom-header',
+		apply_filters(
+			'sparkling_custom_header_args',
+			array(
 				'default-image'          => '',
 				'default-text-color'     => 'dadada',
 				'width'                  => 300,
@@ -57,7 +59,7 @@ if ( ! function_exists( 'sparkling_header_style' ) ) :
 		// @$b = TEXTCOLOR; // @codingStandardsIgnoreLine
 
 		// if ( $a . '_' . $b == $header_text_color ) {
-		// 	return;
+		//  return;
 		// }
 
 		// If we get this far, we have custom styles. Let's do this.
@@ -66,22 +68,22 @@ if ( ! function_exists( 'sparkling_header_style' ) ) :
 		<?php
 		// Has the text been hidden?
 		if ( 'blank' == $header_text_color ) :
-	?>
+			?>
 		.site-name,
 		.site-description {
 			position: absolute;
 			clip: rect(1px, 1px, 1px, 1px);
 		}
-	<?php
-		// If the user has set a custom color for the text use that
+			<?php
+			// If the user has set a custom color for the text use that
 		else :
-	?>
+			?>
 		.navbar > .container .navbar-brand {
 			color: #<?php echo esc_attr( $header_text_color ); ?>;
 		}
 	<?php endif; ?>
 	</style>
-	<?php
+		<?php
 	}
 endif; // sparkling_header_style
 
@@ -129,6 +131,6 @@ if ( ! function_exists( 'sparkling_admin_header_image' ) ) :
 		<img src="<?php header_image(); ?>" alt="">
 		<?php endif; ?>
 	</div>
-	<?php
+		<?php
 	}
 endif; // sparkling_admin_header_image

@@ -83,7 +83,7 @@ if ( ! class_exists( 'Sparkling_Notify_System' ) ) {
 		 */
 		public static function check_wordpress_importer() {
 			if ( file_exists( ABSPATH . 'wp-content/plugins/wordpress-importer/wordpress-importer.php' ) ) {
-				include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+				include_once ABSPATH . 'wp-admin/includes/plugin.php';
 
 				return is_plugin_active( 'wordpress-importer/wordpress-importer.php' );
 			}
@@ -107,7 +107,7 @@ if ( ! class_exists( 'Sparkling_Notify_System' ) ) {
 		 */
 		public static function check_plugin_is_active( $slug ) {
 			if ( file_exists( ABSPATH . 'wp-content/plugins/' . $slug . '/' . $slug . '.php' ) ) {
-				include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+				include_once ABSPATH . 'wp-admin/includes/plugin.php';
 
 				return is_plugin_active( $slug . '/' . $slug . '.php' );
 			}
@@ -125,7 +125,6 @@ if ( ! class_exists( 'Sparkling_Notify_System' ) ) {
 			}
 
 			return true;
-
 		}
 
 		public static function has_import_plugin( $slug = null ) {
@@ -155,7 +154,6 @@ if ( ! class_exists( 'Sparkling_Notify_System' ) ) {
 			}
 
 			return true;
-
 		}
 
 		public static function has_import_plugins() {
@@ -251,7 +249,6 @@ if ( ! class_exists( 'Sparkling_Notify_System' ) ) {
 			}
 
 			return __( 'Please install the WordPress widget importer to create the demo content', 'sparkling' );
-
 		}
 
 		public static function create_plugin_requirement_title( $install_text, $activate_text, $plugin_slug ) {
@@ -276,7 +273,6 @@ if ( ! class_exists( 'Sparkling_Notify_System' ) ) {
 			} else {
 				return '';
 			}
-
 		}
 
 		/**

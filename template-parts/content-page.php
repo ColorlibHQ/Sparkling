@@ -9,13 +9,15 @@
 <?php
 if ( is_page_template( 'page-fullwidth.php' ) ) {
 	the_post_thumbnail(
-		'sparkling-featured-fullwidth', array(
+		'sparkling-featured-fullwidth',
+		array(
 			'class' => 'single-featured',
 		)
 	);
 } else {
 	the_post_thumbnail(
-		'sparkling-featured', array(
+		'sparkling-featured',
+		array(
 			'class' => 'single-featured',
 		)
 	);
@@ -37,13 +39,13 @@ if ( is_page_template( 'page-fullwidth.php' ) ) {
 					'after'  => '</div>',
 				)
 			);
-		?>
+			?>
 
 	<?php
-	  // Checks if this is homepage to enable homepage widgets
+		// Checks if this is homepage to enable homepage widgets
 	if ( is_front_page() ) :
 		get_sidebar( 'home' );
-	  endif;
+		endif;
 	?>
 	</div><!-- .entry-content -->
 

@@ -24,7 +24,7 @@
 					<?php
 					if ( of_get_option( 'footer_social' ) ) {
 						sparkling_social_icons();}
-?>
+					?>
 					<nav role="navigation" class="col-md-6">
 						<?php sparkling_footer_links(); ?>
 					</nav>

@@ -465,12 +465,12 @@ function sparkling_options_display_sidebar() {
 	<script>!function (d, s, id) {
 		var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'
 		if (!d.getElementById(id)) {
-		  js = d.createElement(s)
-		  js.id = id
-		  js.src = p + '://platform.twitter.com/widgets.js'
-		  fjs.parentNode.insertBefore(js, fjs)
+			js = d.createElement(s)
+			js.id = id
+			js.src = p + '://platform.twitter.com/widgets.js'
+			fjs.parentNode.insertBefore(js, fjs)
 		}
-	  }(document, 'script', 'twitter-wjs')</script>
+		}(document, 'script', 'twitter-wjs')</script>
 
 	<!-- Facebook -->
 	<div id="fb-root"></div>
@@ -482,7 +482,7 @@ function sparkling_options_display_sidebar() {
 		js.id = id
 		js.src = '//connect.facebook.net/en_US/all.js#xfbml=1&appId=328285627269392'
 		fjs.parentNode.insertBefore(js, fjs)
-	  }(document, 'script', 'facebook-jssdk'))</script>
+		}(document, 'script', 'facebook-jssdk'))</script>
 
 	<div id="optionsframework-sidebar" class="metabox-holder">
 		<div id="optionsframework" class="postbox">
@@ -490,9 +490,9 @@ function sparkling_options_display_sidebar() {
 			<div class="inside">
 				<div id="social-share">
 					<div class="fb-like" data-href="<?php echo esc_url( 'https://www.facebook.com/colorlib' ); ?>"
-						 data-send="false" data-layout="button_count" data-width="90" data-show-faces="true"></div>
+						data-send="false" data-layout="button_count" data-width="90" data-show-faces="true"></div>
 					<div class="tw-follow"><a href="https://twitter.com/colorlib" class="twitter-follow-button"
-											  data-show-count="false">Follow @colorlib</a></div>
+												data-show-count="false">Follow @colorlib</a></div>
 				</div>
 				<p>
 					<b><a href="<?php echo esc_url( 'https://colorlib.com/wp/support/sparkling' ); ?>"><?php esc_html_e( 'Sparkling Documentation', 'sparkling' ); ?></a></b>
@@ -503,20 +503,20 @@ function sparkling_options_display_sidebar() {
 				<p><?php esc_html_e( 'If you like this theme, I\'d appreciate any of the following:', 'sparkling' ); ?></p>
 				<ul>
 					<li><a class="button"
-						   href="<?php echo esc_url( 'https://wordpress.org/support/view/theme-reviews/sparkling?filter=5' ); ?>"
-						   title="<?php esc_attr_e( 'Rate this Theme', 'sparkling' ); ?>"
-						   target="_blank"><?php printf( esc_html__( 'Rate this Theme', 'sparkling' ) ); ?></a></li>
+							href="<?php echo esc_url( 'https://wordpress.org/support/view/theme-reviews/sparkling?filter=5' ); ?>"
+							title="<?php esc_attr_e( 'Rate this Theme', 'sparkling' ); ?>"
+							target="_blank"><?php printf( esc_html__( 'Rate this Theme', 'sparkling' ) ); ?></a></li>
 					<li><a class="button" href="<?php echo esc_url( 'https://www.facebook.com/colorlib' ); ?>"
-						   title="Like Colorlib on Facebook"
-						   target="_blank"><?php printf( esc_html__( 'Like on Facebook', 'sparkling' ) ); ?></a></li>
+							title="Like Colorlib on Facebook"
+							target="_blank"><?php printf( esc_html__( 'Like on Facebook', 'sparkling' ) ); ?></a></li>
 					<li><a class="button" href="<?php echo esc_url( 'https://twitter.com/colorlib/' ); ?>"
-						   title="Follow Colrolib on Twitter"
-						   target="_blank"><?php printf( esc_html__( 'Follow on Twitter', 'sparkling' ) ); ?></a></li>
+							title="Follow Colrolib on Twitter"
+							target="_blank"><?php printf( esc_html__( 'Follow on Twitter', 'sparkling' ) ); ?></a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
-<?php
+	<?php
 }
 
 /**
@@ -627,19 +627,19 @@ add_filter( 'nav_menu_link_attributes', 'sparkling_add_top_level_menu_url', 99, 
  */
 function sparkling_make_top_level_menu_clickable() {
 	if ( ! wp_is_mobile() ) {
-	?>
+		?>
 		<script type="text/javascript">
-		  jQuery(document).ready(function ($) {
+			jQuery(document).ready(function ($) {
 			if ($(window).width() >= 767) {
-			  $('.navbar-nav > li.menu-item > a').click(function () {
+				$('.navbar-nav > li.menu-item > a').click(function () {
 				if ($(this).attr('target') !== '_blank') {
-				  window.location = $(this).attr('href')
+					window.location = $(this).attr('href')
 				}
-			  })
+				})
 			}
-		  })
+			})
 		</script>
-	<?php
+		<?php
 	}
 }
 

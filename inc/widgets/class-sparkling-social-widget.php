@@ -8,12 +8,11 @@ class Sparkling_Social_Widget extends WP_Widget {
 
 	function __construct() {
 
-					  $widget_ops = array(
-						  'classname'   => 'sparkling-social',
-						  'description' => esc_html__( 'Sparkling Social Widget', 'sparkling' ),
-					  );
-		  parent::__construct( 'sparkling-social', esc_html__( 'Sparkling Social Widget', 'sparkling' ), $widget_ops );
-
+						$widget_ops = array(
+							'classname'   => 'sparkling-social',
+							'description' => esc_html__( 'Sparkling Social Widget', 'sparkling' ),
+						);
+						parent::__construct( 'sparkling-social', esc_html__( 'Sparkling Social Widget', 'sparkling' ), $widget_ops );
 	}
 
 	function widget( $args, $instance ) {
@@ -55,14 +54,13 @@ class Sparkling_Social_Widget extends WP_Widget {
 		}
 		?>
 
-	  <p><label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title ', 'sparkling' ); ?></label>
+		<p><label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title ', 'sparkling' ); ?></label>
 
-	  <input type="text" value="<?php echo esc_attr( $instance['title'] ); ?>"
-						  name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>"
-						  id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"
-						  class="widefat" />
-	  </p><?php
+		<input type="text" value="<?php echo esc_attr( $instance['title'] ); ?>"
+							name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>"
+							id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"
+							class="widefat" />
+		</p><?php
 	}
-
 }
 ?>

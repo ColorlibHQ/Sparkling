@@ -21,9 +21,9 @@
 					/* translators: used between list items, there is a space after the comma */
 					$categories_list = get_the_category_list( esc_html__( ', ', 'sparkling' ) );
 				if ( $categories_list && sparkling_categorized_blog() ) :
-				?>
+					?>
 				<span class="cat-links"><i class="fa-solid fa-folder-open"></i>
-				<?php echo ' ' . wp_kses_post( $categories_list ); ?>
+					<?php echo ' ' . wp_kses_post( $categories_list ); ?>
 				</span>
 				<?php endif; // End if categories ?>
 				<?php if ( get_edit_post_link() ) : ?>
@@ -56,24 +56,24 @@
 						'echo'        => 1,
 					)
 				);
-			?>
+				?>
 		</div><!-- .entry-content -->
 
 		<footer class="entry-meta">
 
 			<?php if ( has_tag() ) : ?>
-		  <!-- tags -->
-		  <div class="tagcloud">
+			<!-- tags -->
+			<div class="tagcloud">
 
 				<?php
-				  $tags = get_the_tags( get_the_ID() );
+					$tags = get_the_tags( get_the_ID() );
 				foreach ( $tags as $tag ) {
 					echo '<a href="' . esc_url( get_tag_link( $tag->term_id ) ) . '">' . esc_html( $tag->name ) . '</a> ';
 				}
 				?>
 
-		  </div>
-		  <!-- end tags -->
+			</div>
+			<!-- end tags -->
 			<?php endif; ?>
 
 		</footer><!-- .entry-meta -->
@@ -81,8 +81,8 @@
 
 	<?php if ( get_the_author_meta( 'description' ) ) : ?>
 		<div class="post-inner-content secondary-content-box">
-	  <!-- author bio -->
-	  <div class="author-bio content-box-inner">
+		<!-- author bio -->
+		<div class="author-bio content-box-inner">
 
 		<!-- avatar -->
 		<div class="avatar">
@@ -93,14 +93,14 @@
 		<!-- user bio -->
 		<div class="author-bio-content">
 
-		  <h4 class="author-name"><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php echo esc_html( get_the_author_meta( 'display_name' ) ); ?></a></h4>
-		  <p class="author-description">
+			<h4 class="author-name"><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php echo esc_html( get_the_author_meta( 'display_name' ) ); ?></a></h4>
+			<p class="author-description">
 				<?php echo wp_kses_post( get_the_author_meta( 'description' ) ); ?>
-		  </p>
+			</p>
 
 		</div><!-- end .author-bio-content -->
 
-	  </div><!-- end .author-bio  -->
+		</div><!-- end .author-bio  -->
 
 		</div>
 		<?php endif; ?>

@@ -103,10 +103,12 @@ $create_action_link = array( $sparkling_welcome, 'create_action_link' );
 
 					<div class="desc column-description">
 						<p><?php echo wp_kses_post( $info->short_description ); ?></p>
-						<p class="authors"><cite><?php
+						<p class="authors"><cite>
+						<?php
 							/* translators: %s: plugin author name */
 							printf( esc_html__( 'By %s', 'sparkling' ), wp_kses_post( $info->author ) );
-						?></cite></p>
+						?>
+						</cite></p>
 					</div>
 				</div>
 

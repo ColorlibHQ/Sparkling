@@ -91,8 +91,10 @@ if ( ! function_exists( 'sparkling_setup' ) ) :
 
 		// Setup the WordPress core custom background feature.
 		add_theme_support(
-			'custom-background', apply_filters(
-				'sparkling_custom_background_args', array(
+			'custom-background',
+			apply_filters(
+				'sparkling_custom_background_args',
+				array(
 					'default-color' => 'F2F2F2',
 					'default-image' => '',
 				)
@@ -101,7 +103,8 @@ if ( ! function_exists( 'sparkling_setup' ) ) :
 
 		// Enable support for HTML5 markup.
 		add_theme_support(
-			'html5', array(
+			'html5',
+			array(
 				'comment-list',
 				'search-form',
 				'comment-form',
@@ -154,7 +157,6 @@ if ( ! function_exists( 'sparkling_setup' ) ) :
 			update_option( 'sparkling', $options );
 
 		}
-
 	}
 endif; // sparkling_setup
 add_action( 'after_setup_theme', 'sparkling_setup' );
@@ -249,18 +251,17 @@ function sparkling_widgets_init() {
 	register_widget( 'Sparkling_Social_Widget' );
 	register_widget( 'Sparkling_Popular_Posts' );
 	register_widget( 'Sparkling_Categories' );
-
 }
 
 add_action( 'widgets_init', 'sparkling_widgets_init' );
 
 
 /* --------------------------------------------------------------
-	   Theme Widgets
+		Theme Widgets
 -------------------------------------------------------------- */
-require_once( get_template_directory() . '/inc/widgets/class-sparkling-categories.php' );
-require_once( get_template_directory() . '/inc/widgets/class-sparkling-popular-posts.php' );
-require_once( get_template_directory() . '/inc/widgets/class-sparkling-social-widget.php' );
+require_once get_template_directory() . '/inc/widgets/class-sparkling-categories.php';
+require_once get_template_directory() . '/inc/widgets/class-sparkling-popular-posts.php';
+require_once get_template_directory() . '/inc/widgets/class-sparkling-social-widget.php';
 
 
 /**
@@ -368,7 +369,6 @@ function sparkling_scripts() {
 
 	}
 
-
 	// Add slider CSS only if is front page ans slider is enabled
 	if ( $sparkling_slider_active ) {
 		wp_enqueue_style( 'sparkling-flexslider-css', $template_uri . '/assets/css/flexslider.css', array(), SPARKLING_VERSION );
@@ -388,10 +388,14 @@ function sparkling_scripts() {
 		wp_enqueue_script( 'sparkling-flexslider-js', $template_uri . '/assets/js/vendor/flexslider.min.js', array( 'jquery' ), '2.7.2', true );
 		// Flexslider customization
 		wp_enqueue_script(
-			'sparkling-flexslider-customization', $template_uri . '/assets/js/flexslider-custom.js', array(
+			'sparkling-flexslider-customization',
+			$template_uri . '/assets/js/flexslider-custom.js',
+			array(
 				'jquery',
 				'sparkling-flexslider-js',
-			), SPARKLING_VERSION, true
+			),
+			SPARKLING_VERSION,
+			true
 		);
 	}
 
@@ -588,7 +592,6 @@ if ( ! function_exists( 'sparkling_woo_setup' ) ) :
 		add_theme_support( 'wc-product-gallery-zoom' );
 		add_theme_support( 'wc-product-gallery-lightbox' );
 		add_theme_support( 'wc-product-gallery-slider' );
-
 	}
 endif; // sparkling_woo_setup
 add_action( 'after_setup_theme', 'sparkling_woo_setup' );
@@ -703,9 +706,9 @@ function sparkling_get_attachment_image() {
 }
 
 if ( ! function_exists( 'wp_body_open' ) ) {
-    function wp_body_open() {
-        do_action( 'wp_body_open' );
-    }
+	function wp_body_open() {
+		do_action( 'wp_body_open' );
+	}
 }
 
 /*

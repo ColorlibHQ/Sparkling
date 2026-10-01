@@ -41,8 +41,8 @@
 				<span class="comments-link"><i class="fa-solid fa-comments"></i><?php comments_popup_link( esc_html__( 'Leave a comment', 'sparkling' ), esc_html__( '1 Comment', 'sparkling' ), esc_html__( '% Comments', 'sparkling' ) ); ?></span>
 				<?php endif; ?>
 
-				<?php if ( get_edit_post_link() ) : ?>
-					<?php
+					<?php if ( get_edit_post_link() ) : ?>
+						<?php
 						edit_post_link(
 							sprintf(
 								/* translators: %s: Name of current post */
@@ -52,7 +52,7 @@
 							'<i class="fa-regular fa-edit"></i><span class="edit-link">',
 							'</span>'
 						);
-					?>
+						?>
 				<?php endif; ?>
 
 				</div><!-- .entry-meta -->
@@ -72,11 +72,11 @@
 					the_excerpt();
 					?>
 					<p><a class="btn btn-default read-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php esc_html_e( 'Read More', 'sparkling' ); ?></a></p>
-				<?php
+					<?php
 				elseif ( empty( $video ) ) :
 					the_content( esc_html__( 'Read More', 'sparkling' ) );
 				endif;
-					?>
+				?>
 
 				<?php
 					wp_link_pages(

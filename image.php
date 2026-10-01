@@ -11,7 +11,7 @@ get_header();
 			<?php
 			while ( have_posts() ) :
 				the_post();
-?>
+				?>
 				<div class="post-inner-content">
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<header class="entry-header">
@@ -53,7 +53,7 @@ get_header();
 											break;
 										}
 									}
-										$k++;
+										++$k;
 										// If there is more than 1 attachment in a gallery
 									if ( count( $attachments ) > 1 ) {
 										if ( isset( $attachments[ $k ] ) ) {
@@ -72,7 +72,7 @@ get_header();
 														<?php
 														$attachment_size = apply_filters( 'sparkling_attachment_size', array( 1200, 1200 ) ); // Filterable image size.
 														echo wp_get_attachment_image( $post->ID, $attachment_size );
-									?>
+														?>
 									</a>
 								</div><!-- .attachment -->
 

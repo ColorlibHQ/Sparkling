@@ -21,38 +21,38 @@
 			if ( isset( $sparkling_required_action_value['check'] ) && $sparkling_required_action_value['check'] ) {
 				continue;
 			}
-			$nr_actions_required ++;
+			++$nr_actions_required;
 			if ( $hidden ) {
-				$nr_action_dismissed ++;
+				++$nr_action_dismissed;
 			}
 
 			?>
 			<div class="sparkling-action-required-box">
 				<?php if ( ! $hidden ) : ?>
 					<span data-action="dismiss" class="dashicons dashicons-visibility sparkling-required-action-button"
-						  id="<?php echo esc_attr( $sparkling_required_action_value['id'] ); ?>"></span>
+							id="<?php echo esc_attr( $sparkling_required_action_value['id'] ); ?>"></span>
 				<?php else : ?>
 					<span data-action="add" class="dashicons dashicons-hidden sparkling-required-action-button"
-						  id="<?php echo esc_attr( $sparkling_required_action_value['id'] ); ?>"></span>
+							id="<?php echo esc_attr( $sparkling_required_action_value['id'] ); ?>"></span>
 				<?php endif; ?>
 				<h3>
 				<?php
 				if ( ! empty( $sparkling_required_action_value['title'] ) ) :
 					echo wp_kses_post( $sparkling_required_action_value['title'] );
 endif;
-?>
+				?>
 </h3>
 				<p>
 					<?php
 					if ( ! empty( $sparkling_required_action_value['description'] ) ) :
 						echo wp_kses_post( $sparkling_required_action_value['description'] );
 endif;
-?>
+					?>
 					<?php
 					if ( ! empty( $sparkling_required_action_value['help'] ) ) :
 						echo '<br/>' . wp_kses_post( $sparkling_required_action_value['help'] );
 endif;
-?>
+					?>
 				</p>
 				<?php
 				if ( ! empty( $sparkling_required_action_value['plugin_slug'] ) ) {
@@ -76,11 +76,11 @@ endif;
 					?>
 					<p class="plugin-card-<?php echo esc_attr( $sparkling_required_action_value['plugin_slug'] ); ?> action_button <?php echo ( 'install' !== $active['needs'] && $active['status'] ) ? 'active' : ''; ?>">
 						<a data-slug="<?php echo esc_attr( $sparkling_required_action_value['plugin_slug'] ); ?>"
-						   class="<?php echo esc_attr( $class ); ?>"
-						   href="<?php echo esc_url( $url ); ?>"> <?php echo esc_html( $label ); ?> </a>
+							class="<?php echo esc_attr( $class ); ?>"
+							href="<?php echo esc_url( $url ); ?>"> <?php echo esc_html( $label ); ?> </a>
 					</p>
 					<?php
-				};
+				}
 				?>
 			</div>
 			<?php
@@ -103,17 +103,17 @@ endif;
 				echo '<h3 class="hooray">' . esc_html__( 'Hooray! There are no required actions for you right now. But you can make your theme more powerful with next actions: ', 'sparkling' ) . '</h3>';
 			}
 
-			$nr_recommended_plugins ++;
+			++$nr_recommended_plugins;
 			echo '<div class="sparkling-action-required-box">';
 
 			if ( isset( $sparkling_show_recommended_plugins[ $slug ] ) && $sparkling_show_recommended_plugins[ $slug ] ) :
-			?>
+				?>
 				<span data-action="add" class="dashicons dashicons-hidden sparkling-recommended-plugin-button"
-					  id="<?php echo esc_attr( $slug ); ?>"></span>
+						id="<?php echo esc_attr( $slug ); ?>"></span>
 			<?php else : ?>
 				<span data-action="dismiss" class="dashicons dashicons-visibility sparkling-recommended-plugin-button"
-					  id="<?php echo esc_attr( $slug ); ?>"></span>
-			<?php
+						id="<?php echo esc_attr( $slug ); ?>"></span>
+				<?php
 			endif;
 
 			$active = $this->check_active( $slug );
@@ -121,20 +121,20 @@ endif;
 			$info   = $this->call_plugin_api( $slug );
 			$label  = '';
 			$class  = '';
-switch ( $active['needs'] ) {
-	case 'install':
-		$class = 'install-now button';
-		$label = __( 'Install', 'sparkling' );
-		break;
-	case 'activate':
-		$class = 'activate-now button button-primary';
-		$label = __( 'Activate', 'sparkling' );
-		break;
-	case 'deactivate':
-		$class = 'deactivate-now button';
-		$label = __( 'Deactivate', 'sparkling' );
-		break;
-}
+			switch ( $active['needs'] ) {
+				case 'install':
+					$class = 'install-now button';
+					$label = __( 'Install', 'sparkling' );
+					break;
+				case 'activate':
+					$class = 'activate-now button button-primary';
+					$label = __( 'Activate', 'sparkling' );
+					break;
+				case 'deactivate':
+					$class = 'deactivate-now button';
+					$label = __( 'Deactivate', 'sparkling' );
+					break;
+			}
 			?>
 			<h3><?php echo esc_html( $label . ': ' . $info->name ); ?></h3>
 			<p>
@@ -142,8 +142,8 @@ switch ( $active['needs'] ) {
 			</p>
 			<p class="plugin-card-<?php echo esc_attr( $slug ); ?> action_button <?php echo ( 'install' !== $active['needs'] && $active['status'] ) ? 'active' : ''; ?>">
 				<a data-slug="<?php echo esc_attr( $slug ); ?>"
-				   class="<?php echo esc_attr( $class ); ?>"
-				   href="<?php echo esc_url( $url ); ?>"> <?php echo esc_html( $label ); ?> </a>
+					class="<?php echo esc_attr( $class ); ?>"
+					href="<?php echo esc_url( $url ); ?>"> <?php echo esc_html( $label ); ?> </a>
 			</p>
 			<?php
 
