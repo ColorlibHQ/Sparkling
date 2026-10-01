@@ -15,27 +15,29 @@ class Sparkling_Social_Widget extends WP_Widget {
 						parent::__construct( 'sparkling-social', esc_html__( 'Sparkling Social Widget', 'sparkling' ), $widget_ops );
 	}
 
-	function widget( $args, $instance ) {
+	/**
+	 * Front-end display of the widget.
+	 *
+	 * @param array $args     Widget area arguments.
+	 * @param array $instance Saved settings.
+	 */
+	public function widget( $args, $instance ) {
 		$title = isset( $instance['title'] ) ? $instance['title'] : esc_html__( 'Follow us', 'sparkling' );
+		$title = apply_filters( 'widget_title', $title, $instance, $this->id_base ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- Core hook.
 
-		echo $args['before_widget'];
-		echo $args['before_title'];
-		echo esc_html( $title );
-		echo $args['after_title'];
+		echo $args['before_widget']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Widget area markup from register_sidebar().
 
-		/**
-		 * Widget Content
-		 */ ?>
+		if ( '' !== trim( (string) $title ) ) {
+			echo $args['before_title'] . esc_html( $title ) . $args['after_title']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Widget area markup from register_sidebar().
+		}
+		?>
 
-		<!-- social icons -->
 		<div class="social-icons sticky-sidebar-social">
-
 			<?php sparkling_social_icons(); ?>
+		</div>
 
-		</div><!-- end social icons -->
 		<?php
-
-		echo $args['after_widget'];
+		echo $args['after_widget']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Widget area markup from register_sidebar().
 	}
 
 	/**

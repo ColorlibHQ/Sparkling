@@ -15,68 +15,61 @@ class Sparkling_Categories extends WP_Widget {
 			parent::__construct( 'sparkling-cats', esc_html__( 'Sparkling Categories', 'sparkling' ), $widget_ops );
 	}
 
-	function widget( $args, $instance ) {
-		$title        = isset( $instance['title'] ) ? $instance['title'] : esc_html__( 'Categories', 'sparkling' );
-		$enable_count = '';
-		if ( isset( $instance['enable_count'] ) ) {
-			$enable_count = $instance['enable_count'] ? $instance['enable_count'] : 'checked';
-		}
+	/**
+	 * Front-end display of the widget.
+	 *
+	 * @param array $args     Widget area arguments.
+	 * @param array $instance Saved settings.
+	 */
+	public function widget( $args, $instance ) {
+		$title = isset( $instance['title'] ) ? $instance['title'] : esc_html__( 'Categories', 'sparkling' );
+		$title = apply_filters( 'widget_title', $title, $instance, $this->id_base ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- Core hook.
+
+		/*
+		 * "Enable Posts Count" was read as on whenever the key existed, so
+		 * unticking it and saving still showed the counts.
+		 */
+		$show_count = ! empty( $instance['enable_count'] );
 
 		// $instance['limit'] is unset until the widget is first saved, which raised
 		// an "Undefined array key" warning on PHP 8.
 		$limit = ! empty( $instance['limit'] ) ? absint( $instance['limit'] ) : 4;
 
-		echo $args['before_widget'];
-		echo $args['before_title'];
-		echo esc_html( $title );
-		echo $args['after_title'];
+		echo $args['before_widget']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Widget area markup from register_sidebar().
 
-		/**
-		 * Widget Content
-		 */
+		if ( '' !== trim( (string) $title ) ) {
+			echo $args['before_title'] . esc_html( $title ) . $args['after_title']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Widget area markup from register_sidebar().
+		}
 
-		?>
-
-
-	<div class="cats-widget">
-
-		<ul>
-		<?php
-		if ( '' != $enable_count ) {
-				$categories_args = array(
-					'echo'       => 0,
-					'show_count' => 1,
-					'title_li'   => '',
-					'depth'      => 1,
-					'orderby'    => 'count',
-					'order'      => 'DESC',
-					'number'     => $limit,
-				);
-		} else {
-			$categories_args = array(
+		$categories = wp_list_categories(
+			array(
 				'echo'       => 0,
-				'show_count' => 0,
+				'show_count' => $show_count ? 1 : 0,
 				'title_li'   => '',
 				'depth'      => 1,
 				'orderby'    => 'count',
 				'order'      => 'DESC',
 				'number'     => $limit,
-			);
-		}
-		$variable = wp_list_categories( $categories_args );
-		$variable = str_replace( '(', '<span>', $variable );
-		$variable = str_replace( ')', '</span>', $variable );
-		echo $variable;
-		?>
-		</ul>
+			)
+		);
 
-	</div><!-- end widget content -->
+		/*
+		 * Wrap each post count in a <span> for styling. This used to replace
+		 * every "(" and ")" in the list, which broke the markup of any
+		 * category whose name contains a parenthesis.
+		 */
+		$categories = preg_replace( '#</a>\s*\(([^()<>]+)\)#', '</a> <span>$1</span>', $categories );
+		?>
+
+		<div class="cats-widget">
+			<ul>
+				<?php echo $categories; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- wp_list_categories() output. ?>
+			</ul>
+		</div>
 
 		<?php
-
-		echo $args['after_widget'];
+		echo $args['after_widget']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Widget area markup from register_sidebar().
 	}
-
 
 	/**
 	 * Sanitize widget settings before they are saved.
