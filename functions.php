@@ -400,6 +400,14 @@ function sparkling_scripts() {
 			SPARKLING_VERSION,
 			true
 		);
+		wp_localize_script(
+			'sparkling-flexslider-customization',
+			'sparklingSlider',
+			array(
+				'prev' => __( 'Previous slide', 'sparkling' ),
+				'next' => __( 'Next slide', 'sparkling' ),
+			)
+		);
 	}
 
 	/*

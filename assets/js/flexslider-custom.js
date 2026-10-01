@@ -37,6 +37,13 @@
 			pauseInvisible: true,
 			useCSS: true,
 			touch: true,
+			// The arrows are icon-only links; give them names.
+			start: function ( slider ) {
+				var labels = window.sparklingSlider || {};
+
+				slider.find( '.flex-prev' ).attr( 'aria-label', labels.prev || 'Previous slide' );
+				slider.find( '.flex-next' ).attr( 'aria-label', labels.next || 'Next slide' );
+			},
 		} );
 	}
 

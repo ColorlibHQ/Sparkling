@@ -73,9 +73,15 @@
 
 	<div id="content" class="site-content">
 
-		<div class="top-section">
-			<?php sparkling_featured_slider(); ?>
-			<?php sparkling_call_for_action(); ?>
+		<?php
+		// The front page slider and call to action, when there are any.
+		ob_start();
+		sparkling_featured_slider();
+		sparkling_call_for_action();
+		$sparkling_top_section = trim( ob_get_clean() );
+		?>
+		<div class="top-section"<?php echo '' !== $sparkling_top_section ? ' role="region" aria-label="' . esc_attr__( 'Featured', 'sparkling' ) . '"' : ''; ?>>
+			<?php echo $sparkling_top_section; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped by the two functions above. ?>
 		</div>
 
 		<div class="container main-content-area">
