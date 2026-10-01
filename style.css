@@ -2282,6 +2282,159 @@ p.logged-in-as {
     font-weight: 400;
 }
 
+/*
+ * Any link the rules below do not recognise gets a generic link icon, not
+ * an empty square. Networks added in 2.7.0 follow.
+ */
+:is(#menu-social, .menu-social) li a:before {
+    font-family: "Font Awesome 7 Free";
+    content: "\f0c1";
+    font-weight: 900;
+}
+
+:is(#menu-social, .menu-social) li a[href*="//x.com"]:before {
+    font-family: "Font Awesome 7 Brands";
+    content: "\e61b";
+    font-weight: 400;
+}
+
+:is(#menu-social, .menu-social) li a[href*="//x.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="//x.com"]:focus {
+    background-color: #000000 !important;
+}
+
+:is(#menu-social, .menu-social) li a[href*="bsky.app"]:before {
+    font-family: "Font Awesome 7 Brands";
+    content: "\e671";
+    font-weight: 400;
+}
+
+:is(#menu-social, .menu-social) li a[href*="bsky.app"]:hover,
+:is(#menu-social, .menu-social) li a[href*="bsky.app"]:focus {
+    background-color: #1185FE !important;
+}
+
+:is(#menu-social, .menu-social) li a[href*="threads.net"]:before {
+    font-family: "Font Awesome 7 Brands";
+    content: "\e618";
+    font-weight: 400;
+}
+
+:is(#menu-social, .menu-social) li a[href*="threads.net"]:hover,
+:is(#menu-social, .menu-social) li a[href*="threads.net"]:focus {
+    background-color: #000000 !important;
+}
+
+:is(#menu-social, .menu-social) li a[href*="threads.com"]:before {
+    font-family: "Font Awesome 7 Brands";
+    content: "\e618";
+    font-weight: 400;
+}
+
+:is(#menu-social, .menu-social) li a[href*="threads.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="threads.com"]:focus {
+    background-color: #000000 !important;
+}
+
+:is(#menu-social, .menu-social) li a[href*="mastodon"]:before {
+    font-family: "Font Awesome 7 Brands";
+    content: "\f4f6";
+    font-weight: 400;
+}
+
+:is(#menu-social, .menu-social) li a[href*="mastodon"]:hover,
+:is(#menu-social, .menu-social) li a[href*="mastodon"]:focus {
+    background-color: #6364FF !important;
+}
+
+:is(#menu-social, .menu-social) li a[href*="tiktok.com"]:before {
+    font-family: "Font Awesome 7 Brands";
+    content: "\e07b";
+    font-weight: 400;
+}
+
+:is(#menu-social, .menu-social) li a[href*="tiktok.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="tiktok.com"]:focus {
+    background-color: #000000 !important;
+}
+
+:is(#menu-social, .menu-social) li a[href*="//wa.me"]:before {
+    font-family: "Font Awesome 7 Brands";
+    content: "\f232";
+    font-weight: 400;
+}
+
+:is(#menu-social, .menu-social) li a[href*="//wa.me"]:hover,
+:is(#menu-social, .menu-social) li a[href*="//wa.me"]:focus {
+    background-color: #25D366 !important;
+}
+
+:is(#menu-social, .menu-social) li a[href*="whatsapp.com"]:before {
+    font-family: "Font Awesome 7 Brands";
+    content: "\f232";
+    font-weight: 400;
+}
+
+:is(#menu-social, .menu-social) li a[href*="whatsapp.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="whatsapp.com"]:focus {
+    background-color: #25D366 !important;
+}
+
+:is(#menu-social, .menu-social) li a[href*="discord.gg"]:before {
+    font-family: "Font Awesome 7 Brands";
+    content: "\f392";
+    font-weight: 400;
+}
+
+:is(#menu-social, .menu-social) li a[href*="discord.gg"]:hover,
+:is(#menu-social, .menu-social) li a[href*="discord.gg"]:focus {
+    background-color: #5865F2 !important;
+}
+
+:is(#menu-social, .menu-social) li a[href*="discord.com"]:before {
+    font-family: "Font Awesome 7 Brands";
+    content: "\f392";
+    font-weight: 400;
+}
+
+:is(#menu-social, .menu-social) li a[href*="discord.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="discord.com"]:focus {
+    background-color: #5865F2 !important;
+}
+
+:is(#menu-social, .menu-social) li a[href*="reddit.com"]:before {
+    font-family: "Font Awesome 7 Brands";
+    content: "\f1a1";
+    font-weight: 400;
+}
+
+:is(#menu-social, .menu-social) li a[href*="reddit.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="reddit.com"]:focus {
+    background-color: #FF4500 !important;
+}
+
+:is(#menu-social, .menu-social) li a[href*="twitch.tv"]:before {
+    font-family: "Font Awesome 7 Brands";
+    content: "\f1e8";
+    font-weight: 400;
+}
+
+:is(#menu-social, .menu-social) li a[href*="twitch.tv"]:hover,
+:is(#menu-social, .menu-social) li a[href*="twitch.tv"]:focus {
+    background-color: #9146FF !important;
+}
+
+:is(#menu-social, .menu-social) li a[href*="medium.com"]:before {
+    font-family: "Font Awesome 7 Brands";
+    content: "\f23a";
+    font-weight: 400;
+}
+
+:is(#menu-social, .menu-social) li a[href*="medium.com"]:hover,
+:is(#menu-social, .menu-social) li a[href*="medium.com"]:focus {
+    background-color: #000000 !important;
+}
+
 :is(#menu-social, .menu-social) li a[href*="xing.com"]:before {
     font-family: "Font Awesome 7 Brands";
     content: "\f168";
