@@ -66,15 +66,30 @@ Bootstrap v3.4.1
     License: MIT
     Source: https://getbootstrap.com/
 
-FlexSlider v2.7.0
+Bootstrap Glyphicons Halflings (bundled with Bootstrap 3.4.1)
+    Copyright Jan Kovarik
+    License: MIT, as part of Bootstrap
+    Source: https://glyphicons.com/
+
+FlexSlider v2.7.2
     Copyright 2012 WooThemes
     License: GNU General Public License v2
     Source: https://github.com/woocommerce/FlexSlider
 
-Font Awesome Free v5.1.1
+Font Awesome Free v7.3.1 (complete set, version 4 shim, and the theme's subset)
     Copyright Fonticons, Inc.
     License: Icons CC BY 4.0, Fonts SIL OFL 1.1, Code MIT
-    Source: https://fontawesome.com/license
+    Source: https://fontawesome.com/license/free
+
+Open Sans
+    Copyright 2020 The Open Sans Project Authors
+    License: SIL Open Font License 1.1
+    Source: https://fonts.google.com/specimen/Open+Sans
+
+Roboto Slab
+    Copyright 2018 The Roboto Slab Project Authors
+    License: Apache License 2.0
+    Source: https://fonts.google.com/specimen/Roboto+Slab
 
 Academicons v1.8.6
     Copyright James Walsh
