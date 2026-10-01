@@ -5,7 +5,7 @@
 /* Logo */
 .wp-badge.epsilon-welcome-logo {
 	color: #fff;
-	background-image: url(../img/logo.png);
+	background-image: url("../img/logo.png");
 	background-position: center center;
 	background-size: 70%;
 	background-repeat: no-repeat;

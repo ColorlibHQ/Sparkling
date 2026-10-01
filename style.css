@@ -353,6 +353,8 @@ textarea {
 
 .entry-meta {
     margin-bottom: 30px;
+    font-size: 14px;
+    margin-right: 3px;
 }
 
 footer.entry-meta {
@@ -365,11 +367,6 @@ footer.entry-meta {
     padding-bottom: 0;
 }
 
-.entry-meta {
-    font-size: 14px;
-    margin-right: 3px;
-}
-
 .entry-meta span {
     margin-right: 10px;
 }
@@ -377,6 +374,7 @@ footer.entry-meta {
 .entry-title {
     color: #444;
     font-size: 28px;
+    margin-top: 0;
     margin-bottom: 30px;
 }
 
@@ -452,10 +450,6 @@ body.archive .post-inner-content,
 body.blog .post-inner-content,
 .post-inner-content:first-child {
     border-top: 1px solid #dadada;;
-}
-
-.entry-title {
-    margin-top: 0;
 }
 
 .says {
@@ -838,8 +832,6 @@ a.more-link {
 .btn-default:focus,
 .label-default[href]:hover,
 .label-default[href]:focus,
-.btn-default:hover,
-.btn-default:focus,
 .btn-default:active,
 .btn-default.active,
 #image-navigation .nav-previous a:hover,
@@ -927,7 +919,6 @@ button:focus,
     margin-bottom: 10px;
     border-radius: 4px;
     padding: 20px;
-    background: transparent;
     border: 1px solid #DADADA;
     background: #fff;
     color: #D83B4B;
@@ -1429,6 +1420,7 @@ button:focus,
     word-wrap: break-word;
 }
 
+/* stylelint-disable-next-line block-no-empty -- Theme Check requires the class to exist; posts by the author look the same. */
 .bypostauthor {
 }
 
@@ -1458,7 +1450,7 @@ p.logged-in-as {
 }
 
 .comment .comment-body {
-    background-color: #ffffff;
+    background-color: #fff;
     margin: 0;
     overflow: hidden;
     padding: 25px;
@@ -1506,10 +1498,6 @@ p.logged-in-as {
     margin-bottom: 10px;
 }
 
-.comment-reply-link {
-    float: right;
-}
-
 .form-allowed-tags code {
     word-wrap: break-word;
     white-space: inherit;
@@ -1550,6 +1538,7 @@ p.logged-in-as {
 }
 
 .comment-reply-link {
+    float: right;
     background: #767676; /* #C1C0C0 until 2.7.0: 1.8:1 under white text. */
     border: #767676;
     font-size: 10px;
@@ -1982,11 +1971,6 @@ p.logged-in-as {
     background-color: #2B6C97 !important;
 }
 
-:is(#menu-social, .menu-social) li a[href*="youracclaim.com"]:hover,
-:is(#menu-social, .menu-social) li a[href*="youracclaim.com"]:focus {
-    background-color: #2B6C97 !important;
-}
-
 :is(#menu-social, .menu-social) li a[href*="acm.org"]:hover,
 :is(#menu-social, .menu-social) li a[href*="acm.org"]:focus {
     background-color: #42A6D5 !important;
@@ -2267,7 +2251,7 @@ p.logged-in-as {
 :is(#menu-social, .menu-social) li a[href*="t.me"]:focus,
 :is(#menu-social, .menu-social) li a[href*="telegram.me"]:hover,
 :is(#menu-social, .menu-social) li a[href*="telegram.me"]:focus {
-    background-color: #0088cc !important;
+    background-color: #08c !important;
 }
 
 :is(#menu-social, .menu-social) li, :is(#menu-social, .menu-social) ul {
@@ -2300,7 +2284,7 @@ p.logged-in-as {
 
 :is(#menu-social, .menu-social) li a[href*="//x.com"]:hover,
 :is(#menu-social, .menu-social) li a[href*="//x.com"]:focus {
-    background-color: #000000 !important;
+    background-color: #000 !important;
 }
 
 :is(#menu-social, .menu-social) li a[href*="bsky.app"]:before {
@@ -2322,7 +2306,7 @@ p.logged-in-as {
 
 :is(#menu-social, .menu-social) li a[href*="threads.net"]:hover,
 :is(#menu-social, .menu-social) li a[href*="threads.net"]:focus {
-    background-color: #000000 !important;
+    background-color: #000 !important;
 }
 
 :is(#menu-social, .menu-social) li a[href*="threads.com"]:before {
@@ -2333,7 +2317,7 @@ p.logged-in-as {
 
 :is(#menu-social, .menu-social) li a[href*="threads.com"]:hover,
 :is(#menu-social, .menu-social) li a[href*="threads.com"]:focus {
-    background-color: #000000 !important;
+    background-color: #000 !important;
 }
 
 :is(#menu-social, .menu-social) li a[href*="mastodon"]:before {
@@ -2355,7 +2339,7 @@ p.logged-in-as {
 
 :is(#menu-social, .menu-social) li a[href*="tiktok.com"]:hover,
 :is(#menu-social, .menu-social) li a[href*="tiktok.com"]:focus {
-    background-color: #000000 !important;
+    background-color: #000 !important;
 }
 
 :is(#menu-social, .menu-social) li a[href*="//wa.me"]:before {
@@ -2432,7 +2416,7 @@ p.logged-in-as {
 
 :is(#menu-social, .menu-social) li a[href*="medium.com"]:hover,
 :is(#menu-social, .menu-social) li a[href*="medium.com"]:focus {
-    background-color: #000000 !important;
+    background-color: #000 !important;
 }
 
 :is(#menu-social, .menu-social) li a[href*="xing.com"]:before {
@@ -2580,182 +2564,182 @@ p.logged-in-as {
 
 /* Academicons - @since 2.4.0 */
 :is(#menu-social, .menu-social) li a[href*="academia.edu"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e9af";
 }
 
 :is(#menu-social, .menu-social) li a[href*="youracclaim.com"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e92e";
 }
 
 :is(#menu-social, .menu-social) li a[href*="acm.org"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e93c";
 }
 
 :is(#menu-social, .menu-social) li a[href*="dl.acm.org"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e96a";
 }
 
 :is(#menu-social, .menu-social) li a[href*="arxiv.org"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e974";
 }
 
 :is(#menu-social, .menu-social) li a[href*="biorxiv.org"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e9a2";
 }
 
 :is(#menu-social, .menu-social) li a[href*="ceur-ws.org"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e96d";
 }
 
 :is(#menu-social, .menu-social) li a[href*="coursera.org"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e95f";
 }
 
 :is(#menu-social, .menu-social) li a[href*="dataverse.org"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e9f7";
 }
 
 :is(#menu-social, .menu-social) li a[href*="dblp.uni-trier.de"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e94f";
 }
 
 :is(#menu-social, .menu-social) li a[href*="depsy.org"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e97a";
 }
 
 :is(#menu-social, .menu-social) li a[href*="doi.org"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e97e";
 }
 
 :is(#menu-social, .menu-social) li a[href*="datadryad.org"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e97c";
 }
 
 :is(#menu-social, .menu-social) li a[href*="figshare.com"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e981";
 }
 
 :is(#menu-social, .menu-social) li a[href*="scholar.google"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e9d4";
 }
 
 :is(#menu-social, .menu-social) li a[href*="ideas.repec.org"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e9ed";
 }
 
 :is(#menu-social, .menu-social) li a[href*="ieee.org"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e929";
 }
 
 :is(#menu-social, .menu-social) li a[href*="impactstory.org"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e9cf";
 }
 
 :is(#menu-social, .menu-social) li a[href*="inspirehep.net"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e9e9";
 }
 
 :is(#menu-social, .menu-social) li a[href*="lattes.cnpq.brt"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e9b3";
 }
 
 :is(#menu-social, .menu-social) li a[href*="mathoverflow.net"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e9f6";
 }
 
 :is(#menu-social, .menu-social) li a[href*="mendeley.com"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e9f0";
 }
 
 :is(#menu-social, .menu-social) li a[href*="openaccessweek.org"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e939";
 }
 
 :is(#menu-social, .menu-social) li a[href*="orcid.org"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e9d9";
 }
 
 :is(#menu-social, .menu-social) li a[href*="osf.io"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e9ef";
 }
 
 :is(#menu-social, .menu-social) li a[href*="overleaf.com"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e914";
 }
 
 :is(#menu-social, .menu-social) li a[href*="philpapers.org"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e98a";
 }
 
 :is(#menu-social, .menu-social) li a[href*="piazza.com"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e99a";
 }
 
 :is(#menu-social, .menu-social) li a[href*="publons.com"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e937";
 }
 
 :is(#menu-social, .menu-social) li a[href*="ncbi.nlm.nih.gov"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e99f";
 }
 
 :is(#menu-social, .menu-social) li a[href*="researchgate.net"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e95e";
 }
 
 :is(#menu-social, .menu-social) li a[href*="researcherid.com"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e91a";
 }
 
 :is(#menu-social, .menu-social) li a[href*="scirate.com"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e98e";
 }
 
 :is(#menu-social, .menu-social) li a[href*="semanticscholar.org"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e96e";
 }
 
 :is(#menu-social, .menu-social) li a[href*="springer.com"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e928";
 }
 
 :is(#menu-social, .menu-social) li a[href*="zotero.org"]:before {
-    font-family: 'Academicons';
+    font-family: Academicons;
     content: "\e962";
 }
 
@@ -2848,7 +2832,7 @@ caption {
 .tagcloud,
 .comment-reply-link,
 .widget_rss ul,
-button[type=submit],
+button[type="submit"],
 .postform,
 table#wp-calendar {
     display: none;
@@ -2858,7 +2842,7 @@ table#wp-calendar {
 .no-js .tagcloud,
 .no-js .comment-reply-link,
 .no-js .widget_rss ul,
-button[type=submit],
+button[type="submit"],
 .no-js .postform,
 .no-js table#wp-calendar {
     display: block;

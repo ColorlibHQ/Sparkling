@@ -30,6 +30,13 @@ export default [
     },
   },
   {
+    // Drives a browser: its page.evaluate() callbacks run in the page.
+    files: ['.github/social-preview.mjs'],
+    languageOptions: {
+      globals: { ...globals.browser },
+    },
+  },
+  {
     files: ['assets/js/**/*.js', 'inc/**/*.js'],
     languageOptions: {
       ecmaVersion: 2022,
