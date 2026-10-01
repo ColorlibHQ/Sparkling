@@ -40,7 +40,6 @@ export default [
         wp: 'readonly',
         // Localized by wp_localize_script().
         Sparkling: 'readonly',
-        sparklingWelcomeScreenObject: 'readonly',
       },
     },
     rules: {

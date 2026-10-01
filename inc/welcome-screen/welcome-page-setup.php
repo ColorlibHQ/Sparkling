@@ -64,12 +64,13 @@ function sparkling_welcome_customize_register( $wp_customize ) {
  * are in assets/js/customizer-controls.js and assets/css/customizer.css.
  */
 
-// Load the system checks ( used for notifications )
-require get_template_directory() . '/inc/welcome-screen/class-sparkling-notify-system.php';
-
 // Welcome screen
 if ( is_admin() ) {
-	global $sparkling_required_actions, $sparkling_recommended_plugins;
+	/*
+	 * The plugins the About page recommends. Only the slugs are used now; the
+	 * 'recommended' flag fed the removed "recommended actions" tab.
+	 */
+	global $sparkling_recommended_plugins, $sparkling_welcome;
 	$sparkling_recommended_plugins = array(
 		'kali-forms'                       => array(
 			'recommended' => true,
@@ -89,27 +90,14 @@ if ( is_admin() ) {
 		'colorlib-coming-soon-maintenance' => array(
 			'recommended' => true,
 		),
-
 	);
-	/*
-	 * id - unique id; required
-	 * title
-	 * description
-	 * check - check for plugins (if installed)
-	 * plugin_slug - the plugin's slug (used for installing the plugin)
-	 *
-	 */
 
-
-	$sparkling_required_actions = array();
 	require get_template_directory() . '/inc/welcome-screen/class-sparkling-welcome.php';
 
 	/*
-	 * Registers Appearance > About Sparkling. This line was lost between 2.6.4
-	 * and 2.6.9, and the class is otherwise only instantiated inside the About
-	 * page's own tab templates -- which can never run if the page is never
-	 * registered. So the page had quietly disappeared, and its URL returned
-	 * "Sorry, you are not allowed to access this page".
+	 * Registers Appearance > About Sparkling. The tab templates use this one
+	 * instance; they used to construct their own, which hooked every handler a
+	 * second time.
 	 */
-	new Sparkling_Welcome();
+	$sparkling_welcome = new Sparkling_Welcome();
 }

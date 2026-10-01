@@ -8,17 +8,10 @@
  * on admin_enqueue_scripts. The theme adds no CSS of its own for this tab.
  */
 
-global $sparkling_recommended_plugins;
+global $sparkling_recommended_plugins, $sparkling_welcome;
 
-// Initialize the Sparkling_Welcome class
-$sparkling_welcome = new Sparkling_Welcome();
-
-// Get the required functions from the class
-$call_plugin_api    = array( $sparkling_welcome, 'call_plugin_api' );
-$check_for_icon     = array( $sparkling_welcome, 'check_for_icon' );
-$check_active       = array( $sparkling_welcome, 'check_active' );
-$create_action_link = array( $sparkling_welcome, 'create_action_link' );
-
+$sparkling_can_install  = current_user_can( 'install_plugins' );
+$sparkling_can_activate = current_user_can( 'activate_plugins' );
 ?>
 
 <div class="wp-list-table widefat plugin-install">
@@ -26,9 +19,9 @@ $create_action_link = array( $sparkling_welcome, 'create_action_link' );
 
 	<div id="the-list">
 		<?php
-		foreach ( $sparkling_recommended_plugins as $plugin => $prop ) {
+		foreach ( array_keys( $sparkling_recommended_plugins ) as $plugin ) {
 
-			$info = call_user_func( $call_plugin_api, $plugin );
+			$info = $sparkling_welcome->call_plugin_api( $plugin );
 
 			/*
 			 * plugins_api() returns WP_Error when wordpress.org cannot be reached.
@@ -39,9 +32,9 @@ $create_action_link = array( $sparkling_welcome, 'create_action_link' );
 				continue;
 			}
 
-			$icon   = call_user_func( $check_for_icon, $info->icons );
-			$active = call_user_func( $check_active, $plugin );
-			$url    = call_user_func( $create_action_link, $active['needs'], $plugin );
+			$icon   = $sparkling_welcome->check_for_icon( $info->icons );
+			$active = $sparkling_welcome->check_active( $plugin );
+			$url    = $sparkling_welcome->create_action_link( $active['needs'], $plugin );
 
 			$is_active = ( 'install' !== $active['needs'] && $active['status'] );
 
@@ -87,7 +80,14 @@ $create_action_link = array( $sparkling_welcome, 'create_action_link' );
 							<li>
 								<?php if ( $is_active ) : ?>
 									<button type="button" class="button button-disabled" disabled="disabled"><?php esc_html_e( 'Active', 'sparkling' ); ?></button>
-								<?php else : ?>
+								<?php elseif ( ( 'install' === $active['needs'] && $sparkling_can_install ) || ( 'install' !== $active['needs'] && $sparkling_can_activate ) ) : ?>
+									<?php
+									/*
+									 * Only for users who can carry it out: an editor with
+									 * edit_theme_options but not install_plugins got an Install
+									 * button that ended on "Sorry, you are not allowed".
+									 */
+									?>
 									<a data-slug="<?php echo esc_attr( $plugin ); ?>"
 										class="<?php echo esc_attr( $class ); ?>"
 										href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $label ); ?></a>
