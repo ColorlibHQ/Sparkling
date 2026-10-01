@@ -328,8 +328,12 @@ function sparkling_scripts() {
 
 	$template_uri = get_template_directory_uri();
 
-	// Whether the front page slider is showing; used to gate its CSS and JS.
-	$sparkling_slider_active = ( is_home() || is_front_page() ) && 1 == of_get_option( 'sparkling_slider_checkbox' );
+	/*
+	 * Whether the front page slider is showing; used to gate its CSS and JS.
+	 * is_front_page() only: sparkling_featured_slider() prints nothing on a
+	 * separate blog page, which still loaded FlexSlider's CSS and JS.
+	 */
+	$sparkling_slider_active = is_front_page() && (bool) of_get_option( 'sparkling_slider_checkbox' );
 
 	// Add Bootstrap default CSS
 	wp_enqueue_style( 'sparkling-bootstrap', $template_uri . '/assets/css/bootstrap.min.css', array(), '3.4.1-1' );
@@ -361,7 +365,7 @@ function sparkling_scripts() {
 		// request goes to Google for them.
 		$fonts_url = get_template_directory_uri() . '/assets/css/google-fonts.css';
 
-		wp_register_style( 'sparkling-fonts', $fonts_url, array(), null );
+		wp_register_style( 'sparkling-fonts', $fonts_url, array(), SPARKLING_VERSION );
 		wp_enqueue_style( 'sparkling-fonts' );
 
 	}
@@ -422,7 +426,7 @@ function sparkling_scripts() {
 	}
 
 	// Academicons
-	if ( 1 == of_get_option( 'academicons' ) ) {
+	if ( of_get_option( 'academicons' ) ) {
 		wp_enqueue_style( 'sparkling-academicons-css', $template_uri . '/assets/css/academicons.min.css', array(), '1.8.6', 'all' );
 	}
 }
@@ -477,9 +481,12 @@ require get_template_directory() . '/inc/class-sparkling-bootstrap-navwalker.php
 /**
  * Register Social Icon menu
  */
-add_action( 'init', 'register_social_menu' );
+add_action( 'init', 'sparkling_register_social_menu' );
 
-function register_social_menu() {
+/**
+ * Register the Social Menu location (register_social_menu() until 2.7.0).
+ */
+function sparkling_register_social_menu() {
 	register_nav_menu( 'social-menu', _x( 'Social Menu', 'nav menu location', 'sparkling' ) );
 }
 
@@ -500,14 +507,17 @@ function register_social_menu() {
  * The globals themselves are kept (rather than replaced with accessors) so child
  * themes that reference them keep working.
  */
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- Public globals since 1.0, read by child themes; see above.
 global $options_categories, $site_layout;
 $options_categories = array();
 $site_layout        = array();
+// phpcs:enable
 
 /**
  * Populate the theme's global option arrays once translations are available.
  */
 function sparkling_init_globals() {
+	// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- Public globals since 1.0.
 	global $options_categories, $site_layout;
 
 	$site_layout = array(
@@ -527,13 +537,15 @@ function sparkling_init_globals() {
 	foreach ( get_categories( array( 'hide_empty' => 0 ) ) as $category ) {
 		$options_categories[ $category->cat_ID ] = $category->cat_name;
 	}
+	// phpcs:enable
 }
 
 add_action( 'init', 'sparkling_init_globals' );
 
 // Typography Options
+// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- Public global since 1.0, read by child themes.
 global $typography_options;
-$typography_options = array(
+$typography_options = array( // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- As above.
 	'sizes'  => array(
 		'6px'  => '6px',
 		'10px' => '10px',
@@ -577,18 +589,25 @@ $typography_options = array(
  * Not in a class to support backwards compatibility in themes.
  */
 if ( ! function_exists( 'of_get_option' ) ) :
-	function of_get_option( $name, $default = false ) {
-
-		$option_name = '';
-		// Get option settings from database
+	/**
+	 * Read one key of the theme's 'sparkling' option.
+	 *
+	 * The Options Framework's name, kept since the theme's settings lived there:
+	 * child themes and plugins call it.
+	 *
+	 * @param string $name     Option key.
+	 * @param mixed  $fallback Returned when the key is not set.
+	 *
+	 * @return mixed
+	 */
+	function of_get_option( $name, $fallback = false ) { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- Options Framework API, kept for back-compat.
 		$options = get_option( 'sparkling' );
 
-		// Return specific option
-		if ( isset( $options[ $name ] ) ) {
+		if ( is_array( $options ) && isset( $options[ $name ] ) ) {
 			return $options[ $name ];
 		}
 
-		return $default;
+		return $fallback;
 	}
 endif;
 
@@ -613,7 +632,7 @@ if ( ! function_exists( 'get_woocommerce_page_id' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 */
-	function get_woocommerce_page_id() {
+	function get_woocommerce_page_id() { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- Public since 1.x; pluggable for child themes.
 		if ( is_shop() ) {
 			return get_option( 'woocommerce_shop_page_id' );
 		} elseif ( is_cart() ) {
@@ -635,7 +654,7 @@ endif;
  */
 if ( ! function_exists( 'is_it_woocommerce_page' ) ) :
 
-	function is_it_woocommerce_page() {
+	function is_it_woocommerce_page() { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- Public since 1.x; pluggable for child themes.
 		if ( function_exists( 'is_woocommerce' ) && is_woocommerce() ) {
 			return true;
 		}
@@ -653,8 +672,20 @@ if ( ! function_exists( 'is_it_woocommerce_page' ) ) :
 			'woocommerce_logout_page_id',
 			'woocommerce_lost_password_page_id',
 		);
+		/*
+		 * Only a real post can be a WooCommerce page. On a 404 or an empty
+		 * search get_the_ID() is false, which loosely equalled the 0 of any of
+		 * these options a site did not have -- so those views were treated as
+		 * shop pages and lost their sidebar to the WooCommerce layout.
+		 */
+		$sparkling_id = (int) get_the_ID();
+
+		if ( $sparkling_id <= 0 ) {
+			return false;
+		}
+
 		foreach ( $woocommerce_keys as $wc_page_id ) {
-			if ( get_the_ID() == get_option( $wc_page_id, 0 ) ) {
+			if ( (int) get_option( $wc_page_id, 0 ) === $sparkling_id ) {
 				return true;
 			}
 		}
@@ -669,7 +700,7 @@ endif;
  */
 if ( ! function_exists( 'get_layout_class' ) ) :
 
-	function get_layout_class() {
+	function get_layout_class() { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- Public since 1.x; pluggable for child themes.
 		global $post;
 		if ( is_singular() && get_post_meta( $post->ID, 'site_layout', true ) && ! is_singular( array( 'product' ) ) ) {
 			$layout_class = get_post_meta( $post->ID, 'site_layout', true );
