@@ -12,10 +12,10 @@
 				<h3 class="widget-title"><?php esc_html_e( 'Archives', 'sparkling' ); ?></h3>
 				<ul>
 					<?php
-					$archives_args = array(
+					$sparkling_archives_args = array(
 						'type' => 'monthly',
 					);
-					wp_get_archives( $archives_args );
+					wp_get_archives( $sparkling_archives_args );
 					?>
 				</ul>
 			</aside>

@@ -1,12 +1,12 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
-	$featured_image_args = array(
+	$sparkling_featured_image_args = array(
 		'class' => 'single-featured',
 	);
 	if ( is_page_template( 'page-fullwidth.php' ) ) {
-		the_post_thumbnail( 'sparkling-featured-fullwidth', $featured_image_args );
+		the_post_thumbnail( 'sparkling-featured-fullwidth', $sparkling_featured_image_args );
 	} else {
-		the_post_thumbnail( 'sparkling-featured', $featured_image_args );
+		the_post_thumbnail( 'sparkling-featured', $sparkling_featured_image_args );
 	}
 	?>
 	<div class="post-inner-content">
@@ -19,11 +19,11 @@
 
 				<?php
 					/* translators: used between list items, there is a space after the comma */
-					$categories_list = get_the_category_list( esc_html__( ', ', 'sparkling' ) );
-				if ( $categories_list && sparkling_categorized_blog() ) :
+					$sparkling_categories_list = get_the_category_list( esc_html__( ', ', 'sparkling' ) );
+				if ( $sparkling_categories_list && sparkling_categorized_blog() ) :
 					?>
 				<span class="cat-links"><i class="fa-solid fa-folder-open" aria-hidden="true"></i>
-					<?php echo ' ' . wp_kses_post( $categories_list ); ?>
+					<?php echo ' ' . wp_kses_post( $sparkling_categories_list ); ?>
 				</span>
 				<?php endif; // End if categories ?>
 				<?php if ( get_edit_post_link() ) : ?>

@@ -26,8 +26,8 @@ if ( post_password_required() ) {
 		?>
 		<h2 class="comments-title">
 			<?php
-			$comments_number = get_comments_number();
-			if ( '1' === $comments_number ) {
+			$sparkling_comments_number = get_comments_number();
+			if ( '1' === $sparkling_comments_number ) {
 				/*
 				 * Escape only the post title. The translated literal carries
 				 * intentional &ldquo;/&rdquo; entities, so running esc_html() over it
@@ -42,11 +42,11 @@ if ( post_password_required() ) {
 					_nx(
 						'%1$s thought to &ldquo;%2$s&rdquo;',
 						'%1$s thoughts to &ldquo;%2$s&rdquo;',
-						$comments_number,
+						$sparkling_comments_number,
 						'comments title',
 						'sparkling'
 					),
-					esc_html( number_format_i18n( $comments_number ) ),
+					esc_html( number_format_i18n( $sparkling_comments_number ) ),
 					esc_html( get_the_title() )
 				);
 			}
