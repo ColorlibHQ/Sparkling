@@ -947,8 +947,14 @@ button:focus,
     margin: 0;
 }
 
+/* Hidden from view but not from screen readers: it is the page's h1. */
 #logo .site-name.hide-site-name {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
 }
 
 .site-branding {
@@ -1777,6 +1783,8 @@ p.logged-in-as {
 }
 
 .scroll-to-top {
+    padding: 0;
+    border: 0;
     background: #363636;
     background: rgba(100, 100, 100, 0.4);
     color: #FFF;

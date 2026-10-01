@@ -9,7 +9,11 @@
 ?>
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'sparkling' ); ?></h1>
+		<?php
+		// The latest-posts front page already has the site name as its h1.
+		$sparkling_heading = is_front_page() && is_home() ? 'h2' : 'h1';
+		?>
+		<<?php echo esc_html( $sparkling_heading ); ?> class="page-title"><?php esc_html_e( 'Nothing Found', 'sparkling' ); ?></<?php echo esc_html( $sparkling_heading ); ?>>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
