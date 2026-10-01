@@ -405,10 +405,7 @@ function sparkling_scripts() {
 	 */
 	wp_enqueue_script( 'sparkling-functions', $template_uri . '/assets/js/functions.js', array(), SPARKLING_VERSION, true );
 
-	// This one is for accessibility
-	wp_enqueue_script( 'sparkling-skip-link-focus-fix', $template_uri . '/assets/js/skip-link-focus-fix.min.js', array(), SPARKLING_VERSION, true );
-
-	// Treaded comments
+	// Threaded comments
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
