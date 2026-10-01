@@ -149,8 +149,8 @@ function sparkling_fontawesome_scan_menus() {
 /**
  * Collects every `fa-` class used in the assigned nav menus.
  *
- * Reads both the Navigation Label and the CSS Classes field, the two places a
- * menu item can carry an icon.
+ * Reads the Navigation Label, the Title Attribute and the CSS Classes field,
+ * the three places a menu item can carry an icon.
  *
  * @return array List of lowercased class names.
  */
@@ -171,6 +171,12 @@ function sparkling_fontawesome_menu_icon_classes() {
 
 		foreach ( $items as $item ) {
 			$haystack = isset( $item->title ) ? $item->title : '';
+
+			// The primary menu's walker prints an icon class list typed into the
+			// Title Attribute field as an icon, so it counts too.
+			if ( ! empty( $item->attr_title ) ) {
+				$haystack .= ' ' . $item->attr_title;
+			}
 
 			if ( ! empty( $item->classes ) && is_array( $item->classes ) ) {
 				$haystack .= ' ' . implode( ' ', $item->classes );
