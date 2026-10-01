@@ -27,9 +27,9 @@ if ( ! isset( $content_width ) ) {
  * Set the content width for full width pages with no sidebar.
  */
 function sparkling_content_width() {
-	if ( is_page_template( 'page-fullwidth.php' ) ) {
+	if ( is_singular() && in_array( get_page_template_slug(), sparkling_full_width_templates(), true ) ) {
 		global $content_width;
-		$content_width = 1008; /* pixels */
+		$content_width = 1038; /* pixels: the measured column, which 1008 understated. */
 	}
 }
 
@@ -40,7 +40,7 @@ if ( ! function_exists( 'sparkling_main_content_bootstrap_classes' ) ) :
 	 * Add Bootstrap classes to the main-content-area wrapper.
 	 */
 	function sparkling_main_content_bootstrap_classes() {
-		if ( is_page_template( 'page-fullwidth.php' ) ) {
+		if ( is_singular() && in_array( get_page_template_slug(), sparkling_full_width_templates(), true ) ) {
 			return 'col-sm-12 col-md-12';
 		}
 
@@ -128,8 +128,8 @@ if ( ! function_exists( 'sparkling_setup' ) ) :
 		add_theme_support( 'wp-block-styles' );
 		add_theme_support( 'align-wide' );
 
-		// Match the editor's content width and typography to the theme's.
-		add_editor_style( 'assets/css/editor-style.css' );
+		// Match the editor's typography to the theme's; theme.json sets its width.
+		add_editor_style( array( 'assets/css/google-fonts.css', 'assets/css/editor-style.css' ) );
 
 		/*
 		 * Let WordPress manage the document title.
@@ -453,6 +453,11 @@ require get_template_directory() . '/inc/customizer.php';
  * Font Awesome loading strategy.
  */
 require get_template_directory() . '/inc/fontawesome.php';
+
+/**
+ * Block editor: theme.json palette, editor width, patterns.
+ */
+require get_template_directory() . '/inc/block-editor.php';
 
 /**
  * Metabox additions.
