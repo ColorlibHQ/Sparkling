@@ -2865,6 +2865,13 @@ button[type=submit],
 }
 
 /* WooCommerce Support */
+/* WooCommerce's olive #958E09 prices are 3.4:1 on white; use the body text colour. */
+.woocommerce ul.products li.product .price,
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
+    color: #6B6B6B;
+}
+
 .woocommerce-cart .cart-collaterals .cart_totals table td,
 .woocommerce-cart .cart-collaterals .cart_totals table th {
     padding: 6px;
