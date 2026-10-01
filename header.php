@@ -56,8 +56,8 @@
 															<?php } ?>
 														</div><!-- end of #logo -->
 
-							<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-								<span class="sr-only">Toggle navigation</span>
+							<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-controls="sparkling-navbar" aria-expanded="false">
+								<span class="sr-only"><?php esc_html_e( 'Toggle navigation', 'sparkling' ); ?></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>

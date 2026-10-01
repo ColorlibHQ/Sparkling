@@ -122,6 +122,7 @@ if ( ! function_exists( 'sparkling_header_menu' ) ) :
 				'menu'            => 'primary',
 				'theme_location'  => 'primary',
 				'container'       => 'div',
+				'container_id'    => 'sparkling-navbar',
 				'container_class' => 'collapse navbar-collapse navbar-ex1-collapse',
 				'menu_class'      => 'nav navbar-nav',
 				'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
@@ -609,41 +610,13 @@ if ( ! function_exists( 'sparkling_paging_nav' ) ) {
 	}
 }
 
-/**
- * Adds the URL to the top level navigation menu item
+/*
+ * sparkling_add_top_level_menu_url() and sparkling_make_top_level_menu_clickable()
+ * were removed in 2.7.0. The walker already prints every item's URL, and the
+ * footer script re-ran each top-level click through window.location -- with
+ * jQuery's deprecated .click(), only on desktop user agents (wp_is_mobile(),
+ * which also defeats page caching), and sending "#" items to "#".
  */
-function sparkling_add_top_level_menu_url( $atts, $item, $args ) {
-	if ( ! wp_is_mobile() && isset( $args->has_children ) && $args->has_children ) {
-		$atts['href'] = ! empty( $item->url ) ? $item->url : '';
-	}
-
-	return $atts;
-}
-
-add_filter( 'nav_menu_link_attributes', 'sparkling_add_top_level_menu_url', 99, 3 );
-
-/**
- * Makes the top level navigation menu item clickable
- */
-function sparkling_make_top_level_menu_clickable() {
-	if ( ! wp_is_mobile() ) {
-		?>
-		<script type="text/javascript">
-			jQuery(document).ready(function ($) {
-			if ($(window).width() >= 767) {
-				$('.navbar-nav > li.menu-item > a').click(function () {
-				if ($(this).attr('target') !== '_blank') {
-					window.location = $(this).attr('href')
-				}
-				})
-			}
-			})
-		</script>
-		<?php
-	}
-}
-
-add_action( 'wp_footer', 'sparkling_make_top_level_menu_clickable', 1 );
 
 /**
  * Add a pingback url auto-discovery header for singularly identifiable articles.

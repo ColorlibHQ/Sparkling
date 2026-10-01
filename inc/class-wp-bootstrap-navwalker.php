@@ -10,6 +10,31 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
 
+if ( ! function_exists( 'sparkling_navwalker_is_icon_class' ) ) :
+	/**
+	 * Whether a menu item's Title Attribute is an icon class list.
+	 *
+	 * The walker prints such a value as an icon before the label, which is how
+	 * sites add Font Awesome or glyphicon icons to menu items. Anything else
+	 * typed there is a tooltip.
+	 *
+	 * @param string $value Title Attribute.
+	 *
+	 * @return bool
+	 */
+	function sparkling_navwalker_is_icon_class( $value ) {
+		$tokens = preg_split( '/\s+/', trim( (string) $value ) );
+
+		foreach ( $tokens as $token ) {
+			if ( ! preg_match( '/^(glyphicon(-[\w-]+)?|fa[srbl]?|fa-[\w-]+)$/', $token ) ) {
+				return false;
+			}
+		}
+
+		return '' !== $tokens[0];
+	}
+endif;
+
 class WP_Bootstrap_Navwalker extends Walker_Nav_Menu {
 
 	/**
@@ -78,13 +103,15 @@ class WP_Bootstrap_Navwalker extends Walker_Nav_Menu {
 
 			$output .= $indent . '<li' . $id . $value . $class_names . '>';
 
-			$atts           = array();
-			$atts['title']  = ( ( ( strpos( $item->attr_title, 'fa-' ) !== false ) || ( strpos( $item->attr_title, 'glyphicon-' ) !== false ) ) ) ? $item->title : $item->attr_title;
-			$atts['target'] = ! empty( $item->target ) ? $item->target : '';
-			$atts['rel']    = ! empty( $item->xfn ) ? $item->xfn : '';
-
-			// If item has_children add atts to a.
-			$atts['href'] = ! empty( $item->url ) ? $item->url : '';
+			$atts = array();
+			// A title only when the site owner entered one: an icon class list in
+			// the Title Attribute used to be copied back as a title repeating the
+			// link text, so screen readers announced the item twice.
+			$atts['title']        = ! empty( $item->attr_title ) && ! sparkling_navwalker_is_icon_class( $item->attr_title ) ? $item->attr_title : '';
+			$atts['target']       = ! empty( $item->target ) ? $item->target : '';
+			$atts['rel']          = ! empty( $item->xfn ) ? $item->xfn : '';
+			$atts['href']         = ! empty( $item->url ) ? $item->url : '';
+			$atts['aria-current'] = ! empty( $item->current ) ? 'page' : '';
 
 			$atts = apply_filters( 'nav_menu_link_attributes', $atts, $item, $args );
 
@@ -99,26 +126,37 @@ class WP_Bootstrap_Navwalker extends Walker_Nav_Menu {
 			$item_output = $args->before;
 
 			/*
-			 * Glyphicons
-			 * ===========
-			 * Since the the menu item is NOT a Divider or Header we check the see
-			 * if there is a value in the attr_title property. If the attr_title
-			 * property is NOT null we apply it as the class name for the glyphicon.
+			 * Glyphicons and Font Awesome
+			 * ===========================
+			 * A Title Attribute that is a list of icon classes ("fa-solid fa-star",
+			 * "glyphicon glyphicon-home") is printed as an icon before the label.
 			 */
-			if ( ! empty( $item->attr_title ) ) {
-				if ( strpos( $item->attr_title, 'glyphicon-' ) !== false ) {
-					$item_output .= '<a' . $attributes . '><span class="glyphicon ' . esc_attr( $item->attr_title ) . '"></span>&nbsp;';
-				} elseif ( strpos( $item->attr_title, 'fa-' ) !== false ) {
-					$item_output .= '<a' . $attributes . '><span class="' . esc_attr( $item->attr_title ) . '"></span>&nbsp;';
-				} else {
-					$item_output .= '<a' . $attributes . '>';
-				}
-			} else {
-				$item_output .= '<a' . $attributes . '>';
+			$item_output .= '<a' . $attributes . '>';
+
+			if ( ! empty( $item->attr_title ) && sparkling_navwalker_is_icon_class( $item->attr_title ) ) {
+				$icon_class    = false !== strpos( $item->attr_title, 'glyphicon-' ) && false === strpos( $item->attr_title, 'glyphicon ' ) ? 'glyphicon ' . $item->attr_title : $item->attr_title;
+				$item_output .= '<span class="' . esc_attr( $icon_class ) . '" aria-hidden="true"></span>&nbsp;';
 			}
 
-			$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
-			$item_output .= ( $args->has_children ) ? '</a><a class="sparkling-dropdown caret" href="#"></a>' : '</a>';
+			$title = apply_filters( 'the_title', $item->title, $item->ID );
+			// Core's filter; menu icon and badge plugins hook it.
+			$title = apply_filters( 'nav_menu_item_title', $title, $item, $args, $depth );
+
+			$item_output .= $args->link_before . $title . $args->link_after . '</a>';
+
+			if ( $args->has_children ) {
+				/*
+				 * A real button. This was an empty <a href="#">: it had no name,
+				 * did not say whether the submenu was open, and following it put
+				 * "#" in the address bar and jumped to the top of the page. Below
+				 * 1024px it is the only way to open a submenu.
+				 */
+				$item_output .= sprintf(
+					'<button type="button" class="sparkling-dropdown caret" aria-expanded="false"><span class="screen-reader-text">%s</span></button>',
+					/* translators: %s: menu item title */
+					esc_html( sprintf( __( 'Show submenu for %s', 'sparkling' ), wp_strip_all_tags( $title ) ) )
+				);
+			}
 
 			$item_output .= $args->after;
 

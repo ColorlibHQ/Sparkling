@@ -1293,6 +1293,43 @@ button:focus,
     color: #DA4453;
 }
 
+/*
+ * The submenu toggle is a <button> since 2.7.0. These reproduce the box the
+ * <a> it replaced got from the ".navbar-nav > li > a" rules, so the arrow is
+ * drawn exactly as before.
+ */
+.sparkling-dropdown {
+    position: relative;
+    padding: 0;
+    border-bottom: 0;
+    border-radius: 0;
+    background: transparent;
+    color: inherit;
+    appearance: none;
+    font: inherit;
+    line-height: 1.42857143;
+    cursor: pointer;
+}
+
+.navbar-nav > li > .sparkling-dropdown {
+    font-size: 12px;
+    line-height: 40px;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav > li > .sparkling-dropdown {
+        padding: 10px 0;
+        line-height: 20px;
+    }
+}
+
+/* The arrow is a few pixels wide; make the area that opens it finger-sized. */
+.sparkling-dropdown::after {
+    content: "";
+    position: absolute;
+    inset: -12px;
+}
+
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
     background-color: #363636;

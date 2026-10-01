@@ -201,15 +201,79 @@
 	}
 
 	/**
-	 * Dropdown toggles in the navbar.
+	 * Open or close a menu item's submenu and report it on its toggle button.
+	 *
+	 * @param {Element} item The <li>.
+	 * @param {boolean} open Whether to open it.
+	 */
+	function setSubmenuOpen( item, open ) {
+		item.classList.toggle( 'open', open );
+
+		var toggle = item.querySelector( ':scope > .sparkling-dropdown' );
+
+		if ( toggle ) {
+			toggle.setAttribute( 'aria-expanded', open ? 'true' : 'false' );
+		}
+	}
+
+	/**
+	 * Submenu toggles in the navbar.
 	 */
 	function initDropdowns() {
-		document.querySelectorAll( '.sparkling-dropdown' ).forEach( function ( el ) {
-			el.addEventListener( 'click', function () {
-				if ( el.parentNode ) {
-					el.parentNode.classList.toggle( 'open' );
-				}
+		document.querySelectorAll( '.sparkling-dropdown' ).forEach( function ( toggle ) {
+			toggle.addEventListener( 'click', function ( event ) {
+				event.preventDefault();
+				setSubmenuOpen( toggle.parentNode, ! toggle.parentNode.classList.contains( 'open' ) );
 			} );
+		} );
+
+		// A "#" parent item has nowhere to go, so it opens its submenu instead of
+		// jumping to the top of the page.
+		document.querySelectorAll( '.navbar-nav li.dropdown > a[href="#"]' ).forEach( function ( link ) {
+			link.addEventListener( 'click', function ( event ) {
+				event.preventDefault();
+				setSubmenuOpen( link.parentNode, ! link.parentNode.classList.contains( 'open' ) );
+			} );
+		} );
+
+		// Escape closes the submenu that holds focus and returns focus to its toggle.
+		document.addEventListener( 'keydown', function ( event ) {
+			if ( 'Escape' !== event.key || ! event.target.closest ) {
+				return;
+			}
+
+			var item = event.target.closest( '.navbar-nav li.open' );
+
+			if ( ! item ) {
+				return;
+			}
+
+			setSubmenuOpen( item, false );
+
+			var toggle = item.querySelector( ':scope > .sparkling-dropdown' );
+
+			if ( toggle ) {
+				toggle.focus();
+			}
+		} );
+	}
+
+	/**
+	 * Keep the menu button's aria-expanded in step with the collapsed menu.
+	 *
+	 * Bootstrap only updates triggers whose data-target is an #id; this one
+	 * targets the .navbar-ex1-collapse class, which child themes rely on.
+	 * Bootstrap announces the change through jQuery events, so listen there.
+	 */
+	function initMenuToggleState() {
+		var toggle = document.querySelector( '.navbar-toggle[data-target=".navbar-ex1-collapse"]' );
+
+		if ( ! toggle || ! window.jQuery ) {
+			return;
+		}
+
+		window.jQuery( document ).on( 'shown.bs.collapse hidden.bs.collapse', '.navbar-ex1-collapse', function ( event ) {
+			toggle.setAttribute( 'aria-expanded', 'shown' === event.type ? 'true' : 'false' );
 		} );
 	}
 
@@ -242,6 +306,7 @@
 		styleCoreMarkup();
 		initScrollToTop();
 		initDropdowns();
+		initMenuToggleState();
 		initStickyHeader();
 		window.generateMobileMenu();
 
