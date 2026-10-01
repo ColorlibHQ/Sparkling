@@ -116,7 +116,8 @@ if ( ! function_exists( 'sparkling_editor_layout_sizes' ) ) :
 	 *
 	 * theme.json's layout (648px) is the content column beside a sidebar, and
 	 * with No Sidebar. The Full Width layout and the full-width page templates
-	 * render a 1038px column, so the editor gets that width for those posts.
+	 * render a 1038px column, so the editor gets that width for those posts, and
+	 * the Blocks template, which has no card around its content, 1140px.
 	 *
 	 * @param WP_Theme_JSON_Data $theme_json The theme's theme.json data.
 	 *
@@ -144,13 +145,16 @@ if ( ! function_exists( 'sparkling_editor_layout_sizes' ) ) :
 			return $theme_json;
 		}
 
+		// The Blocks template has no card around the content: the whole container.
+		$size = ! empty( $post->ID ) && 'template-blocks.php' === get_page_template_slug( $post->ID ) ? '1140px' : '1038px';
+
 		return $theme_json->update_with(
 			array(
 				'version'  => 2,
 				'settings' => array(
 					'layout' => array(
-						'contentSize' => '1038px',
-						'wideSize'    => '1038px',
+						'contentSize' => $size,
+						'wideSize'    => $size,
 					),
 				),
 			)

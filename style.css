@@ -2914,3 +2914,39 @@ button[type=submit],
 .flexslider .slides img {
     width: 100%;
 }
+
+/* =Blocks page template (template-blocks.php)
+----------------------------------------------- */
+
+/* A white canvas, flush with the header and footer, without the card. */
+.page-template-template-blocks .site-content {
+    background-color: #fff;
+}
+
+.page-template-template-blocks .main-content-area {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Full-width blocks reach the edges of the window. */
+.page-template-template-blocks #page {
+    overflow-x: clip;
+}
+
+.sparkling-blocks-canvas .entry-content > .alignfull {
+    width: auto;
+    max-width: none;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.sparkling-blocks-canvas .entry-content,
+.sparkling-blocks-canvas .entry-content > :first-child {
+    margin-top: 0;
+}
+
+/* Patterns carry their own padding; stack them without gaps between them. */
+.sparkling-blocks-canvas .entry-content > .wp-block-group {
+    margin-top: 0;
+    margin-bottom: 0;
+}
