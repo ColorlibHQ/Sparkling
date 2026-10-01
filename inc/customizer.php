@@ -191,14 +191,21 @@ function sparkling_customizer( $wp_customize ) {
 			'section'     => 'sparkling_slider_options',
 			'type'        => 'select',
 			'description' => __( 'Select a category for the featured post slider', 'sparkling' ),
-			'choices'     => $options_categories,
+			/*
+			 * The default, '', is "every category" -- which is what the slider
+			 * shows -- but it was not one of the choices, so the control showed
+			 * the first category as selected while the site used all of them.
+			 */
+			'choices'     => array( '' => __( 'All categories', 'sparkling' ) ) + (array) $options_categories,
 		)
 	);
 
 	$wp_customize->add_setting(
 		'sparkling[sparkling_slide_number]',
 		array(
-			'default'           => 3,
+			// The slider shows five slides until this is saved, so the control
+			// must say five; it said three.
+			'default'           => 5,
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_number',
 		)
@@ -209,7 +216,12 @@ function sparkling_customizer( $wp_customize ) {
 			'label'       => __( 'Number of slide items', 'sparkling' ),
 			'section'     => 'sparkling_slider_options',
 			'description' => __( 'Enter the number of slide items', 'sparkling' ),
-			'type'        => 'text',
+			'type'        => 'number',
+			'input_attrs' => array(
+				'min'  => 1,
+				'max'  => 20,
+				'step' => 1,
+			),
 		)
 	);
 
@@ -361,6 +373,7 @@ function sparkling_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'sparkling[w2f_cfa_link]',
 		array(
+			'type'        => 'url',
 			'label'       => __( 'CFA button link', 'sparkling' ),
 			'section'     => 'sparkling_action_options',
 			'description' => __( 'Enter the link for Call For Action button', 'sparkling' ),
@@ -455,12 +468,7 @@ function sparkling_customizer( $wp_customize ) {
 		)
 	);
 	// Typography Defaults
-	$typography_defaults = array(
-		'size'  => '14px',
-		'face'  => 'Open Sans',
-		'style' => 'normal',
-		'color' => '#6B6B6B',
-	);
+	$typography_defaults = sparkling_typography_defaults();
 
 	// Typography Options
 	global $typography_options;
@@ -517,7 +525,7 @@ function sparkling_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'sparkling[main_body_typography][color]',
 		array(
-			'default'           => sanitize_hex_color( '#6B6B6B' ),
+			'default'           => $typography_defaults['color'],
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
 		)
@@ -531,23 +539,11 @@ function sparkling_customizer( $wp_customize ) {
 			)
 		)
 	);
-	$wp_customize->add_setting(
-		'sparkling[main_body_typography][subset]',
-		array(
-			'default'           => '',
-			'type'              => 'option',
-			'sanitize_callback' => 'esc_html',
-		)
-	);
-	$wp_customize->add_control(
-		'sparkling[main_body_typography][subset]',
-		array(
-			'label'       => __( 'Font Subset', 'sparkling' ),
-			'section'     => 'sparkling_typography_options',
-			'description' => __( 'Enter the Google fonts subset', 'sparkling' ),
-			'type'        => 'text',
-		)
-	);
+	/*
+	 * The "Font Subset" field is gone: it asked for a Google Fonts subset, and
+	 * since 2.6.11 the fonts are bundled with the theme rather than requested
+	 * from Google, so the value was never used.
+	 */
 
 	$wp_customize->add_setting(
 		'sparkling[heading_color]',
@@ -988,7 +984,7 @@ function sparkling_customizer( $wp_customize ) {
 		array(
 			'default'           => '',
 			'type'              => 'option',
-			'sanitize_callback' => 'esc_html',
+			'sanitize_callback' => 'sanitize_text_field',
 		)
 	);
 
@@ -1008,7 +1004,7 @@ function sparkling_customizer( $wp_customize ) {
 		array(
 			'default'           => '',
 			'type'              => 'option',
-			'sanitize_callback' => 'esc_html',
+			'sanitize_callback' => 'sanitize_text_field',
 		)
 	);
 
@@ -1028,7 +1024,7 @@ function sparkling_customizer( $wp_customize ) {
 		array(
 			'default'           => '',
 			'type'              => 'option',
-			'sanitize_callback' => 'esc_html',
+			'sanitize_callback' => 'sanitize_text_field',
 		)
 	);
 
@@ -1048,7 +1044,7 @@ function sparkling_customizer( $wp_customize ) {
 		array(
 			'default'           => '',
 			'type'              => 'option',
-			'sanitize_callback' => 'esc_html',
+			'sanitize_callback' => 'sanitize_text_field',
 		)
 	);
 
@@ -1068,7 +1064,7 @@ function sparkling_customizer( $wp_customize ) {
 		array(
 			'default'           => '',
 			'type'              => 'option',
-			'sanitize_callback' => 'esc_html',
+			'sanitize_callback' => 'sanitize_text_field',
 		)
 	);
 
@@ -1088,7 +1084,7 @@ function sparkling_customizer( $wp_customize ) {
 		array(
 			'default'           => '',
 			'type'              => 'option',
-			'sanitize_callback' => 'esc_html',
+			'sanitize_callback' => 'sanitize_text_field',
 		)
 	);
 
@@ -1107,8 +1103,24 @@ function sparkling_customizer( $wp_customize ) {
 add_action( 'customize_register', 'sparkling_customizer' );
 
 
+if ( ! function_exists( 'sparkling_typography_defaults' ) ) :
+	/**
+	 * Defaults for the body typography settings: what style.css renders.
+	 *
+	 * @return array
+	 */
+	function sparkling_typography_defaults() {
+		return array(
+			'size'  => '14px',
+			'face'  => 'Open Sans',
+			'style' => 'normal',
+			'color' => '#6B6B6B',
+		);
+	}
+endif;
+
 /**
- * Sanitzie checkbox for WordPress customizer
+ * Sanitize checkbox for WordPress customizer
  */
 function sparkling_sanitize_checkbox( $input ) {
 	if ( 1 == $input ) {
@@ -1158,12 +1170,17 @@ function sparkling_sanitize_nohtml( $input ) {
 
 /**
  * Adds sanitization callback function: Number
- * @package Sparkling
+ *
+ * A whole number of at least 1. This returned nothing at all for anything
+ * non-numeric and let "2.5" or "-3" through.
+ *
+ * @param mixed $input Value from the Customizer.
+ * @return int|string
  */
 function sparkling_sanitize_number( $input ) {
-	if ( isset( $input ) && is_numeric( $input ) ) {
-		return $input;
-	}
+	$number = absint( $input );
+
+	return $number ? $number : '';
 }
 
 /**
@@ -1188,7 +1205,13 @@ function sparkling_sanitize_textarea( $input ) {
  */
 function sparkling_sanitize_slidecat( $input ) {
 	global $options_categories;
-	if ( array_key_exists( $input, $options_categories ) ) {
+
+	// '' is "All categories", the default.
+	if ( '' === $input || null === $input ) {
+		return '';
+	}
+
+	if ( is_array( $options_categories ) && array_key_exists( absint( $input ), $options_categories ) ) {
 		return $input;
 	} else {
 		return '';
@@ -1201,7 +1224,7 @@ function sparkling_sanitize_slidecat( $input ) {
  */
 function sparkling_sanitize_layout( $input ) {
 	global $site_layout;
-	if ( array_key_exists( $input, $site_layout ) ) {
+	if ( is_string( $input ) && is_array( $site_layout ) && array_key_exists( $input, $site_layout ) ) {
 		return $input;
 	} else {
 		return '';
@@ -1213,12 +1236,17 @@ function sparkling_sanitize_layout( $input ) {
  * @package Sparkling
  */
 function sparkling_sanitize_typo_size( $input ) {
-	global $typography_options, $typography_defaults;
-	if ( array_key_exists( $input, $typography_options['sizes'] ) ) {
+	global $typography_options;
+
+	// $typography_defaults was never a global, so an unknown value came back
+	// as null with an "array offset on null" warning instead of the default.
+	if ( is_string( $input ) && array_key_exists( $input, $typography_options['sizes'] ) ) {
 		return $input;
-	} else {
-		return $typography_defaults['size'];
 	}
+
+	$defaults = sparkling_typography_defaults();
+
+	return $defaults['size'];
 }
 
 /**
@@ -1226,12 +1254,17 @@ function sparkling_sanitize_typo_size( $input ) {
  * @package Sparkling
  */
 function sparkling_sanitize_typo_face( $input ) {
-	global $typography_options, $typography_defaults;
-	if ( array_key_exists( $input, $typography_options['faces'] ) ) {
+	global $typography_options;
+
+	// $typography_defaults was never a global, so an unknown value came back
+	// as null with an "array offset on null" warning instead of the default.
+	if ( is_string( $input ) && array_key_exists( $input, $typography_options['faces'] ) ) {
 		return $input;
-	} else {
-		return $typography_defaults['face'];
 	}
+
+	$defaults = sparkling_typography_defaults();
+
+	return $defaults['face'];
 }
 
 /**
@@ -1239,12 +1272,17 @@ function sparkling_sanitize_typo_face( $input ) {
  * @package Sparkling
  */
 function sparkling_sanitize_typo_style( $input ) {
-	global $typography_options, $typography_defaults;
-	if ( array_key_exists( $input, $typography_options['styles'] ) ) {
+	global $typography_options;
+
+	// $typography_defaults was never a global, so an unknown value came back
+	// as null with an "array offset on null" warning instead of the default.
+	if ( is_string( $input ) && array_key_exists( $input, $typography_options['styles'] ) ) {
 		return $input;
-	} else {
-		return $typography_defaults['style'];
 	}
+
+	$defaults = sparkling_typography_defaults();
+
+	return $defaults['style'];
 }
 
 /**
