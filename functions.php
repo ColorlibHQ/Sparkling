@@ -274,52 +274,49 @@ function sparkling_remove_gallery_css( $css ) {
 add_filter( 'gallery_style', 'sparkling_remove_gallery_css' );
 
 
+/**
+ * Apply the archive headline templates from Customizer > Archive Pages.
+ *
+ * "%s" in a template is replaced with the term, author or date. This used to
+ * run the template through sprintf(), so any other "%" in it -- "50% off: %s",
+ * or a lone "%" at the end -- was a fatal ValueError or ArgumentCountError
+ * on PHP 8 and the archive page died.
+ *
+ * @param string $title Archive title from WordPress.
+ *
+ * @return string
+ */
 function sparkling_archive_pages_title( $title ) {
 	if ( is_tag() ) {
-		$template = of_get_option( 'tag_title' );
-		if ( empty( $template ) ) {
-			return $title;
-		} else {
-			return sprintf( $template, single_tag_title( '', false ) );
-		}
+		$option = 'tag_title';
+		$value  = single_tag_title( '', false );
 	} elseif ( is_category() ) {
-		$template = of_get_option( 'category_title' );
-		if ( empty( $template ) ) {
-			return $title;
-		} else {
-			return sprintf( $template, single_cat_title( '', false ) );
-		}
+		$option = 'category_title';
+		$value  = single_cat_title( '', false );
 	} elseif ( is_author() ) {
-		$template = of_get_option( 'author_title' );
-		if ( empty( $template ) ) {
-			return $title;
-		} else {
-			return sprintf( $template, get_the_author() );
-		}
+		$option = 'author_title';
+		$author = get_queried_object();
+		$value  = $author instanceof WP_User ? esc_html( $author->display_name ) : '';
 	} elseif ( is_year() ) {
-		$template = of_get_option( 'year_title' );
-		if ( empty( $template ) ) {
-			return $title;
-		} else {
-			return sprintf( $template, get_the_date( _x( 'Y', 'yearly archives date format', 'sparkling' ) ) );
-		}
+		$option = 'year_title';
+		$value  = get_the_date( _x( 'Y', 'yearly archives date format', 'sparkling' ) );
 	} elseif ( is_month() ) {
-		$template = of_get_option( 'month_title' );
-		if ( empty( $template ) ) {
-			return $title;
-		} else {
-			return sprintf( $template, get_the_date( _x( 'F Y', 'monthly archives date format', 'sparkling' ) ) );
-		}
+		$option = 'month_title';
+		$value  = get_the_date( _x( 'F Y', 'monthly archives date format', 'sparkling' ) );
 	} elseif ( is_day() ) {
-		$template = of_get_option( 'day_title' );
-		if ( empty( $template ) ) {
-			return $title;
-		} else {
-			return sprintf( $template, get_the_date( _x( 'F j, Y', 'daily archives date format', 'sparkling' ) ) );
-		}
+		$option = 'day_title';
+		$value  = get_the_date( _x( 'F j, Y', 'daily archives date format', 'sparkling' ) );
 	} else {
 		return $title;
 	}
+
+	$template = of_get_option( $option );
+
+	if ( ! is_string( $template ) || '' === trim( $template ) ) {
+		return $title;
+	}
+
+	return wp_kses_post( str_replace( '%s', $value, $template ) );
 }
 
 add_filter( 'get_the_archive_title', 'sparkling_archive_pages_title' );
@@ -706,12 +703,6 @@ function sparkling_get_attachment_image() {
 			'image' => wp_get_attachment_image( $id, 'medium' ),
 		)
 	);
-}
-
-if ( ! function_exists( 'wp_body_open' ) ) {
-	function wp_body_open() {
-		do_action( 'wp_body_open' );
-	}
 }
 
 /*

@@ -45,8 +45,8 @@ add_filter( 'body_class', 'sparkling_body_classes' );
 add_filter( 'the_title', 'sparkling_title' );
 
 function sparkling_title( $title ) {
-	if ( '' == $title ) {
-		return 'Untitled';
+	if ( '' === (string) $title ) {
+		return __( 'Untitled', 'sparkling' );
 	} else {
 		return $title;
 	}
@@ -316,9 +316,8 @@ endif;
  * function to show the footer info, copyright information
  */
 function sparkling_footer_info() {
-	global $sparkling_footer_info;
 	/* translators: 1: Colorlib link, 2: WordPress link */
-	printf( esc_html__( 'Theme by %1$s Powered by %2$s', 'sparkling' ), '<a href="https://colorlib.com/" target="_blank" rel="nofollow noopener">Colorlib</a>', '<a href="https://wordpress.org/" target="_blank">WordPress</a>' );
+	printf( esc_html__( 'Theme by %1$s Powered by %2$s', 'sparkling' ), '<a href="https://colorlib.com/" target="_blank" rel="nofollow noopener">Colorlib</a>', '<a href="https://wordpress.org/" target="_blank" rel="noopener">WordPress</a>' );
 }
 
 
@@ -403,8 +402,13 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
 		if ( sparkling_css_color( 'cfa_color' ) ) {
 			echo '.cfa-text { color: ' . sparkling_css_color( 'cfa_color' ) . ';}';
 		}
-		if ( sparkling_css_color( 'cfa_btn_color' ) || sparkling_css_color( 'cfa_btn_txt_color' ) ) {
-			echo '.cfa-button {border-color: ' . sparkling_css_color( 'cfa_btn_color' ) . '; color: ' . sparkling_css_color( 'cfa_btn_txt_color' ) . ';}';
+		// Each declaration only when its colour is set: with one of the two empty
+		// this printed "border-color: ;", an invalid declaration.
+		if ( sparkling_css_color( 'cfa_btn_color' ) ) {
+			echo '.cfa-button {border-color: ' . sparkling_css_color( 'cfa_btn_color' ) . ';}';
+		}
+		if ( sparkling_css_color( 'cfa_btn_txt_color' ) ) {
+			echo '.cfa-button {color: ' . sparkling_css_color( 'cfa_btn_txt_color' ) . ';}';
 		}
 		if ( sparkling_css_color( 'heading_color' ) ) {
 			echo 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .entry-title, .entry-title a {color: ' . sparkling_css_color( 'heading_color' ) . ';}';
@@ -493,69 +497,6 @@ if ( ! function_exists( 'get_sparkling_theme_options' ) ) {
 }// End if().
 add_action( 'wp_head', 'get_sparkling_theme_options', 10 );
 
-// Theme Options sidebar
-add_action( 'optionsframework_after', 'sparkling_options_display_sidebar' );
-
-function sparkling_options_display_sidebar() {
-	?>
-	<!-- Twitter -->
-	<script>!function (d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'
-		if (!d.getElementById(id)) {
-			js = d.createElement(s)
-			js.id = id
-			js.src = p + '://platform.twitter.com/widgets.js'
-			fjs.parentNode.insertBefore(js, fjs)
-		}
-		}(document, 'script', 'twitter-wjs')</script>
-
-	<!-- Facebook -->
-	<div id="fb-root"></div>
-	<div id="fb-root"></div>
-	<script>(function (d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0]
-		if (d.getElementById(id)) return
-		js = d.createElement(s)
-		js.id = id
-		js.src = '//connect.facebook.net/en_US/all.js#xfbml=1&appId=328285627269392'
-		fjs.parentNode.insertBefore(js, fjs)
-		}(document, 'script', 'facebook-jssdk'))</script>
-
-	<div id="optionsframework-sidebar" class="metabox-holder">
-		<div id="optionsframework" class="postbox">
-			<h3><?php esc_html_e( 'Support and Documentation', 'sparkling' ); ?></h3>
-			<div class="inside">
-				<div id="social-share">
-					<div class="fb-like" data-href="<?php echo esc_url( 'https://www.facebook.com/colorlib' ); ?>"
-						data-send="false" data-layout="button_count" data-width="90" data-show-faces="true"></div>
-					<div class="tw-follow"><a href="https://twitter.com/colorlib" class="twitter-follow-button"
-												data-show-count="false">Follow @colorlib</a></div>
-				</div>
-				<p>
-					<b><a href="<?php echo esc_url( 'https://colorlib.com/wp/support/sparkling' ); ?>"><?php esc_html_e( 'Sparkling Documentation', 'sparkling' ); ?></a></b>
-				</p>
-				<p><?php _e( 'The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via', 'sparkling' ); ?>
-					<a href="<?php echo esc_url( 'https://colorlib.com/wp/forums' ); ?>"><?php esc_html_e( 'Colorlib support forum', 'sparkling' ); ?></a>.
-				</p>
-				<p><?php esc_html_e( 'If you like this theme, I\'d appreciate any of the following:', 'sparkling' ); ?></p>
-				<ul>
-					<li><a class="button"
-							href="<?php echo esc_url( 'https://wordpress.org/support/view/theme-reviews/sparkling?filter=5' ); ?>"
-							title="<?php esc_attr_e( 'Rate this Theme', 'sparkling' ); ?>"
-							target="_blank"><?php printf( esc_html__( 'Rate this Theme', 'sparkling' ) ); ?></a></li>
-					<li><a class="button" href="<?php echo esc_url( 'https://www.facebook.com/colorlib' ); ?>"
-							title="Like Colorlib on Facebook"
-							target="_blank"><?php printf( esc_html__( 'Like on Facebook', 'sparkling' ) ); ?></a></li>
-					<li><a class="button" href="<?php echo esc_url( 'https://twitter.com/colorlib/' ); ?>"
-							title="Follow Colrolib on Twitter"
-							target="_blank"><?php printf( esc_html__( 'Follow on Twitter', 'sparkling' ) ); ?></a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<?php
-}
-
 /**
  * Add Bootstrap thumbnail styling to images with captions
  * Use <figure> and <figcaption>
@@ -576,19 +517,25 @@ function sparkling_caption( $output, $attr, $content ) {
 
 	$attr = shortcode_atts( $defaults, $attr );
 
+	$width = absint( $attr['width'] );
+
 	// If the width is less than 1 or there is no caption, return the content wrapped between the [caption] tags
-	if ( $attr['width'] < 1 || empty( $attr['caption'] ) ) {
+	if ( $width < 1 || empty( $attr['caption'] ) ) {
 		return $content;
 	}
 
-	// Set up the attributes for the caption <figure>
+	/*
+	 * absint(): a non-numeric width -- "300px", say -- was added to 10 as a
+	 * string, a fatal TypeError on PHP 8. The caption may hold the markup core
+	 * allows in captions, and nothing else.
+	 */
 	$attributes  = ( ! empty( $attr['id'] ) ? ' id="' . esc_attr( $attr['id'] ) . '"' : '' );
 	$attributes .= ' class="thumbnail wp-caption ' . esc_attr( $attr['align'] ) . '"';
-	$attributes .= ' style="width: ' . ( esc_attr( $attr['width'] ) + 10 ) . 'px"';
+	$attributes .= ' style="width: ' . ( $width + 10 ) . 'px"';
 
 	$output  = '<figure' . $attributes . '>';
 	$output .= do_shortcode( $content );
-	$output .= '<figcaption class="caption wp-caption-text">' . $attr['caption'] . '</figcaption>';
+	$output .= '<figcaption class="caption wp-caption-text">' . wp_kses_post( $attr['caption'] ) . '</figcaption>';
 	$output .= '</figure>';
 
 	return $output;
@@ -657,10 +604,10 @@ if ( ! function_exists( 'sparkling_paging_nav' ) ) {
 /**
  * Add a pingback url auto-discovery header for singularly identifiable articles.
  */
-function _s_pingback_header() {
+function sparkling_pingback_header() {
 	if ( is_singular() && pings_open() ) {
-		echo '<link rel="pingback" href="', bloginfo( 'pingback_url' ), '">';
+		printf( '<link rel="pingback" href="%s">' . "\n", esc_url( get_bloginfo( 'pingback_url' ) ) );
 	}
 }
 
-add_action( 'wp_head', '_s_pingback_header' );
+add_action( 'wp_head', 'sparkling_pingback_header' );
