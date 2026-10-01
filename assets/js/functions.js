@@ -278,28 +278,59 @@
 	}
 
 	/**
-	 * Reserve space under a fixed navbar so content is not hidden behind it.
+	 * Sticky header: keep the fixed navbar below the admin bar, reserve its
+	 * height above the content, and make in-page links stop below it.
+	 *
+	 * The space was measured once, at load, so it went stale when the menu
+	 * wrapped to a second row on a narrower window. With the admin bar the
+	 * navbar sat at top: 0, under the bar, and the space was set to the
+	 * difference of the two heights, so the bar hid the top of the navbar.
+	 * And an anchor -- #comments, a "Skip to main content" target, a menu
+	 * link to a section -- scrolled its target under the navbar.
 	 */
 	function initStickyHeader() {
 		var navbar = document.querySelector( '.navbar-fixed-top' );
-
-		if ( ! navbar ) {
-			return;
-		}
-
-		var header = navbar.closest( 'header' );
+		var header = navbar ? navbar.closest( 'header' ) : null;
 
 		if ( ! header ) {
 			return;
 		}
 
-		// getComputedStyle().height resolves to the content box, matching the
-		// jQuery .height() this replaced.
-		var adminbar    = document.getElementById( 'wpadminbar' );
-		var navHeight   = parseFloat( window.getComputedStyle( navbar ).height ) || 0;
-		var adminHeight = adminbar ? parseFloat( window.getComputedStyle( adminbar ).height ) || 0 : 0;
+		var adminbar = document.getElementById( 'wpadminbar' );
+		var queued   = false;
 
-		header.style.marginBottom = ( adminbar ? Math.abs( navHeight - adminHeight ) : navHeight ) + 'px';
+		function layout() {
+			queued = false;
+
+			var top = 0;
+			var barFixed = false;
+
+			if ( adminbar ) {
+				// Below 600px the admin bar scrolls away with the page.
+				barFixed = 'fixed' === window.getComputedStyle( adminbar ).position;
+				top      = Math.max( 0, adminbar.getBoundingClientRect().bottom );
+				navbar.style.top = top + 'px';
+			}
+
+			var navHeight = navbar.offsetHeight;
+
+			header.style.marginBottom = navHeight + 'px';
+			document.documentElement.style.scrollPaddingTop = ( ( barFixed ? top : 0 ) + navHeight ) + 'px';
+		}
+
+		function queue() {
+			if ( ! queued ) {
+				queued = true;
+				window.requestAnimationFrame( layout );
+			}
+		}
+
+		layout();
+		window.addEventListener( 'resize', queue );
+
+		if ( adminbar ) {
+			window.addEventListener( 'scroll', queue, { passive: true } );
+		}
 	}
 
 	ready( function () {
