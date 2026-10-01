@@ -56,25 +56,13 @@ function sparkling_welcome_customize_register( $wp_customize ) {
 	);
 }
 
-add_action( 'customize_controls_enqueue_scripts', 'sparkling_welcome_scripts_for_customizer', 0 );
-
-function sparkling_welcome_scripts_for_customizer() {
-	wp_enqueue_style( 'sparkling-welcome-screen-customizer-css', get_template_directory_uri() . '/inc/welcome-screen/css/welcome_customizer.css' );
-	wp_enqueue_style( 'plugin-install' );
-	wp_enqueue_script( 'plugin-install' );
-	wp_enqueue_script( 'updates' );
-	wp_add_inline_script( 'plugin-install', 'var pagenow = "customizer";' );
-	wp_enqueue_script( 'sparkling-welcome-screen-customizer-js', get_template_directory_uri() . '/inc/welcome-screen/js/welcome_customizer.js', array( 'customize-controls' ), '1.0', true );
-
-	wp_localize_script(
-		'sparkling-welcome-screen-customizer-js',
-		'sparklingWelcomeScreenObject',
-		array(
-			'ajaxurl'            => admin_url( 'admin-ajax.php' ),
-			'template_directory' => get_template_directory_uri(),
-		)
-	);
-}
+/*
+ * sparkling_welcome_scripts_for_customizer() was removed in 2.7.0. It loaded
+ * core's plugin installer scripts into the Customizer for an installer that
+ * no longer lives there, and a stylesheet whose one live rule hid the
+ * Customizer's "Change" theme button. The link sections' script and styles
+ * are in assets/js/customizer-controls.js and assets/css/customizer.css.
+ */
 
 // Load the system checks ( used for notifications )
 require get_template_directory() . '/inc/welcome-screen/class-sparkling-notify-system.php';

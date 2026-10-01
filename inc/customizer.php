@@ -165,10 +165,11 @@ function sparkling_customizer( $wp_customize ) {
 			$wp_customize,
 			'sparkling[sparkling_slider_link_checkbox]',
 			array(
-				'label'    => esc_html__( 'Uncheck this option to remove the link from the slides', 'sparkling' ),
-				'section'  => 'sparkling_slider_options',
-				'priority' => 6,
-				'type'     => 'sparkling-toggle',
+				'label'           => esc_html__( 'Uncheck this option to remove the link from the slides', 'sparkling' ),
+				'section'         => 'sparkling_slider_options',
+				'active_callback' => 'sparkling_slider_is_enabled',
+				'priority'        => 6,
+				'type'            => 'sparkling-toggle',
 			)
 		)
 	);
@@ -187,16 +188,17 @@ function sparkling_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'sparkling[sparkling_slide_categories]',
 		array(
-			'label'       => __( 'Slider Category', 'sparkling' ),
-			'section'     => 'sparkling_slider_options',
-			'type'        => 'select',
-			'description' => __( 'Select a category for the featured post slider', 'sparkling' ),
+			'label'           => __( 'Slider Category', 'sparkling' ),
+			'section'         => 'sparkling_slider_options',
+			'active_callback' => 'sparkling_slider_is_enabled',
+			'type'            => 'select',
+			'description'     => __( 'Select a category for the featured post slider', 'sparkling' ),
 			/*
 			 * The default, '', is "every category" -- which is what the slider
 			 * shows -- but it was not one of the choices, so the control showed
 			 * the first category as selected while the site used all of them.
 			 */
-			'choices'     => array( '' => __( 'All categories', 'sparkling' ) ) + (array) $options_categories,
+			'choices'         => array( '' => __( 'All categories', 'sparkling' ) ) + (array) $options_categories,
 		)
 	);
 
@@ -213,11 +215,12 @@ function sparkling_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'sparkling[sparkling_slide_number]',
 		array(
-			'label'       => __( 'Number of slide items', 'sparkling' ),
-			'section'     => 'sparkling_slider_options',
-			'description' => __( 'Enter the number of slide items', 'sparkling' ),
-			'type'        => 'number',
-			'input_attrs' => array(
+			'label'           => __( 'Number of slide items', 'sparkling' ),
+			'section'         => 'sparkling_slider_options',
+			'active_callback' => 'sparkling_slider_is_enabled',
+			'description'     => __( 'Enter the number of slide items', 'sparkling' ),
+			'type'            => 'number',
+			'input_attrs'     => array(
 				'min'  => 1,
 				'max'  => 20,
 				'step' => 1,
@@ -1295,66 +1298,36 @@ function sparkling_customize_preview_js() {
 add_action( 'customize_preview_init', 'sparkling_customize_preview_js' );
 
 /**
- * Styles for the theme's own Customizer controls.
+ * Styles and scripts for the theme's own Customizer controls and sections.
  *
- * Carries the on/off switch and tooltip rules that used to come from the bundled
- * Epsilon framework's stylesheet, so the controls look unchanged after its removal.
+ * customizer.css carries the on/off switch that used to come from the bundled
+ * Epsilon framework, and the link sections' styling. customizer-controls.js
+ * registers the link section type.
  */
 function sparkling_customize_controls_css() {
 	wp_enqueue_style( 'sparkling-customizer-controls', get_template_directory_uri() . '/assets/css/customizer.css', array(), SPARKLING_VERSION );
+	wp_enqueue_script( 'sparkling-customizer-controls', get_template_directory_uri() . '/assets/js/customizer-controls.js', array( 'customize-controls' ), SPARKLING_VERSION, true );
 }
 
 add_action( 'customize_controls_enqueue_scripts', 'sparkling_customize_controls_css' );
 
-/**
- * Add CSS for custom controls
- */
-function sparkling_customizer_custom_control_css() {
-	?>
-	<style>
-		#customize-control-sparkling-main_body_typography-size select, #customize-control-sparkling-main_body_typography-face select, #customize-control-sparkling-main_body_typography-style select {
-			width: 60%;
-		}
-	</style>
-	<?php
-}
-
-add_action( 'customize_controls_print_styles', 'sparkling_customizer_custom_control_css' );
-
 /*
- * Custom Scripts
+ * customizer_custom_scripts() was removed in 2.7.0. Its jQuery showed and
+ * hid the slider settings with .click()/.fadeToggle() -- so they went out of
+ * step with the switch after a reset or a keyboard toggle -- and it styled a
+ * sparkling_important_links section that no longer exists. The slider
+ * settings use an active_callback instead (sparkling_slider_is_enabled()).
  */
-add_action( 'customize_controls_print_footer_scripts', 'customizer_custom_scripts' );
 
-function customizer_custom_scripts() {
-	?>
-	<script type="text/javascript">
-		jQuery(document).ready(function () {
-		/* This one shows/hides the an option when a checkbox is clicked. */
-		jQuery('#customize-control-sparkling-sparkling_slide_categories, #customize-control-sparkling-sparkling_slide_number').hide()
-		jQuery('#customize-control-sparkling-sparkling_slider_checkbox input').click(function () {
-			jQuery('#customize-control-sparkling-sparkling_slide_categories, #customize-control-sparkling-sparkling_slide_number').fadeToggle(400)
-		})
-
-		if (jQuery('#customize-control-sparkling-sparkling_slider_checkbox input:checked').val() !== undefined) {
-			jQuery('#customize-control-sparkling-sparkling_slide_categories, #customize-control-sparkling-sparkling_slide_number').show()
-		}
-		})
-	</script>
-	<style>
-		li#accordion-section-sparkling_important_links h3.accordion-section-title, li#accordion-section-sparkling_important_links h3.accordion-section-title:focus {
-			background-color: #00cc00 !important;
-			color: #fff !important;
-		}
-
-		li#accordion-section-sparkling_important_links h3.accordion-section-title:hover {
-			background-color: #00b200 !important;
-			color: #fff !important;
-		}
-
-		li#accordion-section-sparkling_important_links h3.accordion-section-title:after {
-			color: #fff !important;
-		}
-	</style>
-	<?php
-}
+if ( ! function_exists( 'sparkling_slider_is_enabled' ) ) :
+	/**
+	 * Active callback: the slider's own settings only show while it is on.
+	 *
+	 * Runs in the preview, so it sees the value being previewed.
+	 *
+	 * @return bool
+	 */
+	function sparkling_slider_is_enabled() {
+		return (bool) of_get_option( 'sparkling_slider_checkbox' );
+	}
+endif;
