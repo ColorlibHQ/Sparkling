@@ -355,7 +355,7 @@ function sparkling_scripts() {
 	if ( sparkling_fontawesome_use_full_set() ) {
 		wp_enqueue_style( 'sparkling-icons', $fa_uri . 'all.min.css', array(), '7.3.1-2', 'all' );
 	} else {
-		wp_enqueue_style( 'sparkling-icons', $fa_uri . 'subset/fontawesome-subset.min.css', array(), '7.3.1-2', 'all' );
+		wp_enqueue_style( 'sparkling-icons', $fa_uri . 'subset/fontawesome-subset.min.css', array(), SPARKLING_VERSION, 'all' );
 	}
 
 	if ( apply_filters( 'sparkling_allow_google_fonts', true ) ) {
@@ -408,8 +408,12 @@ function sparkling_scripts() {
 			'sparkling-flexslider-customization',
 			'sparklingSlider',
 			array(
-				'prev' => __( 'Previous slide', 'sparkling' ),
-				'next' => __( 'Next slide', 'sparkling' ),
+				'prev'  => __( 'Previous slide', 'sparkling' ),
+				'next'  => __( 'Next slide', 'sparkling' ),
+				'pause' => __( 'Pause slideshow', 'sparkling' ),
+				'play'  => __( 'Play slideshow', 'sparkling' ),
+				/* translators: %d: slide number */
+				'slide' => __( 'Go to slide %d', 'sparkling' ),
 			)
 		);
 	}

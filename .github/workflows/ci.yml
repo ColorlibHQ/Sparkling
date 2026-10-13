@@ -79,6 +79,9 @@ jobs:
       - name: Text domain check
         run: npm run i18n:check
 
+      - name: Frontend and release regression tests
+        run: npm test
+
   build:
     name: Build theme archive
     runs-on: ubuntu-latest

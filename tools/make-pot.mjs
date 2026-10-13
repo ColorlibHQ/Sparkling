@@ -43,7 +43,7 @@ const args = [
    * "Project-Id-Version: Sparkling 2.6.11 2.6.11".
    */
   '--package-name=Sparkling',
-  '--exclude=node_modules,vendor,build,tools,src,.github,assets/js/vendor',
+  '--exclude=node_modules,vendor,build,tools,tests,src,.github,assets/js/vendor',
   '--headers=' + JSON.stringify({
     'Report-Msgid-Bugs-To': 'https://colorlib.com/wp/support/',
     'Last-Translator': 'Colorlib <info@colorlib.com>',

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build a Font Awesome subset for one theme: only the glyphs it renders."""
-import re, sys, pathlib, subprocess, json
+import re, sys, pathlib, subprocess, json, hashlib
 
 theme_dir = pathlib.Path(sys.argv[1]); base = sys.argv[2]; prefix = sys.argv[3]
 fa = theme_dir / base / 'css' / 'fontawesome'
@@ -55,6 +55,7 @@ for cssf in [theme_dir/'style.css', theme_dir/base/'css'/'custom.css', theme_dir
 
 faces = {'fa-solid-900': used_solid, 'fa-brands-400': used_brands, 'fa-regular-400': used_regular}
 report = {}
+font_files = {}
 for face, cps in faces.items():
     src = webfonts / f'{face}.woff2'
     if not src.exists() or not cps:
@@ -63,7 +64,16 @@ for face, cps in faces.items():
     dst = out / f'{face}.woff2'
     subprocess.run([sys.executable, '-m', 'fontTools.subset', str(src), f'--unicodes={uni}',
                     '--flavor=woff2', f'--output-file={dst}'], check=True, capture_output=True)
-    report[face] = {'glyphs': len(cps), 'bytes': dst.stat().st_size, 'from': src.stat().st_size}
+    digest = hashlib.sha256(dst.read_bytes()).hexdigest()[:12]
+    name = f'{face}.{digest}.woff2'
+    hashed = out / name
+    dst.replace(hashed)
+    # A stylesheet version cannot invalidate a font cached at the same URL.
+    # Remove previous generated files after the new one has been written.
+    for previous in out.glob(f'{face}*.woff2'):
+        if previous != hashed: previous.unlink()
+    font_files[face] = name
+    report[face] = {'glyphs': len(cps), 'bytes': hashed.stat().st_size, 'from': src.stat().st_size}
 
 # 3. the CSS: Font Awesome's own non-icon rules, the used icon definitions, subset @font-face
 full = (fa / 'fontawesome.min.css').read_text()
@@ -75,7 +85,7 @@ for cps, mp in ((used_solid | used_regular, core_map), (used_brands, brand_map))
     for c in sorted(cps):
         if c in rev: defs.append(','.join(f'.fa-{n}' for n in sorted(rev[c])) + '{--fa:"\\%s"}' % c)
 FACE = ('@font-face{font-family:"%s";font-style:normal;font-weight:%s;font-display:block;'
-        'src:url(%s.woff2) format("woff2")}')
+        'src:url(%s) format("woff2")}')
 
 HEADER = re.match(r'/\*!.*?\*/', (fa / 'solid.min.css').read_text(), re.S).group(0)
 
@@ -97,13 +107,13 @@ def style_rules(sheet):
 ff = []
 if used_solid:
     ff.append(style_rules('solid.min.css'))
-    ff.append(FACE % ('Font Awesome 7 Free', '900', 'fa-solid-900'))
+    ff.append(FACE % ('Font Awesome 7 Free', '900', font_files['fa-solid-900']))
 if used_regular:
     ff.append(style_rules('regular.min.css'))
-    ff.append(FACE % ('Font Awesome 7 Free', '400', 'fa-regular-400'))
+    ff.append(FACE % ('Font Awesome 7 Free', '400', font_files['fa-regular-400']))
 if used_brands:
     ff.append(style_rules('brands.min.css'))
-    ff.append(FACE % ('Font Awesome 7 Brands', '400', 'fa-brands-400'))
+    ff.append(FACE % ('Font Awesome 7 Brands', '400', font_files['fa-brands-400']))
 banner = ("/*!\n * Font Awesome 7.3.1 subset for this theme, built by .github/build-icon-subset.py\n"
           " * Contains only the glyphs the theme renders. Load the complete Font Awesome with:\n"
           " *   add_filter( '%s_full_fontawesome', '__return_true' );\n"

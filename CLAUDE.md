@@ -15,7 +15,8 @@ npm ci                # install the pinned JS/CSS toolchain
 composer install      # install the pinned PHPCS, WPCS and PHPCompatibilityWP
 
 npm run build         # produce sparkling.zip (runs i18n:check and version:check first)
-npm run verify        # lint everything + text domain + version check — the pre-commit gate
+npm run verify        # linters + regression tests + text domain + version check
+npm test              # slider/menu on jQuery 3.7/4.0, contrast and package contents
 npm run lint          # eslint + stylelint + php -l + phpcs, in parallel
 npm run lint:fix      # auto-fix what eslint/stylelint/phpcbf can
 npm run i18n          # regenerate languages/sparkling.pot (WP-CLI on PATH, or WP_CLI=/path/to/wp)
@@ -32,9 +33,9 @@ Grunt, JSCS, JSHint and Travis were removed in 2.7.0. The scripts in `tools/` ar
 
 Every linter is held at **zero** warnings: ESLint and Stylelint run with `--max-warnings 0` and CI fails on any PHPCS finding. A deliberate exception is annotated in place with its reason (`phpcs:ignore … -- reason` / `stylelint-disable-next-line … -- reason`), never by loosening a config.
 
-CI is GitHub Actions (`.github/workflows/ci.yml`): `php -l` on PHP 7.4–8.5, PHPCS, ESLint, Stylelint, the text domain check, and a build that uploads `sparkling.zip` as an artifact.
+CI is GitHub Actions (`.github/workflows/ci.yml`): `php -l` on PHP 7.4–8.5, PHPCS, ESLint, Stylelint, frontend/package regression tests, the text domain check, and a build that uploads `sparkling.zip` as an artifact.
 
-There is no test suite. Development needs a real WordPress install — symlink this directory as `wp-content/themes/sparkling`. Release 2.7.0 was verified on **WordPress 7.1.2 / PHP 8.5** with `WP_DEBUG_LOG` clean, in a browser at 375/768/1280px, on jQuery 3.7.1 and on **jQuery 4.0.0 without Migrate**, with WooCommerce 11 active, and with axe-core for accessibility. Static analysis alone kept missing real defects here (a fatal on a `%` in an archive title, video posts rendering empty, the mobile menu dead on jQuery 4, 404s laid out as shop pages): load the pages and read the browser console and the debug log.
+The regression suite in tests/ uses Node and jsdom with the actual bundled plugins on jQuery 3.7 and 4.0. It covers slide focus, pause/play, reduced motion, menu dismissal, contrast, hashed fonts and ZIP contents. Browser checks and development still need a real WordPress install — symlink this directory as `wp-content/themes/sparkling`. Release 2.7.0 was verified on **WordPress 7.1.2 / PHP 8.5** with `WP_DEBUG_LOG` clean, in a browser at 375/768/1280px, on jQuery 3.7.1 and on **jQuery 4.0.0 without Migrate**, with WooCommerce 11 active, and with axe-core for accessibility. Static analysis alone kept missing real defects here (a fatal on a `%` in an archive title, video posts rendering empty, the mobile menu dead on jQuery 4, 404s laid out as shop pages): load the pages and read the browser console and the debug log.
 
 ## Versioning
 
@@ -82,17 +83,17 @@ A template that skips `get_sidebar()` must close `.main-content-inner` itself �
 
 ### Navigation
 
-`Sparkling_Bootstrap_Navwalker` (`inc/class-sparkling-bootstrap-navwalker.php`) builds the primary menu; `WP_Bootstrap_Navwalker` is only a back-compat `class_alias`, because plugins bundle a walker of that name (the old unconditional declaration was a fatal with them). Submenu toggles are `<button class="sparkling-dropdown caret">` with `aria-expanded`, handled in `assets/js/functions.js`; desktop (≥1024px) opens submenus on hover/focus-within. A Title Attribute that is an icon class list (`sparkling_navwalker_is_icon_class()`, `inc/extras.php`) is printed as an icon. The social menu (`sparkling_social_icons()`) can print several times per page: the first copy keeps `id="menu-social"`, later ones are numbered, and CSS matches `:is(#menu-social, .menu-social)` to keep id specificity.
+`Sparkling_Bootstrap_Navwalker` (`inc/class-sparkling-bootstrap-navwalker.php`) builds the primary menu; `WP_Bootstrap_Navwalker` is only a back-compat `class_alias`, because plugins bundle a walker of that name (the old unconditional declaration was a fatal with them). Submenu toggles are `<button class="sparkling-dropdown caret">` with `aria-expanded`, handled in `assets/js/functions.js`; desktop (≥1024px) opens submenus on hover or keyboard focus. JavaScript synchronizes visibility and aria-expanded; the CSS hover/focus-within rules apply only to unmanaged fallback items, so Escape can keep a focused menu closed. A Title Attribute that is an icon class list (`sparkling_navwalker_is_icon_class()`, `inc/extras.php`) is printed as an icon. The social menu (`sparkling_social_icons()`) can print several times per page: the first copy keeps `id="menu-social"`, later ones are numbered, and CSS matches `:is(#menu-social, .menu-social)` to keep id specificity.
 
 ### Font Awesome
 
-`inc/fontawesome.php`: by default only `assets/css/fontawesome/subset/` loads (the glyphs the theme renders). The complete set, `all.min.css` (with the v4 shim), loads when a nav menu (label, Title Attribute or CSS Classes) uses an icon outside the subset — cached in the `sparkling_fontawesome_scan` option until a menu is saved — or when Content Options → "Font Awesome icons" says so; the `sparkling_full_fontawesome` filter overrides both. `fontawesome.min.css`, `solid.min.css` and `brands.min.css` are only inputs to `.github/build-icon-subset.py` and are excluded from the zip. **Adding an icon the theme renders (template markup or a `content:` codepoint in style.css) means rebuilding the subset.**
+`inc/fontawesome.php`: by default only `assets/css/fontawesome/subset/` loads (the glyphs the theme renders). The complete set, `all.min.css` (with the v4 shim), loads when a nav menu (label, Title Attribute or CSS Classes) uses an icon outside the subset — cached in the `sparkling_fontawesome_scan` option until a menu is saved — or when Content Options → "Font Awesome icons" says so; the `sparkling_full_fontawesome` filter overrides both. `fontawesome.min.css`, `solid.min.css` and `brands.min.css` are only inputs to `.github/build-icon-subset.py` and are excluded from the zip. **Adding an icon the theme renders (template markup or a `content:` codepoint in style.css) means rebuilding the subset.** The builder content-hashes font filenames and rewrites the CSS URLs so cached old fonts cannot hide new glyphs.
 
 ### JavaScript
 
 - `assets/js/functions.js` — plain DOM, no jQuery dependency: core-markup Bootstrap classes, scroll-to-top, submenu toggles, the menu button's `aria-expanded` (via Bootstrap's jQuery events when jQuery is present), and the sticky header (keeps the fixed navbar below the admin bar, re-measures on resize, sets `scroll-padding-top`). `window.SparklingIsMobile` / `window.generateMobileMenu` stay global for child themes.
 - `assets/js/vendor/bootstrap(.min).js` is Bootstrap 3.4.1 **patched** (`3.4.1-sparkling.1`) to accept jQuery 4 and to only regex-test string options. `assets/js/jquery-compat.js` restores what jQuery 4 removed (`$.camelCase`, `$.isFunction`, `$.isWindow`, `$.type`, event aliases…); it is a guarded no-op on jQuery 3 and a dependency of Bootstrap and FlexSlider. Don't use jQuery event shorthands or `$(window).load()` in theme JS.
-- `assets/js/flexslider-custom.js` starts the slider on `load` (or immediately if already loaded) and names the arrows. FlexSlider assets load only on the front page with the slider on.
+- `assets/js/flexslider-custom.js` starts the slider on `load` (or immediately if already loaded). Inactive slides are inert and lose their tab stops; saved tabindex values are restored on activation. Pause/play controls sit outside FlexSlider’s measured height. Keyboard focus stops autoplay until an explicit restart; hover and document visibility suspend it. Reduced motion disables autoplay and transitions. FlexSlider assets load only on the front page with the slider on.
 - To test jQuery 4: a throwaway mu-plugin that re-registers `jquery-core` as 4.0.0 and deregisters `jquery-migrate`.
 
 ### Admin
@@ -118,9 +119,9 @@ A template that skips `get_sidebar()` must close `.main-content-inner` itself �
 
 ## Repo quirks worth knowing
 
-- `tools/build-zip.mjs` is deny-by-default: a file ships unless `EXCLUDE` matches it; every hidden file is excluded. Inspect the zip after adding top-level files.
+- `tools/build-zip.mjs` only includes the known THEME_FILES and runtime THEME_DIRECTORIES, then applies EXCLUDE. Add new top-level runtime files to the allowlist. Tests and arbitrary local reports must not ship.
 - `.gitignore` anchors `/vendor/`: unanchored, it once matched `assets/js/vendor/` and Bootstrap/FlexSlider went untracked.
 - `readme.md` is the GitHub readme (not shipped); `readme.txt` is WordPress.org's.
 - `set_tags.sh` is a leftover from Travis; it is not run by CI and is not shipped.
 - `languages/` holds `.po`/`.mo` pairs for 20+ locales plus `sparkling.pot` (`npm run i18n`).
-- A diverged local copy at `../sparkling` (branch `main`) holds the released 2.6.11 as shipped; this repository is the source of truth from 2.7.0.
+- GitHub master is the canonical source. The 2.7.0 source was recovered from ../sparkling-master, matched byte for byte to WordPress.org, and preserved with its full history. The old main branch in this workspace retains the 2.6.11 checkout.
