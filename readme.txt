@@ -108,8 +108,8 @@ Screenshot image
 
 = 2.7.1 =
 * Fixed keyboard focus reaching invisible slider links. Inactive slides are hidden from assistive technologies and their original tab order is restored when they become active.
-* Added a slideshow pause/play button, stopped automatic rotation on keyboard focus and hover, and honoured reduced motion. Slider controls now support the Space key and announce their purpose and current slide.
-* Fixed Escape leaving desktop submenus visible while their buttons reported them collapsed. Hover, keyboard focus and buttons now share the same menu state.
+* Added a slideshow pause/play button, stopped automatic rotation on keyboard focus and hover, and honoured reduced motion. Slider controls support the Space key, stay clickable with mixed-height slides, and announce their purpose and current slide.
+* Fixed Escape leaving desktop submenus visible while their buttons reported them collapsed. Hover, keyboard focus and buttons share the same menu state. Nested submenu buttons support Space and Escape closes only the nearest submenu.
 * Darkened the default link hover/focus colour to meet text contrast requirements on light backgrounds. Saved custom colours are retained.
 * Content-hashed the subset icon fonts so a cached font from an earlier release cannot hide newly added icons.
 * Added frontend regression tests on jQuery 3.7 and 4.0 and restricted theme archives to runtime files.

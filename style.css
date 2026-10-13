@@ -2899,6 +2899,11 @@ button[type="submit"],
     width: 100%;
 }
 
+/* Taller inactive slides must not cover the controls below smoothHeight. */
+.sparkling-slider-group .flexslider {
+    overflow: hidden;
+}
+
 .sparkling-slider-controls {
     padding: 8px 12px;
     text-align: right;

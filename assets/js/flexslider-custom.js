@@ -61,7 +61,11 @@
 
 			function playback( slider ) {
 				if ( playing && ! hovering && ! document.hidden ) {
-					slider.play();
+					// FlexSlider's play() clears an existing timer without replacing
+					// its ID when already playing, so calling it twice stops rotation.
+					if ( ! slider.playing ) {
+						slider.play();
+					}
 				} else {
 					slider.pause();
 				}

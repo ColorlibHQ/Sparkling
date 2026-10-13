@@ -22,7 +22,11 @@ async function fixture(t, jquery, reduced = false, width = 1280) {
     </head><body><nav class="navbar navbar-default">
     <ul class="navbar-nav nav"><li class="dropdown"><a href="#parent">Parent</a>
     <button class="sparkling-dropdown" type="button" aria-expanded="false">Submenu</button>
-    <ul class="dropdown-menu"><li><a href="#child">Child</a></li></ul></li></ul></nav>
+    <ul class="dropdown-menu"><li><a href="#child">Child</a></li>
+    <li class="dropdown"><a href="#nested">Nested parent</a>
+    <button class="sparkling-dropdown" type="button" aria-expanded="false">Nested submenu</button>
+    <ul class="dropdown-menu"><li><a href="#grandchild">Grandchild</a></li></ul></li>
+    </ul></li></ul></nav>
     <div class="flexslider"><ul class="slides">
     <li><a href="#first" tabindex="0">First slide</a></li>
     <li><a href="#second">Second slide</a><button type="button" tabindex="3">Slide action</button></li>
@@ -31,6 +35,18 @@ async function fixture(t, jquery, reduced = false, width = 1280) {
   });
   t.after(() => dom.window.close());
   const { window } = dom;
+  const intervals = new Map();
+  const setInterval = window.setInterval.bind(window);
+  const clearInterval = window.clearInterval.bind(window);
+  window.setInterval = (callback, delay) => {
+    const id = setInterval(callback, delay);
+    intervals.set(id, { callback, delay });
+    return id;
+  };
+  window.clearInterval = (id) => {
+    intervals.delete(id);
+    clearInterval(id);
+  };
   window.innerWidth = width;
   // jsdom has no layout engine; FlexSlider only advances visible elements.
   const sliderElement = window.document.querySelector('.flexslider');
@@ -58,10 +74,22 @@ async function fixture(t, jquery, reduced = false, width = 1280) {
     'assets/js/vendor/flexslider.js', 'assets/js/flexslider-custom.js', 'assets/js/functions.js',
   ]) window.eval(source(path));
   await waitFor(() => window.document.querySelector('.sparkling-slider-toggle'));
-  return { window, document: window.document, $: window.jQuery, media };
+  return { window, document: window.document, $: window.jQuery, media, intervals };
 }
 
 for (const jquery of ['jquery', 'jquery4']) {
+  test(`${jquery}: autoplay keeps a live timer and actually advances slides`, async (t) => {
+    const { document, $, intervals } = await fixture(t, jquery);
+    const slider = $('.flexslider').data('flexslider');
+    const timer = [...intervals.values()].find(({ delay }) => delay === 7000);
+    assert.ok(timer, 'initial playback must not clear the running slideshow timer');
+    document.dispatchEvent(new document.defaultView.Event('visibilitychange'));
+    assert.ok([...intervals.values()].includes(timer), 'visible notifications must preserve the running timer');
+    timer.callback();
+    await waitFor(() => slider.currentSlide === 1);
+    assert.equal(document.querySelectorAll('.slides > li')[1].getAttribute('aria-hidden'), 'false');
+  });
+
   test(`${jquery}: inactive slides cannot receive focus and saved tabindex is restored`, async (t) => {
     const { document, $ } = await fixture(t, jquery, true);
     const slides = document.querySelectorAll('.slides > li');
@@ -150,6 +178,30 @@ test('mobile menu opens on activation and closes on Escape', async (t) => {
   toggle.dispatchEvent(new window.KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
   assert.equal(toggle.getAttribute('aria-expanded'), 'false');
 });
+
+for (const jquery of ['jquery', 'jquery4']) {
+  test(`${jquery}: Bootstrap cannot consume nested button Space or close an ancestor on Escape`, async (t) => {
+    const { document, window } = await fixture(t, jquery, true, 375);
+    const [parent, nested] = document.querySelectorAll('.sparkling-dropdown');
+    parent.click();
+    nested.focus();
+    const space = new window.KeyboardEvent('keydown', {
+      key: ' ', keyCode: 32, which: 32, bubbles: true, cancelable: true,
+    });
+    nested.dispatchEvent(space);
+    assert.equal(space.defaultPrevented, false, 'native button activation must remain enabled');
+    assert.equal(document.activeElement, nested, 'Bootstrap must not move focus to a sibling link');
+    // jsdom does not synthesize the native button click from Space.
+    nested.click();
+    assert.equal(nested.getAttribute('aria-expanded'), 'true');
+    nested.dispatchEvent(new window.KeyboardEvent('keydown', {
+      key: 'Escape', keyCode: 27, which: 27, bubbles: true, cancelable: true,
+    }));
+    assert.equal(nested.getAttribute('aria-expanded'), 'false');
+    assert.equal(parent.getAttribute('aria-expanded'), 'true');
+    assert.equal(document.activeElement, nested);
+  });
+}
 
 test('default link focus colour meets contrast on white and the body background', () => {
   const color = source('style.css').match(/a:hover,\s*a:focus\s*\{\s*color:\s*#([a-f\d]{6})/i)[1];

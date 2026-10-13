@@ -255,6 +255,14 @@
 				}
 			} );
 
+			// Preserve native button activation inside nested menus: Bootstrap's
+			// delegated dropdown handler otherwise consumes Space and moves focus.
+			toggle.addEventListener( 'keydown', function ( event ) {
+				if ( event.key === ' ' || event.key === 'Enter' ) {
+					event.stopPropagation();
+				}
+			} );
+
 			item.addEventListener( 'mouseenter', function () {
 				if ( hover.matches ) {
 					delete item.dataset.sparklingDismissed;
@@ -307,6 +315,9 @@
 			}
 
 			event.preventDefault();
+			// Handle the nearest submenu before Bootstrap's delegated handler can
+			// close an ancestor and move focus away from this submenu's toggle.
+			event.stopPropagation();
 			dismiss( item );
 
 			var toggle = item.querySelector( ':scope > .sparkling-dropdown' );
@@ -314,7 +325,7 @@
 			if ( toggle ) {
 				toggle.focus();
 			}
-		} );
+		}, true );
 
 		document.addEventListener( 'click', function ( event ) {
 			toggles.forEach( function ( toggle ) {
