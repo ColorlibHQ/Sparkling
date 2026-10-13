@@ -7,52 +7,48 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="blog-item-wrap">
 		<?php
+		$sparkling_content = apply_filters( 'the_content', get_the_content() ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- Core hook.
+		$sparkling_video   = get_media_embedded_in_content( $sparkling_content, array( 'video', 'object', 'embed', 'iframe' ) );
 
-			$content = apply_filters( 'the_content', get_the_content() );
-			$video   = get_media_embedded_in_content( $content, array( 'video', 'object', 'embed', 'iframe' ) );
-
-		if ( ! empty( $video ) ) {
-			foreach ( $video as $video_html ) {
-				echo '<div class="entry-video">';
-					echo wp_kses_post( $video_html );
-				echo '</div>';
+		if ( ! empty( $sparkling_video ) ) {
+			foreach ( $sparkling_video as $sparkling_video_html ) {
+				/*
+				 * The post's own embed, exactly as the_content() renders it. This
+				 * went through wp_kses_post(), which strips <iframe> -- so a
+				 * YouTube or Vimeo post showed an empty box in the blog listing,
+				 * and its content was skipped because a video had been "found".
+				 */
+				echo '<div class="entry-video">' . $sparkling_video_html . '</div>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Filtered post content, as the_content() prints it.
 			}
 		} elseif ( has_post_thumbnail() ) {
-			$thumbnail_args = array(
-				'class' => 'single-featured',
-			);
-			$title_args     = array(
-				'echo' => false,
-			);
-			echo '<a href="' . esc_url( get_the_permalink() ) . '" title="' . the_title_attribute( $title_args ) . '" >';
-			the_post_thumbnail( 'sparkling-featured-fullwidth', $thumbnail_args );
+			echo '<a href="' . esc_url( get_permalink() ) . '" tabindex="-1" aria-hidden="true">';
+			the_post_thumbnail( 'sparkling-featured-fullwidth', array( 'class' => 'single-featured' ) );
 			echo '</a>';
 		}
-
 		?>
 		<div class="post-inner-content">
 			<header class="entry-header page-header">
 
 				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
-				<?php if ( 'post' == get_post_type() ) : ?>
+				<?php if ( 'post' === get_post_type() ) : ?>
 				<div class="entry-meta">
-					<?php sparkling_posted_on(); ?><?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-				<span class="comments-link"><i class="fa-solid fa-comments"></i><?php comments_popup_link( esc_html__( 'Leave a comment', 'sparkling' ), esc_html__( '1 Comment', 'sparkling' ), esc_html__( '% Comments', 'sparkling' ) ); ?></span>
+					<?php sparkling_posted_on(); ?><?php if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) : ?>
+				<span class="comments-link"><i class="fa-solid fa-comments" aria-hidden="true"></i><?php comments_popup_link( esc_html__( 'Leave a comment', 'sparkling' ), esc_html__( '1 Comment', 'sparkling' ), esc_html__( '% Comments', 'sparkling' ) ); ?></span>
 				<?php endif; ?>
 
-				<?php if ( get_edit_post_link() ) : ?>
-					<?php
+					<?php if ( get_edit_post_link() ) : ?>
+						<?php
 						edit_post_link(
 							sprintf(
 								/* translators: %s: Name of current post */
 								esc_html__( 'Edit %s', 'sparkling' ),
 								the_title( '<span class="screen-reader-text">"', '"</span>', false )
 							),
-							'<i class="fa-regular fa-edit"></i><span class="edit-link">',
+							'<i class="fa-solid fa-pen-to-square" aria-hidden="true"></i><span class="edit-link">',
 							'</span>'
 						);
-					?>
+						?>
 				<?php endif; ?>
 
 				</div><!-- .entry-meta -->
@@ -68,15 +64,15 @@
 			<div class="entry-content">
 
 				<?php
-				if ( get_theme_mod( 'sparkling_excerpts' ) == 1 ) :
+				if ( get_theme_mod( 'sparkling_excerpts' ) ) :
 					the_excerpt();
 					?>
 					<p><a class="btn btn-default read-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php esc_html_e( 'Read More', 'sparkling' ); ?></a></p>
-				<?php
-				elseif ( empty( $video ) ) :
+					<?php
+				elseif ( empty( $sparkling_video ) ) :
 					the_content( esc_html__( 'Read More', 'sparkling' ) );
 				endif;
-					?>
+				?>
 
 				<?php
 					wp_link_pages(

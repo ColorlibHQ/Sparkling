@@ -23,31 +23,33 @@ if ( post_password_required() ) {
 	<?php
 	// You can start editing here -- including this comment!
 	if ( have_comments() ) :
-	?>
+		?>
 		<h2 class="comments-title">
 			<?php
-			$comments_number = get_comments_number();
-			if ( '1' === $comments_number ) {
+			$sparkling_comments_number = get_comments_number();
+			// get_comments_number() is a string from the post, but filters may return an int.
+			if ( 1 === (int) $sparkling_comments_number ) {
 				/*
-				 * Escape only the post title. The translated literal carries
-				 * intentional &ldquo;/&rdquo; entities, so running esc_html() over it
-				 * would double-escape them -- and rewriting the string to dodge that
-				 * would change the msgid for no benefit.
+				 * The translated literal carries intentional &ldquo;/&rdquo;
+				 * entities, which esc_html() would double-escape, so the title is
+				 * escaped as text and the whole line goes through wp_kses_post().
 				 */
 				/* translators: %s: post title */
-				printf( _x( 'One thought to &ldquo;%s&rdquo;', 'comments title', 'sparkling' ), esc_html( get_the_title() ) );
+				echo wp_kses_post( sprintf( _x( 'One thought to &ldquo;%s&rdquo;', 'comments title', 'sparkling' ), esc_html( get_the_title() ) ) );
 			} else {
-				printf(
-					/* translators: 1: number of comments, 2: post title */
-					_nx(
-						'%1$s thought to &ldquo;%2$s&rdquo;',
-						'%1$s thoughts to &ldquo;%2$s&rdquo;',
-						$comments_number,
-						'comments title',
-						'sparkling'
-					),
-					esc_html( number_format_i18n( $comments_number ) ),
-					esc_html( get_the_title() )
+				echo wp_kses_post(
+					sprintf(
+						/* translators: 1: number of comments, 2: post title */
+						_nx(
+							'%1$s thought to &ldquo;%2$s&rdquo;',
+							'%1$s thoughts to &ldquo;%2$s&rdquo;',
+							$sparkling_comments_number,
+							'comments title',
+							'sparkling'
+						),
+						esc_html( number_format_i18n( $sparkling_comments_number ) ),
+						esc_html( get_the_title() )
+					)
 				);
 			}
 			?>
@@ -87,7 +89,7 @@ if ( post_password_required() ) {
 
 			</div><!-- .nav-links -->
 		</nav><!-- #comment-nav-below -->
-		<?php
+			<?php
 		endif; // Check for comment navigation.
 
 	endif; // Check for have_comments().
@@ -95,10 +97,10 @@ if ( post_password_required() ) {
 
 	// If comments are closed and there are comments, let's leave a little note, shall we?
 	if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
-	?>
+		?>
 
 		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'sparkling' ); ?></p>
-	<?php
+		<?php
 	endif;
 
 	comment_form();

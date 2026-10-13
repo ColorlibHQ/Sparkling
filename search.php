@@ -12,13 +12,15 @@ get_header(); ?>
 
 		<?php
 		if ( have_posts() ) :
-		?>
+			?>
 
 			<header class="page-header">
-				<h1 class="page-title"><?php
+				<h1 class="page-title">
+				<?php
 					/* translators: %s: search query */
 					printf( esc_html__( 'Search Results for: %s', 'sparkling' ), '<span>' . get_search_query() . '</span>' );
-				?></h1>
+				?>
+				</h1>
 			</header><!-- .page-header -->
 
 			<?php
@@ -37,8 +39,8 @@ get_header(); ?>
 
 			the_posts_pagination(
 				array(
-					'prev_text' => '<i class="fa-solid fa-chevron-left"></i> ' . __( 'Newer posts', 'sparkling' ),
-					'next_text' => __( 'Older posts', 'sparkling' ) . ' <i class="fa-solid fa-chevron-right"></i>',
+					'prev_text' => '<i class="fa-solid fa-chevron-left" aria-hidden="true"></i> ' . __( 'Newer posts', 'sparkling' ),
+					'next_text' => __( 'Older posts', 'sparkling' ) . ' <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>',
 				)
 			);
 

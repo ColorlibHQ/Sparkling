@@ -2,20 +2,21 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Sparkling 2.6.3\n"
+"Project-Id-Version: Sparkling 2.6.11\n"
 "Report-Msgid-Bugs-To: https://colorlib.com/wp/support/\n"
 "Last-Translator: Colorlib <info@colorlib.com>\n"
 "Language-Team: Colorlib <info@colorlib.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-05T12:17:17+00:00\n"
+"POT-Creation-Date: 2026-10-01T18:28:46+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: sparkling\n"
 
 #. Theme Name of the theme
 #: style.css
+#: inc/block-editor.php:185
 msgid "Sparkling"
 msgstr ""
 
@@ -62,7 +63,7 @@ msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
 #: 404.php:55
-#: sidebar.php:12
+#: sidebar.php:20
 msgid "Archives"
 msgstr ""
 
@@ -71,16 +72,16 @@ msgid "Tags"
 msgstr ""
 
 #: archive.php:42
-#: inc/extras.php:605
+#: inc/extras.php:626
 #: index.php:46
-#: search.php:40
+#: search.php:42
 msgid "Newer posts"
 msgstr ""
 
 #: archive.php:43
-#: inc/extras.php:606
+#: inc/extras.php:627
 #: index.php:47
-#: search.php:41
+#: search.php:43
 msgid "Older posts"
 msgstr ""
 
@@ -92,7 +93,7 @@ msgid "One thought to &ldquo;%s&rdquo;"
 msgstr ""
 
 #. translators: 1: number of comments, 2: post title
-#: comments.php:42
+#: comments.php:43
 #, php-format
 msgctxt "comments title"
 msgid "%1$s thought to &ldquo;%2$s&rdquo;"
@@ -100,23 +101,32 @@ msgid_plural "%1$s thoughts to &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:58
-#: comments.php:82
+#: comments.php:60
+#: comments.php:84
 msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:61
-#: comments.php:85
+#: comments.php:63
+#: comments.php:87
 msgid "Older Comments"
 msgstr ""
 
-#: comments.php:62
-#: comments.php:86
+#: comments.php:64
+#: comments.php:88
 msgid "Newer Comments"
 msgstr ""
 
-#: comments.php:100
+#: comments.php:102
 msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:28
+#: inc/customizer.php:785
+msgid "Footer"
+msgstr ""
+
+#: footer.php:37
+msgid "Back to top"
 msgstr ""
 
 #: functions.php:84
@@ -124,602 +134,621 @@ msgid "Primary Menu"
 msgstr ""
 
 #: functions.php:85
-#: inc/extras.php:144
+#: inc/extras.php:206
 msgid "Footer Links"
 msgstr ""
 
-#: functions.php:168
+#: functions.php:170
+#: sidebar.php:10
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:180
+#: functions.php:182
 msgid "Homepage Widget 1"
 msgstr ""
 
-#: functions.php:181
-#: functions.php:193
-#: functions.php:205
+#: functions.php:183
+#: functions.php:195
+#: functions.php:207
 msgid "Displays on the Home Page"
 msgstr ""
 
-#: functions.php:192
+#: functions.php:194
 msgid "Homepage Widget 2"
 msgstr ""
 
-#: functions.php:204
+#: functions.php:206
 msgid "Homepage Widget 3"
 msgstr ""
 
-#: functions.php:216
+#: functions.php:218
 msgid "Footer Widget 1"
 msgstr ""
 
-#: functions.php:217
-#: functions.php:229
-#: functions.php:241
+#: functions.php:219
+#: functions.php:231
+#: functions.php:243
 msgid "Used for footer widget area"
 msgstr ""
 
-#: functions.php:228
+#: functions.php:230
 msgid "Footer Widget 2"
 msgstr ""
 
-#: functions.php:240
+#: functions.php:242
 msgid "Footer Widget 3"
 msgstr ""
 
-#: functions.php:303
+#: functions.php:302
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr ""
 
-#: functions.php:310
+#: functions.php:305
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr ""
 
-#: functions.php:317
+#: functions.php:308
 msgctxt "daily archives date format"
 msgid "F j, Y"
 msgstr ""
 
-#: functions.php:472
+#: functions.php:411
+msgid "Previous slide"
+msgstr ""
+
+#: functions.php:412
+msgid "Next slide"
+msgstr ""
+
+#: functions.php:490
 msgctxt "nav menu location"
 msgid "Social Menu"
 msgstr ""
 
-#: functions.php:503
+#: functions.php:524
 msgid "Right Sidebar"
 msgstr ""
 
-#: functions.php:504
+#: functions.php:525
 msgid "Left Sidebar"
 msgstr ""
 
-#: functions.php:505
+#: functions.php:526
 msgid "No Sidebar"
 msgstr ""
 
-#: functions.php:506
+#: functions.php:527
 msgid "Full Width"
 msgstr ""
 
-#: functions.php:692
-#: inc/welcome-screen/class-sparkling-welcome.php:113
-#: inc/welcome-screen/class-sparkling-welcome.php:253
-#: inc/welcome-screen/class-sparkling-welcome.php:294
+#: functions.php:733
 msgid "You are not allowed to do that."
 msgstr ""
 
-#: functions.php:700
+#: functions.php:741
 msgid "Invalid attachment."
 msgstr ""
 
-#: image.php:25
-msgid "<i class=\"fa fa-chevron-left\"></i> Previous"
+#: header.php:28
+msgid "Skip to main content"
 msgstr ""
 
-#: image.php:26
-msgid "Next <i class=\"fa fa-chevron-right\"></i>"
+#: header.php:32
+msgid "Primary"
 msgstr ""
 
-#: image.php:90
-#: template-parts/content-page.php:36
+#: header.php:59
+msgid "Toggle navigation"
+msgstr ""
+
+#: header.php:83
+msgid "Featured"
+msgstr ""
+
+#: image.php:27
+msgid "Image navigation"
+msgstr ""
+
+#: image.php:28
+msgid "<i class=\"fa-solid fa-chevron-left\"></i> Previous"
+msgstr ""
+
+#: image.php:29
+msgid "Next <i class=\"fa-solid fa-chevron-right\"></i>"
+msgstr ""
+
+#: image.php:93
+#: template-blocks.php:32
+#: template-parts/content-page.php:38
 #: template-parts/content-single.php:51
-#: template-parts/content-video.php:84
-#: template-parts/content.php:77
+#: template-parts/content-video.php:80
+#: template-parts/content.php:80
 msgid "Pages:"
 msgstr ""
 
-#: inc/class-wp-bootstrap-navwalker.php:206
+#. translators: %s: menu item title
+#: inc/class-sparkling-bootstrap-navwalker.php:158
+#, php-format
+msgid "Show submenu for %s"
+msgstr ""
+
+#: inc/class-sparkling-bootstrap-navwalker.php:233
 msgid "Add a menu"
 msgstr ""
 
-#: inc/customizer.php:40
-msgid "Sparkling Options"
+#: inc/class-sparkling-customize-link-section.php:71
+#: inc/welcome-screen/sections/getting-started.php:21
+#: inc/welcome-screen/sections/support.php:17
+#: inc/welcome-screen/sections/support.php:27
+msgid "(opens in a new tab)"
 msgstr ""
 
 #: inc/customizer.php:41
-msgid "Panel to update sparkling theme options"
+msgid "Sparkling Options"
 msgstr ""
 
-#: inc/customizer.php:51
+#: inc/customizer.php:42
+msgid "Layout, colors, typography and other options for the Sparkling theme."
+msgstr ""
+
+#: inc/customizer.php:53
 msgid "Content Options"
 msgstr ""
 
-#: inc/customizer.php:67
-msgid "Show post excerpts?"
+#: inc/customizer.php:72
+msgid "Show excerpts instead of full posts on the blog"
 msgstr ""
 
-#: inc/customizer.php:84
-msgid "Display Comments on Static Pages?"
+#: inc/customizer.php:92
+msgid "Show comments on pages"
 msgstr ""
 
-#: inc/customizer.php:95
+#: inc/customizer.php:113
+msgid "Font Awesome icons"
+msgstr ""
+
+#: inc/customizer.php:117
+msgid "The theme bundles only the icons it displays itself, which keeps pages small. Icons you add to your menus are detected automatically. Choose \"Always load the complete library\" if you use Font Awesome icons in a widget, in post content or in a page builder and they are not showing."
+msgstr ""
+
+#: inc/customizer.php:119
+msgid "Automatic (recommended)"
+msgstr ""
+
+#: inc/customizer.php:120
+msgid "Always load the complete library"
+msgstr ""
+
+#: inc/customizer.php:121
+msgid "Only the icons the theme uses"
+msgstr ""
+
+#: inc/customizer.php:130
 msgid "Slider Options"
 msgstr ""
 
-#: inc/customizer.php:110
-msgid "Check if you want to enable slider"
+#: inc/customizer.php:148
+msgid "Show the slider on the front page"
 msgstr ""
 
-#: inc/customizer.php:127
-msgid "Uncheck this option to remove the link from the slides"
+#: inc/customizer.php:168
+msgid "Link each slide to its post"
 msgstr ""
 
-#: inc/customizer.php:147
+#: inc/customizer.php:191
 msgid "Slider Category"
 msgstr ""
 
-#: inc/customizer.php:150
-msgid "Select a category for the featured post slider"
+#: inc/customizer.php:195
+msgid "The slider shows posts from this category that have a featured image."
 msgstr ""
 
-#: inc/customizer.php:164
+#: inc/customizer.php:201
+msgid "All categories"
+msgstr ""
+
+#: inc/customizer.php:218
 msgid "Number of slide items"
 msgstr ""
 
-#: inc/customizer.php:166
-msgid "Enter the number of slide items"
+#: inc/customizer.php:221
+msgid "How many posts the slider shows."
 msgstr ""
 
-#: inc/customizer.php:173
+#: inc/customizer.php:234
 msgid "Layout Options"
 msgstr ""
 
-#: inc/customizer.php:189
+#: inc/customizer.php:252
 msgid "Website Layout Options"
 msgstr ""
 
-#: inc/customizer.php:192
-msgid "Choose between different layout options to be used as default"
+#: inc/customizer.php:255
+msgid "The default sidebar layout. Each post and page can override it."
 msgstr ""
 
-#: inc/customizer.php:207
+#: inc/customizer.php:272
 msgid "WooCommerce Page Layout Options"
 msgstr ""
 
-#: inc/customizer.php:210
-msgid "Choose between different layout options to be used as default for all woocommerce pages"
+#: inc/customizer.php:275
+msgid "The sidebar layout of the shop, product, cart, checkout and account pages."
 msgstr ""
 
-#: inc/customizer.php:226
+#: inc/customizer.php:294
 msgid "Element Color"
 msgstr ""
 
-#: inc/customizer.php:227
-#: inc/customizer.php:245
-#: inc/customizer.php:319
-#: inc/customizer.php:335
-#: inc/customizer.php:351
-#: inc/customizer.php:367
-#: inc/customizer.php:492
-#: inc/customizer.php:508
-#: inc/customizer.php:552
-#: inc/customizer.php:766
-#: inc/customizer.php:783
-msgid "Default used if no color is selected"
+#: inc/customizer.php:295
+#: inc/customizer.php:316
+#: inc/customizer.php:400
+#: inc/customizer.php:419
+#: inc/customizer.php:438
+#: inc/customizer.php:457
+#: inc/customizer.php:586
+#: inc/customizer.php:605
+#: inc/customizer.php:656
+#: inc/customizer.php:907
+#: inc/customizer.php:927
+msgid "Clear it to use the theme default."
 msgstr ""
 
-#: inc/customizer.php:244
+#: inc/customizer.php:315
 msgid "Element color on hover"
 msgstr ""
 
-#: inc/customizer.php:255
+#: inc/customizer.php:327
 msgid "Action Button"
 msgstr ""
 
-#: inc/customizer.php:269
+#: inc/customizer.php:343
 msgid "Call For Action Text"
 msgstr ""
 
-#: inc/customizer.php:270
-msgid "Enter the text for call for action section"
+#: inc/customizer.php:344
+msgid "Shown in a bar under the slider on the front page. Leave empty to hide the bar."
 msgstr ""
 
-#: inc/customizer.php:285
+#: inc/customizer.php:361
 msgid "Call For Action Button Title"
 msgstr ""
 
-#: inc/customizer.php:287
+#: inc/customizer.php:363
 msgid "Enter the title for Call For Action button"
 msgstr ""
 
-#: inc/customizer.php:301
-msgid "CFA button link"
+#: inc/customizer.php:380
+msgid "Call For Action Button Link"
 msgstr ""
 
-#: inc/customizer.php:303
+#: inc/customizer.php:382
 msgid "Enter the link for Call For Action button"
 msgstr ""
 
-#: inc/customizer.php:318
+#: inc/customizer.php:399
 msgid "Call For Action Text Color"
 msgstr ""
 
-#: inc/customizer.php:334
+#: inc/customizer.php:418
 msgid "Call For Action Background Color"
 msgstr ""
 
-#: inc/customizer.php:350
+#: inc/customizer.php:437
 msgid "Call For Action Button Border Color"
 msgstr ""
 
-#: inc/customizer.php:366
+#: inc/customizer.php:456
 msgid "Call For Action Button Text Color"
 msgstr ""
 
-#: inc/customizer.php:376
+#: inc/customizer.php:467
 msgid "Typography"
 msgstr ""
 
-#: inc/customizer.php:400
-msgid "Main Body Text"
+#: inc/customizer.php:488
+msgid "Body font size"
 msgstr ""
 
-#: inc/customizer.php:401
-msgid "Used in p tags"
+#: inc/customizer.php:489
+msgid "Size, font, weight and color of post and page text."
 msgstr ""
 
-#: inc/customizer.php:458
-msgid "Font Subset"
+#: inc/customizer.php:506
+msgid "Body font"
 msgstr ""
 
-#: inc/customizer.php:460
-msgid "Enter the Google fonts subset"
+#: inc/customizer.php:523
+msgid "Body font weight"
 msgstr ""
 
-#: inc/customizer.php:475
+#: inc/customizer.php:542
+msgid "Body text color"
+msgstr ""
+
+#: inc/customizer.php:566
 msgid "Heading Color"
 msgstr ""
 
-#: inc/customizer.php:476
+#: inc/customizer.php:567
 msgid "Color for all headings (h1-h6)"
 msgstr ""
 
-#: inc/customizer.php:491
+#: inc/customizer.php:585
 msgid "Link Color"
 msgstr ""
 
-#: inc/customizer.php:507
+#: inc/customizer.php:604
 msgid "Link:hover Color"
 msgstr ""
 
-#: inc/customizer.php:517
+#: inc/customizer.php:615
 msgid "Header"
 msgstr ""
 
-#: inc/customizer.php:533
+#: inc/customizer.php:634
 msgid "Sticky Header"
 msgstr ""
 
-#: inc/customizer.php:534
-msgid "Check to show fixed header"
+#: inc/customizer.php:635
+msgid "Keep the header at the top of the window while scrolling."
 msgstr ""
 
-#: inc/customizer.php:551
+#: inc/customizer.php:655
 msgid "Top nav background color"
 msgstr ""
 
-#: inc/customizer.php:567
+#: inc/customizer.php:674
 msgid "Top nav item color"
 msgstr ""
 
-#: inc/customizer.php:568
+#: inc/customizer.php:675
 msgid "Link color"
 msgstr ""
 
-#: inc/customizer.php:584
+#: inc/customizer.php:694
 msgid "Top nav item hover color"
 msgstr ""
 
-#: inc/customizer.php:585
+#: inc/customizer.php:695
 msgid "Link:hover color"
 msgstr ""
 
-#: inc/customizer.php:601
+#: inc/customizer.php:714
 msgid "Top nav dropdown background color"
 msgstr ""
 
-#: inc/customizer.php:602
-#: inc/customizer.php:653
-msgid "Background of dropdown item hover color"
+#: inc/customizer.php:715
+msgid "Background of the dropdown menus"
 msgstr ""
 
-#: inc/customizer.php:618
+#: inc/customizer.php:734
 msgid "Top nav dropdown item color"
 msgstr ""
 
-#: inc/customizer.php:619
+#: inc/customizer.php:735
 msgid "Dropdown item color"
 msgstr ""
 
-#: inc/customizer.php:635
+#: inc/customizer.php:754
 msgid "Top nav dropdown item hover color"
 msgstr ""
 
-#: inc/customizer.php:636
+#: inc/customizer.php:755
 msgid "Dropdown item hover color"
 msgstr ""
 
-#: inc/customizer.php:652
+#: inc/customizer.php:774
 msgid "Top nav dropdown item background hover color"
 msgstr ""
 
-#: inc/customizer.php:662
-msgid "Footer"
+#: inc/customizer.php:775
+msgid "Background of a dropdown item on hover"
 msgstr ""
 
-#: inc/customizer.php:677
+#: inc/customizer.php:803
 msgid "Footer widget area background color"
 msgstr ""
 
-#: inc/customizer.php:693
+#: inc/customizer.php:822
 msgid "Footer background color"
 msgstr ""
 
-#: inc/customizer.php:709
+#: inc/customizer.php:841
 msgid "Footer text color"
 msgstr ""
 
-#: inc/customizer.php:725
+#: inc/customizer.php:860
 msgid "Footer link color"
 msgstr ""
 
-#: inc/customizer.php:740
+#: inc/customizer.php:877
 msgid "Footer information"
 msgstr ""
 
-#: inc/customizer.php:741
+#: inc/customizer.php:878
 msgid "Copyright text in footer"
 msgstr ""
 
-#: inc/customizer.php:750
+#: inc/customizer.php:888
 msgid "Social"
 msgstr ""
 
-#: inc/customizer.php:765
+#: inc/customizer.php:906
 msgid "Social icon color"
 msgstr ""
 
-#: inc/customizer.php:782
+#: inc/customizer.php:926
 msgid "Footer social icon color"
 msgstr ""
 
-#: inc/customizer.php:799
+#: inc/customizer.php:946
 msgid "Footer Social Icons"
 msgstr ""
 
-#: inc/customizer.php:800
-msgid "Check to show social icons in footer"
+#: inc/customizer.php:947
+msgid "Show the Social menu as icons in the footer."
 msgstr ""
 
-#: inc/customizer.php:819
+#: inc/customizer.php:969
 msgid "Enable Academicons"
 msgstr ""
 
-#: inc/customizer.php:820
-msgid "Toggle this to ON to enable the usage of Academicons"
+#: inc/customizer.php:970
+msgid "Load the Academicons font, for links to academic profiles in the Social menu."
 msgstr ""
 
-#: inc/customizer.php:830
+#: inc/customizer.php:981
 msgid "Archive Pages"
 msgstr ""
 
-#: inc/customizer.php:846
+#: inc/customizer.php:999
 msgid "Tag Page Title"
 msgstr ""
 
 #. translators: %s: tag name
-#: inc/customizer.php:849
+#: inc/customizer.php:1002
 #, php-format
 msgid "The headline for your tag pages. You can use %s as a placeholder for the tag. Leave empty for default."
 msgstr ""
 
-#: inc/customizer.php:864
+#: inc/customizer.php:1019
 msgid "Category Page Title"
 msgstr ""
 
 #. translators: %s: category name
-#: inc/customizer.php:867
+#: inc/customizer.php:1022
 #, php-format
 msgid "The headline for your category pages. You can use %s as a placeholder for the category. Leave empty for default."
 msgstr ""
 
-#: inc/customizer.php:882
+#: inc/customizer.php:1039
 msgid "Author Page Title"
 msgstr ""
 
 #. translators: %s: author name
-#: inc/customizer.php:885
+#: inc/customizer.php:1042
 #, php-format
 msgid "The headline for your author pages. You can use %s as a placeholder for the author's name. Leave empty for default."
 msgstr ""
 
-#: inc/customizer.php:900
+#: inc/customizer.php:1059
 msgid "Year Page Title"
 msgstr ""
 
 #. translators: %s: year
-#: inc/customizer.php:903
+#: inc/customizer.php:1062
 #, php-format
 msgid "The headline for your year pages. You can use %s as a placeholder for the year. Leave empty for default."
 msgstr ""
 
-#: inc/customizer.php:918
+#: inc/customizer.php:1079
 msgid "Month Page Title"
 msgstr ""
 
 #. translators: %s: month
-#: inc/customizer.php:921
+#: inc/customizer.php:1082
 #, php-format
 msgid "The headline for your month pages. You can use %s as a placeholder for the month. Leave empty for default."
 msgstr ""
 
-#: inc/customizer.php:936
+#: inc/customizer.php:1099
 msgid "Day Page Title"
 msgstr ""
 
 #. translators: %s: day
-#: inc/customizer.php:939
+#: inc/customizer.php:1102
 #, php-format
 msgid "The headline for your day pages. You can use %s as a placeholder for the day. Leave empty for default."
 msgstr ""
 
-#: inc/extras.php:66
+#: inc/extras.php:49
+msgid "Untitled"
+msgstr ""
+
+#: inc/extras.php:92
 msgid "This post is password protected. To view it please enter your password below:"
 msgstr ""
 
-#: inc/extras.php:67
+#: inc/extras.php:93
 msgid "Password:"
 msgstr ""
 
-#: inc/extras.php:70
+#: inc/extras.php:96
 msgid "Submit"
 msgstr ""
 
+#: inc/extras.php:137
+msgid "Social links"
+msgstr ""
+
 #. translators: 1: Colorlib link, 2: WordPress link
-#: inc/extras.php:284
+#: inc/extras.php:345
 #, php-format
 msgid "Theme by %1$s Powered by %2$s"
 msgstr ""
 
-#: inc/extras.php:489
-msgid "Support and Documentation"
-msgstr ""
-
-#: inc/extras.php:498
-msgid "Sparkling Documentation"
-msgstr ""
-
-#: inc/extras.php:500
-msgid "The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via"
-msgstr ""
-
-#: inc/extras.php:501
-msgid "Colorlib support forum"
-msgstr ""
-
-#: inc/extras.php:503
-msgid "If you like this theme, I'd appreciate any of the following:"
-msgstr ""
-
-#: inc/extras.php:507
-#: inc/extras.php:508
-msgid "Rate this Theme"
-msgstr ""
-
-#: inc/extras.php:511
-msgid "Like on Facebook"
-msgstr ""
-
-#: inc/extras.php:514
-msgid "Follow on Twitter"
-msgstr ""
-
-#: inc/metaboxes.php:16
-msgid "Select layout for this specific Page only ( Note: This setting only reflects if page Template is set as Default Template and Blog Type Templates.)"
-msgstr ""
-
 #: inc/metaboxes.php:22
-msgid "Select layout for this specific Post only"
+msgid "Layout"
 msgstr ""
 
-#: inc/metaboxes.php:30
-msgid "Select layout for this specific Product only"
+#: inc/metaboxes.php:52
+msgid "Sidebar layout"
 msgstr ""
 
-#: inc/metaboxes.php:67
+#: inc/metaboxes.php:55
 msgid "Default"
 msgstr ""
 
-#: inc/welcome-screen/class-sparkling-welcome.php:122
-msgid "No page titled \"Homepage\" was found."
+#: inc/metaboxes.php:62
+msgid "Pages using the Full-width (no sidebar) template ignore this."
+msgstr ""
+
+#: inc/welcome-screen/class-sparkling-welcome.php:94
+#: inc/welcome-screen/class-sparkling-welcome.php:333
+msgid "About Sparkling"
 msgstr ""
 
 #. translators: 1: opening anchor tag, 2: closing anchor tag
-#: inc/welcome-screen/class-sparkling-welcome.php:188
+#: inc/welcome-screen/class-sparkling-welcome.php:123
 #, php-format
 msgid "Welcome! Thank you for choosing Sparkling! To fully take advantage of the best our theme can offer please make sure you visit our %1$swelcome page%2$s."
 msgstr ""
 
-#: inc/welcome-screen/class-sparkling-welcome.php:190
+#: inc/welcome-screen/class-sparkling-welcome.php:129
 msgid "Get started with Sparkling"
 msgstr ""
 
-#: inc/welcome-screen/class-sparkling-welcome.php:237
-#: inc/welcome-screen/sections/actions-required.php:157
-msgid "Hooray! There are no required actions for you right now."
-msgstr ""
-
-#: inc/welcome-screen/class-sparkling-welcome.php:485
+#: inc/welcome-screen/class-sparkling-welcome.php:312
 msgid "You are not allowed to access this page."
 msgstr ""
 
-#: inc/welcome-screen/class-sparkling-welcome.php:500
-msgid "Welcome to Sparkling! - Version "
-msgstr ""
-
-#: inc/welcome-screen/class-sparkling-welcome.php:503
-msgid "Sparkling is now installed and ready to use! Get ready to build something beautiful. We hope you enjoy it! We want to make sure you have the best experience using Sparkling and that is why we gathered here all the necessary information for you. We hope you will enjoy using Sparkling, as much as we enjoy creating great products."
-msgstr ""
-
-#: inc/welcome-screen/class-sparkling-welcome.php:510
+#: inc/welcome-screen/class-sparkling-welcome.php:318
 msgid "Getting Started"
 msgstr ""
 
-#: inc/welcome-screen/class-sparkling-welcome.php:512
+#: inc/welcome-screen/class-sparkling-welcome.php:319
+#: inc/welcome-screen/welcome-page-setup.php:39
 msgid "Recommended Plugins"
 msgstr ""
 
-#: inc/welcome-screen/class-sparkling-welcome.php:514
-#: inc/welcome-screen/sections/support.php:25
+#: inc/welcome-screen/class-sparkling-welcome.php:320
+#: inc/welcome-screen/sections/support.php:32
 msgid "Changelog"
 msgstr ""
 
-#: inc/welcome-screen/class-sparkling-welcome.php:516
+#: inc/welcome-screen/class-sparkling-welcome.php:321
+#: patterns/features.php:46
 msgid "Support"
 msgstr ""
 
-#: inc/welcome-screen/sections/actions-required.php:65
-#: inc/welcome-screen/sections/actions-required.php:127
-msgid "Install"
+#: inc/welcome-screen/class-sparkling-welcome.php:327
+msgid "Welcome to Sparkling! - Version "
 msgstr ""
 
-#: inc/welcome-screen/sections/actions-required.php:69
-#: inc/welcome-screen/sections/actions-required.php:131
-#: inc/welcome-screen/sections/recommended-plugins.php:55
-msgid "Activate"
-msgstr ""
-
-#: inc/welcome-screen/sections/actions-required.php:73
-#: inc/welcome-screen/sections/actions-required.php:135
-#: inc/welcome-screen/sections/recommended-plugins.php:59
-msgid "Deactivate"
-msgstr ""
-
-#: inc/welcome-screen/sections/actions-required.php:103
-msgid "Hooray! There are no required actions for you right now. But you can make your theme more powerful with next actions: "
+#: inc/welcome-screen/class-sparkling-welcome.php:329
+msgid "Sparkling is now installed and ready to use! Get ready to build something beautiful. We hope you enjoy it! We want to make sure you have the best experience using Sparkling and that is why we gathered here all the necessary information for you. We hope you will enjoy using Sparkling, as much as we enjoy creating great products."
 msgstr ""
 
 #: inc/welcome-screen/sections/changelog.php:21
@@ -730,55 +759,59 @@ msgstr ""
 msgid "The changelog file could not be read."
 msgstr ""
 
-#: inc/welcome-screen/sections/getting-started.php:19
-msgid "Step 1 - Implement recommended actions"
+#: inc/welcome-screen/sections/getting-started.php:12
+msgid "Step 1 - Install the recommended plugins"
 msgstr ""
 
-#: inc/welcome-screen/sections/getting-started.php:20
-msgid "We've compiled a list of steps for you, to take make sure the experience you'll have using one of our products is very easy to follow."
+#: inc/welcome-screen/sections/getting-started.php:13
+msgid "Free plugins from the Sparkling team that add contact forms, a custom login page, a maintenance mode and more. None of them is required."
 msgstr ""
 
-#: inc/welcome-screen/sections/getting-started.php:23
-msgid "No recommended actions left to perform"
+#: inc/welcome-screen/sections/getting-started.php:14
+msgid "See the recommended plugins"
 msgstr ""
 
-#: inc/welcome-screen/sections/getting-started.php:26
-msgid "Check recommended actions"
-msgstr ""
-
-#: inc/welcome-screen/sections/getting-started.php:34
+#: inc/welcome-screen/sections/getting-started.php:18
 msgid "Step 2 - Check our documentation"
 msgstr ""
 
-#: inc/welcome-screen/sections/getting-started.php:35
+#: inc/welcome-screen/sections/getting-started.php:19
 msgid "Even if you're a long-time WordPress user, we still believe you should give our documentation a very quick Read."
 msgstr ""
 
-#: inc/welcome-screen/sections/getting-started.php:38
+#: inc/welcome-screen/sections/getting-started.php:21
 msgid "Full documentation"
 msgstr ""
 
-#: inc/welcome-screen/sections/getting-started.php:43
+#: inc/welcome-screen/sections/getting-started.php:26
 msgid "Step 3 - Customize everything"
 msgstr ""
 
-#: inc/welcome-screen/sections/getting-started.php:44
+#: inc/welcome-screen/sections/getting-started.php:27
 msgid "Using the WordPress Customizer you can easily customize every aspect of the theme."
 msgstr ""
 
-#: inc/welcome-screen/sections/getting-started.php:46
+#: inc/welcome-screen/sections/getting-started.php:28
 msgid "Go to Customizer"
 msgstr ""
 
-#: inc/welcome-screen/sections/recommended-plugins.php:25
+#: inc/welcome-screen/sections/recommended-plugins.php:18
 msgid "Recommended plugins list"
 msgstr ""
 
-#: inc/welcome-screen/sections/recommended-plugins.php:51
+#: inc/welcome-screen/sections/recommended-plugins.php:44
 msgid "Install Now"
 msgstr ""
 
-#: inc/welcome-screen/sections/recommended-plugins.php:89
+#: inc/welcome-screen/sections/recommended-plugins.php:48
+msgid "Activate"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:52
+msgid "Deactivate"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:82
 msgid "Active"
 msgstr ""
 
@@ -787,54 +820,58 @@ msgid "More Details"
 msgstr ""
 
 #. translators: %s: plugin author name
-#: inc/welcome-screen/sections/recommended-plugins.php:108
+#: inc/welcome-screen/sections/recommended-plugins.php:109
 #, php-format
 msgid "By %s"
 msgstr ""
 
-#: inc/welcome-screen/sections/recommended-plugins.php:115
+#: inc/welcome-screen/sections/recommended-plugins.php:117
 msgid "Version:"
 msgstr ""
 
-#: inc/welcome-screen/sections/recommended-plugins.php:120
+#: inc/welcome-screen/sections/recommended-plugins.php:122
 msgid "Installed and active"
 msgstr ""
 
-#: inc/welcome-screen/sections/recommended-plugins.php:122
+#: inc/welcome-screen/sections/recommended-plugins.php:124
 msgid "Installed, not active"
 msgstr ""
 
-#: inc/welcome-screen/sections/recommended-plugins.php:124
+#: inc/welcome-screen/sections/recommended-plugins.php:126
 msgid "Not installed"
 msgstr ""
 
-#: inc/welcome-screen/sections/support.php:5
-#: inc/welcome-screen/sections/support.php:10
+#: inc/welcome-screen/sections/support.php:13
+#: inc/welcome-screen/sections/support.php:17
 msgid "Contact Support"
 msgstr ""
 
-#: inc/welcome-screen/sections/support.php:7
-msgid "We offer excellent support through our advanced ticketing system. Make sure to register your purchase before contacting support!"
+#: inc/welcome-screen/sections/support.php:15
+msgid "Ask your question in the Sparkling support forum on WordPress.org, where the Colorlib team and other users answer."
 msgstr ""
 
-#: inc/welcome-screen/sections/support.php:15
+#: inc/welcome-screen/sections/support.php:22
 msgid "Documentation"
 msgstr ""
 
-#: inc/welcome-screen/sections/support.php:17
+#: inc/welcome-screen/sections/support.php:24
 msgid "This is the place to go to reference different aspects of the theme. Our online documentation is an incredible resource for learning the ins and outs of using Sparkling."
 msgstr ""
 
-#: inc/welcome-screen/sections/support.php:20
+#: inc/welcome-screen/sections/support.php:27
 msgid "See our full documentation"
 msgstr ""
 
-#: inc/welcome-screen/sections/support.php:27
+#: inc/welcome-screen/sections/support.php:34
 msgid "Want to get the gist on the latest theme changes? Just consult our changelog below to get a taste of the recent fixes and features implemented."
 msgstr ""
 
-#: inc/welcome-screen/sections/support.php:30
+#: inc/welcome-screen/sections/support.php:37
 msgid "See changelog"
+msgstr ""
+
+#: inc/welcome-screen/welcome-page-setup.php:51
+msgid "Sparkling Documentation"
 msgstr ""
 
 #: inc/widgets/class-sparkling-categories.php:13
@@ -842,21 +879,21 @@ msgstr ""
 msgid "Sparkling Categories"
 msgstr ""
 
-#: inc/widgets/class-sparkling-categories.php:19
-#: inc/widgets/class-sparkling-categories.php:95
+#: inc/widgets/class-sparkling-categories.php:25
+#: inc/widgets/class-sparkling-categories.php:88
 msgid "Categories"
 msgstr ""
 
-#: inc/widgets/class-sparkling-categories.php:106
-#: inc/widgets/class-sparkling-social-widget.php:58
+#: inc/widgets/class-sparkling-categories.php:99
+#: inc/widgets/class-sparkling-social-widget.php:59
 msgid "Title "
 msgstr ""
 
-#: inc/widgets/class-sparkling-categories.php:114
+#: inc/widgets/class-sparkling-categories.php:107
 msgid "Limit Categories "
 msgstr ""
 
-#: inc/widgets/class-sparkling-categories.php:131
+#: inc/widgets/class-sparkling-categories.php:121
 msgid "Enable Posts Count"
 msgstr ""
 
@@ -865,33 +902,41 @@ msgstr ""
 msgid "Sparkling Popular Posts Widget"
 msgstr ""
 
-#: inc/widgets/class-sparkling-popular-posts.php:33
-#: inc/widgets/class-sparkling-popular-posts.php:138
+#: inc/widgets/class-sparkling-popular-posts.php:46
+msgid "Select a default image"
+msgstr ""
+
+#: inc/widgets/class-sparkling-popular-posts.php:47
+msgid "Use this image"
+msgstr ""
+
+#: inc/widgets/class-sparkling-popular-posts.php:60
+#: inc/widgets/class-sparkling-popular-posts.php:151
 msgid "Popular Posts"
 msgstr ""
 
-#: inc/widgets/class-sparkling-popular-posts.php:155
+#: inc/widgets/class-sparkling-popular-posts.php:168
 msgid "Title"
 msgstr ""
 
-#: inc/widgets/class-sparkling-popular-posts.php:163
+#: inc/widgets/class-sparkling-popular-posts.php:176
 msgid "Limit Posts Number"
 msgstr ""
 
-#: inc/widgets/class-sparkling-popular-posts.php:172
+#: inc/widgets/class-sparkling-popular-posts.php:185
 msgid "Default Image"
 msgstr ""
 
-#: inc/widgets/class-sparkling-popular-posts.php:180
+#: inc/widgets/class-sparkling-popular-posts.php:193
 msgid "No media selected"
 msgstr ""
 
-#: inc/widgets/class-sparkling-popular-posts.php:188
+#: inc/widgets/class-sparkling-popular-posts.php:201
 msgctxt "label for button in the media widget"
 msgid "Add Media"
 msgstr ""
 
-#: inc/widgets/class-sparkling-popular-posts.php:191
+#: inc/widgets/class-sparkling-popular-posts.php:204
 msgctxt "label for button in the media widget; should preferably not be longer than ~13 characters long"
 msgid "Remove Media"
 msgstr ""
@@ -901,8 +946,8 @@ msgstr ""
 msgid "Sparkling Social Widget"
 msgstr ""
 
-#: inc/widgets/class-sparkling-social-widget.php:20
-#: inc/widgets/class-sparkling-social-widget.php:54
+#: inc/widgets/class-sparkling-social-widget.php:25
+#: inc/widgets/class-sparkling-social-widget.php:55
 msgid "Follow us"
 msgstr ""
 
@@ -910,58 +955,155 @@ msgstr ""
 msgid "Full-width(no sidebar)"
 msgstr ""
 
+#: patterns/about.php
+msgctxt "Pattern title"
+msgid "About with image"
+msgstr ""
+
+#: patterns/about.php
+msgctxt "Pattern description"
+msgid "An image beside a heading, a paragraph and a button."
+msgstr ""
+
+#: patterns/about.php:17
+msgid "About us"
+msgstr ""
+
+#: patterns/about.php:21
+msgid "Tell visitors who you are, what you do and why it matters. Replace the empty image area with a photo of your team or your work."
+msgstr ""
+
+#: patterns/about.php:26
+msgid "Read our story"
+msgstr ""
+
+#: patterns/call-to-action.php
+msgctxt "Pattern title"
+msgid "Call to action band"
+msgstr ""
+
+#: patterns/call-to-action.php
+msgctxt "Pattern description"
+msgid "A dark band with a line of text and a button, like the call to action under the front page slider."
+msgstr ""
+
+#: patterns/call-to-action.php:18
+msgid "Ready to start your next project? Let us know."
+msgstr ""
+
+#: patterns/call-to-action.php:25
+msgid "Get in touch"
+msgstr ""
+
+#: patterns/features.php
+msgctxt "Pattern title"
+msgid "Three features"
+msgstr ""
+
+#: patterns/features.php
+msgctxt "Pattern description"
+msgid "A heading over three columns, each with a title, a short text and a link."
+msgstr ""
+
+#: patterns/features.php:16
+msgid "What we do"
+msgstr ""
+
+#: patterns/features.php:20
+msgid "Say in a sentence what sets your work apart."
+msgstr ""
+
+#: patterns/features.php:26
+msgid "Design"
+msgstr ""
+
+#: patterns/features.php:30
+#: patterns/features.php:40
+#: patterns/features.php:50
+msgid "A short description of this service, what it includes and who it is for."
+msgstr ""
+
+#: patterns/features.php:36
+msgid "Development"
+msgstr ""
+
+#: patterns/testimonial.php
+msgctxt "Pattern title"
+msgid "Testimonial"
+msgstr ""
+
+#: patterns/testimonial.php
+msgctxt "Pattern description"
+msgid "A centred customer quote on a light background."
+msgstr ""
+
+#: patterns/testimonial.php:16
+msgid "\"Working with this team was easy from start to finish. The result was better than we hoped.\""
+msgstr ""
+
+#: patterns/testimonial.php:20
+msgid "Jane Doe, Company name"
+msgstr ""
+
 #. translators: %s: search query
-#: search.php:20
+#: search.php:21
 #, php-format
 msgid "Search Results for: %s"
 msgstr ""
 
-#: searchform.php:11
+#: searchform.php:15
 msgid "Search for:"
 msgstr ""
 
-#: searchform.php:12
+#: searchform.php:16
 msgctxt "placeholder"
 msgid "Search&hellip;"
 msgstr ""
 
-#: searchform.php:12
-msgctxt "label"
-msgid "Search for:"
-msgstr ""
-
-#: searchform.php:14
+#: searchform.php:18
 msgctxt "submit button"
 msgid "Search"
 msgstr ""
 
-#: sidebar.php:24
+#: sidebar-footer.php:18
+msgid "Footer widgets"
+msgstr ""
+
+#: sidebar-home.php:18
+msgid "Home page widgets"
+msgstr ""
+
+#: sidebar.php:32
 msgid "Meta"
 msgstr ""
 
-#: template-parts/content-none.php:12
+#. Template Name of the theme
+msgid "Blocks (full width, no title)"
+msgstr ""
+
+#: template-parts/content-none.php:16
 msgid "Nothing Found"
 msgstr ""
 
 #. translators: %1$s: URL of the new post screen
-#: template-parts/content-none.php:28
+#: template-parts/content-none.php:32
 #, php-format
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: template-parts/content-none.php:35
+#: template-parts/content-none.php:39
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr ""
 
-#: template-parts/content-none.php:41
+#: template-parts/content-none.php:45
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
 #. translators: %s: Name of current post
-#: template-parts/content-page.php:56
+#: template-parts/content-page.php:58
 #: template-parts/content-single.php:34
-#: template-parts/content-video.php:49
-#: template-parts/content.php:42
+#: template-parts/content-video.php:45
+#: template-parts/content.php:45
 #, php-format
 msgid "Edit %s"
 msgstr ""
@@ -971,26 +1113,81 @@ msgstr ""
 msgid ", "
 msgstr ""
 
-#: template-parts/content-video.php:41
-#: template-parts/content.php:34
+#: template-parts/content-video.php:37
+#: template-parts/content.php:37
 msgid "Leave a comment"
 msgstr ""
 
-#: template-parts/content-video.php:41
-#: template-parts/content.php:34
+#: template-parts/content-video.php:37
+#: template-parts/content.php:37
 msgid "1 Comment"
 msgstr ""
 
-#: template-parts/content-video.php:41
-#: template-parts/content.php:34
+#: template-parts/content-video.php:37
+#: template-parts/content.php:37
 msgid "% Comments"
 msgstr ""
 
-#: template-parts/content-video.php:65
-#: template-parts/content-video.php:74
-#: template-parts/content-video.php:77
-#: template-parts/content.php:58
-#: template-parts/content.php:67
+#: template-parts/content-video.php:61
+#: template-parts/content-video.php:70
+#: template-parts/content-video.php:73
+#: template-parts/content.php:61
 #: template-parts/content.php:70
+#: template-parts/content.php:73
 msgid "Read More"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Primary hover"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Button"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Button hover"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Heading"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Body text"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Background"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Light"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Open Sans"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Roboto Slab"
 msgstr ""

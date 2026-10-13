@@ -1,125 +1,23 @@
 /* ----------------------------------------------------------------------------
- * Welcome Page CSS
+ * Appearance > About Sparkling
  * ------------------------------------------------------------------------- */
 
-/* New Logo */
+/* Logo */
 .wp-badge.epsilon-welcome-logo {
-    color: #fff;
-    background-image: url(../img/logo.png);
-    background-position: center center;
-    background-size: 70%;
-    background-repeat: no-repeat;
+	color: #fff;
+	background-image: url("../img/logo.png");
+	background-position: center center;
+	background-size: 70%;
+	background-repeat: no-repeat;
 }
 
-/* proper positioning of the icons */
+/* Proper positioning of the icons */
 .epsilon-wrap i.dashicons {
-    margin-right: 15px;
-    position: relative;
-    top: 3px;
+	margin-right: 15px;
+	position: relative;
+	top: 3px;
 }
 
-.feature-section.action-required {
-    margin-top: 20px;
-    padding-bottom: 0;
-}
-
-.action-required span.hooray {
-    padding: 10px;
-    display: inline-block;
-}
-
-.action-required span.red {
-    color: #a00;
-}
-
-.sparkling-action-required-box:last-of-type {
-    border-bottom: none;
-}
-
-.sparkling-action-required-box {
-    display: block;
-    border-left: 3px solid #f8800c;
-    padding: 10px 25px 5px;
-    background: #FFFFFF;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px;
-    position: relative;
-}
-.sparkling-required-action-button,
-.sparkling-recommended-plugin-button,
-.sparkling-dismiss-required-action {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    text-decoration: none;
-    color: #d54e21;
-    border-radius: 50%;
-    cursor: pointer;
-}
-.about-wrap .sparkling-action-required-box h4 {
-    display: block;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.about-wrap .sparkling-action-required-box p {
-    display: block;
-    margin-top: 0;
-    width: 100%;
-    max-width: 100%;
-}
-.epsilon-recommeded-actions {
-    position: relative;
-}
-
-.epsilon-recommeded-actions .sparkling-dismiss-required-action,
-.epsilon-recommeded-actions .sparkling-recommended-plugin-button {
-    top: 0;
-    right: 0;
-}
-.epsilon-recommeded-actions #temp_load {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba( 0,0,0,.2 );
-    display: flex;
-    align-items: center;
-}
-.epsilon-recommeded-actions #temp_load img {
-    margin: 0 auto;
-}
-
-.badge-action-count {
-    padding: 0 6px;
-    display: inline-block;
-    background-color: #d54e21;
-    color: #fff;
-    font-size: 9px;
-    line-height: 17px;
-    font-weight: 600;
-    margin: 1px 0 0 2px;
-    vertical-align: top;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    z-index: 26;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-.wp-submenu .badge-action-count {
-    margin-top: 0;
-}
-
-.sparkling-welcome-task {
-    display: block;
-    font-size: 14px;
-    margin: 10px 0;
-}
-.sparkling-welcome-task .sparkling-welcome-icon {
-    color: #888;
-}
 .about-wrap.epsilon-wrap img {
-    border: 0 none;
+	border: 0 none;
 }

@@ -32,28 +32,35 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 		/**
 		 * Displays the control content.
 		 *
-		 * Markup and class names are kept identical to the control this replaced so
-		 * the Customizer looks and behaves exactly as before.
+		 * Class names are kept from the control this replaced, so the switch
+		 * looks the same. The description is shown under the switch like core
+		 * controls show theirs, instead of in a hover-only tooltip.
 		 *
 		 * @return void
 		 */
 		public function render_content() {
+			$input_id       = '_customize-input-' . $this->id;
+			$label_id       = $input_id . '-label';
+			$description_id = $input_id . '-description';
 			?>
 			<div class="checkbox_switch">
-				<span class="customize-control-title onoffswitch_label"><?php echo esc_html( $this->label ); ?>
-					<?php if ( ! empty( $this->description ) ) : ?>
-					<i class="dashicons dashicons-editor-help" style="vertical-align: text-bottom; position: relative;">
-						<span class="mte-tooltip"><?php echo wp_kses_post( $this->description ); ?></span>
-					</i>
-					<?php endif; ?>
-				</span>
+				<span class="customize-control-title onoffswitch_label" id="<?php echo esc_attr( $label_id ); ?>"><?php echo esc_html( $this->label ); ?></span>
 				<div class="onoffswitch">
-					<input type="checkbox" id="<?php echo esc_attr( $this->id ); ?>"
-						   name="<?php echo esc_attr( $this->id ); ?>" class="onoffswitch-checkbox"
-						   value="<?php echo esc_attr( $this->value() ); ?>" <?php $this->link();
-							checked( $this->value() ); ?>>
-					<label class="onoffswitch-label" for="<?php echo esc_attr( $this->id ); ?>"></label>
+					<?php
+					/*
+					 * The checkbox is the control. It used to be display:none, so
+					 * the switch could not be reached from the keyboard, and it had
+					 * no name: the visible label was a <span>, and the <label> it
+					 * pointed at was empty. It is visually hidden now, named by
+					 * the title and described by the description.
+					 */
+					?>
+					<input type="checkbox" id="<?php echo esc_attr( $input_id ); ?>" class="onoffswitch-checkbox" aria-labelledby="<?php echo esc_attr( $label_id ); ?>"<?php echo $this->description ? ' aria-describedby="' . esc_attr( $description_id ) . '"' : ''; ?> value="<?php echo esc_attr( $this->value() ); ?>" <?php $this->link(); ?> <?php checked( $this->value() ); ?>>
+					<label class="onoffswitch-label" for="<?php echo esc_attr( $input_id ); ?>" aria-hidden="true"></label>
 				</div>
+				<?php if ( ! empty( $this->description ) ) : ?>
+					<span id="<?php echo esc_attr( $description_id ); ?>" class="description customize-control-description"><?php echo wp_kses_post( $this->description ); ?></span>
+				<?php endif; ?>
 			</div>
 			<?php
 		}
@@ -69,7 +76,6 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 	 * @deprecated 2.6.0 Use Sparkling_Customize_Toggle_Control instead.
 	 */
 	if ( ! class_exists( 'Epsilon_Control_Toggle' ) ) {
-		class Epsilon_Control_Toggle extends Sparkling_Customize_Toggle_Control {
-		}
+		class_alias( 'Sparkling_Customize_Toggle_Control', 'Epsilon_Control_Toggle' );
 	}
 }

@@ -11,25 +11,17 @@ add_action( 'add_meta_boxes', 'sparkling_add_custom_box' );
  * Add Meta box in page and post post types.
  */
 function sparkling_add_custom_box() {
-	add_meta_box(
-		'siderbar-layout', //Unique ID
-		__( 'Select layout for this specific Page only ( Note: This setting only reflects if page Template is set as Default Template and Blog Type Templates.)', 'sparkling' ), //Title
-		'sparkling_sidebar_layout', //Callback function
-		'page' //show metabox in pages
-	);
-	add_meta_box(
-		'siderbar-layout', //Unique ID
-		__( 'Select layout for this specific Post only', 'sparkling' ), //Title
-		'sparkling_sidebar_layout', //Callback function
-		'post', //show metabox in posts
-		'side'
-	);
-	if ( class_exists( 'WooCommerce' ) ) {
+	foreach ( array( 'page', 'post', 'product' ) as $sparkling_post_type ) {
+		if ( 'product' === $sparkling_post_type && ! class_exists( 'WooCommerce' ) ) {
+			continue;
+		}
+
+		// The ids are unchanged so the boxes keep their saved position and state.
 		add_meta_box(
-			'product-siderbar-layout', //Unique ID
-			__( 'Select layout for this specific Product only', 'sparkling' ), //Title
-			'sparkling_sidebar_layout', //Callback function
-			'product', //show metabox in posts
+			'product' === $sparkling_post_type ? 'product-siderbar-layout' : 'siderbar-layout',
+			__( 'Layout', 'sparkling' ),
+			'sparkling_sidebar_layout',
+			$sparkling_post_type,
 			'side'
 		);
 	}
@@ -56,27 +48,19 @@ function sparkling_sidebar_layout( $post ) {
 	// Use nonce for verification
 	wp_nonce_field( basename( __FILE__ ), 'custom_meta_box_nonce' ); ?>
 
-	<table id="sidebar-metabox" class="form-table" width="100%">
-		<tbody>
-			<tr>
-				<label class="description">
-				<?php
-					$layout = get_post_meta( $post_id, 'site_layout', true );
-					?>
-					<select name="site_layout" id="site_layout">
-						<option value=""><?php esc_html_e( 'Default', 'sparkling' ); ?></option>
-						<?php
-						foreach ( (array) $site_layout as $key => $val ) {
-						?>
-						<option value="<?php echo esc_attr( $key ); ?>" <?php selected( $layout, $key ); ?> ><?php echo esc_html( $val ); ?></option>
-													<?php
-						}
-						?>
-					</select>
-				</label>
-			</tr>
-		</tbody>
-	</table>
+	<p>
+		<label for="site_layout"><?php esc_html_e( 'Sidebar layout', 'sparkling' ); ?></label>
+		<?php $layout = get_post_meta( $post_id, 'site_layout', true ); ?>
+		<select name="site_layout" id="site_layout" class="widefat">
+			<option value=""><?php esc_html_e( 'Default', 'sparkling' ); ?></option>
+			<?php foreach ( (array) $site_layout as $key => $val ) : ?>
+				<option value="<?php echo esc_attr( $key ); ?>" <?php selected( $layout, $key ); ?>><?php echo esc_html( $val ); ?></option>
+			<?php endforeach; ?>
+		</select>
+	</p>
+	<?php if ( 'page' === get_post_type( $post_id ) ) : ?>
+		<p class="description"><?php esc_html_e( 'Pages using the Full-width (no sidebar) template ignore this.', 'sparkling' ); ?></p>
+	<?php endif; ?>
 	<?php
 }
 

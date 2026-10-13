@@ -13,9 +13,9 @@ jQuery( document ).ready(function() {
             }
 
             this._frame = wp.media({
-                title: 'Media',
+                title: Sparkling.frameTitle,
                 button: {
-                    text: 'Update'
+                    text: Sparkling.frameButton
                 },
                 multiple: false
             });
@@ -29,7 +29,10 @@ jQuery( document ).ready(function() {
         select: function() {
 
             // Do something when the "update" button is clicked after a selection is made.
-            var id = jQuery( '.attachments' ).find( '.selected' ).attr( 'data-id' );
+            // Ask the frame for its selection: reading the first ".selected"
+            // thumbnail in the DOM picked up stale selections from other frames.
+            var selection = mediaControl.frame().state().get( 'selection' ).first();
+            var id = selection ? selection.get( 'id' ) : null;
             var selector = jQuery( '.sparkling-media-container' ).find( mediaControl.selector );
             var data = {
                 action: 'sparkling_get_attachment_media',
@@ -37,7 +40,7 @@ jQuery( document ).ready(function() {
                 nonce: Sparkling.nonce
             };
 
-            if ( ! selector.length ) {
+            if ( ! id || ! selector.length ) {
                 return false;
             }
 

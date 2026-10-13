@@ -201,47 +201,143 @@
 	}
 
 	/**
-	 * Dropdown toggles in the navbar.
+	 * Open or close a menu item's submenu and report it on its toggle button.
+	 *
+	 * @param {Element} item The <li>.
+	 * @param {boolean} open Whether to open it.
+	 */
+	function setSubmenuOpen( item, open ) {
+		item.classList.toggle( 'open', open );
+
+		var toggle = item.querySelector( ':scope > .sparkling-dropdown' );
+
+		if ( toggle ) {
+			toggle.setAttribute( 'aria-expanded', open ? 'true' : 'false' );
+		}
+	}
+
+	/**
+	 * Submenu toggles in the navbar.
 	 */
 	function initDropdowns() {
-		document.querySelectorAll( '.sparkling-dropdown' ).forEach( function ( el ) {
-			el.addEventListener( 'click', function () {
-				if ( el.parentNode ) {
-					el.parentNode.classList.toggle( 'open' );
-				}
+		document.querySelectorAll( '.sparkling-dropdown' ).forEach( function ( toggle ) {
+			toggle.addEventListener( 'click', function ( event ) {
+				event.preventDefault();
+				setSubmenuOpen( toggle.parentNode, ! toggle.parentNode.classList.contains( 'open' ) );
 			} );
+		} );
+
+		// A "#" parent item has nowhere to go, so it opens its submenu instead of
+		// jumping to the top of the page.
+		document.querySelectorAll( '.navbar-nav li.dropdown > a[href="#"]' ).forEach( function ( link ) {
+			link.addEventListener( 'click', function ( event ) {
+				event.preventDefault();
+				setSubmenuOpen( link.parentNode, ! link.parentNode.classList.contains( 'open' ) );
+			} );
+		} );
+
+		// Escape closes the submenu that holds focus and returns focus to its toggle.
+		document.addEventListener( 'keydown', function ( event ) {
+			if ( 'Escape' !== event.key || ! event.target.closest ) {
+				return;
+			}
+
+			var item = event.target.closest( '.navbar-nav li.open' );
+
+			if ( ! item ) {
+				return;
+			}
+
+			setSubmenuOpen( item, false );
+
+			var toggle = item.querySelector( ':scope > .sparkling-dropdown' );
+
+			if ( toggle ) {
+				toggle.focus();
+			}
 		} );
 	}
 
 	/**
-	 * Reserve space under a fixed navbar so content is not hidden behind it.
+	 * Keep the menu button's aria-expanded in step with the collapsed menu.
+	 *
+	 * Bootstrap only updates triggers whose data-target is an #id; this one
+	 * targets the .navbar-ex1-collapse class, which child themes rely on.
+	 * Bootstrap announces the change through jQuery events, so listen there.
 	 */
-	function initStickyHeader() {
-		var navbar = document.querySelector( '.navbar-fixed-top' );
+	function initMenuToggleState() {
+		var toggle = document.querySelector( '.navbar-toggle[data-target=".navbar-ex1-collapse"]' );
 
-		if ( ! navbar ) {
+		if ( ! toggle || ! window.jQuery ) {
 			return;
 		}
 
-		var header = navbar.closest( 'header' );
+		window.jQuery( document ).on( 'shown.bs.collapse hidden.bs.collapse', '.navbar-ex1-collapse', function ( event ) {
+			toggle.setAttribute( 'aria-expanded', 'shown' === event.type ? 'true' : 'false' );
+		} );
+	}
+
+	/**
+	 * Sticky header: keep the fixed navbar below the admin bar, reserve its
+	 * height above the content, and make in-page links stop below it.
+	 *
+	 * The space was measured once, at load, so it went stale when the menu
+	 * wrapped to a second row on a narrower window. With the admin bar the
+	 * navbar sat at top: 0, under the bar, and the space was set to the
+	 * difference of the two heights, so the bar hid the top of the navbar.
+	 * And an anchor -- #comments, a "Skip to main content" target, a menu
+	 * link to a section -- scrolled its target under the navbar.
+	 */
+	function initStickyHeader() {
+		var navbar = document.querySelector( '.navbar-fixed-top' );
+		var header = navbar ? navbar.closest( 'header' ) : null;
 
 		if ( ! header ) {
 			return;
 		}
 
-		// getComputedStyle().height resolves to the content box, matching the
-		// jQuery .height() this replaced.
-		var adminbar    = document.getElementById( 'wpadminbar' );
-		var navHeight   = parseFloat( window.getComputedStyle( navbar ).height ) || 0;
-		var adminHeight = adminbar ? parseFloat( window.getComputedStyle( adminbar ).height ) || 0 : 0;
+		var adminbar = document.getElementById( 'wpadminbar' );
+		var queued   = false;
 
-		header.style.marginBottom = ( adminbar ? Math.abs( navHeight - adminHeight ) : navHeight ) + 'px';
+		function layout() {
+			queued = false;
+
+			var top = 0;
+			var barFixed = false;
+
+			if ( adminbar ) {
+				// Below 600px the admin bar scrolls away with the page.
+				barFixed = 'fixed' === window.getComputedStyle( adminbar ).position;
+				top      = Math.max( 0, adminbar.getBoundingClientRect().bottom );
+				navbar.style.top = top + 'px';
+			}
+
+			var navHeight = navbar.offsetHeight;
+
+			header.style.marginBottom = navHeight + 'px';
+			document.documentElement.style.scrollPaddingTop = ( ( barFixed ? top : 0 ) + navHeight ) + 'px';
+		}
+
+		function queue() {
+			if ( ! queued ) {
+				queued = true;
+				window.requestAnimationFrame( layout );
+			}
+		}
+
+		layout();
+		window.addEventListener( 'resize', queue );
+
+		if ( adminbar ) {
+			window.addEventListener( 'scroll', queue, { passive: true } );
+		}
 	}
 
 	ready( function () {
 		styleCoreMarkup();
 		initScrollToTop();
 		initDropdowns();
+		initMenuToggleState();
 		initStickyHeader();
 		window.generateMobileMenu();
 

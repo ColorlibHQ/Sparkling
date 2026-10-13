@@ -34,8 +34,13 @@ Loaded only on the Customizer controls screen.
 	user-select: none;
 }
 
+/* Visually hidden but focusable: the checkbox is the control. */
 .onoffswitch-checkbox {
-	display: none !important;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: 0;
+	opacity: 0;
 }
 
 .onoffswitch-label {
@@ -105,39 +110,45 @@ Loaded only on the Customizer controls screen.
 }
 
 /* Keyboard focus, which the original switch styling did not surface at all. */
-.onoffswitch-checkbox:focus + .onoffswitch-label {
+.onoffswitch-checkbox:focus-visible + .onoffswitch-label {
 	outline: 2px solid #2271b1;
 	outline-offset: 2px;
 }
 
-.mte-tooltip {
-	width: 150px;
-	position: absolute;
-	background: #55aad3;
-	color: #eee;
-	font-size: 12px;
-	min-height: 50px;
-	border-radius: 5px;
-	left: -75px; /* half of its width */
-	bottom: 25px;
-	z-index: 10;
-	display: none;
-	padding: 12px;
-	line-height: 1.5;
-	font-family: Arial, sans-serif;
-}
-
-.accordion-section-content > li:nth-of-type(2) .mte-tooltip {
-	bottom: initial;
-	top: 25px;
-}
-
-.dashicons.dashicons-editor-help {
-	cursor: pointer;
-	color: #55aad3;
-}
-
-.dashicons.dashicons-editor-help:hover > .mte-tooltip,
-.dashicons.dashicons-editor-help:focus > .mte-tooltip {
+/* The description sits under the switch, as core controls show theirs. */
+.checkbox_switch .customize-control-description {
 	display: block;
+	clear: both;
+}
+
+/* Typography: the size, font and weight selects share a row of settings. */
+#customize-control-sparkling-main_body_typography-size select,
+#customize-control-sparkling-main_body_typography-face select,
+#customize-control-sparkling-main_body_typography-style select {
+	width: 60%;
+}
+
+/*
+ * Link sections (Sparkling_Customize_Link_Section): look like core's section
+ * titles, with an "opens elsewhere" icon instead of the arrow.
+ */
+.sparkling-link-section .accordion-section-title a {
+	display: block;
+	padding: 10px 30px 11px 14px;
+	color: #50575e;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.55;
+	text-decoration: none;
+}
+
+.sparkling-link-section .accordion-section-title a:hover,
+.sparkling-link-section .accordion-section-title a:focus {
+	background: #f6f7f7;
+	color: #2271b1;
+}
+
+#customize-theme-controls .sparkling-link-section .accordion-section-title::after {
+	content: "\f504";
+	content: "\f504" / "";
 }

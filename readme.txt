@@ -2,9 +2,9 @@
 
 Contributors: colorlib
 Requires at least: 6.0
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.6.10
+Stable tag: 2.7.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, news, e-commerce, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, editor-style, featured-images, footer-widgets, full-width-template, post-formats, sticky-post, theme-options, block-styles, wide-blocks
@@ -66,15 +66,30 @@ Bootstrap v3.4.1
     License: MIT
     Source: https://getbootstrap.com/
 
-FlexSlider v2.7.0
+Bootstrap Glyphicons Halflings (bundled with Bootstrap 3.4.1)
+    Copyright Jan Kovarik
+    License: MIT, as part of Bootstrap
+    Source: https://glyphicons.com/
+
+FlexSlider v2.7.2
     Copyright 2012 WooThemes
     License: GNU General Public License v2
     Source: https://github.com/woocommerce/FlexSlider
 
-Font Awesome Free v5.1.1
+Font Awesome Free v7.3.1 (complete set, version 4 shim, and the theme's subset)
     Copyright Fonticons, Inc.
     License: Icons CC BY 4.0, Fonts SIL OFL 1.1, Code MIT
-    Source: https://fontawesome.com/license
+    Source: https://fontawesome.com/license/free
+
+Open Sans
+    Copyright 2020 The Open Sans Project Authors
+    License: SIL Open Font License 1.1
+    Source: https://fonts.google.com/specimen/Open+Sans
+
+Roboto Slab
+    Copyright 2018 The Roboto Slab Project Authors
+    License: Apache License 2.0
+    Source: https://fonts.google.com/specimen/Roboto+Slab
 
 Academicons v1.8.6
     Copyright James Walsh
@@ -90,6 +105,28 @@ Screenshot image
     Copyright Colorlib, distributed under the same license as the theme.
 
 == Changelog ==
+
+= 2.7.0 =
+* Fixed two fatal errors on PHP 8: an Archive Pages headline containing a % other than %s ("Tagged %s at 100%") took the archive page down, and so did a classic [caption] with a non-numeric width.
+* Fixed the mobile menu and the front page slider on jQuery 4 (Bootstrap 3 refused to run, and the slider started through a jQuery API removed in 3.0). The theme works on jQuery 3.7 and on jQuery 4.0 without Migrate.
+* Fixed video posts showing an empty box on the blog, archive and search pages: the embed was stripped by the escaping that ran over it.
+* Fixed 404 pages and empty searches losing their sidebar to the WooCommerce layout when WooCommerce is active.
+* Fixed a fatal "Cannot declare class WP_Bootstrap_Navwalker" with plugins that bundle a nav walker of that name. The theme's walker is Sparkling_Bootstrap_Navwalker; the old name remains an alias.
+* Fixed the password form: it lost WordPress's redirect and "Invalid password" message, pre-filled the field with the search query and was broken up by automatic paragraphs.
+* Fixed a JavaScript error on every in-page link (the obsolete skip-link focus script), and the sticky header sitting under the admin bar, going stale when the menu wrapped, and hiding anchor targets.
+* Fixed the Customizer: the slider category and slide count disagreed with the site, invalid typography values were saved as nothing, the slider's settings fell out of step with its switch, the switches could not be used from the keyboard, the link sections were unstyled, and the theme hid the Customizer's "Change" theme button.
+* Fixed the About page: FancyBox and other plugins with differently named files always showed "Install", install buttons were offered to users who could not install plugins, a hidden tab was a fatal error, and the changelog needed FTP credentials on some hosts.
+* Fixed the Sparkling Categories widget breaking on category names with parentheses and ignoring "Enable Posts Count", empty image links in Popular Posts and post listings, duplicate ids from the social menu and search forms, and the dropdown colours and nested submenu arrow from 768px up.
+* Added theme.json: the block editor gets the theme's palette, which follows your Customizer colours, block buttons use the theme's button colours, and the editor is as wide as the column the post renders in.
+* Added four block patterns (call to action, features, about, testimonial) and a "Blocks (full width, no title)" page template to build pages from them.
+* Added icons for X, Bluesky, Threads, Mastodon, TikTok, WhatsApp, Discord, Reddit, Twitch and Medium to the social menu, and a generic icon for any other link.
+* Accessibility: text meets WCAG AA contrast (the theme red is now #D83B4B, a shade darker; saved colours are kept), links in text are underlined, every page has one h1, landmarks and icon links are named, submenu toggles and the back-to-top control are real buttons.
+* Performance: the slider's files load only on the front page, an empty style block is no longer printed, and only the Font Awesome icons the theme uses load unless your content needs more.
+* Tested up to WordPress 7.1 and PHP 8.5. Development tooling moved from Grunt to npm scripts with PHPCS, ESLint and Stylelint at zero warnings in CI.
+
+= 2.6.11 =
+* Font Awesome icons added to a menu by hand disappeared on update to 2.6.7 or later, which subsetted the bundled Font Awesome to the glyphs the theme draws itself. The theme now detects the icons used in your menus and loads the complete library when one of them needs it, so those menus recover on their own.
+* Added "Font Awesome icons" under Content Options in the Customizer, for icons the menu scan cannot see -- a widget, post content, a page builder. The sparkling_full_fontawesome filter still overrides it.
 
 = 2.6.10 =
 * Fixed the Customizer failing to open with "Class Epsilon_Section_Recommended_Actions not found". The 2.6.x packages shipped an outdated inc/welcome-screen/welcome-page-setup.php that still used classes removed with the Epsilon framework.

@@ -51,8 +51,8 @@ get_header(); ?>
 							<div class="col-md-6 not-found-widget">
 								<?php
 								/* translators: %1$s: smiley */
-								$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'sparkling' ), convert_smilies( ':)' ) ) . '</p>';
-								the_widget( 'WP_Widget_Archives', 'dropdown=1&title=' . esc_html__( 'Archives', 'sparkling' ), "after_title=</h2>$archive_content" );
+								$sparkling_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'sparkling' ), convert_smilies( ':)' ) ) . '</p>';
+								the_widget( 'WP_Widget_Archives', 'dropdown=1&title=' . esc_html__( 'Archives', 'sparkling' ), "after_title=</h2>$sparkling_archive_content" );
 								?>
 							</div>
 

@@ -25,50 +25,45 @@
 
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
-<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+<a class="sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to main content', 'sparkling' ); ?></a>
 <div id="page" class="hfeed site">
 
-	<header id="masthead" class="site-header" role="banner">
-		<nav class="navbar navbar-default
-		<?php
-		if ( of_get_option( 'sticky_header' ) ) {
-			echo 'navbar-fixed-top';}
-?>
-" role="navigation">
+	<header id="masthead" class="site-header">
+		<nav class="navbar navbar-default<?php echo of_get_option( 'sticky_header' ) ? ' navbar-fixed-top' : ''; ?>" aria-label="<?php esc_attr_e( 'Primary', 'sparkling' ); ?>">
 			<div class="container">
 				<div class="row">
 					<div class="site-navigation-inner col-sm-12">
 						<div class="navbar-header">
 
+							<?php
+							/*
+							 * The site name is the page's h1 only on the latest-posts front
+							 * page. Everywhere else the view has its own h1 -- the post,
+							 * page, archive or search title -- and a second one here made
+							 * two per page (the separate blog page had both).
+							 */
+							$sparkling_site_name_tag = is_front_page() && is_home() ? 'h1' : 'p';
+							?>
+							<div id="logo">
+								<?php if ( get_header_image() ) : ?>
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php header_image(); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"/></a>
+									<?php if ( 'h1' === $sparkling_site_name_tag ) : ?>
+										<h1 class="site-name hide-site-name"><?php bloginfo( 'name' ); ?></h1>
+									<?php endif; ?>
+								<?php else : ?>
+									<<?php echo esc_html( $sparkling_site_name_tag ); ?> class="site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></<?php echo esc_html( $sparkling_site_name_tag ); ?>>
+								<?php endif; ?>
+							</div><!-- end of #logo -->
 
-														<div id="logo">
-															<?php if ( get_header_image() != '' ) { ?>
-																	<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>"  height="<?php echo esc_attr( get_custom_header()->height ); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
-																		<?php if ( is_home() ) { ?>
-																		<h1 class="site-name hide-site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-																	<?php
-}
-} else {
-	echo is_home() ? '<h1 class="site-name">' : '<p class="site-name">';
-	?>
-																		<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-																<?php echo is_home() ? '</h1>' : '</p>'; ?>
-															<?php } ?>
-														</div><!-- end of #logo -->
-
-							<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-								<span class="sr-only">Toggle navigation</span>
+							<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-controls="sparkling-navbar" aria-expanded="false">
+								<span class="sr-only"><?php esc_html_e( 'Toggle navigation', 'sparkling' ); ?></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
 						</div>
 
-
-
 						<?php sparkling_header_menu(); // main navigation ?>
-
-
 
 					</div>
 				</div>
@@ -78,12 +73,17 @@
 
 	<div id="content" class="site-content">
 
-		<div class="top-section">
-			<?php sparkling_featured_slider(); ?>
-			<?php sparkling_call_for_action(); ?>
+		<?php
+		// The front page slider and call to action, when there are any.
+		ob_start();
+		sparkling_featured_slider();
+		sparkling_call_for_action();
+		$sparkling_top_section = trim( ob_get_clean() );
+		?>
+		<div class="top-section"<?php echo '' !== $sparkling_top_section ? ' role="region" aria-label="' . esc_attr__( 'Featured', 'sparkling' ) . '"' : ''; ?>>
+			<?php echo $sparkling_top_section; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped by the two functions above. ?>
 		</div>
 
 		<div class="container main-content-area">
-			<?php $layout_class = get_layout_class(); ?>
-			<div class="row <?php echo esc_attr( $layout_class ); ?>">
+			<div class="row <?php echo esc_attr( get_layout_class() ); ?>">
 				<div class="main-content-inner <?php echo esc_attr( sparkling_main_content_bootstrap_classes() ); ?>">

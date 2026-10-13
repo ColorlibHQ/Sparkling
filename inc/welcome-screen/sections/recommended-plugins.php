@@ -8,17 +8,10 @@
  * on admin_enqueue_scripts. The theme adds no CSS of its own for this tab.
  */
 
-global $sparkling_recommended_plugins;
+global $sparkling_recommended_plugins, $sparkling_welcome;
 
-// Initialize the Sparkling_Welcome class
-$sparkling_welcome = new Sparkling_Welcome();
-
-// Get the required functions from the class
-$call_plugin_api    = array( $sparkling_welcome, 'call_plugin_api' );
-$check_for_icon     = array( $sparkling_welcome, 'check_for_icon' );
-$check_active       = array( $sparkling_welcome, 'check_active' );
-$create_action_link = array( $sparkling_welcome, 'create_action_link' );
-
+$sparkling_can_install  = current_user_can( 'install_plugins' );
+$sparkling_can_activate = current_user_can( 'activate_plugins' );
 ?>
 
 <div class="wp-list-table widefat plugin-install">
@@ -26,44 +19,44 @@ $create_action_link = array( $sparkling_welcome, 'create_action_link' );
 
 	<div id="the-list">
 		<?php
-		foreach ( $sparkling_recommended_plugins as $plugin => $prop ) {
+		foreach ( array_keys( $sparkling_recommended_plugins ) as $sparkling_plugin ) {
 
-			$info = call_user_func( $call_plugin_api, $plugin );
+			$sparkling_info = $sparkling_welcome->call_plugin_api( $sparkling_plugin );
 
 			/*
 			 * plugins_api() returns WP_Error when wordpress.org cannot be reached.
 			 * Previously the properties below were read straight off it, so an
 			 * offline site rendered a broken tab.
 			 */
-			if ( is_wp_error( $info ) || empty( $info->name ) ) {
+			if ( is_wp_error( $sparkling_info ) || empty( $sparkling_info->name ) ) {
 				continue;
 			}
 
-			$icon   = call_user_func( $check_for_icon, $info->icons );
-			$active = call_user_func( $check_active, $plugin );
-			$url    = call_user_func( $create_action_link, $active['needs'], $plugin );
+			$sparkling_icon   = $sparkling_welcome->check_for_icon( $sparkling_info->icons );
+			$sparkling_active = $sparkling_welcome->check_active( $sparkling_plugin );
+			$sparkling_url    = $sparkling_welcome->create_action_link( $sparkling_active['needs'], $sparkling_plugin );
 
-			$is_active = ( 'install' !== $active['needs'] && $active['status'] );
+			$sparkling_is_active = ( 'install' !== $sparkling_active['needs'] && $sparkling_active['status'] );
 
-			switch ( $active['needs'] ) {
+			switch ( $sparkling_active['needs'] ) {
 				case 'install':
-					$class = 'install-now button';
-					$label = __( 'Install Now', 'sparkling' );
+					$sparkling_class = 'install-now button';
+					$sparkling_label = __( 'Install Now', 'sparkling' );
 					break;
 				case 'activate':
-					$class = 'activate-now button button-primary';
-					$label = __( 'Activate', 'sparkling' );
+					$sparkling_class = 'activate-now button button-primary';
+					$sparkling_label = __( 'Activate', 'sparkling' );
 					break;
 				default:
-					$class = 'button';
-					$label = __( 'Deactivate', 'sparkling' );
+					$sparkling_class = 'button';
+					$sparkling_label = __( 'Deactivate', 'sparkling' );
 					break;
 			}
 
-			$details_url = add_query_arg(
+			$sparkling_details_url = add_query_arg(
 				array(
 					'tab'       => 'plugin-information',
-					'plugin'    => $plugin,
+					'plugin'    => $sparkling_plugin,
 					'TB_iframe' => 'true',
 					'width'     => 600,
 					'height'    => 550,
@@ -71,13 +64,13 @@ $create_action_link = array( $sparkling_welcome, 'create_action_link' );
 				self_admin_url( 'plugin-install.php' )
 			);
 			?>
-			<div class="plugin-card plugin-card-<?php echo esc_attr( sanitize_html_class( $plugin ) ); ?>">
+			<div class="plugin-card plugin-card-<?php echo esc_attr( sanitize_html_class( $sparkling_plugin ) ); ?>">
 				<div class="plugin-card-top">
 					<div class="name column-name">
 						<h3>
-							<a href="<?php echo esc_url( $details_url ); ?>" class="thickbox open-plugin-details-modal">
-								<?php echo esc_html( $info->name ); ?>
-								<img src="<?php echo esc_url( $icon ); ?>" class="plugin-icon" alt="" />
+							<a href="<?php echo esc_url( $sparkling_details_url ); ?>" class="thickbox open-plugin-details-modal">
+								<?php echo esc_html( $sparkling_info->name ); ?>
+								<img src="<?php echo esc_url( $sparkling_icon ); ?>" class="plugin-icon" alt="" />
 							</a>
 						</h3>
 					</div>
@@ -85,16 +78,23 @@ $create_action_link = array( $sparkling_welcome, 'create_action_link' );
 					<div class="action-links">
 						<ul class="plugin-action-buttons">
 							<li>
-								<?php if ( $is_active ) : ?>
+								<?php if ( $sparkling_is_active ) : ?>
 									<button type="button" class="button button-disabled" disabled="disabled"><?php esc_html_e( 'Active', 'sparkling' ); ?></button>
-								<?php else : ?>
-									<a data-slug="<?php echo esc_attr( $plugin ); ?>"
-										class="<?php echo esc_attr( $class ); ?>"
-										href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $label ); ?></a>
+								<?php elseif ( ( 'install' === $sparkling_active['needs'] && $sparkling_can_install ) || ( 'install' !== $sparkling_active['needs'] && $sparkling_can_activate ) ) : ?>
+									<?php
+									/*
+									 * Only for users who can carry it out: an editor with
+									 * edit_theme_options but not install_plugins got an Install
+									 * button that ended on "Sorry, you are not allowed".
+									 */
+									?>
+									<a data-slug="<?php echo esc_attr( $sparkling_plugin ); ?>"
+										class="<?php echo esc_attr( $sparkling_class ); ?>"
+										href="<?php echo esc_url( $sparkling_url ); ?>"><?php echo esc_html( $sparkling_label ); ?></a>
 								<?php endif; ?>
 							</li>
 							<li>
-								<a href="<?php echo esc_url( $details_url ); ?>" class="thickbox open-plugin-details-modal">
+								<a href="<?php echo esc_url( $sparkling_details_url ); ?>" class="thickbox open-plugin-details-modal">
 									<?php esc_html_e( 'More Details', 'sparkling' ); ?>
 								</a>
 							</li>
@@ -102,23 +102,25 @@ $create_action_link = array( $sparkling_welcome, 'create_action_link' );
 					</div>
 
 					<div class="desc column-description">
-						<p><?php echo wp_kses_post( $info->short_description ); ?></p>
-						<p class="authors"><cite><?php
+						<p><?php echo wp_kses_post( $sparkling_info->short_description ); ?></p>
+						<p class="authors"><cite>
+						<?php
 							/* translators: %s: plugin author name */
-							printf( esc_html__( 'By %s', 'sparkling' ), wp_kses_post( $info->author ) );
-						?></cite></p>
+							printf( esc_html__( 'By %s', 'sparkling' ), wp_kses_post( $sparkling_info->author ) );
+						?>
+						</cite></p>
 					</div>
 				</div>
 
 				<div class="plugin-card-bottom">
 					<div class="column-updated">
 						<strong><?php esc_html_e( 'Version:', 'sparkling' ); ?></strong>
-						<?php echo esc_html( $info->version ); ?>
+						<?php echo esc_html( $sparkling_info->version ); ?>
 					</div>
 					<div class="column-compatibility">
-						<?php if ( $is_active ) : ?>
+						<?php if ( $sparkling_is_active ) : ?>
 							<span class="compatibility-compatible"><?php esc_html_e( 'Installed and active', 'sparkling' ); ?></span>
-						<?php elseif ( 'activate' === $active['needs'] ) : ?>
+						<?php elseif ( 'activate' === $sparkling_active['needs'] ) : ?>
 							<span class="compatibility-untested"><?php esc_html_e( 'Installed, not active', 'sparkling' ); ?></span>
 						<?php else : ?>
 							<span class="compatibility-untested"><?php esc_html_e( 'Not installed', 'sparkling' ); ?></span>
@@ -127,7 +129,7 @@ $create_action_link = array( $sparkling_welcome, 'create_action_link' );
 				</div>
 			</div>
 			<?php
-		}// End foreach().
+		}
 		?>
 	</div>
 </div>

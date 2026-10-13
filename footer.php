@@ -18,14 +18,14 @@
 			</div>
 		</div>
 
-		<footer id="colophon" class="site-footer" role="contentinfo">
+		<footer id="colophon" class="site-footer">
 			<div class="site-info container">
 				<div class="row">
 					<?php
 					if ( of_get_option( 'footer_social' ) ) {
 						sparkling_social_icons();}
-?>
-					<nav role="navigation" class="col-md-6">
+					?>
+					<nav class="col-md-6" aria-label="<?php esc_attr_e( 'Footer', 'sparkling' ); ?>">
 						<?php sparkling_footer_links(); ?>
 					</nav>
 					<div class="copyright col-md-6">
@@ -34,7 +34,7 @@
 					</div>
 				</div>
 			</div><!-- .site-info -->
-			<div class="scroll-to-top"><i class="fa-solid fa-angle-up"></i></div><!-- .scroll-to-top -->
+			<button type="button" class="scroll-to-top"><span class="fa-solid fa-angle-up" aria-hidden="true"></span><span class="screen-reader-text"><?php esc_html_e( 'Back to top', 'sparkling' ); ?></span></button><!-- .scroll-to-top -->
 		</footer><!-- #colophon -->
 	</div>
 </div><!-- #page -->

@@ -1,7 +1,15 @@
+<?php
+/**
+ * The sidebar. Closes .main-content-inner, which header.php opened.
+ *
+ * @package sparkling
+ */
+
+?>
 </div><!-- close .main-content-inner -->
-<div id="secondary" class="widget-area col-sm-12 col-md-4" role="complementary">
+<div id="secondary" class="widget-area col-sm-12 col-md-4" role="complementary" aria-label="<?php esc_attr_e( 'Sidebar', 'sparkling' ); ?>">
 	<div class="well">
-		<?php do_action( 'before_sidebar' ); ?>
+		<?php do_action( 'before_sidebar' ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- The _s hook name, kept for code that hooks it. ?>
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
 			<aside id="search" class="widget widget_search">
@@ -12,10 +20,10 @@
 				<h3 class="widget-title"><?php esc_html_e( 'Archives', 'sparkling' ); ?></h3>
 				<ul>
 					<?php
-					$archives_args = array(
+					$sparkling_archives_args = array(
 						'type' => 'monthly',
 					);
-					wp_get_archives( $archives_args );
+					wp_get_archives( $sparkling_archives_args );
 					?>
 				</ul>
 			</aside>

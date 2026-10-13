@@ -5,14 +5,14 @@
  * Sparkling Theme
  */
 class Sparkling_Popular_Posts extends WP_Widget {
-	function __construct() {
+	public function __construct() {
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue' ) );
 		add_action( 'customize_controls_enqueue_scripts', array( $this, 'enqueue' ) );
 		$widget_ops = array(
 			'classname'   => 'sparkling-popular-posts',
 			'description' => esc_html__( 'Sparkling Popular Posts Widget', 'sparkling' ),
 		);
-		  parent::__construct( 'sparkling_popular_posts', esc_html__( 'Sparkling Popular Posts Widget', 'sparkling' ), $widget_ops );
+			parent::__construct( 'sparkling_popular_posts', esc_html__( 'Sparkling Popular Posts Widget', 'sparkling' ), $widget_ops );
 	}
 
 	/**
@@ -41,101 +41,94 @@ class Sparkling_Popular_Posts extends WP_Widget {
 			wp_enqueue_media();
 			wp_enqueue_script( 'sparkling-popular-post-script', get_template_directory_uri() . '/assets/js/widget.js', array( 'jquery' ), SPARKLING_VERSION, true );
 			$args = array(
-				'ajaxurl' => admin_url( 'admin-ajax.php' ),
-				'nonce'   => wp_create_nonce( 'sparkling_widget_nonce' ),
+				'ajaxurl'     => admin_url( 'admin-ajax.php' ),
+				'nonce'       => wp_create_nonce( 'sparkling_widget_nonce' ),
+				'frameTitle'  => __( 'Select a default image', 'sparkling' ),
+				'frameButton' => __( 'Use this image', 'sparkling' ),
 			);
 			wp_localize_script( 'sparkling-popular-post-script', 'Sparkling', $args );
 		}
-
 	}
 
-	function widget( $args, $instance ) {
+	/**
+	 * Front-end display of the widget.
+	 *
+	 * @param array $args     Widget area arguments.
+	 * @param array $instance Saved settings.
+	 */
+	public function widget( $args, $instance ) {
 		$title         = isset( $instance['title'] ) ? $instance['title'] : esc_html__( 'Popular Posts', 'sparkling' );
-		$limit         = isset( $instance['limit'] ) ? $instance['limit'] : 5;
-		$default_image = isset( $instance['default_image'] ) ? $instance['default_image'] : '';
+		$title         = apply_filters( 'widget_title', $title, $instance, $this->id_base ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- Core hook.
+		$limit         = ! empty( $instance['limit'] ) ? absint( $instance['limit'] ) : 5;
+		$default_image = ! empty( $instance['default_image'] ) ? absint( $instance['default_image'] ) : 0;
 
-		echo $args['before_widget'];
-		echo $args['before_title'];
-		echo esc_html( $title );
-		echo $args['after_title'];
+		echo $args['before_widget']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Widget area markup from register_sidebar().
 
-		/**
-		 * Widget Content
-		 */
-	?>
+		// An emptied title used to print an empty heading.
+		if ( '' !== trim( (string) $title ) ) {
+			echo $args['before_title'] . esc_html( $title ) . $args['after_title']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Widget area markup from register_sidebar().
+		}
+		?>
 
-	<!-- popular posts -->
-		  <div class="popular-posts-wrapper">
+		<div class="popular-posts-wrapper">
+			<?php
+			$featured_query = new WP_Query(
+				array(
+					'posts_per_page'      => $limit,
+					'orderby'             => 'comment_count',
+					'order'               => 'DESC',
+					'ignore_sticky_posts' => 1,
+					'no_found_rows'       => true,
+					'post_status'         => 'publish',
+				)
+			);
+
+			while ( $featured_query->have_posts() ) :
+				$featured_query->the_post();
+
+				if ( '' === get_the_content() ) {
+					continue;
+				}
+
+				if ( has_post_thumbnail() ) {
+					$image = get_the_post_thumbnail( get_the_ID(), 'tab-small' );
+				} elseif ( $default_image ) {
+					$image = wp_get_attachment_image( $default_image, 'tab-small' );
+				} else {
+					$image = '';
+				}
+				?>
+
+				<div class="post">
+					<div class="post-image <?php echo esc_attr( get_post_format() ); ?>">
+						<?php
+						/*
+						 * Only with an image: without one this was an empty link. The
+						 * title links to the same post, so the image link is kept out
+						 * of the tab order and away from screen readers.
+						 */
+						if ( $image ) :
+							?>
+							<a href="<?php the_permalink(); ?>" tabindex="-1" aria-hidden="true"><?php echo $image; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Core image markup. ?></a>
+						<?php endif; ?>
+					</div>
+
+					<div class="post-content">
+						<a href="<?php the_permalink(); ?>"><?php echo esc_html( get_the_title() ); ?></a>
+						<span class="date"><?php echo esc_html( get_the_date() ); ?></span>
+					</div>
+				</div>
 
 				<?php
+			endwhile;
 
-				  $featured_args = array(
-					  'posts_per_page'      => absint( $limit ) ? absint( $limit ) : 5,
-					  'orderby'             => 'comment_count',
-					  'order'               => 'DESC',
-					  'ignore_sticky_posts' => 1,
-					  'no_found_rows'       => true,
-					  'post_status'         => 'publish',
-				  );
-
-				  $featured_query = new WP_Query( $featured_args );
-
-				  /**
-				   * Check if zilla likes plugin exists
-				   */
-				if ( $featured_query->have_posts() ) :
-					while ( $featured_query->have_posts() ) :
-						$featured_query->the_post();
-
-										?>
-
-										<?php if ( get_the_content() != '' ) : ?>
-
-						<!-- post -->
-						<div class="post">
-
-						  <!-- image -->
-						  <div class="post-image <?php echo esc_attr( get_post_format() ); ?>">
-
-								<a href="<?php echo esc_url( get_permalink() ); ?>">
-								<?php
-								if ( has_post_thumbnail() ) {
-									echo get_the_post_thumbnail( get_the_ID(), 'tab-small' );
-								} elseif ( $default_image ) {
-									echo wp_get_attachment_image( $default_image, 'tab-small' );
-								}
-								?>
-								</a>
-
-						  </div> <!-- end post image -->
-
-						  <!-- content -->
-						  <div class="post-content">
-
-							  <a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html( get_the_title() ); ?></a>
-							  <span class="date"><?php echo esc_html( get_the_date( get_option( 'date_format' ) ) ); ?></span>
-
-
-						  </div><!-- end content -->
-						</div><!-- end post -->
-
-						<?php endif; ?>
-
-										<?php
-
-				  endwhile;
-endif;
-				// wp_reset_query() also resets the main query; this loop only used a
-				// secondary WP_Query, so wp_reset_postdata() is the correct pairing.
-				wp_reset_postdata();
-
-					?>
-
-		  </div> <!-- end posts wrapper -->
+			// A secondary WP_Query, so wp_reset_postdata(), not wp_reset_query().
+			wp_reset_postdata();
+			?>
+		</div>
 
 		<?php
-
-		echo $args['after_widget'];
+		echo $args['after_widget']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Widget area markup from register_sidebar().
 	}
 
 	/**
@@ -152,7 +145,7 @@ endif;
 		return $instance;
 	}
 
-	function form( $instance ) {
+	public function form( $instance ) {
 
 		if ( ! isset( $instance['title'] ) ) {
 			$instance['title'] = esc_html__( 'Popular Posts', 'sparkling' );
@@ -172,30 +165,30 @@ endif;
 
 		?>
 
-		  <p><label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title', 'sparkling' ); ?></label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title', 'sparkling' ); ?></label>
 
-		  <input  type="text" value="<?php echo esc_attr( $instance['title'] ); ?>"
-			  name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>"
-			  id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"
-			  class="widefat" />
-		  </p>
+			<input  type="text" value="<?php echo esc_attr( $instance['title'] ); ?>"
+				name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>"
+				id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"
+				class="widefat" />
+			</p>
 
-		  <p><label for="<?php echo esc_attr( $this->get_field_id( 'limit' ) ); ?>"><?php esc_html_e( 'Limit Posts Number', 'sparkling' ); ?></label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'limit' ) ); ?>"><?php esc_html_e( 'Limit Posts Number', 'sparkling' ); ?></label>
 
-		  <input  type="text" value="<?php echo esc_attr( $instance['limit'] ); ?>"
-			  name="<?php echo esc_attr( $this->get_field_name( 'limit' ) ); ?>"
-			  id="<?php echo esc_attr( $this->get_field_id( 'limit' ) ); ?>"
-			  class="widefat" />
-		  <p>
-		  <div class="sparkling-media-container media-widget-control">
-			  <p>
-				  <label for="<?php echo esc_attr( $this->get_field_id( 'default_image' ) ); ?>"><?php esc_html_e( 'Default Image', 'sparkling' ); ?></label>
-				  <input  type="hidden" value="<?php echo esc_attr( $default_image_id ? $default_image_id : '' ); ?>"
-				  name="<?php echo esc_attr( $this->get_field_name( 'default_image' ) ); ?>"
-				  id="<?php echo esc_attr( $this->get_field_id( 'default_image' ) ); ?>"
-				  class="widefat" />
-			  </p>
-			  <div class="media-widget-preview">
+			<input  type="text" value="<?php echo esc_attr( $instance['limit'] ); ?>"
+				name="<?php echo esc_attr( $this->get_field_name( 'limit' ) ); ?>"
+				id="<?php echo esc_attr( $this->get_field_id( 'limit' ) ); ?>"
+				class="widefat" />
+			<p>
+			<div class="sparkling-media-container media-widget-control">
+				<p>
+					<label for="<?php echo esc_attr( $this->get_field_id( 'default_image' ) ); ?>"><?php esc_html_e( 'Default Image', 'sparkling' ); ?></label>
+					<input  type="hidden" value="<?php echo esc_attr( $default_image_id ? $default_image_id : '' ); ?>"
+					name="<?php echo esc_attr( $this->get_field_name( 'default_image' ) ); ?>"
+					id="<?php echo esc_attr( $this->get_field_id( 'default_image' ) ); ?>"
+					class="widefat" />
+				</p>
+				<div class="media-widget-preview">
 				<div class="attachment-media-view">
 					<div class="placeholder" <?php echo $default_image_url ? 'style="display:none;"' : ''; ?>><?php echo esc_html__( 'No media selected', 'sparkling' ); ?></div>
 					<?php if ( $default_image_url ) : ?>

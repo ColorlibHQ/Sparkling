@@ -1,12 +1,12 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
-	$featured_image_args = array(
+	$sparkling_featured_image_args = array(
 		'class' => 'single-featured',
 	);
 	if ( is_page_template( 'page-fullwidth.php' ) ) {
-		the_post_thumbnail( 'sparkling-featured-fullwidth', $featured_image_args );
+		the_post_thumbnail( 'sparkling-featured-fullwidth', $sparkling_featured_image_args );
 	} else {
-		the_post_thumbnail( 'sparkling-featured', $featured_image_args );
+		the_post_thumbnail( 'sparkling-featured', $sparkling_featured_image_args );
 	}
 	?>
 	<div class="post-inner-content">
@@ -19,11 +19,11 @@
 
 				<?php
 					/* translators: used between list items, there is a space after the comma */
-					$categories_list = get_the_category_list( esc_html__( ', ', 'sparkling' ) );
-				if ( $categories_list && sparkling_categorized_blog() ) :
-				?>
-				<span class="cat-links"><i class="fa-solid fa-folder-open"></i>
-				<?php echo ' ' . wp_kses_post( $categories_list ); ?>
+					$sparkling_categories_list = get_the_category_list( esc_html__( ', ', 'sparkling' ) );
+				if ( $sparkling_categories_list && sparkling_categorized_blog() ) :
+					?>
+				<span class="cat-links"><i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+					<?php echo ' ' . wp_kses_post( $sparkling_categories_list ); ?>
 				</span>
 				<?php endif; // End if categories ?>
 				<?php if ( get_edit_post_link() ) : ?>
@@ -34,7 +34,7 @@
 								esc_html__( 'Edit %s', 'sparkling' ),
 								the_title( '<span class="screen-reader-text">"', '"</span>', false )
 							),
-							'<i class="fa-regular fa-edit"></i><span class="edit-link">',
+							'<i class="fa-solid fa-pen-to-square" aria-hidden="true"></i><span class="edit-link">',
 							'</span>'
 						);
 					?>
@@ -56,24 +56,23 @@
 						'echo'        => 1,
 					)
 				);
-			?>
+				?>
 		</div><!-- .entry-content -->
 
 		<footer class="entry-meta">
 
 			<?php if ( has_tag() ) : ?>
-		  <!-- tags -->
-		  <div class="tagcloud">
+			<!-- tags -->
+			<div class="tagcloud">
 
 				<?php
-				  $tags = get_the_tags( get_the_ID() );
-				foreach ( $tags as $tag ) {
-					echo '<a href="' . esc_url( get_tag_link( $tag->term_id ) ) . '">' . esc_html( $tag->name ) . '</a> ';
+				foreach ( get_the_tags( get_the_ID() ) as $sparkling_tag ) {
+					echo '<a href="' . esc_url( get_tag_link( $sparkling_tag->term_id ) ) . '">' . esc_html( $sparkling_tag->name ) . '</a> ';
 				}
 				?>
 
-		  </div>
-		  <!-- end tags -->
+			</div>
+			<!-- end tags -->
 			<?php endif; ?>
 
 		</footer><!-- .entry-meta -->
@@ -81,8 +80,8 @@
 
 	<?php if ( get_the_author_meta( 'description' ) ) : ?>
 		<div class="post-inner-content secondary-content-box">
-	  <!-- author bio -->
-	  <div class="author-bio content-box-inner">
+		<!-- author bio -->
+		<div class="author-bio content-box-inner">
 
 		<!-- avatar -->
 		<div class="avatar">
@@ -93,14 +92,14 @@
 		<!-- user bio -->
 		<div class="author-bio-content">
 
-		  <h4 class="author-name"><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php echo esc_html( get_the_author_meta( 'display_name' ) ); ?></a></h4>
-		  <p class="author-description">
+			<h4 class="author-name"><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php echo esc_html( get_the_author_meta( 'display_name' ) ); ?></a></h4>
+			<p class="author-description">
 				<?php echo wp_kses_post( get_the_author_meta( 'description' ) ); ?>
-		  </p>
+			</p>
 
 		</div><!-- end .author-bio-content -->
 
-	  </div><!-- end .author-bio  -->
+		</div><!-- end .author-bio  -->
 
 		</div>
 		<?php endif; ?>

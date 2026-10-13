@@ -1,9 +1,0 @@
-{
-  "preset": "wordpress",
-  "fileExtensions": [ ".js" ],
-  "excludeFiles": [
-    "assets/js/**.min.js",
-    "assets/js/vendor/*"
-  ],
-  "maxErrors": Infinity
-}

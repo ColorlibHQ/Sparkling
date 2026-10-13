@@ -218,7 +218,7 @@ html[xmlns] .slides {
   width: 25px;
   height: 8px;
   display: block;
-  background: #da4453;
+  background: #D83B4B;
   background: rgba(59, 59, 59, 0.5);
   cursor: pointer;
   text-indent: -9999px;
@@ -229,12 +229,12 @@ html[xmlns] .slides {
 }
 
 .flex-control-paging li a:hover {
-  background: #da4453;
+  background: #D83B4B;
   background: rgba(59, 59, 59, 0.7);
 }
 
 .flex-control-paging li a.flex-active {
-  background: #da4453;
+  background: #D83B4B;
   background: rgba(59, 59, 59, 0.9);
   cursor: default;
 }

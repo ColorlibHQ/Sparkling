@@ -15,21 +15,21 @@
 	// If we made it this far we must have widgets.
 	?>
 
-	<div class="home-widget-area row">
+	<div class="home-widget-area row" role="complementary" aria-label="<?php esc_attr_e( 'Home page widgets', 'sparkling' ); ?>">
 		<?php if ( is_active_sidebar( 'home-widget-1' ) ) : ?>
-		<div class="col-sm-4 home-widget" role="complementary">
+		<div class="col-sm-4 home-widget">
 			<?php dynamic_sidebar( 'home-widget-1' ); ?>
 		</div><!-- .widget-area .first -->
 		<?php endif; ?>
 
 		<?php if ( is_active_sidebar( 'home-widget-2' ) ) : ?>
-		<div class="col-sm-4 home-widget" role="complementary">
+		<div class="col-sm-4 home-widget">
 			<?php dynamic_sidebar( 'home-widget-2' ); ?>
 		</div><!-- .widget-area .second -->
 		<?php endif; ?>
 
 		<?php if ( is_active_sidebar( 'home-widget-3' ) ) : ?>
-		<div class="col-sm-4 home-widget" role="complementary">
+		<div class="col-sm-4 home-widget">
 			<?php dynamic_sidebar( 'home-widget-3' ); ?>
 		</div><!-- .widget-area .third -->
 		<?php endif; ?>

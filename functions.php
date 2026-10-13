@@ -27,9 +27,9 @@ if ( ! isset( $content_width ) ) {
  * Set the content width for full width pages with no sidebar.
  */
 function sparkling_content_width() {
-	if ( is_page_template( 'page-fullwidth.php' ) ) {
+	if ( is_singular() && in_array( get_page_template_slug(), sparkling_full_width_templates(), true ) ) {
 		global $content_width;
-		$content_width = 1008; /* pixels */
+		$content_width = 1038; /* pixels: the measured column, which 1008 understated. */
 	}
 }
 
@@ -40,7 +40,7 @@ if ( ! function_exists( 'sparkling_main_content_bootstrap_classes' ) ) :
 	 * Add Bootstrap classes to the main-content-area wrapper.
 	 */
 	function sparkling_main_content_bootstrap_classes() {
-		if ( is_page_template( 'page-fullwidth.php' ) ) {
+		if ( is_singular() && in_array( get_page_template_slug(), sparkling_full_width_templates(), true ) ) {
 			return 'col-sm-12 col-md-12';
 		}
 
@@ -91,8 +91,10 @@ if ( ! function_exists( 'sparkling_setup' ) ) :
 
 		// Setup the WordPress core custom background feature.
 		add_theme_support(
-			'custom-background', apply_filters(
-				'sparkling_custom_background_args', array(
+			'custom-background',
+			apply_filters(
+				'sparkling_custom_background_args',
+				array(
 					'default-color' => 'F2F2F2',
 					'default-image' => '',
 				)
@@ -101,7 +103,8 @@ if ( ! function_exists( 'sparkling_setup' ) ) :
 
 		// Enable support for HTML5 markup.
 		add_theme_support(
-			'html5', array(
+			'html5',
+			array(
 				'comment-list',
 				'search-form',
 				'comment-form',
@@ -125,8 +128,8 @@ if ( ! function_exists( 'sparkling_setup' ) ) :
 		add_theme_support( 'wp-block-styles' );
 		add_theme_support( 'align-wide' );
 
-		// Match the editor's content width and typography to the theme's.
-		add_editor_style( 'assets/css/editor-style.css' );
+		// Match the editor's typography to the theme's; theme.json sets its width.
+		add_editor_style( array( 'assets/css/google-fonts.css', 'assets/css/editor-style.css' ) );
 
 		/*
 		 * Let WordPress manage the document title.
@@ -154,7 +157,6 @@ if ( ! function_exists( 'sparkling_setup' ) ) :
 			update_option( 'sparkling', $options );
 
 		}
-
 	}
 endif; // sparkling_setup
 add_action( 'after_setup_theme', 'sparkling_setup' );
@@ -249,18 +251,17 @@ function sparkling_widgets_init() {
 	register_widget( 'Sparkling_Social_Widget' );
 	register_widget( 'Sparkling_Popular_Posts' );
 	register_widget( 'Sparkling_Categories' );
-
 }
 
 add_action( 'widgets_init', 'sparkling_widgets_init' );
 
 
 /* --------------------------------------------------------------
-	   Theme Widgets
+		Theme Widgets
 -------------------------------------------------------------- */
-require_once( get_template_directory() . '/inc/widgets/class-sparkling-categories.php' );
-require_once( get_template_directory() . '/inc/widgets/class-sparkling-popular-posts.php' );
-require_once( get_template_directory() . '/inc/widgets/class-sparkling-social-widget.php' );
+require_once get_template_directory() . '/inc/widgets/class-sparkling-categories.php';
+require_once get_template_directory() . '/inc/widgets/class-sparkling-popular-posts.php';
+require_once get_template_directory() . '/inc/widgets/class-sparkling-social-widget.php';
 
 
 /**
@@ -273,52 +274,49 @@ function sparkling_remove_gallery_css( $css ) {
 add_filter( 'gallery_style', 'sparkling_remove_gallery_css' );
 
 
+/**
+ * Apply the archive headline templates from Customizer > Archive Pages.
+ *
+ * "%s" in a template is replaced with the term, author or date. This used to
+ * run the template through sprintf(), so any other "%" in it -- "50% off: %s",
+ * or a lone "%" at the end -- was a fatal ValueError or ArgumentCountError
+ * on PHP 8 and the archive page died.
+ *
+ * @param string $title Archive title from WordPress.
+ *
+ * @return string
+ */
 function sparkling_archive_pages_title( $title ) {
 	if ( is_tag() ) {
-		$template = of_get_option( 'tag_title' );
-		if ( empty( $template ) ) {
-			return $title;
-		} else {
-			return sprintf( $template, single_tag_title( '', false ) );
-		}
+		$option = 'tag_title';
+		$value  = single_tag_title( '', false );
 	} elseif ( is_category() ) {
-		$template = of_get_option( 'category_title' );
-		if ( empty( $template ) ) {
-			return $title;
-		} else {
-			return sprintf( $template, single_cat_title( '', false ) );
-		}
+		$option = 'category_title';
+		$value  = single_cat_title( '', false );
 	} elseif ( is_author() ) {
-		$template = of_get_option( 'author_title' );
-		if ( empty( $template ) ) {
-			return $title;
-		} else {
-			return sprintf( $template, get_the_author() );
-		}
+		$option = 'author_title';
+		$author = get_queried_object();
+		$value  = $author instanceof WP_User ? esc_html( $author->display_name ) : '';
 	} elseif ( is_year() ) {
-		$template = of_get_option( 'year_title' );
-		if ( empty( $template ) ) {
-			return $title;
-		} else {
-			return sprintf( $template, get_the_date( _x( 'Y', 'yearly archives date format', 'sparkling' ) ) );
-		}
+		$option = 'year_title';
+		$value  = get_the_date( _x( 'Y', 'yearly archives date format', 'sparkling' ) );
 	} elseif ( is_month() ) {
-		$template = of_get_option( 'month_title' );
-		if ( empty( $template ) ) {
-			return $title;
-		} else {
-			return sprintf( $template, get_the_date( _x( 'F Y', 'monthly archives date format', 'sparkling' ) ) );
-		}
+		$option = 'month_title';
+		$value  = get_the_date( _x( 'F Y', 'monthly archives date format', 'sparkling' ) );
 	} elseif ( is_day() ) {
-		$template = of_get_option( 'day_title' );
-		if ( empty( $template ) ) {
-			return $title;
-		} else {
-			return sprintf( $template, get_the_date( _x( 'F j, Y', 'daily archives date format', 'sparkling' ) ) );
-		}
+		$option = 'day_title';
+		$value  = get_the_date( _x( 'F j, Y', 'daily archives date format', 'sparkling' ) );
 	} else {
 		return $title;
 	}
+
+	$template = of_get_option( $option );
+
+	if ( ! is_string( $template ) || '' === trim( $template ) ) {
+		return $title;
+	}
+
+	return wp_kses_post( str_replace( '%s', $value, $template ) );
 }
 
 add_filter( 'get_the_archive_title', 'sparkling_archive_pages_title' );
@@ -330,37 +328,35 @@ function sparkling_scripts() {
 
 	$template_uri = get_template_directory_uri();
 
-	// Whether the front page slider is showing; used to gate its CSS and JS.
-	$sparkling_slider_active = ( is_home() || is_front_page() ) && 1 == of_get_option( 'sparkling_slider_checkbox' );
+	/*
+	 * Whether the front page slider is showing; used to gate its CSS and JS.
+	 * is_front_page() only: sparkling_featured_slider() prints nothing on a
+	 * separate blog page, which still loaded FlexSlider's CSS and JS.
+	 */
+	$sparkling_slider_active = is_front_page() && (bool) of_get_option( 'sparkling_slider_checkbox' );
 
 	// Add Bootstrap default CSS
 	wp_enqueue_style( 'sparkling-bootstrap', $template_uri . '/assets/css/bootstrap.min.css', array(), '3.4.1-1' );
 
 	// Add Font Awesome stylesheet
 	/*
-	 * Font Awesome 7, self-hosted and split by style: the core file carries the icon
-	 * name map, each style file adds one @font-face. No v4 or v5 shim is loaded --
-	 * the theme's markup uses native names -- and only woff2 ships, which every
-	 * browser able to run a current WordPress supports. The theme renders no outline
-	 * icons, so the regular face is not bundled.
+	 * Font Awesome 7, self-hosted, woff2 only. By default only the subset loads:
+	 * the glyphs this theme renders, a few kilobytes rather than a few hundred.
+	 * Menus carrying icons outside that subset are detected automatically; the
+	 * "Font Awesome icons" setting under Content Options covers icons the scan
+	 * cannot see -- a widget, post content, a page builder -- and the
+	 * sparkling_full_fontawesome filter overrides both. See inc/fontawesome.php.
+	 *
+	 * The complete set is one file, all.min.css, which also carries the version 4
+	 * compatibility layer. fontawesome.min.css, solid.min.css and brands.min.css
+	 * are only the inputs .github/build-icon-subset.py builds the subset from.
 	 */
 	$fa_uri = $template_uri . '/assets/css/fontawesome/';
-	/*
-	 * The bundled Font Awesome is subsetted to the glyphs this theme renders, a few
-	 * kilobytes rather than a few hundred. A site that uses Font Awesome classes in
-	 * its own content -- a widget, a page builder, a child theme -- can load the
-	 * complete set instead:
-	 *
-	 *     add_filter( 'sparkling_full_fontawesome', '__return_true' );
-	 */
-	if ( apply_filters( 'sparkling_full_fontawesome', false ) ) {
-		wp_enqueue_style( 'sparkling-icons', $fa_uri . 'fontawesome.min.css', array(), '7.3.1-1', 'all' );
-		wp_enqueue_style( 'sparkling-icons-solid', $fa_uri . 'solid.min.css', array( 'sparkling-icons' ), '7.3.1', 'all' );
-		wp_enqueue_style( 'sparkling-icons-brands', $fa_uri . 'brands.min.css', array( 'sparkling-icons' ), '7.3.1', 'all' );
+	if ( sparkling_fontawesome_use_full_set() ) {
+		wp_enqueue_style( 'sparkling-icons', $fa_uri . 'all.min.css', array(), '7.3.1-2', 'all' );
 	} else {
-		wp_enqueue_style( 'sparkling-icons', $fa_uri . 'subset/fontawesome-subset.min.css', array(), '7.3.1-1', 'all' );
+		wp_enqueue_style( 'sparkling-icons', $fa_uri . 'subset/fontawesome-subset.min.css', array(), '7.3.1-2', 'all' );
 	}
-
 
 	if ( apply_filters( 'sparkling_allow_google_fonts', true ) ) {
 
@@ -369,11 +365,10 @@ function sparkling_scripts() {
 		// request goes to Google for them.
 		$fonts_url = get_template_directory_uri() . '/assets/css/google-fonts.css';
 
-		wp_register_style( 'sparkling-fonts', $fonts_url, array(), null );
+		wp_register_style( 'sparkling-fonts', $fonts_url, array(), SPARKLING_VERSION );
 		wp_enqueue_style( 'sparkling-fonts' );
 
 	}
-
 
 	// Add slider CSS only if is front page ans slider is enabled
 	if ( $sparkling_slider_active ) {
@@ -384,20 +379,38 @@ function sparkling_scripts() {
 	wp_enqueue_style( 'sparkling-style', get_stylesheet_uri(), array(), SPARKLING_VERSION, 'all' );
 
 	/*
+	 * Restores the jQuery APIs that jQuery 4.0 removed and Bootstrap 3 and
+	 * FlexSlider still call. A guarded no-op on jQuery 3.x.
+	 */
+	wp_register_script( 'sparkling-jquery-compat', $template_uri . '/assets/js/jquery-compat.js', array( 'jquery' ), SPARKLING_VERSION, true );
+
+	/*
 	 * Bootstrap's own JS still needs jQuery, but it belongs in the footer: it binds
 	 * its data-api handlers on ready, so nothing is lost by not blocking the head.
 	 */
-	wp_enqueue_script( 'sparkling-bootstrapjs', $template_uri . '/assets/js/vendor/bootstrap.min.js', array( 'jquery' ), '3.4.1-1', true );
+	wp_enqueue_script( 'sparkling-bootstrapjs', $template_uri . '/assets/js/vendor/bootstrap.min.js', array( 'jquery', 'sparkling-jquery-compat' ), '3.4.1-sparkling.1', true );
 
 	if ( $sparkling_slider_active ) {
-		// Add slider JS only if is front page ans slider is enabled
-		wp_enqueue_script( 'sparkling-flexslider-js', $template_uri . '/assets/js/vendor/flexslider.min.js', array( 'jquery' ), '2.7.2', true );
+		// Add slider JS only if is front page and slider is enabled
+		wp_enqueue_script( 'sparkling-flexslider-js', $template_uri . '/assets/js/vendor/flexslider.min.js', array( 'jquery', 'sparkling-jquery-compat' ), '2.7.2', true );
 		// Flexslider customization
 		wp_enqueue_script(
-			'sparkling-flexslider-customization', $template_uri . '/assets/js/flexslider-custom.js', array(
+			'sparkling-flexslider-customization',
+			$template_uri . '/assets/js/flexslider-custom.js',
+			array(
 				'jquery',
 				'sparkling-flexslider-js',
-			), SPARKLING_VERSION, true
+			),
+			SPARKLING_VERSION,
+			true
+		);
+		wp_localize_script(
+			'sparkling-flexslider-customization',
+			'sparklingSlider',
+			array(
+				'prev' => __( 'Previous slide', 'sparkling' ),
+				'next' => __( 'Next slide', 'sparkling' ),
+			)
 		);
 	}
 
@@ -407,16 +420,13 @@ function sparkling_scripts() {
 	 */
 	wp_enqueue_script( 'sparkling-functions', $template_uri . '/assets/js/functions.js', array(), SPARKLING_VERSION, true );
 
-	// This one is for accessibility
-	wp_enqueue_script( 'sparkling-skip-link-focus-fix', $template_uri . '/assets/js/skip-link-focus-fix.min.js', array(), SPARKLING_VERSION, true );
-
-	// Treaded comments
+	// Threaded comments
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
 	// Academicons
-	if ( 1 == of_get_option( 'academicons' ) ) {
+	if ( of_get_option( 'academicons' ) ) {
 		wp_enqueue_style( 'sparkling-academicons-css', $template_uri . '/assets/css/academicons.min.css', array(), '1.8.6', 'all' );
 	}
 }
@@ -444,6 +454,16 @@ require get_template_directory() . '/inc/extras.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Font Awesome loading strategy.
+ */
+require get_template_directory() . '/inc/fontawesome.php';
+
+/**
+ * Block editor: theme.json palette, editor width, patterns.
+ */
+require get_template_directory() . '/inc/block-editor.php';
+
+/**
  * Metabox additions.
  */
 require get_template_directory() . '/inc/metaboxes.php';
@@ -456,14 +476,17 @@ require get_template_directory() . '/inc/jetpack.php';
 /**
  * Load custom nav walker
  */
-require get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
+require get_template_directory() . '/inc/class-sparkling-bootstrap-navwalker.php';
 
 /**
  * Register Social Icon menu
  */
-add_action( 'init', 'register_social_menu' );
+add_action( 'init', 'sparkling_register_social_menu' );
 
-function register_social_menu() {
+/**
+ * Register the Social Menu location (register_social_menu() until 2.7.0).
+ */
+function sparkling_register_social_menu() {
 	register_nav_menu( 'social-menu', _x( 'Social Menu', 'nav menu location', 'sparkling' ) );
 }
 
@@ -484,14 +507,17 @@ function register_social_menu() {
  * The globals themselves are kept (rather than replaced with accessors) so child
  * themes that reference them keep working.
  */
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- Public globals since 1.0, read by child themes; see above.
 global $options_categories, $site_layout;
 $options_categories = array();
 $site_layout        = array();
+// phpcs:enable
 
 /**
  * Populate the theme's global option arrays once translations are available.
  */
 function sparkling_init_globals() {
+	// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- Public globals since 1.0.
 	global $options_categories, $site_layout;
 
 	$site_layout = array(
@@ -511,13 +537,15 @@ function sparkling_init_globals() {
 	foreach ( get_categories( array( 'hide_empty' => 0 ) ) as $category ) {
 		$options_categories[ $category->cat_ID ] = $category->cat_name;
 	}
+	// phpcs:enable
 }
 
 add_action( 'init', 'sparkling_init_globals' );
 
 // Typography Options
+// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- Public global since 1.0, read by child themes.
 global $typography_options;
-$typography_options = array(
+$typography_options = array( // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- As above.
 	'sizes'  => array(
 		'6px'  => '6px',
 		'10px' => '10px',
@@ -561,18 +589,25 @@ $typography_options = array(
  * Not in a class to support backwards compatibility in themes.
  */
 if ( ! function_exists( 'of_get_option' ) ) :
-	function of_get_option( $name, $default = false ) {
-
-		$option_name = '';
-		// Get option settings from database
+	/**
+	 * Read one key of the theme's 'sparkling' option.
+	 *
+	 * The Options Framework's name, kept since the theme's settings lived there:
+	 * child themes and plugins call it.
+	 *
+	 * @param string $name     Option key.
+	 * @param mixed  $fallback Returned when the key is not set.
+	 *
+	 * @return mixed
+	 */
+	function of_get_option( $name, $fallback = false ) { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- Options Framework API, kept for back-compat.
 		$options = get_option( 'sparkling' );
 
-		// Return specific option
-		if ( isset( $options[ $name ] ) ) {
+		if ( is_array( $options ) && isset( $options[ $name ] ) ) {
 			return $options[ $name ];
 		}
 
-		return $default;
+		return $fallback;
 	}
 endif;
 
@@ -589,7 +624,6 @@ if ( ! function_exists( 'sparkling_woo_setup' ) ) :
 		add_theme_support( 'wc-product-gallery-zoom' );
 		add_theme_support( 'wc-product-gallery-lightbox' );
 		add_theme_support( 'wc-product-gallery-slider' );
-
 	}
 endif; // sparkling_woo_setup
 add_action( 'after_setup_theme', 'sparkling_woo_setup' );
@@ -598,7 +632,7 @@ if ( ! function_exists( 'get_woocommerce_page_id' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 */
-	function get_woocommerce_page_id() {
+	function get_woocommerce_page_id() { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- Public since 1.x; pluggable for child themes.
 		if ( is_shop() ) {
 			return get_option( 'woocommerce_shop_page_id' );
 		} elseif ( is_cart() ) {
@@ -620,7 +654,7 @@ endif;
  */
 if ( ! function_exists( 'is_it_woocommerce_page' ) ) :
 
-	function is_it_woocommerce_page() {
+	function is_it_woocommerce_page() { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- Public since 1.x; pluggable for child themes.
 		if ( function_exists( 'is_woocommerce' ) && is_woocommerce() ) {
 			return true;
 		}
@@ -638,8 +672,20 @@ if ( ! function_exists( 'is_it_woocommerce_page' ) ) :
 			'woocommerce_logout_page_id',
 			'woocommerce_lost_password_page_id',
 		);
+		/*
+		 * Only a real post can be a WooCommerce page. On a 404 or an empty
+		 * search get_the_ID() is false, which loosely equalled the 0 of any of
+		 * these options a site did not have -- so those views were treated as
+		 * shop pages and lost their sidebar to the WooCommerce layout.
+		 */
+		$sparkling_id = (int) get_the_ID();
+
+		if ( $sparkling_id <= 0 ) {
+			return false;
+		}
+
 		foreach ( $woocommerce_keys as $wc_page_id ) {
-			if ( get_the_ID() == get_option( $wc_page_id, 0 ) ) {
+			if ( (int) get_option( $wc_page_id, 0 ) === $sparkling_id ) {
 				return true;
 			}
 		}
@@ -654,7 +700,7 @@ endif;
  */
 if ( ! function_exists( 'get_layout_class' ) ) :
 
-	function get_layout_class() {
+	function get_layout_class() { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- Public since 1.x; pluggable for child themes.
 		global $post;
 		if ( is_singular() && get_post_meta( $post->ID, 'site_layout', true ) && ! is_singular( array( 'product' ) ) ) {
 			$layout_class = get_post_meta( $post->ID, 'site_layout', true );
@@ -701,12 +747,6 @@ function sparkling_get_attachment_image() {
 			'image' => wp_get_attachment_image( $id, 'medium' ),
 		)
 	);
-}
-
-if ( ! function_exists( 'wp_body_open' ) ) {
-    function wp_body_open() {
-        do_action( 'wp_body_open' );
-    }
 }
 
 /*

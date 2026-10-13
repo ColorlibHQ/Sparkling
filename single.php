@@ -17,14 +17,14 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'single' );
 
 				// If comments are open or we have at least one comment, load up the comment template
-			if ( comments_open() || '0' != get_comments_number() ) :
+			if ( comments_open() || get_comments_number() ) :
 				comments_template();
 				endif;
 
 			the_post_navigation(
 				array(
-					'next_text' => '<span class="post-title">%title <i class="fa-solid fa-chevron-right"></i></span>',
-					'prev_text' => '<i class="fa-solid fa-chevron-left"></i> <span class="post-title">%title</span>',
+					'next_text' => '<span class="post-title">%title <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></span>',
+					'prev_text' => '<i class="fa-solid fa-chevron-left" aria-hidden="true"></i> <span class="post-title">%title</span>',
 				)
 			);
 

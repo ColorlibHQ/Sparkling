@@ -34,11 +34,12 @@ function sparkling_customizer( $wp_customize ) {
 
 	/* Main option Settings Panel */
 	$wp_customize->add_panel(
-		'sparkling_main_options', array(
+		'sparkling_main_options',
+		array(
 			'capability'     => 'edit_theme_options',
 			'theme_supports' => '',
 			'title'          => __( 'Sparkling Options', 'sparkling' ),
-			'description'    => __( 'Panel to update sparkling theme options', 'sparkling' ),
+			'description'    => __( 'Layout, colors, typography and other options for the Sparkling theme.', 'sparkling' ),
 			// Include html tags such as <p>.
 			'priority'       => 10,
 		// Mixed with top-level-section hierarchy.
@@ -47,7 +48,8 @@ function sparkling_customizer( $wp_customize ) {
 
 	// add "Content Options" section
 	$wp_customize->add_section(
-		'sparkling_content_section', array(
+		'sparkling_content_section',
+		array(
 			'title'    => esc_html__( 'Content Options', 'sparkling' ),
 			'priority' => 50,
 			'panel'    => 'sparkling_main_options',
@@ -55,7 +57,8 @@ function sparkling_customizer( $wp_customize ) {
 	);
 	// add setting for excerpts/full posts toggle
 	$wp_customize->add_setting(
-		'sparkling_excerpts', array(
+		'sparkling_excerpts',
+		array(
 			'default'           => 0,
 			'sanitize_callback' => 'sparkling_sanitize_checkbox',
 		)
@@ -63,8 +66,10 @@ function sparkling_customizer( $wp_customize ) {
 	// add checkbox control for excerpts/full posts toggle
 	$wp_customize->add_control(
 		new Sparkling_Customize_Toggle_Control(
-			$wp_customize, 'sparkling_excerpts', array(
-				'label'    => esc_html__( 'Show post excerpts?', 'sparkling' ),
+			$wp_customize,
+			'sparkling_excerpts',
+			array(
+				'label'    => esc_html__( 'Show excerpts instead of full posts on the blog', 'sparkling' ),
 				'section'  => 'sparkling_content_section',
 				'priority' => 10,
 				'type'     => 'sparkling-toggle',
@@ -73,15 +78,18 @@ function sparkling_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'sparkling_page_comments', array(
+		'sparkling_page_comments',
+		array(
 			'default'           => 1,
 			'sanitize_callback' => 'sparkling_sanitize_checkbox',
 		)
 	);
 	$wp_customize->add_control(
 		new Sparkling_Customize_Toggle_Control(
-			$wp_customize, 'sparkling_page_comments', array(
-				'label'    => esc_html__( 'Display Comments on Static Pages?', 'sparkling' ),
+			$wp_customize,
+			'sparkling_page_comments',
+			array(
+				'label'    => esc_html__( 'Show comments on pages', 'sparkling' ),
 				'section'  => 'sparkling_content_section',
 				'priority' => 20,
 				'type'     => 'sparkling-toggle',
@@ -89,16 +97,44 @@ function sparkling_customizer( $wp_customize ) {
 		)
 	);
 
+	// Which Font Awesome library to load; see inc/fontawesome.php.
+	$wp_customize->add_setting(
+		'sparkling[fontawesome_library]',
+		array(
+			'default'           => 'auto',
+			'type'              => 'option',
+			'capability'        => 'edit_theme_options',
+			'sanitize_callback' => 'sparkling_sanitize_fontawesome_library',
+		)
+	);
+	$wp_customize->add_control(
+		'sparkling[fontawesome_library]',
+		array(
+			'label'       => esc_html__( 'Font Awesome icons', 'sparkling' ),
+			'section'     => 'sparkling_content_section',
+			'priority'    => 30,
+			'type'        => 'select',
+			'description' => esc_html__( 'The theme bundles only the icons it displays itself, which keeps pages small. Icons you add to your menus are detected automatically. Choose "Always load the complete library" if you use Font Awesome icons in a widget, in post content or in a page builder and they are not showing.', 'sparkling' ),
+			'choices'     => array(
+				'auto'   => esc_html__( 'Automatic (recommended)', 'sparkling' ),
+				'full'   => esc_html__( 'Always load the complete library', 'sparkling' ),
+				'subset' => esc_html__( 'Only the icons the theme uses', 'sparkling' ),
+			),
+		)
+	);
+
 	/* Sparkling Main Options */
 	$wp_customize->add_section(
-		'sparkling_slider_options', array(
+		'sparkling_slider_options',
+		array(
 			'title'    => __( 'Slider Options', 'sparkling' ),
 			'priority' => 31,
 			'panel'    => 'sparkling_main_options',
 		)
 	);
 	$wp_customize->add_setting(
-		'sparkling[sparkling_slider_checkbox]', array(
+		'sparkling[sparkling_slider_checkbox]',
+		array(
 			'default'           => 0,
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_checkbox',
@@ -106,8 +142,10 @@ function sparkling_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		new Sparkling_Customize_Toggle_Control(
-			$wp_customize, 'sparkling[sparkling_slider_checkbox]', array(
-				'label'    => esc_html__( 'Check if you want to enable slider', 'sparkling' ),
+			$wp_customize,
+			'sparkling[sparkling_slider_checkbox]',
+			array(
+				'label'    => esc_html__( 'Show the slider on the front page', 'sparkling' ),
 				'section'  => 'sparkling_slider_options',
 				'priority' => 5,
 				'type'     => 'sparkling-toggle',
@@ -115,7 +153,8 @@ function sparkling_customizer( $wp_customize ) {
 		)
 	);
 	$wp_customize->add_setting(
-		'sparkling[sparkling_slider_link_checkbox]', array(
+		'sparkling[sparkling_slider_link_checkbox]',
+		array(
 			'default'           => 1,
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_checkbox',
@@ -123,11 +162,14 @@ function sparkling_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		new Sparkling_Customize_Toggle_Control(
-			$wp_customize, 'sparkling[sparkling_slider_link_checkbox]', array(
-				'label'    => esc_html__( 'Uncheck this option to remove the link from the slides', 'sparkling' ),
-				'section'  => 'sparkling_slider_options',
-				'priority' => 6,
-				'type'     => 'sparkling-toggle',
+			$wp_customize,
+			'sparkling[sparkling_slider_link_checkbox]',
+			array(
+				'label'           => esc_html__( 'Link each slide to its post', 'sparkling' ),
+				'section'         => 'sparkling_slider_options',
+				'active_callback' => 'sparkling_slider_is_enabled',
+				'priority'        => 6,
+				'type'            => 'sparkling-toggle',
 			)
 		)
 	);
@@ -135,7 +177,8 @@ function sparkling_customizer( $wp_customize ) {
 	// Pull all the categories into an array
 	global $options_categories;
 	$wp_customize->add_setting(
-		'sparkling[sparkling_slide_categories]', array(
+		'sparkling[sparkling_slide_categories]',
+		array(
 			'default'           => '',
 			'type'              => 'option',
 			'capability'        => 'edit_theme_options',
@@ -143,33 +186,51 @@ function sparkling_customizer( $wp_customize ) {
 		)
 	);
 	$wp_customize->add_control(
-		'sparkling[sparkling_slide_categories]', array(
-			'label'       => __( 'Slider Category', 'sparkling' ),
-			'section'     => 'sparkling_slider_options',
-			'type'        => 'select',
-			'description' => __( 'Select a category for the featured post slider', 'sparkling' ),
-			'choices'     => $options_categories,
+		'sparkling[sparkling_slide_categories]',
+		array(
+			'label'           => __( 'Slider Category', 'sparkling' ),
+			'section'         => 'sparkling_slider_options',
+			'active_callback' => 'sparkling_slider_is_enabled',
+			'type'            => 'select',
+			'description'     => __( 'The slider shows posts from this category that have a featured image.', 'sparkling' ),
+			/*
+			 * The default, '', is "every category" -- which is what the slider
+			 * shows -- but it was not one of the choices, so the control showed
+			 * the first category as selected while the site used all of them.
+			 */
+			'choices'         => array( '' => __( 'All categories', 'sparkling' ) ) + (array) $options_categories,
 		)
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[sparkling_slide_number]', array(
-			'default'           => 3,
+		'sparkling[sparkling_slide_number]',
+		array(
+			// The slider shows five slides until this is saved, so the control
+			// must say five; it said three.
+			'default'           => 5,
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_number',
 		)
 	);
 	$wp_customize->add_control(
-		'sparkling[sparkling_slide_number]', array(
-			'label'       => __( 'Number of slide items', 'sparkling' ),
-			'section'     => 'sparkling_slider_options',
-			'description' => __( 'Enter the number of slide items', 'sparkling' ),
-			'type'        => 'text',
+		'sparkling[sparkling_slide_number]',
+		array(
+			'label'           => __( 'Number of slide items', 'sparkling' ),
+			'section'         => 'sparkling_slider_options',
+			'active_callback' => 'sparkling_slider_is_enabled',
+			'description'     => __( 'How many posts the slider shows.', 'sparkling' ),
+			'type'            => 'number',
+			'input_attrs'     => array(
+				'min'  => 1,
+				'max'  => 20,
+				'step' => 1,
+			),
 		)
 	);
 
 	$wp_customize->add_section(
-		'sparkling_layout_options', array(
+		'sparkling_layout_options',
+		array(
 			'title'    => __( 'Layout Options', 'sparkling' ),
 			'priority' => 31,
 			'panel'    => 'sparkling_main_options',
@@ -178,53 +239,60 @@ function sparkling_customizer( $wp_customize ) {
 	// Layout options
 	global $site_layout;
 	$wp_customize->add_setting(
-		'sparkling[site_layout]', array(
+		'sparkling[site_layout]',
+		array(
 			'default'           => 'side-pull-left',
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_layout',
 		)
 	);
 	$wp_customize->add_control(
-		'sparkling[site_layout]', array(
+		'sparkling[site_layout]',
+		array(
 			'label'       => __( 'Website Layout Options', 'sparkling' ),
 			'section'     => 'sparkling_layout_options',
 			'type'        => 'select',
-			'description' => __( 'Choose between different layout options to be used as default', 'sparkling' ),
+			'description' => __( 'The default sidebar layout. Each post and page can override it.', 'sparkling' ),
 			'choices'     => $site_layout,
 		)
 	);
 
 	if ( class_exists( 'WooCommerce' ) ) {
 		$wp_customize->add_setting(
-			'sparkling[woo_site_layout]', array(
+			'sparkling[woo_site_layout]',
+			array(
 				'default'           => 'full-width',
 				'type'              => 'option',
 				'sanitize_callback' => 'sparkling_sanitize_layout',
 			)
 		);
 		$wp_customize->add_control(
-			'sparkling[woo_site_layout]', array(
+			'sparkling[woo_site_layout]',
+			array(
 				'label'       => __( 'WooCommerce Page Layout Options', 'sparkling' ),
 				'section'     => 'sparkling_layout_options',
 				'type'        => 'select',
-				'description' => __( 'Choose between different layout options to be used as default for all woocommerce pages', 'sparkling' ),
+				'description' => __( 'The sidebar layout of the shop, product, cart, checkout and account pages.', 'sparkling' ),
 				'choices'     => $site_layout,
 			)
 		);
 	}
 
 	$wp_customize->add_setting(
-		'sparkling[element_color]', array(
-			'default'           => sanitize_hex_color( '#DA4453' ),
+		'sparkling[element_color]',
+		array(
+			'default'           => sanitize_hex_color( '#D83B4B' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
 		)
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[element_color]', array(
+			$wp_customize,
+			'sparkling[element_color]',
+			array(
 				'label'       => __( 'Element Color', 'sparkling' ),
-				'description' => __( 'Default used if no color is selected', 'sparkling' ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_layout_options',
 				'settings'    => 'sparkling[element_color]',
 			)
@@ -232,7 +300,8 @@ function sparkling_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[element_color_hover]', array(
+		'sparkling[element_color_hover]',
+		array(
 			'default'           => sanitize_hex_color( '#363636' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
@@ -240,9 +309,11 @@ function sparkling_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[element_color_hover]', array(
+			$wp_customize,
+			'sparkling[element_color_hover]',
+			array(
 				'label'       => __( 'Element color on hover', 'sparkling' ),
-				'description' => __( 'Default used if no color is selected', 'sparkling' ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_layout_options',
 				'settings'    => 'sparkling[element_color_hover]',
 			)
@@ -251,37 +322,42 @@ function sparkling_customizer( $wp_customize ) {
 
 	/* Sparkling Action Options */
 	$wp_customize->add_section(
-		'sparkling_action_options', array(
+		'sparkling_action_options',
+		array(
 			'title'    => __( 'Action Button', 'sparkling' ),
 			'priority' => 31,
 			'panel'    => 'sparkling_main_options',
 		)
 	);
 	$wp_customize->add_setting(
-		'sparkling[w2f_cfa_text]', array(
+		'sparkling[w2f_cfa_text]',
+		array(
 			'default'           => '',
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_strip_slashes',
 		)
 	);
 	$wp_customize->add_control(
-		'sparkling[w2f_cfa_text]', array(
+		'sparkling[w2f_cfa_text]',
+		array(
 			'label'       => __( 'Call For Action Text', 'sparkling' ),
-			'description' => sprintf( __( 'Enter the text for call for action section', 'sparkling' ) ),
+			'description' => __( 'Shown in a bar under the slider on the front page. Leave empty to hide the bar.', 'sparkling' ),
 			'section'     => 'sparkling_action_options',
 			'type'        => 'textarea',
 		)
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[w2f_cfa_button]', array(
+		'sparkling[w2f_cfa_button]',
+		array(
 			'default'           => '',
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_nohtml',
 		)
 	);
 	$wp_customize->add_control(
-		'sparkling[w2f_cfa_button]', array(
+		'sparkling[w2f_cfa_button]',
+		array(
 			'label'       => __( 'Call For Action Button Title', 'sparkling' ),
 			'section'     => 'sparkling_action_options',
 			'description' => __( 'Enter the title for Call For Action button', 'sparkling' ),
@@ -290,39 +366,45 @@ function sparkling_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[w2f_cfa_link]', array(
+		'sparkling[w2f_cfa_link]',
+		array(
 			'default'           => '',
 			'type'              => 'option',
 			'sanitize_callback' => 'esc_url_raw',
 		)
 	);
 	$wp_customize->add_control(
-		'sparkling[w2f_cfa_link]', array(
-			'label'       => __( 'CFA button link', 'sparkling' ),
+		'sparkling[w2f_cfa_link]',
+		array(
+			'type'        => 'url',
+			'label'       => __( 'Call For Action Button Link', 'sparkling' ),
 			'section'     => 'sparkling_action_options',
 			'description' => __( 'Enter the link for Call For Action button', 'sparkling' ),
-			'type'        => 'text',
 		)
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[cfa_color]', array(
-			'default'           => sanitize_hex_color( '#DA4453' ),
+		'sparkling[cfa_color]',
+		array(
+			'default'           => sanitize_hex_color( '#D83B4B' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
 		)
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[cfa_color]', array(
+			$wp_customize,
+			'sparkling[cfa_color]',
+			array(
 				'label'       => __( 'Call For Action Text Color', 'sparkling' ),
-				'description' => __( 'Default used if no color is selected', 'sparkling' ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_action_options',
 			)
 		)
 	);
 	$wp_customize->add_setting(
-		'sparkling[cfa_bg_color]', array(
+		'sparkling[cfa_bg_color]',
+		array(
 			'default'           => sanitize_hex_color( '#FFF' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
@@ -330,41 +412,49 @@ function sparkling_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[cfa_bg_color]', array(
+			$wp_customize,
+			'sparkling[cfa_bg_color]',
+			array(
 				'label'       => __( 'Call For Action Background Color', 'sparkling' ),
-				'description' => __( 'Default used if no color is selected', 'sparkling' ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_action_options',
 			)
 		)
 	);
 	$wp_customize->add_setting(
-		'sparkling[cfa_btn_color]', array(
-			'default'           => sanitize_hex_color( '#DA4453' ),
+		'sparkling[cfa_btn_color]',
+		array(
+			'default'           => sanitize_hex_color( '#D83B4B' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
 		)
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[cfa_btn_color]', array(
+			$wp_customize,
+			'sparkling[cfa_btn_color]',
+			array(
 				'label'       => __( 'Call For Action Button Border Color', 'sparkling' ),
-				'description' => __( 'Default used if no color is selected', 'sparkling' ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_action_options',
 			)
 		)
 	);
 	$wp_customize->add_setting(
-		'sparkling[cfa_btn_txt_color]', array(
-			'default'           => sanitize_hex_color( '#DA4453' ),
+		'sparkling[cfa_btn_txt_color]',
+		array(
+			'default'           => sanitize_hex_color( '#D83B4B' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
 		)
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[cfa_btn_txt_color]', array(
+			$wp_customize,
+			'sparkling[cfa_btn_txt_color]',
+			array(
 				'label'       => __( 'Call For Action Button Text Color', 'sparkling' ),
-				'description' => __( 'Default used if no color is selected', 'sparkling' ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_action_options',
 			)
 		)
@@ -372,98 +462,97 @@ function sparkling_customizer( $wp_customize ) {
 
 	/* Sparkling Typography Options */
 	$wp_customize->add_section(
-		'sparkling_typography_options', array(
+		'sparkling_typography_options',
+		array(
 			'title'    => __( 'Typography', 'sparkling' ),
 			'priority' => 31,
 			'panel'    => 'sparkling_main_options',
 		)
 	);
 	// Typography Defaults
-	$typography_defaults = array(
-		'size'  => '14px',
-		'face'  => 'Open Sans',
-		'style' => 'normal',
-		'color' => '#6B6B6B',
-	);
+	$typography_defaults = sparkling_typography_defaults();
 
 	// Typography Options
 	global $typography_options;
 	$wp_customize->add_setting(
-		'sparkling[main_body_typography][size]', array(
+		'sparkling[main_body_typography][size]',
+		array(
 			'default'           => $typography_defaults['size'],
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_typo_size',
 		)
 	);
 	$wp_customize->add_control(
-		'sparkling[main_body_typography][size]', array(
-			'label'       => __( 'Main Body Text', 'sparkling' ),
-			'description' => __( 'Used in p tags', 'sparkling' ),
+		'sparkling[main_body_typography][size]',
+		array(
+			'label'       => __( 'Body font size', 'sparkling' ),
+			'description' => __( 'Size, font, weight and color of post and page text.', 'sparkling' ),
 			'section'     => 'sparkling_typography_options',
 			'type'        => 'select',
 			'choices'     => $typography_options['sizes'],
 		)
 	);
 	$wp_customize->add_setting(
-		'sparkling[main_body_typography][face]', array(
+		'sparkling[main_body_typography][face]',
+		array(
 			'default'           => $typography_defaults['face'],
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_typo_face',
 		)
 	);
 	$wp_customize->add_control(
-		'sparkling[main_body_typography][face]', array(
+		'sparkling[main_body_typography][face]',
+		array(
+			'label'   => __( 'Body font', 'sparkling' ),
 			'section' => 'sparkling_typography_options',
 			'type'    => 'select',
 			'choices' => $typography_options['faces'],
 		)
 	);
 	$wp_customize->add_setting(
-		'sparkling[main_body_typography][style]', array(
+		'sparkling[main_body_typography][style]',
+		array(
 			'default'           => $typography_defaults['style'],
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_typo_style',
 		)
 	);
 	$wp_customize->add_control(
-		'sparkling[main_body_typography][style]', array(
+		'sparkling[main_body_typography][style]',
+		array(
+			'label'   => __( 'Body font weight', 'sparkling' ),
 			'section' => 'sparkling_typography_options',
 			'type'    => 'select',
 			'choices' => $typography_options['styles'],
 		)
 	);
 	$wp_customize->add_setting(
-		'sparkling[main_body_typography][color]', array(
-			'default'           => sanitize_hex_color( '#6B6B6B' ),
+		'sparkling[main_body_typography][color]',
+		array(
+			'default'           => $typography_defaults['color'],
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
 		)
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[main_body_typography][color]', array(
+			$wp_customize,
+			'sparkling[main_body_typography][color]',
+			array(
+				'label'   => __( 'Body text color', 'sparkling' ),
 				'section' => 'sparkling_typography_options',
 			)
 		)
 	);
-	$wp_customize->add_setting(
-		'sparkling[main_body_typography][subset]', array(
-			'default'           => '',
-			'type'              => 'option',
-			'sanitize_callback' => 'esc_html',
-		)
-	);
-	$wp_customize->add_control(
-		'sparkling[main_body_typography][subset]', array(
-			'label'       => __( 'Font Subset', 'sparkling' ),
-			'section'     => 'sparkling_typography_options',
-			'description' => __( 'Enter the Google fonts subset', 'sparkling' ),
-			'type'        => 'text',
-		)
-	);
+	/*
+	 * The "Font Subset" field is gone: it asked for a Google Fonts subset, and
+	 * since 2.6.11 the fonts are bundled with the theme rather than requested
+	 * from Google, so the value was never used.
+	 */
 
 	$wp_customize->add_setting(
-		'sparkling[heading_color]', array(
+		'sparkling[heading_color]',
+		array(
 			'default'           => sanitize_hex_color( '#444' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
@@ -471,7 +560,9 @@ function sparkling_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[heading_color]', array(
+			$wp_customize,
+			'sparkling[heading_color]',
+			array(
 				'label'       => __( 'Heading Color', 'sparkling' ),
 				'description' => __( 'Color for all headings (h1-h6)', 'sparkling' ),
 				'section'     => 'sparkling_typography_options',
@@ -479,23 +570,27 @@ function sparkling_customizer( $wp_customize ) {
 		)
 	);
 	$wp_customize->add_setting(
-		'sparkling[link_color]', array(
-			'default'           => sanitize_hex_color( '#DA4453' ),
+		'sparkling[link_color]',
+		array(
+			'default'           => sanitize_hex_color( '#D83B4B' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
 		)
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[link_color]', array(
+			$wp_customize,
+			'sparkling[link_color]',
+			array(
 				'label'       => __( 'Link Color', 'sparkling' ),
-				'description' => __( 'Default used if no color is selected', 'sparkling' ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_typography_options',
 			)
 		)
 	);
 	$wp_customize->add_setting(
-		'sparkling[link_hover_color]', array(
+		'sparkling[link_hover_color]',
+		array(
 			'default'           => sanitize_hex_color( '#DADADA' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
@@ -503,9 +598,11 @@ function sparkling_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[link_hover_color]', array(
+			$wp_customize,
+			'sparkling[link_hover_color]',
+			array(
 				'label'       => __( 'Link:hover Color', 'sparkling' ),
-				'description' => __( 'Default used if no color is selected', 'sparkling' ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_typography_options',
 			)
 		)
@@ -513,7 +610,8 @@ function sparkling_customizer( $wp_customize ) {
 
 	/* Sparkling Header Options */
 	$wp_customize->add_section(
-		'sparkling_header_options', array(
+		'sparkling_header_options',
+		array(
 			'title'    => __( 'Header', 'sparkling' ),
 			'priority' => 31,
 			'panel'    => 'sparkling_main_options',
@@ -521,7 +619,8 @@ function sparkling_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[sticky_header]', array(
+		'sparkling[sticky_header]',
+		array(
 			'default'           => 0,
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_checkbox',
@@ -529,9 +628,11 @@ function sparkling_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		new Sparkling_Customize_Toggle_Control(
-			$wp_customize, 'sparkling[sticky_header]', array(
+			$wp_customize,
+			'sparkling[sticky_header]',
+			array(
 				'label'       => __( 'Sticky Header', 'sparkling' ),
-				'description' => sprintf( __( 'Check to show fixed header', 'sparkling' ) ),
+				'description' => __( 'Keep the header at the top of the window while scrolling.', 'sparkling' ),
 				'section'     => 'sparkling_header_options',
 				'type'        => 'sparkling-toggle',
 			)
@@ -539,7 +640,8 @@ function sparkling_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[nav_bg_color]', array(
+		'sparkling[nav_bg_color]',
+		array(
 			'default'           => sanitize_hex_color( '#363636' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
@@ -547,15 +649,18 @@ function sparkling_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[nav_bg_color]', array(
+			$wp_customize,
+			'sparkling[nav_bg_color]',
+			array(
 				'label'       => __( 'Top nav background color', 'sparkling' ),
-				'description' => __( 'Default used if no color is selected', 'sparkling' ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_header_options',
 			)
 		)
 	);
 	$wp_customize->add_setting(
-		'sparkling[nav_link_color]', array(
+		'sparkling[nav_link_color]',
+		array(
 			'default'           => sanitize_hex_color( '#F5F7FA' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
@@ -563,7 +668,9 @@ function sparkling_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[nav_link_color]', array(
+			$wp_customize,
+			'sparkling[nav_link_color]',
+			array(
 				'label'       => __( 'Top nav item color', 'sparkling' ),
 				'description' => __( 'Link color', 'sparkling' ),
 				'section'     => 'sparkling_header_options',
@@ -572,15 +679,18 @@ function sparkling_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[nav_item_hover_color]', array(
-			'default'           => sanitize_hex_color( '#DA4453' ),
+		'sparkling[nav_item_hover_color]',
+		array(
+			'default'           => sanitize_hex_color( '#D83B4B' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
 		)
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[nav_item_hover_color]', array(
+			$wp_customize,
+			'sparkling[nav_item_hover_color]',
+			array(
 				'label'       => __( 'Top nav item hover color', 'sparkling' ),
 				'description' => __( 'Link:hover color', 'sparkling' ),
 				'section'     => 'sparkling_header_options',
@@ -589,24 +699,28 @@ function sparkling_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[nav_dropdown_bg]', array(
-			'default'           => sanitize_hex_color( '#da4453' ),
+		'sparkling[nav_dropdown_bg]',
+		array(
+			'default'           => sanitize_hex_color( '#D83B4B' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
 		)
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[nav_dropdown_bg]', array(
+			$wp_customize,
+			'sparkling[nav_dropdown_bg]',
+			array(
 				'label'       => __( 'Top nav dropdown background color', 'sparkling' ),
-				'description' => __( 'Background of dropdown item hover color', 'sparkling' ),
+				'description' => __( 'Background of the dropdown menus', 'sparkling' ),
 				'section'     => 'sparkling_header_options',
 			)
 		)
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[nav_dropdown_item]', array(
+		'sparkling[nav_dropdown_item]',
+		array(
 			'default'           => sanitize_hex_color( '#636467' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
@@ -614,7 +728,9 @@ function sparkling_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[nav_dropdown_item]', array(
+			$wp_customize,
+			'sparkling[nav_dropdown_item]',
+			array(
 				'label'       => __( 'Top nav dropdown item color', 'sparkling' ),
 				'description' => __( 'Dropdown item color', 'sparkling' ),
 				'section'     => 'sparkling_header_options',
@@ -623,7 +739,8 @@ function sparkling_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[nav_dropdown_item_hover]', array(
+		'sparkling[nav_dropdown_item_hover]',
+		array(
 			'default'           => sanitize_hex_color( '#FFF' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
@@ -631,7 +748,9 @@ function sparkling_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[nav_dropdown_item_hover]', array(
+			$wp_customize,
+			'sparkling[nav_dropdown_item_hover]',
+			array(
 				'label'       => __( 'Top nav dropdown item hover color', 'sparkling' ),
 				'description' => __( 'Dropdown item hover color', 'sparkling' ),
 				'section'     => 'sparkling_header_options',
@@ -640,17 +759,20 @@ function sparkling_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[nav_dropdown_bg_hover]', array(
-			'default'           => sanitize_hex_color( '#DA4453' ),
+		'sparkling[nav_dropdown_bg_hover]',
+		array(
+			'default'           => sanitize_hex_color( '#D83B4B' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
 		)
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[nav_dropdown_bg_hover]', array(
+			$wp_customize,
+			'sparkling[nav_dropdown_bg_hover]',
+			array(
 				'label'       => __( 'Top nav dropdown item background hover color', 'sparkling' ),
-				'description' => __( 'Background of dropdown item hover color', 'sparkling' ),
+				'description' => __( 'Background of a dropdown item on hover', 'sparkling' ),
 				'section'     => 'sparkling_header_options',
 			)
 		)
@@ -658,14 +780,16 @@ function sparkling_customizer( $wp_customize ) {
 
 	/* Sparkling Footer Options */
 	$wp_customize->add_section(
-		'sparkling_footer_options', array(
+		'sparkling_footer_options',
+		array(
 			'title'    => __( 'Footer', 'sparkling' ),
 			'priority' => 31,
 			'panel'    => 'sparkling_main_options',
 		)
 	);
 	$wp_customize->add_setting(
-		'sparkling[footer_widget_bg_color]', array(
+		'sparkling[footer_widget_bg_color]',
+		array(
 			'default'           => sanitize_hex_color( '#313233' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
@@ -673,7 +797,9 @@ function sparkling_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[footer_widget_bg_color]', array(
+			$wp_customize,
+			'sparkling[footer_widget_bg_color]',
+			array(
 				'label'   => __( 'Footer widget area background color', 'sparkling' ),
 				'section' => 'sparkling_footer_options',
 			)
@@ -681,7 +807,8 @@ function sparkling_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[footer_bg_color]', array(
+		'sparkling[footer_bg_color]',
+		array(
 			'default'           => sanitize_hex_color( '#1F1F1F' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
@@ -689,7 +816,9 @@ function sparkling_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[footer_bg_color]', array(
+			$wp_customize,
+			'sparkling[footer_bg_color]',
+			array(
 				'label'   => __( 'Footer background color', 'sparkling' ),
 				'section' => 'sparkling_footer_options',
 			)
@@ -697,7 +826,8 @@ function sparkling_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[footer_text_color]', array(
+		'sparkling[footer_text_color]',
+		array(
 			'default'           => sanitize_hex_color( '#999' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
@@ -705,7 +835,9 @@ function sparkling_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[footer_text_color]', array(
+			$wp_customize,
+			'sparkling[footer_text_color]',
+			array(
 				'label'   => __( 'Footer text color', 'sparkling' ),
 				'section' => 'sparkling_footer_options',
 			)
@@ -713,7 +845,8 @@ function sparkling_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[footer_link_color]', array(
+		'sparkling[footer_link_color]',
+		array(
 			'default'           => sanitize_hex_color( '#DADADA' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
@@ -721,7 +854,9 @@ function sparkling_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[footer_link_color]', array(
+			$wp_customize,
+			'sparkling[footer_link_color]',
+			array(
 				'label'   => __( 'Footer link color', 'sparkling' ),
 				'section' => 'sparkling_footer_options',
 			)
@@ -729,16 +864,18 @@ function sparkling_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[custom_footer_text]', array(
+		'sparkling[custom_footer_text]',
+		array(
 			'default'           => '',
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_strip_slashes',
 		)
 	);
 	$wp_customize->add_control(
-		'sparkling[custom_footer_text]', array(
+		'sparkling[custom_footer_text]',
+		array(
 			'label'       => __( 'Footer information', 'sparkling' ),
-			'description' => sprintf( __( 'Copyright text in footer', 'sparkling' ) ),
+			'description' => __( 'Copyright text in footer', 'sparkling' ),
 			'section'     => 'sparkling_footer_options',
 			'type'        => 'textarea',
 		)
@@ -746,14 +883,16 @@ function sparkling_customizer( $wp_customize ) {
 
 	/* Sparkling Social Options */
 	$wp_customize->add_section(
-		'sparkling_social_options', array(
+		'sparkling_social_options',
+		array(
 			'title'    => __( 'Social', 'sparkling' ),
 			'priority' => 31,
 			'panel'    => 'sparkling_main_options',
 		)
 	);
 	$wp_customize->add_setting(
-		'sparkling[social_color]', array(
+		'sparkling[social_color]',
+		array(
 			'default'           => sanitize_hex_color( '#DADADA' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
@@ -761,16 +900,19 @@ function sparkling_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[social_color]', array(
+			$wp_customize,
+			'sparkling[social_color]',
+			array(
 				'label'       => __( 'Social icon color', 'sparkling' ),
-				'description' => sprintf( __( 'Default used if no color is selected', 'sparkling' ) ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_social_options',
 			)
 		)
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[social_footer_color]', array(
+		'sparkling[social_footer_color]',
+		array(
 			'default'           => sanitize_hex_color( '#363636' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
@@ -778,16 +920,19 @@ function sparkling_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-			$wp_customize, 'sparkling[social_footer_color]', array(
+			$wp_customize,
+			'sparkling[social_footer_color]',
+			array(
 				'label'       => __( 'Footer social icon color', 'sparkling' ),
-				'description' => sprintf( __( 'Default used if no color is selected', 'sparkling' ) ),
+				'description' => __( 'Clear it to use the theme default.', 'sparkling' ),
 				'section'     => 'sparkling_social_options',
 			)
 		)
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[footer_social]', array(
+		'sparkling[footer_social]',
+		array(
 			'default'           => 0,
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_checkbox',
@@ -795,9 +940,11 @@ function sparkling_customizer( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		new Sparkling_Customize_Toggle_Control(
-			$wp_customize, 'sparkling[footer_social]', array(
+			$wp_customize,
+			'sparkling[footer_social]',
+			array(
 				'label'       => __( 'Footer Social Icons', 'sparkling' ),
-				'description' => sprintf( __( 'Check to show social icons in footer', 'sparkling' ) ),
+				'description' => __( 'Show the Social menu as icons in the footer.', 'sparkling' ),
 				'section'     => 'sparkling_social_options',
 				'type'        => 'sparkling-toggle',
 			)
@@ -806,7 +953,8 @@ function sparkling_customizer( $wp_customize ) {
 
 	/* Academicons */
 	$wp_customize->add_setting(
-		'sparkling[academicons]', array(
+		'sparkling[academicons]',
+		array(
 			'default'           => 0,
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_checkbox',
@@ -815,9 +963,11 @@ function sparkling_customizer( $wp_customize ) {
 
 	$wp_customize->add_control(
 		new Sparkling_Customize_Toggle_Control(
-			$wp_customize, 'sparkling[academicons]', array(
+			$wp_customize,
+			'sparkling[academicons]',
+			array(
 				'label'       => __( 'Enable Academicons', 'sparkling' ),
-				'description' => sprintf( __( 'Toggle this to ON to enable the usage of Academicons', 'sparkling' ) ),
+				'description' => __( 'Load the Academicons font, for links to academic profiles in the Social menu.', 'sparkling' ),
 				'section'     => 'sparkling_social_options',
 				'type'        => 'sparkling-toggle',
 			)
@@ -826,7 +976,8 @@ function sparkling_customizer( $wp_customize ) {
 
 	/* Archive pages settings */
 	$wp_customize->add_section(
-			'sparkling_archive_section', array(
+		'sparkling_archive_section',
+		array(
 			'title'    => esc_html__( 'Archive Pages', 'sparkling' ),
 			'priority' => 50,
 			'panel'    => 'sparkling_main_options',
@@ -834,15 +985,17 @@ function sparkling_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[tag_title]', array(
+		'sparkling[tag_title]',
+		array(
 			'default'           => '',
 			'type'              => 'option',
-			'sanitize_callback' => 'esc_html',
+			'sanitize_callback' => 'sanitize_text_field',
 		)
 	);
 
 	$wp_customize->add_control(
-		'sparkling[tag_title]', array(
+		'sparkling[tag_title]',
+		array(
 			'label'       => __( 'Tag Page Title', 'sparkling' ),
 			'section'     => 'sparkling_archive_section',
 			/* translators: %s: tag name */
@@ -852,15 +1005,17 @@ function sparkling_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[category_title]', array(
+		'sparkling[category_title]',
+		array(
 			'default'           => '',
 			'type'              => 'option',
-			'sanitize_callback' => 'esc_html',
+			'sanitize_callback' => 'sanitize_text_field',
 		)
 	);
 
 	$wp_customize->add_control(
-		'sparkling[category_title]', array(
+		'sparkling[category_title]',
+		array(
 			'label'       => __( 'Category Page Title', 'sparkling' ),
 			'section'     => 'sparkling_archive_section',
 			/* translators: %s: category name */
@@ -870,15 +1025,17 @@ function sparkling_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[author_title]', array(
+		'sparkling[author_title]',
+		array(
 			'default'           => '',
 			'type'              => 'option',
-			'sanitize_callback' => 'esc_html',
+			'sanitize_callback' => 'sanitize_text_field',
 		)
 	);
 
 	$wp_customize->add_control(
-		'sparkling[author_title]', array(
+		'sparkling[author_title]',
+		array(
 			'label'       => __( 'Author Page Title', 'sparkling' ),
 			'section'     => 'sparkling_archive_section',
 			/* translators: %s: author name */
@@ -888,15 +1045,17 @@ function sparkling_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[year_title]', array(
+		'sparkling[year_title]',
+		array(
 			'default'           => '',
 			'type'              => 'option',
-			'sanitize_callback' => 'esc_html',
+			'sanitize_callback' => 'sanitize_text_field',
 		)
 	);
 
 	$wp_customize->add_control(
-		'sparkling[year_title]', array(
+		'sparkling[year_title]',
+		array(
 			'label'       => __( 'Year Page Title', 'sparkling' ),
 			'section'     => 'sparkling_archive_section',
 			/* translators: %s: year */
@@ -906,15 +1065,17 @@ function sparkling_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[month_title]', array(
+		'sparkling[month_title]',
+		array(
 			'default'           => '',
 			'type'              => 'option',
-			'sanitize_callback' => 'esc_html',
+			'sanitize_callback' => 'sanitize_text_field',
 		)
 	);
 
 	$wp_customize->add_control(
-		'sparkling[month_title]', array(
+		'sparkling[month_title]',
+		array(
 			'label'       => __( 'Month Page Title', 'sparkling' ),
 			'section'     => 'sparkling_archive_section',
 			/* translators: %s: month */
@@ -924,15 +1085,17 @@ function sparkling_customizer( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'sparkling[day_title]', array(
+		'sparkling[day_title]',
+		array(
 			'default'           => '',
 			'type'              => 'option',
-			'sanitize_callback' => 'esc_html',
+			'sanitize_callback' => 'sanitize_text_field',
 		)
 	);
 
 	$wp_customize->add_control(
-		'sparkling[day_title]', array(
+		'sparkling[day_title]',
+		array(
 			'label'       => __( 'Day Page Title', 'sparkling' ),
 			'section'     => 'sparkling_archive_section',
 			/* translators: %s: day */
@@ -945,15 +1108,44 @@ function sparkling_customizer( $wp_customize ) {
 add_action( 'customize_register', 'sparkling_customizer' );
 
 
+if ( ! function_exists( 'sparkling_typography_defaults' ) ) :
+	/**
+	 * Defaults for the body typography settings: what style.css renders.
+	 *
+	 * @return array
+	 */
+	function sparkling_typography_defaults() {
+		return array(
+			'size'  => '14px',
+			'face'  => 'Open Sans',
+			'style' => 'normal',
+			'color' => '#6B6B6B',
+		);
+	}
+endif;
+
 /**
- * Sanitzie checkbox for WordPress customizer
+ * Sanitize checkbox for WordPress customizer
  */
 function sparkling_sanitize_checkbox( $input ) {
-	if ( 1 == $input ) {
+	// The Customizer posts true; older saves hold 1 or '1'.
+	if ( in_array( $input, array( true, 1, '1' ), true ) ) {
 		return 1;
 	} else {
 		return '';
 	}
+}
+
+/**
+ * Adds sanitization callback function: Font Awesome library choice
+ * @package Sparkling
+ */
+function sparkling_sanitize_fontawesome_library( $input ) {
+	if ( in_array( $input, array( 'auto', 'full', 'subset' ), true ) ) {
+		return $input;
+	}
+
+	return 'auto';
 }
 
 /**
@@ -984,12 +1176,17 @@ function sparkling_sanitize_nohtml( $input ) {
 
 /**
  * Adds sanitization callback function: Number
- * @package Sparkling
+ *
+ * A whole number of at least 1. This returned nothing at all for anything
+ * non-numeric and let "2.5" or "-3" through.
+ *
+ * @param mixed $input Value from the Customizer.
+ * @return int|string
  */
 function sparkling_sanitize_number( $input ) {
-	if ( isset( $input ) && is_numeric( $input ) ) {
-		return $input;
-	}
+	$number = absint( $input );
+
+	return $number ? $number : '';
 }
 
 /**
@@ -1014,7 +1211,13 @@ function sparkling_sanitize_textarea( $input ) {
  */
 function sparkling_sanitize_slidecat( $input ) {
 	global $options_categories;
-	if ( array_key_exists( $input, $options_categories ) ) {
+
+	// '' is "All categories", the default.
+	if ( '' === $input || null === $input ) {
+		return '';
+	}
+
+	if ( is_array( $options_categories ) && array_key_exists( absint( $input ), $options_categories ) ) {
 		return $input;
 	} else {
 		return '';
@@ -1027,7 +1230,7 @@ function sparkling_sanitize_slidecat( $input ) {
  */
 function sparkling_sanitize_layout( $input ) {
 	global $site_layout;
-	if ( array_key_exists( $input, $site_layout ) ) {
+	if ( is_string( $input ) && is_array( $site_layout ) && array_key_exists( $input, $site_layout ) ) {
 		return $input;
 	} else {
 		return '';
@@ -1039,12 +1242,17 @@ function sparkling_sanitize_layout( $input ) {
  * @package Sparkling
  */
 function sparkling_sanitize_typo_size( $input ) {
-	global $typography_options, $typography_defaults;
-	if ( array_key_exists( $input, $typography_options['sizes'] ) ) {
+	global $typography_options;
+
+	// $typography_defaults was never a global, so an unknown value came back
+	// as null with an "array offset on null" warning instead of the default.
+	if ( is_string( $input ) && array_key_exists( $input, $typography_options['sizes'] ) ) {
 		return $input;
-	} else {
-		return $typography_defaults['size'];
 	}
+
+	$defaults = sparkling_typography_defaults();
+
+	return $defaults['size'];
 }
 
 /**
@@ -1052,12 +1260,17 @@ function sparkling_sanitize_typo_size( $input ) {
  * @package Sparkling
  */
 function sparkling_sanitize_typo_face( $input ) {
-	global $typography_options, $typography_defaults;
-	if ( array_key_exists( $input, $typography_options['faces'] ) ) {
+	global $typography_options;
+
+	// $typography_defaults was never a global, so an unknown value came back
+	// as null with an "array offset on null" warning instead of the default.
+	if ( is_string( $input ) && array_key_exists( $input, $typography_options['faces'] ) ) {
 		return $input;
-	} else {
-		return $typography_defaults['face'];
 	}
+
+	$defaults = sparkling_typography_defaults();
+
+	return $defaults['face'];
 }
 
 /**
@@ -1065,12 +1278,17 @@ function sparkling_sanitize_typo_face( $input ) {
  * @package Sparkling
  */
 function sparkling_sanitize_typo_style( $input ) {
-	global $typography_options, $typography_defaults;
-	if ( array_key_exists( $input, $typography_options['styles'] ) ) {
+	global $typography_options;
+
+	// $typography_defaults was never a global, so an unknown value came back
+	// as null with an "array offset on null" warning instead of the default.
+	if ( is_string( $input ) && array_key_exists( $input, $typography_options['styles'] ) ) {
 		return $input;
-	} else {
-		return $typography_defaults['style'];
 	}
+
+	$defaults = sparkling_typography_defaults();
+
+	return $defaults['style'];
 }
 
 /**
@@ -1083,66 +1301,36 @@ function sparkling_customize_preview_js() {
 add_action( 'customize_preview_init', 'sparkling_customize_preview_js' );
 
 /**
- * Styles for the theme's own Customizer controls.
+ * Styles and scripts for the theme's own Customizer controls and sections.
  *
- * Carries the on/off switch and tooltip rules that used to come from the bundled
- * Epsilon framework's stylesheet, so the controls look unchanged after its removal.
+ * customizer.css carries the on/off switch that used to come from the bundled
+ * Epsilon framework, and the link sections' styling. customizer-controls.js
+ * registers the link section type.
  */
 function sparkling_customize_controls_css() {
 	wp_enqueue_style( 'sparkling-customizer-controls', get_template_directory_uri() . '/assets/css/customizer.css', array(), SPARKLING_VERSION );
+	wp_enqueue_script( 'sparkling-customizer-controls', get_template_directory_uri() . '/assets/js/customizer-controls.js', array( 'customize-controls' ), SPARKLING_VERSION, true );
 }
 
 add_action( 'customize_controls_enqueue_scripts', 'sparkling_customize_controls_css' );
 
-/**
- * Add CSS for custom controls
- */
-function sparkling_customizer_custom_control_css() {
-	?>
-	<style>
-		#customize-control-sparkling-main_body_typography-size select, #customize-control-sparkling-main_body_typography-face select, #customize-control-sparkling-main_body_typography-style select {
-			width: 60%;
-		}
-	</style>
-	<?php
-}
-
-add_action( 'customize_controls_print_styles', 'sparkling_customizer_custom_control_css' );
-
 /*
- * Custom Scripts
+ * customizer_custom_scripts() was removed in 2.7.0. Its jQuery showed and
+ * hid the slider settings with .click()/.fadeToggle() -- so they went out of
+ * step with the switch after a reset or a keyboard toggle -- and it styled a
+ * sparkling_important_links section that no longer exists. The slider
+ * settings use an active_callback instead (sparkling_slider_is_enabled()).
  */
-add_action( 'customize_controls_print_footer_scripts', 'customizer_custom_scripts' );
 
-function customizer_custom_scripts() {
-	?>
-	<script type="text/javascript">
-	  jQuery(document).ready(function () {
-		/* This one shows/hides the an option when a checkbox is clicked. */
-		jQuery('#customize-control-sparkling-sparkling_slide_categories, #customize-control-sparkling-sparkling_slide_number').hide()
-		jQuery('#customize-control-sparkling-sparkling_slider_checkbox input').click(function () {
-		  jQuery('#customize-control-sparkling-sparkling_slide_categories, #customize-control-sparkling-sparkling_slide_number').fadeToggle(400)
-		})
-
-		if (jQuery('#customize-control-sparkling-sparkling_slider_checkbox input:checked').val() !== undefined) {
-		  jQuery('#customize-control-sparkling-sparkling_slide_categories, #customize-control-sparkling-sparkling_slide_number').show()
-		}
-	  })
-	</script>
-	<style>
-		li#accordion-section-sparkling_important_links h3.accordion-section-title, li#accordion-section-sparkling_important_links h3.accordion-section-title:focus {
-			background-color: #00cc00 !important;
-			color: #fff !important;
-		}
-
-		li#accordion-section-sparkling_important_links h3.accordion-section-title:hover {
-			background-color: #00b200 !important;
-			color: #fff !important;
-		}
-
-		li#accordion-section-sparkling_important_links h3.accordion-section-title:after {
-			color: #fff !important;
-		}
-	</style>
-	<?php
-}
+if ( ! function_exists( 'sparkling_slider_is_enabled' ) ) :
+	/**
+	 * Active callback: the slider's own settings only show while it is on.
+	 *
+	 * Runs in the preview, so it sees the value being previewed.
+	 *
+	 * @return bool
+	 */
+	function sparkling_slider_is_enabled() {
+		return (bool) of_get_option( 'sparkling_slider_checkbox' );
+	}
+endif;
