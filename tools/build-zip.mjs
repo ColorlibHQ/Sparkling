@@ -5,10 +5,8 @@
  * into the zip instead of copying the tree to build/ first, so there is no
  * intermediate directory to clean up afterwards.
  *
- * Everything is denied by default: a file ships only if it is NOT matched by
- * EXCLUDE below. The old grunt copy task used an include-everything-then-subtract
- * list, which is why CLAUDE.md and a nested package.json ended up inside released
- * zips -- anything added to the repo later got swept in automatically.
+ * Only runtime directories and the known top-level theme files are included.
+ * New tests, reports and local files therefore cannot silently enter a release.
  */
 import { createWriteStream } from 'node:fs';
 import { readdir, readFile, rm, stat } from 'node:fs/promises';
@@ -16,6 +14,15 @@ import path from 'node:path';
 import { ZipArchive } from 'archiver';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
+
+const THEME_FILES = new Set([
+  '404.php', 'archive.php', 'comments.php', 'footer.php', 'functions.php',
+  'header.php', 'image.php', 'index.php', 'page-fullwidth.php', 'page.php',
+  'search.php', 'searchform.php', 'sidebar-footer.php', 'sidebar-home.php',
+  'sidebar.php', 'single.php', 'template-blocks.php', 'style.css', 'theme.json',
+  'readme.txt', 'changelog.txt', 'LICENCE.md', 'screenshot.png', 'wpml-config.xml',
+]);
+const THEME_DIRECTORIES = new Set(['assets', 'inc', 'languages', 'patterns', 'template-parts']);
 
 /** Paths (relative to the theme root) that must never ship to users. */
 const EXCLUDE = [
@@ -64,6 +71,7 @@ const EXCLUDE = [
 ];
 
 const isExcluded = (rel) => EXCLUDE.some((re) => re.test(rel));
+const isThemePath = (rel) => THEME_FILES.has(rel) || THEME_DIRECTORIES.has(rel.split('/')[0]);
 
 const pkg = JSON.parse(await readFile(path.join(ROOT, 'package.json'), 'utf8'));
 const slug = pkg.name;
@@ -99,7 +107,7 @@ const walk = async (dir, base = '') => {
   entries.sort((a, b) => a.name.localeCompare(b.name));
   for (const entry of entries) {
     const rel = base ? `${base}/${entry.name}` : entry.name;
-    if (isExcluded(rel)) continue;
+    if (!isThemePath(rel) || isExcluded(rel)) continue;
     const abs = path.join(dir, entry.name);
     if (entry.isDirectory()) {
       await walk(abs, rel);

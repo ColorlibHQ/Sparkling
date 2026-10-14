@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Sparkling 2.6.11\n"
+"Project-Id-Version: Sparkling 2.7.1\n"
 "Report-Msgid-Bugs-To: https://colorlib.com/wp/support/\n"
 "Last-Translator: Colorlib <info@colorlib.com>\n"
 "Language-Team: Colorlib <info@colorlib.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-01T18:28:46+00:00\n"
+"POT-Creation-Date: 2026-10-13T14:51:35+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: sparkling\n"
@@ -202,32 +202,46 @@ msgstr ""
 msgid "Next slide"
 msgstr ""
 
-#: functions.php:490
+#: functions.php:413
+msgid "Pause slideshow"
+msgstr ""
+
+#: functions.php:414
+msgid "Play slideshow"
+msgstr ""
+
+#. translators: %d: slide number
+#: functions.php:416
+#, php-format
+msgid "Go to slide %d"
+msgstr ""
+
+#: functions.php:494
 msgctxt "nav menu location"
 msgid "Social Menu"
 msgstr ""
 
-#: functions.php:524
+#: functions.php:528
 msgid "Right Sidebar"
 msgstr ""
 
-#: functions.php:525
+#: functions.php:529
 msgid "Left Sidebar"
 msgstr ""
 
-#: functions.php:526
+#: functions.php:530
 msgid "No Sidebar"
 msgstr ""
 
-#: functions.php:527
+#: functions.php:531
 msgid "Full Width"
 msgstr ""
 
-#: functions.php:733
+#: functions.php:737
 msgid "You are not allowed to do that."
 msgstr ""
 
-#: functions.php:741
+#: functions.php:745
 msgid "Invalid attachment."
 msgstr ""
 
@@ -755,7 +769,7 @@ msgstr ""
 msgid "The changelog file could not be found."
 msgstr ""
 
-#: inc/welcome-screen/sections/changelog.php:29
+#: inc/welcome-screen/sections/changelog.php:31
 msgid "The changelog file could not be read."
 msgstr ""
 

@@ -22,7 +22,7 @@ export default [
   },
   js.configs.recommended,
   {
-    files: ['tools/**/*.mjs', 'eslint.config.mjs', '.github/**/*.mjs'],
+    files: ['tools/**/*.mjs', 'tests/**/*.mjs', 'eslint.config.mjs', '.github/**/*.mjs'],
     languageOptions: {
       ecmaVersion: 2022,
       sourceType: 'module',

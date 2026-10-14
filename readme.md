@@ -1,6 +1,6 @@
 # Sparkling — Free Responsive WordPress Blog & Business Theme
 
-[![Version](https://img.shields.io/badge/version-2.7.0-blue.svg)](https://github.com/ColorlibHQ/Sparkling/releases)
+[![Version](https://img.shields.io/badge/version-2.7.1-blue.svg)](https://github.com/ColorlibHQ/Sparkling/releases)
 [![WordPress](https://img.shields.io/badge/WordPress-6.0%20–%207.1-21759b.svg)](https://wordpress.org/themes/sparkling/)
 [![PHP](https://img.shields.io/badge/PHP-7.4%20–%208.5-777bb4.svg)](https://www.php.net/)
 [![License](https://img.shields.io/badge/license-GPL--2.0--or--later-green.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
@@ -131,12 +131,14 @@ npm ci && composer install   # the pinned lint and build toolchain
 
 | Command | What it does |
 |---|---|
-| `npm run verify` | ESLint, Stylelint, `php -l` and PHPCS (WordPress-Extra) at zero warnings, plus the text domain and version checks |
-| `npm run build` | `sparkling.zip`, built deny-by-default so no development file ships |
+| `npm run verify` | Linters at zero warnings, frontend and package regression tests, text domains and version checks |
+| `npm test` | Slider and menu regression tests on jQuery 3.7/4.0, default contrast and package contents |
+| `npm run build` | `sparkling.zip`, containing only runtime directories and known theme files |
 | `npm run i18n` | regenerates `languages/sparkling.pot` (needs WP-CLI) |
 | `npm run images` | reports, or with `-- --write` applies, lossless image optimisation |
 
 GitHub Actions runs the same checks on PHP 7.4–8.5 for every push and pull request.
+Development uses Node.js 22.22.2+, 24.15+ or 26+, Composer and Python 3. Python reads the ZIP in the package regression test; fontTools is needed only when rebuilding the icon subset. The theme itself needs none of these tools.
 [`CLAUDE.md`](CLAUDE.md) documents the architecture and the gotchas.
 
 Bug reports and pull requests are welcome on the [issue tracker](https://github.com/ColorlibHQ/Sparkling/issues).

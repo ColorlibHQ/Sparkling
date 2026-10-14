@@ -4,7 +4,7 @@ Theme URI: https://colorlib.com/wp/themes/sparkling
 Author: Colorlib
 Author URI: https://colorlib.com/
 Description: Sparkling is a clean, minimal and fully responsive WordPress theme suited to blogs, news, magazines, business, portfolio and shop sites. It ships a full-width front page slider, a call-to-action bar, social icon menu, author bio, popular posts and enhanced category widgets, and four sidebar layouts you can set globally or per post. Dozens of Customizer options cover colours, typography, header, footer and layout, with a live preview. Built on Bootstrap 3, the front end runs on plain JavaScript with no jQuery dependency of its own. Sparkling is translation ready and ships with over twenty translations, is WooCommerce ready, and works with bbPress, Contact Form 7 and Jetpack.
-Version: 2.7.0
+Version: 2.7.1
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
@@ -63,7 +63,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #DADADA;
+    color: #B02A37;
     text-decoration: none;
 }
 
@@ -1240,8 +1240,8 @@ button:focus,
 }
 
 @media (min-width: 1024px) {
-	ul.nav li.dropdown:hover > ul.dropdown-menu,
-	ul.nav li.dropdown:focus-within > ul.dropdown-menu {
+	ul.nav li.dropdown:not(.sparkling-dropdown-managed):hover > ul.dropdown-menu,
+	ul.nav li.dropdown:not(.sparkling-dropdown-managed):focus-within > ul.dropdown-menu {
         display: block;
     }
 }
@@ -2897,6 +2897,54 @@ button[type="submit"],
    width no longer depends on which candidate the browser picked. */
 .flexslider .slides img {
     width: 100%;
+}
+
+/* Contain inactive slide floats so they cannot stretch the CTA or cover controls. */
+.sparkling-slider-group .flexslider {
+    display: flow-root;
+    overflow: hidden;
+}
+
+/* Focusing controls after a tall slide must not scroll the clipped slide area. */
+@supports (overflow: clip) {
+    .sparkling-slider-group .flexslider {
+        overflow: clip;
+    }
+}
+
+.sparkling-slider-controls {
+    padding: 8px 12px;
+    text-align: right;
+    background-color: #fff;
+}
+
+.sparkling-slider-toggle {
+    padding: 8px 12px;
+    border: 1px solid #363636;
+    border-radius: 4px;
+    background-color: #363636;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.sparkling-slider-toggle:hover,
+.sparkling-slider-toggle:focus {
+    background-color: #222;
+    color: #fff;
+}
+
+.sparkling-slider-toggle:focus-visible {
+    outline: 2px solid #B02A37;
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .flexslider *,
+    .flexslider *::before,
+    .flexslider *::after {
+        transition: none !important;
+    }
 }
 
 /* =Blocks page template (template-blocks.php)

@@ -4,7 +4,7 @@ Contributors: colorlib
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.7.0
+Stable tag: 2.7.1
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, news, e-commerce, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, editor-style, featured-images, footer-widgets, full-width-template, post-formats, sticky-post, theme-options, block-styles, wide-blocks
@@ -105,6 +105,15 @@ Screenshot image
     Copyright Colorlib, distributed under the same license as the theme.
 
 == Changelog ==
+
+= 2.7.1 =
+* Fixed keyboard focus reaching invisible slider links. Inactive slides are hidden from assistive technologies and their original tab order is restored when they become active.
+* Added a slideshow pause/play button, stopped automatic rotation on keyboard focus and hover, and honoured reduced motion. Slider controls support the Space key, stay clickable with mixed-height slides, and announce their purpose and current slide.
+* Fixed the call-to-action strip growing excessively tall beneath shorter slides when another slide has a taller image. Slide containment also prevents focus from scrolling the image out of view.
+* Fixed Escape leaving desktop submenus visible while their buttons reported them collapsed. Hover, keyboard focus and buttons share the same menu state. Nested submenu buttons support Space and Escape closes only the nearest submenu.
+* Darkened the default link hover/focus colour to meet text contrast requirements on light backgrounds. Saved custom colours are retained.
+* Content-hashed the subset icon fonts so a cached font from an earlier release cannot hide newly added icons.
+* Added frontend regression tests on jQuery 3.7 and 4.0 and restricted theme archives to runtime files.
 
 = 2.7.0 =
 * Fixed two fatal errors on PHP 8: an Archive Pages headline containing a % other than %s ("Tagged %s at 100%") took the archive page down, and so did a classic [caption] with a non-numeric width.

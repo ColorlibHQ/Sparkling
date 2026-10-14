@@ -591,7 +591,7 @@ function sparkling_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'sparkling[link_hover_color]',
 		array(
-			'default'           => sanitize_hex_color( '#DADADA' ),
+			'default'           => sanitize_hex_color( '#B02A37' ),
 			'type'              => 'option',
 			'sanitize_callback' => 'sparkling_sanitize_hexcolor',
 		)

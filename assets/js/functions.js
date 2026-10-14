@@ -220,10 +220,71 @@
 	 * Submenu toggles in the navbar.
 	 */
 	function initDropdowns() {
-		document.querySelectorAll( '.sparkling-dropdown' ).forEach( function ( toggle ) {
+		var toggles = document.querySelectorAll( '.sparkling-dropdown' );
+		var desktop = window.matchMedia( '(min-width: 1024px)' );
+		var hover = window.matchMedia( '(min-width: 1024px) and (hover: hover)' );
+
+		function dismiss( item ) {
+			item.dataset.sparklingDismissed = 'true';
+			setSubmenuOpen( item, false );
+			item.querySelectorAll( 'li.open' ).forEach( function ( child ) {
+				setSubmenuOpen( child, false );
+			} );
+		}
+
+		toggles.forEach( function ( toggle, index ) {
+			var item = toggle.parentNode;
+			var submenu = item.querySelector( ':scope > .dropdown-menu' );
+
+			// CSS hover/focus is only a fallback when these handlers are absent.
+			item.classList.add( 'sparkling-dropdown-managed' );
+			if ( submenu ) {
+				if ( ! submenu.id ) {
+					submenu.id = 'sparkling-submenu-' + index;
+				}
+				toggle.setAttribute( 'aria-controls', submenu.id );
+			}
+
 			toggle.addEventListener( 'click', function ( event ) {
 				event.preventDefault();
-				setSubmenuOpen( toggle.parentNode, ! toggle.parentNode.classList.contains( 'open' ) );
+				if ( item.classList.contains( 'open' ) ) {
+					dismiss( item );
+				} else {
+					delete item.dataset.sparklingDismissed;
+					setSubmenuOpen( item, true );
+				}
+			} );
+
+			// Preserve native button activation inside nested menus: Bootstrap's
+			// delegated dropdown handler otherwise consumes Space and moves focus.
+			toggle.addEventListener( 'keydown', function ( event ) {
+				if ( event.key === ' ' || event.key === 'Enter' ) {
+					event.stopPropagation();
+				}
+			} );
+
+			item.addEventListener( 'mouseenter', function () {
+				if ( hover.matches ) {
+					delete item.dataset.sparklingDismissed;
+					setSubmenuOpen( item, true );
+				}
+			} );
+			item.addEventListener( 'mouseleave', function () {
+				if ( ! item.contains( document.activeElement ) ) {
+					delete item.dataset.sparklingDismissed;
+					setSubmenuOpen( item, false );
+				}
+			} );
+			item.addEventListener( 'focusin', function ( event ) {
+				if ( desktop.matches && ! item.dataset.sparklingDismissed && event.target.matches( ':focus-visible' ) ) {
+					setSubmenuOpen( item, true );
+				}
+			} );
+			item.addEventListener( 'focusout', function ( event ) {
+				if ( ! item.contains( event.relatedTarget ) ) {
+					delete item.dataset.sparklingDismissed;
+					setSubmenuOpen( item, false );
+				}
 			} );
 		} );
 
@@ -232,7 +293,12 @@
 		document.querySelectorAll( '.navbar-nav li.dropdown > a[href="#"]' ).forEach( function ( link ) {
 			link.addEventListener( 'click', function ( event ) {
 				event.preventDefault();
-				setSubmenuOpen( link.parentNode, ! link.parentNode.classList.contains( 'open' ) );
+				if ( link.parentNode.classList.contains( 'open' ) ) {
+					dismiss( link.parentNode );
+				} else {
+					delete link.parentNode.dataset.sparklingDismissed;
+					setSubmenuOpen( link.parentNode, true );
+				}
 			} );
 		} );
 
@@ -248,13 +314,31 @@
 				return;
 			}
 
-			setSubmenuOpen( item, false );
+			event.preventDefault();
+			// Handle the nearest submenu before Bootstrap's delegated handler can
+			// close an ancestor and move focus away from this submenu's toggle.
+			event.stopPropagation();
+			dismiss( item );
 
 			var toggle = item.querySelector( ':scope > .sparkling-dropdown' );
 
 			if ( toggle ) {
 				toggle.focus();
 			}
+		}, true );
+
+		document.addEventListener( 'click', function ( event ) {
+			toggles.forEach( function ( toggle ) {
+				if ( ! toggle.parentNode.contains( event.target ) ) {
+					setSubmenuOpen( toggle.parentNode, false );
+				}
+			} );
+		} );
+		desktop.addEventListener( 'change', function () {
+			toggles.forEach( function ( toggle ) {
+				delete toggle.parentNode.dataset.sparklingDismissed;
+				setSubmenuOpen( toggle.parentNode, false );
+			} );
 		} );
 	}
 
