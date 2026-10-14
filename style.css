@@ -2899,9 +2899,17 @@ button[type="submit"],
     width: 100%;
 }
 
-/* Taller inactive slides must not cover the controls below smoothHeight. */
+/* Contain inactive slide floats so they cannot stretch the CTA or cover controls. */
 .sparkling-slider-group .flexslider {
+    display: flow-root;
     overflow: hidden;
+}
+
+/* Focusing controls after a tall slide must not scroll the clipped slide area. */
+@supports (overflow: clip) {
+    .sparkling-slider-group .flexslider {
+        overflow: clip;
+    }
 }
 
 .sparkling-slider-controls {
